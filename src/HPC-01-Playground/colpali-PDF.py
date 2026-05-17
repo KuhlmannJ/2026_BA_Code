@@ -1,17 +1,3 @@
-"""
-03_colpali_esg.py
-
-ColPali v1.3 Inferenz auf einem echten ESG-Report (PDF).
-
-Aufruf:
-    python 03_colpali_esg.py --pdf /path/to/report.pdf --query "Scope 1 emissions"
-
-Optional:
-    --dpi       Auflösung beim PDF-Rendering (default: 150)
-    --top_k     Wie viele Top-Seiten ausgeben (default: 5)
-    --save      Embeddings speichern unter $WORK/data/embeddings/
-"""
-
 import argparse
 import time
 import os
@@ -27,9 +13,9 @@ from dotenv import load_dotenv, find_dotenv
 parser = argparse.ArgumentParser()
 parser.add_argument("--pdf",    required=True,  help="Pfad zur PDF-Datei")
 parser.add_argument("--query",  required=True,  help="Suchanfrage")
-parser.add_argument("--dpi",    type=int, default=150)
+parser.add_argument("--dpi",    type=int, default=75)
 parser.add_argument("--top_k",  type=int, default=5)
-parser.add_argument("--batch",  type=int, default=4)
+parser.add_argument("--batch",  type=int, default=8) # 8 für H200Mini
 parser.add_argument("--save",   action="store_true", help="Embeddings speichern")
 args = parser.parse_args()
 
