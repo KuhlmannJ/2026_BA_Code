@@ -29,6 +29,7 @@ parser.add_argument("--pdf",    required=True,  help="Pfad zur PDF-Datei")
 parser.add_argument("--query",  required=True,  help="Suchanfrage")
 parser.add_argument("--dpi",    type=int, default=150)
 parser.add_argument("--top_k",  type=int, default=5)
+parser.add_argument("--batch",  type=int, default=4)
 parser.add_argument("--save",   action="store_true", help="Embeddings speichern")
 args = parser.parse_args()
 
@@ -93,19 +94,29 @@ print(f"  ✅ {len(images)} Seiten eingelesen in {time.time() - t0:.1f}s")
 
 # ── 4. Embeddings berechnen ───────────────────────────────────
 banner("SCHRITT 4: Seiten embedden")
-
-# Process the inputs (COLPALI)
+ 
 t0 = time.time()
-batch_images  = processor.process_images(images).to(model.device)
+ 
+# Query embedden
 batch_queries = processor.process_queries([args.query]).to(model.device)
-
-# Forward pass (COLAPLI)
 with torch.no_grad():
-    image_embeddings = model(**batch_images)
     query_embeddings = model(**batch_queries)
-
+ 
+# Seiten in Batches embedden
+image_embeddings_list = []
+for i in range(0, len(images), args.batch):
+    batch = images[i:i + args.batch]
+    batch_input = processor.process_images(batch).to(model.device)
+    with torch.no_grad():
+        emb = model(**batch_input)
+    image_embeddings_list.append(emb.cpu())
+    print(f"  Batch {i//args.batch + 1}/{(len(images)-1)//args.batch + 1} "
+          f"| Seiten {i+1}–{min(i+args.batch, len(images))} "
+          f"| VRAM: {torch.cuda.memory_allocated() / 1e9:.1f} GB")
+ 
+image_embeddings = torch.cat(image_embeddings_list, dim=0)
 elapsed = time.time() - t0
-print(f"  ✅ {len(images)} Seiten embedded in {elapsed:.1f}s ({elapsed/len(images)*1000:.0f} ms/Seite)")
+print(f"\n  ✅ {len(images)} Seiten embedded in {elapsed:.1f}s ({elapsed/len(images)*1000:.0f} ms/Seite)")
 print(f"  VRAM belegt: {torch.cuda.memory_allocated() / 1e9:.1f} GB")
 
 # ── 5. Embeddings speichern (optional) ───────────────────────
