@@ -18,7 +18,7 @@ import os
 from pathlib import Path
 
 import torch
-from pdf2image import convert_from_path
+import fitz  # pymupdf
 from dotenv import load_dotenv, find_dotenv
 
 # ── Argumente ─────────────────────────────────────────────────
@@ -80,7 +80,13 @@ print(f"  DPI   : {args.dpi}")
 
 # Your inputs (COLPALI)
 t0 = time.time()
-images = convert_from_path(str(pdf_path), dpi=args.dpi)
+doc = fitz.open(str(pdf_path))
+images = []
+for page in doc:
+    pix = page.get_pixmap(dpi=args.dpi)
+    img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+    images.append(img)
+doc.close()
 print(f"  ✅ {len(images)} Seiten eingelesen in {time.time() - t0:.1f}s")
 
 # ── 4. Embeddings berechnen ───────────────────────────────────
