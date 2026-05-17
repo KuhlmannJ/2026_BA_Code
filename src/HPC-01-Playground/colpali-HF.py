@@ -10,6 +10,7 @@ import argparse
 import time
 import torch
 from PIL import Image, ImageDraw
+from dotenv import load_dotenv, find_dotenv
 
 # ── Argumente ─────────────────────────────────────────────────
 parser = argparse.ArgumentParser()
@@ -22,6 +23,9 @@ def banner(title):
     print("=" * 55)
     print(f"  {title}")
     print("=" * 55)
+
+# Tokens laden
+load_dotenv(find_dotenv())
 
 # ── 1. GPU-Check ──────────────────────────────────────────────
 banner("SCHRITT 1: GPU / CUDA")
@@ -109,7 +113,7 @@ t0 = time.time()
 batch_images   = processor.process_images(images).to(model.device)
 batch_queries  = processor.process_queries(queries).to(model.device)
 
-# Forward pass
+# Forward pass (COLAPLI)
 with torch.no_grad():
     image_embeddings = model(**batch_images)
     query_embeddings = model(**batch_queries)
