@@ -17,6 +17,8 @@ import time
 import os
 from pathlib import Path
 
+from PIL import Image
+
 import torch
 import fitz  # pymupdf
 from dotenv import load_dotenv, find_dotenv
