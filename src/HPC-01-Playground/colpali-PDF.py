@@ -112,7 +112,8 @@ for i in range(0, len(images), args.batch):
     image_embeddings_list.append(emb.cpu())
     print(f"  Batch {i//args.batch + 1}/{(len(images)-1)//args.batch + 1} "
           f"| Seiten {i+1}–{min(i+args.batch, len(images))} "
-          f"| VRAM: {torch.cuda.memory_allocated() / 1e9:.1f} GB")
+          f"| VRAM: {torch.cuda.max_memory_allocated() / 1e9:.1f} GB")
+    torch.cuda.reset_peak_memory_stats()
  
 image_embeddings = torch.cat(image_embeddings_list, dim=0)
 elapsed = time.time() - t0
