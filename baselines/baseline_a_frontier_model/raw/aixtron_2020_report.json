@@ -1,0 +1,19 @@
+{
+  "report_name": "aixtron_2020_report",
+  "report_title": "Sustainability Report supplementing the 2020 Annual Report",
+  "emissions": {
+    "scope_1": {
+      "2019": [{"value": 170.8, "unit": "tonnes CO2e", "label": "Direct (Scope 1) GHG emissions, consolidated"}],
+      "2020": [{"value": 322.84, "unit": "tonnes CO2e", "label": "Direct (Scope 1) GHG emissions, consolidated"}]
+    },
+    "scope_2_market_based": {
+      "2019": [{"value": 406.6, "unit": "tonnes CO2e", "label": "Energy indirect (Scope 2) GHG emissions, consolidated"}],
+      "2020": [{"value": 398.14, "unit": "tonnes CO2e", "label": "Energy indirect (Scope 2) GHG emissions, consolidated"}]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {
+      "2019": [{"value": 3637.97, "unit": "tonnes CO2e", "label": "Other indirect (Scope 3) GHG emissions, consolidated"}],
+      "2020": [{"value": 1310.1, "unit": "tonnes CO2e", "label": "Other indirect (Scope 3) GHG emissions, consolidated"}]
+    }
+  }
+}

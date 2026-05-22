@@ -1,0 +1,18 @@
+{
+  "report_name": "acuity_brands_inc_2022_report",
+  "report_title": "2022 EarthLIGHT Report: Intersection of Sustainability and Technology",
+  "emissions": {
+    "scope_1": {
+      "2022": [{"value": 34327, "unit": "MT CO2e", "label": "Total Scope 1 (FY2022)"}]
+    },
+    "scope_2_market_based": {
+      "2022": [{"value": 42234, "unit": "MT CO2e", "label": "Total Scope 2, Market-based (FY2022)"}]
+    },
+    "scope_2_location_based": {
+      "2022": [{"value": 46637, "unit": "MT CO2e", "label": "Scope 2, Location-based (FY2022)"}]
+    },
+    "scope_3": {
+      "2022": [{"value": 35119419, "unit": "MT CO2e", "label": "Total Scope 3 (FY2022)"}]
+    }
+  }
+}

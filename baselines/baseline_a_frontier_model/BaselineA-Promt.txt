@@ -1,38 +1,27 @@
 You are an expert in corporate sustainability reporting and greenhouse gas accounting.
 
 Extract all greenhouse gas emissions data from the provided sustainability report.
-Report values exactly as stated in the document — do not convert or normalize units.
-If a value is not reported, use [{"value": null, "unit": null, "label": null}].
-If multiple values are reported for the same scope and year, include all of them as separate entries in the array and label them.
+Report values exactly as stated in the document. Do not convert or normalize units.
+Do not include years for which no data is reported.
+If multiple values are reported for the same scope and year, prefer the total/consolidated value. If no total/consolidated value is identifiable, include all values as separate entries in the array and label them.
 
 Return your answer as a JSON object with exactly this structure:
 
 {
+  "report_name": "<filename without .pdf>",
   "report_title": "<full report title>",
   "emissions": {
     "scope_1": {
-      "2019": [{"value": <number or null>, "unit": "<string or null>", "label": "<short description or null>"}],
-      "2020": [{"value": <number or null>, "unit": "<string or null>", "label": "<short description or null>"}],
-      "2021": [{"value": <number or null>, "unit": "<string or null>", "label": "<short description or null>"}],
-      "2022": [{"value": <number or null>, "unit": "<string or null>", "label": "<short description or null>"}]
+      "<year>": [{"value": <number>, "unit": "<string>", "label": "<string>"}]
     },
     "scope_2_market_based": {
-      "2019": [{"value": <number or null>, "unit": "<string or null>", "label": "<short description or null>"}],
-      "2020": [{"value": <number or null>, "unit": "<string or null>", "label": "<short description or null>"}],
-      "2021": [{"value": <number or null>, "unit": "<string or null>", "label": "<short description or null>"}],
-      "2022": [{"value": <number or null>, "unit": "<string or null>", "label": "<short description or null>"}]
+      "<year>": [{"value": <number>, "unit": "<string>", "label": "<string>"}]
     },
     "scope_2_location_based": {
-      "2019": [{"value": <number or null>, "unit": "<string or null>", "label": "<short description or null>"}],
-      "2020": [{"value": <number or null>, "unit": "<string or null>", "label": "<short description or null>"}],
-      "2021": [{"value": <number or null>, "unit": "<string or null>", "label": "<short description or null>"}],
-      "2022": [{"value": <number or null>, "unit": "<string or null>", "label": "<short description or null>"}]
+      "<year>": [{"value": <number>, "unit": "<string>", "label": "<string>"}]
     },
     "scope_3": {
-      "2019": [{"value": <number or null>, "unit": "<string or null>", "label": "<short description or null>"}],
-      "2020": [{"value": <number or null>, "unit": "<string or null>", "label": "<short description or null>"}],
-      "2021": [{"value": <number or null>, "unit": "<string or null>", "label": "<short description or null>"}],
-      "2022": [{"value": <number or null>, "unit": "<string or null>", "label": "<short description or null>"}]
+      "<year>": [{"value": <number>, "unit": "<string>", "label": "<string>"}]
     }
   }
 }

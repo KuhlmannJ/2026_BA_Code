@@ -1,0 +1,46 @@
+{
+  "report_name": "autoneum_holding_2019_report",
+  "report_title": "Corporate Responsibility Report 2019",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {"value": 116274, "unit": "metric tons CO2 equivalents", "label": "Scope 1 GHG emissions (absolute)"},
+        {"value": 50.6, "unit": "metric tons CO2 equivalents per CHF million revenue", "label": "Scope 1 emissions intensity"}
+      ],
+      "2018": [
+        {"value": 109577, "unit": "metric tons CO2 equivalents", "label": "Scope 1 GHG emissions (absolute)"},
+        {"value": 48.0, "unit": "metric tons CO2 equivalents per CHF million revenue", "label": "Scope 1 emissions intensity"}
+      ],
+      "2017": [
+        {"value": 81077, "unit": "metric tons CO2 equivalents", "label": "Scope 1 GHG emissions (absolute)"},
+        {"value": 36.8, "unit": "metric tons CO2 equivalents per CHF million revenue", "label": "Scope 1 emissions intensity"}
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2019": [
+        {"value": 264287, "unit": "metric tons CO2 equivalents", "label": "Scope 2 GHG emissions (absolute, location-based, used as approximation for market-based)"},
+        {"value": 115.0, "unit": "metric tons CO2 equivalents per CHF million revenue", "label": "Scope 2 emissions intensity (location-based)"}
+      ],
+      "2018": [
+        {"value": 256550, "unit": "metric tons CO2 equivalents", "label": "Scope 2 GHG emissions (absolute, location-based, used as approximation for market-based)"},
+        {"value": 112.4, "unit": "metric tons CO2 equivalents per CHF million revenue", "label": "Scope 2 emissions intensity (location-based)"}
+      ],
+      "2017": [
+        {"value": 235014, "unit": "metric tons CO2 equivalents", "label": "Scope 2 GHG emissions (absolute, location-based, used as approximation for market-based)"},
+        {"value": 106.7, "unit": "metric tons CO2 equivalents per CHF million revenue", "label": "Scope 2 emissions intensity (location-based)"}
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {"value": 420238, "unit": "metric tons CO2 equivalents", "label": "Scope 3 GHG emissions (calculated for 17% of purchased direct materials and 100% of business travel; excludes UGN)"}
+      ],
+      "2018": [
+        {"value": 525214, "unit": "metric tons CO2 equivalents", "label": "Scope 3 GHG emissions"}
+      ],
+      "2017": [
+        {"value": 448185, "unit": "metric tons CO2 equivalents", "label": "Scope 3 GHG emissions"}
+      ]
+    }
+  }
+}
