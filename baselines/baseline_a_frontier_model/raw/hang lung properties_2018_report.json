@@ -1,0 +1,42 @@
+{
+  "report_name": "hang_lung_properties_2018_report",
+  "report_title": "Hang Lung Properties Limited Sustainability Report 2018",
+  "emissions": {
+    "scope_1": {
+      "2016": [
+        {"value": 2285.31, "unit": "Tonnes CO2e", "label": "Building operation (Total)"}
+      ],
+      "2017": [
+        {"value": 4967.91, "unit": "Tonnes CO2e", "label": "Building operation (Total)"},
+        {"value": 61.81, "unit": "Tonnes CO2e", "label": "Company vehicles and vessels (Hong Kong only; MC and Total N/A)"}
+      ],
+      "2018": [
+        {"value": 3062.65, "unit": "Tonnes CO2e", "label": "Building operation (Total)"},
+        {"value": 41.45, "unit": "Tonnes CO2e", "label": "Company vehicles and vessels (Hong Kong only; MC and Total N/A)"}
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2016": [
+        {"value": 209034.43, "unit": "Tonnes CO2e", "label": "Building operation (Total)"}
+      ],
+      "2017": [
+        {"value": 231363.82, "unit": "Tonnes CO2e", "label": "Building operation (Total)"}
+      ],
+      "2018": [
+        {"value": 271239.53, "unit": "Tonnes CO2e", "label": "Building operation (Total)"}
+      ]
+    },
+    "scope_3": {
+      "2016": [
+        {"value": 449.99, "unit": "Tonnes CO2e", "label": "Business air travel (Total)"}
+      ],
+      "2017": [
+        {"value": 739.83, "unit": "Tonnes CO2e", "label": "Business air travel (Total)"}
+      ],
+      "2018": [
+        {"value": 838.22, "unit": "Tonnes CO2e", "label": "Business air travel (Total)"}
+      ]
+    }
+  }
+}

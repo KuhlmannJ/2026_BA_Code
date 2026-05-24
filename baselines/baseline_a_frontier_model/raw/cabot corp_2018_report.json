@@ -1,0 +1,18 @@
+{
+  "report_name": "cabot_corp_2018_report",
+  "report_title": "Cabot Corporation 2018 Sustainability Report",
+  "emissions": {
+    "scope_1": {
+      "2016": [{"value": 4.50, "unit": "MM MT CO2e", "label": "Scope 1 absolute emissions"}],
+      "2017": [{"value": 4.58, "unit": "MM MT CO2e", "label": "Scope 1 absolute emissions"}],
+      "2018": [{"value": 4.77, "unit": "MM MT CO2e", "label": "Scope 1 absolute emissions"}]
+    },
+    "scope_2_location_based": {
+      "2016": [{"value": 0.34, "unit": "MM MT CO2e", "label": "Scope 2 absolute emissions (methodology not specified as market- or location-based)"}],
+      "2017": [{"value": 0.33, "unit": "MM MT CO2e", "label": "Scope 2 absolute emissions (methodology not specified as market- or location-based)"}],
+      "2018": [{"value": 0.32, "unit": "MM MT CO2e", "label": "Scope 2 absolute emissions (methodology not specified as market- or location-based)"}]
+    },
+    "scope_2_market_based": {},
+    "scope_3": {}
+  }
+}

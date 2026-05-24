@@ -1,0 +1,18 @@
+{
+  "report_name": "cardinal_energy_ltd_2021_report",
+  "report_title": "Environmental, Social & Governance Report 2021",
+  "emissions": {
+    "scope_1": {
+      "2021": [{"value": 231, "unit": "10^3 tonnes CO2e", "label": "Direct GHG emissions"}],
+      "2020": [{"value": 160, "unit": "10^3 tonnes CO2e", "label": "Direct GHG emissions"}],
+      "2019": [{"value": 188, "unit": "10^3 tonnes CO2e", "label": "Direct GHG emissions"}]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2021": [{"value": 228, "unit": "10^3 tonnes CO2e", "label": "Indirect GHG emissions"}],
+      "2020": [{"value": 259, "unit": "10^3 tonnes CO2e", "label": "Indirect GHG emissions"}],
+      "2019": [{"value": 277, "unit": "10^3 tonnes CO2e", "label": "Indirect GHG emissions"}]
+    },
+    "scope_3": {}
+  }
+}

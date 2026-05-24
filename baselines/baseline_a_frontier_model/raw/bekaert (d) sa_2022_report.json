@@ -1,0 +1,54 @@
+{
+  "report_name": "bekaert__d__sa_2022_report",
+  "report_title": "Bekaert Integrated Annual Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {"value": 294799, "unit": "ton CO2", "label": "Excluding JVs (natural gas & LPG + fuel)"},
+        {"value": 338420, "unit": "ton CO2", "label": "Including JVs (natural gas & LPG + fuel)"}
+      ],
+      "2020": [
+        {"value": 271230, "unit": "ton CO2", "label": "Excluding JVs (natural gas & LPG + fuel)"},
+        {"value": 313527, "unit": "ton CO2", "label": "Including JVs (natural gas & LPG + fuel)"}
+      ],
+      "2021": [
+        {"value": 284910, "unit": "ton CO2", "label": "Excluding JVs (natural gas & LPG + fuel)"},
+        {"value": 336201, "unit": "ton CO2", "label": "Including JVs (natural gas & LPG + fuel)"}
+      ],
+      "2022": [
+        {"value": 269969, "unit": "ton CO2", "label": "Excluding JVs (natural gas & LPG + fuel)"},
+        {"value": 316951, "unit": "ton CO2", "label": "Including JVs (natural gas & LPG + fuel)"}
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [
+        {"value": 1363060, "unit": "ton CO2", "label": "Excluding JVs (electricity + purchased heat + purchased steam)"},
+        {"value": 1403419, "unit": "ton CO2", "label": "Including JVs (electricity + purchased heat + purchased steam)"}
+      ],
+      "2020": [
+        {"value": 1236847, "unit": "ton CO2", "label": "Excluding JVs (electricity + purchased heat + purchased steam)"},
+        {"value": 1270040, "unit": "ton CO2", "label": "Including JVs (electricity + purchased heat + purchased steam)"}
+      ],
+      "2021": [
+        {"value": 1362345, "unit": "ton CO2", "label": "Excluding JVs (electricity + purchased heat + purchased steam)"},
+        {"value": 1416700, "unit": "ton CO2", "label": "Including JVs (electricity + purchased heat + purchased steam)"}
+      ],
+      "2022": [
+        {"value": 1241018, "unit": "ton CO2", "label": "Excluding JVs (electricity + purchased heat + purchased steam)"},
+        {"value": 1289630, "unit": "ton CO2", "label": "Including JVs (electricity + purchased heat + purchased steam)"}
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {
+      "2019": [
+        {"value": 6045636, "unit": "ton CO2e", "label": "Total Scope 3 emissions (incl. JVs); 2019 SBT reference year"}
+      ],
+      "2021": [
+        {"value": 6736962, "unit": "ton CO2e", "label": "Total Scope 3 emissions (incl. JVs)"}
+      ],
+      "2022": [
+        {"value": 6187086, "unit": "ton CO2e", "label": "Total Scope 3 emissions (incl. JVs)"}
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "report_name": "georg_fischer_ag_2018_report",
+  "report_title": "Sustainability Report 2018 - Acting sustainably",
+  "emissions": {
+    "scope_1": {
+      "2018": [{"value": 312, "unit": "1'000 tonnes", "label": "Scope 1 (Direct emissions: energy consumption); 2018 reflects 11 months effective consumption for divested Singen and Mettmann sites"}],
+      "2017": [
+        {"value": 325, "unit": "1'000 tonnes", "label": "Scope 1 (Direct emissions: energy consumption); 2017 reported"},
+        {"value": 304, "unit": "1'000 tonnes", "label": "Scope 1 (Direct emissions: energy consumption); 2017 pro rata (adjusted for divested sites)"}
+      ],
+      "2016": [{"value": 307, "unit": "1'000 tonnes", "label": "Scope 1 (Direct emissions: energy consumption)"}],
+      "2015": [{"value": 313, "unit": "1'000 tonnes", "label": "Scope 1 (Direct emissions: energy consumption)"}],
+      "2014": [{"value": 313, "unit": "1'000 tonnes", "label": "Scope 1 (Direct emissions: energy consumption)"}]
+    },
+    "scope_2_market_based": {
+      "2018": [{"value": 312, "unit": "1'000 tonnes", "label": "Scope 2 (Indirect emissions: electricity and district heating); reflects purchase of green energy certificates/Guarantees of Origin; 2018 reflects 11 months effective consumption for divested sites"}],
+      "2017": [
+        {"value": 337, "unit": "1'000 tonnes", "label": "Scope 2 (Indirect emissions: electricity and district heating); 2017 reported"},
+        {"value": 330, "unit": "1'000 tonnes", "label": "Scope 2 (Indirect emissions: electricity and district heating); 2017 pro rata (adjusted for divested sites)"}
+      ],
+      "2016": [{"value": 299, "unit": "1'000 tonnes", "label": "Scope 2 (Indirect emissions: electricity and district heating)"}],
+      "2015": [{"value": 264, "unit": "1'000 tonnes", "label": "Scope 2 (Indirect emissions: electricity and district heating)"}],
+      "2014": [{"value": 264, "unit": "1'000 tonnes", "label": "Scope 2 (Indirect emissions: electricity and district heating)"}]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {
+      "2018": [{"value": 6, "unit": "1'000 tonnes", "label": "Scope 3 (Indirect emissions: business travel); 2018 reflects 11 months effective consumption for divested sites"}],
+      "2017": [
+        {"value": 7, "unit": "1'000 tonnes", "label": "Scope 3 (Indirect emissions: business travel); 2017 reported"},
+        {"value": 7, "unit": "1'000 tonnes", "label": "Scope 3 (Indirect emissions: business travel); 2017 pro rata (adjusted for divested sites)"}
+      ],
+      "2016": [{"value": 4, "unit": "1'000 tonnes", "label": "Scope 3 (Indirect emissions: business travel)"}],
+      "2015": [{"value": 3, "unit": "1'000 tonnes", "label": "Scope 3 (Indirect emissions: business travel)"}],
+      "2014": [{"value": 3, "unit": "1'000 tonnes", "label": "Scope 3 (Indirect emissions: business travel)"}]
+    }
+  }
+}

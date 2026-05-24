@@ -1,0 +1,19 @@
+{
+  "report_name": "blackline_safety_2021_report",
+  "report_title": "2021 Environmental, Social and Governance Report",
+  "emissions": {
+    "scope_1": {
+      "2021": [{"value": 215.0, "unit": "MT CO2e", "label": "Scope 1"}],
+      "2020": [{"value": 165.6, "unit": "MT CO2e", "label": "Scope 1"}]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2021": [{"value": 576.0, "unit": "MT CO2e", "label": "Scope 2 (location-based)"}],
+      "2020": [{"value": 227.4, "unit": "MT CO2e", "label": "Scope 2 (location-based)"}]
+    },
+    "scope_3": {
+      "2021": [{"value": 1606.2, "unit": "MT CO2e", "label": "Scope 3 (categories 3, 6, 7; spend-based)"}],
+      "2020": [{"value": 1661.2, "unit": "MT CO2e", "label": "Scope 3 (categories 3, 6, 7; spend-based)"}]
+    }
+  }
+}

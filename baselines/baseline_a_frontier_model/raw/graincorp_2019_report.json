@@ -1,0 +1,15 @@
+{
+  "report_name": "graincorp_2019_report",
+  "report_title": "GrainCorp Limited Sustainability Report 2019",
+  "emissions": {
+    "scope_1": {
+      "FY16": [{"value": 235772, "unit": "tCO2-e", "label": "Scope 1 GHG Emissions"}],
+      "FY17": [{"value": 216108, "unit": "tCO2-e", "label": "Scope 1 GHG Emissions"}],
+      "FY18": [{"value": 211316, "unit": "tCO2-e", "label": "Scope 1 GHG Emissions"}],
+      "FY19": [{"value": 211400, "unit": "tCO2-e", "label": "Scope 1 GHG Emissions"}]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {},
+    "scope_3": {}
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "report_name": "Fresenius_SE_2019_report",
+    "report_title": "Fresenius Annual Report 2019",
+    "emissions": {
+        "scope_1": {
+            "2019": [{"value": 517, "unit": "t CO2 equivalents in thousands", "label": "Fresenius Group total"}],
+            "2018": [{"value": 521, "unit": "t CO2 equivalents in thousands", "label": "Fresenius Group total"}],
+            "2017": [{"value": 174, "unit": "t CO2 equivalents in thousands", "label": "Fresenius Kabi (no Group total available for 2017)"},
+                     {"value": 103, "unit": "t CO2 equivalents in thousands", "label": "Fresenius Helios (no Group total available for 2017)"},
+                     {"value": 3, "unit": "t CO2 equivalents in thousands", "label": "Fresenius Vamed (no Group total available for 2017)"}]
+        },
+        "scope_2_market_based": {},
+        "scope_2_location_based": {
+            "2019": [{"value": 992, "unit": "t CO2 equivalents in thousands", "label": "Fresenius Group total (reported only as 'Scope 2'; method not specified, GHG calculated from energy data)"}],
+            "2018": [{"value": 1013, "unit": "t CO2 equivalents in thousands", "label": "Fresenius Group total (reported only as 'Scope 2'; method not specified, GHG calculated from energy data)"}],
+            "2017": [{"value": 248, "unit": "t CO2 equivalents in thousands", "label": "Fresenius Kabi (no Group total available for 2017; reported only as 'Scope 2')"},
+                     {"value": 152, "unit": "t CO2 equivalents in thousands", "label": "Fresenius Helios (no Group total available for 2017; reported only as 'Scope 2')"},
+                     {"value": 6, "unit": "t CO2 equivalents in thousands", "label": "Fresenius Vamed (no Group total available for 2017; reported only as 'Scope 2')"}]
+        },
+        "scope_3": {}
+    }
+}

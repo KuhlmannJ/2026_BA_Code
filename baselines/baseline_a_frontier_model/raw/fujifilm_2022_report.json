@@ -1,0 +1,30 @@
+{
+  "report_name": "fujifilm_2022_report",
+  "report_title": "FUJIFILM Holdings Corporation Sustainability Report 2022",
+  "emissions": {
+    "scope_1": {
+      "FY2017": [{"value": 687, "unit": "kt CO2e", "label": "Total direct GHG emissions (Scope 1), Fujifilm Group Total"}],
+      "FY2018": [{"value": 672, "unit": "kt CO2e", "label": "Total direct GHG emissions (Scope 1), Fujifilm Group Total"}],
+      "FY2019": [{"value": 633, "unit": "kt CO2e", "label": "Total direct GHG emissions (Scope 1), Fujifilm Group Total"}],
+      "FY2020": [{"value": 603, "unit": "kt CO2e", "label": "Total direct GHG emissions (Scope 1), Fujifilm Group Total"}],
+      "FY2021": [{"value": 633, "unit": "kt CO2e", "label": "Total direct GHG emissions (Scope 1), Fujifilm Group Total"}]
+    },
+    "scope_2_market_based": {
+      "FY2017": [{"value": 531, "unit": "kt CO2e", "label": "Total indirect GHG emissions (Scope 2) Market-based, Fujifilm Group Total"}],
+      "FY2018": [{"value": 510, "unit": "kt CO2e", "label": "Total indirect GHG emissions (Scope 2) Market-based, Fujifilm Group Total"}],
+      "FY2019": [{"value": 451, "unit": "kt CO2e", "label": "Total indirect GHG emissions (Scope 2) Market-based, Fujifilm Group Total"}],
+      "FY2020": [{"value": 409, "unit": "kt CO2e", "label": "Total indirect GHG emissions (Scope 2) Market-based, Fujifilm Group Total"}],
+      "FY2021": [{"value": 420, "unit": "kt CO2e", "label": "Total indirect GHG emissions (Scope 2) Market-based, Fujifilm Group Total"}]
+    },
+    "scope_2_location_based": {
+      "FY2017": [{"value": 593, "unit": "kt CO2e", "label": "Total indirect GHG emissions (Scope 2) Location-based, Fujifilm Group Total"}],
+      "FY2018": [{"value": 576, "unit": "kt CO2e", "label": "Total indirect GHG emissions (Scope 2) Location-based, Fujifilm Group Total"}],
+      "FY2019": [{"value": 514, "unit": "kt CO2e", "label": "Total indirect GHG emissions (Scope 2) Location-based, Fujifilm Group Total"}],
+      "FY2020": [{"value": 475, "unit": "kt CO2e", "label": "Total indirect GHG emissions (Scope 2) Location-based, Fujifilm Group Total"}],
+      "FY2021": [{"value": 494, "unit": "kt CO2e", "label": "Total indirect GHG emissions (Scope 2) Location-based, Fujifilm Group Total"}]
+    },
+    "scope_3": {
+      "FY2021": [{"value": 3473, "unit": "kt CO2e", "label": "Scope 3 Total (all categories), Fujifilm Group"}]
+    }
+  }
+}

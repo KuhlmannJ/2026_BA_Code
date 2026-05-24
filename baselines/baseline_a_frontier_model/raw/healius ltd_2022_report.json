@@ -1,0 +1,16 @@
+{
+  "report_name": "healius_ltd_2022_report",
+  "report_title": "Healius Limited Sustainability Report 2022 - Connected Healthcare",
+  "emissions": {
+    "scope_1": {
+      "FY 2022": [{"value": 6533, "unit": "tonnes", "label": "Scope 1 (fleet operations)"}],
+      "FY 2021": [{"value": 6602, "unit": "tonnes", "label": "Scope 1 (fleet operations)"}]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "FY 2022": [{"value": 25610, "unit": "tonnes", "label": "Scope 2 (purchased electricity from grid)"}],
+      "FY 2021": [{"value": 27038, "unit": "tonnes", "label": "Scope 2 (purchased electricity from grid)"}]
+    },
+    "scope_3": {}
+  }
+}
