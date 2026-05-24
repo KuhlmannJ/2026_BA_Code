@@ -1,0 +1,22 @@
+{
+  "report_name": "kilroy_realty_2017_report",
+  "report_title": "2017 Sustainability Report",
+  "emissions": {
+    "scope_1": {
+      "2016": [
+        {"value": 4059, "unit": "Tonnes", "label": "Whole Portfolio absolute Scope 1 (Office + Life Sciences)"}
+      ],
+      "2017": [
+        {"value": 4641, "unit": "Tonnes", "label": "Whole Portfolio absolute Scope 1 (Office + Life Sciences)"}
+      ]
+    },
+    "scope_2_location_based": {
+      "2016": [
+        {"value": 44145, "unit": "Tonnes", "label": "Whole Portfolio absolute Scope 2 (Office + Life Sciences)"}
+      ],
+      "2017": [
+        {"value": 42947, "unit": "Tonnes", "label": "Whole Portfolio absolute Scope 2 (Office + Life Sciences)"}
+      ]
+    }
+  }
+}

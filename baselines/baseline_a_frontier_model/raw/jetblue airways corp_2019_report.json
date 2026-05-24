@@ -1,0 +1,59 @@
+{
+  "report_name": "jetblue_airways_corp_2019_report",
+  "report_title": "Inspiring Humanity — 2019 Abbreviated ESG Report",
+  "emissions": {
+    "scope_1": {
+      "2015": [
+        {"value": 6903710, "unit": "tCO2e", "label": "Direct (Scope 1) consolidated total"}
+      ],
+      "2016": [
+        {"value": 7491616, "unit": "tCO2e", "label": "Direct (Scope 1) subtotal, from Absolute Scope 1, 2 & 3 Emissions table"},
+        {"value": 7484799, "unit": "tCO2e", "label": "Direct (Scope 1) total, from JetBlue Carbon Footprint table"}
+      ],
+      "2017": [
+        {"value": 7809488, "unit": "tCO2e", "label": "Direct (Scope 1) consolidated total"}
+      ],
+      "2018": [
+        {"value": 8370944, "unit": "tCO2e", "label": "Direct (Scope 1) consolidated total"}
+      ],
+      "2019": [
+        {"value": 8730756, "unit": "tCO2e", "label": "Direct (Scope 1) consolidated total"}
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2015": [
+        {"value": 25768, "unit": "tCO2e", "label": "Indirect Energy (Scope 2), Purchased Electricity; reported as 'Scope 2' without market/location distinction"}
+      ],
+      "2016": [
+        {"value": 27702, "unit": "tCO2e", "label": "Indirect Energy (Scope 2), Purchased Electricity; reported as 'Scope 2' without market/location distinction"}
+      ],
+      "2017": [
+        {"value": 26521, "unit": "tCO2e", "label": "Indirect Energy (Scope 2), Purchased Electricity; reported as 'Scope 2' without market/location distinction"}
+      ],
+      "2018": [
+        {"value": 26656, "unit": "tCO2e", "label": "Indirect Energy (Scope 2), Purchased Electricity; reported as 'Scope 2' without market/location distinction"}
+      ],
+      "2019": [
+        {"value": 25944, "unit": "tCO2e", "label": "Indirect Energy (Scope 2), Purchased Electricity; reported as 'Scope 2' without market/location distinction"}
+      ]
+    },
+    "scope_3": {
+      "2015": [
+        {"value": 1402791, "unit": "tCO2e", "label": "Indirect (Scope 3) consolidated subtotal"}
+      ],
+      "2016": [
+        {"value": 1522142, "unit": "tCO2e", "label": "Indirect (Scope 3) consolidated subtotal"}
+      ],
+      "2017": [
+        {"value": 1586368, "unit": "tCO2e", "label": "Indirect (Scope 3) consolidated subtotal"}
+      ],
+      "2018": [
+        {"value": 1698105, "unit": "tCO2e", "label": "Indirect (Scope 3) consolidated subtotal"}
+      ],
+      "2019": [
+        {"value": 1772985, "unit": "tCO2e", "label": "Indirect (Scope 3) consolidated subtotal"}
+      ]
+    }
+  }
+}

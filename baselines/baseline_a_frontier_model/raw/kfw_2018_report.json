@@ -1,0 +1,52 @@
+{
+  "report_name": "kfw_2018_report",
+  "report_title": "Dialogue. Discourse. Data. | Sustainability: GRI report and non-financial report for 2018",
+  "emissions": {
+    "scope_1": {
+      "2014": [{"value": 4636, "unit": "tonnes CO2e", "label": "Emissions from direct energy consumption (Scope 1)"}],
+      "2015": [{"value": 5095, "unit": "tonnes CO2e", "label": "Emissions from direct energy consumption (Scope 1)"}],
+      "2016": [{"value": 5260, "unit": "tonnes CO2e", "label": "Emissions from direct energy consumption (Scope 1)"}],
+      "2017": [{"value": 5616, "unit": "tonnes CO2e", "label": "Emissions from direct energy consumption (Scope 1)"}],
+      "2018": [{"value": 5571, "unit": "tonnes CO2e", "label": "Emissions from direct energy consumption (Scope 1)"}]
+    },
+    "scope_2_market_based": {
+      "2014": [{"value": 2073, "unit": "tonnes CO2e", "label": "Emissions from indirect energy consumption (Scope 2), method not specified"}],
+      "2015": [{"value": 1097, "unit": "tonnes CO2e", "label": "Emissions from indirect energy consumption (Scope 2), method not specified"}],
+      "2016": [{"value": 1400, "unit": "tonnes CO2e", "label": "Emissions from indirect energy consumption (Scope 2), method not specified"}],
+      "2017": [
+        {"value": 1368, "unit": "tonnes CO2e", "label": "Emissions from indirect energy consumption (Scope 2), method not specified"},
+        {"value": 16257, "unit": "tonnes CO2", "label": "Total market-based (Scope 2)"}
+      ],
+      "2018": [
+        {"value": 1898, "unit": "tonnes CO2e", "label": "Emissions from indirect energy consumption (Scope 2), method not specified"},
+        {"value": 7732, "unit": "tonnes CO2", "label": "Total market-based (Scope 2)"}
+      ]
+    },
+    "scope_2_location_based": {
+      "2017": [{"value": 16592, "unit": "tonnes CO2", "label": "Total location-based (Scope 2)"}],
+      "2018": [{"value": 9564, "unit": "tonnes CO2", "label": "Total location-based (Scope 2)"}]
+    },
+    "scope_3": {
+      "2014": [
+        {"value": 9446, "unit": "tonnes CO2e", "label": "Total business travel (Scope 3)"},
+        {"value": 102, "unit": "tonnes CO2e", "label": "Events (Scope 3)"}
+      ],
+      "2015": [
+        {"value": 7394, "unit": "tonnes CO2e", "label": "Total business travel (Scope 3)"},
+        {"value": 102, "unit": "tonnes CO2e", "label": "Events (Scope 3)"}
+      ],
+      "2016": [
+        {"value": 7411, "unit": "tonnes CO2e", "label": "Total business travel (Scope 3)"},
+        {"value": 74, "unit": "tonnes CO2e", "label": "Events (Scope 3)"}
+      ],
+      "2017": [
+        {"value": 8208, "unit": "tonnes CO2e", "label": "Total business travel (Scope 3)"},
+        {"value": 87, "unit": "tonnes CO2e", "label": "Events (Scope 3)"}
+      ],
+      "2018": [
+        {"value": 8665, "unit": "tonnes CO2e", "label": "Total business travel (Scope 3)"},
+        {"value": 101, "unit": "tonnes CO2e", "label": "Events (Scope 3)"}
+      ]
+    }
+  }
+}

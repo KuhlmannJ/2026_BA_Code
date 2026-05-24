@@ -1,0 +1,12 @@
+{
+  "report_name": "innospec_inc_2020_report",
+  "report_title": "2020 Responsible Business Report",
+  "emissions": {
+    "scope_1": {},
+    "scope_2_market_based": {
+      "2020": [{"value": 0, "unit": "metric tonnes CO2 equivalent", "label": "Scope 2 GHG emissions from electricity at manufacturing sites (now zero due to 100% renewable electricity, market-based)"}]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {}
+  }
+}
