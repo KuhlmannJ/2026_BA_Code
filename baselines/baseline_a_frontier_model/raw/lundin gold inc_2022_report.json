@@ -1,0 +1,34 @@
+{
+  "report_name": "lundin_gold_inc_2022_report",
+  "report_title": "Lundin Gold 2022 Sustainability Report",
+  "emissions": {
+    "scope_1": {
+      "2022": [
+        {"value": 24024, "unit": "tCO2e", "label": "Total Scope 1 (FDN, exploration, Ecuador and Vancouver offices)"}
+      ],
+      "2021": [
+        {"value": 25354, "unit": "tCO2e", "label": "Total Scope 1 (recalculated baseline year)"},
+        {"value": 25399, "unit": "tCO2e", "label": "Total Scope 1 (previously reported baseline)"}
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2022": [
+        {"value": 5576, "unit": "tCO2e", "label": "Total Scope 2 (average grid emission factor)"}
+      ],
+      "2021": [
+        {"value": 5413, "unit": "tCO2e", "label": "Total Scope 2 (recalculated baseline year, average emission factor)"},
+        {"value": 24170, "unit": "tCO2e", "label": "Total Scope 2 (previously reported baseline, marginal grid factor)"}
+      ]
+    },
+    "scope_3": {
+      "2022": [
+        {"value": 166742, "unit": "tCO2e", "label": "Total Scope 3"}
+      ],
+      "2021": [
+        {"value": 193764, "unit": "tCO2e", "label": "Total Scope 3 (recalculated)"},
+        {"value": 746750, "unit": "tCO2e", "label": "Total Scope 3 (previously reported)"}
+      ]
+    }
+  }
+}
