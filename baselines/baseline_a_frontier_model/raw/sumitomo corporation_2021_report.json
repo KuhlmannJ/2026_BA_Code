@@ -1,0 +1,51 @@
+{
+  "report_name": "sumitomo_corporation_2021_report",
+  "report_title": "ESG Communication Book 2021",
+  "emissions": {
+    "scope_1": {
+      "FY2017": [
+        {"value": 934276, "unit": "t-CO2e", "label": "Scope1 <Energy-related CO2> (Consolidated); Scope1 <other GHGs> not reported"}
+      ],
+      "FY2018": [
+        {"value": 939346, "unit": "t-CO2e", "label": "Scope1 <Energy-related CO2> (Consolidated)"},
+        {"value": 0, "unit": "t-CO2e", "label": "Scope1 <other GHGs> (Consolidated)"}
+      ],
+      "FY2019": [
+        {"value": 791730, "unit": "t-CO2e", "label": "Scope1 <Energy-related CO2> (Consolidated)"},
+        {"value": 0, "unit": "t-CO2e", "label": "Scope1 <other GHGs> (Consolidated)"}
+      ],
+      "FY2020": [
+        {"value": 1526724, "unit": "t-CO2e", "label": "Scope1 total (Consolidated); breakdown CO2 1,522,514 + N2O 4,210"}
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "FY2017": [
+        {"value": 752378, "unit": "t-CO2e", "label": "Scope2 (Consolidated); market/location method not separately disclosed"}
+      ],
+      "FY2018": [
+        {"value": 630412, "unit": "t-CO2e", "label": "Scope2 (Consolidated); market/location method not separately disclosed"}
+      ],
+      "FY2019": [
+        {"value": 683156, "unit": "t-CO2e", "label": "Scope2 (Consolidated); market/location method not separately disclosed"}
+      ],
+      "FY2020": [
+        {"value": 652611, "unit": "t-CO2e", "label": "Scope2 (Consolidated); market/location method not separately disclosed"}
+      ]
+    },
+    "scope_3": {
+      "FY2017": [
+        {"value": 73980, "unit": "t-CO2e", "label": "Scope3 total (Non-consolidated in Japan)"}
+      ],
+      "FY2018": [
+        {"value": 71320, "unit": "t-CO2e", "label": "Scope3 total (Non-consolidated in Japan)"}
+      ],
+      "FY2019": [
+        {"value": 62187, "unit": "t-CO2e", "label": "Scope3 total (Non-consolidated in Japan)"}
+      ],
+      "FY2020": [
+        {"value": 34381, "unit": "t-CO2e", "label": "Scope3 total (Non-consolidated in Japan)"}
+      ]
+    }
+  }
+}
