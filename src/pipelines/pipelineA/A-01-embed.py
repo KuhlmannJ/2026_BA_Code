@@ -32,7 +32,7 @@ def banner(title):
 MODEL_NAME = "vidore/colpali-v1.3"
 
 # Path To All and List Of All Paths to ESG-Reports
-PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/esg_reports_tests") if args.t else Path("/scratch/tmp/jkuhlma1/data/esg_reports")
+PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/esg_reports_test") if args.t else Path("/scratch/tmp/jkuhlma1/data/esg_reports")
 PDF_LIST = list(PDF_DIR.glob("*.pdf"))
 
 # Just checking ...
