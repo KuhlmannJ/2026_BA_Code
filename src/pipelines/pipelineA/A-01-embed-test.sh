@@ -4,15 +4,15 @@
 #SBATCH --ntasks-per-node=1         # the number of tasks/processes per node
 
 #SBATCH --gres=gpu:1
-#SBATCH --mem=8G
-#SBATCH --cpus-per-task=4           # the number cpus per task
-#SBATCH --partition=gpuh200mini     # on which partition to submit the job
-#SBATCH --time=00:40:00             # the max wallclock time (time limit your job will run)
+#SBATCH --mem=50G
+#SBATCH --cpus-per-task=8           # the number cpus per task
+#SBATCH --partition=gpua100         # on which partition to submit the job
+#SBATCH --time=00:10:00             # the max wallclock time (time limit your job will run)
 
 #SBATCH --output=/scratch/tmp/jkuhlma1/logs/%j_out.log    # stdout → Datei (%j = Job-ID)
 #SBATCH --error=/scratch/tmp/jkuhlma1/logs/%j_err.log     # stderr → Datei
 
-#SBATCH --job-name=A-01-embed
+#SBATCH --job-name=A-01-embed-test
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=jannik.kuhlmann@uni-muenster.de 
 
@@ -28,4 +28,4 @@ source $HOME/venvs/colpali-20260517/bin/activate
 export HF_HOME=$WORK/cache/huggingface 
 
 # START THE APPLICATION
-python $HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed.py
+python $HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed.py -t
