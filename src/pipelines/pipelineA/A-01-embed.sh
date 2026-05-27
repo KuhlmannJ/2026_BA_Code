@@ -22,7 +22,7 @@ ml GCCcore/13.3.0
 ml Python/3.12.3
 
 # SOURCE PYTHON VENV
-source $HOME/venvs/colpali-20260517/bin/activate
+source $HOME/venvs/colpali-a100/bin/activate
 
 # SET EXISTING CHACHE
 export HF_HOME=$WORK/cache/huggingface 
