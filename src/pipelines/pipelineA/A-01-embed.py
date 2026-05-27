@@ -35,6 +35,10 @@ MODEL_NAME = "vidore/colpali-v1.3"
 PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/esg_reports_tests") if args.t else Path("/scratch/tmp/jkuhlma1/data/esg_reports")
 PDF_LIST = list(PDF_DIR.glob("*.pdf"))
 
+# Just checking ...
+if not PDF_LIST:
+    raise FileNotFoundError(f"Keine PDFs in {PDF_DIR}")
+
 BATCH_SIZE = 8 #8 seems to work well on H200mini nodes
 DPI = 150 # Often chosen size for vector-based PDF
 
