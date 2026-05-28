@@ -76,6 +76,7 @@ banner("STEP 3: PDF to Image")
 pdf_img_dict = {}
 
 for pdf_path in PDF_LIST :
+    fitz.TOOLS.reset_mupdf_warnings()  # Clear Buffer
     
     current_pdf_imgages = []
     
@@ -86,8 +87,12 @@ for pdf_path in PDF_LIST :
             img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
             current_pdf_imgages.append(img)
     
+    # Need to do more error handling
+    warnings = fitz.TOOLS.mupdf_warnings()
+    if warnings:
+        print(f"  [WARN] {pdf_path.name}: {warnings}")
     # More logging       
-    print(f"{pdf_path} vollständig verarbeitet.")
+    print(f"{pdf_path.stem} vollständig verarbeitet.")
             
     ### HIER könnte jetzt auch 4. einsetzen ...
     
