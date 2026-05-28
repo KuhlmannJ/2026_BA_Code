@@ -5,7 +5,7 @@
 
 #SBATCH --gres=gpu:1
 #SBATCH --mem=50G
-#SBATCH --cpus-per-task=8           # the number cpus per task
+#SBATCH --cpus-per-task=4           # the number cpus per task
 #SBATCH --partition=gpua100     # on which partition to submit the job
 #SBATCH --time=00:40:00             # the max wallclock time (time limit your job will run)
 

@@ -85,6 +85,9 @@ for pdf_path in PDF_LIST :
             pix = page.get_pixmap(dpi = DPI, alpha=False) # If PDf is RGBA (transparent)
             img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
             current_pdf_imgages.append(img)
+    
+    # Mehr logging       
+    print(f"{pdf_path} vollständig verarbeitet")
             
     ### HIER könnte jetzt auch 4. einsetzen ...
     
