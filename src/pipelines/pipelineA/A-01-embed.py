@@ -86,8 +86,8 @@ for pdf_path in PDF_LIST :
             img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
             current_pdf_imgages.append(img)
     
-    # Mehr logging       
-    print(f"{pdf_path} vollständig verarbeitet")
+    # More logging       
+    print(f"{pdf_path} vollständig verarbeitet.")
             
     ### HIER könnte jetzt auch 4. einsetzen ...
     
