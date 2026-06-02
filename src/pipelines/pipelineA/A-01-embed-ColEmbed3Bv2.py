@@ -1,21 +1,17 @@
-import requests
-from PIL import Image
+# Is in colembed script, but why?
 from io import BytesIO
+
 import torch
 from transformers import AutoModel
-from transformers.image_utils import load_image
 
-import time
-import os
 import argparse
-import torch
-import fitz  # pymupdf
-
-from dotenv import load_dotenv, find_dotenv
 from pathlib import Path
+
+import fitz  # pymupdf
 from PIL import Image
 
 # Loading API-Keys and Tokens via local .env
+from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
 # ── Arguments for Dev'ing
