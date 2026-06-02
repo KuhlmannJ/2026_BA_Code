@@ -6,6 +6,8 @@ from transformers import AutoModel
 
 import argparse
 from pathlib import Path
+import psutil
+import os
 
 import fitz  # pymupdf
 from PIL import Image
@@ -49,10 +51,13 @@ SAVE_DIR = Path("/scratch/tmp/jkuhlma1/data/embeddings/embeddings_colembed_3b_v2
 # May ommit ...
 #### 1. GPU Details #############################################
 banner("STEP 1: GPU / CUDA")
+props      = torch.cuda.get_device_properties(0)
 gpu_name   = torch.cuda.get_device_name(0)
-vram_total = torch.cuda.get_device_properties(0).total_memory / 1e9
+vram_total = props.total_memory / 1e9
+gpu_uuid   = props.uuid
 print(f"  GPU  : {gpu_name}")
 print(f"  VRAM : {vram_total:.1f} GB")
+print(f"  UUID : {gpu_uuid}")
 # May ommit ...
 
 
@@ -61,7 +66,7 @@ model = AutoModel.from_pretrained(
     MODEL_NAME,
     device_map='cuda:0',
     trust_remote_code=True,
-    dtype=torch.bfloat16 # torch_dtype → dtype => "torch_dtype` is deprecated! Use `dtype` instead!" 
+    dtype=torch.bfloat16 # torch_dtype → dtype => "torch_dtype` is deprecated" 
     #    attn_implementation=ATTN_IMPL
 ).eval()
 
@@ -70,6 +75,8 @@ print(f"  VRAM belegt: {torch.cuda.max_memory_allocated() / 1e9:.1f} GB")
 
 #### 3. PDF to Image direct into Embedding ############################################
 banner("STEP 3: PDF to Image to Embedding")
+
+process = psutil.Process(os.getpid())
 
 # Global VRAM Peak over all reports
 global_peak_gb  = 0.0
@@ -102,10 +109,12 @@ for pdf_path in PDF_LIST :
     with torch.no_grad():
         report_embeddings = model.forward_images(current_pdf_imgages, batch_size=BATCH_SIZE)
     
+    peak_ram_gb = process.memory_info().rss / 1e9
+    peak_gb = torch.cuda.max_memory_allocated() / 1e9
+    
     # Dump from RAM
     del current_pdf_imgages
     
-    peak_gb = torch.cuda.max_memory_allocated() / 1e9
     if peak_gb > global_peak_gb:
         global_peak_gb  = peak_gb
         global_peak_rep = report_name
@@ -118,7 +127,8 @@ for pdf_path in PDF_LIST :
     
     # VRAM-Peak for each report
     print(f"Tensor list for {report_name} saved. "
-          f"({len(report_embeddings)} pages | Peak-VRAM: {peak_gb:.1f} GB)")
+          f"({len(report_embeddings)} pages | Peak-VRAM: {peak_gb:.1f} GB)"
+          f"  RAM : {peak_ram_gb:.1f} GB")
     
     
 print(f"All Tensors saved to {SAVE_DIR}")
