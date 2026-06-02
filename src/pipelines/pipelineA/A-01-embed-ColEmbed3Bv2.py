@@ -4,11 +4,13 @@ from io import BytesIO
 import torch
 from transformers import AutoModel
 
+# For Logging
 import argparse
-from pathlib import Path
 import psutil
 import os
+import time
 
+from pathlib import Path
 import fitz  # pymupdf
 from PIL import Image
 
@@ -103,14 +105,18 @@ for pdf_path in PDF_LIST :
     if warnings:
         print(f"  [WARN] {pdf_path.name}: {warnings}")
     # More logging       
-    print(f"{report_name} vollständig verarbeitet.")
+    print(f"Complete: From PDF 2 Image {report_name}.")
             
     
     ##### Embedding #######################
     torch.cuda.reset_peak_memory_stats()
     
+    t0 = time.time()
+    
     with torch.no_grad():
         report_embeddings = model.forward_images(current_pdf_imgages, batch_size=BATCH_SIZE)
+        
+    elapsed = time.time() - t0
     
     peak_ram_gb = process.memory_info().rss / 1e9
     peak_gb = torch.cuda.max_memory_allocated() / 1e9
@@ -128,10 +134,14 @@ for pdf_path in PDF_LIST :
     ## Saving every report tensor seperately
     torch.save(report_embeddings_cpu, f"{SAVE_DIR}/{report_name}.pt")
     
-    # VRAM-Peak for each report
+    # Report for each document
+    pages = len(report_embeddings)
+    print(f"Tensor list for {pdf_path.stem} saved. "
+      f"({pages} pages | {elapsed:.1f}s | {elapsed/pages:.2f}s/page | Peak-VRAM: {peak_gb:.1f} GB | RAM: {peak_ram_gb:.1f} GB)")
     print(f"Tensor list for {report_name} saved. "
           f"({len(report_embeddings)} pages | Peak-VRAM: {peak_gb:.1f} GB)"
           f"  RAM : {peak_ram_gb:.1f} GB")
+    print()
     
     
 print(f"All Tensors saved to {SAVE_DIR}")
