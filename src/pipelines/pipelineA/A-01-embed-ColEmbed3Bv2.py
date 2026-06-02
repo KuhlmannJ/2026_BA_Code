@@ -1,17 +1,3 @@
-# /// script
-# dependencies = [
-#   "torch",
-#   "transformers",
-#   "pymupdf",
-#   "Pillow",
-#   "python-dotenv",
-#   "flash-attn==2.6.3",
-#   "datasets",
-#   "polars",
-#   "pydantic",
-# ]
-# ///
-
 # Is in colembed script, but why?
 from io import BytesIO
 
@@ -75,7 +61,8 @@ model = AutoModel.from_pretrained(
     MODEL_NAME,
     device_map='cuda:0',
     trust_remote_code=True,
-    torch_dtype=torch.bfloat16#,    attn_implementation=ATTN_IMPL
+    dtype=torch.bfloat16 # torch_dtype → dtype => "torch_dtype` is deprecated! Use `dtype` instead!" 
+    #    attn_implementation=ATTN_IMPL
 ).eval()
 
 print(f"  VRAM belegt: {torch.cuda.max_memory_allocated() / 1e9:.1f} GB")
