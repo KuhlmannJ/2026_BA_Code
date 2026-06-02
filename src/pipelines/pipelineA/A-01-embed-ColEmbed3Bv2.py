@@ -75,8 +75,7 @@ model = AutoModel.from_pretrained(
     MODEL_NAME,
     device_map='cuda:0',
     trust_remote_code=True,
-    torch_dtype=torch.bfloat16,
-    attn_implementation=ATTN_IMPL
+    torch_dtype=torch.bfloat16#,    attn_implementation=ATTN_IMPL
 ).eval()
 
 print(f"  VRAM belegt: {torch.cuda.max_memory_allocated() / 1e9:.1f} GB")
