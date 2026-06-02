@@ -23,11 +23,11 @@ ml Python/3.12.3
 ml uv/0.9.5
 
 # SOURCE PYTHON VENV
-source $HOME/venvs/colpali-a100/bin/activate
+# source $HOME/venvs/colpali-a100/bin/activate
 
 # SET EXISTING CHACHE
 export HF_HOME=$WORK/cache/huggingface
 export UV_CACHE_DIR=/scratch/tmp/jkuhlma1/cache/uv
 
 # START THE APPLICATION
-python $HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed.py
+uv run $HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed-ColEmbed3Bv2.py

@@ -1,3 +1,13 @@
+# /// script
+# dependencies = [
+#   "torch",
+#   "transformers",
+#   "pymupdf",
+#   "Pillow",
+#   "python-dotenv",
+# ]
+# ///
+
 # Is in colembed script, but why?
 from io import BytesIO
 
