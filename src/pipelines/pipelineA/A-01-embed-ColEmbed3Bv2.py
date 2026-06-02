@@ -5,6 +5,7 @@
 #   "pymupdf",
 #   "Pillow",
 #   "python-dotenv",
+#   "setuptools",
 #   "flash-attn==2.6.3",
 #   "datasets",
 #   "polars",

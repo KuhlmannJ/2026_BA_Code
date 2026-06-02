@@ -20,6 +20,7 @@
 ml palma/2024a
 ml GCCcore/13.3.0
 ml Python/3.12.3
+ml CUDA/13.0.2
 ml uv/0.9.5
 
 # SOURCE PYTHON VENV
