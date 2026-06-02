@@ -18,7 +18,8 @@ load_dotenv(find_dotenv())
 
 # ── Arguments for Dev'ing
 parser = argparse.ArgumentParser()
-parser.add_argument("-t", action="store_true", help="Toggle Testing Path")
+parser.add_argument("--test", "-t", action="store_true", help="Toggle Testing Path")
+parser.add_argument("--batch_size", "-bz", type=int, default=2)
 args = parser.parse_args()
 
 #### Helping Functions ##########################################
@@ -35,14 +36,14 @@ MODEL_NAME = 'nvidia/llama-nemotron-colembed-vl-3b-v2'
 ATTN_IMPL  = "flash_attention_2"
 
 # Path To All and List Of All Paths to ESG-Reports
-PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/esg_reports_test") if args.t else Path("/scratch/tmp/jkuhlma1/data/esg_reports")
+PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/esg_reports_test") if args.test else Path("/scratch/tmp/jkuhlma1/data/esg_reports")
 PDF_LIST = list(PDF_DIR.glob("*.pdf"))
 
 # Just checking ...
 if not PDF_LIST:
     raise FileNotFoundError(f"Keine PDFs in {PDF_DIR}")
 
-BATCH_SIZE = 2 # 8 with ColPlali, but those embeddings will get bigger due to more vectors
+BATCH_SIZE = args.batch_size # 8 with ColPlali, but those embeddings will get bigger due to more vectors
 DPI = 150 # matches ColEmbed's 8-tile limit (2×4 @ 512px) for A4 pages
 
 SAVE_DIR = Path("/scratch/tmp/jkuhlma1/data/embeddings/embeddings_colembed_3b_v2")

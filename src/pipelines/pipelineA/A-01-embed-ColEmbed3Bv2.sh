@@ -4,15 +4,15 @@
 #SBATCH --ntasks-per-node=1         # the number of tasks/processes per node
 
 #SBATCH --gres=gpu:1
-#SBATCH --mem=50G
-#SBATCH --cpus-per-task=4           # the number cpus per task
-#SBATCH --partition=gpua100     # on which partition to submit the job
-#SBATCH --time=00:15:00             # the max wallclock time (time limit your job will run)
+#SBATCH --mem=64G
+#SBATCH --cpus-per-task=8           # the number cpus per task
+#SBATCH --partition=gpuh200     # on which partition to submit the job
+#SBATCH --time=01:00:00             # the max wallclock time (time limit your job will run)
 
 #SBATCH --output=/scratch/tmp/jkuhlma1/logs/%j_out.log    # stdout → Datei (%j = Job-ID)
 #SBATCH --error=/scratch/tmp/jkuhlma1/logs/%j_err.log     # stderr → Datei
 
-#SBATCH --job-name=A-01-embed
+#SBATCH --job-name=A-01-embed-ColEmbed3Bv2
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=jannik.kuhlmann@uni-muenster.de 
 
@@ -44,4 +44,4 @@ export CUDA_HOME=$EBROOTCUDA
 
 
 # START THE APPLICATION
-python $HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed-ColEmbed3Bv2.py
+python $HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed-ColEmbed3Bv2.py --batch_size 32 | tee $HOME/latest.out
