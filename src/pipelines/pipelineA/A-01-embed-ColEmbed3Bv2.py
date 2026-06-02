@@ -64,6 +64,7 @@ print(f"  UUID : {gpu_uuid}")
 
 
 #### 2. Load Retrieval Model ####################################
+banner("STEP 2: Load Retrieval Model")
 model = AutoModel.from_pretrained(
     MODEL_NAME,
     device_map='cuda:0',
@@ -71,7 +72,7 @@ model = AutoModel.from_pretrained(
     dtype=torch.bfloat16 # torch_dtype → dtype => "torch_dtype` is deprecated" 
     #    attn_implementation=ATTN_IMPL
 ).eval()
-
+print(f" Loaded: {MODEL_NAME}")
 print(f"  VRAM belegt: {torch.cuda.max_memory_allocated() / 1e9:.1f} GB")
 
 
