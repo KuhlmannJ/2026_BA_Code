@@ -68,17 +68,17 @@ model = AutoModel.from_pretrained(
 print(f"  VRAM belegt: {torch.cuda.max_memory_allocated() / 1e9:.1f} GB")
 
 
-#### 3. PDF to Image ############################################
-banner("STEP 3: PDF to Image")
-# => Das würde jetzt erstmal alle PDFs in Bilder umwandeln ...
-# Man könnte das natürlich auslagern und nur genau das PDF umwandeln, was man grad braucht ...
+#### 3. PDF to Image direct into Embedding ############################################
+banner("STEP 3: PDF to Image to Embedding")
 
-# Will be a compelte key-value dict of report names and images of the reports
-pdf_img_dict = {}
+# Global VRAM Peak over all reports
+global_peak_gb  = 0.0
+global_peak_rep = None
 
 for pdf_path in PDF_LIST :
     fitz.TOOLS.reset_mupdf_warnings()  # Clear Buffer
     
+    report_name = pdf_path.stem
     current_pdf_imgages = []
     
     with fitz.open(str(pdf_path)) as doc :
@@ -93,39 +93,24 @@ for pdf_path in PDF_LIST :
     if warnings:
         print(f"  [WARN] {pdf_path.name}: {warnings}")
     # More logging       
-    print(f"{pdf_path.stem} vollständig verarbeitet.")
+    print(f"{report_name} vollständig verarbeitet.")
             
-    ### HIER könnte jetzt auch 4. einsetzen ...
     
-    pdf_img_dict[pdf_path.stem] = current_pdf_imgages
-    
-#### 4. Create Embeddings #######################################
-banner("STEP 4: Create Embeddings")
-
-# Global VRAM Peak over all reports
-global_peak_gb  = 0.0
-global_peak_rep = None
-    
-# Iterating trough all PDFs in pdf_img_dict
-for report_name, report_imgs in pdf_img_dict.items():
-    
+    ##### Embedding #######################
     torch.cuda.reset_peak_memory_stats()
     
-    # No more intermidiate step necessary due to internal batching of ColEmbed3B-v2
-
-
-    # Forward pass – compute embeddings for images of batch
-    ### HEAVY COMPUTE ###
     with torch.no_grad():
-        report_embeddings = model.forward_images(report_imgs, batch_size=BATCH_SIZE)
-        
-    # Peak of this report
+        report_embeddings = model.forward_images(current_pdf_imgages, batch_size=BATCH_SIZE)
+    
+    # Dump from RAM
+    del current_pdf_imgages
+    
     peak_gb = torch.cuda.max_memory_allocated() / 1e9
     if peak_gb > global_peak_gb:
         global_peak_gb  = peak_gb
         global_peak_rep = report_name
-        
-    # Pro Seite auf CPU lösen und als Liste persistieren (Seitengrenzen bleiben erhalten)
+    
+    # Detaching images page-by-page from CPU and 'save' as list. Keeps pagenumbers intact.
     report_embeddings_cpu = [emb.detach().cpu() for emb in report_embeddings]
     
     ## Saving every report tensor seperately
@@ -134,7 +119,8 @@ for report_name, report_imgs in pdf_img_dict.items():
     # VRAM-Peak for each report
     print(f"Tensor list for {report_name} saved. "
           f"({len(report_embeddings)} pages | Peak-VRAM: {peak_gb:.1f} GB)")
-
+    
+    
 print(f"All Tensors saved to {SAVE_DIR}")
 
 #### 5. Summary #################################################
