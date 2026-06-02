@@ -5,6 +5,10 @@
 #   "pymupdf",
 #   "Pillow",
 #   "python-dotenv",
+#   "flash-attn==2.6.3",
+#   "datasets",
+#   "polars",
+#   "pydantic",
 # ]
 # ///
 

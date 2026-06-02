@@ -30,4 +30,4 @@ export HF_HOME=$WORK/cache/huggingface
 export UV_CACHE_DIR=/scratch/tmp/jkuhlma1/cache/uv
 
 # START THE APPLICATION
-uv run $HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed-ColEmbed3Bv2.py
+uv run --no-build-isolation $HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed-ColEmbed3Bv2.py
