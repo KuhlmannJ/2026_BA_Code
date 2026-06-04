@@ -167,12 +167,24 @@ def main() -> None:
         raw = call_claude(pdf_bytes, EXTRACTION_PROMT, client)
 
         # Step 4 — Persist
-        output_path.write_text(json.dumps({
+        clean = raw.strip()
+        if clean.startswith("```json"):
+            clean = clean[7:-3].strip()
+        elif clean.startswith("```"):
+            clean = clean[3:-3].strip()
+ 
+        output_path.write_text(
+            json.dumps(json.loads(clean), indent=2, ensure_ascii=False)
+        )
+ 
+        log_path = OUTPUT_DIR / f"{report_name}.log"
+        log_path.write_text(json.dumps({
             "report":          report_name,
             "selected_pages":  pages,
             "retrieval_query": RETRIEVAL_QUERY,
             "raw_response":    raw,
         }, indent=2, ensure_ascii=False))
+        
         print(f"         → {output_path}")
 
 
