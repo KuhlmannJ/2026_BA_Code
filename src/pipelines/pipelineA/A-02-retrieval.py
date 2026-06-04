@@ -92,11 +92,11 @@ def call_claude(pdf_bytes: bytes, prompt: str, client) -> str:
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main() -> None:
-    from dotenv import load_dotenv
     import anthropic
     from transformers import AutoModel
 
-    load_dotenv()
+    from dotenv import load_dotenv, find_dotenv
+    load_dotenv(find_dotenv())
 
     prompt_path = Path("/home/j/jkuhlma1/2026_BA_Code/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
     extraction_prompt = prompt_path.read_text()
