@@ -140,10 +140,6 @@ def main() -> None:
         report_name = pdf_path.stem
         output_path = OUTPUT_DIR / f"{report_name}.json"
 
-        if output_path.exists():
-            print(f"[SKIP] {report_name}")
-            continue
-
         if report_name not in pt_map:
             print(f"[WARN] no embedding for {report_name}")
             continue
