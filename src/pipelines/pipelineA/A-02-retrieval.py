@@ -27,6 +27,10 @@ def banner(title):
     print("=" * 60)
 
 #### 0. GLOBAL VARIABLES ########################################
+
+from dotenv import load_dotenv, find_dotenv
+load_dotenv(find_dotenv())
+
 MODEL_NAME = 'nvidia/llama-nemotron-colembed-vl-3b-v2'
 ATTN_IMPL  = "flash_attention_2"
 
