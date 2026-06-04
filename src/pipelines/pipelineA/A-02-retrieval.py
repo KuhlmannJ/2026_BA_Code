@@ -101,10 +101,7 @@ def main() -> None:
     prompt_path = Path("/home/j/jkuhlma1/2026_BA_Code/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
     extraction_prompt = prompt_path.read_text()
 
-    client = anthropic.Anthropic(
-        api_key=os.environ["ANTHROPIC_API_KEY"],
-        base_url=os.environ.get("ANTHROPIC_BASE_URL"),
-    )
+    client = anthropic.Anthropic()
 
     model = AutoModel.from_pretrained(
         "nvidia/llama-nemotron-colembed-vl-3b-v2",
