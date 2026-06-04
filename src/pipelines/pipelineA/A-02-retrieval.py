@@ -122,7 +122,7 @@ def main() -> None:
         device_map="cuda:0",
         trust_remote_code=True,
         dtype=torch.bfloat16,
-        attn_implementation=ATTN_IMPL,
+        #attn_implementation=ATTN_IMPL,
     ).eval()
     
     print(f" Loaded: {MODEL_NAME}")
