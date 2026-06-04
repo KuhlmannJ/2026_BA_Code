@@ -98,13 +98,7 @@ def main() -> None:
 
     load_dotenv()
 
-    pdf_dir    = Path(os.environ["PDF_DIR"])
-    emb_dir    = Path(os.environ["EMB_DIR"])
-    output_dir = Path(os.environ.get("OUTPUT_DIR", "raw"))
-    output_dir.mkdir(parents=True, exist_ok=True)
-    RESULT_DIR.mkdir(parents=True, exist_ok=True)
-
-    prompt_path = Path(os.environ["HOME"]) / "2026_BA_Code/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt"
+    prompt_path = Path("home/j/jkuhlma1/2026_BA_Code/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
     extraction_prompt = prompt_path.read_text()
 
     client = anthropic.Anthropic(
@@ -122,11 +116,11 @@ def main() -> None:
 
     query_embeddings = model.forward_queries([RETRIEVAL_QUERY], batch_size=1)
 
-    pt_map = {p.stem: p for p in emb_dir.glob("*.pt")}
+    pt_map = {p.stem: p for p in EMB_DIR.glob("*.pt")}
 
-    for pdf_path in sorted(pdf_dir.glob("*.pdf")):
+    for pdf_path in sorted(PDF_DIR.glob("*.pdf")):
         report_name = pdf_path.stem
-        output_path = output_dir / f"{report_name}.json"
+        output_path = OUTPUT_DIR / f"{report_name}.json"
 
         if output_path.exists():
             print(f"[SKIP] {report_name}")
