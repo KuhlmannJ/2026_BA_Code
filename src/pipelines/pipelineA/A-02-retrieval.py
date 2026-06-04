@@ -98,7 +98,7 @@ def main() -> None:
 
     load_dotenv()
 
-    prompt_path = Path("home/j/jkuhlma1/2026_BA_Code/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
+    prompt_path = Path("/home/j/jkuhlma1/2026_BA_Code/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
     extraction_prompt = prompt_path.read_text()
 
     client = anthropic.Anthropic(
