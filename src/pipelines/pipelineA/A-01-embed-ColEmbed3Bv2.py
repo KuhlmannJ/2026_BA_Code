@@ -72,8 +72,8 @@ model = AutoModel.from_pretrained(
     MODEL_NAME,
     device_map='cuda:0',
     trust_remote_code=True,
-    dtype=torch.bfloat16 # torch_dtype → dtype => "torch_dtype` is deprecated" 
-    #    attn_implementation=ATTN_IMPL
+    dtype=torch.bfloat16, # torch_dtype → dtype => "torch_dtype` is deprecated" 
+    attn_implementation=ATTN_IMPL # TODO NEEDS A RE-RUN, was disabled at last run
 ).eval()
 print(f" Loaded: {MODEL_NAME}")
 print(f"  VRAM belegt: {torch.cuda.max_memory_allocated() / 1e9:.1f} GB")
