@@ -9,6 +9,7 @@ import argparse
 import psutil
 import os
 import time
+import sys
 
 from pathlib import Path
 import fitz  # pymupdf
@@ -103,7 +104,7 @@ for pdf_path in PDF_LIST :
     # Need to do more error handling
     warnings = fitz.TOOLS.mupdf_warnings()
     if warnings:
-        print(f"  [WARN] {pdf_path.name}: {warnings}")
+        print(f"  [WARN] {pdf_path.name}: {warnings}", file=sys.stderr)
     # More logging       
     print(f"Complete: From PDF 2 Image {report_name}.")
             

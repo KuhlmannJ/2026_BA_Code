@@ -28,6 +28,7 @@ source $HOME/venvs/colembed3Bv2-h200mini/bin/activate
 # SET EXISTING CHACHE
 export HF_HOME=$WORK/cache/huggingface
 export CUDA_HOME=$EBROOTCUDA
+export PIP_CACHE_DIR=$WORK/.cache/pip
 # export UV_CACHE_DIR=/scratch/tmp/jkuhlma1/cache/uv
 
 # pip install --upgrade pip
