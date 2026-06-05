@@ -149,7 +149,7 @@ for pdf_path in PDF_LIST:
     extract_pages_as_pdf(pdf_path, pages, retrieval_path)
     
     t3= time.time()
-    runtime_PDF = round(time.time() - t3, 2)
+    runtime_PDF = round(time.time() - t3, TIME_ROUND)
     print(f"Mini-PDF saved:     {report_name} in {runtime_PDF}s")
     print(f"runtime_imageEmb: {runtime_imageEmb}s")
     
