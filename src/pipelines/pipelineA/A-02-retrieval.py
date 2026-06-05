@@ -44,6 +44,9 @@ def extract_pages_as_pdf(pdf_path: Path, page_indices: list[int], save_path: Pat
     out.close()
 
 
+
+if args.test :
+    banner("THIS IS A TEST-RUN")
 #### 0. GLOBAL VARIABLES ########################################
 banner("STEP 0: GLOBAL VARIABLES")
 
