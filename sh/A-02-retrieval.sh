@@ -1,22 +1,23 @@
 #!/bin/bash
 
-#SBATCH --nodes=1                   # the number of nodes you want to reserve
-#SBATCH --ntasks-per-node=1         # the number of tasks/processes per node
-
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
 #SBATCH --gres=gpu:1
-#SBATCH --mem=64G
-#SBATCH --cpus-per-task=8           # the number cpus per task
-#SBATCH --partition=gpuh200         # on which partition to submit the job
-#SBATCH --time=01:00:00             # the max wallclock time (time limit your job will run)
+
+#SBATCH --mem=50G
+#SBATCH --cpus-per-task=8
+#SBATCH --partition=gpuh200mini
+
+#SBATCH --time=00:10:00
 
 #SBATCH --output=/scratch/tmp/jkuhlma1/logs/%j_out.log    # stdout → Datei (%j = Job-ID)
 #SBATCH --error=/scratch/tmp/jkuhlma1/logs/%j_err.log     # stderr → Datei
 
-#SBATCH --job-name=A-01-embed-ColEmbed3Bv2
+#SBATCH --job-name=A-02-retrieval-test
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=jannik.kuhlmann@uni-muenster.de 
 
-# LOAD MODULES HERE IF REQUIRED
+# LOAD MODULES
 ml palma/2024a GCCcore/13.3.0 Python/3.12.3 CUDA/13.0.2
 
 # SOURCE PYTHON VENV
