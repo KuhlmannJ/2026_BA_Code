@@ -40,4 +40,4 @@ export PIP_CACHE_DIR=$WORK/.cache/pip
 # pip install flash-attn==2.6.3 --no-build-isolation
 
 # START THE APPLICATION
-python $HOME/2026_BA_Code/src/pipelines/pipelineA/A-02-retrieval -t | tee $HOME/latest.out
+python $HOME/2026_BA_Code/src/pipelines/pipelineA/A-02-retrieval.py -t | tee $HOME/latest.out
