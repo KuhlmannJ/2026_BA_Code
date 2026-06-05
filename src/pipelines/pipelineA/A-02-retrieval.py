@@ -107,9 +107,9 @@ print(f"  VRAM belegt: {torch.cuda.max_memory_allocated() / 1e9:.1f} GB")
 #### 3. Begin Retrieval ####################################
 banner("STEP 3: Begin Retrieval")
 
-t0 = time()
+t0 = time.time()
 query_embeddings = model.forward_queries([QUERY_0], batch_size=1)
-runtime_queryEmd = round(time() - t0, 2)
+runtime_queryEmd = round(time.time() - t0, 2)
 
 
 # Just O(1) for checking avail PDFs and embeddings
@@ -126,17 +126,17 @@ for pdf_path in PDF_LIST:
     # Step 1 — Retrieval
     print(f"Begin Loading of    {report_name}") # Spacing for printf alignment
     
-    t1 = time()
+    t1 = time.time()
     # image_embeddings in two steps, as loading and moving to VRAM must be done sequentially,
     # as it was saved with .cpu() to ensure cross-GPU compatibility
     image_embeddings = torch.load(pt_map[report_name], weights_only=False, map_location="cpu")
     image_embeddings = [t.to("cuda") for t in image_embeddings] # As they were saved with .cpu()
-    runtime_imageEmb = round(time() - t1, 2)
+    runtime_imageEmb = round(time.time() - t1, 2)
     
-    t2 = time()
+    t2 = time.time()
     print(f"Begin Retrieval of  {report_name}")
     scores = model.get_scores(query_embeddings, image_embeddings)  # [1, n_pages]
-    runtime_scoring = round(time() - t2, 2)
+    runtime_scoring = round(time.time() - t2, 2)
     
     pages  = select_pages(scores[0])
     print(f"Retreived pages 0..: {pages}")
@@ -145,9 +145,9 @@ for pdf_path in PDF_LIST:
     retrieval_path = RETRIEVALS_DIR / pdf_path.name
     extract_pages_as_pdf(pdf_path, pages, retrieval_path)
     
-    t3= time()
-    runtime_PDF = round(time() - t3, 2)
+    t3= time.time()
+    runtime_PDF = round(time.time() - t3, 2)
     print(f"Mini-PDF saved:     {report_name} in {runtime_PDF}s")
     
-overall_time = round(time() - t0, 2)
+overall_time = round(time.time() - t0, 2)
 print(f"DONE in {overall_time}s")
