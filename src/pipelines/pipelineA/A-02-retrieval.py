@@ -55,6 +55,8 @@ banner("STEP 0: GLOBAL VARIABLES")
 from dotenv import load_dotenv, find_dotenv
 print(".env loaded:", load_dotenv(find_dotenv()))
 
+TIME_ROUND = 6
+
 MODEL_NAME = 'nvidia/llama-nemotron-colembed-vl-3b-v2'
 ATTN_IMPL  = "flash_attention_2"
 TOP_K      = 3
@@ -109,7 +111,8 @@ banner("STEP 3: Begin Retrieval")
 
 t0 = time.time()
 query_embeddings = model.forward_queries([QUERY_0], batch_size=1)
-runtime_queryEmd = round(time.time() - t0, 2)
+runtime_queryEmd = round(time.time() - t0, TIME_ROUND)
+print(f"runtime_queryEmd: {runtime_queryEmd}s")
 
 
 # Just O(1) for checking avail PDFs and embeddings
@@ -131,12 +134,12 @@ for pdf_path in PDF_LIST:
     # as it was saved with .cpu() to ensure cross-GPU compatibility
     image_embeddings = torch.load(pt_map[report_name], weights_only=False, map_location="cpu")
     image_embeddings = [t.to("cuda") for t in image_embeddings] # As they were saved with .cpu()
-    runtime_imageEmb = round(time.time() - t1, 2)
+    runtime_imageEmb = round(time.time() - t1, TIME_ROUND)
     
     t2 = time.time()
     print(f"Begin Retrieval of  {report_name}")
     scores = model.get_scores(query_embeddings, image_embeddings)  # [1, n_pages]
-    runtime_scoring = round(time.time() - t2, 2)
+    runtime_scoring = round(time.time() - t2, TIME_ROUND)
     
     pages  = select_pages(scores[0])
     print(f"Retreived pages 0..: {pages}")
@@ -148,6 +151,7 @@ for pdf_path in PDF_LIST:
     t3= time.time()
     runtime_PDF = round(time.time() - t3, 2)
     print(f"Mini-PDF saved:     {report_name} in {runtime_PDF}s")
+    print(f"runtime_imageEmb: {runtime_imageEmb}s")
     
-overall_time = round(time.time() - t0, 2)
+overall_time = round(time.time() - t0, TIME_ROUND)
 print(f"DONE in {overall_time}s")
