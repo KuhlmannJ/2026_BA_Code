@@ -51,7 +51,6 @@ gold_pages_numeric = gold_pages.dropna(subset=["page_int"]).copy()
 gold_pages_numeric["page_int"] = gold_pages_numeric["page_int"].astype(int)
 
 print(f"  Reports:          {gold['report_stem'].nunique()}")
-print(f"  Unique pages:     {len(gold_pages)}")
 print(f"  Non-numeric pages (skipped for retrieval): {gold_pages['page_int'].isna().sum()}")
 
 
@@ -109,7 +108,7 @@ print(f"  Hit@Expanded (after  ±1 expansion): {n_expanded/n_total:.1%}  ({n_exp
 
 
 #### 4. Per-Report Breakdown ####################################
-banner("STEP 4: Per-Report Breakdown")
+banner("STEP 4: Per-Report Breakdown (just to file)")
 
 per_report = (
     merged.groupby("report_stem")
@@ -125,11 +124,6 @@ per_report["hit_expanded_pct"] = per_report["hit_expanded"] / per_report["gold_p
 
 # Flag reports with complete miss (no gold page retrieved at all)
 per_report["full_miss"] = per_report["hit_expanded"] == 0
-
-print(per_report[[
-    "report_stem", "gold_pages", "hit_topk", "hit_expanded",
-    "hit_topk_pct", "hit_expanded_pct", "full_miss"
-]].to_string(index=False))
 
 full_misses = per_report[per_report["full_miss"]]["report_stem"].tolist()
 print(f"\n  Full misses ({len(full_misses)} reports): {full_misses}")
