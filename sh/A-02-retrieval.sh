@@ -39,7 +39,7 @@ export PIP_CACHE_DIR=$WORK/.cache/pip
 ## ALTERNATIV selbst bauen
 # pip install flash-attn==2.6.3 --no-build-isolation
 
-# START THE APPLICATION
-python $HOME/2026_BA_Code/src/pipelines/pipelineA/A-02-retrieval.py | tee latest.out
+# START THE APPLICATION # -u for unbuffered, direct output of print()s in latest.out
+python -u $HOME/2026_BA_Code/src/pipelines/pipelineA/A-02-retrieval.py | tee latest.out
 
 pip freeze > ~/2026_BA_Code/requirements_$(date +%m%d_%H%M).txt
