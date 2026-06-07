@@ -24,19 +24,22 @@ def banner(title):
 
 # Logging hit pages (without neighbors as they are just +- 1)
 def log_pages(report_name: str, scores: torch.Tensor) -> None:
-    top_k_indices = scores.topk(min(TOP_K, len(scores))).indices.tolist()
+    n = len(scores)
+    top_idx = scores.topk(min(TOP_K, n)).indices.tolist()
+    
     with open(RETRIEVAL_LOG, "a", newline="") as f:
         csv.writer(f).writerow([
             report_name,
             PHASE,
-            top_k_indices,
+            top_idx,
             time.strftime("%Y-%m-%d %H:%M:%S"),
         ])
-    
+        
+# Top-k pages by score, expanded with +-1 neighbors (Beck et al).    
 def select_pages(scores: torch.Tensor) -> list[int]:
-    # Top-k pages by score, expanded with +-1 neighbors (Beck et al).
     n = len(scores)
     top_idx = scores.topk(min(TOP_K, n)).indices.tolist()
+    
     pages: set[int] = set()
     for idx in top_idx:
         for neighbor in (idx - 1, idx, idx + 1):
@@ -164,14 +167,14 @@ for pdf_path in PDF_LIST:
     t2 = time.time()
     print("Begin Retrieval")
     
-    scores = model.get_scores(query_embeddings, image_embeddings)  # [1, n_pages]
+    scores = model.get_scores(query_embeddings, image_embeddings)[0]  # Pro Query eine Ziele in scores, dahe rüberall hier scores[0]
     log_pages(report_name, scores)
     
     runtime_scoring = round(time.time() - t2, TIME_ROUND)
     
-    pages  = select_pages(scores[0])
+    pages  = select_pages(scores)
     print(f"Retreived pages 0..: {pages}")
-    print(f" in {runtime_scoring}")
+    print(f" in {runtime_scoring}s")
 
 ##################################################
     # Step 2 — Extract selected pages as mini-PDF
