@@ -2,7 +2,7 @@ import argparse
 import time
 
 from pathlib import Path
-import fitz  # pymupdf
+from pypdf import PdfReader, PdfWriter
 
 import torch
 from transformers import AutoModel
@@ -32,18 +32,15 @@ def select_pages(scores: torch.Tensor) -> list[int]:
                 pages.add(neighbor)
     return sorted(pages)
 
-
 def extract_pages_as_pdf(pdf_path: Path, page_indices: list[int], save_path: Path) -> None:
-    src = fitz.open(str(pdf_path))
-    out = fitz.open()
+    reader = PdfReader(str(pdf_path))
+    writer = PdfWriter()
     
     for idx in page_indices:
-        out.insert_pdf(src, from_page=idx, to_page=idx)
-    
-    src.close()
-    save_path.write_bytes(out.tobytes())
-    out.close()
-
+        writer.add_page(reader.pages[idx])
+        
+    with open(save_path, "wb") as output_pdf:
+        writer.write(output_pdf)
 
 
 if args.test :
@@ -55,10 +52,10 @@ banner("STEP 0: GLOBAL VARIABLES")
 from dotenv import load_dotenv, find_dotenv
 print(".env loaded:", load_dotenv(find_dotenv()))
 
-TIME_ROUND = 6
+TIME_ROUND = 6 # Rounding for time logging
 
 MODEL_NAME = 'nvidia/llama-nemotron-colembed-vl-3b-v2'
-ATTN_IMPL  = "flash_attention_2"
+# ATTN_IMPL  = "flash_attention_2" # NOT USED atm
 TOP_K      = 3
 
 PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/test_esg_reports") if args.test else Path("/scratch/tmp/jkuhlma1/data/esg_reports")
@@ -113,37 +110,47 @@ t0 = time.time()
 query_embeddings = model.forward_queries([QUERY_0], batch_size=1)
 runtime_queryEmd = round(time.time() - t0, TIME_ROUND)
 print(f"runtime_queryEmd: {runtime_queryEmd}s")
-
+print()
 
 # Just O(1) for checking avail PDFs and embeddings
 # And for torch.load() the embedding named the same as the PDF
 pt_map = {p.stem: p for p in EMD_LIST}
 
+
 for pdf_path in PDF_LIST:
     report_name = pdf_path.stem
+    print(report_name)
 
     if report_name not in pt_map:
         print(f"[WARN] no embedding for {report_name}")
         continue
 
+##################################################
     # Step 1 — Retrieval
     print(f"Begin Loading of    {report_name}") # Spacing for printf alignment
     
     t1 = time.time()
     # image_embeddings in two steps, as loading and moving to VRAM must be done sequentially,
     # as it was saved with .cpu() to ensure cross-GPU compatibility
+    
     image_embeddings = torch.load(pt_map[report_name], weights_only=False, map_location="cpu")
     image_embeddings = [t.to("cuda") for t in image_embeddings] # As they were saved with .cpu()
+    
     runtime_imageEmb = round(time.time() - t1, TIME_ROUND)
+    
     
     t2 = time.time()
     print(f"Begin Retrieval of  {report_name}")
+    
     scores = model.get_scores(query_embeddings, image_embeddings)  # [1, n_pages]
+    
     runtime_scoring = round(time.time() - t2, TIME_ROUND)
     
     pages  = select_pages(scores[0])
     print(f"Retreived pages 0..: {pages}")
 
+
+##################################################
     # Step 2 — Extract selected pages as mini-PDF
     retrieval_path = RETRIEVALS_DIR / pdf_path.name
     extract_pages_as_pdf(pdf_path, pages, retrieval_path)
@@ -152,6 +159,10 @@ for pdf_path in PDF_LIST:
     runtime_PDF = round(time.time() - t3, TIME_ROUND)
     print(f"Mini-PDF saved:     {report_name} in {runtime_PDF}s")
     print(f"runtime_imageEmb: {runtime_imageEmb}s")
+    print()
     
+    
+    
+##################################################
 overall_time = round(time.time() - t0, TIME_ROUND)
 print(f"DONE in {overall_time}s")
