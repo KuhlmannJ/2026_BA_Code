@@ -1,5 +1,6 @@
 import argparse
 import time
+import csv
 
 from pathlib import Path
 from pypdf import PdfReader, PdfWriter
@@ -20,9 +21,20 @@ def banner(title):
     print("=" * 60)
     print(f"  {title}")
     print("=" * 60)
+
+# Logging hit pages (without neighbors as they are just +- 1)
+def log_pages(report_name: str, scores: torch.Tensor) -> None:
+    top_k_indices = scores.topk(min(TOP_K, len(scores))).indices.tolist()
+    with open(RETRIEVAL_LOG, "a", newline="") as f:
+        csv.writer(f).writerow([
+            report_name,
+            PHASE,
+            top_k_indices,
+            time.strftime("%Y-%m-%d %H:%M:%S"),
+        ])
     
 def select_pages(scores: torch.Tensor) -> list[int]:
-    # Top-k pages by score, expanded with ±1 neighbors (Beck et al).
+    # Top-k pages by score, expanded with +-1 neighbors (Beck et al).
     n = len(scores)
     top_idx = scores.topk(min(TOP_K, n)).indices.tolist()
     pages: set[int] = set()
@@ -38,13 +50,17 @@ def extract_pages_as_pdf(pdf_path: Path, page_indices: list[int], save_path: Pat
     
     for idx in page_indices:
         writer.add_page(reader.pages[idx])
-        
+    
+    # = RETRIEVALS_DIR + report_name
     with open(save_path, "wb") as output_pdf:
         writer.write(output_pdf)
 
 
+
 if args.test :
     banner("THIS IS A TEST-RUN")
+    
+
 #### 0. GLOBAL VARIABLES ########################################
 banner("STEP 0: GLOBAL VARIABLES")
 
@@ -52,11 +68,20 @@ banner("STEP 0: GLOBAL VARIABLES")
 from dotenv import load_dotenv, find_dotenv
 print(".env loaded:", load_dotenv(find_dotenv()))
 
+
 TIME_ROUND = 6 # Rounding for time logging
+
+# FOR CSV LOGGING OF PROGESS
+PHASE    = "first_try"
+RETRIEVAL_LOG = Path("/scratch/tmp/jkuhlma1/results/A-02-retrieval_log.csv")
+
+if not RETRIEVAL_LOG.exists():
+    with open(RETRIEVAL_LOG, "w", newline="") as f:
+        csv.writer(f).writerow(["report", "phase", "top_k_pages", "timestamp"])
 
 MODEL_NAME = 'nvidia/llama-nemotron-colembed-vl-3b-v2'
 # ATTN_IMPL  = "flash_attention_2" # NOT USED atm
-TOP_K      = 3
+TOP_K      = 3 # like (Beck et al)
 
 PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/test_esg_reports") if args.test else Path("/scratch/tmp/jkuhlma1/data/esg_reports")
 PDF_LIST = sorted(list(PDF_DIR.glob("*.pdf")))
@@ -64,7 +89,6 @@ PDF_LIST = sorted(list(PDF_DIR.glob("*.pdf")))
 EMB_DIR  = Path("/scratch/tmp/jkuhlma1/data/embeddings/test_embeddings_colembed_3b_v2") if args.test else Path("/scratch/tmp/jkuhlma1/data/embeddings/embeddings_colembed_3b_v2")
 EMD_LIST = sorted(list(EMB_DIR.glob("*.pt")))
 
-OUTPUT_DIR     = Path("/scratch/tmp/jkuhlma1/results/A-02-answers")
 RETRIEVALS_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals")
 
 # Retrieval query — placeholder for optimize_anything / GEPA optimization
@@ -75,7 +99,6 @@ QUERY_0 = (
     "and Scope 3 emissions with their values, units, and reporting years."
 )
 
-# May ommit ...
 #### 1. GPU Details #############################################
 banner("STEP 1: GPU / CUDA")
 props      = torch.cuda.get_device_properties(0)
@@ -85,7 +108,6 @@ gpu_uuid   = props.uuid
 print(f"  GPU  : {gpu_name}")
 print(f"  VRAM : {vram_total:.1f} GB")
 print(f"  UUID : {gpu_uuid}")
-# May ommit ...
 
 
 #### 2. Load Retrieval Model ####################################
@@ -127,7 +149,7 @@ for pdf_path in PDF_LIST:
 
 ##################################################
     # Step 1 — Retrieval
-    print(f"Begin Loading of    {report_name}") # Spacing for printf alignment
+    print("Begin Loading") # Spacing for printf alignment
     
     t1 = time.time()
     # image_embeddings in two steps, as loading and moving to VRAM must be done sequentially,
@@ -140,24 +162,23 @@ for pdf_path in PDF_LIST:
     
     
     t2 = time.time()
-    print(f"Begin Retrieval of  {report_name}")
+    print("Begin Retrieval")
     
     scores = model.get_scores(query_embeddings, image_embeddings)  # [1, n_pages]
+    log_pages(report_name, scores)
     
     runtime_scoring = round(time.time() - t2, TIME_ROUND)
     
     pages  = select_pages(scores[0])
     print(f"Retreived pages 0..: {pages}")
-
+    print(f" in {runtime_scoring}")
 
 ##################################################
     # Step 2 — Extract selected pages as mini-PDF
-    retrieval_path = RETRIEVALS_DIR / pdf_path.name
-    extract_pages_as_pdf(pdf_path, pages, retrieval_path)
+    retrievals_path = RETRIEVALS_DIR / pdf_path.name
+    extract_pages_as_pdf(pdf_path, pages, retrievals_path)
     
-    t3= time.time()
-    runtime_PDF = round(time.time() - t3, TIME_ROUND)
-    print(f"Mini-PDF saved:     {report_name} in {runtime_PDF}s")
+    print(f"Mini-PDF saved")
     print(f"runtime_imageEmb: {runtime_imageEmb}s")
     print()
     
