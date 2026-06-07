@@ -41,4 +41,4 @@ pip install cryptography
 # pip install flash-attn==2.6.3 --no-build-isolation
 
 # START THE APPLICATION
-python $HOME/2026_BA_Code/src/pipelines/pipelineA/A-02-retrieval.py | tee $HOME/latest.out
+python $HOME/2026_BA_Code/src/pipelines/pipelineA/A-02-retrieval.py | tee latest.out
