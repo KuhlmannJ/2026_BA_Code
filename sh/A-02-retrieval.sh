@@ -40,9 +40,9 @@ export RUN_TS=$(date +%m%d_%H%M)
 ## ALTERNATIV selbst bauen
 # pip install flash-attn==2.6.3 --no-build-isolation
 
-# START THE APPLICATION # -u for unbuffered, direct output of print()s in latest.out
-python -u $HOME/2026_BA_Code/src/pipelines/pipelineA/A-02-retrieval.py | tee latest.out
+# START THE APPLICATION
+python -u $HOME/2026_BA_Code/src/pipelines/pipelineA/A-02-retrieval.py
 
-python -u $HOME/2026_BA_Code/evaluations/A-02/A-02.py | tee latest.out
+python -u $HOME/2026_BA_Code/evaluations/A-02/A-02.py
 
 pip freeze > ~/2026_BA_Code/requirements_$(date +%m%d_%H%M).txt

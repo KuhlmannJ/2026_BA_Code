@@ -138,7 +138,7 @@ print(f"\n  Full misses ({len(full_misses)} reports): {full_misses}")
 #### 5. Save ####################################################
 banner("STEP 5: Save")
 
-merged.drop(columns=["top_k_pages", "expanded"]).to_csv(
+merged.drop(columns=["expanded"]).to_csv(
     OUTPUT_DIR / "retrieval_evaluation.csv", index=False
 )
 per_report.to_csv(OUTPUT_DIR / "retrieval_per_report.csv", index=False)
