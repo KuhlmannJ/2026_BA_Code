@@ -1,0 +1,134 @@
+{
+  "report_name": "Inchcape Annual Report and Accounts 2022",
+  "report_title": "Inchcape Annual Report and Accounts 2022",
+  "emissions": {
+    "scope_1": {
+      "2022": [
+        {
+          "value": 17002,
+          "unit": "tCO2e",
+          "label": "Scope 1 Emissions (Global)"
+        },
+        {
+          "value": 2791,
+          "unit": "tCO2e",
+          "label": "Scope 1 Emissions (Fugitive, Global)"
+        },
+        {
+          "value": 3617,
+          "unit": "tCO2e",
+          "label": "Scope 1 Emissions (UK & Offshore)"
+        },
+        {
+          "value": 216,
+          "unit": "tCO2e",
+          "label": "Scope 1 Emissions (Fugitive, UK & Offshore)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 9752,
+          "unit": "tCO2e",
+          "label": "Scope 1 Emissions (Global)"
+        },
+        {
+          "value": 2486,
+          "unit": "tCO2e",
+          "label": "Scope 1 Emissions (UK & Offshore)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2022": [
+        {
+          "value": 30805,
+          "unit": "tCO2e",
+          "label": "Total Scope 1 & 2 Emissions (Market-based, Global) - combined scope 1+2"
+        },
+        {
+          "value": 3624,
+          "unit": "tCO2e",
+          "label": "Total Scope 1 & 2 Emissions (Market-based, UK & Offshore) - combined scope 1+2"
+        }
+      ],
+      "2021": [
+        {
+          "value": 32949,
+          "unit": "tCO2e",
+          "label": "Total Scope 1 & 2 Emissions (Market-based, Global) - combined scope 1+2"
+        },
+        {
+          "value": 2486,
+          "unit": "tCO2e",
+          "label": "Total Scope 1 & 2 Emissions (Market-based, UK & Offshore) - combined scope 1+2"
+        }
+      ],
+      "2019": [
+        {
+          "value": 50801,
+          "unit": "tCO2e",
+          "label": "Scope 1 and 2 emissions baseline (combined)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2022": [
+        {
+          "value": 22223,
+          "unit": "tCO2e",
+          "label": "Scope 2 Emissions (Location-based, Global)"
+        },
+        {
+          "value": 2886,
+          "unit": "tCO2e",
+          "label": "Scope 2 Emissions (Location-based, UK & Offshore)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 27277,
+          "unit": "tCO2e",
+          "label": "Scope 2 Emissions (Location-based, Global)"
+        },
+        {
+          "value": 3689,
+          "unit": "tCO2e",
+          "label": "Scope 2 Emissions (Location-based, UK & Offshore)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2022": [
+        {
+          "value": 187713,
+          "unit": "tCO2e",
+          "label": "Scope 3 Emissions (Business Travel & Upstream Transport, Global)"
+        },
+        {
+          "value": 2975,
+          "unit": "tCO2e",
+          "label": "Scope 3 Emissions (Business Travel & Upstream Transport, UK & Offshore)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 82068,
+          "unit": "tCO2e",
+          "label": "Scope 3 Emissions (Business Travel & Upstream Transport, Global)"
+        },
+        {
+          "value": 9221,
+          "unit": "tCO2e",
+          "label": "Scope 3 Emissions (Business Travel & Upstream Transport, UK & Offshore)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 18700000,
+          "unit": "tCO2e",
+          "label": "Scope 3 emissions baseline (total footprint, 99.97% of total)"
+        }
+      ]
+    }
+  }
+}

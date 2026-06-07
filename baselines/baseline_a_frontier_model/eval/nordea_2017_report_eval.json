@@ -1,0 +1,124 @@
+{
+  "report": "nordea_2017_report",
+  "results": [
+    {
+      "year": 2016,
+      "scope": "1",
+      "extracted_value": 48,
+      "extracted_unit": "tonnes CO2e",
+      "extracted_label": "diesel generators (scope 1)",
+      "extracted_t_co2e": 48.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 48.0,
+          "unit": "CO2e emissions (tonnes)",
+          "unit_norm": "CO2e emissions (tonnes)",
+          "value_t_co2e": 48.0,
+          "metric_name": "Scope 1/-diesel generators (Scope 1)",
+          "display_type": "Table",
+          "page": "37",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2017,
+      "scope": "1",
+      "extracted_value": 51,
+      "extracted_unit": "tonnes CO2e",
+      "extracted_label": "diesel generators (scope 1)",
+      "extracted_t_co2e": 51.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 51.0,
+          "unit": "CO2e emissions (tonnes)",
+          "unit_norm": "CO2e emissions (tonnes)",
+          "value_t_co2e": 51.0,
+          "metric_name": "Scope 1/-diesel generators (Scope 1)",
+          "display_type": "Table",
+          "page": "37",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2016,
+      "scope": "2mb",
+      "extracted_value": 3409,
+      "extracted_unit": "tonnes CO2e",
+      "extracted_label": "electricity, heating, district cooling (scope 2); net emissions after buying Guarantees of Origin",
+      "extracted_t_co2e": 3409.0,
+      "unit_known": true,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2017,
+      "scope": "2mb",
+      "extracted_value": 3187,
+      "extracted_unit": "tonnes CO2e",
+      "extracted_label": "electricity, heating, district cooling (scope 2); net emissions after buying Guarantees of Origin",
+      "extracted_t_co2e": 3187.0,
+      "unit_known": true,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2016,
+      "scope": "3",
+      "extracted_value": 13576,
+      "extracted_unit": "tonnes CO2e",
+      "extracted_label": "business travel (scope 3)",
+      "extracted_t_co2e": 13576.0,
+      "unit_known": true,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2017,
+      "scope": "3",
+      "extracted_value": 19500,
+      "extracted_unit": "tonnes CO2e",
+      "extracted_label": "business travel (scope 3)",
+      "extracted_t_co2e": 19500.0,
+      "unit_known": true,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    }
+  ],
+  "summary": {
+    "total_extracted": 6,
+    "in_gold": 2,
+    "not_in_gold": 4,
+    "matched": 2,
+    "precision": 0.3333,
+    "recall": 0.5,
+    "mean_rel_error_matched": 0.0,
+    "missing_in_extraction": [
+      {
+        "year": 2016,
+        "scope": "2lb"
+      },
+      {
+        "year": 2017,
+        "scope": "2lb"
+      }
+    ]
+  }
+}

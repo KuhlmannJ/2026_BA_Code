@@ -1,0 +1,8 @@
+{
+  "report": "huhtamaki_2019_report",
+  "batch_id": "msgbatch_01TCopw3V3AXAbjX3tC81Exx",
+  "input_tokens": 25423,
+  "output_tokens": 678,
+  "total_cost_USD": 0.08559495,
+  "raw_response": "{\n  \"report_name\": \"Huhtamaki Sustainability Report 2019\",\n  \"report_title\": \"Huhtamaki Sustainability Report 2019\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2015\": [{\"value\": 191000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Direct (Scope 1) GHG emissions\"}],\n      \"2016\": [{\"value\": 198000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Direct (Scope 1) GHG emissions\"}],\n      \"2017\": [{\"value\": 207000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Direct (Scope 1) GHG emissions\"}],\n      \"2018\": [{\"value\": 207000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Direct (Scope 1) GHG emissions\"}],\n      \"2019\": [{\"value\": 219000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Direct (Scope 1) GHG emissions\"}]\n    },\n    \"scope_2_location_based\": {\n      \"2015\": [{\"value\": 534000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Indirect (Scope 2) GHG emissions (location-based)\"}],\n      \"2016\": [{\"value\": 544000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Indirect (Scope 2) GHG emissions (location-based)\"}],\n      \"2017\": [{\"value\": 546000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Indirect (Scope 2) GHG emissions (location-based)\"}],\n      \"2018\": [{\"value\": 484000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Indirect (Scope 2) GHG emissions (location-based)\"}],\n      \"2019\": [{\"value\": 512000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Indirect (Scope 2) GHG emissions (location-based)\"}]\n    }\n  }\n}"
+}

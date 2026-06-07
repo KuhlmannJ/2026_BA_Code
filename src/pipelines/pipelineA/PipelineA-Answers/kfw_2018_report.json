@@ -1,0 +1,158 @@
+{
+  "report_name": "KfW_2018_GRI_Report",
+  "report_title": "2018 GRI report - KfW Group Sustainability",
+  "emissions": {
+    "scope_1": {
+      "2014": [
+        {
+          "value": 4636,
+          "unit": "tonnes CO2e",
+          "label": "Emissions from direct energy consumption (Scope 1) - Natural gas, wood pellets and own fleet"
+        }
+      ],
+      "2015": [
+        {
+          "value": 5095,
+          "unit": "tonnes CO2e",
+          "label": "Emissions from direct energy consumption (Scope 1) - Natural gas, wood pellets and own fleet"
+        }
+      ],
+      "2016": [
+        {
+          "value": 5260,
+          "unit": "tonnes CO2e",
+          "label": "Emissions from direct energy consumption (Scope 1) - Natural gas, wood pellets and own fleet"
+        }
+      ],
+      "2017": [
+        {
+          "value": 5616,
+          "unit": "tonnes CO2e",
+          "label": "Emissions from direct energy consumption (Scope 1) - Natural gas, wood pellets and own fleet"
+        }
+      ],
+      "2018": [
+        {
+          "value": 5571,
+          "unit": "tonnes CO2e",
+          "label": "Emissions from direct energy consumption (Scope 1) - Natural gas, wood pellets and own fleet"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2014": [
+        {
+          "value": 2073,
+          "unit": "tonnes CO2e",
+          "label": "Emissions from indirect energy consumption (Scope 2) - Green electricity, district heating, oil and emergency power generators (diesel)"
+        }
+      ],
+      "2015": [
+        {
+          "value": 1097,
+          "unit": "tonnes CO2e",
+          "label": "Emissions from indirect energy consumption (Scope 2)"
+        }
+      ],
+      "2016": [
+        {
+          "value": 1400,
+          "unit": "tonnes CO2e",
+          "label": "Emissions from indirect energy consumption (Scope 2)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 16257,
+          "unit": "tonnes CO2",
+          "label": "Scope 2 market-based total (Green electricity, Emergency power generators (diesel), Heating oil, District heating)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 7732,
+          "unit": "tonnes CO2",
+          "label": "Scope 2 market-based total (Green electricity, Emergency power generators (diesel), Heating oil, District heating)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2017": [
+        {
+          "value": 16592,
+          "unit": "tonnes CO2",
+          "label": "Scope 2 location-based total (Green electricity, Emergency power generators (diesel), Heating oil, District heating)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 9564,
+          "unit": "tonnes CO2",
+          "label": "Scope 2 location-based total (Green electricity, Emergency power generators (diesel), Heating oil, District heating)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2014": [
+        {
+          "value": 9446,
+          "unit": "tonnes CO2e",
+          "label": "Total business travel (Scope 3) - only flights"
+        },
+        {
+          "value": 102,
+          "unit": "tonnes CO2e",
+          "label": "Events (Scope 3) - participants' travel to/from KfW buildings"
+        }
+      ],
+      "2015": [
+        {
+          "value": 7394,
+          "unit": "tonnes CO2e",
+          "label": "Total business travel (Scope 3) - only flights"
+        },
+        {
+          "value": 102,
+          "unit": "tonnes CO2e",
+          "label": "Events (Scope 3)"
+        }
+      ],
+      "2016": [
+        {
+          "value": 7411,
+          "unit": "tonnes CO2e",
+          "label": "Total business travel (Scope 3) - only flights"
+        },
+        {
+          "value": 74,
+          "unit": "tonnes CO2e",
+          "label": "Events (Scope 3)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 8208,
+          "unit": "tonnes CO2e",
+          "label": "Total business travel (Scope 3) - only flights"
+        },
+        {
+          "value": 87,
+          "unit": "tonnes CO2e",
+          "label": "Events (Scope 3)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 8665,
+          "unit": "tonnes CO2e",
+          "label": "Total business travel (Scope 3) - only flights"
+        },
+        {
+          "value": 101,
+          "unit": "tonnes CO2e",
+          "label": "Events (Scope 3)"
+        }
+      ]
+    }
+  }
+}

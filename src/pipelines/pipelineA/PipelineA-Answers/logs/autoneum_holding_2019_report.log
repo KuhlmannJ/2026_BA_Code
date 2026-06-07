@@ -1,0 +1,8 @@
+{
+  "report": "autoneum_holding_2019_report",
+  "batch_id": "msgbatch_01TCopw3V3AXAbjX3tC81Exx",
+  "input_tokens": 18666,
+  "output_tokens": 598,
+  "total_cost_USD": 0.06433625999999999,
+  "raw_response": "{\n  \"report_name\": \"Autoneum_Corporate_Responsibility_Report_2019\",\n  \"report_title\": \"Autoneum Corporate Responsibility Report 2019\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2019\": [{\"value\": 116274, \"unit\": \"metric tons CO2 equivalents\", \"label\": \"Scope 1\"}],\n      \"2018\": [{\"value\": 109577, \"unit\": \"metric tons CO2 equivalents\", \"label\": \"Scope 1\"}],\n      \"2017\": [{\"value\": 81077, \"unit\": \"metric tons CO2 equivalents\", \"label\": \"Scope 1\"}]\n    },\n    \"scope_2_location_based\": {\n      \"2019\": [{\"value\": 264287, \"unit\": \"metric tons CO2 equivalents\", \"label\": \"Scope 2 (location-based, used as approximation for market-based)\"}],\n      \"2018\": [{\"value\": 256550, \"unit\": \"metric tons CO2 equivalents\", \"label\": \"Scope 2 (location-based, used as approximation for market-based)\"}],\n      \"2017\": [{\"value\": 235014, \"unit\": \"metric tons CO2 equivalents\", \"label\": \"Scope 2 (location-based, used as approximation for market-based)\"}]\n    },\n    \"scope_3\": {\n      \"2019\": [{\"value\": 420238, \"unit\": \"metric tons CO2 equivalents\", \"label\": \"Scope 3 (17% of purchased direct materials and 100% of business travel; excludes UGN)\"}],\n      \"2018\": [{\"value\": 525214, \"unit\": \"metric tons CO2 equivalents\", \"label\": \"Scope 3\"}],\n      \"2017\": [{\"value\": 448185, \"unit\": \"metric tons CO2 equivalents\", \"label\": \"Scope 3\"}]\n    }\n  }\n}"
+}

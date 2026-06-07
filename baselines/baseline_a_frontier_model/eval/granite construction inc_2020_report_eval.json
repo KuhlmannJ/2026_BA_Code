@@ -1,0 +1,106 @@
+{
+  "report": "granite construction inc_2020_report",
+  "results": [
+    {
+      "year": 2015,
+      "scope": "1",
+      "extracted_value": 132285,
+      "extracted_unit": "CO2 equivalents (US tons)",
+      "extracted_label": "Total Scope 1 (2015 baseline)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 132285.0,
+          "unit": "CO2 Equivalents (US Tons)",
+          "unit_norm": "CO2e (US Tons)",
+          "value_t_co2e": 120006.96772500001,
+          "metric_name": "Total Scope 1 CO2 Equivalents (US Tons)/Total Scope 1 CO2  Equivalents (US Tons) ",
+          "display_type": "Graphic",
+          "page": "*66",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2020,
+      "scope": "1",
+      "extracted_value": 244727.61,
+      "extracted_unit": "CO2 equivalents (US tons)",
+      "extracted_label": "Total Scope 1",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 244727.61,
+          "unit": "CO2 equivalents (US tons)",
+          "unit_norm": "CO2e (US tons)",
+          "value_t_co2e": 222013.21687785,
+          "metric_name": "Direct (Scope 1) GHG emissions",
+          "display_type": "Table",
+          "page": "*103",
+          "rel_error": null
+        },
+        {
+          "value": 244727.61,
+          "unit": "CO2 equivalents (US tons)",
+          "unit_norm": "CO2e (US tons)",
+          "value_t_co2e": 222013.21687785,
+          "metric_name": "Gross global Scope 1 emissions",
+          "display_type": "Table",
+          "page": "*112",
+          "rel_error": null
+        },
+        {
+          "value": 244727.0,
+          "unit": "CO2 Equivalents (US Tons)",
+          "unit_norm": "CO2e (US Tons)",
+          "value_t_co2e": 222012.66349500002,
+          "metric_name": "Total Scope 1 CO2 Equivalents (US Tons)/Total Scope 1 CO2  Equivalents (US Tons) ",
+          "display_type": "Graphic",
+          "page": "*66",
+          "rel_error": null
+        },
+        {
+          "value": 244727.61,
+          "unit": "CO2 Equivalents (US Tons)",
+          "unit_norm": "CO2e (US Tons)",
+          "value_t_co2e": 222013.21687785,
+          "metric_name": "Total Scope 1",
+          "display_type": "Illustration/Graphic",
+          "page": "*67",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2020,
+      "scope": "3",
+      "extracted_value": 8399,
+      "extracted_unit": "CO2 (US tons)",
+      "extracted_label": "Total estimated employee business travel emissions (partial Scope 3; CO2 only)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    }
+  ],
+  "summary": {
+    "total_extracted": 3,
+    "in_gold": 2,
+    "not_in_gold": 1,
+    "matched": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "mean_rel_error_matched": null,
+    "missing_in_extraction": []
+  }
+}

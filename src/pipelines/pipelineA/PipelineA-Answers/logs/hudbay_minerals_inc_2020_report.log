@@ -1,0 +1,8 @@
+{
+  "report": "hudbay_minerals_inc_2020_report",
+  "batch_id": "msgbatch_01TCopw3V3AXAbjX3tC81Exx",
+  "input_tokens": 22421,
+  "output_tokens": 546,
+  "total_cost_USD": 0.07471485000000001,
+  "raw_response": "{\n  \"report_name\": \"Hudbay 2020 Annual Sustainability Report\",\n  \"report_title\": \"Hudbay 2020 Annual Sustainability Report\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2020\": [{\"value\": 144, \"unit\": \"kilotonnes of CO2-equivalent\", \"label\": \"Direct CO2e emissions\"}],\n      \"2019\": [{\"value\": 161, \"unit\": \"kilotonnes of CO2-equivalent\", \"label\": \"Direct CO2e emissions\"}],\n      \"2018\": [{\"value\": 170, \"unit\": \"kilotonnes of CO2-equivalent\", \"label\": \"Direct CO2e emissions\"}],\n      \"2017\": [{\"value\": 177, \"unit\": \"kilotonnes of CO2-equivalent\", \"label\": \"Direct CO2e emissions\"}]\n    },\n    \"scope_2_market_based\": {},\n    \"scope_2_location_based\": {\n      \"2020\": [{\"value\": 367, \"unit\": \"kilotonnes of CO2-equivalent\", \"label\": \"Indirect CO2e emissions\"}],\n      \"2019\": [{\"value\": 402, \"unit\": \"kilotonnes of CO2-equivalent\", \"label\": \"Indirect CO2e emissions\"}],\n      \"2018\": [{\"value\": 403, \"unit\": \"kilotonnes of CO2-equivalent\", \"label\": \"Indirect CO2e emissions\"}],\n      \"2017\": [{\"value\": 363, \"unit\": \"kilotonnes of CO2-equivalent\", \"label\": \"Indirect CO2e emissions\"}]\n    },\n    \"scope_3\": {}\n  }\n}"
+}

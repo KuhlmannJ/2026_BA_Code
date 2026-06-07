@@ -1,0 +1,8 @@
+{
+  "report": "kilroy_realty_2018_report",
+  "batch_id": "msgbatch_01TCopw3V3AXAbjX3tC81Exx",
+  "input_tokens": 19359,
+  "output_tokens": 511,
+  "total_cost_USD": 0.06509991000000001,
+  "raw_response": "{\n  \"report_name\": \"Kilroy Realty Sustainability Report\",\n  \"report_title\": \"Kilroy Realty 2018 Sustainability Report\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2017\": [{\"value\": 4120, \"unit\": \"Tonnes\", \"label\": \"Whole Portfolio Scope 1 Absolute\"}],\n      \"2018\": [{\"value\": 3908, \"unit\": \"MtCO2e\", \"label\": \"Whole Portfolio Scope 1 Absolute\"}]\n    },\n    \"scope_2_market_based\": {\n      \"2017\": [{\"value\": 35735, \"unit\": \"Tonnes\", \"label\": \"Whole Portfolio Scope 2 Market-Based Absolute\"}],\n      \"2018\": [{\"value\": 30439, \"unit\": \"MtCO2e\", \"label\": \"Whole Portfolio Scope 2 Market-Based Absolute\"}]\n    },\n    \"scope_2_location_based\": {\n      \"2017\": [{\"value\": 36504, \"unit\": \"Tonnes\", \"label\": \"Whole Portfolio Scope 2 Location-Based Absolute\"}],\n      \"2018\": [{\"value\": 33207, \"unit\": \"MtCO2e\", \"label\": \"Whole Portfolio Scope 2 Location-Based Absolute\"}]\n    },\n    \"scope_3\": {\n      \"2018\": [{\"value\": 31984, \"unit\": \"MtCO2e\", \"label\": \"Scope 3 Emissions (Downstream Leased Assets)\"}]\n    }\n  }\n}"
+}

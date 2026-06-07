@@ -1,0 +1,231 @@
+{
+  "report": "metro ag_2022_report",
+  "results": [
+    {
+      "year": 2020,
+      "scope": "1",
+      "extracted_value": 270761.0,
+      "extracted_unit": "Metric tons (t) CO2e",
+      "extracted_label": "Direct (Scope 1) GHG emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 270761.0,
+          "unit": "Metric tons (t) CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 270761.0,
+          "metric_name": "Direct (Scope 1) GHG emissions",
+          "display_type": "Table",
+          "page": "47",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2021,
+      "scope": "1",
+      "extracted_value": 264654.8,
+      "extracted_unit": "Metric tons (t) CO2e",
+      "extracted_label": "Direct (Scope 1) GHG emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 264654.8,
+          "unit": "Metric tons (t) CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 264654.8,
+          "metric_name": "Direct (Scope 1) GHG emissions",
+          "display_type": "Table",
+          "page": "47",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2022,
+      "scope": "1",
+      "extracted_value": 266631.8,
+      "extracted_unit": "Metric tons (t) CO2e",
+      "extracted_label": "Direct (Scope 1) GHG emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 266631.8,
+          "unit": "Metric tons (t) CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 266631.8,
+          "metric_name": "Direct (Scope 1) GHG emissions",
+          "display_type": "Table",
+          "page": "47",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2020,
+      "scope": "2lb",
+      "extracted_value": 17872.0,
+      "extracted_unit": "Metric tons (t) CO2e",
+      "extracted_label": "Energy indirect (Scope 2) GHG emissions (method not specified in report)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 17872.0,
+          "unit": "Metric tons (t) CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 17872.0,
+          "metric_name": "Energy indirect (Scope 2) GHG emissions",
+          "display_type": "Table",
+          "page": "47",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2021,
+      "scope": "2lb",
+      "extracted_value": 14668.3,
+      "extracted_unit": "Metric tons (t) CO2e",
+      "extracted_label": "Energy indirect (Scope 2) GHG emissions (method not specified in report)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 14668.3,
+          "unit": "Metric tons (t) CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 14668.3,
+          "metric_name": "Energy indirect (Scope 2) GHG emissions",
+          "display_type": "Table",
+          "page": "47",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2022,
+      "scope": "2lb",
+      "extracted_value": 14785.4,
+      "extracted_unit": "Metric tons (t) CO2e",
+      "extracted_label": "Energy indirect (Scope 2) GHG emissions (method not specified in report)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 14785.4,
+          "unit": "Metric tons (t) CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 14785.4,
+          "metric_name": "Energy indirect (Scope 2) GHG emissions",
+          "display_type": "Table",
+          "page": "47",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2020,
+      "scope": "3",
+      "extracted_value": 114503.4,
+      "extracted_unit": "Metric tons (t) CO2e",
+      "extracted_label": "Other indirect (Scope 3) GHG emissions for the categories: Business Travel, Waste and Upstream Transportation",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 114503.4,
+          "unit": "Metric tons (t) CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 114503.4,
+          "metric_name": "Other indirect (Scope 3) GHG emissions for the categories: Business Travel, Waste and Upstream Transportation",
+          "display_type": "Table",
+          "page": "47",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2021,
+      "scope": "3",
+      "extracted_value": 116700.4,
+      "extracted_unit": "Metric tons (t) CO2e",
+      "extracted_label": "Other indirect (Scope 3) GHG emissions for the categories: Business Travel, Waste and Upstream Transportation",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 116700.4,
+          "unit": "Metric tons (t) CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 116700.4,
+          "metric_name": "Other indirect (Scope 3) GHG emissions for the categories: Business Travel, Waste and Upstream Transportation",
+          "display_type": "Table",
+          "page": "47",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2022,
+      "scope": "3",
+      "extracted_value": 114172.7,
+      "extracted_unit": "Metric tons (t) CO2e",
+      "extracted_label": "Other indirect (Scope 3) GHG emissions for the categories: Business Travel, Waste and Upstream Transportation",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 114172.7,
+          "unit": "Metric tons (t) CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 114172.7,
+          "metric_name": "Other indirect (Scope 3) GHG emissions for the categories: Business Travel, Waste and Upstream Transportation",
+          "display_type": "Table",
+          "page": "47",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    }
+  ],
+  "summary": {
+    "total_extracted": 9,
+    "in_gold": 9,
+    "not_in_gold": 0,
+    "matched": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "mean_rel_error_matched": null,
+    "missing_in_extraction": []
+  }
+}

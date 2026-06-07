@@ -1,0 +1,159 @@
+{
+  "report": "cabot corp_2018_report",
+  "results": [
+    {
+      "year": 2016,
+      "scope": "1",
+      "extracted_value": 4.5,
+      "extracted_unit": "MM MT CO2e",
+      "extracted_label": "Scope 1 absolute emissions",
+      "extracted_t_co2e": 4500000.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 4.5,
+          "unit": "MM MT CO2e",
+          "unit_norm": "MM MT CO2e",
+          "value_t_co2e": 4500000.0,
+          "metric_name": "SCOPE 1 MM MT CO2e/GHG EMISSIONS SCOPE 1",
+          "display_type": "Table",
+          "page": "22",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2017,
+      "scope": "1",
+      "extracted_value": 4.58,
+      "extracted_unit": "MM MT CO2e",
+      "extracted_label": "Scope 1 absolute emissions",
+      "extracted_t_co2e": 4580000.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 4.58,
+          "unit": "MM MT CO2e",
+          "unit_norm": "MM MT CO2e",
+          "value_t_co2e": 4580000.0,
+          "metric_name": "SCOPE 1 MM MT CO2e/GHG EMISSIONS SCOPE 1",
+          "display_type": "Table",
+          "page": "22",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2018,
+      "scope": "1",
+      "extracted_value": 4.77,
+      "extracted_unit": "MM MT CO2e",
+      "extracted_label": "Scope 1 absolute emissions",
+      "extracted_t_co2e": 4770000.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 4.77,
+          "unit": "MM MT CO2e",
+          "unit_norm": "MM MT CO2e",
+          "value_t_co2e": 4770000.0,
+          "metric_name": "SCOPE 1 MM MT CO2e/GHG EMISSIONS SCOPE 1",
+          "display_type": "Table",
+          "page": "22",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2016,
+      "scope": "2lb",
+      "extracted_value": 0.34,
+      "extracted_unit": "MM MT CO2e",
+      "extracted_label": "Scope 2 absolute emissions (methodology not specified as market- or location-based)",
+      "extracted_t_co2e": 340000.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 0.34,
+          "unit": "MM MT CO2e",
+          "unit_norm": "MM MT CO2e",
+          "value_t_co2e": 340000.0,
+          "metric_name": "SCOPE 2 MM MT CO2e/GHG EMISSIONS SCOPE 2",
+          "display_type": "Table",
+          "page": "22",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2017,
+      "scope": "2lb",
+      "extracted_value": 0.33,
+      "extracted_unit": "MM MT CO2e",
+      "extracted_label": "Scope 2 absolute emissions (methodology not specified as market- or location-based)",
+      "extracted_t_co2e": 330000.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 0.33,
+          "unit": "MM MT CO2e",
+          "unit_norm": "MM MT CO2e",
+          "value_t_co2e": 330000.0,
+          "metric_name": "SCOPE 2 MM MT CO2e/GHG EMISSIONS SCOPE 2",
+          "display_type": "Table",
+          "page": "22",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2018,
+      "scope": "2lb",
+      "extracted_value": 0.32,
+      "extracted_unit": "MM MT CO2e",
+      "extracted_label": "Scope 2 absolute emissions (methodology not specified as market- or location-based)",
+      "extracted_t_co2e": 320000.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 0.32,
+          "unit": "MM MT CO2e",
+          "unit_norm": "MM MT CO2e",
+          "value_t_co2e": 320000.0,
+          "metric_name": "SCOPE 2 MM MT CO2e/GHG EMISSIONS SCOPE 2",
+          "display_type": "Table",
+          "page": "22",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    }
+  ],
+  "summary": {
+    "total_extracted": 6,
+    "in_gold": 6,
+    "not_in_gold": 0,
+    "matched": 6,
+    "precision": 1.0,
+    "recall": 1.0,
+    "mean_rel_error_matched": 0.0,
+    "missing_in_extraction": []
+  }
+}

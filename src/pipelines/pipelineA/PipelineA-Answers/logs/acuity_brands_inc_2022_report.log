@@ -1,0 +1,8 @@
+{
+  "report": "acuity_brands_inc_2022_report",
+  "batch_id": "msgbatch_01TCopw3V3AXAbjX3tC81Exx",
+  "input_tokens": 13270,
+  "output_tokens": 361,
+  "total_cost_USD": 0.04478358,
+  "raw_response": "{\n  \"report_name\": \"2022 EarthLIGHT Report\",\n  \"report_title\": \"2022 EarthLIGHT Report\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2022\": [{\"value\": 34327, \"unit\": \"MT CO2e\", \"label\": \"Total Scope 1\"}]\n    },\n    \"scope_2_market_based\": {\n      \"2022\": [{\"value\": 42234, \"unit\": \"MT CO2e\", \"label\": \"Total Scope 2 (Market-based)\"}]\n    },\n    \"scope_2_location_based\": {\n      \"2022\": [{\"value\": 46637, \"unit\": \"MT CO2e\", \"label\": \"Scope 2 (Location-based)\"}]\n    },\n    \"scope_3\": {\n      \"2022\": [{\"value\": 35119419, \"unit\": \"MT CO2e\", \"label\": \"Total Scope 3\"}],\n      \"2021\": [{\"value\": 27651800, \"unit\": \"MT CO2e\", \"label\": \"Revised FY21 baseline - Use of Sold Products (Scope 3 Category 11)\"}]\n    }\n  }\n}"
+}

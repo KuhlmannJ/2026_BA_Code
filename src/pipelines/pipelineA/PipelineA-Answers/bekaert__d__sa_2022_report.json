@@ -1,0 +1,306 @@
+{
+  "report_name": "Bekaert Integrated Annual Report 2022",
+  "report_title": "Bekaert Integrated Annual Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 294799,
+          "unit": "ton CO2",
+          "label": "Scope 1 GHG emissions natural gas, LPG and fuel (Excluding JVs) - calculated: 286932 + 7867"
+        },
+        {
+          "value": 338420,
+          "unit": "ton CO2",
+          "label": "Scope 1 GHG emissions natural gas, LPG and fuel (Including JVs) - calculated: 329982 + 8438"
+        }
+      ],
+      "2020": [
+        {
+          "value": 271230,
+          "unit": "ton CO2",
+          "label": "Scope 1 GHG emissions natural gas, LPG and fuel (Excluding JVs) - calculated: 263785 + 7445"
+        },
+        {
+          "value": 313527,
+          "unit": "ton CO2",
+          "label": "Scope 1 GHG emissions natural gas, LPG and fuel (Including JVs) - calculated: 305547 + 7980"
+        }
+      ],
+      "2021": [
+        {
+          "value": 284910,
+          "unit": "ton CO2",
+          "label": "Scope 1 GHG emissions natural gas, LPG and fuel (Excluding JVs) - calculated: 277023 + 7887"
+        },
+        {
+          "value": 336201,
+          "unit": "ton CO2",
+          "label": "Scope 1 GHG emissions natural gas, LPG and fuel (Including JVs) - calculated: 327690 + 8511"
+        }
+      ],
+      "2022": [
+        {
+          "value": 269969,
+          "unit": "ton CO2",
+          "label": "Scope 1 GHG emissions natural gas, LPG and fuel (Excluding JVs) - calculated: 262581 + 7388"
+        },
+        {
+          "value": 316951,
+          "unit": "ton CO2",
+          "label": "Scope 1 GHG emissions natural gas, LPG and fuel (Including JVs, total reported)"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {},
+    "scope_3": {
+      "2019": [
+        {
+          "value": 4874911,
+          "unit": "ton CO2e",
+          "label": "Purchased goods & services (excluding JVs)"
+        },
+        {
+          "value": 72870,
+          "unit": "ton CO2e",
+          "label": "Capital goods (excluding JVs)"
+        },
+        {
+          "value": 352555,
+          "unit": "ton CO2e",
+          "label": "Fuel & energy related activities (not included in Scope 1 or 2) (excluding JVs)"
+        },
+        {
+          "value": 31487,
+          "unit": "ton CO2e",
+          "label": "Upstream transportation & distribution (excluding JVs)"
+        },
+        {
+          "value": 27261,
+          "unit": "ton CO2e",
+          "label": "Waste generated in operations (excluding JVs)"
+        },
+        {
+          "value": 2740,
+          "unit": "ton CO2e",
+          "label": "Business travel (excluding JVs)"
+        },
+        {
+          "value": 20400,
+          "unit": "ton CO2e",
+          "label": "Employee commuting (excluding JVs)"
+        },
+        {
+          "value": 0,
+          "unit": "ton CO2e",
+          "label": "Upstream leased assets (excluding JVs)"
+        },
+        {
+          "value": 47230,
+          "unit": "ton CO2e",
+          "label": "Downstream transportation & distribution (excluding JVs)"
+        },
+        {
+          "value": 161870,
+          "unit": "ton CO2e",
+          "label": "Processing of sold products (excluding JVs)"
+        },
+        {
+          "value": 100000,
+          "unit": "ton CO2e",
+          "label": "Use of sold products (excluding JVs)"
+        },
+        {
+          "value": 106999,
+          "unit": "ton CO2e",
+          "label": "End of life treatment of sold products (excluding JVs)"
+        },
+        {
+          "value": 0,
+          "unit": "ton CO2e",
+          "label": "Downstream Leased Assets (excluding JVs)"
+        },
+        {
+          "value": 0,
+          "unit": "ton CO2e",
+          "label": "Franchises (excluding JVs)"
+        },
+        {
+          "value": 247313,
+          "unit": "ton CO2e",
+          "label": "Total JVs"
+        },
+        {
+          "value": 6045636,
+          "unit": "ton CO2e",
+          "label": "Total Scope 3 emissions"
+        }
+      ],
+      "2021": [
+        {
+          "value": 5446554,
+          "unit": "ton CO2e",
+          "label": "Purchased goods & services (excluding JVs)"
+        },
+        {
+          "value": 113767,
+          "unit": "ton CO2e",
+          "label": "Capital goods (excluding JVs)"
+        },
+        {
+          "value": 348402,
+          "unit": "ton CO2e",
+          "label": "Fuel & energy related activities (not included in Scope 1 or 2) (excluding JVs)"
+        },
+        {
+          "value": 44627,
+          "unit": "ton CO2e",
+          "label": "Upstream transportation & distribution (excluding JVs)"
+        },
+        {
+          "value": 32713,
+          "unit": "ton CO2e",
+          "label": "Waste generated in operations (excluding JVs)"
+        },
+        {
+          "value": 1000,
+          "unit": "ton CO2e",
+          "label": "Business travel (excluding JVs)"
+        },
+        {
+          "value": 20400,
+          "unit": "ton CO2e",
+          "label": "Employee commuting (excluding JVs)"
+        },
+        {
+          "value": 0,
+          "unit": "ton CO2e",
+          "label": "Upstream leased assets (excluding JVs)"
+        },
+        {
+          "value": 66941,
+          "unit": "ton CO2e",
+          "label": "Downstream transportation & distribution (excluding JVs)"
+        },
+        {
+          "value": 163893,
+          "unit": "ton CO2e",
+          "label": "Processing of sold products (excluding JVs)"
+        },
+        {
+          "value": 100000,
+          "unit": "ton CO2e",
+          "label": "Use of sold products (excluding JVs)"
+        },
+        {
+          "value": 108341,
+          "unit": "ton CO2e",
+          "label": "End of life treatment of sold products (excluding JVs)"
+        },
+        {
+          "value": 0,
+          "unit": "ton CO2e",
+          "label": "Downstream Leased Assets (excluding JVs)"
+        },
+        {
+          "value": 0,
+          "unit": "ton CO2e",
+          "label": "Franchises (excluding JVs)"
+        },
+        {
+          "value": 290324,
+          "unit": "ton CO2e",
+          "label": "Total JVs"
+        },
+        {
+          "value": 6736962,
+          "unit": "ton CO2e",
+          "label": "Total Scope 3 emissions"
+        }
+      ],
+      "2022": [
+        {
+          "value": 4762032,
+          "unit": "ton CO2e",
+          "label": "Purchased goods & services (excluding JVs)"
+        },
+        {
+          "value": 133995,
+          "unit": "ton CO2e",
+          "label": "Capital goods (excluding JVs)"
+        },
+        {
+          "value": 325115,
+          "unit": "ton CO2e",
+          "label": "Fuel & energy related activities (not included in Scope 1 or 2) (excluding JVs)"
+        },
+        {
+          "value": 77972,
+          "unit": "ton CO2e",
+          "label": "Upstream transportation & distribution (excluding JVs)"
+        },
+        {
+          "value": 37984,
+          "unit": "ton CO2e",
+          "label": "Waste generated in operations (excluding JVs)"
+        },
+        {
+          "value": 2100,
+          "unit": "ton CO2e",
+          "label": "Business travel (excluding JVs)"
+        },
+        {
+          "value": 20400,
+          "unit": "ton CO2e",
+          "label": "Employee commuting (excluding JVs)"
+        },
+        {
+          "value": 0,
+          "unit": "ton CO2e",
+          "label": "Upstream leased assets (excluding JVs)"
+        },
+        {
+          "value": 116899,
+          "unit": "ton CO2e",
+          "label": "Downstream transportation & distribution (excluding JVs)"
+        },
+        {
+          "value": 156846,
+          "unit": "ton CO2e",
+          "label": "Processing of sold products (excluding JVs)"
+        },
+        {
+          "value": 100000,
+          "unit": "ton CO2e",
+          "label": "Use of sold products (excluding JVs)"
+        },
+        {
+          "value": 94448,
+          "unit": "ton CO2e",
+          "label": "End of life treatment of sold products (excluding JVs)"
+        },
+        {
+          "value": 0,
+          "unit": "ton CO2e",
+          "label": "Downstream Leased Assets (excluding JVs)"
+        },
+        {
+          "value": 0,
+          "unit": "ton CO2e",
+          "label": "Franchises (excluding JVs)"
+        },
+        {
+          "value": 359295,
+          "unit": "ton CO2e",
+          "label": "Total JVs"
+        },
+        {
+          "value": 6187086,
+          "unit": "ton CO2e",
+          "label": "Total Scope 3 emissions"
+        }
+      ]
+    }
+  }
+}

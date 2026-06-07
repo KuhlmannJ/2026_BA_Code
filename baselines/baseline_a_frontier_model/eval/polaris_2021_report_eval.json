@@ -1,0 +1,178 @@
+{
+  "report": "polaris_2021_report",
+  "results": [
+    {
+      "year": 2019,
+      "scope": "1",
+      "extracted_value": 42,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Total Polaris Scope 1 (Polaris Management + all portfolio companies)",
+      "extracted_t_co2e": 42.0,
+      "unit_known": true,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2020,
+      "scope": "1",
+      "extracted_value": 7485,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Total Polaris Scope 1 (Polaris Management + all portfolio companies)",
+      "extracted_t_co2e": 7485.0,
+      "unit_known": true,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2021,
+      "scope": "1",
+      "extracted_value": 7229,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Total Polaris Scope 1 (Polaris Management + all portfolio companies)",
+      "extracted_t_co2e": 7229.0,
+      "unit_known": true,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2019,
+      "scope": "2lb",
+      "extracted_value": 378,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Total Polaris Scope 2 (Location Based)",
+      "extracted_t_co2e": 378.0,
+      "unit_known": true,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2020,
+      "scope": "2lb",
+      "extracted_value": 2869,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Total Polaris Scope 2 (Location Based)",
+      "extracted_t_co2e": 2869.0,
+      "unit_known": true,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2021,
+      "scope": "2lb",
+      "extracted_value": 3231,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Total Polaris Scope 2 (Location Based)",
+      "extracted_t_co2e": 3231.0,
+      "unit_known": true,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2021,
+      "scope": "2mb",
+      "extracted_value": 3370,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Total Polaris Scope 2 (Market Based)",
+      "extracted_t_co2e": 3370.0,
+      "unit_known": true,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2019,
+      "scope": "3",
+      "extracted_value": 14067,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Total Polaris Scope 3 (Polaris Management + all portfolio companies)",
+      "extracted_t_co2e": 14067.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 14067.0,
+          "unit": "tCO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 14067.0,
+          "metric_name": "Scope 3",
+          "display_type": "Table",
+          "page": "73",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2020,
+      "scope": "3",
+      "extracted_value": 26959,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Total Polaris Scope 3 (Polaris Management + all portfolio companies)",
+      "extracted_t_co2e": 26959.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 26959.0,
+          "unit": "tCO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 26959.0,
+          "metric_name": "Scope 3",
+          "display_type": "Table",
+          "page": "73",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2021,
+      "scope": "3",
+      "extracted_value": 78645,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Total Polaris Scope 3 (Polaris Management + all portfolio companies)",
+      "extracted_t_co2e": 78645.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 78645.0,
+          "unit": "tCO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 78645.0,
+          "metric_name": "Scope 3",
+          "display_type": "Table",
+          "page": "73",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    }
+  ],
+  "summary": {
+    "total_extracted": 10,
+    "in_gold": 3,
+    "not_in_gold": 7,
+    "matched": 3,
+    "precision": 0.3,
+    "recall": 1.0,
+    "mean_rel_error_matched": 0.0,
+    "missing_in_extraction": []
+  }
+}

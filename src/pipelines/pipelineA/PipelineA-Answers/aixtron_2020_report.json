@@ -1,0 +1,54 @@
+{
+  "report_name": "AIXTRON_Sustainability_Report_2020",
+  "report_title": "AIXTRON Sustainability Report 2020",
+  "emissions": {
+    "scope_1": {
+      "2020": [
+        {
+          "value": 322.84,
+          "unit": "tonnes CO2e",
+          "label": "Scope 1 - Direct emissions (perfluorinated and polyfluorinated chemicals (SF6), gas, diesel, heating oil, gasoline, wood fuel, own vehicles)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 170.8,
+          "unit": "tonnes CO2e",
+          "label": "Scope 1 - Direct emissions"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2020": [
+        {
+          "value": 398.14,
+          "unit": "tonnes CO2e",
+          "label": "Scope 2 - Indirect emissions (electricity, district heating)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 406.6,
+          "unit": "tonnes CO2e",
+          "label": "Scope 2 - Indirect emissions"
+        }
+      ]
+    },
+    "scope_3": {
+      "2020": [
+        {
+          "value": 1310.1,
+          "unit": "tonnes CO2e",
+          "label": "Scope 3 - Indirect emissions (upstream and downstream value chain: fuel/energy provision, water supply, wastewater, waste, operating materials, materials and supplies, flights, transport, production service providers)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 3637.97,
+          "unit": "tonnes CO2e",
+          "label": "Scope 3 - Indirect emissions"
+        }
+      ]
+    }
+  }
+}

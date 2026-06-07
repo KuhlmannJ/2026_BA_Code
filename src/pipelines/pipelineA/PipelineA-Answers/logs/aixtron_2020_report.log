@@ -1,0 +1,8 @@
+{
+  "report": "aixtron_2020_report",
+  "batch_id": "msgbatch_01TCopw3V3AXAbjX3tC81Exx",
+  "input_tokens": 16204,
+  "output_tokens": 534,
+  "total_cost_USD": 0.056071800000000005,
+  "raw_response": "{\n  \"report_name\": \"AIXTRON_Sustainability_Report_2020\",\n  \"report_title\": \"AIXTRON Sustainability Report 2020\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2020\": [{\"value\": 322.84, \"unit\": \"tonnes CO2e\", \"label\": \"Scope 1 - Direct emissions (perfluorinated and polyfluorinated chemicals (SF6), gas, diesel, heating oil, gasoline, wood fuel, own vehicles)\"}],\n      \"2019\": [{\"value\": 170.8, \"unit\": \"tonnes CO2e\", \"label\": \"Scope 1 - Direct emissions\"}]\n    },\n    \"scope_2_location_based\": {\n      \"2020\": [{\"value\": 398.14, \"unit\": \"tonnes CO2e\", \"label\": \"Scope 2 - Indirect emissions (electricity, district heating)\"}],\n      \"2019\": [{\"value\": 406.6, \"unit\": \"tonnes CO2e\", \"label\": \"Scope 2 - Indirect emissions\"}]\n    },\n    \"scope_3\": {\n      \"2020\": [{\"value\": 1310.1, \"unit\": \"tonnes CO2e\", \"label\": \"Scope 3 - Indirect emissions (upstream and downstream value chain: fuel/energy provision, water supply, wastewater, waste, operating materials, materials and supplies, flights, transport, production service providers)\"}],\n      \"2019\": [{\"value\": 3637.97, \"unit\": \"tonnes CO2e\", \"label\": \"Scope 3 - Indirect emissions\"}]\n    }\n  }\n}"
+}

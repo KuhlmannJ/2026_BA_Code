@@ -1,0 +1,87 @@
+{
+  "report": "lundin gold inc_2021_report",
+  "results": [
+    {
+      "year": 2021,
+      "scope": "1",
+      "extracted_value": 25399,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Total Scope 1 (Fruta del Norte 25,014 + Exploration 385)",
+      "extracted_t_co2e": 25399.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 25399.0,
+          "unit": "tCO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 25399.0,
+          "metric_name": "Scope 1",
+          "display_type": "Table",
+          "page": "26",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2021,
+      "scope": "2lb",
+      "extracted_value": 24170,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Total Scope 2 (Fruta del Norte 24,097 + Ecuador Offices 73 + Vancouver Offices 0.1)",
+      "extracted_t_co2e": 24170.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 24170.0,
+          "unit": "tCO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 24170.0,
+          "metric_name": "Scope 2",
+          "display_type": "Table",
+          "page": "26",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2021,
+      "scope": "3",
+      "extracted_value": 746750,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Total Scope 3 (Fruta del Norte)",
+      "extracted_t_co2e": 746750.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 746750.0,
+          "unit": "tCO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 746750.0,
+          "metric_name": "Scope 3",
+          "display_type": "Table",
+          "page": "26",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    }
+  ],
+  "summary": {
+    "total_extracted": 3,
+    "in_gold": 3,
+    "not_in_gold": 0,
+    "matched": 3,
+    "precision": 1.0,
+    "recall": 1.0,
+    "mean_rel_error_matched": 0.0,
+    "missing_in_extraction": []
+  }
+}

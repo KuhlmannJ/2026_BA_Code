@@ -1,0 +1,8 @@
+{
+  "report": "cytokinetics_inc_2022_report",
+  "batch_id": "msgbatch_01TCopw3V3AXAbjX3tC81Exx",
+  "input_tokens": 20610,
+  "output_tokens": 244,
+  "total_cost_USD": 0.06484242,
+  "raw_response": "{\n  \"report_name\": \"Cytokinetics 2022 Corporate Responsibility Report\",\n  \"report_title\": \"Cytokinetics 2022 Corporate Responsibility Report\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2022\": [{\"value\": 0.67, \"unit\": \"metric kilotons CO2e\", \"label\": \"Scope 1 (fuels, natural gas, refrigerants)\"}]\n    },\n    \"scope_2_market_based\": {},\n    \"scope_2_location_based\": {\n      \"2022\": [{\"value\": 0.83, \"unit\": \"metric kilotons CO2e\", \"label\": \"Scope 2 (electricity use)\"}]\n    },\n    \"scope_3\": {}\n  }\n}"
+}

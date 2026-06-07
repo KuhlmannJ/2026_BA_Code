@@ -1,0 +1,406 @@
+{
+  "report": "Allianz_2022_report",
+  "results": [
+    {
+      "year": 2020,
+      "scope": "1",
+      "extracted_value": 28714,
+      "extracted_unit": "t CO2e",
+      "extracted_label": "Scope 1 – Direct GHG emissions",
+      "extracted_t_co2e": 28714.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 28714.0,
+          "unit": "t CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 28714.0,
+          "metric_name": "Scope 1 – Direct GHG emissions",
+          "display_type": "Table",
+          "page": "78",
+          "rel_error": 0.0
+        },
+        {
+          "value": 29.0,
+          "unit": "ktCO₂eq",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 29000.0,
+          "metric_name": "Allianz Group operational greenhouse gas emissions - Scope 1/Scope 1",
+          "display_type": "Graphic/Table",
+          "page": "92",
+          "rel_error": 0.009862
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2021,
+      "scope": "1",
+      "extracted_value": 28699,
+      "extracted_unit": "t CO2e",
+      "extracted_label": "Scope 1 – Direct GHG emissions",
+      "extracted_t_co2e": 28699.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 28699.0,
+          "unit": "t CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 28699.0,
+          "metric_name": "Scope 1 – Direct GHG emissions",
+          "display_type": "Table",
+          "page": "78",
+          "rel_error": 0.0
+        },
+        {
+          "value": 29.0,
+          "unit": "ktCO₂eq",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 29000.0,
+          "metric_name": "Allianz Group operational greenhouse gas emissions - Scope 1/Scope 1",
+          "display_type": "Graphic",
+          "page": "92",
+          "rel_error": 0.010379
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2022,
+      "scope": "1",
+      "extracted_value": 30953,
+      "extracted_unit": "t CO2e",
+      "extracted_label": "Scope 1 – Direct GHG emissions",
+      "extracted_t_co2e": 30953.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 30953.0,
+          "unit": "t CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 30953.0,
+          "metric_name": "Scope 1 – Direct GHG emissions",
+          "display_type": "Table",
+          "page": "78",
+          "rel_error": 0.0
+        },
+        {
+          "value": 31.0,
+          "unit": "ktCO₂eq",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 31000.0,
+          "metric_name": "Allianz Group operational greenhouse gas emissions - Scope 1/Scope 1",
+          "display_type": "Graphic",
+          "page": "92",
+          "rel_error": 0.001516
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2020,
+      "scope": "2lb",
+      "extracted_value": 180826,
+      "extracted_unit": "t CO2e",
+      "extracted_label": "Scope 2 – Indirect GHG emissions (location based)",
+      "extracted_t_co2e": 180826.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 180826.0,
+          "unit": "t CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 180826.0,
+          "metric_name": "Scope 2 – Indirect GHG emissions (location based)",
+          "display_type": "Table",
+          "page": "78",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2021,
+      "scope": "2lb",
+      "extracted_value": 149599,
+      "extracted_unit": "t CO2e",
+      "extracted_label": "Scope 2 – Indirect GHG emissions (location based)",
+      "extracted_t_co2e": 149599.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 149599.0,
+          "unit": "t CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 149599.0,
+          "metric_name": "Scope 2 – Indirect GHG emissions (location based)",
+          "display_type": "Table",
+          "page": "78",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2022,
+      "scope": "2lb",
+      "extracted_value": 138339,
+      "extracted_unit": "t CO2e",
+      "extracted_label": "Scope 2 – Indirect GHG emissions (location based)",
+      "extracted_t_co2e": 138339.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 138339.0,
+          "unit": "t CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 138339.0,
+          "metric_name": "Scope 2 – Indirect GHG emissions (location based)",
+          "display_type": "Table",
+          "page": "78",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2020,
+      "scope": "2mb",
+      "extracted_value": 100722,
+      "extracted_unit": "t CO2e",
+      "extracted_label": "Scope 2 – Indirect GHG emissions (market based)",
+      "extracted_t_co2e": 100722.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 100722.0,
+          "unit": "t CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 100722.0,
+          "metric_name": "Scope 2 – Indirect GHG emissions (market based)/Scope 2 – Indirect GHG emissions (market based)",
+          "display_type": "Table",
+          "page": "78",
+          "rel_error": 0.0
+        },
+        {
+          "value": 101.0,
+          "unit": "ktCO₂eq",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 101000.0,
+          "metric_name": "Allianz Group operational greenhouse gas emissions - Scope 2 - market based",
+          "display_type": "Graphic",
+          "page": "92",
+          "rel_error": 0.002752
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2021,
+      "scope": "2mb",
+      "extracted_value": 54689,
+      "extracted_unit": "t CO2e",
+      "extracted_label": "Scope 2 – Indirect GHG emissions (market based)",
+      "extracted_t_co2e": 54689.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 54689.0,
+          "unit": "t CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 54689.0,
+          "metric_name": "Scope 2 – Indirect GHG emissions (market based)/Scope 2 – Indirect GHG emissions (market based)",
+          "display_type": "Table",
+          "page": "78",
+          "rel_error": 0.0
+        },
+        {
+          "value": 55.0,
+          "unit": "ktCO₂eq",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 55000.0,
+          "metric_name": "Allianz Group operational greenhouse gas emissions - Scope 2 - market based",
+          "display_type": "Graphic",
+          "page": "92",
+          "rel_error": 0.005655
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2022,
+      "scope": "2mb",
+      "extracted_value": 30490,
+      "extracted_unit": "t CO2e",
+      "extracted_label": "Scope 2 – Indirect GHG emissions (market based)",
+      "extracted_t_co2e": 30490.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 30490.0,
+          "unit": "t CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 30490.0,
+          "metric_name": "Scope 2 – Indirect GHG emissions (market based)/Scope 2 – Indirect GHG emissions (market based)",
+          "display_type": "Table",
+          "page": "78",
+          "rel_error": 0.0
+        },
+        {
+          "value": 30.0,
+          "unit": "ktCO₂eq",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 30000.0,
+          "metric_name": "Allianz Group operational greenhouse gas emissions - Scope 2 - market based",
+          "display_type": "Graphic",
+          "page": "92",
+          "rel_error": 0.016333
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2020,
+      "scope": "3",
+      "extracted_value": 73916,
+      "extracted_unit": "t CO2e",
+      "extracted_label": "Scope 3 – Other indirect GHG emissions",
+      "extracted_t_co2e": 73916.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 73916.0,
+          "unit": "t CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 73916.0,
+          "metric_name": "Scope 3 – Other indirect GHG emissions",
+          "display_type": "Table",
+          "page": "78",
+          "rel_error": 0.0
+        },
+        {
+          "value": 74.0,
+          "unit": "ktCO₂eq",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 74000.0,
+          "metric_name": "Allianz Group operational greenhouse gas emissions - Scope 3",
+          "display_type": "Graphic",
+          "page": "92",
+          "rel_error": 0.001135
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2021,
+      "scope": "3",
+      "extracted_value": 55359,
+      "extracted_unit": "t CO2e",
+      "extracted_label": "Scope 3 – Other indirect GHG emissions",
+      "extracted_t_co2e": 55359.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 55359.0,
+          "unit": "t CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 55359.0,
+          "metric_name": "Scope 3 – Other indirect GHG emissions",
+          "display_type": "Table",
+          "page": "78",
+          "rel_error": 0.0
+        },
+        {
+          "value": 55.0,
+          "unit": "ktCO₂eq",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 55000.0,
+          "metric_name": "Allianz Group operational greenhouse gas emissions - Scope 3",
+          "display_type": "Graphic",
+          "page": "92",
+          "rel_error": 0.006527
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2022,
+      "scope": "3",
+      "extracted_value": 92467,
+      "extracted_unit": "t CO2e",
+      "extracted_label": "Scope 3 – Other indirect GHG emissions",
+      "extracted_t_co2e": 92467.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 92467.0,
+          "unit": "t CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 92467.0,
+          "metric_name": "Scope 3 – Other indirect GHG emissions",
+          "display_type": "Table",
+          "page": "78",
+          "rel_error": 0.0
+        },
+        {
+          "value": 92.0,
+          "unit": "ktCO₂eq",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 92000.0,
+          "metric_name": "Allianz Group operational greenhouse gas emissions - Scope 3",
+          "display_type": "Graphic",
+          "page": "92",
+          "rel_error": 0.005076
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    }
+  ],
+  "summary": {
+    "total_extracted": 12,
+    "in_gold": 12,
+    "not_in_gold": 0,
+    "matched": 12,
+    "precision": 1.0,
+    "recall": 0.8,
+    "mean_rel_error_matched": 0.0,
+    "missing_in_extraction": [
+      {
+        "year": 2019,
+        "scope": "1"
+      },
+      {
+        "year": 2019,
+        "scope": "2mb"
+      },
+      {
+        "year": 2019,
+        "scope": "3"
+      }
+    ]
+  }
+}

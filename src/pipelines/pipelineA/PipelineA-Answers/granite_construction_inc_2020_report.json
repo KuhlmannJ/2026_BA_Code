@@ -1,0 +1,48 @@
+{
+  "report_name": "Granite Construction 2020 Sustainability Report",
+  "report_title": "Granite Construction 2020 Sustainability Report",
+  "emissions": {
+    "scope_1": {
+      "2015": [
+        {
+          "value": 132285,
+          "unit": "US Tons CO2e",
+          "label": "Total Scope 1 CO2 Equivalents"
+        }
+      ],
+      "2020": [
+        {
+          "value": 244727.61,
+          "unit": "US Tons CO2e",
+          "label": "Total Scope 1 CO2 Equivalents"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {},
+    "scope_3": {
+      "2020": [
+        {
+          "value": 4663,
+          "unit": "US Tons CO2",
+          "label": "Scope 3 Employee Travel - Air travel (estimated)"
+        },
+        {
+          "value": 3601,
+          "unit": "US Tons CO2",
+          "label": "Scope 3 Employee Travel - Hotel (estimated)"
+        },
+        {
+          "value": 135,
+          "unit": "US Tons CO2",
+          "label": "Scope 3 Employee Travel - Car (estimated)"
+        },
+        {
+          "value": 8399,
+          "unit": "US Tons CO2",
+          "label": "Scope 3 Travel: Total Estimated CO2 Emissions"
+        }
+      ]
+    }
+  }
+}

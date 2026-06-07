@@ -1,0 +1,166 @@
+{
+  "report": "aixtron_2020_report",
+  "results": [
+    {
+      "year": 2019,
+      "scope": "1",
+      "extracted_value": 170.8,
+      "extracted_unit": "tonnes CO2e",
+      "extracted_label": "Direct (Scope 1) GHG emissions, consolidated",
+      "extracted_t_co2e": 170.8,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 170.8,
+          "unit": "tonnes of CO2 equivalents",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 170.8,
+          "metric_name": "Scope 1 emissions",
+          "display_type": "Text",
+          "page": "50",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2020,
+      "scope": "1",
+      "extracted_value": 322.84,
+      "extracted_unit": "tonnes CO2e",
+      "extracted_label": "Direct (Scope 1) GHG emissions, consolidated",
+      "extracted_t_co2e": 322.84,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 322.84,
+          "unit": "metric tons of CO2 equivalents",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 322.84,
+          "metric_name": "Scope 1 – Direct",
+          "display_type": "Illustration",
+          "page": "49",
+          "rel_error": 0.0
+        },
+        {
+          "value": 322.84,
+          "unit": "tonnes of CO2 equivalents",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 322.84,
+          "metric_name": "Scope 1 emissions",
+          "display_type": "Text",
+          "page": "50",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2019,
+      "scope": "2mb",
+      "extracted_value": 406.6,
+      "extracted_unit": "tonnes CO2e",
+      "extracted_label": "Energy indirect (Scope 2) GHG emissions, consolidated",
+      "extracted_t_co2e": 406.6,
+      "unit_known": true,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2020,
+      "scope": "2mb",
+      "extracted_value": 398.14,
+      "extracted_unit": "tonnes CO2e",
+      "extracted_label": "Energy indirect (Scope 2) GHG emissions, consolidated",
+      "extracted_t_co2e": 398.14,
+      "unit_known": true,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2019,
+      "scope": "3",
+      "extracted_value": 3637.97,
+      "extracted_unit": "tonnes CO2e",
+      "extracted_label": "Other indirect (Scope 3) GHG emissions, consolidated",
+      "extracted_t_co2e": 3637.97,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 3637.97,
+          "unit": "tonnes of CO2 equivalents",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 3637.97,
+          "metric_name": "Scope 3 emissions",
+          "display_type": "Text",
+          "page": "50",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2020,
+      "scope": "3",
+      "extracted_value": 1310.1,
+      "extracted_unit": "tonnes CO2e",
+      "extracted_label": "Other indirect (Scope 3) GHG emissions, consolidated",
+      "extracted_t_co2e": 1310.1,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 1310.1,
+          "unit": "metric tons of CO2 equivalents",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 1310.1,
+          "metric_name": "Scope 3 – Indirect",
+          "display_type": "Illustration",
+          "page": "49",
+          "rel_error": 0.0
+        },
+        {
+          "value": 1310.1,
+          "unit": "tonnes of CO2 equivalents",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 1310.1,
+          "metric_name": "Scope 3 emissions",
+          "display_type": "Text",
+          "page": "50",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    }
+  ],
+  "summary": {
+    "total_extracted": 6,
+    "in_gold": 4,
+    "not_in_gold": 2,
+    "matched": 4,
+    "precision": 0.6667,
+    "recall": 0.6667,
+    "mean_rel_error_matched": 0.0,
+    "missing_in_extraction": [
+      {
+        "year": 2019,
+        "scope": "2lb"
+      },
+      {
+        "year": 2020,
+        "scope": "2lb"
+      }
+    ]
+  }
+}

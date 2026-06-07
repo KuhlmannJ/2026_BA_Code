@@ -1,0 +1,172 @@
+{
+  "report": "stantec inc_2019_report",
+  "results": [
+    {
+      "year": 2017,
+      "scope": "1",
+      "extracted_value": 9585,
+      "extracted_unit": "mtCO2e",
+      "extracted_label": "Scope 1",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 9585.0,
+          "unit": "mtCO2e",
+          "unit_norm": "mt CO2e",
+          "value_t_co2e": 9585.0,
+          "metric_name": "Scope 1",
+          "display_type": "Table",
+          "page": "79",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2018,
+      "scope": "1",
+      "extracted_value": 10333,
+      "extracted_unit": "mtCO2e",
+      "extracted_label": "Scope 1",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 10333.0,
+          "unit": "mtCO2e",
+          "unit_norm": "mt CO2e",
+          "value_t_co2e": 10333.0,
+          "metric_name": "Scope 1",
+          "display_type": "Table",
+          "page": "79",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2019,
+      "scope": "1",
+      "extracted_value": 7540,
+      "extracted_unit": "mtCO2e",
+      "extracted_label": "Scope 1",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 7540.0,
+          "unit": "mtCO2e",
+          "unit_norm": "mt CO2e",
+          "value_t_co2e": 7540.0,
+          "metric_name": "Scope 1",
+          "display_type": "Table",
+          "page": "79",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2017,
+      "scope": "3",
+      "extracted_value": 26800,
+      "extracted_unit": "mtCO2e",
+      "extracted_label": "Scope 3",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 26800.0,
+          "unit": "mtCO2e",
+          "unit_norm": "mt CO2e",
+          "value_t_co2e": 26800.0,
+          "metric_name": "Scope 3",
+          "display_type": "Table",
+          "page": "79",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2018,
+      "scope": "3",
+      "extracted_value": 29318,
+      "extracted_unit": "mtCO2e",
+      "extracted_label": "Scope 3",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 29318.0,
+          "unit": "mtCO2e",
+          "unit_norm": "mt CO2e",
+          "value_t_co2e": 29318.0,
+          "metric_name": "Scope 3",
+          "display_type": "Table",
+          "page": "79",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2019,
+      "scope": "3",
+      "extracted_value": 29301,
+      "extracted_unit": "mtCO2e",
+      "extracted_label": "Scope 3",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 29301.0,
+          "unit": "mtCO2e",
+          "unit_norm": "mt CO2e",
+          "value_t_co2e": 29301.0,
+          "metric_name": "Scope 3",
+          "display_type": "Table",
+          "page": "79",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    }
+  ],
+  "summary": {
+    "total_extracted": 6,
+    "in_gold": 6,
+    "not_in_gold": 0,
+    "matched": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "mean_rel_error_matched": null,
+    "missing_in_extraction": [
+      {
+        "year": 2017,
+        "scope": "2lb"
+      },
+      {
+        "year": 2018,
+        "scope": "2lb"
+      },
+      {
+        "year": 2019,
+        "scope": "2lb"
+      }
+    ]
+  }
+}

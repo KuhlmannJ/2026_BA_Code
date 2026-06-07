@@ -1,0 +1,255 @@
+{
+  "report": "huhtamaki_2019_report",
+  "results": [
+    {
+      "year": 2015,
+      "scope": "1",
+      "extracted_value": 191000,
+      "extracted_unit": "metric tons CO2 eqv",
+      "extracted_label": "Direct (Scope 1) GHG emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 191000.0,
+          "unit": "metric tons CO₂ eqv",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 191000.0,
+          "metric_name": "TOTAL GREENHOUSE GAS EMISSIONS - Scope 1/TOTAL GREENHOUSE GAS EMISSIONS",
+          "display_type": "Graphic",
+          "page": "44",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2016,
+      "scope": "1",
+      "extracted_value": 198000,
+      "extracted_unit": "metric tons CO2 eqv",
+      "extracted_label": "Direct (Scope 1) GHG emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 198000.0,
+          "unit": "metric tons CO₂ eqv",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 198000.0,
+          "metric_name": "TOTAL GREENHOUSE GAS EMISSIONS - Scope 1/TOTAL GREENHOUSE GAS EMISSIONS",
+          "display_type": "Graphic",
+          "page": "44",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2017,
+      "scope": "1",
+      "extracted_value": 207000,
+      "extracted_unit": "metric tons CO2 eqv",
+      "extracted_label": "Direct (Scope 1) GHG emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 207000.0,
+          "unit": "metric tons CO₂ eqv",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 207000.0,
+          "metric_name": "TOTAL GREENHOUSE GAS EMISSIONS - Scope 1/TOTAL GREENHOUSE GAS EMISSIONS",
+          "display_type": "Graphic",
+          "page": "44",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2018,
+      "scope": "1",
+      "extracted_value": 207000,
+      "extracted_unit": "metric tons CO2 eqv",
+      "extracted_label": "Direct (Scope 1) GHG emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 207000.0,
+          "unit": "metric tons CO₂ eqv",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 207000.0,
+          "metric_name": "TOTAL GREENHOUSE GAS EMISSIONS - Scope 1/TOTAL GREENHOUSE GAS EMISSIONS",
+          "display_type": "Graphic",
+          "page": "44",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2019,
+      "scope": "1",
+      "extracted_value": 219000,
+      "extracted_unit": "metric tons CO2 eqv",
+      "extracted_label": "Direct (Scope 1) GHG emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 219000.0,
+          "unit": "metric tons CO₂ eqv",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 219000.0,
+          "metric_name": "TOTAL GREENHOUSE GAS EMISSIONS - Scope 1/TOTAL GREENHOUSE GAS EMISSIONS",
+          "display_type": "Graphic",
+          "page": "44",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2015,
+      "scope": "2lb",
+      "extracted_value": 534000,
+      "extracted_unit": "metric tons CO2 eqv",
+      "extracted_label": "Indirect (Scope 2) GHG emissions, location-based",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 484000.0,
+          "unit": "metric tons CO₂ eqv",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 484000.0,
+          "metric_name": "TOTAL GREENHOUSE GAS EMISSIONS - Scope 2/TOTAL GREENHOUSE GAS EMISSIONS",
+          "display_type": "Graphic",
+          "page": "44",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2016,
+      "scope": "2lb",
+      "extracted_value": 544000,
+      "extracted_unit": "metric tons CO2 eqv",
+      "extracted_label": "Indirect (Scope 2) GHG emissions, location-based",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 512000.0,
+          "unit": "metric tons CO₂ eqv",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 512000.0,
+          "metric_name": "TOTAL GREENHOUSE GAS EMISSIONS - Scope 2/TOTAL GREENHOUSE GAS EMISSIONS",
+          "display_type": "Graphic",
+          "page": "44",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2017,
+      "scope": "2lb",
+      "extracted_value": 546000,
+      "extracted_unit": "metric tons CO2 eqv",
+      "extracted_label": "Indirect (Scope 2) GHG emissions, location-based",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 534000.0,
+          "unit": "metric tons CO₂ eqv",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 534000.0,
+          "metric_name": "TOTAL GREENHOUSE GAS EMISSIONS - Scope 2/TOTAL GREENHOUSE GAS EMISSIONS",
+          "display_type": "Graphic",
+          "page": "44",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2018,
+      "scope": "2lb",
+      "extracted_value": 484000,
+      "extracted_unit": "metric tons CO2 eqv",
+      "extracted_label": "Indirect (Scope 2) GHG emissions, location-based",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 544000.0,
+          "unit": "metric tons CO₂ eqv",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 544000.0,
+          "metric_name": "TOTAL GREENHOUSE GAS EMISSIONS - Scope 2/TOTAL GREENHOUSE GAS EMISSIONS",
+          "display_type": "Graphic",
+          "page": "44",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2019,
+      "scope": "2lb",
+      "extracted_value": 512000,
+      "extracted_unit": "metric tons CO2 eqv",
+      "extracted_label": "Indirect (Scope 2) GHG emissions, location-based",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 546000.0,
+          "unit": "metric tons CO₂ eqv",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 546000.0,
+          "metric_name": "TOTAL GREENHOUSE GAS EMISSIONS - Scope 2/TOTAL GREENHOUSE GAS EMISSIONS",
+          "display_type": "Graphic",
+          "page": "44",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    }
+  ],
+  "summary": {
+    "total_extracted": 10,
+    "in_gold": 10,
+    "not_in_gold": 0,
+    "matched": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "mean_rel_error_matched": null,
+    "missing_in_extraction": []
+  }
+}

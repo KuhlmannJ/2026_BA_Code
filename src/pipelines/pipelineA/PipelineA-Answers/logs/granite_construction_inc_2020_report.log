@@ -1,0 +1,8 @@
+{
+  "report": "granite_construction_inc_2020_report",
+  "batch_id": "msgbatch_01TCopw3V3AXAbjX3tC81Exx",
+  "input_tokens": 13795,
+  "output_tokens": 444,
+  "total_cost_USD": 0.04757787000000001,
+  "raw_response": "{\n  \"report_name\": \"Granite Construction 2020 Sustainability Report\",\n  \"report_title\": \"Granite Construction 2020 Sustainability Report\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2015\": [{\"value\": 132285, \"unit\": \"US Tons CO2e\", \"label\": \"Total Scope 1 CO2 Equivalents\"}],\n      \"2020\": [{\"value\": 244727.61, \"unit\": \"US Tons CO2e\", \"label\": \"Total Scope 1 CO2 Equivalents\"}]\n    },\n    \"scope_2_market_based\": {},\n    \"scope_2_location_based\": {},\n    \"scope_3\": {\n      \"2020\": [\n        {\"value\": 4663, \"unit\": \"US Tons CO2\", \"label\": \"Scope 3 Employee Travel - Air travel (estimated)\"},\n        {\"value\": 3601, \"unit\": \"US Tons CO2\", \"label\": \"Scope 3 Employee Travel - Hotel (estimated)\"},\n        {\"value\": 135, \"unit\": \"US Tons CO2\", \"label\": \"Scope 3 Employee Travel - Car (estimated)\"},\n        {\"value\": 8399, \"unit\": \"US Tons CO2\", \"label\": \"Scope 3 Travel: Total Estimated CO2 Emissions\"}\n      ]\n    }\n  }\n}"
+}

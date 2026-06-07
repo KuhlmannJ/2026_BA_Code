@@ -1,0 +1,198 @@
+{
+  "report": "comerica inc_2019_report",
+  "results": [
+    {
+      "year": 2012,
+      "scope": "1",
+      "extracted_value": 6950,
+      "extracted_unit": "Metric tons of CO2e",
+      "extracted_label": "Scope 1 GHG emissions - natural gas, jet fuel, diesel, gasoline, and refrigerants",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 6950.0,
+          "unit": "metric tons of CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 6950.0,
+          "metric_name": "Scope 1 GHG emissions- natural gas, jet fuel, diesel, gasoline, and refrigerants",
+          "display_type": "Table",
+          "page": "44",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2018,
+      "scope": "1",
+      "extracted_value": 6371,
+      "extracted_unit": "Metric tons of CO2e",
+      "extracted_label": "Scope 1 GHG emissions - natural gas, jet fuel, diesel, gasoline, and refrigerants",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 6371.0,
+          "unit": "metric tons of CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 6371.0,
+          "metric_name": "Scope 1 GHG emissions- natural gas, jet fuel, diesel, gasoline, and refrigerants/Scope 1 ghg emissions",
+          "display_type": "Table",
+          "page": "44",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2019,
+      "scope": "1",
+      "extracted_value": 6304,
+      "extracted_unit": "Metric tons of CO2e",
+      "extracted_label": "Scope 1 GHG emissions - natural gas, jet fuel, diesel, gasoline, and refrigerants",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 6304.0,
+          "unit": "metric tons of CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 6304.0,
+          "metric_name": "Scope 1 GHG emissions- natural gas, jet fuel, diesel, gasoline, and refrigerants/Scope 1 ghg emissions",
+          "display_type": "Table",
+          "page": "44",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2012,
+      "scope": "2lb",
+      "extracted_value": 74784,
+      "extracted_unit": "Metric tons of CO2e",
+      "extracted_label": "Scope 2 GHG emissions - electricity, steam, and chilled water in company-controlled buildings",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 74784.0,
+          "unit": "metric tons of CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 74784.0,
+          "metric_name": "Scope 2 GHG emissions- electricity, steam, and chilled water in company-controlled buildings",
+          "display_type": "Table",
+          "page": "44",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2018,
+      "scope": "2lb",
+      "extracted_value": 39916,
+      "extracted_unit": "Metric tons of CO2e",
+      "extracted_label": "Scope 2 GHG emissions - electricity, steam, and chilled water in company-controlled buildings",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 39916.0,
+          "unit": "metric tons of CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 39916.0,
+          "metric_name": "Scope 2 GHG emissions- electricity, steam, and chilled water in company-controlled buildings/Scope 2 ghg emissions",
+          "display_type": "Table",
+          "page": "44",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2019,
+      "scope": "2lb",
+      "extracted_value": 36316,
+      "extracted_unit": "Metric tons of CO2e",
+      "extracted_label": "Scope 2 GHG emissions - electricity, steam, and chilled water in company-controlled buildings",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 36316.0,
+          "unit": "metric tons of CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 36316.0,
+          "metric_name": "Scope 2 GHG emissions- electricity, steam, and chilled water in company-controlled buildings/Scope 2 ghg emissions",
+          "display_type": "Table",
+          "page": "44",
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2012,
+      "scope": "3",
+      "extracted_value": 3055,
+      "extracted_unit": "Metric tons of CO2e",
+      "extracted_label": "Total lifecycle paper emissions (Purchased Goods and Services)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2018,
+      "scope": "3",
+      "extracted_value": 5257,
+      "extracted_unit": "Metric tons of CO2e",
+      "extracted_label": "Total lifecycle paper emissions (Purchased Goods and Services)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2019,
+      "scope": "3",
+      "extracted_value": 4560,
+      "extracted_unit": "Metric tons of CO2e",
+      "extracted_label": "Total lifecycle paper emissions (Purchased Goods and Services)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    }
+  ],
+  "summary": {
+    "total_extracted": 9,
+    "in_gold": 6,
+    "not_in_gold": 3,
+    "matched": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "mean_rel_error_matched": null,
+    "missing_in_extraction": []
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "report": "americold realty inc_2022_report",
+  "results": [
+    {
+      "year": 2021,
+      "scope": "1",
+      "extracted_value": 72134,
+      "extracted_unit": "MTCO2e",
+      "extracted_label": "Total Company",
+      "extracted_t_co2e": 72134.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 72314.0,
+          "unit": "MTCO2e",
+          "unit_norm": "MT CO2e",
+          "value_t_co2e": 72314.0,
+          "metric_name": "Scope 1 Emissions/Scope 1 Emissions",
+          "display_type": "Table",
+          "page": "53",
+          "rel_error": 0.002489
+        }
+      ],
+      "best_rel_error": 0.002489,
+      "is_match": true
+    },
+    {
+      "year": 2022,
+      "scope": "1",
+      "extracted_value": 102340,
+      "extracted_unit": "MTCO2e",
+      "extracted_label": "Total Company (Owned 1/1/22 ~ 12/31/22)",
+      "extracted_t_co2e": 102340.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 102340.0,
+          "unit": "MTCO2e",
+          "unit_norm": "MT CO2e",
+          "value_t_co2e": 102340.0,
+          "metric_name": "Scope 1 Emissions/Scope 1 Emissions",
+          "display_type": "Table",
+          "page": "53",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2021,
+      "scope": "2lb",
+      "extracted_value": 556660,
+      "extracted_unit": "MTCO2e",
+      "extracted_label": "Total Company (Scope 2 location-based equals market-based per report note)",
+      "extracted_t_co2e": 556660.0,
+      "unit_known": true,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2022,
+      "scope": "2lb",
+      "extracted_value": 554491,
+      "extracted_unit": "MTCO2e",
+      "extracted_label": "Total Company (Owned 1/1/22 ~ 12/31/22; location-based equals market-based per report note)",
+      "extracted_t_co2e": 554491.0,
+      "unit_known": true,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2021,
+      "scope": "2mb",
+      "extracted_value": 556660,
+      "extracted_unit": "MTCO2e",
+      "extracted_label": "Total Company",
+      "extracted_t_co2e": 556660.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 556660.0,
+          "unit": "MTCO2e",
+          "unit_norm": "MT CO2e",
+          "value_t_co2e": 556660.0,
+          "metric_name": "Market-Based Scope 2 Emissions/Market-Based Scope 2 Emissions",
+          "display_type": "Table",
+          "page": "53",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2022,
+      "scope": "2mb",
+      "extracted_value": 554491,
+      "extracted_unit": "MTCO2e",
+      "extracted_label": "Total Company (Owned 1/1/22 ~ 12/31/22)",
+      "extracted_t_co2e": 554491.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 554491.0,
+          "unit": "MTCO2e",
+          "unit_norm": "MT CO2e",
+          "value_t_co2e": 554491.0,
+          "metric_name": "Market-Based Scope 2 Emissions/Market-Based Scope 2 Emissions",
+          "display_type": "Table",
+          "page": "53",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2021,
+      "scope": "3",
+      "extracted_value": 1067697,
+      "extracted_unit": "MTCO2e",
+      "extracted_label": "Total Company",
+      "extracted_t_co2e": 1067697.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 1067697.0,
+          "unit": "MTCO2e",
+          "unit_norm": "MT CO2e",
+          "value_t_co2e": 1067697.0,
+          "metric_name": "Scope 3 Emissions/Scope 3 Emissions",
+          "display_type": "Table",
+          "page": "53",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2022,
+      "scope": "3",
+      "extracted_value": 611634,
+      "extracted_unit": "MTCO2e",
+      "extracted_label": "Total Company (Owned 1/1/22 ~ 12/31/22)",
+      "extracted_t_co2e": 611634.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 611634.0,
+          "unit": "MTCO2e",
+          "unit_norm": "MT CO2e",
+          "value_t_co2e": 611634.0,
+          "metric_name": "Scope 3 Emissions/Scope 3 Emissions",
+          "display_type": "Table",
+          "page": "53",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    }
+  ],
+  "summary": {
+    "total_extracted": 8,
+    "in_gold": 6,
+    "not_in_gold": 2,
+    "matched": 6,
+    "precision": 0.75,
+    "recall": 1.0,
+    "mean_rel_error_matched": 0.000415,
+    "missing_in_extraction": []
+  }
+}

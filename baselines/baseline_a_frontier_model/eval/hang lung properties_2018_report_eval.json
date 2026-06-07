@@ -1,0 +1,198 @@
+{
+  "report": "hang lung properties_2018_report",
+  "results": [
+    {
+      "year": 2016,
+      "scope": "1",
+      "extracted_value": 2285.31,
+      "extracted_unit": "Tonnes CO2e",
+      "extracted_label": "Building operation (Total)",
+      "extracted_t_co2e": 2285.31,
+      "unit_known": true,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2017,
+      "scope": "1",
+      "extracted_value": 4967.91,
+      "extracted_unit": "Tonnes CO2e",
+      "extracted_label": "Building operation (Total)",
+      "extracted_t_co2e": 4967.91,
+      "unit_known": true,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2018,
+      "scope": "1",
+      "extracted_value": 3062.65,
+      "extracted_unit": "Tonnes CO2e",
+      "extracted_label": "Building operation (Total)",
+      "extracted_t_co2e": 3062.65,
+      "unit_known": true,
+      "in_gold": false,
+      "gold_entries": [],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2016,
+      "scope": "2lb",
+      "extracted_value": 209034.43,
+      "extracted_unit": "Tonnes CO2e",
+      "extracted_label": "Building operation (Total)",
+      "extracted_t_co2e": 209034.43,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 209034.43,
+          "unit": "Tonnes CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 209034.43,
+          "metric_name": "Energy indirect emissions (Scope 2)",
+          "display_type": "Table",
+          "page": "53",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2017,
+      "scope": "2lb",
+      "extracted_value": 231363.82,
+      "extracted_unit": "Tonnes CO2e",
+      "extracted_label": "Building operation (Total)",
+      "extracted_t_co2e": 231363.82,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 231363.82,
+          "unit": "Tonnes CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 231363.82,
+          "metric_name": "Energy indirect emissions (Scope 2)",
+          "display_type": "Table",
+          "page": "53",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2018,
+      "scope": "2lb",
+      "extracted_value": 271239.53,
+      "extracted_unit": "Tonnes CO2e",
+      "extracted_label": "Building operation (Total)",
+      "extracted_t_co2e": 271239.53,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 271239.53,
+          "unit": "Tonnes CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 271239.53,
+          "metric_name": "Energy indirect emissions (Scope 2)",
+          "display_type": "Table",
+          "page": "53",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2016,
+      "scope": "3",
+      "extracted_value": 449.99,
+      "extracted_unit": "Tonnes CO2e",
+      "extracted_label": "Business air travel (Total)",
+      "extracted_t_co2e": 449.99,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 449.99,
+          "unit": "Tonnes CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 449.99,
+          "metric_name": "other indirect emissions/Other indirect emissions (Scope 3)",
+          "display_type": "Table",
+          "page": "53",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2017,
+      "scope": "3",
+      "extracted_value": 739.83,
+      "extracted_unit": "Tonnes CO2e",
+      "extracted_label": "Business air travel (Total)",
+      "extracted_t_co2e": 739.83,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 739.83,
+          "unit": "Tonnes CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 739.83,
+          "metric_name": "other indirect emissions/Other indirect emissions (Scope 3)",
+          "display_type": "Table",
+          "page": "53",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2018,
+      "scope": "3",
+      "extracted_value": 838.22,
+      "extracted_unit": "Tonnes CO2e",
+      "extracted_label": "Business air travel (Total)",
+      "extracted_t_co2e": 838.22,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 838.22,
+          "unit": "Tonnes CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 838.22,
+          "metric_name": "other indirect emissions/Other indirect emissions (Scope 3)",
+          "display_type": "Table",
+          "page": "53",
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    }
+  ],
+  "summary": {
+    "total_extracted": 9,
+    "in_gold": 6,
+    "not_in_gold": 3,
+    "matched": 6,
+    "precision": 0.6667,
+    "recall": 1.0,
+    "mean_rel_error_matched": 0.0,
+    "missing_in_extraction": []
+  }
+}

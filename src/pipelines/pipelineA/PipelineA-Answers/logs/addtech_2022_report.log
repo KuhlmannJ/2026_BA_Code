@@ -1,0 +1,8 @@
+{
+  "report": "addtech_2022_report",
+  "batch_id": "msgbatch_01TCopw3V3AXAbjX3tC81Exx",
+  "input_tokens": 22632,
+  "output_tokens": 680,
+  "total_cost_USD": 0.07733544,
+  "raw_response": "{\n  \"report_name\": \"Addtech_Annual_Report_2021_2022\",\n  \"report_title\": \"Addtech Annual Report 2021/2022\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2021/2022\": [{\"value\": 2041, \"unit\": \"tonnes CO2e\", \"label\": \"SCOPE 1\"}],\n      \"2020/2021\": [{\"value\": 1910, \"unit\": \"tonnes CO2e\", \"label\": \"SCOPE 1\"}],\n      \"2019/2020\": [{\"value\": 2071, \"unit\": \"tonnes CO2e\", \"label\": \"SCOPE 1\"}]\n    },\n    \"scope_2_market_based\": {\n      \"2021/2022\": [{\"value\": 4087, \"unit\": \"tonnes CO2e\", \"label\": \"Emissions, energy consumption – Market Based Method\"}],\n      \"2020/2021\": [{\"value\": 4250, \"unit\": \"tonnes CO2e\", \"label\": \"Emissions, energy consumption – Market Based Method\"}]\n    },\n    \"scope_2_location_based\": {\n      \"2021/2022\": [{\"value\": 3709, \"unit\": \"tonnes CO2e\", \"label\": \"Emissions, energy consumption – Location Based Method\"}],\n      \"2020/2021\": [{\"value\": 3395, \"unit\": \"tonnes CO2e\", \"label\": \"Emissions, energy consumption – Location Based Method\"}],\n      \"2019/2020\": [{\"value\": 3979, \"unit\": \"tonnes CO2e\", \"label\": \"Emissions, energy consumption – Location Based Method\"}]\n    },\n    \"scope_3\": {\n      \"2021/2022\": [{\"value\": 22961, \"unit\": \"tonnes CO2e\", \"label\": \"SCOPE 3\"}],\n      \"2020/2021\": [{\"value\": 19860, \"unit\": \"tonnes CO2e\", \"label\": \"SCOPE 3\"}],\n      \"2019/2020\": [{\"value\": 23132, \"unit\": \"tonnes CO2e\", \"label\": \"SCOPE 3\"}]\n    }\n  }\n}"
+}
