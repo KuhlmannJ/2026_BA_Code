@@ -77,7 +77,7 @@ print(".env loaded:", load_dotenv(find_dotenv()))
 TIME_ROUND = 6 # Rounding for time logging
 
 # FOR CSV LOGGING OF PROGESS
-PHASE           = "first_try"
+PHASE           = "BECK_QUERY"
 RUN_TS          = os.environ.get("RUN_TS", time.strftime("%m%d_%H%M")) #Timestamp from .sh file with fallback
 RETRIEVAL_LOG   = Path("/scratch/tmp/jkuhlma1/results/A-02-retrieval_log.csv")
 
@@ -99,11 +99,8 @@ RETRIEVALS_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals")
 
 # Retrieval query — placeholder for optimize_anything / GEPA optimization
 # TODO: replace with optimized query once GEPA iterations are complete
-QUERY_0 = (
-    "You are an expert in corporate sustainability reporting and greenhouse gas accounting."
-    "Extract all greenhouse gas emissions data from the provided sustainability report."
-    "Include Scope 1, Scope 2 (market-based and location-based), and Scope 3 emissions with their values, units, and reporting years."
-)
+QUERY_0 = "What are the total CO2 emissions in different years? Include Scope 1, Scope 2, and Scope 3 emissions if available."
+
 
 #### 1. GPU Details #############################################
 banner("STEP 1: GPU / CUDA")
