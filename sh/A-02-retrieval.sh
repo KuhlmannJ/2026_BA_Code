@@ -28,8 +28,9 @@ export HF_HOME=$WORK/cache/huggingface
 export CUDA_HOME=$EBROOTCUDA
 export PIP_CACHE_DIR=$WORK/.cache/pip
 
-pip install --upgrade pip
-pip install wheel torch transformers pymupdf Pillow python-dotenv datasets polars pydantic psutil accelerate torchvision pypdf
+# pip install --upgrade pip
+# pip install wheel torch transformers pymupdf Pillow python-dotenv datasets polars pydantic psutil accelerate torchvision pypdf
+pip install cryptography
 
 ## https://github.com/mjun0812/flash-attention-prebuild-wheels => Because bulidng them from scratch takes very very long time
 # pip install https://github.com/mjun0812/flash-attention-prebuild-wheels/releases/download/v0.9.17/flash_attn-2.8.3+cu130torch2.12-cp312-cp312-linux_x86_64.whl
