@@ -28,13 +28,14 @@ def log_pages(report_name: str, scores: torch.Tensor) -> None:
     n = len(scores)
     top_idx = scores.topk(min(TOP_K, n)).indices.tolist()
     
-    csv.writer(f).writerow([
-        report_name,
-        PHASE,
-        top_idx,
-        time.strftime("%Y-%m-%d %H:%M:%S"),
-        RUN_TS,  # Run-Timestamp zum Filtern
-    ])
+    with open(RETRIEVAL_LOG, "a", newline="") as log:
+        csv.writer(log).writerow([
+            report_name,
+            PHASE,
+            top_idx,
+            time.strftime("%Y-%m-%d %H:%M:%S"),
+            RUN_TS,
+        ])
         
 # Top-k pages by score, expanded with +-1 neighbors (Beck et al).    
 def select_pages(scores: torch.Tensor) -> list[int]:
@@ -81,8 +82,8 @@ RUN_TS          = os.environ.get("RUN_TS", time.strftime("%m%d_%H%M")) #Timestam
 RETRIEVAL_LOG   = Path("/scratch/tmp/jkuhlma1/results/A-02-retrieval_log.csv")
 
 if not RETRIEVAL_LOG.exists():
-    with open(RETRIEVAL_LOG, "w", newline="") as f:
-        csv.writer(f).writerow(["report", "phase", "top_k_pages", "timestamp", "run_ts"])
+    with open(RETRIEVAL_LOG, "w", newline="") as log:
+        csv.writer(log).writerow(["report", "phase", "top_k_pages", "timestamp", "run_ts"])
 
 MODEL_NAME = 'nvidia/llama-nemotron-colembed-vl-3b-v2'
 # ATTN_IMPL  = "flash_attention_2" # NOT USED atm
