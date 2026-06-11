@@ -130,6 +130,11 @@ from dotenv import load_dotenv, find_dotenv
 print(".env loaded:", load_dotenv(find_dotenv()))
 
 
+MODEL_NAME = 'nvidia/llama-nemotron-colembed-vl-3b-v2'
+# ATTN_IMPL  = "flash_attention_2" # NOT USED atm
+TOP_K      = 3 # like (Beck et al)
+
+
 TIME_ROUND = 6 # Rounding for time logging
 
 # FOR CSV LOGGING OF PROGESS
@@ -140,13 +145,6 @@ RETRIEVAL_LOG   = Path("/scratch/tmp/jkuhlma1/results/A-02-retrieval_log.csv")
 # Always overwrite the output csv
 with open(RETRIEVAL_LOG, "w", newline="") as log:
     csv.writer(log).writerow(["report", "phase", "top_k_pages", "timestamp", "run_ts", "top_10", "top_10_scores"])
-
-MODEL_NAME = 'nvidia/llama-nemotron-colembed-vl-3b-v2'
-# ATTN_IMPL  = "flash_attention_2" # NOT USED atm
-TOP_K      = 3 # like (Beck et al)
-
-
-
 
 
 # The reports in the PDF_DIR dictate what Embeddings get used
@@ -159,10 +157,13 @@ else:
 
 PDF_LIST = sorted(list(PDF_DIR.glob("*.pdf")))
 
+
 # Always get all embeddings and only use those relevant for the reports in PDF_DIR
 EMB_DIR = Path("/scratch/tmp/jkuhlma1/data/embeddings/embeddings_colembed_3b_v2")
 EMD_LIST = sorted(list(EMB_DIR.glob("*.pt")))
 
+
+# Output Path for extracted PDF Pages "Retirevals"
 RETRIEVALS_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals")
 
 
