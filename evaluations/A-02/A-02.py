@@ -105,6 +105,9 @@ print(f"  Evaluated: {n_total} (report, page) pairs across {merged['report_stem'
 print()
 print(f"  Hit@TopK     (before ±1 expansion): {n_topk/n_total:.1%}  ({n_topk}/{n_total})")
 print(f"  Hit@Expanded (after  ±1 expansion): {n_expanded/n_total:.1%}  ({n_expanded}/{n_total})")
+print()
+print("Note, both already include an abritary 'off-by-one-error'-correction")
+print("by checking the hit page and the previous one in the source document.")
 
 
 #### 4. Per-Report Breakdown ####################################
