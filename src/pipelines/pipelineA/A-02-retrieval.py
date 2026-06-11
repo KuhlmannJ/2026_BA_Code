@@ -15,6 +15,8 @@ parser.add_argument("--test", "-t", action="store_true", help="Toggle Testing Pa
 args = parser.parse_args()
 
 
+
+
 #### Helping Functions ##########################################
 # Some segmentation for log readablility
 def banner(title):
@@ -23,23 +25,30 @@ def banner(title):
     print(f"  {title}")
     print("=" * 60)
 
+
 # Logging hit pages (without neighbors as they are just +- 1)
 def log_pages(report_name: str, scores: torch.Tensor) -> None:
     n = len(scores)
-    topk = scores.topk(min(TOP_K, n))
-    top_idx = topk.indices.tolist()
-    top_scores = topk.values.tolist()
+    topk_idx = scores.topk(min(TOP_K, n)).indices.tolist()
+
+    top10 = scores.topk(min(10, n))
+    top10_pages  = top10.indices.tolist()
+    top10_scores = top10.values.tolist()
+    
+    #csv.writer(log).writerow(["report", "phase", "top_k_pages", "timestamp", "run_ts", "top_10", "top_10_scores"])
     
     with open(RETRIEVAL_LOG, "a", newline="") as log:
         csv.writer(log).writerow([
             report_name,
             PHASE,
-            top_idx,
-            top_scores,
+            topk_idx,
             time.strftime("%Y-%m-%d %H:%M:%S"),
             RUN_TS,
+            top10_pages,
+            top10_scores,
         ])
-        
+  
+      
 # Top-k pages by score, expanded with +-1 neighbors (Beck et al).    
 def select_pages(scores: torch.Tensor) -> list[int]:
     n = len(scores)
@@ -69,6 +78,13 @@ if args.test :
     banner("THIS IS A TEST-RUN")
     
 
+
+
+
+
+
+
+
 #### 0. GLOBAL VARIABLES ########################################
 banner("STEP 0: GLOBAL VARIABLES")
 
@@ -84,9 +100,9 @@ PHASE           = "BECK_QUERY"
 RUN_TS          = os.environ.get("RUN_TS", time.strftime("%m%d_%H%M")) #Timestamp from .sh file with fallback
 RETRIEVAL_LOG   = Path("/scratch/tmp/jkuhlma1/results/A-02-retrieval_log.csv")
 
-if not RETRIEVAL_LOG.exists():
-    with open(RETRIEVAL_LOG, "w", newline="") as log:
-        csv.writer(log).writerow(["report", "phase", "top_k_pages", "timestamp", "run_ts"])
+# Always overwrite the output csv
+with open(RETRIEVAL_LOG, "w", newline="") as log:
+    csv.writer(log).writerow(["report", "phase", "top_k_pages", "timestamp", "run_ts", "top_10", "top_10_scores"])
 
 MODEL_NAME = 'nvidia/llama-nemotron-colembed-vl-3b-v2'
 # ATTN_IMPL  = "flash_attention_2" # NOT USED atm
@@ -103,6 +119,11 @@ RETRIEVALS_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals")
 # Retrieval query — placeholder for optimize_anything / GEPA optimization
 # TODO: replace with optimized query once GEPA iterations are complete
 QUERY_0 = "What are the total CO2 emissions in different years? Include Scope 1, Scope 2, and Scope 3 emissions if available."
+
+
+
+
+
 
 
 #### 1. GPU Details #############################################
