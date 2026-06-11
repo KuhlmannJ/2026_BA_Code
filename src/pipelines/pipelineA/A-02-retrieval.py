@@ -2,6 +2,7 @@ import argparse
 import time
 import csv
 import os
+import json
 
 from pathlib import Path
 from pypdf import PdfReader, PdfWriter
@@ -9,10 +10,20 @@ from pypdf import PdfReader, PdfWriter
 import torch
 from transformers import AutoModel
 
+
+# Retrieval query — placeholder for optimize_anything / GEPA optimization
+# Source of query text: Beck et al. (Nature Dataset)
+QUERY_0 = "What are the total CO2 emissions in different years? Include Scope 1, Scope 2, and Scope 3 emissions if available."
+
 # ── Arguments for Dev'ing
 parser = argparse.ArgumentParser()
-parser.add_argument("--test", "-t", action="store_true", help="Toggle Testing Path")
+parser.add_argument("--test",           "-t",  action="store_true",       help="Toggle Testing Path")
+parser.add_argument("--gepaTrainSet",   "-gt", action="store_true",       help="Toggle Training Set of Reports")
+parser.add_argument("--query",          "-q",  type=str, default=QUERY_0, help="Custom retrieval query")
 args = parser.parse_args()
+
+# Defaults to QUERY0 if none is passed on
+QUERY = args.query
 
 
 
@@ -73,18 +84,44 @@ def extract_pages_as_pdf(pdf_path: Path, page_indices: list[int], save_path: Pat
         writer.write(output_pdf)
 
 
+# Save top-10 results as JSON for GEPA optimization
+# JSON can later be accessed report-wise via results["report"], results["top_10_pages"][0] etc. like a nested-array
+def save_top10_results_json(report_name: str, scores: torch.Tensor) -> None:
+    n = len(scores)
+    top10 = scores.topk(min(10, n))
+    
+    results = {
+        "report": report_name,
+        "query": QUERY,
+        "timestamp": time.strftime("%Y-%m-%d %H:%M:%S"),
+        "run_ts": RUN_TS,
+        "top_10_pages": top10.indices.tolist(),
+        "top_10_scores": top10.values.tolist(),
+        "top_10_data": [
+            {"page": idx.item(), "score": score.item()} 
+            for idx, score in zip(top10.indices, top10.values)
+        ]
+    }
+    
+    # Save as JSON
+    json_path = RETRIEVALS_DIR / "GEPA" / f"{report_name}_top10_results.json"
+    with open(json_path, "w") as f:
+        json.dump(results, f, indent=2)
+
+
+
+
+
+
+
+
+
+
+
 
 if args.test :
     banner("THIS IS A TEST-RUN")
     
-
-
-
-
-
-
-
-
 #### 0. GLOBAL VARIABLES ########################################
 banner("STEP 0: GLOBAL VARIABLES")
 
@@ -108,19 +145,32 @@ MODEL_NAME = 'nvidia/llama-nemotron-colembed-vl-3b-v2'
 # ATTN_IMPL  = "flash_attention_2" # NOT USED atm
 TOP_K      = 3 # like (Beck et al)
 
-PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/test_esg_reports") if args.test else Path("/scratch/tmp/jkuhlma1/data/esg_reports")
+
+
+
+
+# The reports in the PDF_DIR dictate what Embeddings get used
+if args.gepaTrainSet:
+    PDF_DIR = Path("/scratch/tmp/jkuhlma1/data/training/test_esg_reports")
+elif args.test:
+    PDF_DIR = Path("/scratch/tmp/jkuhlma1/data/test_esg_reports")
+else:
+    PDF_DIR = Path("/scratch/tmp/jkuhlma1/data/esg_reports")
+
 PDF_LIST = sorted(list(PDF_DIR.glob("*.pdf")))
 
-EMB_DIR  = Path("/scratch/tmp/jkuhlma1/data/embeddings/test_embeddings_colembed_3b_v2") if args.test else Path("/scratch/tmp/jkuhlma1/data/embeddings/embeddings_colembed_3b_v2")
+# Always get all embeddings and only use those relevant for the reports in PDF_DIR
+EMB_DIR = Path("/scratch/tmp/jkuhlma1/data/embeddings/embeddings_colembed_3b_v2")
 EMD_LIST = sorted(list(EMB_DIR.glob("*.pt")))
 
 RETRIEVALS_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals")
 
-# Retrieval query — placeholder for optimize_anything / GEPA optimization
-# TODO: replace with optimized query once GEPA iterations are complete
-QUERY_0 = "What are the total CO2 emissions in different years? Include Scope 1, Scope 2, and Scope 3 emissions if available."
 
 
+print("Now used Query:")
+print(QUERY)
+print()
+print(f"Number of PDFs inuse: {len(PDF_LIST)}")
 
 
 
@@ -156,7 +206,7 @@ print(f"  VRAM belegt: {torch.cuda.max_memory_allocated() / 1e9:.1f} GB")
 banner("STEP 3: Begin Retrieval")
 
 t0 = time.time()
-query_embeddings = model.forward_queries([QUERY_0], batch_size=1)
+query_embeddings = model.forward_queries([QUERY], batch_size=1)
 runtime_queryEmd = round(time.time() - t0, TIME_ROUND)
 print(f"runtime_queryEmd: {runtime_queryEmd}s")
 print()
@@ -193,6 +243,7 @@ for pdf_path in PDF_LIST:
     
     scores = model.get_scores(query_embeddings, image_embeddings)[0]  # Pro Query eine Ziele in scores, dahe rüberall hier scores[0]
     log_pages(report_name, scores)
+    save_top10_results_json(report_name, scores)  # Save Top-10 pages for GEPA optimization
     
     topk = scores.topk(min(TOP_K, len(scores)))
     print(f"Top-{TOP_K} page indices: {topk.indices.tolist()}")
