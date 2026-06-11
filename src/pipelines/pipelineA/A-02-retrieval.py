@@ -26,13 +26,16 @@ def banner(title):
 # Logging hit pages (without neighbors as they are just +- 1)
 def log_pages(report_name: str, scores: torch.Tensor) -> None:
     n = len(scores)
-    top_idx = scores.topk(min(TOP_K, n)).indices.tolist()
+    topk = scores.topk(min(TOP_K, n))
+    top_idx = topk.indices.tolist()
+    top_scores = topk.values.tolist()
     
     with open(RETRIEVAL_LOG, "a", newline="") as log:
         csv.writer(log).writerow([
             report_name,
             PHASE,
             top_idx,
+            top_scores,
             time.strftime("%Y-%m-%d %H:%M:%S"),
             RUN_TS,
         ])
@@ -169,6 +172,10 @@ for pdf_path in PDF_LIST:
     
     scores = model.get_scores(query_embeddings, image_embeddings)[0]  # Pro Query eine Ziele in scores, dahe rüberall hier scores[0]
     log_pages(report_name, scores)
+    
+    topk = scores.topk(min(TOP_K, len(scores)))
+    print(f"Top-{TOP_K} page indices: {topk.indices.tolist()}")
+    print(f"Top-{TOP_K} scores      : {topk.values.tolist()}")
     
     runtime_scoring = round(time.time() - t2, TIME_ROUND)
     
