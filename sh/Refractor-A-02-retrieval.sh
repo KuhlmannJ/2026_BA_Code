@@ -43,6 +43,6 @@ export RUN_TS=$(date +%m%d_%H%M)
 # START THE APPLICATION
 python -u $HOME/2026_BA_Code/src/pipelines/pipelineA/Refractor-A-02-retrieval.py
 
-# python -u $HOME/2026_BA_Code/evaluations/A-02/A-02.py
+python -u $HOME/2026_BA_Code/evaluations/A-02/A-02.py
 
 # pip freeze > ~/2026_BA_Code/requirements_$(date +%m%d_%H%M).txt
