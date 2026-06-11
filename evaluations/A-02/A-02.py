@@ -71,10 +71,12 @@ with open(RETRIEVAL_LOG, newline="", encoding="utf-8") as f:
                 if neighbor >= 0:
                     expanded.add(neighbor)
         retrieval_rows.append({
-            "report_stem": row["report"],
-            "phase":       row["phase"],
-            "top_k_pages": top_k,
-            "expanded":    expanded,
+            "report_stem":   row["report"],
+            "phase":         row["phase"],
+            "top_k_pages":   top_k,
+            "expanded":      expanded,
+            "top_10":        row["top_10"],
+            "top_10_scores": row["top_10_scores"]
         })
 
 ret_df = pd.DataFrame(retrieval_rows)
