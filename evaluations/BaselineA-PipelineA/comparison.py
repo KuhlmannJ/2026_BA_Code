@@ -1,11 +1,11 @@
 import pandas as pd
-
+from pathlib import Path
 #### GLOBAL VARIABLES
 MATCH_TOLERANCE = 0.01  # 1 % relative Abweichung gilt als Match    
     
 #### INPUTS
-ba = pd.read_csv("./baselineA.csv")
-pa = pd.read_csv("./pipelineA.csv")
+ba = pd.read_csv(Path("./evaluations/BaselineA-PipelineA/baselineA.csv"))
+pa = pd.read_csv(Path("./evaluations/BaselineA-PipelineA/pipelineA.csv"))
 
 print(ba.info())
 print(pa.info())
@@ -39,7 +39,7 @@ print(f"  Median Rel. Delta   : {both["rel_diff"].median():.3f}")
 
 
 
-df.to_csv("A-A_comparison.csv", index=False)
+df.to_csv(Path("./evaluations/BaselineA-PipelineA/A-A_comparison.csv"), index=False)
 print("Gespeichert: A-A_comparison.csv")
 
 df["scope"] = df["scope"].str.replace("scope_1", "1", regex=False)
@@ -51,12 +51,12 @@ df["scope"] = df["scope"].str.replace("scope_3", "3", regex=False)
 
 #### LOAD GOLD STANDARD (checklist)
 
-checklist = pd.read_csv("../../checklist.csv")
+checklist = pd.read_csv("./checklist.csv")
 checklist["report_name"] = checklist["report_name"].str.replace(" ", "_", regex=False)
 checklist["report_name"] = checklist["report_name"].str.replace(".pdf", "", regex=False)
 checklist.to_csv("checklistWO_pdf.csv", index=False)
 
-gs = pd.read_csv("checklistWO_pdf.csv")
+gs = pd.read_csv(Path("./evaluations/BaselineA-PipelineA/checklistWO_pdf.csv"))
 
 gs["year"] = gs["year"].astype(str)
 gs = gs.rename(columns={"value": "value_gs"})
@@ -76,8 +76,10 @@ df2["match_gs_ba"] = df2["value_gs"] == df2["value_ba"]
 df2["match_gs_pa"] = df2["value_gs"] == df2["value_pa"]
 df2["match_gs_ba_pa"] = df2["match"] & df2["match_gs_ba"] & df2["match_gs_pa"]
 
-df2.to_csv("A-A-G_comparison.csv", index=False)
+df2.to_csv(Path("./evaluations/BaselineA-PipelineA/A-A-G_comparison.csv"), index=False)
 print("Gespeichert: A-A-G_comparison.csv")
+
+
 
 #### SPELLING CANDIDATES (none found anymore)
 
