@@ -46,7 +46,7 @@ if not PDF_LIST:
 BATCH_SIZE = args.batch_size # 8 with ColPlali, but those embeddings will get bigger due to more vectors
 DPI = 150 # matches ColEmbed's 8-tile limit (2×4 @ 512px) for A4 pages
 
-SAVE_DIR = Path("/scratch/tmp/jkuhlma1/data/embeddings/embeddings_colembed_3b_v2")
+SAVE_DIR = Path("/scratch/tmp/jkuhlma1/data/embeddings/embeddings_colembed_4b_v2")
 SAVE_DIR.mkdir(parents=True, exist_ok=True)
 
 
@@ -73,7 +73,8 @@ model = AutoModel.from_pretrained(
     attn_implementation=ATTN_IMPL # TODO NEEDS A RE-RUN, was disabled at last run
 ).eval()
 print(f" Loaded: {MODEL_NAME}")
-print(f"  VRAM belegt: {torch.cuda.max_memory_allocated() / 1e9:.1f} GB")
+print(f" Attention loaded:{model.config._attn_implementation}")
+print(f" VRAM belegt: {torch.cuda.max_memory_allocated() / 1e9:.1f} GB")
 
 
 #### 3. PDF to Image direct into Embedding ############################################
