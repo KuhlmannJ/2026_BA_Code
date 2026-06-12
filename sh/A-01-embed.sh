@@ -51,7 +51,7 @@ export PIP_CACHE_DIR=$WORK/.cache/pip
 # START THE APPLICATION
 # Set a MODEL_NAME flag '-3B' or '-4B' or '-8B' via 'sbatch A-01-embed.sh -4B'
 MODEL_FLAG=${1:--3B} # Defaults to 3B
-python "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed-ColEmbed3Bv2.py" "$MODEL_FLAG"
+python "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed.py" "$MODEL_FLAG"
 
 mkdir -p $WORK/requirements/A-01-embed
 pip freeze > $WORK/requirements/A-01-embed/3Bv2_requirements$(date +%m%d_%H%M).txt
