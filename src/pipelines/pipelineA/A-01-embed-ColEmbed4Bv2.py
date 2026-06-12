@@ -7,6 +7,8 @@ import psutil
 import os
 import time
 import sys
+import csv
+from datetime import datetime
 
 from pathlib import Path
 import fitz  # pymupdf
@@ -48,6 +50,12 @@ DPI = 150 # matches ColEmbed's 8-tile limit (2×4 @ 512px) for A4 pages
 
 SAVE_DIR = Path(f"/scratch/tmp/jkuhlma1/data/embeddings/{MODEL_NAME}")
 SAVE_DIR.mkdir(parents=True, exist_ok=True)
+
+LOG_FILE = SAVE_DIR / f"kpi_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+LOG_FIELDS = ["report", "pages", "elapsed_s", "s_per_page", "peak_vram_gb", "peak_ram_gb", "file_size_mb", "embed_dim"]
+with open(LOG_FILE, "w", newline="") as f:
+    csv.DictWriter(f, fieldnames=LOG_FIELDS).writeheader()
+print(f"  KPI-Log : {LOG_FILE}")
 
 
 # May ommit ...
@@ -131,19 +139,34 @@ for pdf_path in PDF_LIST :
     report_embeddings_cpu = [emb.detach().cpu() for emb in report_embeddings]
     
     ## Saving every report tensor seperately
-    torch.save(report_embeddings_cpu, f"{SAVE_DIR}/{report_name}.pt")
-    
+    pt_path = SAVE_DIR / f"{report_name}.pt"
+    torch.save(report_embeddings_cpu, pt_path)
+
     # Report for each document
-    pages = len(report_embeddings)
-    print(f"Tensor list for {pdf_path.stem} saved. "
-      f"({pages} pages | {elapsed:.1f}s | {elapsed/pages:.2f}s/page | Peak-VRAM: {peak_gb:.1f} GB | RAM: {peak_ram_gb:.1f} GB)")
+    pages      = len(report_embeddings)
+    file_mb    = pt_path.stat().st_size / 1e6
+    embed_dim  = report_embeddings_cpu[0].shape[-1] if report_embeddings_cpu else None
+
+    with open(LOG_FILE, "a", newline="") as f:
+        csv.DictWriter(f, fieldnames=LOG_FIELDS).writerow({
+            "report":       report_name,
+            "pages":        pages,
+            "elapsed_s":    round(elapsed, 2),
+            "s_per_page":   round(elapsed / pages, 3),
+            "peak_vram_gb": round(peak_gb, 2),
+            "peak_ram_gb":  round(peak_ram_gb, 2),
+            "file_size_mb": round(file_mb, 2),
+            "embed_dim":    embed_dim,
+        })
+
     print(f"Tensor list for {report_name} saved. "
-          f"({len(report_embeddings)} pages | Peak-VRAM: {peak_gb:.1f} GB)"
-          f"  RAM : {peak_ram_gb:.1f} GB")
+          f"({pages} pages | {elapsed:.1f}s | {elapsed/pages:.2f}s/page | "
+          f"Peak-VRAM: {peak_gb:.1f} GB | RAM: {peak_ram_gb:.1f} GB | {file_mb:.1f} MB)")
     print()
     
     
 print(f"All Tensors saved to {SAVE_DIR}")
+print(f"KPI-Log written to  {LOG_FILE}")
 
 #### 5. Summary #################################################
 banner("VRAM SUMMARY")
