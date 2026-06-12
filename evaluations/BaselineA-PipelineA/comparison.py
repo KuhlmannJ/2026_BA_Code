@@ -49,6 +49,8 @@ df["scope"] = df["scope"].str.replace("scope_3", "3", regex=False)
 
 
 
+#### LOAD GOLD STANDARD (checklist)
+
 checklist = pd.read_csv("../../checklist.csv")
 checklist["report_name"] = checklist["report_name"].str.replace(" ", "_", regex=False)
 checklist["report_name"] = checklist["report_name"].str.replace(".pdf", "", regex=False)
@@ -59,7 +61,7 @@ gs = pd.read_csv("checklistWO_pdf.csv")
 gs["year"] = gs["year"].astype(str)
 gs = gs.rename(columns={"value": "value_gs"})
 
-print(gs.info())
+# print(gs.info())
 
 df2 = pd.merge(
     df,
@@ -67,6 +69,8 @@ df2 = pd.merge(
     on=["report_name", "scope", "year"],
     how="left",
 )
+
+#### COMPARE Base- and Pipeline with GS
 
 df2["match_gs_ba"] = df2["value_gs"] == df2["value_ba"]
 df2["match_gs_pa"] = df2["value_gs"] == df2["value_pa"]

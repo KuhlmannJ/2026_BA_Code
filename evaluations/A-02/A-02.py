@@ -90,11 +90,20 @@ banner("STEP 3: Retrieval Evaluation")
 merged = gold_pages.merge(ret_df, on="report_stem", how="outer")
 
 def hit_topk(row):
-    # Check gold_page and gold_page-1 (handles ±1 offset between PDFs)
-    return row["page"] in row["top_k_pages"] or (row["page"] - 1) in row["top_k_pages"]
+    page = row["page"]
+    if page in row["top_k_pages"]:
+        return True
+    if isinstance(page, int) and (page - 1) in row["top_k_pages"]:
+        return True
+    return False
 
 def hit_expanded(row):
-    return row["page"] in row["expanded"] or (row["page"] - 1) in row["expanded"]
+    page = row["page"]
+    if page in row["expanded"]:
+        return True
+    if isinstance(page, int) and (page - 1) in row["expanded"]:
+        return True
+    return False
 
 merged["hit_topk"]     = merged.apply(hit_topk,     axis=1)
 merged["hit_expanded"] = merged.apply(hit_expanded, axis=1)
