@@ -21,7 +21,7 @@ load_dotenv(find_dotenv())
 # ── Arguments for Dev'ing
 parser = argparse.ArgumentParser()
 parser.add_argument("--test", "-t", action="store_true", help="Toggle Testing Path")
-parser.add_argument("--all",  "-a", action="store_true", help="Toggle ALL ESG reports (useless aswell)")
+parser.add_argument("--all",  "-a", action="store_true", help="Toggle ALL ESG reports (useless aswell)") # TAKES LONGER
 parser.add_argument("--batch_size", "-bz", type=int, default=1000) #1000 because it runs on a H200 within memory (120/140GB)
 
 # ── Arguments MODEL_SELECTION # 'dest' for numbers in flags

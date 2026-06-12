@@ -11,7 +11,7 @@
 #SBATCH --mem=64G
 #SBATCH --cpus-per-task=8           # the number cpus per task
 #SBATCH --partition=gpuh200         # on which partition to submit the job
-#SBATCH --time=01:00:00             # the max wallclock time (time limit your job will run)
+#SBATCH --time=02:00:00             # the max wallclock time (time limit your job will run)
 
 #SBATCH --output=/scratch/tmp/jkuhlma1/logs/%j_out.log    # stdout → Datei (%j = Job-ID)
 #SBATCH --error=/scratch/tmp/jkuhlma1/logs/%j_err.log     # stderr → Datei
