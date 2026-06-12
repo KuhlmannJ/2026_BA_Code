@@ -50,7 +50,10 @@ match True:
     case _:
         parser.error("Set a MODEL_NAME flag '-3B' or '-4B' or '-8B'.") # No default chosen, as not necessary with .sh 
 
-ATTN_IMPL  = "flash_attention_2"
+if args._3B :
+    ATTN_IMPL  = None # Does not work on 3B
+else :
+    ATTN_IMPL = "flash_attention_2"
 
 # Path To All and List Of All Paths to ESG-Reports
 PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/esg_reports_test") if args.test else Path("/scratch/tmp/jkuhlma1/data/esg_reports")
