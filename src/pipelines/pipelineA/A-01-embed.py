@@ -21,6 +21,7 @@ load_dotenv(find_dotenv())
 # ── Arguments for Dev'ing
 parser = argparse.ArgumentParser()
 parser.add_argument("--test", "-t", action="store_true", help="Toggle Testing Path")
+parser.add_argument("--all",  "-a", action="store_true", help="Toggle ALL ESG reports (useless aswell)")
 parser.add_argument("--batch_size", "-bz", type=int, default=1000) #1000 because it runs on a H200 within memory (120/140GB)
 
 # ── Arguments MODEL_SELECTION # 'dest' for numbers in flags
@@ -56,7 +57,15 @@ else :
     ATTN_IMPL = "flash_attention_2"
 
 # Path To All and List Of All Paths to ESG-Reports
-PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/esg_reports_test") if args.test else Path("/scratch/tmp/jkuhlma1/data/esg_reports")
+
+match True:
+    case args.test:
+        PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/test_sg_reports")
+    case args.all:
+        PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/all_esg_reports")
+    case _:
+        PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/esg_reports")
+        
 PDF_LIST = list(PDF_DIR.glob("*.pdf"))
 
 # Just checking ...
@@ -68,7 +77,7 @@ print(f"Number of PDFs inuse: {len(PDF_LIST)}\n")
 BATCH_SIZE = args.batch_size # 8 with ColPlali, but those embeddings will get bigger due to more vectors
 DPI = 150 # matches ColEmbed's 8-tile limit (2×4 @ 512px) for A4 pages
 
-SAVE_DIR = Path(f"/scratch/tmp/jkuhlma1/data/embeddings/{MODEL_NAME}")
+SAVE_DIR = Path(f"/scratch/tmp/jkuhlma1/data/embeddings/all-{MODEL_NAME}") if args.all else Path(f"/scratch/tmp/jkuhlma1/data/embeddings/{MODEL_NAME}")
 SAVE_DIR.mkdir(parents=True, exist_ok=True)
 
 LOG_FILE = SAVE_DIR / f"kpi_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"

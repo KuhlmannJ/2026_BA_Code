@@ -6,7 +6,6 @@
 ####
 # H200 for 4B or 8B, takes ~22min with 53 Reports
 ####
-MODEL_FLAG=${1:--3B} # Defaults to 3B
 
 #SBATCH --gres=gpu:1
 #SBATCH --mem=64G
@@ -50,8 +49,11 @@ export PIP_CACHE_DIR=$WORK/.cache/pip
 
 
 # START THE APPLICATION
-# Set a MODEL_NAME flag '-3B' or '-4B' or '-8B' via 'sbatch A-01-embed.sh -4B'
-python "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed.py" "$MODEL_FLAG"
+# Set a MODEL_NAME flag '-3B' or '-4B' or '-8B' when calling A-01-embed.sh
+# Set a MODE flag '-t' or '-a' when calling A-01-embed.sh
+MODEL_FLAG=${1:--4B} # Defaults to 4B
+MODE="$2" # Defaults to None
+python "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed.py" "$MODEL_FLAG" "$MODE"
 
 mkdir -p $WORK/requirements/A-01-embed
 pip freeze > $WORK/requirements/A-01-embed/3Bv2_requirements$(date +%m%d_%H%M).txt
