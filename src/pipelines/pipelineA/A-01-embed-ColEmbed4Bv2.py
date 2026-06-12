@@ -32,7 +32,7 @@ def banner(title):
 
 
 #### 0. GLOBAL VARIABLES ########################################
-MODEL_NAME = 'nvidia/llama-nemotron-colembed-vl-3b-v2'
+MODEL_NAME = 'nvidia/nemotron-colembed-vl-4b-v2'
 ATTN_IMPL  = "flash_attention_2"
 
 # Path To All and List Of All Paths to ESG-Reports

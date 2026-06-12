@@ -11,7 +11,7 @@ print(ba.info())
 print(pa.info())
 
 #### MERGE
-df = pd.merge(
+AA = pd.merge(
     ba[["report_name", "scope", "year", "value"]],
     pa[["report_name", "scope", "year", "value"]],
     on=["report_name", "scope", "year"],
@@ -20,32 +20,32 @@ df = pd.merge(
 )
 
 #### METRICS
-df["rel_diff"] = (df["value_ba"] - df["value_pa"].abs()) / df["value_ba"].abs()
-df["match"]    = df["rel_diff"] <= MATCH_TOLERANCE
+AA["rel_diff"] = (AA["value_ba"] - AA["value_pa"].abs()) / AA["value_ba"].abs()
+AA["match"]    = AA["rel_diff"] <= MATCH_TOLERANCE
 
-df["source"]   = "both" # defaulting, may be overwritten with the following lines
-df.loc[df["value_ba"].isna(), "source"] = "pipeline_only" #if "outer" generated NaN in ba => pipeline_only
-df.loc[df["value_pa"].isna(), "source"] = "baseline_only"
+AA["source"]   = "both" # defaulting, may be overwritten with the following lines
+AA.loc[AA["value_ba"].isna(), "source"] = "pipeline_only" #if "outer" generated NaN in ba => pipeline_only
+AA.loc[AA["value_pa"].isna(), "source"] = "baseline_only"
 
 
 # Zusammenfassung
-both = df[df["source"] == "both"]
-print(f"  No. of entries      : {len(df)}")
+both = AA[AA["source"] == "both"]
+print(f"  No. of entries      : {len(AA)}")
 print(f"  In both.            : {len(both)}")
-print(f"  Only Baseline A     : {(df["source"]=="baseline_only").sum()}")
-print(f"  Only Pipeline A     : {(df["source"]=="pipeline_only").sum()}")
-print(f"  Match (≤1%)         : {df["match"].sum()}/{len(both)}")
+print(f"  Only Baseline A     : {(AA["source"]=="baseline_only").sum()}")
+print(f"  Only Pipeline A     : {(AA["source"]=="pipeline_only").sum()}")
+print(f"  Match (≤1%)         : {AA["match"].sum()}/{len(both)}")
 print(f"  Median Rel. Delta   : {both["rel_diff"].median():.3f}")
 
 
 
-df.to_csv(Path("./evaluations/BaselineA-PipelineA/A-A_comparison.csv"), index=False)
+AA.to_csv(Path("./evaluations/BaselineA-PipelineA/A-A_comparison.csv"), index=False)
 print("Gespeichert: A-A_comparison.csv")
 
-df["scope"] = df["scope"].str.replace("scope_1", "1", regex=False)
-df["scope"] = df["scope"].str.replace("scope_2_location_based", "2lb", regex=False)
-df["scope"] = df["scope"].str.replace("scope_2_market_based", "2mb", regex=False)
-df["scope"] = df["scope"].str.replace("scope_3", "3", regex=False)
+AA["scope"] = AA["scope"].str.replace("scope_1", "1", regex=False)
+AA["scope"] = AA["scope"].str.replace("scope_2_location_based", "2lb", regex=False)
+AA["scope"] = AA["scope"].str.replace("scope_2_market_based", "2mb", regex=False)
+AA["scope"] = AA["scope"].str.replace("scope_3", "3", regex=False)
 
 
 
@@ -54,30 +54,34 @@ df["scope"] = df["scope"].str.replace("scope_3", "3", regex=False)
 checklist = pd.read_csv("./checklist.csv")
 checklist["report_name"] = checklist["report_name"].str.replace(" ", "_", regex=False)
 checklist["report_name"] = checklist["report_name"].str.replace(".pdf", "", regex=False)
-checklist.to_csv("checklistWO_pdf.csv", index=False)
 
-gs = pd.read_csv(Path("./evaluations/BaselineA-PipelineA/checklistWO_pdf.csv"))
-
-gs["year"] = gs["year"].astype(str)
-gs = gs.rename(columns={"value": "value_gs"})
+checklist["year"] = checklist["year"].astype(str)
+checklist = checklist.rename(columns={"value": "value_gs"})
 
 # print(gs.info())
 
-df2 = pd.merge(
-    df,
-    gs[["report_name", "scope", "year", "value_gs"]],
+AAG = pd.merge(
+    AA,
+    checklist[["report_name", "scope", "year", "value_gs"]],
     on=["report_name", "scope", "year"],
     how="left",
 )
 
 #### COMPARE Base- and Pipeline with GS
 
-df2["match_gs_ba"] = df2["value_gs"] == df2["value_ba"]
-df2["match_gs_pa"] = df2["value_gs"] == df2["value_pa"]
-df2["match_gs_ba_pa"] = df2["match"] & df2["match_gs_ba"] & df2["match_gs_pa"]
+AAG["match_gs_ba"] = AAG["value_gs"] == AAG["value_ba"]
+AAG["match_gs_pa"] = AAG["value_gs"] == AAG["value_pa"]
+AAG["match_gs_ba_pa"] = AAG["match"] & AAG["match_gs_ba"] & AAG["match_gs_pa"]
 
-df2.to_csv(Path("./evaluations/BaselineA-PipelineA/A-A-G_comparison.csv"), index=False)
+AAG.to_csv(Path("./evaluations/BaselineA-PipelineA/A-A-G_comparison.csv"), index=False)
 print("Gespeichert: A-A-G_comparison.csv")
+
+### Problem analysis
+
+bad_reports = AAG.loc[AAG["match"] != "both", "report_name"].unique()
+AAG_bad = AAG[AAG["report_name"].isin(bad_reports)]
+
+AAG_bad.to_csv("./evaluations/BaselineA-PipelineA/A-A-G_badRows.csv", index=False)
 
 
 
