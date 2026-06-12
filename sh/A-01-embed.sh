@@ -3,6 +3,10 @@
 #SBATCH --nodes=1                   # the number of nodes you want to reserve
 #SBATCH --ntasks-per-node=1         # the number of tasks/processes per node
 
+####
+# H200 for 4B or 8B, takes ~22min with 53 Reports
+####
+
 #SBATCH --gres=gpu:1
 #SBATCH --mem=64G
 #SBATCH --cpus-per-task=8           # the number cpus per task
