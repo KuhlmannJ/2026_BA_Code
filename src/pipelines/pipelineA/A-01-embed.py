@@ -21,7 +21,12 @@ load_dotenv(find_dotenv())
 # ── Arguments for Dev'ing
 parser = argparse.ArgumentParser()
 parser.add_argument("--test", "-t", action="store_true", help="Toggle Testing Path")
-parser.add_argument("--batch_size", "-bz", type=int, default=2)
+parser.add_argument("--batch_size", "-bz", type=int, default=1000) #1000 because it runs on a H200 within memory (120/140GB)
+
+# ── Arguments MODEL_SELECTION
+parser.add_argument("-3B", action="store_true", help="nvidia/llama-nemotron-colembed-vl-3b-v2")
+parser.add_argument("-4B", action="store_true", help="nvidia/nemotron-colembed-vl-4b-v2")
+parser.add_argument("-8B", action="store_true", help="nvidia/nemotron-colembed-vl-8b-v2")
 args = parser.parse_args()
 
 #### Helping Functions ##########################################
@@ -34,7 +39,17 @@ def banner(title):
 
 
 #### 0. GLOBAL VARIABLES ########################################
-MODEL_NAME = 'nvidia/nemotron-colembed-vl-4b-v2'
+
+match True:
+    case args._3B:
+        MODEL_NAME = "nvidia/llama-nemotron-colembed-vl-3b-v2"
+    case args._4B:
+        MODEL_NAME = "nvidia/nemotron-colembed-vl-4b-v2"
+    case args._8B:
+        MODEL_NAME = "nvidia/nemotron-colembed-vl-8b-v2"
+    case _:
+        parser.error("Set a MODEL_NAME flag '-3B' or '-4B' or '-8B'.") # No default chosen, as not necessary with .sh 
+
 ATTN_IMPL  = "flash_attention_2"
 
 # Path To All and List Of All Paths to ESG-Reports
@@ -44,6 +59,8 @@ PDF_LIST = list(PDF_DIR.glob("*.pdf"))
 # Just checking ...
 if not PDF_LIST:
     raise FileNotFoundError(f"Keine PDFs in {PDF_DIR}")
+
+print(f"Number of PDFs inuse: {len(PDF_LIST)}\n")
 
 BATCH_SIZE = args.batch_size # 8 with ColPlali, but those embeddings will get bigger due to more vectors
 DPI = 150 # matches ColEmbed's 8-tile limit (2×4 @ 512px) for A4 pages
