@@ -100,6 +100,13 @@ print(f"  UUID : {gpu_uuid}")
 # May ommit ...
 
 
+
+
+if args.test :
+    banner("THIS IS A TEST-RUN")
+    
+if args.all :
+    banner("ALL IS SELECTED. HUGE DATASET.")
 #### 2. Load Retrieval Model ####################################
 banner("STEP 2: Load Retrieval Model")
 model = AutoModel.from_pretrained(

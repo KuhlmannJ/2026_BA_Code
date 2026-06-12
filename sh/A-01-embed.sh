@@ -50,7 +50,7 @@ export PIP_CACHE_DIR=$WORK/.cache/pip
 
 # START THE APPLICATION
 # Set a MODEL_NAME flag '-3B' or '-4B' or '-8B' when calling A-01-embed.sh
-# Set a MODE flag '-t' or '-a' when calling A-01-embed.sh
+# Set a MODE flag '-t' or '-a' (needs 2 hours!) when calling A-01-embed.sh
 MODEL_FLAG=${1:--4B} # Defaults to 4B
 MODE="$2" # Defaults to None
 python "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed.py" "$MODEL_FLAG" "$MODE"
