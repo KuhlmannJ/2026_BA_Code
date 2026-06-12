@@ -92,18 +92,18 @@ merged = gold_pages.merge(ret_df, on="report_stem", how="outer")
 def hit_topk(row):
     page = row["page"]
     top_k = row["top_k_pages"]
-    if not isinstance(top_k, (list, set)): # Outer-Join delivers NaN-values
+    if not isinstance(top_k, (list, set)) or pd.isna(page):
         return False
-    if page in top_k: # Direct hit
+    if page in top_k:
         return True
-    if isinstance(page, (int, float)) and page == int(page) and (int(page) - 1) in top_k: # Only if page in GS is int, -1 check
+    if isinstance(page, (int, float)) and page == int(page) and (int(page) - 1) in top_k:
         return True
     return False
 
 def hit_expanded(row):
     page = row["page"]
     expanded = row["expanded"]
-    if not isinstance(expanded, (list, set)):
+    if not isinstance(expanded, (list, set)) or pd.isna(page):
         return False
     if page in expanded:
         return True
