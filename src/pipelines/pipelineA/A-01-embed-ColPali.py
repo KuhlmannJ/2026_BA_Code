@@ -42,7 +42,8 @@ if not PDF_LIST:
 BATCH_SIZE = 8 #8 seems to work well on H200mini nodes
 DPI = 150 # Often chosen size for vector-based PDF
 
-SAVE_DIR = Path("/scratch/tmp/jkuhlma1/data/embeddings/embeddings_colpali")
+SAVE_DIR = Path(f"/scratch/tmp/jkuhlma1/data/embeddings/{MODEL_NAME}")
+SAVE_DIR.mkdir(parents=True, exist_ok=True)
 
 # May ommit ...
 #### 1. GPU Details #############################################

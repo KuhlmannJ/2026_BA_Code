@@ -6,13 +6,13 @@
 #SBATCH --gres=gpu:1
 #SBATCH --mem=64G
 #SBATCH --cpus-per-task=8           # the number cpus per task
-#SBATCH --partition=gpuh200         # on which partition to submit the job
+#SBATCH --partition=gpuh200mini         # on which partition to submit the job
 #SBATCH --time=01:00:00             # the max wallclock time (time limit your job will run)
 
 #SBATCH --output=/scratch/tmp/jkuhlma1/logs/%j_out.log    # stdout → Datei (%j = Job-ID)
 #SBATCH --error=/scratch/tmp/jkuhlma1/logs/%j_err.log     # stderr → Datei
 
-#SBATCH --job-name=A-01-embed-ColEmbed3Bv2
+#SBATCH --job-name=A-01-embed-ColEmbed8Bv2
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=jannik.kuhlmann@uni-muenster.de 
 
@@ -45,6 +45,6 @@ export PIP_CACHE_DIR=$WORK/.cache/pip
 
 
 # START THE APPLICATION
-python $HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed-ColEmbed3Bv2.py --batch_size 1000
+python -u $HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed-ColEmbed8Bv2.py --batch_size 1000
 
 pip freeze > $HOME/2026_BA_Code/A-01-embed/requirements_$(date +%m%d_%H%M).txt

@@ -45,4 +45,4 @@ python -u $HOME/2026_BA_Code/src/pipelines/pipelineA/A-02-retrieval.py
 
 python -u $HOME/2026_BA_Code/evaluations/A-02/A-02.py
 
-pip freeze > ~/2026_BA_Code/requirements_$(date +%m%d_%H%M).txt
+pip freeze > $HOME/2026_BA_Code/A-02-retrieval/requirements_$(date +%m%d_%H%M).txt
