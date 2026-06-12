@@ -91,10 +91,10 @@ merged = gold_pages.merge(ret_df, on="report_stem", how="outer")
 
 def hit_topk(row):
     # Check gold_page and gold_page-1 (handles ±1 offset between PDFs)
-    return row["page_int"] in row["top_k_pages"] or (row["page_int"] - 1) in row["top_k_pages"]
+    return row["page"] in row["top_k_pages"] or (row["page"] - 1) in row["top_k_pages"]
 
 def hit_expanded(row):
-    return row["page_int"] in row["expanded"] or (row["page_int"] - 1) in row["expanded"]
+    return row["page"] in row["expanded"] or (row["page"] - 1) in row["expanded"]
 
 merged["hit_topk"]     = merged.apply(hit_topk,     axis=1)
 merged["hit_expanded"] = merged.apply(hit_expanded, axis=1)
@@ -119,7 +119,7 @@ banner("STEP 4: Per-Report Breakdown (just to file)")
 per_report = (
     merged.groupby("report_stem")
     .agg(
-        gold_pages    = ("page_int",     "count"),
+        gold_pages    = ("page",     "count"),
         hit_topk      = ("hit_topk",     "sum"),
         hit_expanded  = ("hit_expanded", "sum"),
     )
