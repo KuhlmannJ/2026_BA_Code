@@ -27,7 +27,7 @@ source $HOME/venvs/colembed3Bv2-h200mini/bin/activate
 export HF_HOME=$WORK/cache/huggingface
 export CUDA_HOME=$EBROOTCUDA
 export PIP_CACHE_DIR=$WORK/.cache/pip
-export RUN_TS=$(date +%m%d_%H%M)
+export RUN_TS=$(date +%m%d_%H%M) # To map the only the new retirevals
 
 # pip install --upgrade pip
 # pip install wheel torch transformers pymupdf Pillow python-dotenv datasets polars pydantic psutil accelerate torchvision pypdf cryptography pandas

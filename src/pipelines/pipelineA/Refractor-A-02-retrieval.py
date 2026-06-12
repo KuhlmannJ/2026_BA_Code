@@ -28,7 +28,7 @@ from transformers import AutoModel
 MODEL_NAME: str    = "nvidia/llama-nemotron-colembed-vl-3b-v2"
 TOP_K: int         = 3          # Top-k pages to retrieve (Beck et al.)
 TIME_ROUND: int    = 6          # Decimal places for timing logs
-PHASE: str         = "BECK_QUERY"
+PHASE: str         = "REFRACTOR"
 LOG_FORMAT: str    = "%(asctime)s | %(levelname)-8s | %(message)s"
 LOG_DIR: Path      = Path("logs")
 

@@ -1,0 +1,62 @@
+report_stem,page,page_int,phase,top_k_pages,hit_topk,hit_expanded
+Allianz_2022_report,92,92,first_try,"[78, 92, 23]",True,True
+Allianz_2022_report,78,78,first_try,"[78, 92, 23]",True,True
+Daimler_2020_report,63,63,first_try,"[62, 180, 58]",True,True
+Fresenius SE_2019_report,126,126,first_try,"[125, 124, 92]",True,True
+acuity brands inc_2022_report,101,101,first_try,"[100, 98, 101]",True,True
+acuity brands inc_2022_report,99,99,first_try,"[100, 98, 101]",True,True
+addtech_2022_report,73,73,first_try,"[72, 73, 68]",True,True
+aixtron_2020_report,50,50,first_try,"[49, 50, 80]",True,True
+aixtron_2020_report,49,49,first_try,"[49, 50, 80]",True,True
+allfunds group_2021_report,142,142,first_try,"[125, 141, 150]",True,True
+allfunds group_2021_report,125,125,first_try,"[125, 141, 150]",True,True
+americold realty inc_2022_report,53,53,first_try,"[52, 49, 7]",True,True
+atlas arteria_2019_report,9,9,first_try,"[9, 0, 6]",True,True
+autoneum holding_2019_report,27,27,first_try,"[26, 36, 25]",True,True
+bekaert (d) sa_2022_report,272,272,first_try,"[275, 271, 278]",True,True
+bekaert (d) sa_2022_report,276,276,first_try,"[275, 271, 278]",True,True
+blackline safety_2021_report,19,19,first_try,"[20, 19, 57]",True,True
+cabot corp_2018_report,22,22,first_try,"[40, 21, 5]",True,True
+cardinal energy ltd_2021_report,19,19,first_try,"[18, 19, 1]",True,True
+jpmorgan chase_2020_report,32,32,first_try,"[31, 28, 27]",True,True
+jpmorgan chase_2020_report,29,29,first_try,"[31, 28, 27]",True,True
+comerica inc_2019_report,44,44,first_try,"[43, 44, 58]",True,True
+cytokinetics inc_2022_report,22,22,first_try,"[23, 7, 22]",True,True
+dampskibsselskabet norden_2019_report,63,63,first_try,"[63, 62, 45]",True,True
+evolution mining ltd_2020_report,44,44,first_try,"[43, 47, 28]",True,True
+fujifilm_2022_report,80,80,first_try,"[79, 80, 96]",True,True
+fujifilm_2022_report,81,81,first_try,"[79, 80, 96]",True,True
+georg fischer ag_2018_report,17,17,first_try,"[16, 14, 2]",True,True
+graincorp_2019_report,7,7,first_try,"[6, 0, 7]",True,True
+h. lundbeck_2021_report,28,28,first_try,"[27, 37, 28]",True,True
+hammerson reit_2021_report,173,173,first_try,"[174, 22, 179]",False,True
+hang lung properties_2018_report,53,53,first_try,"[53, 32, 64]",True,True
+healius ltd_2022_report,50,50,first_try,"[17, 47, 14]",False,False
+hudbay minerals inc_2020_report,95,95,first_try,"[42, 115, 41]",False,False
+huhtamaki_2018_report,48,48,first_try,"[50, 46, 47]",True,True
+huhtamaki_2019_report,44,44,first_try,"[43, 53, 58]",True,True
+inchcape plc_2022_report,120,120,first_try,"[121, 55, 43]",False,True
+inchcape plc_2022_report,54,54,first_try,"[121, 55, 43]",False,True
+kilroy realty_2017_report,35,35,first_try,"[64, 34, 66]",True,True
+kilroy realty_2017_report,68,68,first_try,"[64, 34, 66]",False,True
+kilroy realty_2018_report,14,14,first_try,"[69, 13, 67]",True,True
+jetblue airways corp_2019_report,10,10,first_try,"[10, 8, 9]",True,True
+jetblue airways corp_2019_report,9,9,first_try,"[10, 8, 9]",True,True
+jetblue airways corp_2019_report,11,11,first_try,"[10, 8, 9]",True,True
+kureha corp_2020_report,8,8,first_try,"[7, 8, 0]",True,True
+lundin gold inc_2021_report,26,26,first_try,"[24, 25, 23]",True,True
+lundin gold inc_2022_report,13,13,first_try,"[12, 11, 10]",True,True
+metro ag_2022_report,47,47,first_try,"[46, 21, 47]",True,True
+morinaga ltd_2020_report,56,56,first_try,"[55, 56, 58]",True,True
+nippn corp_2022_report,24,24,first_try,"[23, 1, 9]",True,True
+polaris_2021_report,73,73,first_try,"[72, 79, 92]",True,True
+nordea_2017_report,37,37,first_try,"[42, 36, 33]",True,True
+salzgitter ag_2018_report,19,19,first_try,"[18, 17, 15]",True,True
+sato oyj_2022_report,34,34,first_try,"[33, 48, 44]",True,True
+stantec inc_2019_report,79,79,first_try,"[78, 30, 79]",True,True
+sumitomo corporation_2021_report,136,136,first_try,"[124, 139, 126]",False,False
+sumitomo corporation_2021_report,121,121,first_try,"[124, 139, 126]",False,False
+kfw_2018_report,91,91,first_try,"[90, 91, 107]",True,True
+toshiba tec corp_2022_report,31,31,first_try,"[30, 26, 12]",True,True
+varta ag_2021_report,39,39,first_try,"[38, 39, 26]",True,True
+webuild_2019_report,44,44,first_try,"[82, 43, 77]",True,True

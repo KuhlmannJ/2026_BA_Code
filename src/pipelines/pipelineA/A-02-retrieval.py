@@ -105,7 +105,8 @@ def save_top10_results_json(report_name: str, scores: torch.Tensor) -> None:
     
     # Save as JSON
     json_path = RETRIEVALS_DIR / "GEPA" / f"{report_name}_top10_results.json"
-    with open(json_path, "w") as f:
+    json_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(json_path, "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2)
 
 
@@ -139,12 +140,13 @@ TIME_ROUND = 6 # Rounding for time logging
 
 # FOR CSV LOGGING OF PROGESS
 PHASE           = "BECK_QUERY"
-RUN_TS          = os.environ.get("RUN_TS", time.strftime("%m%d_%H%M")) #Timestamp from .sh file with fallback
+RUN_TS          = os.environ.get("RUN_TS") #Timestamp for sync evaluation from .sh file
 RETRIEVAL_LOG   = Path("/scratch/tmp/jkuhlma1/results/A-02-retrieval_log.csv")
+RETRIEVAL_LOG.parent.mkdir(parents=True, exist_ok=True)
 
-# Always overwrite the output csv
-with open(RETRIEVAL_LOG, "w", newline="") as log:
-    csv.writer(log).writerow(["report", "phase", "top_k_pages", "timestamp", "run_ts", "top_10", "top_10_scores"])
+if not RETRIEVAL_LOG.exists():
+    with open(RETRIEVAL_LOG, "w", newline="", encoding="utf-8") as log:
+        csv.writer(log).writerow(["report", "phase", "top_k_pages", "timestamp", "run_ts", "top_10", "top_10_scores"])
 
 
 # The reports in the PDF_DIR dictate what Embeddings get used
@@ -165,7 +167,7 @@ EMD_LIST = sorted(list(EMB_DIR.glob("*.pt")))
 
 # Output Path for extracted PDF Pages "Retirevals"
 RETRIEVALS_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals")
-
+RETRIEVALS_DIR.mkdir(parents=True, exist_ok=True)
 
 
 print("Now used Query:")

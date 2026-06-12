@@ -37,7 +37,7 @@ banner("STEP 1: Load Gold Standard")
 gold = pd.read_csv(GOLD_PATH, dtype={"page": str})  # page as str: handles "Env33" etc.
 gold["report_stem"] = gold["report_name"].str.replace(r"\.pdf$", "", regex=True)
 
-# Get unique (report, page) pairs — we only care about whether the page was found,
+# NOTE: Get unique (report, page) pairs. We only care about whether the page was found,
 # not how many scope/year entries are on it
 gold_pages = (
     gold[["report_stem", "page"]]
@@ -45,32 +45,32 @@ gold_pages = (
     .copy()
 )
 
-# Keep only numeric pages for retrieval matching
-gold_pages["page_int"] = pd.to_numeric(gold_pages["page"], errors="coerce")
-gold_pages_numeric = gold_pages.dropna(subset=["page_int"]).copy()
-gold_pages_numeric["page_int"] = gold_pages_numeric["page_int"].astype(int)
-
-print(f"  Reports:          {gold['report_stem'].nunique()}")
-print(f"  Non-numeric pages (skipped for retrieval): {gold_pages['page_int'].isna().sum()}")
+print(f"  Reports: {gold['report_stem'].nunique()}")
 
 
 #### 2. Load Retrieval Log ######################################
 banner("STEP 2: Load Retrieval Log")
 
-retrieval_rows = []
+RETRIEVAL_LOG_rows = []
 with open(RETRIEVAL_LOG, newline="", encoding="utf-8") as f:
     reader = csv.DictReader(f)
+    
     for row in reader:
+        
+        # Skips older rows
         if RUN_TS_FILTER and row["run_ts"] != RUN_TS_FILTER:
             continue
+        
         top_k  = ast.literal_eval(row["top_k_pages"])
-        # Expand with ±1 neighbors (Beck et al.) to get the full retrieved set
-        expanded = set()
+        
+        # Expand with ±1 neighbors (Beck et al.) to get the full retrieved pages
+        expanded = []
         for idx in top_k:
             for neighbor in (idx - 1, idx, idx + 1):
                 if neighbor >= 0:
-                    expanded.add(neighbor)
-        retrieval_rows.append({
+                    expanded.append(neighbor)
+                    
+        RETRIEVAL_LOG_rows.append({
             "report_stem":   row["report"],
             "phase":         row["phase"],
             "top_k_pages":   top_k,
@@ -79,7 +79,7 @@ with open(RETRIEVAL_LOG, newline="", encoding="utf-8") as f:
             "top_10_scores": row["top_10_scores"]
         })
 
-ret_df = pd.DataFrame(retrieval_rows)
+ret_df = pd.DataFrame(RETRIEVAL_LOG_rows)
 print(f"  Retrieval log entries: {len(ret_df)}")
 print(f"  Reports in log:        {ret_df['report_stem'].nunique()}")
 
@@ -87,7 +87,7 @@ print(f"  Reports in log:        {ret_df['report_stem'].nunique()}")
 #### 3. Retrieval Evaluation ####################################
 banner("STEP 3: Retrieval Evaluation")
 
-merged = gold_pages_numeric.merge(ret_df, on="report_stem", how="inner")
+merged = gold_pages.merge(ret_df, on="report_stem", how="outer")
 
 def hit_topk(row):
     # Check gold_page and gold_page-1 (handles ±1 offset between PDFs)
@@ -112,6 +112,7 @@ print("Note, both already include an abritary 'off-by-one-error'-correction")
 print("by checking the hit page and the previous one in the source document.")
 
 
+
 #### 4. Per-Report Breakdown ####################################
 banner("STEP 4: Per-Report Breakdown (just to file)")
 
@@ -124,7 +125,7 @@ per_report = (
     )
     .reset_index()
 )
-per_report["hit_topk_pct"]    = per_report["hit_topk"]    / per_report["gold_pages"]
+per_report["hit_topk_pct"]     = per_report["hit_topk"]     / per_report["gold_pages"]
 per_report["hit_expanded_pct"] = per_report["hit_expanded"] / per_report["gold_pages"]
 
 # Flag reports with complete miss (no gold page retrieved at all)
@@ -137,7 +138,9 @@ print(f"\n  Full misses ({len(full_misses)} reports): {full_misses}")
 #### 5. Save ####################################################
 banner("STEP 5: Save")
 
-merged.drop(columns=["expanded"]).to_csv(
+merged_sorted = merged[["report_stem","page","phase","top_k_pages","hit_topk","hit_expanded","top_10","top_10_scores"]]
+
+merged_sorted.to_csv(
     OUTPUT_DIR / "retrieval_evaluation.csv", index=False
 )
 per_report.to_csv(OUTPUT_DIR / "retrieval_per_report.csv", index=False)
