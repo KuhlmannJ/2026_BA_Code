@@ -21,7 +21,7 @@ RETRIEVAL_LOG  = Path("/scratch/tmp/jkuhlma1/results/A-02-retrieval_log.csv")
 OUTPUT_DIR     = Path("/scratch/tmp/jkuhlma1/evaluations/A-02")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-RUN_TS_FILTER = os.environ.get("RUN_TS") # From sh script for concanated evaluation
+RUN_TS = os.environ.get("RUN_TS") # From sh script for concanated evaluation
 # ─────────────────────────────────────────────────────────────
 
 # NOTE: Gold standard pages are printed page numbers (as shown in PDF viewer).
@@ -46,6 +46,7 @@ gold_pages = (
 )
 
 print(f"  Reports: {gold['report_stem'].nunique()}")
+print(f"RUN_TS: {RUN_TS}")
 
 
 #### 2. Load Retrieval Log ######################################
@@ -58,7 +59,7 @@ with open(RETRIEVAL_LOG, newline="", encoding="utf-8") as f:
     for row in reader:
         
         # Skips older rows
-        if RUN_TS_FILTER and row["run_ts"] != RUN_TS_FILTER:
+        if RUN_TS and row["run_ts"] != RUN_TS:
             continue
         
         top_k  = ast.literal_eval(row["top_k_pages"])
@@ -71,6 +72,7 @@ with open(RETRIEVAL_LOG, newline="", encoding="utf-8") as f:
                     expanded.append(neighbor)
                     
         RETRIEVAL_LOG_rows.append({
+            "model":         row["model"],
             "report_stem":   row["report"],
             "phase":         row["phase"],
             "top_k_pages":   top_k,
@@ -80,9 +82,9 @@ with open(RETRIEVAL_LOG, newline="", encoding="utf-8") as f:
         })
 
 ret_df = pd.DataFrame(RETRIEVAL_LOG_rows)
-print(f"  Retrieval log entries: {len(ret_df)}")
-print(f"  Reports in log:        {ret_df['report_stem'].nunique()}")
-
+print(f"Retrieval log entries: {len(ret_df)}")
+print(f"Reports in log:        {ret_df['report_stem'].nunique()}")
+print(f"Retrieval Model used:  {ret_df["model"][0]}")
 
 #### 3. Retrieval Evaluation ####################################
 banner("STEP 3: Retrieval Evaluation")
@@ -153,11 +155,9 @@ print(f"\n  Full misses ({len(full_misses)} reports): {full_misses}")
 #### 5. Save ####################################################
 banner("STEP 5: Save")
 
-merged_sorted = merged[["report_stem","page","phase","top_k_pages","hit_topk","hit_expanded","top_10","top_10_scores"]]
+merged_sorted = merged[["model", "report_stem","page","phase","top_k_pages","hit_topk","hit_expanded","top_10","top_10_scores"]]
 
-merged_sorted.to_csv(
-    OUTPUT_DIR / "retrieval_evaluation.csv", index=False
-)
+merged_sorted.to_csv(OUTPUT_DIR / "retrieval_evaluation.csv", index=False)
 per_report.to_csv(OUTPUT_DIR / "retrieval_per_report.csv", index=False)
 
 print(f"  → {OUTPUT_DIR / 'retrieval_evaluation.csv'}")

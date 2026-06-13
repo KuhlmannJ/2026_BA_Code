@@ -23,6 +23,7 @@ NUMERIC_COLS = ["elapsed_s", "s_per_page", "peak_vram_gb", "peak_ram_gb", "file_
 frames = {}
 for model, path in FILES.items():
     df = pd.read_csv(path)
+    df.columns = df.columns.str.strip()  # Remove whitespaces there for easier reading the raw files
     df["model"] = model
     frames[model] = df
     

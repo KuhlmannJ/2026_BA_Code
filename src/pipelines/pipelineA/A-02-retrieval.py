@@ -20,6 +20,12 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--test",           "-t",  action="store_true",       help="Toggle Testing Path")
 parser.add_argument("--gepaTrainSet",   "-gt", action="store_true",       help="Toggle Training Set of Reports")
 parser.add_argument("--query",          "-q",  type=str, default=QUERY_0, help="Custom retrieval query")
+
+# ── Arguments MODEL_SELECTION # 'dest' for numbers in flags
+parser.add_argument("-3B", dest="_3B", action="store_true", help="nvidia/llama-nemotron-colembed-vl-3b-v2")
+parser.add_argument("-4B", dest="_4B", action="store_true", help="nvidia/nemotron-colembed-vl-4b-v2")
+parser.add_argument("-8B", dest="_8B", action="store_true", help="nvidia/nemotron-colembed-vl-8b-v2")
+
 args = parser.parse_args()
 
 # Defaults to QUERY0 if none is passed on
@@ -46,15 +52,15 @@ def log_pages(report_name: str, scores: torch.Tensor) -> None:
     top10_pages  = top10.indices.tolist()
     top10_scores = top10.values.tolist()
     
-    #csv.writer(log).writerow(["report", "phase", "top_k_pages", "timestamp", "run_ts", "top_10", "top_10_scores"])
+    #csv.writer(log).writerow(["run_ts", "model" "report", "phase", "top_k_pages", "top_10", "top_10_scores"])
     
     with open(RETRIEVAL_LOG, "a", newline="") as log:
         csv.writer(log).writerow([
+            RUN_TS,
+            MODEL_NAME,
             report_name,
             PHASE,
             topk_idx,
-            time.strftime("%Y-%m-%d %H:%M:%S"),
-            RUN_TS,
             top10_pages,
             top10_scores,
         ])
@@ -118,11 +124,6 @@ def save_top10_results_json(report_name: str, scores: torch.Tensor) -> None:
 
 
 
-
-
-if args.test :
-    banner("THIS IS A TEST-RUN")
-    
 #### 0. GLOBAL VARIABLES ########################################
 banner("STEP 0: GLOBAL VARIABLES")
 
@@ -131,54 +132,84 @@ from dotenv import load_dotenv, find_dotenv
 print(".env loaded:", load_dotenv(find_dotenv()))
 
 
-MODEL_NAME = 'nvidia/llama-nemotron-colembed-vl-3b-v2'
-# ATTN_IMPL  = "flash_attention_2" # NOT USED atm
+match True:
+    case args._3B:
+        MODEL_NAME = "nvidia/llama-nemotron-colembed-vl-3b-v2"
+    case args._4B:
+        MODEL_NAME = "nvidia/nemotron-colembed-vl-4b-v2"
+    case args._8B:
+        MODEL_NAME = "nvidia/nemotron-colembed-vl-8b-v2"
+    case _:
+        parser.error("Set a MODEL_NAME flag '-3B' or '-4B' or '-8B'.") # No default chosen, as not necessary with .sh 
+
+if args._3B :
+    ATTN_IMPL  = None # Does not work on 3B
+else :
+    ATTN_IMPL = "flash_attention_2"
+
+
 TOP_K      = 3 # like (Beck et al)
-
-
 TIME_ROUND = 6 # Rounding for time logging
 
 # FOR CSV LOGGING OF PROGESS
 PHASE           = "BECK_QUERY"
 RUN_TS          = os.environ.get("RUN_TS") #Timestamp for sync evaluation from .sh file
-RETRIEVAL_LOG   = Path("/scratch/tmp/jkuhlma1/results/A-02-retrieval_log.csv")
+RETRIEVAL_LOG   = Path("/scratch/tmp/jkuhlma1/results/A-02-retrieval_log.csv") # same for every model!
 RETRIEVAL_LOG.parent.mkdir(parents=True, exist_ok=True)
 
 if not RETRIEVAL_LOG.exists():
     with open(RETRIEVAL_LOG, "w", newline="", encoding="utf-8") as log:
-        csv.writer(log).writerow(["report", "phase", "top_k_pages", "timestamp", "run_ts", "top_10", "top_10_scores"])
+        csv.writer(log).writerow(["run_ts", "model" "report", "phase", "top_k_pages", "top_10", "top_10_scores"])
 
 
 # The reports in the PDF_DIR dictate what Embeddings get used
-if args.gepaTrainSet:
-    PDF_DIR = Path("/scratch/tmp/jkuhlma1/data/training/test_esg_reports")
-elif args.test:
-    PDF_DIR = Path("/scratch/tmp/jkuhlma1/data/test_esg_reports")
-else:
-    PDF_DIR = Path("/scratch/tmp/jkuhlma1/data/esg_reports")
-
+match True:
+    case args.test:
+        PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/test_sg_reports")
+    case args.all:
+        PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/all_esg_reports")
+    case _:
+        PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/esg_reports")
+        
 PDF_LIST = sorted(list(PDF_DIR.glob("*.pdf")))
 
 
 # Always get all embeddings and only use those relevant for the reports in PDF_DIR
-EMB_DIR = Path("/scratch/tmp/jkuhlma1/data/embeddings/embeddings_colembed_3b_v2")
+match True:
+    case args.all:
+        EMB_DIR = Path(f"/scratch/tmp/jkuhlma1/data/embeddings/all/{MODEL_NAME}")
+    case _:
+        EMB_DIR = Path(f"/scratch/tmp/jkuhlma1/data/embeddings/{MODEL_NAME}")
+
 EMD_LIST = sorted(list(EMB_DIR.glob("*.pt")))
 
 
 # Output Path for extracted PDF Pages "Retirevals"
-RETRIEVALS_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals")
+RETRIEVALS_DIR = Path(f"/scratch/tmp/jkuhlma1/results/{MODEL_NAME}/A-02-retrievals")
 RETRIEVALS_DIR.mkdir(parents=True, exist_ok=True)
 
-
+#### PARAMS OUTPUT
+banner("STEP 0: PARAMS")
+print(f"PHASE           : {PHASE}")
+print(f"MODEL_NAME      : {MODEL_NAME}")
+print(f"PDF_DIR         : {PDF_DIR}")
+print(f"No. of PDF      : {len(PDF_LIST)}")
+print(f"EMB_DIR         : {EMB_DIR}")
+print(f"RETRIEVALS_DIR  : {RETRIEVALS_DIR}")
+print(f"RUN_TS          : {RUN_TS}")
+print()
 print("Now used Query:")
 print(QUERY)
+print("=" * 60)
 print()
-print(f"Number of PDFs inuse: {len(PDF_LIST)}")
 
 
 
-
-
+if args.test :
+    banner("THIS IS A TEST-RUN")
+    
+if args.all :
+    banner("ALL IS SELECTED. HUGE DATASET.")
 #### 1. GPU Details #############################################
 banner("STEP 1: GPU / CUDA")
 props      = torch.cuda.get_device_properties(0)
@@ -198,11 +229,12 @@ model = AutoModel.from_pretrained(
     device_map="cuda:0",
     trust_remote_code=True,
     dtype=torch.bfloat16,
-    #attn_implementation=ATTN_IMPL,
+    attn_implementation=ATTN_IMPL,
 ).eval()
 
 print(f" Loaded: {MODEL_NAME}")
-print(f"  VRAM belegt: {torch.cuda.max_memory_allocated() / 1e9:.1f} GB")
+print(f" Attention loaded:{model.config._attn_implementation}")
+print(f" VRAM belegt: {torch.cuda.max_memory_allocated() / 1e9:.1f} GB")
 
 
 #### 3. Begin Retrieval ####################################
@@ -226,6 +258,8 @@ for pdf_path in PDF_LIST:
     if report_name not in pt_map:
         print(f"[WARN] no embedding for {report_name}")
         continue
+
+
 
 ##################################################
     # Step 1 — Retrieval
@@ -257,6 +291,8 @@ for pdf_path in PDF_LIST:
     pages  = select_pages(scores)
     print(f"Retreived pages 0..: {pages}")
     print(f" in {runtime_scoring}s")
+
+
 
 ##################################################
     # Step 2 — Extract selected pages as mini-PDF

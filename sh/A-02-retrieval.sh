@@ -4,16 +4,16 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --gres=gpu:1
 
-#SBATCH --mem=50G
+#SBATCH --mem=150G
 #SBATCH --cpus-per-task=8
-#SBATCH --partition=gpuh200mini
+#SBATCH --partition=gpuh200
 
-#SBATCH --time=00:05:00
+#SBATCH --time=00:30:00
 
 #SBATCH --output=/scratch/tmp/jkuhlma1/logs/%j_out.log    # stdout → Datei (%j = Job-ID)
-#SBATCH --error=/scratch/tmp/jkuhlma1/logs/%j_err.log     # stderr → Datei
+#SBATCH --error=/scratch/tmp/jkuhlma1/logs/%j_out.log     # stderr → Datei
 
-#SBATCH --job-name=A-02-retrieval-test
+#SBATCH --job-name=A-02-retrieval-8B
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=jannik.kuhlmann@uni-muenster.de 
 

@@ -4,17 +4,17 @@
 #SBATCH --ntasks-per-node=1         # the number of tasks/processes per node
 
 ####
-# H200 for 4B or 8B, takes ~22min with 53 Reports
+# H200 for 4B or 8B, takes ~22min with 53 Reports, ~45min with all
 ####
 
 #SBATCH --gres=gpu:1
 #SBATCH --mem=150G
-#SBATCH --cpus-per-task=16          # the number cpus per task
-#SBATCH --partition=gpuh200         # on which partition to submit the job
-#SBATCH --time=02:00:00             # the max wallclock time (time limit your job will run)
+#SBATCH --cpus-per-task=16
+#SBATCH --partition=gpuh200
+#SBATCH --time=01:00:00
 
-#SBATCH --output=/scratch/tmp/jkuhlma1/logs/%j_out.log    # stdout → Datei (%j = Job-ID)
-#SBATCH --error=/scratch/tmp/jkuhlma1/logs/%j_out.log     # stderr → Datei
+#SBATCH --output=/scratch/tmp/jkuhlma1/logs/%j_out.log
+#SBATCH --error=/scratch/tmp/jkuhlma1/logs/%j_out.log
 
 #SBATCH --job-name=A-01-embed
 #SBATCH --mail-type=ALL
@@ -22,7 +22,6 @@
 
 # LOAD MODULES HERE IF REQUIRED
 ml palma/2024a GCCcore/13.3.0 Python/3.12.3 CUDA/13.0.2
-# ml uv/0.9.5
 
 # SOURCE PYTHON VENV
 
@@ -33,7 +32,6 @@ source $HOME/venvs/colembed3Bv2-h200mini/bin/activate
 export HF_HOME=$WORK/cache/huggingface
 export CUDA_HOME=$EBROOTCUDA
 export PIP_CACHE_DIR=$WORK/.cache/pip
-# export UV_CACHE_DIR=/scratch/tmp/jkuhlma1/cache/uv
 
 # pip install --upgrade pip
 # pip install wheel torch transformers pymupdf Pillow python-dotenv datasets polars pydantic psutil accelerate torchvision 
@@ -50,7 +48,7 @@ export PIP_CACHE_DIR=$WORK/.cache/pip
 
 # START THE APPLICATION
 # Set a MODEL_NAME flag '-3B' or '-4B' or '-8B' when calling A-01-embed.sh
-# Set a MODE flag '-t' or '-a' (needs 2 hours!) when calling A-01-embed.sh
+# Set a MODE flag '-t' or '-a' (needs 1 hour!) when calling A-01-embed.sh
 MODEL_FLAG=${1:--4B} # Defaults to 4B
 MODE="$2" # Defaults to None
 python "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed.py" "$MODEL_FLAG" "$MODE" -bz 8
