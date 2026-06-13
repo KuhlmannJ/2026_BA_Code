@@ -8,8 +8,8 @@
 ####
 
 #SBATCH --gres=gpu:1
-#SBATCH --mem=64G
-#SBATCH --cpus-per-task=8           # the number cpus per task
+#SBATCH --mem=150G
+#SBATCH --cpus-per-task=16          # the number cpus per task
 #SBATCH --partition=gpuh200         # on which partition to submit the job
 #SBATCH --time=02:00:00             # the max wallclock time (time limit your job will run)
 
