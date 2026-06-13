@@ -112,7 +112,8 @@ print(f"Retrieval Model used:  {ret_df["model"][0]}")
 #### 3. Retrieval Evaluation ####################################
 banner("STEP 3: Retrieval Evaluation")
 
-merged = gold_pages.merge(ret_df, on="report_stem", how="outer")
+merged = gold_pages.merge(ret_df, on="report_stem", how="inner")
+#merged = gold_pages.merge(ret_df, on="report_stem", how="outer")
 
 def hit_topk(row):
     top_k = row["top_k_pages"]
