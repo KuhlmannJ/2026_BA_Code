@@ -75,7 +75,7 @@ if not PDF_LIST:
 BATCH_SIZE = args.batch_size # 8 with ColPlali, but those embeddings will get bigger due to more vectors
 DPI = 150 # matches ColEmbed's 8-tile limit (2×4 @ 512px) for A4 pages
 
-SAVE_DIR = Path(f"/scratch/tmp/jkuhlma1/data/embeddings/all-{MODEL_NAME}") if args.all else Path(f"/scratch/tmp/jkuhlma1/data/embeddings/{MODEL_NAME}")
+SAVE_DIR = Path(f"/scratch/tmp/jkuhlma1/data/embeddings/all/{MODEL_NAME}") if args.all else Path(f"/scratch/tmp/jkuhlma1/data/embeddings/{MODEL_NAME}")
 SAVE_DIR.mkdir(parents=True, exist_ok=True)
 
 LOG_FILE = SAVE_DIR / f"kpi_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
