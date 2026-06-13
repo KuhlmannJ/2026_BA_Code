@@ -14,7 +14,7 @@
 #SBATCH --time=02:00:00             # the max wallclock time (time limit your job will run)
 
 #SBATCH --output=/scratch/tmp/jkuhlma1/logs/%j_out.log    # stdout → Datei (%j = Job-ID)
-#SBATCH --error=/scratch/tmp/jkuhlma1/logs/%j_err.log     # stderr → Datei
+#SBATCH --error=/scratch/tmp/jkuhlma1/logs/%j_out.log     # stderr → Datei
 
 #SBATCH --job-name=A-01-embed
 #SBATCH --mail-type=ALL
