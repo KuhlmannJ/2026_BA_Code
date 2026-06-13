@@ -52,6 +52,32 @@ def pdf_to_images(pdf_path):
     print(f"Complete: From PDF 2 Image {pdf_path.stem}.")
     return images
 
+def _save_fn(embeddings, path):
+    """PCIe transfer + disk write — runs in background so GPU stays busy."""
+    embeddings_cpu = [emb.detach().cpu() for emb in embeddings]
+    torch.save(embeddings_cpu, path)
+    file_mb  = path.stat().st_size / 1e6
+    embed_dim = embeddings_cpu[0].shape[-1] if embeddings_cpu else None
+    return file_mb, embed_dim
+
+def _log_and_print(meta, file_mb, embed_dim):
+    report_name, pages, elapsed, peak_gb, peak_ram_gb = meta
+    with open(LOG_FILE, "a", newline="") as f:
+        csv.DictWriter(f, fieldnames=LOG_FIELDS).writerow({
+            "report":       report_name,
+            "pages":        pages,
+            "elapsed_s":    round(elapsed, 2),
+            "s_per_page":   round(elapsed / pages, 3),
+            "peak_vram_gb": round(peak_gb, 2),
+            "peak_ram_gb":  round(peak_ram_gb, 2),
+            "file_size_mb": round(file_mb, 2),
+            "embed_dim":    embed_dim,
+        })
+    print(f"Tensor list for {report_name} saved. "
+          f"({pages} pages | {elapsed:.1f}s | {elapsed/pages:.2f}s/page | "
+          f"Peak-VRAM: {peak_gb:.1f} GB | RAM: {peak_ram_gb:.1f} GB | {file_mb:.1f} MB)")
+    print()
+
 
 #### 0. GLOBAL VARIABLES ########################################
 
@@ -101,7 +127,9 @@ with open(LOG_FILE, "w", newline="") as f:
 print(f"  KPI-Log : {LOG_FILE}")
 
 
-# May ommit ...
+
+
+
 #### 1. GPU Details #############################################
 banner("STEP 1: GPU / CUDA")
 props      = torch.cuda.get_device_properties(0)
@@ -111,8 +139,6 @@ gpu_uuid   = props.uuid
 print(f"  GPU  : {gpu_name}")
 print(f"  VRAM : {vram_total:.1f} GB")
 print(f"  UUID : {gpu_uuid}")
-# May ommit ...
-
 
 
 
@@ -121,6 +147,7 @@ if args.test :
     
 if args.all :
     banner("ALL IS SELECTED. HUGE DATASET.")
+    
 #### 2. Load Retrieval Model ####################################
 banner("STEP 2: Load Retrieval Model")
 model = AutoModel.from_pretrained(
@@ -144,17 +171,23 @@ process = psutil.Process(os.getpid())
 global_peak_gb  = 0.0
 global_peak_rep = None
 
-with ThreadPoolExecutor(max_workers=1) as executor:
-    # Kick off the first PDF immediately so fitz is already running before the loop body.
-    prefetch = executor.submit(pdf_to_images, PDF_LIST[0])
+with ThreadPoolExecutor(max_workers=1) as prefetch_ex, \
+     ThreadPoolExecutor(max_workers=1) as save_ex:
+
+    prefetch     = prefetch_ex.submit(pdf_to_images, PDF_LIST[0])
+    pending_save = None   # Future[(_save_fn result)]
+    pending_meta = None   # (report_name, pages, elapsed, peak_gb, peak_ram_gb)
 
     for i, pdf_path in enumerate(PDF_LIST):
-        # Wait for the current PDF's images (already being prepared in background).
         current_pdf_images = prefetch.result()
 
-        # While the GPU works below, pre-load the next PDF in the background thread.
         if i + 1 < len(PDF_LIST):
-            prefetch = executor.submit(pdf_to_images, PDF_LIST[i + 1])
+            prefetch = prefetch_ex.submit(pdf_to_images, PDF_LIST[i + 1])
+
+        # Wait for the previous save to finish, then log it — before GPU starts next report.
+        if pending_save is not None:
+            file_mb, embed_dim = pending_save.result()
+            _log_and_print(pending_meta, file_mb, embed_dim)
 
         report_name = pdf_path.stem
 
@@ -171,41 +204,24 @@ with ThreadPoolExecutor(max_workers=1) as executor:
         peak_ram_gb = process.memory_info().rss / 1e9
         peak_gb = torch.cuda.max_memory_allocated() / 1e9
 
-        # Dump from RAM
         del current_pdf_images
 
         if peak_gb > global_peak_gb:
             global_peak_gb  = peak_gb
             global_peak_rep = report_name
 
-        # Detaching images page-by-page from CPU and 'save' as list. Keeps pagenumbers intact.
-        report_embeddings_cpu = [emb.detach().cpu() for emb in report_embeddings]
-
-        ## Saving every report tensor seperately
         pt_path = SAVE_DIR / f"{report_name}.pt"
-        torch.save(report_embeddings_cpu, pt_path)
+        pages   = len(report_embeddings)
 
-        # Report for each document
-        pages      = len(report_embeddings)
-        file_mb    = pt_path.stat().st_size / 1e6
-        embed_dim  = report_embeddings_cpu[0].shape[-1] if report_embeddings_cpu else None
+        # Offload PCIe transfer + disk write — GPU is free to start the next report.
+        pending_save = save_ex.submit(_save_fn, report_embeddings, pt_path)
+        pending_meta = (report_name, pages, elapsed, peak_gb, peak_ram_gb)
+        del report_embeddings
 
-        with open(LOG_FILE, "a", newline="") as f:
-            csv.DictWriter(f, fieldnames=LOG_FIELDS).writerow({
-                "report":       report_name,
-                "pages":        pages,
-                "elapsed_s":    round(elapsed, 2),
-                "s_per_page":   round(elapsed / pages, 3),
-                "peak_vram_gb": round(peak_gb, 2),
-                "peak_ram_gb":  round(peak_ram_gb, 2),
-                "file_size_mb": round(file_mb, 2),
-                "embed_dim":    embed_dim,
-            })
-
-        print(f"Tensor list for {report_name} saved. "
-              f"({pages} pages | {elapsed:.1f}s | {elapsed/pages:.2f}s/page | "
-              f"Peak-VRAM: {peak_gb:.1f} GB | RAM: {peak_ram_gb:.1f} GB | {file_mb:.1f} MB)")
-        print()
+    # Flush the last pending save.
+    if pending_save is not None:
+        file_mb, embed_dim = pending_save.result()
+        _log_and_print(pending_meta, file_mb, embed_dim)
     
     
 print(f"All Tensors saved to {SAVE_DIR}")
