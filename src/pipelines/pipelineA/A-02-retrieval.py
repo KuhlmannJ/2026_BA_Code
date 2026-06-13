@@ -17,14 +17,16 @@ QUERY_0 = "What are the total CO2 emissions in different years? Include Scope 1,
 
 # ── Arguments for Dev'ing
 parser = argparse.ArgumentParser()
-parser.add_argument("--test",           "-t",  action="store_true",       help="Toggle Testing Path")
-parser.add_argument("--gepaTrainSet",   "-gt", action="store_true",       help="Toggle Training Set of Reports")
-parser.add_argument("--query",          "-q",  type=str, default=QUERY_0, help="Custom retrieval query")
+parser.add_argument("--test",           "-t",   action="store_true",        help="Toggle Testing Path")
+parser.add_argument("--gepaTrainSet",   "-gt",  action="store_true",        help="Toggle Training Set of Reports")
+parser.add_argument("--all",            "-a",   action="store_true",        help="Toggle ALL ESG reports (useless aswell)") # TAKES LONGER
+
+parser.add_argument("--query",          "-q",  type=str, default=QUERY_0,   help="Custom retrieval query")
 
 # ── Arguments MODEL_SELECTION # 'dest' for numbers in flags
-parser.add_argument("-3B", dest="_3B", action="store_true", help="nvidia/llama-nemotron-colembed-vl-3b-v2")
-parser.add_argument("-4B", dest="_4B", action="store_true", help="nvidia/nemotron-colembed-vl-4b-v2")
-parser.add_argument("-8B", dest="_8B", action="store_true", help="nvidia/nemotron-colembed-vl-8b-v2")
+parser.add_argument("-3B", dest="_3B",          action="store_true",        help="nvidia/llama-nemotron-colembed-vl-3b-v2")
+parser.add_argument("-4B", dest="_4B",          action="store_true",        help="nvidia/nemotron-colembed-vl-4b-v2")
+parser.add_argument("-8B", dest="_8B",          action="store_true",        help="nvidia/nemotron-colembed-vl-8b-v2")
 
 args = parser.parse_args()
 
