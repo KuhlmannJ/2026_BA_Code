@@ -187,7 +187,7 @@ EMD_LIST = sorted(list(EMB_DIR.glob("*.pt")))
 
 
 # Output Path for extracted PDF Pages "Retirevals"
-RETRIEVALS_DIR = Path(f"/scratch/tmp/jkuhlma1/results/{MODEL_NAME}/A-02-retrievals")
+RETRIEVALS_DIR = Path(f"/scratch/tmp/jkuhlma1/results/A-02-retrievals/{MODEL_NAME}")
 RETRIEVALS_DIR.mkdir(parents=True, exist_ok=True)
 
 #### PARAMS OUTPUT
