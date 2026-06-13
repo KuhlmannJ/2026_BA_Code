@@ -158,7 +158,7 @@ banner("STEP 4: Per-Report Breakdown (just to file)")
 per_report = (
     merged.groupby("report_stem")
     .agg(
-        gold_pages    = ("page",     "count"),
+        gold_pages    = ("page",         "count"),
         hit_topk      = ("hit_topk",     "sum"),
         hit_expanded  = ("hit_expanded", "sum"),
     )
