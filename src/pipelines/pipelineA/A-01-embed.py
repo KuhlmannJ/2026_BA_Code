@@ -1,5 +1,6 @@
 import torch
 from transformers import AutoModel
+from concurrent.futures import ThreadPoolExecutor
 
 # For Logging
 import argparse
@@ -37,6 +38,19 @@ def banner(title):
     print("=" * 60)
     print(f"  {title}")
     print("=" * 60)
+
+def pdf_to_images(pdf_path):
+    fitz.TOOLS.reset_mupdf_warnings()
+    images = []
+    with fitz.open(str(pdf_path)) as doc:
+        for page in doc:
+            pix = page.get_pixmap(dpi=DPI, alpha=False)
+            images.append(Image.frombytes("RGB", [pix.width, pix.height], pix.samples))
+    warnings = fitz.TOOLS.mupdf_warnings()
+    if warnings:
+        print(f"  [WARN] {pdf_path.name}: {warnings}", file=sys.stderr)
+    print(f"Complete: From PDF 2 Image {pdf_path.stem}.")
+    return images
 
 
 #### 0. GLOBAL VARIABLES ########################################
@@ -130,75 +144,68 @@ process = psutil.Process(os.getpid())
 global_peak_gb  = 0.0
 global_peak_rep = None
 
-for pdf_path in PDF_LIST :
-    fitz.TOOLS.reset_mupdf_warnings()  # Clear Buffer
-    
-    report_name = pdf_path.stem
-    current_pdf_imgages = []
-    
-    with fitz.open(str(pdf_path)) as doc :
-        
-        for page in doc :
-            pix = page.get_pixmap(dpi = DPI, alpha=False) # If PDf is RGBA (transparent)
-            img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
-            current_pdf_imgages.append(img)
-    
-    # Need to do more error handling
-    warnings = fitz.TOOLS.mupdf_warnings()
-    if warnings:
-        print(f"  [WARN] {pdf_path.name}: {warnings}", file=sys.stderr)
-    # More logging       
-    print(f"Complete: From PDF 2 Image {report_name}.")
-            
-    
-    ##### Embedding #######################
-    torch.cuda.reset_peak_memory_stats()
-    
-    t0 = time.time()
-    
-    with torch.no_grad():
-        report_embeddings = model.forward_images(current_pdf_imgages, batch_size=BATCH_SIZE)
-        
-    elapsed = time.time() - t0
-    
-    peak_ram_gb = process.memory_info().rss / 1e9
-    peak_gb = torch.cuda.max_memory_allocated() / 1e9
-    
-    # Dump from RAM
-    del current_pdf_imgages
-    
-    if peak_gb > global_peak_gb:
-        global_peak_gb  = peak_gb
-        global_peak_rep = report_name
-    
-    # Detaching images page-by-page from CPU and 'save' as list. Keeps pagenumbers intact.
-    report_embeddings_cpu = [emb.detach().cpu() for emb in report_embeddings]
-    
-    ## Saving every report tensor seperately
-    pt_path = SAVE_DIR / f"{report_name}.pt"
-    torch.save(report_embeddings_cpu, pt_path)
+with ThreadPoolExecutor(max_workers=1) as executor:
+    # Kick off the first PDF immediately so fitz is already running before the loop body.
+    prefetch = executor.submit(pdf_to_images, PDF_LIST[0])
 
-    # Report for each document
-    pages      = len(report_embeddings)
-    file_mb    = pt_path.stat().st_size / 1e6
-    embed_dim  = report_embeddings_cpu[0].shape[-1] if report_embeddings_cpu else None
+    for i, pdf_path in enumerate(PDF_LIST):
+        # Wait for the current PDF's images (already being prepared in background).
+        current_pdf_images = prefetch.result()
 
-    with open(LOG_FILE, "a", newline="") as f:
-        csv.DictWriter(f, fieldnames=LOG_FIELDS).writerow({
-            "report":       report_name,
-            "pages":        pages,
-            "elapsed_s":    round(elapsed, 2),
-            "s_per_page":   round(elapsed / pages, 3),
-            "peak_vram_gb": round(peak_gb, 2),
-            "peak_ram_gb":  round(peak_ram_gb, 2),
-            "file_size_mb": round(file_mb, 2),
-            "embed_dim":    embed_dim,
-        })
+        # While the GPU works below, pre-load the next PDF in the background thread.
+        if i + 1 < len(PDF_LIST):
+            prefetch = executor.submit(pdf_to_images, PDF_LIST[i + 1])
 
-    print(f"Tensor list for {report_name} saved. "
-          f"({pages} pages | {elapsed:.1f}s | {elapsed/pages:.2f}s/page | "
-          f"Peak-VRAM: {peak_gb:.1f} GB | RAM: {peak_ram_gb:.1f} GB | {file_mb:.1f} MB)")
-    print()
+        report_name = pdf_path.stem
+
+        ##### Embedding #######################
+        torch.cuda.reset_peak_memory_stats()
+
+        t0 = time.time()
+
+        with torch.no_grad():
+            report_embeddings = model.forward_images(current_pdf_images, batch_size=BATCH_SIZE)
+
+        elapsed = time.time() - t0
+
+        peak_ram_gb = process.memory_info().rss / 1e9
+        peak_gb = torch.cuda.max_memory_allocated() / 1e9
+
+        # Dump from RAM
+        del current_pdf_images
+
+        if peak_gb > global_peak_gb:
+            global_peak_gb  = peak_gb
+            global_peak_rep = report_name
+
+        # Detaching images page-by-page from CPU and 'save' as list. Keeps pagenumbers intact.
+        report_embeddings_cpu = [emb.detach().cpu() for emb in report_embeddings]
+
+        ## Saving every report tensor seperately
+        pt_path = SAVE_DIR / f"{report_name}.pt"
+        torch.save(report_embeddings_cpu, pt_path)
+
+        # Report for each document
+        pages      = len(report_embeddings)
+        file_mb    = pt_path.stat().st_size / 1e6
+        embed_dim  = report_embeddings_cpu[0].shape[-1] if report_embeddings_cpu else None
+
+        with open(LOG_FILE, "a", newline="") as f:
+            csv.DictWriter(f, fieldnames=LOG_FIELDS).writerow({
+                "report":       report_name,
+                "pages":        pages,
+                "elapsed_s":    round(elapsed, 2),
+                "s_per_page":   round(elapsed / pages, 3),
+                "peak_vram_gb": round(peak_gb, 2),
+                "peak_ram_gb":  round(peak_ram_gb, 2),
+                "file_size_mb": round(file_mb, 2),
+                "embed_dim":    embed_dim,
+            })
+
+        print(f"Tensor list for {report_name} saved. "
+              f"({pages} pages | {elapsed:.1f}s | {elapsed/pages:.2f}s/page | "
+              f"Peak-VRAM: {peak_gb:.1f} GB | RAM: {peak_ram_gb:.1f} GB | {file_mb:.1f} MB)")
+        print()
     
     
 print(f"All Tensors saved to {SAVE_DIR}")
