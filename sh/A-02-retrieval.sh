@@ -43,9 +43,12 @@ export RUN_TS=$(date +%m%d_%H%M) # To map the only the new retirevals
 # START THE APPLICATION
 # Set a MODEL_NAME flag '-3B' or '-4B' or '-8B' when calling A-02-retrieval.sh
 # Set a MODE flag '-t' or '-gt' or '-q' or '-a' when calling A-02-retrieval.sh
-MODEL_FLAG=${1:--4B} # Defaults to 4B
-MODE="$2" # Defaults to None
-python "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-02-retrieval.py" "$MODEL_FLAG" "$MODE"
+MODEL_FLAG=${1:--4B}
+MODE="$2"
+ARGS=("$MODEL_FLAG")
+[[ -n "$MODE" ]] && ARGS+=("$MODE")
+
+python "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-02-retrieval.py" "${ARGS[@]}"
 
 python "$HOME/2026_BA_Code/evaluations/A-02/A-02.py"
 
