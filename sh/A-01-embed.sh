@@ -53,7 +53,7 @@ export PIP_CACHE_DIR=$WORK/.cache/pip
 # Set a MODE flag '-t' or '-a' (needs 2 hours!) when calling A-01-embed.sh
 MODEL_FLAG=${1:--4B} # Defaults to 4B
 MODE="$2" # Defaults to None
-python "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed.py" "$MODEL_FLAG" "$MODE" --bz 8
+python "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed.py" "$MODEL_FLAG" "$MODE" -bz 8
 
 mkdir -p $WORK/requirements/A-01-embed
 pip freeze > $WORK/requirements/A-01-embed/3Bv2_requirements$(date +%m%d_%H%M).txt
