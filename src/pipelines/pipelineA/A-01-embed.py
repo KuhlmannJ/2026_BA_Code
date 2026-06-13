@@ -72,8 +72,6 @@ PDF_LIST = list(PDF_DIR.glob("*.pdf"))
 if not PDF_LIST:
     raise FileNotFoundError(f"Keine PDFs in {PDF_DIR}")
 
-print(f"Number of PDFs inuse: {len(PDF_LIST)}\n")
-
 BATCH_SIZE = args.batch_size # 8 with ColPlali, but those embeddings will get bigger due to more vectors
 DPI = 150 # matches ColEmbed's 8-tile limit (2×4 @ 512px) for A4 pages
 
@@ -86,8 +84,18 @@ with open(LOG_FILE, "w", newline="") as f:
     csv.DictWriter(f, fieldnames=LOG_FIELDS).writeheader()
 print(f"  KPI-Log : {LOG_FILE}")
 
+#### PARAMS OUTPUT
+banner("STEP 0: PARAMS")
+print(f"MODEL_NAME : {MODEL_NAME}")
+print(f"PDF_DIR    : {PDF_DIR}")
+print(f"No. of PDF : {len(PDF_LIST)}")
+print(f"BATCH_SIZE : {BATCH_SIZE}")
+print(f"KPI-Log    : {LOG_FILE}")
+print()
+print("=" * 60)
+print()
 
-# May ommit ...
+
 #### 1. GPU Details #############################################
 banner("STEP 1: GPU / CUDA")
 props      = torch.cuda.get_device_properties(0)
@@ -97,7 +105,6 @@ gpu_uuid   = props.uuid
 print(f"  GPU  : {gpu_name}")
 print(f"  VRAM : {vram_total:.1f} GB")
 print(f"  UUID : {gpu_uuid}")
-# May ommit ...
 
 
 
