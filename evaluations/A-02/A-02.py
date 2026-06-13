@@ -2,8 +2,15 @@ import ast
 import csv
 from pathlib import Path
 import os
+import argparse
 
 import pandas as pd
+
+# ── Arguments for Dev'ing
+parser = argparse.ArgumentParser()
+parser.add_argument("--local", "-l", action="store_true", help="For local execution and Paths")
+parser.add_argument("--runts", "-r",                      help="For local execution a given RUN_TS")
+args = parser.parse_args()
 
 #### Helping Functions ##########################################
 def banner(title):
@@ -11,17 +18,33 @@ def banner(title):
     print("=" * 60)
     print(f"  {title}")
     print("=" * 60)
+    
 
 #### 0. GLOBAL VARIABLES ########################################
 banner("STEP 0: GLOBAL VARIABLES")
 
 # ── Adjust these paths ───────────────────────────────────────
-GOLD_PATH      = Path("/scratch/tmp/jkuhlma1/data/checklist.csv")
-RETRIEVAL_LOG  = Path("/scratch/tmp/jkuhlma1/results/A-02-retrieval_log.csv")
-OUTPUT_DIR     = Path("/scratch/tmp/jkuhlma1/evaluations/A-02")
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-RUN_TS = os.environ.get("RUN_TS") # From sh script for concanated evaluation
+if args.local :
+    GOLD_PATH      = Path("../../checklist.csv")
+    RETRIEVAL_LOG  = Path("../../localdata/A-02-retrieval_log.csv")
+    OUTPUT_DIR     = Path("../A-02")
+    RUN_TS         = args.runts
+else:
+    GOLD_PATH      = Path("/scratch/tmp/jkuhlma1/data/checklist.csv")
+    RETRIEVAL_LOG  = Path("/scratch/tmp/jkuhlma1/results/A-02-retrieval_log.csv")
+    OUTPUT_DIR     = Path("/scratch/tmp/jkuhlma1/evaluations/A-02")
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    RUN_TS = os.environ.get("RUN_TS") # From sh script for concanated evaluation
+
+#### PARAMS OUTPUT
+banner("STEP 0: PARAMS")
+print(f"GOLD_PATH     : {GOLD_PATH}")
+print(f"RETRIEVAL_LOG : {RETRIEVAL_LOG}")
+print(f"OUTPUT_DIR    : {OUTPUT_DIR}")
+print(f"RUN_TS        : {RUN_TS}")
+print("=" * 60)
+print()
 # ─────────────────────────────────────────────────────────────
 
 # NOTE: Gold standard pages are printed page numbers (as shown in PDF viewer).
@@ -59,7 +82,7 @@ with open(RETRIEVAL_LOG, newline="", encoding="utf-8") as f:
     for row in reader:
         
         # Skips older rows
-        if RUN_TS and row["run_ts"] != RUN_TS:
+        if row["run_ts"] != RUN_TS:
             continue
         
         top_k  = ast.literal_eval(row["top_k_pages"])
@@ -92,26 +115,24 @@ banner("STEP 3: Retrieval Evaluation")
 merged = gold_pages.merge(ret_df, on="report_stem", how="outer")
 
 def hit_topk(row):
-    page = row["page"]
     top_k = row["top_k_pages"]
-    if not isinstance(top_k, (list, set)) or pd.isna(page):
+    if not isinstance(top_k, (list, set)):
         return False
-    if page in top_k:
-        return True
-    if isinstance(page, (int, float)) and page == int(page) and (int(page) - 1) in top_k:
-        return True
-    return False
+    try:
+        page = int(row["page"])
+    except (ValueError, TypeError):
+        return False
+    return page in top_k or (page - 1) in top_k
 
 def hit_expanded(row):
-    page = row["page"]
     expanded = row["expanded"]
-    if not isinstance(expanded, (list, set)) or pd.isna(page):
+    if not isinstance(expanded, (list, set)):
         return False
-    if page in expanded:
-        return True
-    if isinstance(page, (int, float)) and page == int(page) and (int(page) - 1) in expanded:
-        return True
-    return False
+    try:
+        page = int(row["page"])
+    except (ValueError, TypeError):
+        return False
+    return page in expanded or (page - 1) in expanded
 
 merged["hit_topk"]     = merged.apply(hit_topk,     axis=1)
 merged["hit_expanded"] = merged.apply(hit_expanded, axis=1)
