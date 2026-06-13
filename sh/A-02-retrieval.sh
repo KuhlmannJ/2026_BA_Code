@@ -48,9 +48,9 @@ MODE="$2"
 ARGS=("$MODEL_FLAG")
 [[ -n "$MODE" ]] && ARGS+=("$MODE")
 
-python "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-02-retrieval.py" "${ARGS[@]}"
+python -u "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-02-retrieval.py" "${ARGS[@]}"
 
-python "$HOME/2026_BA_Code/evaluations/A-02/A-02.py"
+python -u "$HOME/2026_BA_Code/evaluations/A-02/A-02.py"
 
 mkdir -p $WORK/requirements/A-02-retrieval
 pip freeze > $WORK/requirements/A-02-retrieval/requirements$(date +%m%d_%H%M).txt
