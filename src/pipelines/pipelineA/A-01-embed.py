@@ -179,17 +179,16 @@ with ThreadPoolExecutor(max_workers=1) as prefetch_ex, \
     pending_meta = None   # (report_name, pages, elapsed, peak_gb, peak_ram_gb)
 
     for i, pdf_path in enumerate(PDF_LIST):
+        
+        report_name = pdf_path.stem
+        
+        t_fetch_start = time.time()
         current_pdf_images = prefetch.result()
+        print(f"  prefetch.result() for {report_name} wait: {time.time()-t_fetch_start:.2f}s")
 
         if i + 1 < len(PDF_LIST):
             prefetch = prefetch_ex.submit(pdf_to_images, PDF_LIST[i + 1])
 
-        # Wait for the previous save to finish, then log it — before GPU starts next report.
-        if pending_save is not None:
-            file_mb, embed_dim = pending_save.result()
-            _log_and_print(pending_meta, file_mb, embed_dim)
-
-        report_name = pdf_path.stem
 
         ##### Embedding #######################
         torch.cuda.reset_peak_memory_stats()
@@ -200,6 +199,7 @@ with ThreadPoolExecutor(max_workers=1) as prefetch_ex, \
             report_embeddings = model.forward_images(current_pdf_images, batch_size=BATCH_SIZE)
 
         elapsed = time.time() - t0
+        print(f"forward_images for {report_name}: {time.time()-t0:.2f}s")
 
         peak_ram_gb = process.memory_info().rss / 1e9
         peak_gb = torch.cuda.max_memory_allocated() / 1e9
@@ -212,6 +212,11 @@ with ThreadPoolExecutor(max_workers=1) as prefetch_ex, \
 
         pt_path = SAVE_DIR / f"{report_name}.pt"
         pages   = len(report_embeddings)
+        
+        # Wait for the previous save to finish, then log it — before GPU starts next report.
+        if pending_save is not None:
+            file_mb, embed_dim = pending_save.result()
+            _log_and_print(pending_meta, file_mb, embed_dim)
 
         # Offload PCIe transfer + disk write — GPU is free to start the next report.
         pending_save = save_ex.submit(_save_fn, report_embeddings, pt_path)
