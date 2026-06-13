@@ -54,4 +54,4 @@ MODE="$2" # Defaults to None
 python "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed.py" "$MODEL_FLAG" "$MODE" -bz 8
 
 mkdir -p $WORK/requirements/A-01-embed
-pip freeze > $WORK/requirements/A-01-embed/3Bv2_requirements$(date +%m%d_%H%M).txt
+pip freeze > $WORK/requirements/A-01-embed/requirements$(date +%m%d_%H%M).txt
