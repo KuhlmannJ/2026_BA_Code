@@ -38,7 +38,7 @@ MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"           # 66.7GB VRAM
 # MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"     # 62.1GB VRAM
 
 # NOTE: Fixed RETRIEVAL_DIR!
-RETRIEVAL_DIR = Path(f"/scratch/tmp/jkuhlma1/results/A-02-retrievals/nvidia/nemotron-colembed-vl-8b-v2/")
+RETRIEVAL_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals/nvidia/nemotron-colembed-vl-8b-v2/")
 RETRIEVAL_LIST = sorted(list(RETRIEVAL_DIR.glob("*.pdf")))
 
 # For Testing just one, hopefully 'Allianz_2022_report.pdf' 
@@ -51,7 +51,7 @@ RESULTS_FILE  = OUTPUT_DIR / "results.json"
 
 DPI = 150
 
-PROMT_PATH = Path("$HOME/2026_BA_CODE/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
+PROMT_PATH = Path("/home/j/jkuhlma1/2026_BA_Code/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
 
 EXTRACTION_PROMT = PROMT_PATH.read_text()
 
