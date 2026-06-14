@@ -3,8 +3,8 @@ from transformers import Qwen3VLForConditionalGeneration, Qwen3VLMoeForCondition
 
 import argparse
 import json
-import re
 import time
+import csv
 
 import fitz #pip install pymupdf
 from PIL import Image
@@ -129,17 +129,20 @@ banner("STEP 3: PDF PROCESSING")
 
 n = len(RETRIEVAL_LIST)
 counter = 1
+results = []
 
 for pdf_path in sorted(RETRIEVAL_LIST):
     t_pdf_start = time.time()
     
     report_name = pdf_path.stem
     print(report_name)
+    report_len = 0
 
     t_pymupdf_start = time.time()
     #### Packaging Promt and Images (as img as no API call))
     content = []
     with fitz.open(str(pdf_path)) as doc :
+        report_len = len(doc)
         for page in doc :
             pix = page.get_pixmap(dpi = DPI, alpha=False) # If PDF is RGBA (transparent)
             img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
@@ -191,7 +194,16 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     output_file = OUTPUT_DIR / f"{report_name}.json"
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(output_JSON, f, ensure_ascii=False, indent=2)
+    
+    
+    results.append({
+        "model":        MODEL_NAME,
+        "maxToken":     args.maxTokens,
+        "report":       report_name,
+        "pages":        report_len,
+        "t_inf/page":   round(t_inference / report_len, TIME_ROUND),
         
+    })
         
     t_pdf = round(time.time() - t_pdf_start, TIME_ROUND)
     print(f"t_pdf: {t_pdf}s")
@@ -199,5 +211,13 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     print()
     print(f"{pdf_path} processed. {counter} / {n}")
     counter += 1
+
+
+fieldnames = ["model", "maxToken", "report", "pages", "t_inf/page"]
+csv_file = OUTPUT_DIR / "***results.csv"
+with open(csv_file, "w", newline="", encoding="utf-8") as f:
+    writer = csv.DictWriter(f, fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerows(results)
 
 banner("Done.")
