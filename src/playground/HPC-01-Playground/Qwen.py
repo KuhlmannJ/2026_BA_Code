@@ -4,9 +4,9 @@ from transformers import Qwen3VLForConditionalGeneration, Qwen3VLMoeForCondition
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
-# MODEL_NAME = "Qwen/Qwen3-VL-235B-A22B-Thinking"   # VRAM-ERROR
-# MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"         # 66.7GB VRAM
-MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"
+# MODEL_NAME = "Qwen/Qwen3-VL-235B-A22B-Thinking"   # VRAM-ERROR, 500GB download :)
+MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"         # 66.7GB VRAM
+# MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"       # 62.1GB VRAM
 
 #### Helping Functions ##########################################
 # Some segmentation for log readablility
@@ -31,13 +31,6 @@ print(f"  UUID : {gpu_uuid}")
 banner("STEP 2: LOAD VLM")
 
 match MODEL_NAME:
-    case "Qwen/Qwen3-VL-235B-A22B-Thinking":
-        model = Qwen3VLMoeForConditionalGeneration.from_pretrained(
-            MODEL_NAME,
-            dtype=torch.bfloat16,
-            attn_implementation="flash_attention_2",
-            device_map='cuda:0',
-        )
     case "Qwen/Qwen3-VL-32B-Thinking":
         model = Qwen3VLForConditionalGeneration.from_pretrained(
             MODEL_NAME,
