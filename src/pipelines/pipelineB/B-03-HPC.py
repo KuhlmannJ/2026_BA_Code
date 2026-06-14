@@ -180,16 +180,11 @@ for pdf_path in sorted(RETRIEVAL_LIST):
         generated_ids_trimmed, skip_special_tokens=False, clean_up_tokenization_spaces=False #skip_special_tokens=FALSE um <think> zu lassen
     )[0] # To get to the String inside the output_text: >>["So, let's describe..."]<<
     
-    with open(f"{report_name}_raw.txt", "w", encoding="utf-8") as f:
-        f.write(output_text)
-    
     # Cleanup of output text 
     # strip_thinking() drops "thinking" part of the response
     # An "<|im_end|>" is always at the end of the output, needs to be removed
     # .strip() drops random empty lines
     output_clean = strip_thinking(output_text).replace("<|im_end|>", "").strip()
-    with open(f"{report_name}_outout_without_thinking.txt", "w", encoding="utf-8") as f:
-        f.write(output_clean)
         
     output_JSON = json.loads(output_clean)
 

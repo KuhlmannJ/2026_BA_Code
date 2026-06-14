@@ -1,0 +1,2 @@
+model,maxToken,report,duration,pages,t_inf/page
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,acuity brands inc_2022_report,107.18,8,13.4
