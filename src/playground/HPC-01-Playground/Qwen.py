@@ -1,6 +1,9 @@
 import torch
 from transformers import Qwen3VLForConditionalGeneration, AutoProcessor
 
+from dotenv import load_dotenv, find_dotenv
+load_dotenv(find_dotenv())
+
 model = Qwen3VLForConditionalGeneration.from_pretrained(
     "Qwen/Qwen3-VL-32B-Thinking",
     dtype=torch.bfloat16,
