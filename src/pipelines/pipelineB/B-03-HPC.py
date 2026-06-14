@@ -51,7 +51,8 @@ RESULTS_FILE  = OUTPUT_DIR / "results.json"
 
 DPI = 150
 
-PROMT_PATH = Path("$HOME/2026_BA_Code/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
+PROMT_PATH = Path("$HOME/2026_BA_CODE/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
+
 EXTRACTION_PROMT = PROMT_PATH.read_text()
 
 print(f"RETRIEVAL_DIR:  {RETRIEVAL_DIR}")
