@@ -48,8 +48,13 @@ MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"           # 66.7GB VRAM
 
 BASE_DIR = find_project_root()
 
-RETRIEVAL_DIR = Path(f"{BASE_DIR}/localdata/test-A-02-retrievals") if args.test else Path(f"{BASE_DIR}/localdata/A-02-retrievals")
-RETRIEVAL_LIST = list(RETRIEVAL_DIR.glob("*.pdf"))
+# NOTE: Fixed RETRIEVAL_DIR!
+RETRIEVAL_DIR = Path(f"/scratch/tmp/jkuhlma1/results/A-02-retrievals/nvidia/nemotron-colembed-vl-8b-v2/")
+RETRIEVAL_LIST = sorted(list(RETRIEVAL_DIR.glob("*.pdf")))
+
+# For Testing just one, hopefully 'Allianz_2022_report.pdf' 
+if args.test:
+    RETRIEVAL_LIST = RETRIEVAL_LIST[4]
 
 OUTPUT_DIR    = Path(f"{BASE_DIR}/src/pipelines/pipelineB/PipelineB-Answers/{MODEL_NAME}")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
