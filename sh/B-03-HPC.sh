@@ -41,8 +41,8 @@ export RUN_TS=$(date +%m%d_%H%M) # To map the only the new retirevals
 # pip install flash-attn==2.6.3 --no-build-isolation
 
 # START THE APPLICATION
-
-python -u "$HOME/2026_BA_Code/src/pipelines/pipelineB/B-03-HPC.py"
+# Set a flag '-t' for Testing (just one report)
+python -u "$HOME/2026_BA_Code/src/pipelines/pipelineB/B-03-HPC.py" "$@"
 
 mkdir -p $WORK/requirements/B-03-HPC
 pip freeze > $WORK/requirements/B-03-HPC/requirements$(date +%m%d_%H%M).txt
