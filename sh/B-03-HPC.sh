@@ -4,7 +4,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --gres=gpu:1
 
-#SBATCH --mem=150
+#SBATCH --mem=150G
 #SBATCH --cpus-per-task=16
 #SBATCH --partition=gpuh200  # Is enough as VRAM peak = 29GB for 1,5 min with 22GB RAM
 
