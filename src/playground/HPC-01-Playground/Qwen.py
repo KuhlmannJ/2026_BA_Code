@@ -1,5 +1,5 @@
 import torch
-from transformers import Qwen3VLForConditionalGeneration, AutoProcessor
+from transformers import Qwen3VLForConditionalGeneration, Qwen3VLMoeForConditionalGeneration, AutoProcessor
 
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
