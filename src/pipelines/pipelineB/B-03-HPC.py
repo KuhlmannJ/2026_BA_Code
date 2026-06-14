@@ -3,6 +3,7 @@ from transformers import Qwen3VLForConditionalGeneration, Qwen3VLMoeForCondition
 
 import argparse
 import json
+import re
 
 import fitz #pip install pymupdf
 from PIL import Image
@@ -26,9 +27,9 @@ def banner(title):
     print("=" * 60)
     print(f"  {title}")
     print("=" * 60)
-    
-    
-    
+
+def strip_thinking(text: str) -> str:
+    return re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL).strip()
 
 #### 0. GLOBAL VARIABLES ########################################
 banner("STEP 0: GLOBAL VARIABLES")
@@ -123,7 +124,7 @@ for pdf_path in sorted(RETRIEVAL_LIST):
         for page in doc :
             pix = page.get_pixmap(dpi = DPI, alpha=False) # If PDF is RGBA (transparent)
             img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
-            content.append({"type": "image", "iamge": img})
+            content.append({"type": "image", "image": img})
      
     messages = [{"role": "user", "content": content}]       
     print("    PDF2Image done and embedded into `content` and `messages`.")
@@ -140,7 +141,7 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     
     
     # Inference: Generation of the output (source: HF)
-    generated_ids = model.generate(**inputs, max_new_tokens=128)
+    generated_ids = model.generate(**inputs)
     generated_ids_trimmed = [
         out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
     ]
@@ -149,13 +150,15 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     )[0] # To get to the String inside the output_text: >>["So, let's describe..."]<<
     
     # Cleanup of output text that should be JSON
-    clean_output = output_text.strip()
-    if clean_output.startswith("```json"):
-        clean_output = clean_output[7:-3].strip()
-    elif clean_output.startswith("```"):
-        clean_output = clean_output[3:-3].strip()
+    outout_without_thinking = strip_thinking(output_text)
+    
+    output_clean = output_text.strip()
+    if output_clean.startswith("```json"):
+        output_clean = output_clean[7:-3].strip()
+    elif output_clean.startswith("```"):
+        output_clean = output_clean[3:-3].strip()
         
-    print(clean_output)
+    print(output_clean)
 
     # output = json.loads(clean_completion)
 
