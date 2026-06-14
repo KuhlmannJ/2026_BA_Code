@@ -146,7 +146,7 @@ for pdf_path in sorted(RETRIEVAL_LIST):
         out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
     ]
     output_text = processor.batch_decode(
-        generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
+        generated_ids_trimmed, skip_special_tokens=False, clean_up_tokenization_spaces=False #skip_special_tokens=FALSE um <think> zu lassen
     )[0] # To get to the String inside the output_text: >>["So, let's describe..."]<<
     
     # Cleanup of output text that should be JSON
