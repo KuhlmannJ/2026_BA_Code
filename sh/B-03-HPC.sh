@@ -8,7 +8,7 @@
 #SBATCH --cpus-per-task=16
 #SBATCH --partition=gpuh200  # Is enough as VRAM peak = 29GB for 1,5 min with 22GB RAM
 
-#SBATCH --time=00:30:00
+#SBATCH --time=04:00:00
 
 #SBATCH --output=/scratch/tmp/jkuhlma1/logs/%j_out.log    # stdout → Datei (%j = Job-ID)
 #SBATCH --error=/scratch/tmp/jkuhlma1/logs/%j_out.log     # stderr → Datei
