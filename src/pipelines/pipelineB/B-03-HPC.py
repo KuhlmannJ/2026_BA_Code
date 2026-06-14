@@ -50,6 +50,8 @@ banner("STEP 0: GLOBAL VARIABLES")
 MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"           # 66.7GB VRAM
 # MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"     # 62.1GB VRAM
 
+MAX_TOKENS = 8192
+
 # NOTE: Fixed RETRIEVAL_DIR!
 RETRIEVAL_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals/nvidia/nemotron-colembed-vl-8b-v2/")
 RETRIEVAL_LIST = sorted(list(RETRIEVAL_DIR.glob("*.pdf")))
@@ -161,7 +163,7 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     
     t_inference_start = time.time()
     # Inference: Generation of the output (source: HF)
-    generated_ids = model.generate(**inputs, max_new_tokens=40960)
+    generated_ids = model.generate(**inputs, max_new_tokens=MAX_TOKENS)
     generated_ids_trimmed = [
         out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
     ]
