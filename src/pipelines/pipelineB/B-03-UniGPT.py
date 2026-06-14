@@ -35,26 +35,26 @@ def find_project_root(start: Path = None, markers=(".git",)) -> Path:
 #### 0. GLOBAL VARIABLES ########################################
 banner("STEP 0: GLOBAL VARIABLES")
 
-
-BASE_DIR = find_project_root()
-
-RETRIEVAL_DIR = Path(f"{BASE_DIR}/localdata/test-A-02-retrievals") if args.test else Path(f"{BASE_DIR}/localdata/A-02-retrievals")
-RETRIEVAL_LIST = list(RETRIEVAL_DIR.glob("*.pdf"))
-
-OUTPUT_DIR    = Path(f"{BASE_DIR}/src/pipelines/pipelineB/PipelineB-Answers")
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-RESULTS_FILE  = OUTPUT_DIR / "results.json"
-
-DPI = 150
-
 # access models=[
     # 'Qwen3.5-35B-A3B'
     # 'gemma-4-31B-it'
     # 'gemma-3-27b-it'
     # 'gpt-oss-120b'
     # ]
+#MODEL_NAME = "Qwen3.5-35B-A3B"
+MODEL_NAME = "gemma-4-31B-it"
 
-MODEL_NAME = "Qwen3.5-35B-A3B"
+
+BASE_DIR = find_project_root()
+
+RETRIEVAL_DIR = Path(f"{BASE_DIR}/localdata/test-A-02-retrievals") if args.test else Path(f"{BASE_DIR}/localdata/A-02-retrievals")
+RETRIEVAL_LIST = list(RETRIEVAL_DIR.glob("*.pdf"))
+
+OUTPUT_DIR    = Path(f"{BASE_DIR}/src/pipelines/pipelineB/PipelineB-Answers/{MODEL_NAME}")
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+RESULTS_FILE  = OUTPUT_DIR / "results.json"
+
+DPI = 150
 
 PROMT_PATH = Path(f"{BASE_DIR}/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
 EXTRACTION_PROMT = PROMT_PATH.read_text()
@@ -64,8 +64,8 @@ EXTRACTION_PROMT = PROMT_PATH.read_text()
 print(f"RETRIEVAL_DIR:  {RETRIEVAL_DIR}")
 print(f"OUTPUT_DIR:     {OUTPUT_DIR}")
 print(f"PROMT_PATH:     {PROMT_PATH}")
-print(f"EXTRACTION_PROMT:\n{EXTRACTION_PROMT}\n")
-print("=" * 60)
+print(f"MODEL_NAME:     {MODEL_NAME}")
+# print(f"EXTRACTION_PROMT:\n{EXTRACTION_PROMT}\n")
 print()
 
 
@@ -110,6 +110,9 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     
     print("    Base64 encoding done.")
     
+    
+    
+    
     print("    Submitting API Request")
     completion = client.chat.completions.create(
         model=MODEL_NAME,
@@ -125,35 +128,17 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     elif clean_completion.startswith("```"):
         clean_completion = clean_completion[3:-3].strip()
 
-    # print(completion.choices[0].message.content)
-    # result = {
-    #     "report"    : report_name,
-    #     "response"  : clean,
-    #     "model"     : MODEL_NAME,
-    #     "usage": {
-    #         "input_tokens":  completion.usage.prompt_tokens,
-    #         "output_tokens": completion.usage.completion_tokens ,
-    #     }
-    # }
-    # results.append(result)
 
-    output = {
-        "report": report_name,
-        "response": json.loads(clean_completion),
-        "model": MODEL_NAME,
-        "usage": {
-            "input_tokens": completion.usage.prompt_tokens,
-            "output_tokens": completion.usage.completion_tokens,
-        }
-    }
+
+    output = json.loads(clean_completion)
 
     output_file = OUTPUT_DIR / f"{report_name}.json"
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
 
+
+
     print(f"    Saved to {output_file}")
-    
-    
     
     print(f"{pdf_path} processed. {counter} / {n}")
     counter = counter + 1
