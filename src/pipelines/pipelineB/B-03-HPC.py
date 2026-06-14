@@ -44,7 +44,7 @@ RETRIEVAL_LIST = sorted(list(RETRIEVAL_DIR.glob("*.pdf")))
 
 # For Testing just one, hopefully 'Allianz_2022_report.pdf' 
 if args.test:
-    RETRIEVAL_LIST = RETRIEVAL_LIST[4]
+    RETRIEVAL_LIST = list(RETRIEVAL_LIST[4])
 
 OUTPUT_DIR    = Path(f"/scratch/tmp/jkuhlma1/results/A-03-answers/{MODEL_NAME}")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
