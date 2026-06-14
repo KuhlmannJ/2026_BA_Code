@@ -4,9 +4,9 @@ from transformers import Qwen3VLForConditionalGeneration, Qwen3VLMoeForCondition
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
-MODEL_NAME = "Qwen/Qwen3-VL-235B-A22B-Thinking"
+# MODEL_NAME = "Qwen/Qwen3-VL-235B-A22B-Thinking"   # VRAM-ERROR
 # MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"         # 66.7GB VRAM
-# MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"
+MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"
 
 #### Helping Functions ##########################################
 # Some segmentation for log readablility
