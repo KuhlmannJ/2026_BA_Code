@@ -1,60 +1,7 @@
 import torch
-from transformers import Qwen3VLForConditionalGeneration, AutoProcessor
-
-model = Qwen3VLForConditionalGeneration.from_pretrained(
-    "Qwen/Qwen3-VL-32B-Thinking",
-    dtype=torch.bfloat16,
-    attn_implementation="flash_attention_2",
-    device_map='cuda:0',
-)
-
-processor = AutoProcessor.from_pretrained("Qwen/Qwen3-VL-32B-Thinking")
-
-messages = [
-    {
-        "role": "user",
-        "content": [
-            {
-                "type": "image",
-                "image": "https://qianwen-res.oss-cn-beijing.aliyuncs.com/Qwen-VL/assets/demo.jpeg",
-            },
-            {"type": "text", "text": "Describe this image."},
-        ],
-    }
-]
-
-# Preparation for inference
-inputs = processor.apply_chat_template(
-    messages,
-    tokenize=True,
-    add_generation_prompt=True,
-    return_dict=True,
-    return_tensors="pt"
-)
-inputs = inputs.to(model.device)
-
-# Inference: Generation of the output
-generated_ids = model.generate(**inputs, max_new_tokens=128)
-generated_ids_trimmed = [
-    out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
-]
-output_text = processor.batch_decode(
-    generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
-)
-print(output_text)
-
-
-
-
-
-
-
-
+from transformers import Qwen3VLForConditionalGeneration, Qwen3VLMoeForConditionalGeneration, AutoProcessor
 
 import argparse
-
-import base64
-import io
 import json
 
 import fitz #pip install pymupdf
@@ -64,10 +11,14 @@ from pathlib import Path
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
+
 # ── Arguments for Dev'ing
 parser = argparse.ArgumentParser()
-parser.add_argument("--test", "-t", action="store_true", help="Toggle Testing Path")
+parser.add_argument("--test",  "-t", action="store_true",       help="Toggle Testing Path")
 args = parser.parse_args()
+
+
+
 
 #### Helping Functions ##########################################
 def banner(title):
@@ -83,18 +34,16 @@ def find_project_root(start: Path = None, markers=(".git",)) -> Path:
             return p
     return start
 
+
+
+
+
 #### 0. GLOBAL VARIABLES ########################################
 banner("STEP 0: GLOBAL VARIABLES")
 
-# access models=[
-    # 'Qwen3.5-35B-A3B'
-    # 'gemma-4-31B-it'
-    # 'gemma-3-27b-it'
-    # 'gpt-oss-120b' 'TEXT ONLY'
-    # ]
-MODEL_NAME = "gemma-4-31B-it" # fastest
-#MODEL_NAME = "Qwen3.5-35B-A3B" # slowest, but thinking
-#MODEL_NAME = "gemma-3-27b-it" # longer than 4, faster than Qwen
+# MODEL_NAME = "Qwen/Qwen3-VL-235B-A22B-Thinking"   # VRAM-ERROR, 500GB download :)
+MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"           # 66.7GB VRAM
+# MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"     # 62.1GB VRAM
 
 
 BASE_DIR = find_project_root()
@@ -111,9 +60,8 @@ DPI = 150
 PROMT_PATH = Path(f"{BASE_DIR}/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
 EXTRACTION_PROMT = PROMT_PATH.read_text()
 
-
-
 print(f"RETRIEVAL_DIR:  {RETRIEVAL_DIR}")
+print(f"No. of PDF:     {len(RETRIEVAL_LIST)}")
 print(f"OUTPUT_DIR:     {OUTPUT_DIR}")
 print(f"PROMT_PATH:     {PROMT_PATH}")
 print(f"MODEL_NAME:     {MODEL_NAME}")
@@ -121,14 +69,50 @@ print(f"MODEL_NAME:     {MODEL_NAME}")
 print()
 
 
-#### 1. PROCESSING PDFS ########################################
-banner("PROCESSING PDFS")
+#### 1. GPU Details #############################################
+banner("STEP 1: GPU / CUDA")
+props      = torch.cuda.get_device_properties(0)
+gpu_name   = torch.cuda.get_device_name(0)
+vram_total = props.total_memory / 1e9
+gpu_uuid   = props.uuid
+print(f"  GPU  : {gpu_name}")
+print(f"  VRAM : {vram_total:.1f} GB")
+print(f"  UUID : {gpu_uuid}")
 
-client = OpenAI(
-    base_url="https://gpt.uni-muenster.de/v1"
-)
 
-results = []
+
+
+#### 2. VLM Loading #############################################
+banner("STEP 2: LOAD VLM")
+
+match MODEL_NAME:
+    case "Qwen/Qwen3-VL-32B-Thinking":
+        model = Qwen3VLForConditionalGeneration.from_pretrained(
+            MODEL_NAME,
+            dtype=torch.bfloat16,
+            attn_implementation="flash_attention_2",
+            device_map='cuda:0',
+        )
+    case "Qwen/Qwen3-VL-30B-A3B-Thinking":
+        model = Qwen3VLMoeForConditionalGeneration.from_pretrained(
+            MODEL_NAME,
+            dtype=torch.bfloat16,
+            attn_implementation="flash_attention_2",
+            device_map='cuda:0',
+        )
+
+processor = AutoProcessor.from_pretrained(MODEL_NAME)
+
+print(f" Loaded: {MODEL_NAME}")
+print(f" Attention loaded:{model.config._attn_implementation}")
+print(f" VRAM belegt: {torch.cuda.max_memory_allocated() / 1e9:.1f} GB")
+
+
+
+
+#### 3. PDF PROCESSING ########################################
+banner("STEP 3: PDF PROCESSING")
+
 n = len(RETRIEVAL_LIST)
 counter = 1
 
@@ -136,69 +120,56 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     
     report_name = pdf_path.stem
     print(report_name)
+
     
-    current_pdf_imgages = []
+    #### Packaging Promt and Images (as img as no API call))
+    content = [{"type": "text", "text": EXTRACTION_PROMT}]
     with fitz.open(str(pdf_path)) as doc :
         for page in doc :
             pix = page.get_pixmap(dpi = DPI, alpha=False) # If PDF is RGBA (transparent)
             img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
-            current_pdf_imgages.append(img)
-
-
-    print("    PDF2Image done.")
-    
-    content = [{
-        "type": "text",
-        "text": EXTRACTION_PROMT
-    }]
-    for img in current_pdf_imgages:
-        buffer = io.BytesIO()
-        img.save(buffer, format="PNG")
-        img_b64 = base64.b64encode(buffer.getvalue()).decode()
-        content.append({
-            "type": "image_url",
-            "image_url": {"url": f"data:image/png;base64,{img_b64}"}
-        })
-    
-    print("    Base64 encoding done.")
+            content.append({"type": "image", "iamge": img})
+     
+    messages = [{"role": "user", "content": content}]       
+    print("    PDF2Image done and embedded into `content` and `messages`.")
     
     
+    # Preparation for inference (source: HF)
+    inputs = processor.apply_chat_template(
+        messages,
+        tokenize=True,
+        add_generation_prompt=True,
+        return_dict=True,
+        return_tensors="pt"
+    ).to(model.device)
     
     
-    print("    Submitting API Request")
-    completion = client.chat.completions.create(
-        model=MODEL_NAME,
-        messages=[{"role": "user", "content": content}],
-        response_format={"type": "json_object"}
-    )
+    # Inference: Generation of the output (source: HF)
+    generated_ids = model.generate(**inputs, max_new_tokens=128)
+    generated_ids_trimmed = [
+        out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
+    ]
+    output_text = processor.batch_decode(
+        generated_ids_trimmed, skip_special_tokens=True, clean_up_tokenization_spaces=False
+    )[0] # To get to the String inside the output_text: >>["So, let's describe..."]<<
     
-    raw_completion = completion.choices[0].message.content
-    
-    clean_completion = raw_completion.strip()
+    # Cleanup of output text that should be JSON
+    clean_completion = output_text.strip()
     if clean_completion.startswith("```json"):
         clean_completion = clean_completion[7:-3].strip()
     elif clean_completion.startswith("```"):
         clean_completion = clean_completion[3:-3].strip()
 
-
-
     output = json.loads(clean_completion)
 
+    # Saving that outout as JSON
     output_file = OUTPUT_DIR / f"{report_name}.json"
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
-
-
-
+        
     print(f"    Saved to {output_file}")
     print()
     print(f"{pdf_path} processed. {counter} / {n}")
-    counter = counter + 1
+    counter += 1
 
 banner("Done.")
-
-#banner("Saving results")
-
-#RESULTS_FILE.write_text(json.dumps(results, indent=2))
-#print(f"  Results saved to: {RESULTS_FILE}")
-#print(f"  Total requests: {len(results)}")
