@@ -48,8 +48,8 @@ def strip_thinking(text: str) -> str:
 banner("STEP 0: GLOBAL VARIABLES")
 
 # MODEL_NAME = "Qwen/Qwen3-VL-235B-A22B-Thinking"   # VRAM-ERROR, 500GB download :)
-MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"           # 66.7GB VRAM
-# MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"     # 62.1GB VRAM
+# MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"           # 66.7GB VRAM, takes 5min/report, 4h for 53 reports
+MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"     # 62.1GB VRAM
 
 # NOTE: Fixed RETRIEVAL_DIR!
 RETRIEVAL_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals/nvidia/nemotron-colembed-vl-8b-v2/")
@@ -200,6 +200,7 @@ for pdf_path in sorted(RETRIEVAL_LIST):
         "model":        MODEL_NAME,
         "maxToken":     args.maxTokens,
         "report":       report_name,
+        "duration":     t_inference,
         "pages":        report_len,
         "t_inf/page":   round(t_inference / report_len, TIME_ROUND),
         
@@ -213,7 +214,7 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     counter += 1
 
 
-fieldnames = ["model", "maxToken", "report", "pages", "t_inf/page"]
+fieldnames = ["model", "maxToken", "report", "duration", "pages", "t_inf/page"]
 csv_file = OUTPUT_DIR / "***results.csv"
 with open(csv_file, "w", newline="", encoding="utf-8") as f:
     writer = csv.DictWriter(f, fieldnames=fieldnames)
