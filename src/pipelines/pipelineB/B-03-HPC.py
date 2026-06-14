@@ -146,13 +146,20 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     generated_ids_trimmed = [
         out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
     ]
+    
+    
     output_text = processor.batch_decode(
         generated_ids_trimmed, skip_special_tokens=False, clean_up_tokenization_spaces=False #skip_special_tokens=FALSE um <think> zu lassen
     )[0] # To get to the String inside the output_text: >>["So, let's describe..."]<<
     
+    with open(f"{report_name}_raw.txt", "w", encoding="utf-8") as f:
+        f.write(output_text)
+    
     # Cleanup of output text that should be JSON
     outout_without_thinking = strip_thinking(output_text)
-    
+    with open(f"{report_name}_outout_without_thinking.txt", "w", encoding="utf-8") as f:
+        f.write(outout_without_thinking)
+        
     output_clean = output_text.strip()
     if output_clean.startswith("```json"):
         output_clean = output_clean[7:-3].strip()
@@ -160,6 +167,8 @@ for pdf_path in sorted(RETRIEVAL_LIST):
         output_clean = output_clean[3:-3].strip()
         
     print(output_clean)
+    with open(f"{report_name}_output_clean.txt", "w", encoding="utf-8") as f:
+        f.write(output_clean)
 
     # output = json.loads(clean_completion)
 
