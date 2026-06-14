@@ -16,7 +16,8 @@ load_dotenv(find_dotenv())
 
 # ── Arguments for Dev'ing
 parser = argparse.ArgumentParser()
-parser.add_argument("--test",  "-t", action="store_true",       help="Toggle Testing Path")
+parser.add_argument("--test",       "-t",   action="store_true", help="Toggle Testing Path")
+parser.add_argument("--maxTokens",  "-mt",  type=int, default=8192, help="Control Thinking Tokens") #Rougly equivalent to control thinking tokens, but means tokens overall
 args = parser.parse_args()
 
 
@@ -49,8 +50,6 @@ banner("STEP 0: GLOBAL VARIABLES")
 # MODEL_NAME = "Qwen/Qwen3-VL-235B-A22B-Thinking"   # VRAM-ERROR, 500GB download :)
 MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"           # 66.7GB VRAM
 # MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"     # 62.1GB VRAM
-
-MAX_TOKENS = 8192
 
 # NOTE: Fixed RETRIEVAL_DIR!
 RETRIEVAL_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals/nvidia/nemotron-colembed-vl-8b-v2/")
@@ -164,7 +163,7 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     
     t_inference_start = time.time()
     # Inference: Generation of the output (source: HF)
-    generated_ids = model.generate(**inputs, max_new_tokens=MAX_TOKENS)
+    generated_ids = model.generate(**inputs, max_new_tokens=args.maxTokens)
     generated_ids_trimmed = [
         out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
     ]
@@ -178,8 +177,11 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     with open(f"{report_name}_raw.txt", "w", encoding="utf-8") as f:
         f.write(output_text)
     
-    # Cleanup of output text that should be JSON #.strip() drops random empty lines
-    output_clean = strip_thinking(output_text).strip()
+    # Cleanup of output text 
+    # strip_thinking() drops "thinking" part of the response
+    # An "<|im_end|>" is always at the end of the output, needs to be removed
+    # .strip() drops random empty lines
+    output_clean = strip_thinking(output_text).replace("<|im_end|>", "").strip()
     with open(f"{report_name}_outout_without_thinking.txt", "w", encoding="utf-8") as f:
         f.write(output_clean)
         
