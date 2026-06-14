@@ -28,9 +28,20 @@ def banner(title):
     print("=" * 60)
     print(f"  {title}")
     print("=" * 60)
+    
+def clean_json(text: str) -> str:
+    text = text.replace("<|im_end|>", "").strip()
+    if text.startswith("```json"):
+        text = text[7:-3].strip()
+    elif text.startswith("```"):
+        text = text[3:-3].strip()
+    return text
 
+# Drops everything before </think>
 def strip_thinking(text: str) -> str:
-    return re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL).strip()
+    if "</think>" in text:
+        return text.split("</think>", 1)[1].strip()
+    return text.strip()
 
 #### 0. GLOBAL VARIABLES ########################################
 banner("STEP 0: GLOBAL VARIABLES")
@@ -125,13 +136,14 @@ for pdf_path in sorted(RETRIEVAL_LIST):
 
     t_pymupdf_start = time.time()
     #### Packaging Promt and Images (as img as no API call))
-    content = [{"type": "text", "text": EXTRACTION_PROMT}]
+    content = []
     with fitz.open(str(pdf_path)) as doc :
         for page in doc :
             pix = page.get_pixmap(dpi = DPI, alpha=False) # If PDF is RGBA (transparent)
             img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
             content.append({"type": "image", "image": img})
-     
+    content.append({"type": "text", "text": EXTRACTION_PROMT}) # Promt after img, like on HF
+    
     messages = [{"role": "user", "content": content}]       
     print("    PDF2Image done and embedded into `content` and `messages`.")
     t_pymupdf = round(time.time() - t_pymupdf_start, TIME_ROUND)
@@ -163,30 +175,23 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     with open(f"{report_name}_raw.txt", "w", encoding="utf-8") as f:
         f.write(output_text)
     
-    # Cleanup of output text that should be JSON
-    outout_without_thinking = strip_thinking(output_text)
+    # Cleanup of output text that should be JSON #.strip() drops random empty lines
+    output_clean = strip_thinking(output_text).strip()
     with open(f"{report_name}_outout_without_thinking.txt", "w", encoding="utf-8") as f:
-        f.write(outout_without_thinking)
-        
-    output_clean = output_text.strip()
-    if output_clean.startswith("```json"):
-        output_clean = output_clean[7:-3].strip()
-    elif output_clean.startswith("```"):
-        output_clean = output_clean[3:-3].strip()
-        
-    print(output_clean)
-    with open(f"{report_name}_output_clean.txt", "w", encoding="utf-8") as f:
         f.write(output_clean)
-    # output = json.loads(clean_completion)
+        
+    output_JSON = json.loads(output_clean)
 
-    # # Saving that outout as JSON
-    # output_file = OUTPUT_DIR / f"{report_name}.json"
-    # with open(output_file, "w", encoding="utf-8") as f:
-    #     json.dump(output, f, ensure_ascii=False, indent=2)
+    # Saving that outout as JSON
+    output_file = OUTPUT_DIR / f"{report_name}.json"
+    with open(output_file, "w", encoding="utf-8") as f:
+        json.dump(output_JSON, f, ensure_ascii=False, indent=2)
+        
+        
     t_pdf = round(time.time() - t_pdf_start, TIME_ROUND)
     print(f"t_pdf: {t_pdf}s")
-    # print(f"    Saved to {output_file}")
-    # print()
+    print(f"    Saved to {output_file}")
+    print()
     print(f"{pdf_path} processed. {counter} / {n}")
     counter += 1
 
