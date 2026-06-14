@@ -142,13 +142,13 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     
     
     # Inference: Generation of the output (source: HF)
-    generated_ids = model.generate(**inputs)
+    generated_ids = model.generate(**inputs, max_new_tokens=40960)
     generated_ids_trimmed = [
         out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
     ]
     output_text = processor.batch_decode(
         generated_ids_trimmed, skip_special_tokens=False, clean_up_tokenization_spaces=False #skip_special_tokens=FALSE um <think> zu lassen
-    )[0] # To get to the String inside the output_text: >>["So, let's describe..."]<<
+    ) # To get to the String inside the output_text: >>["So, let's describe..."]<<
     
     # Cleanup of output text that should be JSON
     outout_without_thinking = strip_thinking(output_text)
