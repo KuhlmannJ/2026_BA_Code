@@ -149,21 +149,23 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     )[0] # To get to the String inside the output_text: >>["So, let's describe..."]<<
     
     # Cleanup of output text that should be JSON
-    clean_completion = output_text.strip()
-    if clean_completion.startswith("```json"):
-        clean_completion = clean_completion[7:-3].strip()
-    elif clean_completion.startswith("```"):
-        clean_completion = clean_completion[3:-3].strip()
-
-    output = json.loads(clean_completion)
-
-    # Saving that outout as JSON
-    output_file = OUTPUT_DIR / f"{report_name}.json"
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
+    clean_output = output_text.strip()
+    if clean_output.startswith("```json"):
+        clean_output = clean_output[7:-3].strip()
+    elif clean_output.startswith("```"):
+        clean_output = clean_output[3:-3].strip()
         
-    print(f"    Saved to {output_file}")
-    print()
+    print(clean_output)
+
+    # output = json.loads(clean_completion)
+
+    # # Saving that outout as JSON
+    # output_file = OUTPUT_DIR / f"{report_name}.json"
+    # with open(output_file, "w", encoding="utf-8") as f:
+    #     json.dump(output, f, ensure_ascii=False, indent=2)
+        
+    # print(f"    Saved to {output_file}")
+    # print()
     print(f"{pdf_path} processed. {counter} / {n}")
     counter += 1
 
