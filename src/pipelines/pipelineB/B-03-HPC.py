@@ -4,6 +4,7 @@ from transformers import Qwen3VLForConditionalGeneration, Qwen3VLMoeForCondition
 import argparse
 import json
 import re
+import time
 
 import fitz #pip install pymupdf
 from PIL import Image
@@ -53,6 +54,7 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 RESULTS_FILE  = OUTPUT_DIR / "results.json"
 
 DPI = 150
+TIME_ROUND = 2 # Rounding for time logging
 
 PROMT_PATH = Path("/home/j/jkuhlma1/2026_BA_Code/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
 
@@ -116,11 +118,12 @@ n = len(RETRIEVAL_LIST)
 counter = 1
 
 for pdf_path in sorted(RETRIEVAL_LIST):
+    t_pdf_start = time.time()
     
     report_name = pdf_path.stem
     print(report_name)
 
-    
+    t_pymupdf_start = time.time()
     #### Packaging Promt and Images (as img as no API call))
     content = [{"type": "text", "text": EXTRACTION_PROMT}]
     with fitz.open(str(pdf_path)) as doc :
@@ -131,7 +134,8 @@ for pdf_path in sorted(RETRIEVAL_LIST):
      
     messages = [{"role": "user", "content": content}]       
     print("    PDF2Image done and embedded into `content` and `messages`.")
-    
+    t_pymupdf = round(time.time() - t_pymupdf_start, TIME_ROUND)
+    print(f"t_pymupdf: {t_pymupdf}s")
     
     # Preparation for inference (source: HF)
     inputs = processor.apply_chat_template(
@@ -143,12 +147,14 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     ).to(model.device)
     
     
+    t_inference_start = time.time()
     # Inference: Generation of the output (source: HF)
     generated_ids = model.generate(**inputs, max_new_tokens=40960)
     generated_ids_trimmed = [
         out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
     ]
-    
+    t_inference = round(time.time() - t_inference_start, TIME_ROUND)
+    print(f"t_inference: {t_inference}s")
     
     output_text = processor.batch_decode(
         generated_ids_trimmed, skip_special_tokens=False, clean_up_tokenization_spaces=False #skip_special_tokens=FALSE um <think> zu lassen
@@ -171,14 +177,14 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     print(output_clean)
     with open(f"{report_name}_output_clean.txt", "w", encoding="utf-8") as f:
         f.write(output_clean)
-
     # output = json.loads(clean_completion)
 
     # # Saving that outout as JSON
     # output_file = OUTPUT_DIR / f"{report_name}.json"
     # with open(output_file, "w", encoding="utf-8") as f:
     #     json.dump(output, f, ensure_ascii=False, indent=2)
-        
+    t_pdf = round(time.time() - t_pdf_start, TIME_ROUND)
+    print(f"t_pdf: {t_pdf}s")
     # print(f"    Saved to {output_file}")
     # print()
     print(f"{pdf_path} processed. {counter} / {n}")
