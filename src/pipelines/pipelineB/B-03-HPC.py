@@ -97,6 +97,7 @@ print(f"  UUID : {gpu_uuid}")
 #### 2. VLM Loading #############################################
 banner("STEP 2: LOAD VLM")
 
+t_vlmLoad_start = time.time()
 match MODEL_NAME:
     case "Qwen/Qwen3-VL-32B-Thinking":
         model = Qwen3VLForConditionalGeneration.from_pretrained(
@@ -115,7 +116,9 @@ match MODEL_NAME:
 
 processor = AutoProcessor.from_pretrained(MODEL_NAME)
 
-print(f" Loaded: {MODEL_NAME}")
+t_vlmLoad = round(time.time() - t_vlmLoad_start, TIME_ROUND)
+
+print(f" Loaded: {MODEL_NAME} in {t_vlmLoad} s")
 print(f" Attention loaded:{model.config._attn_implementation}")
 print(f" VRAM belegt: {torch.cuda.max_memory_allocated() / 1e9:.1f} GB")
 
