@@ -32,25 +32,25 @@ banner("STEP 2: LOAD VLM")
 
 match MODEL_NAME:
     case "Qwen/Qwen3-VL-235B-A22B-Thinking":
+        model = Qwen3VLMoeForConditionalGeneration.from_pretrained(
+            MODEL_NAME,
+            dtype=torch.bfloat16,
+            attn_implementation="flash_attention_2",
+            device_map='cuda:0',
+        )
+    case "Qwen/Qwen3-VL-32B-Thinking":
         model = Qwen3VLForConditionalGeneration.from_pretrained(
             MODEL_NAME,
             dtype=torch.bfloat16,
             attn_implementation="flash_attention_2",
-            device_map="auto",
-        )
-    case "Qwen/Qwen3-VL-32B-Thinking":
-        model = Qwen3VLMoeForConditionalGeneration.from_pretrained(
-            "Qwen/Qwen3-VL-235B-A22B-Thinking",
-            dtype=torch.bfloat16,
-            attn_implementation="flash_attention_2",
-            device_map="auto",
+            device_map='cuda:0',
         )
     case "Qwen/Qwen3-VL-30B-A3B-Thinking":
         model = Qwen3VLMoeForConditionalGeneration.from_pretrained(
-            "Qwen/Qwen3-VL-30B-A3B-Thinking",
+            MODEL_NAME,
             dtype=torch.bfloat16,
             attn_implementation="flash_attention_2",
-            device_map="auto",
+            device_map='cuda:0',
         )
 
 print(f" Loaded: {MODEL_NAME}")
