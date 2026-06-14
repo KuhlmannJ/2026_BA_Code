@@ -1,3 +1,51 @@
+#########
+## Da nur 30% Auslastung der H200 bei 80GB VRAM Belegung, Batch-Processing in Erwägung ziehen
+# BATCH_SIZE = 4  # tunen: 4 → 8 → bis VRAM voll
+
+# def load_pdf_images(pdf_path):
+#     images = []
+#     with fitz.open(str(pdf_path)) as doc:
+#         for page in doc:
+#             pix = page.get_pixmap(dpi=DPI, alpha=False)
+#             images.append(Image.frombytes("RGB", [pix.width, pix.height], pix.samples))
+#     return images
+
+# # Batch-Loop
+# pdf_chunks = [RETRIEVAL_LIST[i:i+BATCH_SIZE] for i in range(0, len(RETRIEVAL_LIST), BATCH_SIZE)]
+
+# for chunk in pdf_chunks:
+#     texts, all_images, names = [], [], []
+
+#     for pdf_path in chunk:
+#         images = load_pdf_images(pdf_path)
+#         content = [{"type": "image", "image": img} for img in images]
+#         content.append({"type": "text", "text": EXTRACTION_PROMPT})
+#         messages = [{"role": "user", "content": content}]
+
+#         text = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+#         texts.append(text)
+#         all_images.extend(images)
+#         names.append(pdf_path.stem)
+
+#     inputs = processor(
+#         text=texts,
+#         images=all_images,
+#         padding=True,
+#         return_tensors="pt"
+#     ).to(model.device)
+
+#     with torch.no_grad(): ### PyTorch baut während model.generate() keinen Computation Graph, bei BATCH_SIZE > 1 wohl bemerkbar
+#         generated_ids = model.generate(**inputs, max_new_tokens=16384)
+
+#     for i, (gen_ids, inp_ids, name) in enumerate(zip(generated_ids, inputs.input_ids, names)):
+#         trimmed = gen_ids[len(inp_ids):]
+#         raw = processor.decode(trimmed, skip_special_tokens=False)
+#         clean = strip_thinking(raw).replace("<|im_end|>", "").strip()
+#         # json.loads + save ...
+
+
+
+
 import torch
 from transformers import Qwen3VLForConditionalGeneration, Qwen3VLMoeForConditionalGeneration, AutoProcessor
 
