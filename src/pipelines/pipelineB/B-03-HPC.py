@@ -64,7 +64,8 @@ print(f"MODEL_NAME:     {MODEL_NAME}")
 # print(f"EXTRACTION_PROMT:\n{EXTRACTION_PROMT}\n")
 print()
 
-
+if args.test :
+    banner("THIS IS A TEST-RUN")
 #### 1. GPU Details #############################################
 banner("STEP 1: GPU / CUDA")
 props      = torch.cuda.get_device_properties(0)
