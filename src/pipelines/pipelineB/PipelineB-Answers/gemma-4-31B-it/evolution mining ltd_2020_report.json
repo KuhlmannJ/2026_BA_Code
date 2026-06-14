@@ -1,0 +1,82 @@
+{
+  "report_name": "Sustainability Report 2020",
+  "report_title": "Evolution Mining Limited Sustainability Report 2020",
+  "emissions": {
+    "scope_1": {
+      "FY20": [
+        {
+          "value": 157857,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 1"
+        }
+      ],
+      "FY19": [
+        {
+          "value": 155019,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 1"
+        }
+      ],
+      "FY18": [
+        {
+          "value": 159061,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 1"
+        }
+      ],
+      "FY17": [
+        {
+          "value": 167734,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 1"
+        }
+      ],
+      "FY16": [
+        {
+          "value": 157584,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 1"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "FY20": [
+        {
+          "value": 398587,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 2"
+        }
+      ],
+      "FY19": [
+        {
+          "value": 581419,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 2"
+        }
+      ],
+      "FY18": [
+        {
+          "value": 394144,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 2"
+        }
+      ],
+      "FY17": [
+        {
+          "value": 430993,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 2"
+        }
+      ],
+      "FY16": [
+        {
+          "value": 472257,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 2"
+        }
+      ]
+    },
+    "scope_3": {}
+  }
+}

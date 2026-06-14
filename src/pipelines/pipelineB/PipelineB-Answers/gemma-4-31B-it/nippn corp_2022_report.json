@@ -1,0 +1,82 @@
+{
+  "report_name": "NPPN_Integrated_Report_2022",
+  "report_title": "NPPN Integrated Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2018": [
+        {
+          "value": 78.6,
+          "unit": "kt-CO2",
+          "label": "CO2 emissions (Consolidated)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 81.3,
+          "unit": "kt-CO2",
+          "label": "CO2 emissions (Consolidated)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 85.5,
+          "unit": "kt-CO2",
+          "label": "CO2 emissions (Consolidated)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 84.5,
+          "unit": "kt-CO2",
+          "label": "CO2 emissions (Consolidated)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 86.0,
+          "unit": "kt-CO2",
+          "label": "CO2 emissions (Consolidated)"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2018": [
+        {
+          "value": 48,
+          "unit": "kt-CO2",
+          "label": "CO2 emissions in Logistics"
+        }
+      ],
+      "2019": [
+        {
+          "value": 48,
+          "unit": "kt-CO2",
+          "label": "CO2 emissions in Logistics"
+        }
+      ],
+      "2020": [
+        {
+          "value": 48,
+          "unit": "kt-CO2",
+          "label": "CO2 emissions in Logistics"
+        }
+      ],
+      "2021": [
+        {
+          "value": 114,
+          "unit": "kt-CO2",
+          "label": "Scope 2"
+        }
+      ],
+      "2022": [
+        {
+          "value": 115,
+          "unit": "kt-CO2",
+          "label": "Scope 2"
+        }
+      ]
+    },
+    "scope_3": {}
+  }
+}

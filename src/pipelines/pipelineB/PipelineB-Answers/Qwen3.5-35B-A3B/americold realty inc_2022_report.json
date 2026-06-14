@@ -1,0 +1,70 @@
+{
+  "report_name": "Environmental_Social_Governance_Report_2022",
+  "report_title": "Environmental, Social, and Governance Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2021": [
+        {
+          "value": 72134,
+          "unit": "MTCO2e",
+          "label": "Total Company"
+        }
+      ],
+      "2022": [
+        {
+          "value": 102340,
+          "unit": "MTCO2e",
+          "label": "Total Company"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2021": [
+        {
+          "value": 556660,
+          "unit": "MTCO2e",
+          "label": "Total Company"
+        }
+      ],
+      "2022": [
+        {
+          "value": 554491,
+          "unit": "MTCO2e",
+          "label": "Total Company"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2021": [
+        {
+          "value": 556660,
+          "unit": "MTCO2e",
+          "label": "Total Company (Same as Market-Based)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 554491,
+          "unit": "MTCO2e",
+          "label": "Total Company (Same as Market-Based)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2021": [
+        {
+          "value": 1067697,
+          "unit": "MTCO2e",
+          "label": "Total Company"
+        }
+      ],
+      "2022": [
+        {
+          "value": 611634,
+          "unit": "MTCO2e",
+          "label": "Total Company"
+        }
+      ]
+    }
+  }
+}

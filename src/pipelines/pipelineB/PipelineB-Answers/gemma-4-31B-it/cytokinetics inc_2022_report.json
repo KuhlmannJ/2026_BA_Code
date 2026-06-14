@@ -1,0 +1,18 @@
+{
+  "report_name": "CYTOKINETICS 2022 CORPORATE RESPONSIBILITY REPORT",
+  "report_title": "CYTOKINETICS 2022 CORPORATE RESPONSIBILITY REPORT",
+  "emissions": {
+    "scope_1": {
+      "2022": [
+        {
+          "value": 0.67,
+          "unit": "metric kilotons CO2e",
+          "label": "Scope 1"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {},
+    "scope_3": {}
+  }
+}

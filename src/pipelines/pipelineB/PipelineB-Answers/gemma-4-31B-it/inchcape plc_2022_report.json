@@ -1,0 +1,70 @@
+{
+  "report_name": "INCHCAPE ANNUAL REPORT AND ACCOUNTS 2022",
+  "report_title": "INCHCAPE ANNUAL REPORT AND ACCOUNTS 2022",
+  "emissions": {
+    "scope_1": {
+      "2022": [
+        {
+          "value": 21345,
+          "unit": "tCO2e",
+          "label": "Scope 1 Emissions (Global)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 12207,
+          "unit": "tCO2e",
+          "label": "Scope 1 Emissions (Global)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2022": [
+        {
+          "value": 3624,
+          "unit": "tCO2e",
+          "label": "Total Scope 1 & 2 Emissions (Market-based)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 32949,
+          "unit": "tCO2e",
+          "label": "Total Scope 1 & 2 Emissions (Market-based)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2022": [
+        {
+          "value": 6503,
+          "unit": "tCO2e",
+          "label": "Total Scope 1 & 2 Emissions (Location-based)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 37028,
+          "unit": "tCO2e",
+          "label": "Total Scope 1 & 2 Emissions (Location-based)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2022": [
+        {
+          "value": 187311,
+          "unit": "tCO2e",
+          "label": "Scope 3 Emissions (Business Travel & Upstream Transport)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 82068,
+          "unit": "tCO2e",
+          "label": "Scope 3 Emissions (Business Travel & Upstream Transport)"
+        }
+      ]
+    }
+  }
+}

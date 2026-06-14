@@ -1,0 +1,146 @@
+{
+  "report_name": "Daimler_Sustainability_Report_2020",
+  "report_title": "DAIMLER SUSTAINABILITY REPORT 2020",
+  "emissions": {
+    "scope_1": {
+      "2016": [
+        {
+          "value": 1056,
+          "unit": "1,000 t",
+          "label": "CO2 direct (Scope 1)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 1192,
+          "unit": "1,000 t",
+          "label": "CO2 direct (Scope 1)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 1247,
+          "unit": "1,000 t",
+          "label": "CO2 direct (Scope 1)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 1239,
+          "unit": "1,000 t",
+          "label": "CO2 direct (Scope 1)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 1027,
+          "unit": "1,000 t",
+          "label": "CO2 direct (Scope 1)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2016": [
+        {
+          "value": 1882,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - market-based"
+        }
+      ],
+      "2017": [
+        {
+          "value": 1763,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - market-based"
+        }
+      ],
+      "2018": [
+        {
+          "value": 1687,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - market-based"
+        }
+      ],
+      "2019": [
+        {
+          "value": 1276,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - market-based"
+        }
+      ],
+      "2020": [
+        {
+          "value": 1035,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - market-based"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2016": [
+        {
+          "value": 2141,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - location-based"
+        }
+      ],
+      "2017": [
+        {
+          "value": 2041,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - location-based"
+        }
+      ],
+      "2018": [
+        {
+          "value": 1985,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - location-based"
+        }
+      ],
+      "2019": [
+        {
+          "value": 1706,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - location-based"
+        }
+      ],
+      "2020": [
+        {
+          "value": 1492,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - location-based"
+        }
+      ]
+    },
+    "scope_3": {
+      "2020": [
+        {
+          "value": 8.1,
+          "unit": "tons per vehicle",
+          "label": "Scope 3 Production: Procured goods and services"
+        },
+        {
+          "value": 1.0,
+          "unit": "tons per vehicle",
+          "label": "Scope 3 Logistics: Transport and distribution"
+        },
+        {
+          "value": 5.6,
+          "unit": "tons per vehicle",
+          "label": "Scope 3 Use phase: Fuel and electricity production (well-to-tank)"
+        },
+        {
+          "value": 33.7,
+          "unit": "tons per vehicle",
+          "label": "Scope 3 Use phase: Vehicle operation (tank-to-wheel)"
+        },
+        {
+          "value": 0.4,
+          "unit": "tons per vehicle",
+          "label": "Scope 3 End of Life: Recycling and waste disposal"
+        }
+      ]
+    }
+  }
+}

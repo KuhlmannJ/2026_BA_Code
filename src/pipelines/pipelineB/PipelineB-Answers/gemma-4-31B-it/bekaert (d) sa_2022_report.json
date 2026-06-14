@@ -1,0 +1,90 @@
+{
+  "report_name": "Bekaert Integrated Annual Report 2022",
+  "report_title": "Bekaert Integrated Annual Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 329982,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG (Including JVs)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 305547,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG (Including JVs)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 327690,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG (Including JVs)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 309001,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG (Including JVs)"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 1741837,
+          "unit": "ton CO2",
+          "label": "Scope 1 & 2 GHG emissions (Including JVs)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 1583568,
+          "unit": "ton CO2",
+          "label": "Scope 1 & 2 GHG emissions (Including JVs)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 1752900,
+          "unit": "ton CO2",
+          "label": "Scope 1 & 2 GHG emissions (Including JVs)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 1606581,
+          "unit": "ton CO2",
+          "label": "Scope 1 & 2 GHG emissions (Including JVs)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 6045636,
+          "unit": "ton CO2e",
+          "label": "Total Scope 3 emissions"
+        }
+      ],
+      "2021": [
+        {
+          "value": 6736502,
+          "unit": "ton CO2e",
+          "label": "Total Scope 3 emissions"
+        }
+      ],
+      "2022": [
+        {
+          "value": 6187086,
+          "unit": "ton CO2e",
+          "label": "Total Scope 3 emissions"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "report_name": "Sustainability of Sumitomo Corporation Group",
+  "report_title": "Sustainability of Sumitomo Corporation Group",
+  "emissions": {
+    "scope_1": {
+      "2017": [
+        {
+          "value": 934276,
+          "unit": "t-CO2e",
+          "label": "Consolidated Scope 1 <Energy-related CO2>"
+        }
+      ],
+      "2018": [
+        {
+          "value": 939346,
+          "unit": "t-CO2e",
+          "label": "Consolidated Scope 1 <Energy-related CO2>"
+        }
+      ],
+      "2019": [
+        {
+          "value": 791730,
+          "unit": "t-CO2e",
+          "label": "Consolidated Scope 1 <Energy-related CO2>"
+        }
+      ],
+      "2020": [
+        {
+          "value": 1522514,
+          "unit": "t-CO2e",
+          "label": "Consolidated Scope 1 <Energy-related CO2>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2020": [
+        {
+          "value": 652611,
+          "unit": "t-CO2e",
+          "label": "Scope 2"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2017": [
+        {
+          "value": 752378,
+          "unit": "t-CO2e",
+          "label": "Consolidated Scope 2"
+        }
+      ],
+      "2018": [
+        {
+          "value": 630412,
+          "unit": "t-CO2e",
+          "label": "Consolidated Scope 2"
+        }
+      ],
+      "2019": [
+        {
+          "value": 683156,
+          "unit": "t-CO2e",
+          "label": "Consolidated Scope 2"
+        }
+      ],
+      "2020": [
+        {
+          "value": 652611,
+          "unit": "t-CO2e",
+          "label": "Consolidated Scope 2"
+        }
+      ]
+    },
+    "scope_3": {
+      "2017": [
+        {
+          "value": 73980,
+          "unit": "t-CO2e",
+          "label": "Consolidated Total Scope 3"
+        }
+      ],
+      "2018": [
+        {
+          "value": 71320,
+          "unit": "t-CO2e",
+          "label": "Consolidated Total Scope 3"
+        }
+      ],
+      "2019": [
+        {
+          "value": 62187,
+          "unit": "t-CO2e",
+          "label": "Consolidated Total Scope 3"
+        }
+      ],
+      "2020": [
+        {
+          "value": 34381,
+          "unit": "t-CO2e",
+          "label": "Consolidated Total Scope 3"
+        }
+      ]
+    }
+  }
+}

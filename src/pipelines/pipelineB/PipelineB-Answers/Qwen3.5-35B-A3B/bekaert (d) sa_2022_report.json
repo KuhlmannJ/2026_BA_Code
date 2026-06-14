@@ -1,0 +1,90 @@
+{
+  "report_name": "Bekaert Integrated Annual Report 2022",
+  "report_title": "Bekaert Integrated Annual Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 338420,
+          "unit": "ton CO2",
+          "label": "Including JVs"
+        }
+      ],
+      "2020": [
+        {
+          "value": 313527,
+          "unit": "ton CO2",
+          "label": "Including JVs"
+        }
+      ],
+      "2021": [
+        {
+          "value": 336201,
+          "unit": "ton CO2",
+          "label": "Including JVs"
+        }
+      ],
+      "2022": [
+        {
+          "value": 316951,
+          "unit": "ton CO2",
+          "label": "Including JVs"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [
+        {
+          "value": 1403417,
+          "unit": "ton CO2",
+          "label": "Including JVs"
+        }
+      ],
+      "2020": [
+        {
+          "value": 1270041,
+          "unit": "ton CO2",
+          "label": "Including JVs"
+        }
+      ],
+      "2021": [
+        {
+          "value": 1416699,
+          "unit": "ton CO2",
+          "label": "Including JVs"
+        }
+      ],
+      "2022": [
+        {
+          "value": 1289630,
+          "unit": "ton CO2",
+          "label": "Including JVs"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {
+      "2019": [
+        {
+          "value": 6045636,
+          "unit": "ton CO2e",
+          "label": "Including JVs"
+        }
+      ],
+      "2021": [
+        {
+          "value": 6736962,
+          "unit": "ton CO2e",
+          "label": "Including JVs"
+        }
+      ],
+      "2022": [
+        {
+          "value": 6187086,
+          "unit": "ton CO2e",
+          "label": "Including JVs"
+        }
+      ]
+    }
+  }
+}

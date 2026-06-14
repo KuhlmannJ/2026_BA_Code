@@ -1,0 +1,98 @@
+{
+  "report_name": "ADDTECH ANNUAL REPORT 2021/2022",
+  "report_title": "ADDTECH ANNUAL REPORT 2021/2022",
+  "emissions": {
+    "scope_1": {
+      "2021/2022": [
+        {
+          "value": 2081,
+          "unit": "tonnes CO2e",
+          "label": "Total emissions (SCOPE 1)"
+        }
+      ],
+      "2020/2021": [
+        {
+          "value": 1910,
+          "unit": "tonnes CO2e",
+          "label": "Total emissions (SCOPE 1)"
+        }
+      ],
+      "2019/2020": [
+        {
+          "value": 2071,
+          "unit": "tonnes CO2e",
+          "label": "Total emissions (SCOPE 1)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2021/2022": [
+        {
+          "value": 22960,
+          "unit": "tonnes CO2e",
+          "label": "Emissions energy consumption - Market Based Method (tonnes CO2e)"
+        }
+      ],
+      "2020/2021": [
+        {
+          "value": 18830,
+          "unit": "tonnes CO2e",
+          "label": "Emissions energy consumption - Market Based Method (tonnes CO2e)"
+        }
+      ],
+      "2019/2020": [
+        {
+          "value": null,
+          "unit": "tonnes CO2e",
+          "label": "Emissions energy consumption - Market Based Method (tonnes CO2e)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2021/2022": [
+        {
+          "value": 3709,
+          "unit": "tonnes CO2e",
+          "label": "Emissions energy consumption - Location Based Method (tonnes CO2e)"
+        }
+      ],
+      "2020/2021": [
+        {
+          "value": 3995,
+          "unit": "tonnes CO2e",
+          "label": "Emissions energy consumption - Location Based Method (tonnes CO2e)"
+        }
+      ],
+      "2019/2020": [
+        {
+          "value": 3973,
+          "unit": "tonnes CO2e",
+          "label": "Emissions energy consumption - Location Based Method (tonnes CO2e)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2021/2022": [
+        {
+          "value": 21792,
+          "unit": "tonnes CO2e",
+          "label": "Total emissions (SCOPE 3)"
+        }
+      ],
+      "2020/2021": [
+        {
+          "value": 18733,
+          "unit": "tonnes CO2e",
+          "label": "Total emissions (SCOPE 3)"
+        }
+      ],
+      "2019/2020": [
+        {
+          "value": 18962,
+          "unit": "tonnes CO2e",
+          "label": "Total emissions (SCOPE 3)"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "report_name": "Atlas Arteria Sustainability Report 2019",
+  "report_title": "SUSTAINABILITY REPORT 2019",
+  "emissions": {
+    "scope_1": {
+      "2016": [
+        {
+          "value": 6182,
+          "unit": "CO2e",
+          "label": "GHG emissions, CO2e (APRR only)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 6541,
+          "unit": "CO2e",
+          "label": "GHG emissions, CO2e (APRR only)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 5942,
+          "unit": "CO2e",
+          "label": "GHG emissions, CO2e (APRR only)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 6027,
+          "unit": "CO2e",
+          "label": "GHG emissions, CO2e (APRR only)"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {},
+    "scope_2": {
+      "2016": [
+        {
+          "value": 1291,
+          "unit": "CO2e",
+          "label": "GHG emissions, CO2e (APRR only)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 1244,
+          "unit": "CO2e",
+          "label": "GHG emissions, CO2e (APRR only)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 957,
+          "unit": "CO2e",
+          "label": "GHG emissions, CO2e (APRR only)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 773,
+          "unit": "CO2e",
+          "label": "GHG emissions, CO2e (APRR only)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2016": [
+        {
+          "value": 1913208,
+          "unit": "CO2e",
+          "label": "GHG emissions, CO2e (APRR only)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 2135936,
+          "unit": "CO2e",
+          "label": "GHG emissions, CO2e (APRR only)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 2212763,
+          "unit": "CO2e",
+          "label": "GHG emissions, CO2e (APRR only)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 2230582,
+          "unit": "CO2e",
+          "label": "GHG emissions, CO2e (APRR only)"
+        }
+      ]
+    }
+  }
+}

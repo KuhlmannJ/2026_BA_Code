@@ -1,0 +1,128 @@
+{
+  "report_name": "Lundbeck Sustainability Report 2021",
+  "report_title": "Lundbeck Sustainability Report 2021",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 29025,
+          "unit": "Tonne CO2e",
+          "label": "Scope 1 GHGs"
+        }
+      ],
+      "2020": [
+        {
+          "value": 22050,
+          "unit": "Tonne CO2e",
+          "label": "Scope 1 GHGs"
+        }
+      ],
+      "2021": [
+        {
+          "value": 24689,
+          "unit": "Tonne CO2e",
+          "label": "Scope 1 GHGs"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [
+        {
+          "value": 9050,
+          "unit": "Tonne CO2e",
+          "label": "Scope 2 GHGs (market based)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 8480,
+          "unit": "Tonne CO2e",
+          "label": "Scope 2 GHGs (market based)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 7486,
+          "unit": "Tonne CO2e",
+          "label": "Scope 2 GHGs (market based)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 17485,
+          "unit": "Tonne CO2e",
+          "label": "Scope 2 GHGs (location based)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 14861,
+          "unit": "Tonne CO2e",
+          "label": "Scope 2 GHGs (location based)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 15798,
+          "unit": "Tonne CO2e",
+          "label": "Scope 2 GHGs (location based)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 99375,
+          "unit": "Tonne CO2e",
+          "label": "Scope 3 GHGs: Purchased goods and services"
+        },
+        {
+          "value": 11815,
+          "unit": "Tonne CO2e",
+          "label": "Scope 3 GHGs: Up-stream transportation and distribution"
+        },
+        {
+          "value": 6733,
+          "unit": "Tonne CO2e",
+          "label": "Scope 3 GHGs: Business travel"
+        }
+      ],
+      "2020": [
+        {
+          "value": 123589,
+          "unit": "Tonne CO2e",
+          "label": "Scope 3 GHGs: Purchased goods and services"
+        },
+        {
+          "value": 12859,
+          "unit": "Tonne CO2e",
+          "label": "Scope 3 GHGs: Up-stream transportation and distribution"
+        },
+        {
+          "value": 2950,
+          "unit": "Tonne CO2e",
+          "label": "Scope 3 GHGs: Business travel"
+        }
+      ],
+      "2021": [
+        {
+          "value": 133445,
+          "unit": "Tonne CO2e",
+          "label": "Scope 3 GHGs: Purchased goods and services"
+        },
+        {
+          "value": 12491,
+          "unit": "Tonne CO2e",
+          "label": "Scope 3 GHGs: Up-stream transportation and distribution"
+        },
+        {
+          "value": 2587,
+          "unit": "Tonne CO2e",
+          "label": "Scope 3 GHGs: Business travel"
+        }
+      ]
+    }
+  }
+}

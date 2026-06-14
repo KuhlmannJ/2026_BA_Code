@@ -1,0 +1,19 @@
+{
+  "report_name": "innospec",
+  "report_title": "Innospec Sustainability Report",
+  "emissions": {
+    "scope_1": {},
+    "scope_2_market_based": {},
+    "scope_2_location_based": {},
+    "scope_3": {}
+  },
+  "absolute_ghg_emissions_scope_1_and_2": {
+    "2020": [
+      {
+        "value": 51728,
+        "unit": "metric tonnes CO2 equivalent",
+        "label": "Absolute GHG Emissions (Scope 1 and 2*)"
+      }
+    ]
+  }
+}

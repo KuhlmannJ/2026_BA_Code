@@ -1,0 +1,77 @@
+{
+  "report_name": "INCHCAPE_ANNUAL_REPORT_AND_ACCOUNTS_2022",
+  "report_title": "INCHCAPE ANNUAL REPORT AND ACCOUNTS 2022",
+  "emissions": {
+    "scope_1": {
+      "2022": [
+        {
+          "value": 17002,
+          "unit": "tCO2e",
+          "label": "Scope 1 Emissions (Global)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 9752,
+          "unit": "tCO2e",
+          "label": "Scope 1 Emissions (Global)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2022": [
+        {
+          "value": 13803,
+          "unit": "tCO2e",
+          "label": "Scope 2 Emissions (Market-based, Global) [Derived from Total 1&2 Market - Scope 1]"
+        }
+      ],
+      "2021": [
+        {
+          "value": 23197,
+          "unit": "tCO2e",
+          "label": "Scope 2 Emissions (Market-based, Global) [Derived from Total 1&2 Market - Scope 1]"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2022": [
+        {
+          "value": 22223,
+          "unit": "tCO2e",
+          "label": "Scope 2 Emissions (Location-based, Global)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 27277,
+          "unit": "tCO2e",
+          "label": "Scope 2 Emissions (Location-based, Global)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 18700000,
+          "unit": "tCO2e",
+          "label": "Scope 3 Footprint (2019 Baseline)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 187713,
+          "unit": "tCO2e",
+          "label": "Scope 3 Emissions (Business Travel & Upstream Transport, Global)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 82068,
+          "unit": "tCO2e",
+          "label": "Scope 3 Emissions (Business Travel & Upstream Transport, Global)"
+        }
+      ]
+    }
+  }
+}
