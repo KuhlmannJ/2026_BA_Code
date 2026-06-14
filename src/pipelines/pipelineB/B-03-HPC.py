@@ -56,8 +56,6 @@ MAX_TOKENS = 8192
 RETRIEVAL_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals/nvidia/nemotron-colembed-vl-8b-v2/")
 RETRIEVAL_LIST = sorted(list(RETRIEVAL_DIR.glob("*.pdf")))
 
-with open("RETRIEVAL_LIST.txt", "w", encoding="utf-8") as f:
-        f.write(RETRIEVAL_LIST)
 # For Testing just one, hopefully 'Allianz_2022_report.pdf'
 if args.test:
     RETRIEVAL_LIST = [RETRIEVAL_LIST[4]]
