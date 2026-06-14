@@ -39,10 +39,11 @@ banner("STEP 0: GLOBAL VARIABLES")
     # 'Qwen3.5-35B-A3B'
     # 'gemma-4-31B-it'
     # 'gemma-3-27b-it'
-    # 'gpt-oss-120b'
+    # 'gpt-oss-120b' 'TEXT ONLY'
     # ]
-#MODEL_NAME = "Qwen3.5-35B-A3B"
-MODEL_NAME = "gemma-4-31B-it"
+MODEL_NAME = "gemma-4-31B-it" # fastest
+#MODEL_NAME = "Qwen3.5-35B-A3B" # slowest, but thinking
+#MODEL_NAME = "gemma-3-27b-it" # longer than 4, faster than Qwen
 
 
 BASE_DIR = find_project_root()
@@ -139,7 +140,7 @@ for pdf_path in sorted(RETRIEVAL_LIST):
 
 
     print(f"    Saved to {output_file}")
-    
+    print()
     print(f"{pdf_path} processed. {counter} / {n}")
     counter = counter + 1
 

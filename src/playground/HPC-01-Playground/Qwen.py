@@ -4,12 +4,39 @@ from transformers import Qwen3VLForConditionalGeneration, AutoProcessor
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
+MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"
+
+#### Helping Functions ##########################################
+# Some segmentation for log readablility
+def banner(title):
+    print()
+    print("=" * 60)
+    print(f"  {title}")
+    print("=" * 60)
+
+#### 1. GPU Details #############################################
+banner("STEP 1: GPU / CUDA")
+props      = torch.cuda.get_device_properties(0)
+gpu_name   = torch.cuda.get_device_name(0)
+vram_total = props.total_memory / 1e9
+gpu_uuid   = props.uuid
+print(f"  GPU  : {gpu_name}")
+print(f"  VRAM : {vram_total:.1f} GB")
+print(f"  UUID : {gpu_uuid}")
+
+
+#### 2. VLM Loading #############################################
+banner("STEP 2: LOAD VLM")
 model = Qwen3VLForConditionalGeneration.from_pretrained(
-    "Qwen/Qwen3-VL-32B-Thinking",
+    MODEL_NAME,
     dtype=torch.bfloat16,
     attn_implementation="flash_attention_2",
     device_map="auto",
 )
+
+print(f" Loaded: {MODEL_NAME}")
+print(f" Attention loaded:{model.config._attn_implementation}")
+print(f" VRAM belegt: {torch.cuda.max_memory_allocated() / 1e9:.1f} GB")
 
 processor = AutoProcessor.from_pretrained("Qwen/Qwen3-VL-32B-Thinking")
 
