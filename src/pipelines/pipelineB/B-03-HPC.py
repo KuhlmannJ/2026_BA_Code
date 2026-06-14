@@ -27,16 +27,8 @@ def banner(title):
     print(f"  {title}")
     print("=" * 60)
     
-def find_project_root(start: Path = None, markers=(".git",)) -> Path:
-    start = start or Path(__file__).resolve().parent
-    for p in [start, *start.parents]:
-        if any((p / m).exists() for m in markers):
-            return p
-    return start
-
-
-
-
+    
+    
 
 #### 0. GLOBAL VARIABLES ########################################
 banner("STEP 0: GLOBAL VARIABLES")
@@ -44,9 +36,6 @@ banner("STEP 0: GLOBAL VARIABLES")
 # MODEL_NAME = "Qwen/Qwen3-VL-235B-A22B-Thinking"   # VRAM-ERROR, 500GB download :)
 MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"           # 66.7GB VRAM
 # MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"     # 62.1GB VRAM
-
-
-BASE_DIR = find_project_root()
 
 # NOTE: Fixed RETRIEVAL_DIR!
 RETRIEVAL_DIR = Path(f"/scratch/tmp/jkuhlma1/results/A-02-retrievals/nvidia/nemotron-colembed-vl-8b-v2/")
@@ -56,13 +45,13 @@ RETRIEVAL_LIST = sorted(list(RETRIEVAL_DIR.glob("*.pdf")))
 if args.test:
     RETRIEVAL_LIST = RETRIEVAL_LIST[4]
 
-OUTPUT_DIR    = Path(f"{BASE_DIR}/src/pipelines/pipelineB/PipelineB-Answers/{MODEL_NAME}")
+OUTPUT_DIR    = Path(f"/scratch/tmp/jkuhlma1/results/A-03-answers/{MODEL_NAME}")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 RESULTS_FILE  = OUTPUT_DIR / "results.json"
 
 DPI = 150
 
-PROMT_PATH = Path(f"{BASE_DIR}/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
+PROMT_PATH = Path("$HOME/2026_BA_Code/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
 EXTRACTION_PROMT = PROMT_PATH.read_text()
 
 print(f"RETRIEVAL_DIR:  {RETRIEVAL_DIR}")
