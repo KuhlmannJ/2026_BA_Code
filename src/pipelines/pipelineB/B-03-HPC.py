@@ -17,7 +17,10 @@ load_dotenv(find_dotenv())
 # ── Arguments for Dev'ing
 parser = argparse.ArgumentParser()
 parser.add_argument("--test",       "-t",   action="store_true", help="Toggle Testing Path")
-parser.add_argument("--maxTokens",  "-mt",  type=int, default=8192, help="Control Thinking Tokens") #Rougly equivalent to control thinking tokens, but means tokens overall
+parser.add_argument("--maxTokens",  "-mt",  type=int, default=16384, help="Control Thinking Tokens")
+#Rougly equivalent to control thinking tokens, but means tokens overall
+# 16384 was seen in some HF examples of the authors, besides 128 (way too small)
+
 args = parser.parse_args()
 
 
