@@ -42,9 +42,9 @@ MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"           # 66.7GB VRAM
 RETRIEVAL_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals/nvidia/nemotron-colembed-vl-8b-v2/")
 RETRIEVAL_LIST = sorted(list(RETRIEVAL_DIR.glob("*.pdf")))
 
-# For Testing just one, hopefully 'Allianz_2022_report.pdf' 
+# For Testing just one, hopefully 'Allianz_2022_report.pdf'
 if args.test:
-    RETRIEVAL_LIST = list(RETRIEVAL_LIST[4])
+    RETRIEVAL_LIST = [RETRIEVAL_LIST[4]]
 
 OUTPUT_DIR    = Path(f"/scratch/tmp/jkuhlma1/results/A-03-answers/{MODEL_NAME}")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
