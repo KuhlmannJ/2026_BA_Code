@@ -78,6 +78,7 @@ print(f"No. of PDF:     {len(RETRIEVAL_LIST)}")
 print(f"OUTPUT_DIR:     {OUTPUT_DIR}")
 print(f"PROMT_PATH:     {PROMT_PATH}")
 print(f"MODEL_NAME:     {MODEL_NAME}")
+print(f"Max Tokens:     {args.maxTokens}")
 # print(f"EXTRACTION_PROMT:\n{EXTRACTION_PROMT}\n")
 print()
 
