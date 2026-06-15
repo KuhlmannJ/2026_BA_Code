@@ -22,7 +22,7 @@ load_dotenv(find_dotenv())
 parser = argparse.ArgumentParser()
 parser.add_argument("--test", "-t", action="store_true", help="Toggle Testing Path")
 parser.add_argument("--all",  "-a", action="store_true", help="Toggle ALL ESG reports (useless aswell)") # TAKES LONGER
-parser.add_argument("--batch_size", "-bz", type=int, default=1000) #1000 because it runs on a H200 within memory (120/140GB)
+parser.add_argument("--batch_size", "-bz", type=int, default=8) #8 seems fastest overall due to steady workload of GPU
 
 # ── Arguments MODEL_SELECTION # 'dest' for numbers in flags
 parser.add_argument("-3B", dest="_3B", action="store_true", help="nvidia/llama-nemotron-colembed-vl-3b-v2")
