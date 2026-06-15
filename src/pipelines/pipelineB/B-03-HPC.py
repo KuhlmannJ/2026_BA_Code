@@ -99,8 +99,8 @@ def strip_thinking(text: str) -> str:
 banner("STEP 0: GLOBAL VARIABLES")
 
 # MODEL_NAME = "Qwen/Qwen3-VL-235B-A22B-Thinking"   # VRAM-ERROR, 500GB download :)
-# MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"           # 66.7GB VRAM, takes 5min/report, 4h for 53 reports
-MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"     # 62.1GB VRAM
+# MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"           # 66.7GB VRAM, takes 5min/report
+MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"     # 62.1GB VRAM, took 03:58:12 for 53 reports
 
 # NOTE: Fixed RETRIEVAL_DIR!
 RETRIEVAL_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals/nvidia/nemotron-colembed-vl-8b-v2/")
