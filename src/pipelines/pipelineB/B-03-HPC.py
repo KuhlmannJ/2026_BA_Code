@@ -182,7 +182,7 @@ for pdf_path in sorted(RETRIEVAL_LIST):
         generated_ids_trimmed, skip_special_tokens=False, clean_up_tokenization_spaces=False #skip_special_tokens=FALSE um <think> zu lassen
     )[0] # To get to the String inside the output_text: >>["So, let's describe..."]<<
     t_processorbatch = round(time.time() - t_processorbatch_start, TIME_ROUND)
-    print(f"    t_processorbatch_start: {t_processorbatch_start}s")
+    print(f"    t_processorbatch: {t_processorbatch}s")
     # Cleanup of output text 
     # strip_thinking() drops "thinking" part of the response
     # An "<|im_end|>" is always at the end of the output, needs to be removed
