@@ -155,7 +155,7 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     messages = [{"role": "user", "content": content}]       
     print("    PDF2Image done and embedded into `content` and `messages`.")
     t_pymupdf = round(time.time() - t_pymupdf_start, TIME_ROUND)
-    print(f"t_pymupdf: {t_pymupdf}s")
+    print(f"    t_pymupdf: {t_pymupdf}s")
     
     # Preparation for inference (source: HF)
     inputs = processor.apply_chat_template(
@@ -174,12 +174,14 @@ for pdf_path in sorted(RETRIEVAL_LIST):
         out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
     ]
     t_inference = round(time.time() - t_inference_start, TIME_ROUND)
-    print(f"t_inference: {t_inference}s")
+    print(f"    t_inference: {t_inference}s")
     
+    t_processorbatch_start = time.time()
     output_text = processor.batch_decode(
         generated_ids_trimmed, skip_special_tokens=False, clean_up_tokenization_spaces=False #skip_special_tokens=FALSE um <think> zu lassen
     )[0] # To get to the String inside the output_text: >>["So, let's describe..."]<<
-    
+    t_processorbatch = round(time.time() - t_processorbatch_start, TIME_ROUND)
+    print(f"    t_processorbatch_start: {t_processorbatch_start}s")
     # Cleanup of output text 
     # strip_thinking() drops "thinking" part of the response
     # An "<|im_end|>" is always at the end of the output, needs to be removed
@@ -205,10 +207,12 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     })
         
     t_pdf = round(time.time() - t_pdf_start, TIME_ROUND)
-    print(f"t_pdf: {t_pdf}s")
+    print(f"    t_pdf: {t_pdf}s")
     print(f"    Saved to {output_file}")
     print()
-    print(f"{pdf_path} processed. {counter} / {n}")
+    print(f"    {report_name} processed.")
+    print(f"    {counter} / {n}")
+    print()
     counter += 1
 
 
