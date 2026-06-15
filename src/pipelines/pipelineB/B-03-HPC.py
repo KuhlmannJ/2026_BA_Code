@@ -188,7 +188,8 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     # An "<|im_end|>" is always at the end of the output, needs to be removed
     # .strip() drops random empty lines
     output_clean = strip_thinking(output_text).replace("<|im_end|>", "").strip()
-
+    with open(f"{report_name}_outout_without_thinking.txt", "w", encoding="utf-8") as f:
+        f.write(output_clean)
     output_JSON = json.loads(output_clean)
 
     # Saving that outout as JSON
