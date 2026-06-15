@@ -18,7 +18,7 @@ load_dotenv(find_dotenv())
 parser = argparse.ArgumentParser()
 parser.add_argument("--test",       "-t",   action="store_true", help="Toggle Testing Path")
 parser.add_argument("--maxTokens",  "-mt",  type=int, default=16384, help="Control Thinking Tokens")
-#Rougly equivalent to control thinking tokens, but means tokens overall
+# A hard-limit on the length of the thought process
 # 16384 was seen in some HF examples of the authors, besides 128 (way too small)
 
 args = parser.parse_args()
@@ -49,6 +49,8 @@ def strip_thinking(text: str) -> str:
 
 #### 0. GLOBAL VARIABLES ########################################
 banner("STEP 0: GLOBAL VARIABLES")
+
+MAX_TOKENS = args.maxTokens
 
 # MODEL_NAME = "Qwen/Qwen3-VL-235B-A22B-Thinking"   # VRAM-ERROR, 500GB download :)
 MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"           # 66.7GB VRAM, takes 5min/report, 4h for 53 reports
@@ -167,55 +169,74 @@ for pdf_path in sorted(RETRIEVAL_LIST):
         return_tensors="pt"
     ).to(model.device)
     
+    output_JSON = None  # Default: to detect token-overflow
+    tokens_needed = MAX_TOKENS
+    # This loop allows for one(!) retry of VLM extraction with double the tokens if needed
+    for attempt, now_max_tokens in enumerate([MAX_TOKENS, MAX_TOKENS * 2]):
+        print(f"    Attempt: {attempt} with {now_max_tokens} Token-Limit")
+        t_inference_start = time.time()
+        # Inference: Generation of the output (source: HF)
+        generated_ids = model.generate(**inputs, max_new_tokens=now_max_tokens)
+        generated_ids_trimmed = [
+            out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
+        ]
+        t_inference = round(time.time() - t_inference_start, TIME_ROUND)
+        print(f"    t_inference: {t_inference}s")
+        
+        
+        t_processorbatch_start = time.time()
+        output_text = processor.batch_decode(
+            generated_ids_trimmed, skip_special_tokens=False, clean_up_tokenization_spaces=False #skip_special_tokens=FALSE um <think> zu lassen
+        )[0] # To get to the String inside the output_text: >>["So, let's describe..."]<<
+        t_processorbatch = round(time.time() - t_processorbatch_start, TIME_ROUND)
+        print(f"    t_processorbatch: {t_processorbatch}s")
+        
+        # Cleanup of output text 
+        # strip_thinking() drops "thinking" part of the response
+        # An "<|im_end|>" is always at the end of the output, needs to be removed
+        # .strip() drops random empty lines
+        output_clean = strip_thinking(output_text).replace("<|im_end|>", "").strip()
+        
+        try:
+            output_JSON = json.loads(output_clean)
+            break
+        except json.JSONDecodeError:
+            if attempt == 0: #attempt += 1 with for-loop
+                print(f"  [WARN] JSON failed, retrying with {now_max_tokens * 2} tokens...")
+                tokens_needed = MAX_TOKENS * 2
+            else:
+                print(f"  [ERROR] JSON failed after retry, skipping {report_name}") #Leaves for loop with output_JSON = None
+        
+    # If token-overflow => Skip through next 
+    if output_JSON is not None:
     
-    t_inference_start = time.time()
-    # Inference: Generation of the output (source: HF)
-    generated_ids = model.generate(**inputs, max_new_tokens=args.maxTokens)
-    generated_ids_trimmed = [
-        out_ids[len(in_ids) :] for in_ids, out_ids in zip(inputs.input_ids, generated_ids)
-    ]
-    t_inference = round(time.time() - t_inference_start, TIME_ROUND)
-    print(f"    t_inference: {t_inference}s")
-    
-    t_processorbatch_start = time.time()
-    output_text = processor.batch_decode(
-        generated_ids_trimmed, skip_special_tokens=False, clean_up_tokenization_spaces=False #skip_special_tokens=FALSE um <think> zu lassen
-    )[0] # To get to the String inside the output_text: >>["So, let's describe..."]<<
-    t_processorbatch = round(time.time() - t_processorbatch_start, TIME_ROUND)
-    print(f"    t_processorbatch: {t_processorbatch}s")
-    # Cleanup of output text 
-    # strip_thinking() drops "thinking" part of the response
-    # An "<|im_end|>" is always at the end of the output, needs to be removed
-    # .strip() drops random empty lines
-    output_clean = strip_thinking(output_text).replace("<|im_end|>", "").strip()
-    with open(f"{report_name}_outout_without_thinking.txt", "w", encoding="utf-8") as f:
-        f.write(output_clean)
-    output_JSON = json.loads(output_clean)
+        with open(f"{report_name}_outout_without_thinking.txt", "w", encoding="utf-8") as f:
+            f.write(output_clean)
+        output_JSON = json.loads(output_clean)
 
-    # Saving that outout as JSON
-    output_file = OUTPUT_DIR / f"{report_name}.json"
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(output_JSON, f, ensure_ascii=False, indent=2)
+        # Saving that outout as JSON
+        output_file = OUTPUT_DIR / f"{report_name}.json"
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(output_JSON, f, ensure_ascii=False, indent=2)
     
     
-    results.append({
-        "model":        MODEL_NAME,
-        "maxToken":     args.maxTokens,
-        "report":       report_name,
-        "duration":     t_inference,
-        "pages":        report_len,
-        "t_inf/page":   round(t_inference / report_len, TIME_ROUND),
-        
-    })
-        
-    t_pdf = round(time.time() - t_pdf_start, TIME_ROUND)
-    print(f"    t_pdf: {t_pdf}s")
-    print(f"    Saved to {output_file}")
-    print()
-    print(f"    {report_name} processed.")
-    print(f"    {counter} / {n}")
-    print()
-    counter += 1
+        results.append({
+            "model":        MODEL_NAME,
+            "maxToken":     args.maxTokens,
+            "report":       report_name,
+            "duration":     t_inference,
+            "pages":        report_len,
+            "t_inf/page":   round(t_inference / report_len, TIME_ROUND),
+            
+        })
+            
+        t_pdf = round(time.time() - t_pdf_start, TIME_ROUND)
+        print(f"    t_pdf: {t_pdf}s")
+        print(f"    Saved to {output_file}")
+        print( "    Report processed.")
+        print(f"    {counter} / {n}")
+        print()
+        counter += 1
 
 
 fieldnames = ["model", "maxToken", "report", "duration", "pages", "t_inf/page"]
