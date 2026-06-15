@@ -125,6 +125,7 @@ print(f"No. of PDF:     {len(RETRIEVAL_LIST)}")
 print(f"OUTPUT_DIR:     {OUTPUT_DIR}")
 print(f"PROMT_PATH:     {PROMT_PATH}")
 print(f"MODEL_NAME:     {MODEL_NAME}")
+print(f"BATCH_SIZE:     {BATCH_SIZE}")
 # print(f"EXTRACTION_PROMT:\n{EXTRACTION_PROMT}\n")
 print()
 
@@ -164,6 +165,7 @@ match MODEL_NAME:
         )
 
 processor = AutoProcessor.from_pretrained(MODEL_NAME)
+if BATCH_SIZE > 1: processor.tokenizer.padding_side = "left"
 
 t_vlmLoad = round(time.time() - t_vlmLoad_start, TIME_ROUND)
 
@@ -186,11 +188,11 @@ pdf_chunks = [RETRIEVAL_LIST[i:i+BATCH_SIZE] for i in range(0, len(RETRIEVAL_LIS
 
 for chunk in pdf_chunks:
     texts, all_images, names = [], [], []
-
+    print(f">>>> I am in chunk: {chunk}")
     for pdf_path in chunk:
         t_pymupdf_start = time.time()
         report_name = pdf_path.stem
-        
+        print(f">>>> I am in report_name: {report_name}")
         images = load_pdf_images(pdf_path)
         content = [{"type": "image", "image": img} for img in images]
         content.append({"type": "text", "text": EXTRACTION_PROMPT})
@@ -204,6 +206,7 @@ for chunk in pdf_chunks:
         t_pymupdf = round(time.time() - t_pymupdf_start, TIME_ROUND)
         print(f"t_pymupdf: {t_pymupdf}s")
 
+    print(f">>>> I am before inputs!")
     inputs = processor(
         text=texts,
         images=all_images,
@@ -211,13 +214,15 @@ for chunk in pdf_chunks:
         return_tensors="pt"
     ).to(model.device)
 
+    
+    print(f">>>> I am before torch.no_grad()!")
     t_inference_start = time.time()
     with torch.no_grad(): ### PyTorch baut während model.generate() keinen Computation Graph, bei BATCH_SIZE > 1 wohl bemerkbar
         generated_ids = model.generate(**inputs, max_new_tokens=16384)
     
     
     for i, (gen_ids, inp_ids, name) in enumerate(zip(generated_ids, inputs.input_ids, names)):
-        print(name)
+        print(f">>>> I am with report_name 'name': {name}")
         t_inference_start = time.time()
         trimmed = gen_ids[len(inp_ids):]
         
@@ -229,6 +234,7 @@ for chunk in pdf_chunks:
         output_clean = strip_thinking(output_text).replace("<|im_end|>", "").strip()
         output_JSON = json.loads(output_clean)
 
+        print(f">>>> I am before saving the output to JSON!")
         # Saving that outout as JSON
         output_file = OUTPUT_DIR / f"{name}.json"
         with open(output_file, "w", encoding="utf-8") as f:
@@ -244,6 +250,7 @@ for chunk in pdf_chunks:
             #"t_inf/page":   round(t_inference / report_len, TIME_ROUND),
             
         })
+        print(f">>>> I wrote to the results hehe…")
         
         print(f"    Saved to {output_file}")
         print()
