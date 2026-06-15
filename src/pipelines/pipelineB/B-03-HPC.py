@@ -64,7 +64,7 @@ RETRIEVAL_LIST = sorted(list(RETRIEVAL_DIR.glob("*.pdf")))
 if args.test:
     RETRIEVAL_LIST = [RETRIEVAL_LIST[4]]
 
-OUTPUT_DIR    = Path(f"/scratch/tmp/jkuhlma1/results/A-03-answers/{MODEL_NAME}")
+OUTPUT_DIR    = Path(f"/scratch/tmp/jkuhlma1/results/B-03-answers/{MODEL_NAME}")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 RESULTS_FILE  = OUTPUT_DIR / "results.json"
 
