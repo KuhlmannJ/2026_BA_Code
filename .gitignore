@@ -8,3 +8,4 @@ __pycache__/
 localdata/
 A-02-retrieval_log.csv
 evaluations/A-02/*.csv
+.Rproj.user
