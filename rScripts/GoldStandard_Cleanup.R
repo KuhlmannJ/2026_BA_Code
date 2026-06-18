@@ -22,4 +22,4 @@ gs_slim <- gs_slim[order(gs_slim$report_name), ] #Sort ascending by report_name
 
 
 # Save slimmed down Gold_Standard
-write.csv(gs_slim, file = "gs_slim.csv")
+write.csv(gs_slim, file = "gs_slim.csv", row.names = FALSE)
