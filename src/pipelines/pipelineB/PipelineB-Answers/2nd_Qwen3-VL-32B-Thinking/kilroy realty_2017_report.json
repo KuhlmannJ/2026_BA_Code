@@ -1,0 +1,60 @@
+{
+  "report_name": "2017_sustainability_report",
+  "report_title": "2017 Sustainability Report",
+  "emissions": {
+    "scope_1": {
+      "2016": [
+        {
+          "value": 4059,
+          "unit": "tonnes",
+          "label": "Absolute Consumption"
+        },
+        {
+          "value": 3110,
+          "unit": "tonnes",
+          "label": "Like-for-Like Consumption"
+        }
+      ],
+      "2017": [
+        {
+          "value": 4641,
+          "unit": "tonnes",
+          "label": "Absolute Consumption"
+        },
+        {
+          "value": 3296,
+          "unit": "tonnes",
+          "label": "Like-for-Like Consumption"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2016": [
+        {
+          "value": 44145,
+          "unit": "tonnes",
+          "label": "Absolute Consumption"
+        },
+        {
+          "value": 39484,
+          "unit": "tonnes",
+          "label": "Like-for-Like Consumption"
+        }
+      ],
+      "2017": [
+        {
+          "value": 42947,
+          "unit": "tonnes",
+          "label": "Absolute Consumption"
+        },
+        {
+          "value": 35490,
+          "unit": "tonnes",
+          "label": "Like-for-Like Consumption"
+        }
+      ]
+    },
+    "scope_3": {}
+  }
+}

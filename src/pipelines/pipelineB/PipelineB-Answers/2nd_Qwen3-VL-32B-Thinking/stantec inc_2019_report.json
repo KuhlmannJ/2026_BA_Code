@@ -1,0 +1,54 @@
+{
+  "report_name": "2019 STANTEC SUSTAINABILITY REPORT",
+  "report_title": "2019 STANTEC SUSTAINABILITY REPORT",
+  "emissions": {
+    "scope_1": {
+      "2017": [
+        {
+          "value": 9585,
+          "unit": "mtCO2e",
+          "label": "Scope 1"
+        }
+      ],
+      "2018": [
+        {
+          "value": 10333,
+          "unit": "mtCO2e",
+          "label": "Scope 1"
+        }
+      ],
+      "2019": [
+        {
+          "value": 7540,
+          "unit": "mtCO2e",
+          "label": "Scope 1"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {},
+    "scope_3": {
+      "2017": [
+        {
+          "value": 26800,
+          "unit": "mtCO2e",
+          "label": "Scope 3"
+        }
+      ],
+      "2018": [
+        {
+          "value": 29318,
+          "unit": "mtCO2e",
+          "label": "Scope 3"
+        }
+      ],
+      "2019": [
+        {
+          "value": 29301,
+          "unit": "mtCO2e",
+          "label": "Scope 3"
+        }
+      ]
+    }
+  }
+}

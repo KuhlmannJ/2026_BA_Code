@@ -1,0 +1,97 @@
+{
+  "report_name": "atlasArteria Sustainability Report 2019",
+  "report_title": "ATLAS ARTERIA SUSTAINABILITY REPORT 2019",
+  "emissions": {
+    "scope_1": {
+      "2016": [
+        {
+          "value": 6182,
+          "unit": "tonnes CO2e",
+          "label": "APRR only"
+        }
+      ],
+      "2017": [
+        {
+          "value": 6541,
+          "unit": "tonnes CO2e",
+          "label": "APRR only"
+        }
+      ],
+      "2018": [
+        {
+          "value": 5942,
+          "unit": "tonnes CO2e",
+          "label": "APRR only"
+        }
+      ],
+      "2019": [
+        {
+          "value": 6027,
+          "unit": "tonnes CO2e",
+          "label": "APRR only"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2016": [
+        {
+          "value": 1291,
+          "unit": "tonnes CO2e",
+          "label": "APRR only"
+        }
+      ],
+      "2017": [
+        {
+          "value": 1244,
+          "unit": "tonnes CO2e",
+          "label": "APRR only"
+        }
+      ],
+      "2018": [
+        {
+          "value": 957,
+          "unit": "tonnes CO2e",
+          "label": "APRR only"
+        }
+      ],
+      "2019": [
+        {
+          "value": 773,
+          "unit": "tonnes CO2e",
+          "label": "APRR only"
+        }
+      ]
+    },
+    "scope_3": {
+      "2016": [
+        {
+          "value": 1913208,
+          "unit": "tonnes CO2e",
+          "label": "APRR only (customer traffic emissions)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 2135936,
+          "unit": "tonnes CO2e",
+          "label": "APRR only (customer traffic emissions)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 2212963,
+          "unit": "tonnes CO2e",
+          "label": "APRR only (customer traffic emissions)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 2230582,
+          "unit": "tonnes CO2e",
+          "label": "APRR only (customer traffic emissions)"
+        }
+      ]
+    }
+  }
+}

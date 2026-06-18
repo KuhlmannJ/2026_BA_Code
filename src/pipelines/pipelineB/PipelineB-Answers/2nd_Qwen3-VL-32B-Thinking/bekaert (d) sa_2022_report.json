@@ -1,0 +1,399 @@
+{
+  "report_name": "Bekaert Integrated Annual Report 2022",
+  "report_title": "Bekaert Integrated Annual Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 338420,
+          "unit": "ton CO2",
+          "label": "Total (including JVs)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 313527,
+          "unit": "ton CO2",
+          "label": "Total (including JVs)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 336201,
+          "unit": "ton CO2",
+          "label": "Total (including JVs)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 316951,
+          "unit": "ton CO2",
+          "label": "Total (including JVs)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [
+        {
+          "value": 0,
+          "unit": "ton CO2",
+          "label": "Belgium"
+        },
+        {
+          "value": 15541,
+          "unit": "ton CO2",
+          "label": "Chile"
+        },
+        {
+          "value": 794058,
+          "unit": "ton CO2",
+          "label": "China"
+        },
+        {
+          "value": 80962,
+          "unit": "ton CO2",
+          "label": "India"
+        },
+        {
+          "value": 161983,
+          "unit": "ton CO2",
+          "label": "Indonesia"
+        },
+        {
+          "value": 162,
+          "unit": "ton CO2",
+          "label": "Slovakia"
+        },
+        {
+          "value": 87027,
+          "unit": "ton CO2",
+          "label": "Turkey"
+        },
+        {
+          "value": 92616,
+          "unit": "ton CO2",
+          "label": "US"
+        }
+      ],
+      "2020": [
+        {
+          "value": 8382,
+          "unit": "ton CO2",
+          "label": "Belgium"
+        },
+        {
+          "value": 14087,
+          "unit": "ton CO2",
+          "label": "Chile"
+        },
+        {
+          "value": 750752,
+          "unit": "ton CO2",
+          "label": "China"
+        },
+        {
+          "value": 74461,
+          "unit": "ton CO2",
+          "label": "India"
+        },
+        {
+          "value": 148406,
+          "unit": "ton CO2",
+          "label": "Indonesia"
+        },
+        {
+          "value": 25270,
+          "unit": "ton CO2",
+          "label": "Slovakia"
+        },
+        {
+          "value": 72933,
+          "unit": "ton CO2",
+          "label": "Turkey"
+        },
+        {
+          "value": 59126,
+          "unit": "ton CO2",
+          "label": "US"
+        }
+      ],
+      "2021": [
+        {
+          "value": 7768,
+          "unit": "ton CO2",
+          "label": "Belgium"
+        },
+        {
+          "value": 16289,
+          "unit": "ton CO2",
+          "label": "Chile"
+        },
+        {
+          "value": 777225,
+          "unit": "ton CO2",
+          "label": "China"
+        },
+        {
+          "value": 101462,
+          "unit": "ton CO2",
+          "label": "India"
+        },
+        {
+          "value": 165128,
+          "unit": "ton CO2",
+          "label": "Indonesia"
+        },
+        {
+          "value": 31525,
+          "unit": "ton CO2",
+          "label": "Slovakia"
+        },
+        {
+          "value": 90440,
+          "unit": "ton CO2",
+          "label": "Turkey"
+        },
+        {
+          "value": 71747,
+          "unit": "ton CO2",
+          "label": "US"
+        }
+      ],
+      "2022": [
+        {
+          "value": 6971,
+          "unit": "ton CO2",
+          "label": "Belgium"
+        },
+        {
+          "value": 13678,
+          "unit": "ton CO2",
+          "label": "Chile"
+        },
+        {
+          "value": 711082,
+          "unit": "ton CO2",
+          "label": "China"
+        },
+        {
+          "value": 77419,
+          "unit": "ton CO2",
+          "label": "India"
+        },
+        {
+          "value": 143252,
+          "unit": "ton CO2",
+          "label": "Indonesia"
+        },
+        {
+          "value": 31214,
+          "unit": "ton CO2",
+          "label": "Slovakia"
+        },
+        {
+          "value": 87638,
+          "unit": "ton CO2",
+          "label": "Turkey"
+        },
+        {
+          "value": 42456,
+          "unit": "ton CO2",
+          "label": "US"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 0,
+          "unit": "ton CO2",
+          "label": "Belgium"
+        },
+        {
+          "value": 15541,
+          "unit": "ton CO2",
+          "label": "Chile"
+        },
+        {
+          "value": 794058,
+          "unit": "ton CO2",
+          "label": "China"
+        },
+        {
+          "value": 80962,
+          "unit": "ton CO2",
+          "label": "India"
+        },
+        {
+          "value": 161983,
+          "unit": "ton CO2",
+          "label": "Indonesia"
+        },
+        {
+          "value": 162,
+          "unit": "ton CO2",
+          "label": "Slovakia"
+        },
+        {
+          "value": 87027,
+          "unit": "ton CO2",
+          "label": "Turkey"
+        },
+        {
+          "value": 92616,
+          "unit": "ton CO2",
+          "label": "US"
+        }
+      ],
+      "2020": [
+        {
+          "value": 8382,
+          "unit": "ton CO2",
+          "label": "Belgium"
+        },
+        {
+          "value": 14087,
+          "unit": "ton CO2",
+          "label": "Chile"
+        },
+        {
+          "value": 750752,
+          "unit": "ton CO2",
+          "label": "China"
+        },
+        {
+          "value": 74461,
+          "unit": "ton CO2",
+          "label": "India"
+        },
+        {
+          "value": 148406,
+          "unit": "ton CO2",
+          "label": "Indonesia"
+        },
+        {
+          "value": 25270,
+          "unit": "ton CO2",
+          "label": "Slovakia"
+        },
+        {
+          "value": 72933,
+          "unit": "ton CO2",
+          "label": "Turkey"
+        },
+        {
+          "value": 59126,
+          "unit": "ton CO2",
+          "label": "US"
+        }
+      ],
+      "2021": [
+        {
+          "value": 7768,
+          "unit": "ton CO2",
+          "label": "Belgium"
+        },
+        {
+          "value": 16289,
+          "unit": "ton CO2",
+          "label": "Chile"
+        },
+        {
+          "value": 777225,
+          "unit": "ton CO2",
+          "label": "China"
+        },
+        {
+          "value": 101462,
+          "unit": "ton CO2",
+          "label": "India"
+        },
+        {
+          "value": 165128,
+          "unit": "ton CO2",
+          "label": "Indonesia"
+        },
+        {
+          "value": 31525,
+          "unit": "ton CO2",
+          "label": "Slovakia"
+        },
+        {
+          "value": 90440,
+          "unit": "ton CO2",
+          "label": "Turkey"
+        },
+        {
+          "value": 71747,
+          "unit": "ton CO2",
+          "label": "US"
+        }
+      ],
+      "2022": [
+        {
+          "value": 6971,
+          "unit": "ton CO2",
+          "label": "Belgium"
+        },
+        {
+          "value": 13678,
+          "unit": "ton CO2",
+          "label": "Chile"
+        },
+        {
+          "value": 711082,
+          "unit": "ton CO2",
+          "label": "China"
+        },
+        {
+          "value": 77419,
+          "unit": "ton CO2",
+          "label": "India"
+        },
+        {
+          "value": 143252,
+          "unit": "ton CO2",
+          "label": "Indonesia"
+        },
+        {
+          "value": 31214,
+          "unit": "ton CO2",
+          "label": "Slovakia"
+        },
+        {
+          "value": 87638,
+          "unit": "ton CO2",
+          "label": "Turkey"
+        },
+        {
+          "value": 42456,
+          "unit": "ton CO2",
+          "label": "US"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 6045636,
+          "unit": "ton CO2e",
+          "label": "Total (excluding JVs)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 6736962,
+          "unit": "ton CO2e",
+          "label": "Total (excluding JVs)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 6187086,
+          "unit": "ton CO2e",
+          "label": "Total (excluding JVs)"
+        }
+      ]
+    }
+  }
+}

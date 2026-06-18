@@ -1,0 +1,200 @@
+{
+  "report_name": "Allianz Group Sustainability Report 2022",
+  "report_title": "Allianz Group Sustainability Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 42,
+          "unit": "ktCO2eq",
+          "label": "Operational (Figure 2b)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 28714,
+          "unit": "t CO2e",
+          "label": "Direct GHG emissions"
+        },
+        {
+          "value": 29,
+          "unit": "ktCO2eq",
+          "label": "Operational (Figure 2b)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 28699,
+          "unit": "t CO2e",
+          "label": "Direct GHG emissions"
+        },
+        {
+          "value": 29,
+          "unit": "ktCO2eq",
+          "label": "Operational (Figure 2b)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 30953,
+          "unit": "t CO2e",
+          "label": "Direct GHG emissions"
+        },
+        {
+          "value": 31,
+          "unit": "ktCO2eq",
+          "label": "Operational (Figure 2b)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2020": [
+        {
+          "value": 100722,
+          "unit": "t CO2e",
+          "label": "Indirect GHG emissions (market based)"
+        },
+        {
+          "value": 101,
+          "unit": "ktCO2eq",
+          "label": "Operational (Figure 2b)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 54689,
+          "unit": "t CO2e",
+          "label": "Indirect GHG emissions (market based)"
+        },
+        {
+          "value": 55,
+          "unit": "ktCO2eq",
+          "label": "Operational (Figure 2b)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 30490,
+          "unit": "t CO2e",
+          "label": "Indirect GHG emissions (market based)"
+        },
+        {
+          "value": 30,
+          "unit": "ktCO2eq",
+          "label": "Operational (Figure 2b)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2020": [
+        {
+          "value": 180826,
+          "unit": "t CO2e",
+          "label": "Indirect GHG emissions (location based)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 149599,
+          "unit": "t CO2e",
+          "label": "Indirect GHG emissions (location based)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 138339,
+          "unit": "t CO2e",
+          "label": "Indirect GHG emissions (location based)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2020": [
+        {
+          "value": 73916,
+          "unit": "t CO2e",
+          "label": "Other indirect"
+        },
+        {
+          "value": 74,
+          "unit": "ktCO2eq",
+          "label": "Operational (Figure 2b)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 55359,
+          "unit": "t CO2e",
+          "label": "Other indirect"
+        },
+        {
+          "value": 55,
+          "unit": "ktCO2eq",
+          "label": "Operational (Figure 2b)"
+        },
+        {
+          "value": 19.1,
+          "unit": "mn t CO2e",
+          "label": "Portfolio total"
+        },
+        {
+          "value": 16.4,
+          "unit": "mn t CO2e",
+          "label": "Corporate bonds"
+        },
+        {
+          "value": 2.3,
+          "unit": "mn t CO2e",
+          "label": "Listed equities"
+        },
+        {
+          "value": 0.4,
+          "unit": "mn t CO2e",
+          "label": "Infrastructure equity"
+        }
+      ],
+      "2022": [
+        {
+          "value": 92467,
+          "unit": "t CO2e",
+          "label": "Other indirect"
+        },
+        {
+          "value": 92,
+          "unit": "ktCO2eq",
+          "label": "Operational (Figure 2b)"
+        },
+        {
+          "value": 46.3,
+          "unit": "mn t CO2e",
+          "label": "Portfolio total"
+        },
+        {
+          "value": 15.1,
+          "unit": "mn t CO2e",
+          "label": "Corporate bonds"
+        },
+        {
+          "value": 1.1,
+          "unit": "mn t CO2e",
+          "label": "Listed equities"
+        },
+        {
+          "value": 29.5,
+          "unit": "mn t CO2e",
+          "label": "Sovereign"
+        },
+        {
+          "value": 0.3,
+          "unit": "mn t CO2e",
+          "label": "Real estate"
+        },
+        {
+          "value": 0.4,
+          "unit": "mn t CO2e",
+          "label": "Infrastructure equity"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "report_name": "healius-sustainability-report-2022",
+  "report_title": "HEALIUS — SUSTAINABILITY REPORT 2022",
+  "emissions": {
+    "scope_1": {
+      "2021": [
+        {
+          "value": 6602,
+          "unit": "tonnes",
+          "label": "Scope 1"
+        }
+      ],
+      "2022": [
+        {
+          "value": 6533,
+          "unit": "tonnes",
+          "label": "Scope 1"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2021": [
+        {
+          "value": 27038,
+          "unit": "tonnes",
+          "label": "Scope 2"
+        }
+      ],
+      "2022": [
+        {
+          "value": 25610,
+          "unit": "tonnes",
+          "label": "Scope 2"
+        }
+      ]
+    },
+    "scope_3": {}
+  }
+}
