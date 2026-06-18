@@ -2,7 +2,7 @@
 library("rjson")
 
 df_dense <- read.csv(file="src/pipelines/pipelineB/PipelineB-Answers/Qwen3-VL-32B-Thinking/***results.csv")
-df_moe <- read.csv(file="src/pipelines/pipelineB/PipelineB-Answers/Qwen3-VL-30B-A3B-Thinking/***results.csv")
+df_moe   <- read.csv(file="src/pipelines/pipelineB/PipelineB-Answers/Qwen3-VL-30B-A3B-Thinking/***results.csv")
 
 # summary(df_dense)
 # summary(df_moe)
@@ -21,5 +21,3 @@ names(compare_per_report)[names(compare_per_report) == "duration.y"] <- "duratio
 compare_per_report$moe_faster <- compare_per_report$duration_moe < compare_per_report$duration_dense
 
 compare_per_report[compare_per_report$moe_faster == TRUE & compare_per_report$pages == 7, ]
-
-json_data <- fromJSON(paste(readLines("src/pipelines/pipelineB/PipelineB-Answers/Qwen3-VL-32B-Thinking/addtech_2022_report.json"), collapse=""))
