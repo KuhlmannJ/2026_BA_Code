@@ -1,0 +1,179 @@
+{
+  "report_name": "Allianz Group Sustainability Report 2022",
+  "report_title": "Allianz Group Sustainability Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 42,
+          "unit": "ktCO₂eq",
+          "label": "Scope 1 from Figure 2b"
+        }
+      ],
+      "2020": [
+        {
+          "value": 29,
+          "unit": "ktCO₂eq",
+          "label": "Scope 1 from Figure 2b"
+        },
+        {
+          "value": 28714,
+          "unit": "t CO₂e",
+          "label": "Scope 1 – Direct GHG emissions"
+        }
+      ],
+      "2021": [
+        {
+          "value": 29,
+          "unit": "ktCO₂eq",
+          "label": "Scope 1 from Figure 2b"
+        },
+        {
+          "value": 28699,
+          "unit": "t CO₂e",
+          "label": "Scope 1 – Direct GHG emissions"
+        }
+      ],
+      "2022": [
+        {
+          "value": 31,
+          "unit": "ktCO₂eq",
+          "label": "Scope 1 from Figure 2b"
+        },
+        {
+          "value": 30953,
+          "unit": "t CO₂e",
+          "label": "Scope 1 – Direct GHG emissions"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [
+        {
+          "value": 143,
+          "unit": "ktCO₂eq",
+          "label": "Scope 2 market based from Figure 2b"
+        }
+      ],
+      "2020": [
+        {
+          "value": 101,
+          "unit": "ktCO₂eq",
+          "label": "Scope 2 market based from Figure 2b"
+        },
+        {
+          "value": 100722,
+          "unit": "t CO₂e",
+          "label": "Scope 2 – Indirect GHG emissions (market based)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 55,
+          "unit": "ktCO₂eq",
+          "label": "Scope 2 market based from Figure 2b"
+        },
+        {
+          "value": 54689,
+          "unit": "t CO₂e",
+          "label": "Scope 2 – Indirect GHG emissions (market based)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 30,
+          "unit": "ktCO₂eq",
+          "label": "Scope 2 market based from Figure 2b"
+        },
+        {
+          "value": 30490,
+          "unit": "t CO₂e",
+          "label": "Scope 2 – Indirect GHG emissions (market based)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2020": [
+        {
+          "value": 180826,
+          "unit": "t CO₂e",
+          "label": "Scope 2 – Indirect GHG emissions (location based)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 149599,
+          "unit": "t CO₂e",
+          "label": "Scope 2 – Indirect GHG emissions (location based)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 138339,
+          "unit": "t CO₂e",
+          "label": "Scope 2 – Indirect GHG emissions (location based)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 149,
+          "unit": "ktCO₂eq",
+          "label": "Scope 3 from Figure 2b"
+        }
+      ],
+      "2020": [
+        {
+          "value": 74,
+          "unit": "ktCO₂eq",
+          "label": "Scope 3 from Figure 2b"
+        },
+        {
+          "value": 73916,
+          "unit": "t CO₂e",
+          "label": "Scope 3 – Other indirect GHG emissions"
+        },
+        {
+          "value": 56316,
+          "unit": "t CO₂e",
+          "label": "Total GHG emissions from business travel"
+        }
+      ],
+      "2021": [
+        {
+          "value": 55,
+          "unit": "ktCO₂eq",
+          "label": "Scope 3 from Figure 2b"
+        },
+        {
+          "value": 55359,
+          "unit": "t CO₂e",
+          "label": "Scope 3 – Other indirect GHG emissions"
+        },
+        {
+          "value": 39570,
+          "unit": "t CO₂e",
+          "label": "Total GHG emissions from business travel"
+        }
+      ],
+      "2022": [
+        {
+          "value": 92,
+          "unit": "ktCO₂eq",
+          "label": "Scope 3 from Figure 2b"
+        },
+        {
+          "value": 92467,
+          "unit": "t CO₂e",
+          "label": "Scope 3 – Other indirect GHG emissions"
+        },
+        {
+          "value": 74339,
+          "unit": "t CO₂e",
+          "label": "Total GHG emissions from business travel"
+        }
+      ]
+    }
+  }
+}

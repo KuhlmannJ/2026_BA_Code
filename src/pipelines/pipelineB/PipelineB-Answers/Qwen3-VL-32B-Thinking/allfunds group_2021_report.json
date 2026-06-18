@@ -1,0 +1,62 @@
+{
+  "report_name": "allfunds_sustainability_report",
+  "report_title": "Allfunds Sustainability Report",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 68.51,
+          "unit": "tCO2e",
+          "label": "Scope 1 CO2 emissions (tCO2e)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 0.0,
+          "unit": "tCO2e",
+          "label": "Scope 1 CO2 emissions (tCO2e)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 7.31,
+          "unit": "tCO2e",
+          "label": "Scope 1 CO2 emissions (tCO2e)"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 436.43,
+          "unit": "tCO2e",
+          "label": "Scope 2 CO2 emissions (tCO2e)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 91.69,
+          "unit": "tCO2e",
+          "label": "Scope 2 CO2 emissions (tCO2e)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 30.39,
+          "unit": "tCO2e",
+          "label": "Scope 2 CO2 emissions (tCO2e)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2020": [
+        {
+          "value": 393.82,
+          "unit": "tCO2e",
+          "label": "Scope 3 CO2 emissions (tCO2e)"
+        }
+      ]
+    }
+  }
+}

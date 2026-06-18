@@ -1,0 +1,54 @@
+{
+  "report_name": "Hammerston plc Annual Report 2021",
+  "report_title": "Hammerston plc Annual Report 2021",
+  "emissions": {
+    "scope_1": {
+      "2020": [
+        {
+          "value": "3,309",
+          "unit": "tCO2e",
+          "label": "Total GHG emissions metric tonnes"
+        }
+      ],
+      "2021": [
+        {
+          "value": "4,293",
+          "unit": "tCO2e",
+          "label": "Total GHG emissions metric tonnes"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2020": [
+        {
+          "value": "3,331",
+          "unit": "tCO2e",
+          "label": "Total GHG emissions metric tonnes"
+        }
+      ],
+      "2021": [
+        {
+          "value": "3,850",
+          "unit": "tCO2e",
+          "label": "Total GHG emissions metric tonnes"
+        }
+      ]
+    },
+    "scope_3": {
+      "2020": [
+        {
+          "value": "13,711",
+          "unit": "tCO2e",
+          "label": "Total GHG emissions metric tonnes"
+        }
+      ],
+      "2021": [
+        {
+          "value": "13,210",
+          "unit": "tCO2e",
+          "label": "Total GHG emissions metric tonnes"
+        }
+      ]
+    }
+  }
+}

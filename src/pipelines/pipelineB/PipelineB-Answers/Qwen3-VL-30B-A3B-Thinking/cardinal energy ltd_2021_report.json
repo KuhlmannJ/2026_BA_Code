@@ -1,0 +1,54 @@
+{
+  "report_name": "2021 ESG Report",
+  "report_title": "2021 ESG Report",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 188,
+          "unit": "10^3 tonnes CO2e",
+          "label": "Direct GHG emissions (10^3 tonnes CO2e)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 160,
+          "unit": "10^3 tonnes CO2e",
+          "label": "Direct GHG emissions (10^3 tonnes CO2e)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 231,
+          "unit": "10^3 tonnes CO2e",
+          "label": "Direct GHG emissions (10^3 tonnes CO2e)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [
+        {
+          "value": 277,
+          "unit": "10^3 tonnes CO2e",
+          "label": "Indirect GHG emissions (10^3 tonnes CO2e)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 259,
+          "unit": "10^3 tonnes CO2e",
+          "label": "Indirect GHG emissions (10^3 tonnes CO2e)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 228,
+          "unit": "10^3 tonnes CO2e",
+          "label": "Indirect GHG emissions (10^3 tonnes CO2e)"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {}
+  }
+}

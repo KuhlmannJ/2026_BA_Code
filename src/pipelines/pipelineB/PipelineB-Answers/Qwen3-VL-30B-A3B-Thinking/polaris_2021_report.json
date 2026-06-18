@@ -1,0 +1,125 @@
+{
+  "report_name": "Sustainability Report 2021",
+  "report_title": "Sustainability Report 2021",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 33,
+          "unit": "tCO2e",
+          "label": "Portfolio Companies"
+        },
+        {
+          "value": 42,
+          "unit": "tCO2e",
+          "label": "Polaris Management"
+        }
+      ],
+      "2020": [
+        {
+          "value": 7.407,
+          "unit": "tCO2e",
+          "label": "Portfolio Companies"
+        },
+        {
+          "value": 7.485,
+          "unit": "tCO2e",
+          "label": "Polaris Management"
+        }
+      ],
+      "2021": [
+        {
+          "value": 7.16,
+          "unit": "tCO2e",
+          "label": "Portfolio Companies"
+        },
+        {
+          "value": 7.229,
+          "unit": "tCO2e",
+          "label": "Polaris Management"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [],
+      "2020": [],
+      "2021": []
+    },
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 353,
+          "unit": "tCO2e",
+          "label": "Portfolio Companies"
+        },
+        {
+          "value": 378,
+          "unit": "tCO2e",
+          "label": "Polaris Management"
+        }
+      ],
+      "2020": [
+        {
+          "value": 2.664,
+          "unit": "tCO2e",
+          "label": "Portfolio Companies"
+        },
+        {
+          "value": 2.869,
+          "unit": "tCO2e",
+          "label": "Polaris Management"
+        }
+      ],
+      "2021": [
+        {
+          "value": 3.069,
+          "unit": "tCO2e",
+          "label": "Portfolio Companies"
+        },
+        {
+          "value": 3.231,
+          "unit": "tCO2e",
+          "label": "Polaris Management"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 13.668,
+          "unit": "tCO2e",
+          "label": "Portfolio Companies"
+        },
+        {
+          "value": 14.067,
+          "unit": "tCO2e",
+          "label": "Polaris Management"
+        }
+      ],
+      "2020": [
+        {
+          "value": 18.117,
+          "unit": "tCO2e",
+          "label": "Portfolio Companies"
+        },
+        {
+          "value": 26.959,
+          "unit": "tCO2e",
+          "label": "Polaris Management"
+        }
+      ],
+      "2021": [
+        {
+          "value": 68.506,
+          "unit": "tCO2e",
+          "label": "Portfolio Companies"
+        },
+        {
+          "value": 78.645,
+          "unit": "tCO2e",
+          "label": "Polaris Management"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,245 @@
+{
+  "report_name": "Bekaert Integrated Annual Report 2022",
+  "report_title": "Bekaert Integrated Annual Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 329982,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from natural gas & LPG (including JVs)"
+        },
+        {
+          "value": 8438,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from fuel (including JVs)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 305547,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from natural gas & LPG (including JVs)"
+        },
+        {
+          "value": 7980,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from fuel (including JVs)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 327690,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from natural gas & LPG (including JVs)"
+        },
+        {
+          "value": 8511,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from fuel (including JVs)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 316951,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from natural gas, LPG and fuel (consolidated)"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 0,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Belgium"
+        },
+        {
+          "value": 15541,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Chile"
+        },
+        {
+          "value": 794058,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in China"
+        },
+        {
+          "value": 80962,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in India"
+        },
+        {
+          "value": 161983,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Indonesia"
+        },
+        {
+          "value": 162,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Slovakia"
+        },
+        {
+          "value": 87027,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Turkey"
+        },
+        {
+          "value": 92616,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in US"
+        }
+      ],
+      "2020": [
+        {
+          "value": 8382,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Belgium"
+        },
+        {
+          "value": 14087,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Chile"
+        },
+        {
+          "value": 750752,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in China"
+        },
+        {
+          "value": 74461,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in India"
+        },
+        {
+          "value": 148406,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Indonesia"
+        },
+        {
+          "value": 25270,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Slovakia"
+        },
+        {
+          "value": 72933,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Turkey"
+        },
+        {
+          "value": 59126,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in US"
+        }
+      ],
+      "2021": [
+        {
+          "value": 7768,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Belgium"
+        },
+        {
+          "value": 16289,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Chile"
+        },
+        {
+          "value": 777225,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in China"
+        },
+        {
+          "value": 101462,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in India"
+        },
+        {
+          "value": 165128,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Indonesia"
+        },
+        {
+          "value": 31525,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Slovakia"
+        },
+        {
+          "value": 90440,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Turkey"
+        },
+        {
+          "value": 71747,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in US"
+        }
+      ],
+      "2022": [
+        {
+          "value": 6971,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Belgium"
+        },
+        {
+          "value": 13678,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Chile"
+        },
+        {
+          "value": 711082,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in China"
+        },
+        {
+          "value": 77419,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in India"
+        },
+        {
+          "value": 143252,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Indonesia"
+        },
+        {
+          "value": 31214,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Slovakia"
+        },
+        {
+          "value": 87638,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in Turkey"
+        },
+        {
+          "value": 42456,
+          "unit": "ton CO₂",
+          "label": "GHG emissions from purchased electricity in US"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 6045636,
+          "unit": "ton CO₂e",
+          "label": "Total Scope 3 emissions"
+        }
+      ],
+      "2021": [
+        {
+          "value": 6736962,
+          "unit": "ton CO₂e",
+          "label": "Total Scope 3 emissions"
+        }
+      ],
+      "2022": [
+        {
+          "value": 6187086,
+          "unit": "ton CO₂e",
+          "label": "Total Scope 3 emissions"
+        }
+      ]
+    }
+  }
+}

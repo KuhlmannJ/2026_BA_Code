@@ -1,0 +1,48 @@
+{
+  "report_name": "NIPPON Integrated Report 2022",
+  "report_title": "NIPPON Integrated Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2021": [
+        {
+          "value": 46,
+          "unit": "1,000 t-CO2",
+          "label": "Scope 1"
+        }
+      ],
+      "2022": [
+        {
+          "value": 47,
+          "unit": "1,000 t-CO2",
+          "label": "Scope 1"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2021": [
+        {
+          "value": 114,
+          "unit": "1,000 t-CO2",
+          "label": "Scope 2"
+        }
+      ],
+      "2022": [
+        {
+          "value": 115,
+          "unit": "1,000 t-CO2",
+          "label": "Scope 2"
+        }
+      ]
+    },
+    "scope_3": {
+      "2022": [
+        {
+          "value": 48,
+          "unit": "kt-CO2",
+          "label": "Logistics"
+        }
+      ]
+    }
+  }
+}

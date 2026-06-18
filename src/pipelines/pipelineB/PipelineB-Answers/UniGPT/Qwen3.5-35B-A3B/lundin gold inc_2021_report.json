@@ -1,0 +1,34 @@
+{
+  "report_name": "Lundin Gold 2021 Sustainability Report",
+  "report_title": "Lundin Gold 2021 Sustainability Report",
+  "emissions": {
+    "scope_1": {
+      "2021": [
+        {
+          "value": 25399,
+          "unit": "tCO2e",
+          "label": "Total"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2021": [
+        {
+          "value": 24170,
+          "unit": "tCO2e",
+          "label": "Total"
+        }
+      ]
+    },
+    "scope_3": {
+      "2021": [
+        {
+          "value": 746750,
+          "unit": "tCO2e",
+          "label": "Total"
+        }
+      ]
+    }
+  }
+}

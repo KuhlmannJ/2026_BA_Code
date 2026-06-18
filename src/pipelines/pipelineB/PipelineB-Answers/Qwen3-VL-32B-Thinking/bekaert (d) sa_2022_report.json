@@ -1,0 +1,359 @@
+{
+  "report_name": "Bekaert Integrated Annual Report 2022",
+  "report_title": "Bekaert Integrated Annual Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 286932,
+          "unit": "ton CO2",
+          "label": "natural gas & LPG"
+        },
+        {
+          "value": 7867,
+          "unit": "ton CO2",
+          "label": "fuel"
+        }
+      ],
+      "2020": [
+        {
+          "value": 263785,
+          "unit": "ton CO2",
+          "label": "natural gas & LPG"
+        },
+        {
+          "value": 7445,
+          "unit": "ton CO2",
+          "label": "fuel"
+        }
+      ],
+      "2021": [
+        {
+          "value": 277023,
+          "unit": "ton CO2",
+          "label": "natural gas & LPG"
+        },
+        {
+          "value": 7887,
+          "unit": "ton CO2",
+          "label": "fuel"
+        }
+      ],
+      "2022": [
+        {
+          "value": 262581,
+          "unit": "ton CO2",
+          "label": "natural gas & LPG"
+        },
+        {
+          "value": 7388,
+          "unit": "ton CO2",
+          "label": "fuel"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [
+        {
+          "value": 0,
+          "unit": "ton CO2",
+          "label": "Belgium"
+        },
+        {
+          "value": 15541,
+          "unit": "ton CO2",
+          "label": "Chile"
+        },
+        {
+          "value": 794058,
+          "unit": "ton CO2",
+          "label": "China"
+        },
+        {
+          "value": 80962,
+          "unit": "ton CO2",
+          "label": "India"
+        },
+        {
+          "value": 161983,
+          "unit": "ton CO2",
+          "label": "Indonesia"
+        },
+        {
+          "value": 162,
+          "unit": "ton CO2",
+          "label": "Slovakia"
+        },
+        {
+          "value": 87027,
+          "unit": "ton CO2",
+          "label": "Turkey"
+        },
+        {
+          "value": 92616,
+          "unit": "ton CO2",
+          "label": "US"
+        }
+      ],
+      "2020": [
+        {
+          "value": 8382,
+          "unit": "ton CO2",
+          "label": "Belgium"
+        },
+        {
+          "value": 14087,
+          "unit": "ton CO2",
+          "label": "Chile"
+        },
+        {
+          "value": 750752,
+          "unit": "ton CO2",
+          "label": "China"
+        },
+        {
+          "value": 74461,
+          "unit": "ton CO2",
+          "label": "India"
+        },
+        {
+          "value": 148406,
+          "unit": "ton CO2",
+          "label": "Indonesia"
+        },
+        {
+          "value": 25270,
+          "unit": "ton CO2",
+          "label": "Slovakia"
+        },
+        {
+          "value": 72933,
+          "unit": "ton CO2",
+          "label": "Turkey"
+        },
+        {
+          "value": 59126,
+          "unit": "ton CO2",
+          "label": "US"
+        }
+      ],
+      "2021": [
+        {
+          "value": 7768,
+          "unit": "ton CO2",
+          "label": "Belgium"
+        },
+        {
+          "value": 16289,
+          "unit": "ton CO2",
+          "label": "Chile"
+        },
+        {
+          "value": 777225,
+          "unit": "ton CO2",
+          "label": "China"
+        },
+        {
+          "value": 101462,
+          "unit": "ton CO2",
+          "label": "India"
+        },
+        {
+          "value": 165128,
+          "unit": "ton CO2",
+          "label": "Indonesia"
+        },
+        {
+          "value": 31525,
+          "unit": "ton CO2",
+          "label": "Slovakia"
+        },
+        {
+          "value": 90440,
+          "unit": "ton CO2",
+          "label": "Turkey"
+        },
+        {
+          "value": 71747,
+          "unit": "ton CO2",
+          "label": "US"
+        }
+      ],
+      "2022": [
+        {
+          "value": 6971,
+          "unit": "ton CO2",
+          "label": "Belgium"
+        },
+        {
+          "value": 13678,
+          "unit": "ton CO2",
+          "label": "Chile"
+        },
+        {
+          "value": 711082,
+          "unit": "ton CO2",
+          "label": "China"
+        },
+        {
+          "value": 77419,
+          "unit": "ton CO2",
+          "label": "India"
+        },
+        {
+          "value": 143252,
+          "unit": "ton CO2",
+          "label": "Indonesia"
+        },
+        {
+          "value": 31214,
+          "unit": "ton CO2",
+          "label": "Slovakia"
+        },
+        {
+          "value": 87638,
+          "unit": "ton CO2",
+          "label": "Turkey"
+        },
+        {
+          "value": 42456,
+          "unit": "ton CO2",
+          "label": "US"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 1222347,
+          "unit": "ton CO2",
+          "label": "Rubber Reinforcement"
+        },
+        {
+          "value": 95320,
+          "unit": "ton CO2",
+          "label": "Steel Wire Solutions"
+        },
+        {
+          "value": 17141,
+          "unit": "ton CO2",
+          "label": "Bridon-Bekaert Ropes Group"
+        },
+        {
+          "value": 24949,
+          "unit": "ton CO2",
+          "label": "Speciality Businesses"
+        },
+        {
+          "value": 3303,
+          "unit": "ton CO2",
+          "label": "Corporate"
+        }
+      ],
+      "2020": [
+        {
+          "value": 1088383,
+          "unit": "ton CO2",
+          "label": "Rubber Reinforcement"
+        },
+        {
+          "value": 101986,
+          "unit": "ton CO2",
+          "label": "Steel Wire Solutions"
+        },
+        {
+          "value": 19482,
+          "unit": "ton CO2",
+          "label": "Bridon-Bekaert Ropes Group"
+        },
+        {
+          "value": 24037,
+          "unit": "ton CO2",
+          "label": "Speciality Businesses"
+        },
+        {
+          "value": 2958,
+          "unit": "ton CO2",
+          "label": "Corporate"
+        }
+      ],
+      "2021": [
+        {
+          "value": 1189756,
+          "unit": "ton CO2",
+          "label": "Rubber Reinforcement"
+        },
+        {
+          "value": 117159,
+          "unit": "ton CO2",
+          "label": "Steel Wire Solutions"
+        },
+        {
+          "value": 22889,
+          "unit": "ton CO2",
+          "label": "Bridon-Bekaert Ropes Group"
+        },
+        {
+          "value": 29061,
+          "unit": "ton CO2",
+          "label": "Speciality Businesses"
+        },
+        {
+          "value": 3478,
+          "unit": "ton CO2",
+          "label": "Corporate"
+        }
+      ],
+      "2022": [
+        {
+          "value": 1071971,
+          "unit": "ton CO2",
+          "label": "Rubber Reinforcement"
+        },
+        {
+          "value": 115592,
+          "unit": "ton CO2",
+          "label": "Steel Wire Solutions"
+        },
+        {
+          "value": 25290,
+          "unit": "ton CO2",
+          "label": "Bridon-Bekaert Ropes Group"
+        },
+        {
+          "value": 26916,
+          "unit": "ton CO2",
+          "label": "Speciality Businesses"
+        },
+        {
+          "value": 1249,
+          "unit": "ton CO2",
+          "label": "Corporate"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 6045636,
+          "unit": "ton CO2e",
+          "label": "Total Scope 3 emissions"
+        }
+      ],
+      "2021": [
+        {
+          "value": 6736962,
+          "unit": "ton CO2e",
+          "label": "Total Scope 3 emissions"
+        }
+      ],
+      "2022": [
+        {
+          "value": 6187086,
+          "unit": "ton CO2e",
+          "label": "Total Scope 3 emissions"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "report_name": "AIXTRON | SUSTAINABILITY REPORT 2020",
+  "report_title": "AIXTRON | SUSTAINABILITY REPORT 2020",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 170.8,
+          "unit": "tonnes",
+          "label": "total"
+        }
+      ],
+      "2020": [
+        {
+          "value": 322.84,
+          "unit": "tonnes",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 406.6,
+          "unit": "tonnes",
+          "label": "total"
+        }
+      ],
+      "2020": [
+        {
+          "value": 398.14,
+          "unit": "tonnes",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 3637.97,
+          "unit": "tonnes",
+          "label": "total"
+        }
+      ],
+      "2020": [
+        {
+          "value": 1310.1,
+          "unit": "tonnes",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}

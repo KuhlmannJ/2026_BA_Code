@@ -1,0 +1,346 @@
+{
+  "report_name": "DAIMLER SUSTAINABILITY REPORT 2020",
+  "report_title": "DAIMLER SUSTAINABILITY REPORT 2020",
+  "emissions": {
+    "scope_1": {
+      "2016": [
+        {
+          "value": 1056,
+          "unit": "1,000 t",
+          "label": "CO2 direct (Scope 1)"
+        },
+        {
+          "value": 245,
+          "unit": "kg/vehicle",
+          "label": "Cars – CO2 direct (Scope 1)"
+        },
+        {
+          "value": 746,
+          "unit": "kg/vehicle",
+          "label": "Trucks*** – CO2 direct (Scope 1)"
+        },
+        {
+          "value": 372,
+          "unit": "kg/vehicle",
+          "label": "Vans – CO2 direct (Scope 1)"
+        },
+        {
+          "value": 1408,
+          "unit": "kg/vehicle",
+          "label": "Buses – CO2 direct (Scope 1)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 1192,
+          "unit": "1,000 t",
+          "label": "CO2 direct (Scope 1)"
+        },
+        {
+          "value": 250,
+          "unit": "kg/vehicle",
+          "label": "Cars – CO2 direct (Scope 1)"
+        },
+        {
+          "value": 663,
+          "unit": "kg/vehicle",
+          "label": "Trucks*** – CO2 direct (Scope 1)"
+        },
+        {
+          "value": 340,
+          "unit": "kg/vehicle",
+          "label": "Vans – CO2 direct (Scope 1)"
+        },
+        {
+          "value": 1177,
+          "unit": "kg/vehicle",
+          "label": "Buses – CO2 direct (Scope 1)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 1247,
+          "unit": "1,000 t",
+          "label": "CO2 direct (Scope 1)"
+        },
+        {
+          "value": 267,
+          "unit": "kg/vehicle",
+          "label": "Cars – CO2 direct (Scope 1)"
+        },
+        {
+          "value": 629,
+          "unit": "kg/vehicle",
+          "label": "Trucks*** – CO2 direct (Scope 1)"
+        },
+        {
+          "value": 355,
+          "unit": "kg/vehicle",
+          "label": "Vans – CO2 direct (Scope 1)"
+        },
+        {
+          "value": 977,
+          "unit": "kg/vehicle",
+          "label": "Buses – CO2 direct (Scope 1)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 1239,
+          "unit": "1,000 t",
+          "label": "CO2 direct (Scope 1)"
+        },
+        {
+          "value": 279,
+          "unit": "kg/vehicle",
+          "label": "Cars – CO2 direct (Scope 1)"
+        },
+        {
+          "value": 676,
+          "unit": "kg/vehicle",
+          "label": "Trucks*** – CO2 direct (Scope 1)"
+        },
+        {
+          "value": 346,
+          "unit": "kg/vehicle",
+          "label": "Vans – CO2 direct (Scope 1)"
+        },
+        {
+          "value": 1083,
+          "unit": "kg/vehicle",
+          "label": "Buses – CO2 direct (Scope 1)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 1027,
+          "unit": "1,000 t",
+          "label": "CO2 direct (Scope 1)"
+        },
+        {
+          "value": 326,
+          "unit": "kg/vehicle",
+          "label": "Cars – CO2 direct (Scope 1)"
+        },
+        {
+          "value": 742,
+          "unit": "kg/vehicle",
+          "label": "Trucks*** – CO2 direct (Scope 1)"
+        },
+        {
+          "value": 333,
+          "unit": "kg/vehicle",
+          "label": "Vans – CO2 direct (Scope 1)"
+        },
+        {
+          "value": 1471,
+          "unit": "kg/vehicle",
+          "label": "Buses – CO2 direct (Scope 1)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2016": [
+        {
+          "value": 1882,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - market-based"
+        },
+        {
+          "value": 611,
+          "unit": "kg/vehicle",
+          "label": "Cars – CO2 indirect (Scope 2) - market-based**"
+        },
+        {
+          "value": 1286,
+          "unit": "kg/vehicle",
+          "label": "Trucks*** – CO2 indirect (Scope 2) - market-based**"
+        },
+        {
+          "value": 201,
+          "unit": "kg/vehicle",
+          "label": "Vans – CO2 indirect (Scope 2) - market-based**"
+        },
+        {
+          "value": 1421,
+          "unit": "kg/vehicle",
+          "label": "Buses – CO2 indirect (Scope 2) - market-based**"
+        }
+      ],
+      "2017": [
+        {
+          "value": 1763,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - market-based"
+        },
+        {
+          "value": 565,
+          "unit": "kg/vehicle",
+          "label": "Cars – CO2 indirect (Scope 2) - market-based**"
+        },
+        {
+          "value": 1084,
+          "unit": "kg/vehicle",
+          "label": "Trucks*** – CO2 indirect (Scope 2) - market-based**"
+        },
+        {
+          "value": 157,
+          "unit": "kg/vehicle",
+          "label": "Vans – CO2 indirect (Scope 2) - market-based**"
+        },
+        {
+          "value": 1059,
+          "unit": "kg/vehicle",
+          "label": "Buses – CO2 indirect (Scope 2) - market-based**"
+        }
+      ],
+      "2018": [
+        {
+          "value": 1687,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - market-based"
+        },
+        {
+          "value": 562,
+          "unit": "kg/vehicle",
+          "label": "Cars – CO2 indirect (Scope 2) - market-based**"
+        },
+        {
+          "value": 933,
+          "unit": "kg/vehicle",
+          "label": "Trucks*** – CO2 indirect (Scope 2) - market-based**"
+        },
+        {
+          "value": 196,
+          "unit": "kg/vehicle",
+          "label": "Vans – CO2 indirect (Scope 2) - market-based**"
+        },
+        {
+          "value": 948,
+          "unit": "kg/vehicle",
+          "label": "Buses – CO2 indirect (Scope 2) - market-based**"
+        }
+      ],
+      "2019": [
+        {
+          "value": 1276,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - market-based"
+        },
+        {
+          "value": 431,
+          "unit": "kg/vehicle",
+          "label": "Cars – CO2 indirect (Scope 2) - market-based**"
+        },
+        {
+          "value": 834,
+          "unit": "kg/vehicle",
+          "label": "Trucks*** – CO2 indirect (Scope 2) - market-based**"
+        },
+        {
+          "value": 160,
+          "unit": "kg/vehicle",
+          "label": "Vans – CO2 indirect (Scope 2) - market-based**"
+        },
+        {
+          "value": 911,
+          "unit": "kg/vehicle",
+          "label": "Buses – CO2 indirect (Scope 2) - market-based**"
+        }
+      ],
+      "2020": [
+        {
+          "value": 1035,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - market-based"
+        },
+        {
+          "value": 426,
+          "unit": "kg/vehicle",
+          "label": "Cars – CO2 indirect (Scope 2) - market-based**"
+        },
+        {
+          "value": 954,
+          "unit": "kg/vehicle",
+          "label": "Trucks*** – CO2 indirect (Scope 2) - market-based**"
+        },
+        {
+          "value": 147,
+          "unit": "kg/vehicle",
+          "label": "Vans – CO2 indirect (Scope 2) - market-based**"
+        },
+        {
+          "value": 1245,
+          "unit": "kg/vehicle",
+          "label": "Buses – CO2 indirect (Scope 2) - market-based**"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2016": [
+        {
+          "value": 2141,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - location-based"
+        }
+      ],
+      "2017": [
+        {
+          "value": 2041,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - location-based"
+        }
+      ],
+      "2018": [
+        {
+          "value": 1985,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - location-based"
+        }
+      ],
+      "2019": [
+        {
+          "value": 1706,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - location-based"
+        }
+      ],
+      "2020": [
+        {
+          "value": 1492,
+          "unit": "1,000 t",
+          "label": "CO2 indirect (Scope 2) - location-based"
+        }
+      ]
+    },
+    "scope_3": {
+      "2020": [
+        {
+          "value": 8.1,
+          "unit": "tons per vehicle",
+          "label": "Scope 3 Production"
+        },
+        {
+          "value": 1.0,
+          "unit": "tons per vehicle",
+          "label": "Scope 3 Logistics"
+        },
+        {
+          "value": 5.6,
+          "unit": "tons per vehicle",
+          "label": "Scope 3 Use phase: Well-to-tank"
+        },
+        {
+          "value": 33.7,
+          "unit": "tons per vehicle",
+          "label": "Scope 3 Use phase: Tank-to-wheel"
+        },
+        {
+          "value": 0.4,
+          "unit": "tons per vehicle",
+          "label": "Scope 3 End of Life"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "report_name": "Moringa & Co., Ltd. CSR Report 2020",
+  "report_title": "Moringa & Co., Ltd. CSR Report 2020",
+  "emissions": {
+    "scope_1": {
+      "2018/3": [
+        {
+          "value": 56745,
+          "unit": "t-CO2",
+          "label": "CO2 emissions"
+        }
+      ],
+      "2019/3": [
+        {
+          "value": 58133,
+          "unit": "t-CO2",
+          "label": "CO2 emissions"
+        }
+      ],
+      "2020/3": [
+        {
+          "value": 57048,
+          "unit": "t-CO2",
+          "label": "CO2 emissions"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2018/3": [
+        {
+          "value": 52024,
+          "unit": "t-CO2e",
+          "label": "Total"
+        }
+      ],
+      "2019/3": [
+        {
+          "value": 49605,
+          "unit": "t-CO2e",
+          "label": "Total"
+        }
+      ],
+      "2020/3": [
+        {
+          "value": 49605,
+          "unit": "t-CO2e",
+          "label": "Total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2018/3": [
+        {
+          "value": 52024,
+          "unit": "t-CO2e",
+          "label": "Total"
+        }
+      ],
+      "2019/3": [
+        {
+          "value": 49605,
+          "unit": "t-CO2e",
+          "label": "Total"
+        }
+      ],
+      "2020/3": [
+        {
+          "value": 49605,
+          "unit": "t-CO2e",
+          "label": "Total"
+        }
+      ]
+    },
+    "scope_3": {
+      "2018/3": [
+        {
+          "value": 248003,
+          "unit": "t-CO2e",
+          "label": "Purchased goods and services"
+        },
+        {
+          "value": 122971,
+          "unit": "t-CO2e",
+          "label": "Capital goods"
+        },
+        {
+          "value": 3774,
+          "unit": "t-CO2e",
+          "label": "Fuel- and energy-related activities"
+        },
+        {
+          "value": 15809,
+          "unit": "t-CO2e",
+          "label": "Upstream transportation and distribution"
+        },
+        {
+          "value": 4176,
+          "unit": "t-CO2e",
+          "label": "Waste generated in operations"
+        },
+        {
+          "value": 618,
+          "unit": "t-CO2e",
+          "label": "Business travel"
+        },
+        {
+          "value": 1607,
+          "unit": "t-CO2e",
+          "label": "Employee commuting"
+        },
+        {
+          "value": 557,
+          "unit": "t-CO2e",
+          "label": "Upstream leased assets"
+        }
+      ]
+    }
+  }
+}

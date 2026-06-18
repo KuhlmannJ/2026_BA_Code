@@ -1,0 +1,46 @@
+{
+  "report_name": "Fresenius Annual Report 2019",
+  "report_title": "Annual Report 2019",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 227,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "Scope 1"
+        }
+      ],
+      "2018": [
+        {
+          "value": 219,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "Scope 1"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [
+        {
+          "value": 547,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "Scope 2"
+        }
+      ],
+      "2018": [
+        {
+          "value": 557,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "Scope 2"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2019": [],
+      "2018": []
+    },
+    "scope_3": {
+      "2019": [],
+      "2018": []
+    }
+  }
+}

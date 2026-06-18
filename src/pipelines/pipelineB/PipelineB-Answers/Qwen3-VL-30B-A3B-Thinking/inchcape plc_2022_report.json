@@ -1,0 +1,57 @@
+{
+  "report_name": "INCHCAPE ANNUAL REPORT AND ACCOUNTS 2022",
+  "report_title": "INCHCAPE ANNUAL REPORT AND ACCOUNTS 2022",
+  "emissions": {
+    "scope_1": {
+      "2022": [
+        {
+          "value": 3617,
+          "unit": "tCO₂e",
+          "label": "UK & Offshore"
+        },
+        {
+          "value": 17002,
+          "unit": "tCO₂e",
+          "label": "Global"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2022": [
+        {
+          "value": 7,
+          "unit": "tCO₂e",
+          "label": "UK & Offshore"
+        },
+        {
+          "value": 13803,
+          "unit": "tCO₂e",
+          "label": "Global"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2022": [
+        {
+          "value": 2886,
+          "unit": "tCO₂e",
+          "label": "UK & Offshore"
+        },
+        {
+          "value": 22223,
+          "unit": "tCO₂e",
+          "label": "Global"
+        }
+      ]
+    },
+    "scope_3": {
+      "2022": [
+        {
+          "value": 218517,
+          "unit": "tCO₂e",
+          "label": "Total"
+        }
+      ]
+    }
+  }
+}

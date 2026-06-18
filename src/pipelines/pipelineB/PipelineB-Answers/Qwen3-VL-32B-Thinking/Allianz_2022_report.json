@@ -1,0 +1,164 @@
+{
+  "report_name": "Allianz Group Sustainability Report 2022",
+  "report_title": "Allianz Group Sustainability Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 42,
+          "unit": "ktCO2eq",
+          "label": "Scope 1"
+        }
+      ],
+      "2020": [
+        {
+          "value": 28714,
+          "unit": "t CO2e",
+          "label": "Scope 1 – Direct GHG emissions"
+        },
+        {
+          "value": 29,
+          "unit": "ktCO2eq",
+          "label": "Scope 1"
+        }
+      ],
+      "2021": [
+        {
+          "value": 28699,
+          "unit": "t CO2e",
+          "label": "Scope 1 – Direct GHG emissions"
+        },
+        {
+          "value": 29,
+          "unit": "ktCO2eq",
+          "label": "Scope 1"
+        }
+      ],
+      "2022": [
+        {
+          "value": 30953,
+          "unit": "t CO2e",
+          "label": "Scope 1 – Direct GHG emissions"
+        },
+        {
+          "value": 31,
+          "unit": "ktCO2eq",
+          "label": "Scope 1"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [
+        {
+          "value": 143,
+          "unit": "ktCO2eq",
+          "label": "Scope 2 – market based"
+        }
+      ],
+      "2020": [
+        {
+          "value": 100722,
+          "unit": "t CO2e",
+          "label": "Scope 2 – Indirect GHG emissions (market based)"
+        },
+        {
+          "value": 101,
+          "unit": "ktCO2eq",
+          "label": "Scope 2 – market based"
+        }
+      ],
+      "2021": [
+        {
+          "value": 54689,
+          "unit": "t CO2e",
+          "label": "Scope 2 – Indirect GHG emissions (market based)"
+        },
+        {
+          "value": 55,
+          "unit": "ktCO2eq",
+          "label": "Scope 2 – market based"
+        }
+      ],
+      "2022": [
+        {
+          "value": 30490,
+          "unit": "t CO2e",
+          "label": "Scope 2 – Indirect GHG emissions (market based)"
+        },
+        {
+          "value": 92,
+          "unit": "ktCO2eq",
+          "label": "Scope 2 – market based"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2020": [
+        {
+          "value": 180826,
+          "unit": "t CO2e",
+          "label": "Scope 2 – Indirect GHG emissions (location based)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 149599,
+          "unit": "t CO2e",
+          "label": "Scope 2 – Indirect GHG emissions (location based)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 138339,
+          "unit": "t CO2e",
+          "label": "Scope 2 – Indirect GHG emissions (location based)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 334,
+          "unit": "ktCO2eq",
+          "label": "Scope 3"
+        }
+      ],
+      "2020": [
+        {
+          "value": 73916,
+          "unit": "t CO2e",
+          "label": "Scope 3 – Other indirect GHG emissions"
+        },
+        {
+          "value": 203,
+          "unit": "ktCO2eq",
+          "label": "Scope 3"
+        }
+      ],
+      "2021": [
+        {
+          "value": 55359,
+          "unit": "t CO2e",
+          "label": "Scope 3 – Other indirect GHG emissions"
+        },
+        {
+          "value": 139,
+          "unit": "ktCO2eq",
+          "label": "Scope 3"
+        }
+      ],
+      "2022": [
+        {
+          "value": 92467,
+          "unit": "t CO2e",
+          "label": "Scope 3 – Other indirect GHG emissions"
+        },
+        {
+          "value": 154,
+          "unit": "ktCO2eq",
+          "label": "Scope 3"
+        }
+      ]
+    }
+  }
+}

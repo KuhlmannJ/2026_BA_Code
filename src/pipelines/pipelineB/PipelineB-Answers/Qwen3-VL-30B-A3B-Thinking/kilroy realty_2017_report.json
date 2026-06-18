@@ -1,0 +1,38 @@
+{
+  "report_name": "SUSTAINABILITY PROGRAM",
+  "report_title": "SUSTAINABILITY PROGRAM",
+  "emissions": {
+    "scope_1": {
+      "2016": [
+        {
+          "value": 4059,
+          "unit": "Tonnes",
+          "label": "Whole Portfolio"
+        }
+      ],
+      "2017": [
+        {
+          "value": 4641,
+          "unit": "Tonnes",
+          "label": "Whole Portfolio"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2016": [
+        {
+          "value": 44145,
+          "unit": "Tonnes",
+          "label": "Whole Portfolio"
+        }
+      ],
+      "2017": [
+        {
+          "value": 42947,
+          "unit": "Tonnes",
+          "label": "Whole Portfolio"
+        }
+      ]
+    }
+  }
+}

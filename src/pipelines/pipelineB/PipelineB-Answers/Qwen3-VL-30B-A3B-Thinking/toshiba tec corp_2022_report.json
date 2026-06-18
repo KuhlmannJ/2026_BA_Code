@@ -1,0 +1,36 @@
+{
+  "report_name": "Toshiba Tec Group Integrated Report 2022",
+  "report_title": "Toshiba Tec Group Integrated Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2021": [
+        {
+          "value": 3.1,
+          "unit": "thousand t-CO2",
+          "label": "Direct emissions (Scope 1)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2021": [
+        {
+          "value": 45.5,
+          "unit": "thousand t-CO2",
+          "label": "Indirect emissions associated with energy use (Scope 2)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2021": []
+    },
+    "scope_3": {
+      "2021": [
+        {
+          "value": 466.1,
+          "unit": "thousand t-CO2",
+          "label": "Total Scope 3"
+        }
+      ]
+    }
+  }
+}

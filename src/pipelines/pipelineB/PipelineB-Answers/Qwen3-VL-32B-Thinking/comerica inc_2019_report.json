@@ -1,0 +1,336 @@
+{
+  "report_name": "2019 Comerica Corporate Responsibility Report",
+  "report_title": "2019 Comerica Corporate Responsibility Report",
+  "emissions": {
+    "scope_1": {
+      "2012": [
+        {
+          "value": 6950,
+          "unit": "Metric tons of CO2e",
+          "label": "Scope 1 GHG emissions- natural gas, jet fuel, diesel, gasoline, and refrigerants"
+        }
+      ],
+      "2018": [
+        {
+          "value": 6371,
+          "unit": "Metric tons of CO2e",
+          "label": "Scope 1 GHG emissions- natural gas, jet fuel, diesel, gasoline, and refrigerants"
+        }
+      ],
+      "2019": [
+        {
+          "value": 6304,
+          "unit": "Metric tons of CO2e",
+          "label": "Scope 1 GHG emissions- natural gas, jet fuel, diesel, gasoline, and refrigerants"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2012": [
+        {
+          "value": 74784,
+          "unit": "Metric tons of CO2e",
+          "label": "Scope 2 GHG emissions- electricity, steam, and chilled water in company-controlled buildings"
+        }
+      ],
+      "2018": [
+        {
+          "value": 39916,
+          "unit": "Metric tons of CO2e",
+          "label": "Scope 2 GHG emissions- electricity, steam, and chilled water in company-controlled buildings"
+        }
+      ],
+      "2019": [
+        {
+          "value": 36316,
+          "unit": "Metric tons of CO2e",
+          "label": "Scope 2 GHG emissions- electricity, steam, and chilled water in company-controlled buildings"
+        }
+      ]
+    },
+    "scope_3": {
+      "2012": [
+        {
+          "value": 3055,
+          "unit": "Metric tons of CO2e",
+          "label": "Total lifecycle paper emissions**"
+        },
+        {
+          "value": 1270,
+          "unit": "Metric tons of CO2e",
+          "label": "Life cycle emissions-office copy paper use**"
+        },
+        {
+          "value": 1563,
+          "unit": "Metric tons of CO2e",
+          "label": "Life cycle emissions-other office paper use**"
+        },
+        {
+          "value": 222,
+          "unit": "Metric tons of CO2e",
+          "label": "Life cycle emissions-marketing paper use**"
+        },
+        {
+          "value": 520,
+          "unit": "Metric tons of CO2e",
+          "label": "Total lifecycle computer emissions"
+        },
+        {
+          "value": 137,
+          "unit": "Metric tons of CO2e",
+          "label": "Total lifecycle carpeting emissions"
+        },
+        {
+          "value": 2052,
+          "unit": "Metric tons of CO2e",
+          "label": "Scope 3 lifecycle emissions associated with landfilled mixed solid waste"
+        },
+        {
+          "value": 4431,
+          "unit": "Metric tons of CO2e",
+          "label": "Employee business travel by air and car"
+        },
+        {
+          "value": 1257,
+          "unit": "Metric tons of CO2e",
+          "label": "Total subleased emissions"
+        },
+        {
+          "value": 726,
+          "unit": "Metric tons of CO2e",
+          "label": "Subleased metered electricity"
+        },
+        {
+          "value": 423,
+          "unit": "Metric tons of CO2e",
+          "label": "Subleased estimated electricity"
+        },
+        {
+          "value": 81,
+          "unit": "Metric tons of CO2e",
+          "label": "Subleased natural gas"
+        },
+        {
+          "value": 28,
+          "unit": "Metric tons of CO2e",
+          "label": "Subleased steam"
+        }
+      ],
+      "2018": [
+        {
+          "value": 5257,
+          "unit": "Metric tons of CO2e",
+          "label": "Total lifecycle paper emissions**"
+        },
+        {
+          "value": 1964,
+          "unit": "Metric tons of CO2e",
+          "label": "Life cycle emissions-office copy paper use**"
+        },
+        {
+          "value": 2930,
+          "unit": "Metric tons of CO2e",
+          "label": "Life cycle emissions-other office paper use**"
+        },
+        {
+          "value": 364,
+          "unit": "Metric tons of CO2e",
+          "label": "Life cycle emissions-marketing paper use**"
+        },
+        {
+          "value": 3031,
+          "unit": "Metric tons of CO2e",
+          "label": "Total lifecycle computer emissions"
+        },
+        {
+          "value": 289,
+          "unit": "Metric tons of CO2e",
+          "label": "Total lifecycle carpeting emissions"
+        },
+        {
+          "value": 1283,
+          "unit": "Metric tons of CO2e",
+          "label": "Total lifecycle furniture emissions"
+        },
+        {
+          "value": 1868,
+          "unit": "Metric tons of CO2e",
+          "label": "Electricity transmission/distribution loss emissions"
+        },
+        {
+          "value": 133,
+          "unit": "Metric tons of CO2e",
+          "label": "Shipping emissions"
+        },
+        {
+          "value": 59,
+          "unit": "Metric tons of CO2e",
+          "label": "Armored vehicle emissions"
+        },
+        {
+          "value": 514,
+          "unit": "Metric tons of CO2e",
+          "label": "Scope 3 lifecycle emissions associated with landfilled mixed solid waste"
+        },
+        {
+          "value": 3453,
+          "unit": "Metric tons of CO2e",
+          "label": "Employee business travel by air and car"
+        },
+        {
+          "value": 25544,
+          "unit": "Metric tons of CO2e",
+          "label": "Employee commuting emissions"
+        },
+        {
+          "value": 1027,
+          "unit": "Metric tons of CO2e",
+          "label": "Total subleased emissions"
+        },
+        {
+          "value": 261,
+          "unit": "Metric tons of CO2e",
+          "label": "Subleased metered electricity"
+        },
+        {
+          "value": 560,
+          "unit": "Metric tons of CO2e",
+          "label": "Subleased estimated electricity"
+        },
+        {
+          "value": 25,
+          "unit": "Metric tons of CO2e",
+          "label": "Subleased natural gas"
+        },
+        {
+          "value": 0,
+          "unit": "Metric tons of CO2e",
+          "label": "Subleased steam"
+        },
+        {
+          "value": 6,
+          "unit": "Metric tons of CO2e",
+          "label": "Subleased estimated heat-natural gas"
+        },
+        {
+          "value": 175,
+          "unit": "Metric tons of CO2e",
+          "label": "Subleased corporate jet emissions"
+        },
+        {
+          "value": 181,
+          "unit": "Metric tons of CO2e",
+          "label": "CBRE Business Travel on Comerica Account"
+        }
+      ],
+      "2019": [
+        {
+          "value": 4560,
+          "unit": "Metric tons of CO2e",
+          "label": "Total lifecycle paper emissions**"
+        },
+        {
+          "value": 1662,
+          "unit": "Metric tons of CO2e",
+          "label": "Life cycle emissions-office copy paper use**"
+        },
+        {
+          "value": 2721,
+          "unit": "Metric tons of CO2e",
+          "label": "Life cycle emissions-other office paper use**"
+        },
+        {
+          "value": 176,
+          "unit": "Metric tons of CO2e",
+          "label": "Life cycle emissions-marketing paper use**"
+        },
+        {
+          "value": 2816,
+          "unit": "Metric tons of CO2e",
+          "label": "Total lifecycle computer emissions"
+        },
+        {
+          "value": 504,
+          "unit": "Metric tons of CO2e",
+          "label": "Total lifecycle carpeting emissions"
+        },
+        {
+          "value": 989,
+          "unit": "Metric tons of CO2e",
+          "label": "Total lifecycle furniture emissions"
+        },
+        {
+          "value": 1708,
+          "unit": "Metric tons of CO2e",
+          "label": "Electricity transmission/distribution loss emissions"
+        },
+        {
+          "value": 195,
+          "unit": "Metric tons of CO2e",
+          "label": "Shipping emissions"
+        },
+        {
+          "value": 69,
+          "unit": "Metric tons of CO2e",
+          "label": "Armored vehicle emissions"
+        },
+        {
+          "value": 505,
+          "unit": "Metric tons of CO2e",
+          "label": "Scope 3 lifecycle emissions associated with landfilled mixed solid waste"
+        },
+        {
+          "value": 3515,
+          "unit": "Metric tons of CO2e",
+          "label": "Employee business travel by air and car"
+        },
+        {
+          "value": 25837,
+          "unit": "Metric tons of CO2e",
+          "label": "Employee commuting emissions"
+        },
+        {
+          "value": 629,
+          "unit": "Metric tons of CO2e",
+          "label": "Total subleased emissions"
+        },
+        {
+          "value": 397,
+          "unit": "Metric tons of CO2e",
+          "label": "Subleased metered electricity"
+        },
+        {
+          "value": 12,
+          "unit": "Metric tons of CO2e",
+          "label": "Subleased estimated electricity"
+        },
+        {
+          "value": 71,
+          "unit": "Metric tons of CO2e",
+          "label": "Subleased natural gas"
+        },
+        {
+          "value": 0,
+          "unit": "Metric tons of CO2e",
+          "label": "Subleased steam"
+        },
+        {
+          "value": 0,
+          "unit": "Metric tons of CO2e",
+          "label": "Subleased estimated heat-natural gas"
+        },
+        {
+          "value": 149,
+          "unit": "Metric tons of CO2e",
+          "label": "Subleased corporate jet emissions"
+        },
+        {
+          "value": 171,
+          "unit": "Metric tons of CO2e",
+          "label": "CBRE Business Travel on Comerica Account"
+        }
+      ]
+    }
+  }
+}
