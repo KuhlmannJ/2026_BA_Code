@@ -13,6 +13,11 @@ from pathlib import Path
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
+# MODEL_NAME = "Qwen/Qwen3-VL-235B-A22B-Thinking"   # VRAM-ERROR, 500GB download :)
+# MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"         # 66.7GB VRAM, takes 5min/report, 2nd 88GB VRAM, 67.21 GB
+# MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"     # 62.1GB VRAM
+# MODEL_NAME = "Qwen/Qwen3-VL-32B-Instruct"         # NON-Thinking
+
 
 # ── Arguments for Dev'ing
 parser = argparse.ArgumentParser()
@@ -52,11 +57,6 @@ def strip_thinking(text: str) -> str:
 banner("STEP 0: GLOBAL VARIABLES")
 
 MAX_TOKENS = args.maxTokens
-
-# MODEL_NAME = "Qwen/Qwen3-VL-235B-A22B-Thinking"   # VRAM-ERROR, 500GB download :)
-# MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"         # 66.7GB VRAM, takes 5min/report, 2nd 88GB VRAM, 67.21 GB
-# MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"     # 62.1GB VRAM
-# MODEL_NAME = "Qwen/Qwen3-VL-32B-Instruct"         #NON-Thinking
 MODEL_NAME = args.model
 
 # NOTE: Fixed RETRIEVAL_DIR!
