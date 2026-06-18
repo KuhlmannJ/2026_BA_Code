@@ -1,3 +1,6 @@
+#install.packages("rjson")
+library("rjson")
+
 df_dense <- read.csv(file="src/pipelines/pipelineB/PipelineB-Answers/Qwen3-VL-32B-Thinking/***results.csv")
 df_moe <- read.csv(file="src/pipelines/pipelineB/PipelineB-Answers/Qwen3-VL-30B-A3B-Thinking/***results.csv")
 
@@ -19,9 +22,4 @@ compare_per_report$moe_faster <- compare_per_report$duration_moe < compare_per_r
 
 compare_per_report[compare_per_report$moe_faster == TRUE & compare_per_report$pages == 7, ]
 
-install.packages("rjson")
-
-library("rjson")
-json_file <- "src/pipelines/pipelineB/PipelineB-Answers/Qwen3-VL-32B-Thinking/addtech_2022_report.json"
-json_data <- fromJSON(paste(readLines(json_file), collapse=""))
-
+json_data <- fromJSON(paste(readLines("src/pipelines/pipelineB/PipelineB-Answers/Qwen3-VL-32B-Thinking/addtech_2022_report.json"), collapse=""))
