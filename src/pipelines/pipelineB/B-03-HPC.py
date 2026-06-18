@@ -16,7 +16,8 @@ load_dotenv(find_dotenv())
 
 # ── Arguments for Dev'ing
 parser = argparse.ArgumentParser()
-parser.add_argument("--test",       "-t",   action="store_true", help="Toggle Testing Path")
+parser.add_argument("--test",       "-t",   action="store_true" , help="Toggle Testing Path")
+parser.add_argument("--model",      "-m"                        , help="Give Model Name")
 parser.add_argument("--maxTokens",  "-mt",  type=int, default=16384, help="Control Thinking Tokens")
 # A hard-limit on the length of the thought process
 # 16384 was seen in some HF examples of the authors, besides 128 (way too small)
@@ -53,10 +54,10 @@ banner("STEP 0: GLOBAL VARIABLES")
 MAX_TOKENS = args.maxTokens
 
 # MODEL_NAME = "Qwen/Qwen3-VL-235B-A22B-Thinking"   # VRAM-ERROR, 500GB download :)
-# MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"           # 66.7GB VRAM, takes 5min/report, 2nd 88GB VRAM, 67.21 GB
+# MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"         # 66.7GB VRAM, takes 5min/report, 2nd 88GB VRAM, 67.21 GB
 # MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"     # 62.1GB VRAM
-
-MODEL_NAME = "Qwen/Qwen3-VL-32B-Instruct" #NON-Thinking
+# MODEL_NAME = "Qwen/Qwen3-VL-32B-Instruct"         #NON-Thinking
+MODEL_NAME = args.model
 
 # NOTE: Fixed RETRIEVAL_DIR!
 RETRIEVAL_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals/nvidia/nemotron-colembed-vl-8b-v2/")
