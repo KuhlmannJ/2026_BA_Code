@@ -20,8 +20,11 @@ compare_per_report$abs_differnece   <- abs(compare_per_report$duration_second - 
 
 summary(compare_per_report)
 
-write.csv(compare_per_report, file="PipelineB_Dense_V1-V2.csv", row.names=FALSE)
+# write.csv(compare_per_report, file="PipelineB_Dense_V1-V2.csv", row.names=FALSE)
 
 # Top 5 most huge differences
 compare_per_report_diff <- compare_per_report[order(compare_per_report$abs_differnece, decreasing = TRUE), ]
 head(compare_per_report_diff$report)
+
+value_compare <- merge(df_1st, df_2nd, by = "report", suffixes = c("1st","2nd"))
+
