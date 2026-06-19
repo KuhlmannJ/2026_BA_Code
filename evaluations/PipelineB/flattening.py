@@ -35,12 +35,20 @@ def flatten_json(filepath: Path) -> list[dict]:
     return rows
 
 inputs  = [
-    "src/pipelines/pipelineB/PipelineB-Answers/Qwen3-VL-32B-Thinking",
-    "src/pipelines/pipelineB/PipelineB-Answers/Qwen3-VL-30B-A3B-Thinking"
+    "./evaluations/PipelineB/PipelineB-Answers/1st_Qwen3-VL-30B-A3B-Thinking",
+    "./evaluations/PipelineB/PipelineB-Answers/1st_Qwen3-VL-32B-Instruct",
+    "./evaluations/PipelineB/PipelineB-Answers/1st_Qwen3-VL-32B-Thinking",
+    "./evaluations/PipelineB/PipelineB-Answers/2nd_Qwen3-VL-32B-Instruct",
+    "./evaluations/PipelineB/PipelineB-Answers/2nd_Qwen3-VL-30B-A3B-Thinking",
+    "./evaluations/PipelineB/PipelineB-Answers/2nd_Qwen3-VL-32B-Thinking",
 ]
 outputs = [
-    "evaluations/PipelineB/pipelineB_dense.csv",
-    "evaluations/PipelineB/pipelineB_moe.csv"
+    "./evaluations/PipelineB/PipelineB-Answers/1st_Qwen3-VL-32B-Instruct/1st_Qwen3-VL-32B-Instruct.csv",
+    "./evaluations/PipelineB/PipelineB-Answers/1st_Qwen3-VL-30B-A3B-Thinking/1st_Qwen3-VL-30B-A3B-Thinking.csv",
+    "./evaluations/PipelineB/PipelineB-Answers/1st_Qwen3-VL-32B-Thinking/1st_Qwen3-VL-32B-Thinking.csv",
+    "./evaluations/PipelineB/PipelineB-Answers/2nd_Qwen3-VL-32B-Instruct/2nd_Qwen3-VL-32B-Instruct.csv",
+    "./evaluations/PipelineB/PipelineB-Answers/2nd_Qwen3-VL-30B-A3B-Thinking/2nd_Qwen3-VL-30B-A3B-Thinking.csv",
+    "./evaluations/PipelineB/PipelineB-Answers/2nd_Qwen3-VL-32B-Thinking/2nd_Qwen3-VL-32B-Thinking.csv",
 ]
 
 for i in range(len(inputs)):
