@@ -644,15 +644,15 @@ sumitomo corporation_2021_report,scope_3,2020,34381,t-CO2e,Scope3
 toshiba tec corp_2022_report,scope_1,2021,3.1,thousand t-CO2,Direct emissions (Scope 1)
 toshiba tec corp_2022_report,scope_2_market_based,2021,45.5,thousand t-CO2,Indirect emissions associated with energy use (Scope 2)
 toshiba tec corp_2022_report,scope_3,2021,466.1,thousand t-CO2,Total Scope 3
-uniper_2019_report.pdf,scope_1,2019,47.0,million metric tons,Direct CO₂ emissions from fuel combustion (total)
-uniper_2019_report.pdf,scope_1,2018,59.5,million metric tons,Direct CO₂ emissions from fuel combustion (total)
-uniper_2019_report.pdf,scope_1,2017,63.3,million metric tons,Direct CO₂ emissions from fuel combustion (total)
-uniper_2019_report.pdf,scope_2_market_based,2019,1573672,metric t CO₂,Indirect emissions from purchased electricity and heat and cooling (market-based total)
-uniper_2019_report.pdf,scope_2_market_based,2018,1676689,metric t CO₂,Indirect emissions from purchased electricity and heat and cooling (market-based total)
-uniper_2019_report.pdf,scope_2_location_based,2019,1129277,metric t CO₂,Indirect emissions from purchased electricity and heat and cooling (location-based total)
-uniper_2019_report.pdf,scope_2_location_based,2018,1101032,metric t CO₂,Indirect emissions from purchased electricity and heat and cooling (location-based total)
-uniper_2019_report.pdf,scope_3,2019,8.7,m metric t CO₂,Upstream indirect Scope 3 CO₂ emissions
-uniper_2019_report.pdf,scope_3,2018,10.3,m metric t CO₂,Upstream indirect Scope 3 CO₂ emissions
+uniper_2019_report,scope_1,2019,47.0,million metric tons,Direct CO₂ emissions from fuel combustion (total)
+uniper_2019_report,scope_1,2018,59.5,million metric tons,Direct CO₂ emissions from fuel combustion (total)
+uniper_2019_report,scope_1,2017,63.3,million metric tons,Direct CO₂ emissions from fuel combustion (total)
+uniper_2019_report,scope_2_market_based,2019,1573672,metric t CO₂,Indirect emissions from purchased electricity and heat and cooling (market-based total)
+uniper_2019_report,scope_2_market_based,2018,1676689,metric t CO₂,Indirect emissions from purchased electricity and heat and cooling (market-based total)
+uniper_2019_report,scope_2_location_based,2019,1129277,metric t CO₂,Indirect emissions from purchased electricity and heat and cooling (location-based total)
+uniper_2019_report,scope_2_location_based,2018,1101032,metric t CO₂,Indirect emissions from purchased electricity and heat and cooling (location-based total)
+uniper_2019_report,scope_3,2019,8.7,m metric t CO₂,Upstream indirect Scope 3 CO₂ emissions
+uniper_2019_report,scope_3,2018,10.3,m metric t CO₂,Upstream indirect Scope 3 CO₂ emissions
 varta ag_2021_report,scope_1,2019,3598,CO₂ eq t,Scope 1
 varta ag_2021_report,scope_1,2020,4417,CO₂ eq t,Scope 1
 varta ag_2021_report,scope_1,2021,5894,CO₂ eq t,Scope 1

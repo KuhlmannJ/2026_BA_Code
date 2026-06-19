@@ -619,15 +619,15 @@ toshiba tec corp_2022_report,scope_2_market_based,2021,45.5,thousand t-CO2,Indir
 toshiba tec corp_2022_report,scope_2_location_based,2021,45.5,thousand t-CO2,Indirect emissions associated with energy use (Scope 2)
 toshiba tec corp_2022_report,scope_3,2021,161.0,thousand t-CO2,Upstream (Scope 3)
 toshiba tec corp_2022_report,scope_3,2021,257.0,thousand t-CO2,Downstream (Scope 3)
-uniper_2019_report.pdf,scope_1,2019,47.0,m metric tons of CO2,Direct scope 1 emissions
-uniper_2019_report.pdf,scope_1,2018,59.5,m metric tons of CO2,Direct scope 1 emissions
-uniper_2019_report.pdf,scope_1,2017,63.3,m metric tons of CO2,Direct scope 1 emissions
-uniper_2019_report.pdf,scope_2_market_based,2019,1.57,m metric tons of CO2,Indirect scope 2 emissions (market-based method)
-uniper_2019_report.pdf,scope_2_market_based,2018,1.67,m metric tons of CO2,Indirect scope 2 emissions (market-based method)
-uniper_2019_report.pdf,scope_2_location_based,2019,1.12,m metric tons of CO2,Indirect scope 2 emissions (location-based method)
-uniper_2019_report.pdf,scope_2_location_based,2018,1.1,m metric tons of CO2,Indirect scope 2 emissions (location-based method)
-uniper_2019_report.pdf,scope_3,2019,8.7,m metric tons of CO2,Upstream indirect Scope 3 CO2 emissions
-uniper_2019_report.pdf,scope_3,2018,10.3,m metric tons of CO2,Upstream indirect Scope 3 CO2 emissions
+uniper_2019_report,scope_1,2019,47.0,m metric tons of CO2,Direct scope 1 emissions
+uniper_2019_report,scope_1,2018,59.5,m metric tons of CO2,Direct scope 1 emissions
+uniper_2019_report,scope_1,2017,63.3,m metric tons of CO2,Direct scope 1 emissions
+uniper_2019_report,scope_2_market_based,2019,1.57,m metric tons of CO2,Indirect scope 2 emissions (market-based method)
+uniper_2019_report,scope_2_market_based,2018,1.67,m metric tons of CO2,Indirect scope 2 emissions (market-based method)
+uniper_2019_report,scope_2_location_based,2019,1.12,m metric tons of CO2,Indirect scope 2 emissions (location-based method)
+uniper_2019_report,scope_2_location_based,2018,1.1,m metric tons of CO2,Indirect scope 2 emissions (location-based method)
+uniper_2019_report,scope_3,2019,8.7,m metric tons of CO2,Upstream indirect Scope 3 CO2 emissions
+uniper_2019_report,scope_3,2018,10.3,m metric tons of CO2,Upstream indirect Scope 3 CO2 emissions
 varta ag_2021_report,scope_1,2019,3598.0,CO2 eq t,Total
 varta ag_2021_report,scope_1,2020,4417.0,CO2 eq t,Total
 varta ag_2021_report,scope_1,2021,5894.0,CO2 eq t,Total
