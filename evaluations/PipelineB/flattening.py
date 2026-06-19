@@ -43,12 +43,12 @@ inputs  = [
     "./evaluations/PipelineB/PipelineB-Answers/2nd_Qwen3-VL-32B-Thinking",
 ]
 outputs = [
-    "./evaluations/PipelineB/PipelineB-Answers/1st_Qwen3-VL-32B-Instruct/1st_Qwen3-VL-32B-Instruct.csv",
-    "./evaluations/PipelineB/PipelineB-Answers/1st_Qwen3-VL-30B-A3B-Thinking/1st_Qwen3-VL-30B-A3B-Thinking.csv",
-    "./evaluations/PipelineB/PipelineB-Answers/1st_Qwen3-VL-32B-Thinking/1st_Qwen3-VL-32B-Thinking.csv",
-    "./evaluations/PipelineB/PipelineB-Answers/2nd_Qwen3-VL-32B-Instruct/2nd_Qwen3-VL-32B-Instruct.csv",
-    "./evaluations/PipelineB/PipelineB-Answers/2nd_Qwen3-VL-30B-A3B-Thinking/2nd_Qwen3-VL-30B-A3B-Thinking.csv",
-    "./evaluations/PipelineB/PipelineB-Answers/2nd_Qwen3-VL-32B-Thinking/2nd_Qwen3-VL-32B-Thinking.csv",
+    "./evaluations/PipelineB/PipelineB-Answers/1st_Qwen3-VL-32B-Instruct.csv",
+    "./evaluations/PipelineB/PipelineB-Answers/1st_Qwen3-VL-30B-A3B-Thinking.csv",
+    "./evaluations/PipelineB/PipelineB-Answers/1st_Qwen3-VL-32B-Thinking.csv",
+    "./evaluations/PipelineB/PipelineB-Answers/2nd_Qwen3-VL-32B-Instruct.csv",
+    "./evaluations/PipelineB/PipelineB-Answers/2nd_Qwen3-VL-30B-A3B-Thinking.csv",
+    "./evaluations/PipelineB/PipelineB-Answers/2nd_Qwen3-VL-32B-Thinking.csv",
 ]
 
 for i in range(len(inputs)):
