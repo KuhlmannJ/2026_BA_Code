@@ -1,0 +1,169 @@
+{
+  "report_name": "2019 Comerica Corporate Responsibility Report",
+  "report_title": "2019 Comerica Corporate Responsibility Report",
+  "emissions": {
+    "scope_1": {
+      "2012": [
+        {
+          "value": 6950,
+          "unit": "Metric tons of CO₂e",
+          "label": "Scope 1 GHG emissions- natural gas, jet fuel, diesel, gasoline, and refrigerants"
+        },
+        {
+          "value": 1201,
+          "unit": "Metric tons of CO₂e",
+          "label": "GHG emissions- Scope 1 transport only"
+        }
+      ],
+      "2018": [
+        {
+          "value": 6371,
+          "unit": "Metric tons of CO₂e",
+          "label": "Scope 1 GHG emissions- natural gas, jet fuel, diesel, gasoline, and refrigerants"
+        },
+        {
+          "value": 810,
+          "unit": "Metric tons of CO₂e",
+          "label": "GHG emissions- Scope 1 transport only"
+        }
+      ],
+      "2019": [
+        {
+          "value": 6304,
+          "unit": "Metric tons of CO₂e",
+          "label": "Scope 1 GHG emissions- natural gas, jet fuel, diesel, gasoline, and refrigerants"
+        },
+        {
+          "value": 793,
+          "unit": "Metric tons of CO₂e",
+          "label": "GHG emissions- Scope 1 transport only"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2012": [
+        {
+          "value": 74784,
+          "unit": "Metric tons of CO₂e",
+          "label": "Scope 2 GHG emissions- electricity, steam, and chilled water in company-controlled buildings"
+        }
+      ],
+      "2018": [
+        {
+          "value": 39916,
+          "unit": "Metric tons of CO₂e",
+          "label": "Scope 2 GHG emissions- electricity, steam, and chilled water in company-controlled buildings"
+        }
+      ],
+      "2019": [
+        {
+          "value": 36316,
+          "unit": "Metric tons of CO₂e",
+          "label": "Scope 2 GHG emissions- electricity, steam, and chilled water in company-controlled buildings"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2018": [
+        {
+          "value": 1868,
+          "unit": "Metric tons of CO₂e",
+          "label": "Electricity transmission/distribution loss emissions"
+        }
+      ],
+      "2019": [
+        {
+          "value": 1708,
+          "unit": "Metric tons of CO₂e",
+          "label": "Electricity transmission/distribution loss emissions"
+        }
+      ]
+    },
+    "scope_3": {
+      "2018": [
+        {
+          "value": 1283,
+          "unit": "Metric tons of CO₂e",
+          "label": "Total lifecycle furniture emissions"
+        },
+        {
+          "value": 133,
+          "unit": "Metric tons of CO₂e",
+          "label": "Shipping emissions"
+        },
+        {
+          "value": 59,
+          "unit": "Metric tons of CO₂e",
+          "label": "Armored vehicle emissions"
+        },
+        {
+          "value": 514,
+          "unit": "Metric tons of CO₂e",
+          "label": "Scope 3 lifecycle emissions associated with landfilled mixed solid waste"
+        },
+        {
+          "value": 3453,
+          "unit": "Metric tons of CO₂e",
+          "label": "Employee business travel by air and car"
+        },
+        {
+          "value": 25544,
+          "unit": "Metric tons of CO₂e",
+          "label": "Employee commuting emissions"
+        },
+        {
+          "value": 1027,
+          "unit": "Metric tons of CO₂e",
+          "label": "Total subleased emissions"
+        },
+        {
+          "value": 181,
+          "unit": "Metric tons of CO₂e",
+          "label": "CBRE Business Travel on Comerica Account"
+        }
+      ],
+      "2019": [
+        {
+          "value": 989,
+          "unit": "Metric tons of CO₂e",
+          "label": "Total lifecycle furniture emissions"
+        },
+        {
+          "value": 195,
+          "unit": "Metric tons of CO₂e",
+          "label": "Shipping emissions"
+        },
+        {
+          "value": 69,
+          "unit": "Metric tons of CO₂e",
+          "label": "Armored vehicle emissions"
+        },
+        {
+          "value": 505,
+          "unit": "Metric tons of CO₂e",
+          "label": "Scope 3 lifecycle emissions associated with landfilled mixed solid waste"
+        },
+        {
+          "value": 3515,
+          "unit": "Metric tons of CO₂e",
+          "label": "Employee business travel by air and car"
+        },
+        {
+          "value": 25837,
+          "unit": "Metric tons of CO₂e",
+          "label": "Employee commuting emissions"
+        },
+        {
+          "value": 629,
+          "unit": "Metric tons of CO₂e",
+          "label": "Total subleased emissions"
+        },
+        {
+          "value": 171,
+          "unit": "Metric tons of CO₂e",
+          "label": "CBRE Business Travel on Comerica Account"
+        }
+      ]
+    }
+  }
+}

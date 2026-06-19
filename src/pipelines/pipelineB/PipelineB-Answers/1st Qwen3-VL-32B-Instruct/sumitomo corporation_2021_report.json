@@ -1,0 +1,217 @@
+{
+  "report_name": "Sustainability of Sumitomo Corporation Group",
+  "report_title": "Sustainability of Sumitomo Corporation Group",
+  "emissions": {
+    "scope_1": {
+      "2017": [
+        {
+          "value": 4926,
+          "unit": "t-CO2e",
+          "label": "Non-consolidated"
+        },
+        {
+          "value": 1686654,
+          "unit": "t-CO2e",
+          "label": "Consolidated"
+        },
+        {
+          "value": 934276,
+          "unit": "t-CO2e",
+          "label": "Consolidated (Energy-related CO2)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 4148,
+          "unit": "t-CO2e",
+          "label": "Non-consolidated"
+        },
+        {
+          "value": 1569759,
+          "unit": "t-CO2e",
+          "label": "Consolidated"
+        },
+        {
+          "value": 939346,
+          "unit": "t-CO2e",
+          "label": "Consolidated (Energy-related CO2)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 3233,
+          "unit": "t-CO2e",
+          "label": "Non-consolidated"
+        },
+        {
+          "value": 1474885,
+          "unit": "t-CO2e",
+          "label": "Consolidated"
+        },
+        {
+          "value": 791730,
+          "unit": "t-CO2e",
+          "label": "Consolidated (Energy-related CO2)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 2667,
+          "unit": "t-CO2e",
+          "label": "Non-consolidated"
+        },
+        {
+          "value": 2179335,
+          "unit": "t-CO2e",
+          "label": "Consolidated"
+        },
+        {
+          "value": 1522514,
+          "unit": "t-CO2e",
+          "label": "Consolidated (Energy-related CO2)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2017": [
+        {
+          "value": 752378,
+          "unit": "t-CO2e",
+          "label": "Consolidated"
+        }
+      ],
+      "2018": [
+        {
+          "value": 630412,
+          "unit": "t-CO2e",
+          "label": "Consolidated"
+        }
+      ],
+      "2019": [
+        {
+          "value": 683156,
+          "unit": "t-CO2e",
+          "label": "Consolidated"
+        }
+      ],
+      "2020": [
+        {
+          "value": 652611,
+          "unit": "t-CO2e",
+          "label": "Consolidated"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {
+      "2017": [
+        {
+          "value": 7803,
+          "unit": "t-CO2e",
+          "label": "Logistics"
+        },
+        {
+          "value": 6,
+          "unit": "t-CO2e",
+          "label": "Waste"
+        },
+        {
+          "value": 28569,
+          "unit": "t-CO2e",
+          "label": "Overseas Business Trips"
+        },
+        {
+          "value": 709,
+          "unit": "t-CO2e",
+          "label": "Commuting"
+        },
+        {
+          "value": 36894,
+          "unit": "t-CO2e",
+          "label": "Downstream Leased Assets"
+        }
+      ],
+      "2018": [
+        {
+          "value": 5216,
+          "unit": "t-CO2e",
+          "label": "Logistics"
+        },
+        {
+          "value": 6,
+          "unit": "t-CO2e",
+          "label": "Waste"
+        },
+        {
+          "value": 30232,
+          "unit": "t-CO2e",
+          "label": "Overseas Business Trips"
+        },
+        {
+          "value": 636,
+          "unit": "t-CO2e",
+          "label": "Commuting"
+        },
+        {
+          "value": 35230,
+          "unit": "t-CO2e",
+          "label": "Downstream Leased Assets"
+        }
+      ],
+      "2019": [
+        {
+          "value": 5501,
+          "unit": "t-CO2e",
+          "label": "Logistics"
+        },
+        {
+          "value": 15,
+          "unit": "t-CO2e",
+          "label": "Waste"
+        },
+        {
+          "value": 22400,
+          "unit": "t-CO2e",
+          "label": "Overseas Business Trips"
+        },
+        {
+          "value": 609,
+          "unit": "t-CO2e",
+          "label": "Commuting"
+        },
+        {
+          "value": 33662,
+          "unit": "t-CO2e",
+          "label": "Downstream Leased Assets"
+        }
+      ],
+      "2020": [
+        {
+          "value": 3875,
+          "unit": "t-CO2e",
+          "label": "Logistics"
+        },
+        {
+          "value": 5,
+          "unit": "t-CO2e",
+          "label": "Waste"
+        },
+        {
+          "value": 67,
+          "unit": "t-CO2e",
+          "label": "Overseas Business Trips"
+        },
+        {
+          "value": 140,
+          "unit": "t-CO2e",
+          "label": "Commuting"
+        },
+        {
+          "value": 30294,
+          "unit": "t-CO2e",
+          "label": "Downstream Leased Assets"
+        }
+      ]
+    }
+  }
+}

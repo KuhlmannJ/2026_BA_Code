@@ -1,0 +1,119 @@
+{
+  "report_name": "Bekaert Integrated Annual Report 2022",
+  "report_title": "Bekaert Integrated Annual Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 316951,
+          "unit": "ton CO₂",
+          "label": "Total Scope 1 GHG emissions"
+        }
+      ],
+      "2020": [
+        {
+          "value": 316951,
+          "unit": "ton CO₂",
+          "label": "Total Scope 1 GHG emissions"
+        }
+      ],
+      "2021": [
+        {
+          "value": 316951,
+          "unit": "ton CO₂",
+          "label": "Total Scope 1 GHG emissions"
+        }
+      ],
+      "2022": [
+        {
+          "value": 316951,
+          "unit": "ton CO₂",
+          "label": "Total Scope 1 GHG emissions"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [
+        {
+          "value": 1657859,
+          "unit": "ton CO₂",
+          "label": "Total Scope 1 & 2 GHG emissions (excluding JVs)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 1508077,
+          "unit": "ton CO₂",
+          "label": "Total Scope 1 & 2 GHG emissions (excluding JVs)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 1647254,
+          "unit": "ton CO₂",
+          "label": "Total Scope 1 & 2 GHG emissions (excluding JVs)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 1510987,
+          "unit": "ton CO₂",
+          "label": "Total Scope 1 & 2 GHG emissions (excluding JVs)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 1741837,
+          "unit": "ton CO₂",
+          "label": "Total Scope 1 & 2 GHG emissions (including JVs)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 1583568,
+          "unit": "ton CO₂",
+          "label": "Total Scope 1 & 2 GHG emissions (including JVs)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 1752900,
+          "unit": "ton CO₂",
+          "label": "Total Scope 1 & 2 GHG emissions (including JVs)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 1606581,
+          "unit": "ton CO₂",
+          "label": "Total Scope 1 & 2 GHG emissions (including JVs)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 6045636,
+          "unit": "ton CO₂e",
+          "label": "Total Scope 3 emissions"
+        }
+      ],
+      "2021": [
+        {
+          "value": 6736962,
+          "unit": "ton CO₂e",
+          "label": "Total Scope 3 emissions"
+        }
+      ],
+      "2022": [
+        {
+          "value": 6187086,
+          "unit": "ton CO₂e",
+          "label": "Total Scope 3 emissions"
+        }
+      ]
+    }
+  }
+}

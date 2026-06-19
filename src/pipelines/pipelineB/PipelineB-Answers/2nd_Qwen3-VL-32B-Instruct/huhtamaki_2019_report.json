@@ -1,0 +1,82 @@
+{
+  "report_name": "Huhtamaki Sustainability Report 2019",
+  "report_title": "Huhtamaki Sustainability Report 2019",
+  "emissions": {
+    "scope_1": {
+      "2015": [
+        {
+          "value": 191000,
+          "unit": "metric tons CO2 EQV",
+          "label": "Scope 1"
+        }
+      ],
+      "2016": [
+        {
+          "value": 198000,
+          "unit": "metric tons CO2 EQV",
+          "label": "Scope 1"
+        }
+      ],
+      "2017": [
+        {
+          "value": 207000,
+          "unit": "metric tons CO2 EQV",
+          "label": "Scope 1"
+        }
+      ],
+      "2018": [
+        {
+          "value": 207000,
+          "unit": "metric tons CO2 EQV",
+          "label": "Scope 1"
+        }
+      ],
+      "2019": [
+        {
+          "value": 219000,
+          "unit": "metric tons CO2 EQV",
+          "label": "Scope 1"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2015": [
+        {
+          "value": 484000,
+          "unit": "metric tons CO2 EQV",
+          "label": "Scope 2"
+        }
+      ],
+      "2016": [
+        {
+          "value": 512000,
+          "unit": "metric tons CO2 EQV",
+          "label": "Scope 2"
+        }
+      ],
+      "2017": [
+        {
+          "value": 534000,
+          "unit": "metric tons CO2 EQV",
+          "label": "Scope 2"
+        }
+      ],
+      "2018": [
+        {
+          "value": 544000,
+          "unit": "metric tons CO2 EQV",
+          "label": "Scope 2"
+        }
+      ],
+      "2019": [
+        {
+          "value": 546000,
+          "unit": "metric tons CO2 EQV",
+          "label": "Scope 2"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {}
+  }
+}

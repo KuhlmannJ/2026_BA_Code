@@ -1,0 +1,24 @@
+{
+  "report_name": "2022 Corporate Responsibility Report",
+  "report_title": "2022 Corporate Responsibility Report",
+  "emissions": {
+    "scope_1": {
+      "2022": [
+        {
+          "value": 0.67,
+          "unit": "metric kilotons CO2e",
+          "label": "Scope 1 *"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2022": [
+        {
+          "value": 0.83,
+          "unit": "metric kilotons CO2e",
+          "label": "Scope 2 **"
+        }
+      ]
+    }
+  }
+}

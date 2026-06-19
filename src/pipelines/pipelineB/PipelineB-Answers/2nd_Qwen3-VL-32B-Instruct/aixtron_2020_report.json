@@ -1,0 +1,131 @@
+{
+  "report_name": "AIXTRON_SUSTAINABILITY_REPORT_2020",
+  "report_title": "AIXTRON | SUSTAINABILITY REPORT 2020",
+  "emissions": {
+    "scope_1": {
+      "2017": [
+        {
+          "value": 5056.7,
+          "unit": "tonnes",
+          "label": "Herzogenrath site - Electricity (kWh) CO₂e"
+        },
+        {
+          "value": 125,
+          "unit": "tonnes",
+          "label": "Herzogenrath site - Natural gas (kWh) CO₂e"
+        },
+        {
+          "value": 218.6,
+          "unit": "tonnes",
+          "label": "Herzogenrath site - District heating (kWh) CO₂e"
+        }
+      ],
+      "2018": [
+        {
+          "value": 0,
+          "unit": "tonnes",
+          "label": "Herzogenrath site - Electricity (kWh) CO₂e"
+        },
+        {
+          "value": 151,
+          "unit": "tonnes",
+          "label": "Herzogenrath site - Natural gas (kWh) CO₂e"
+        },
+        {
+          "value": 289,
+          "unit": "tonnes",
+          "label": "Herzogenrath site - District heating (kWh) CO₂e"
+        }
+      ],
+      "2019": [
+        {
+          "value": 0,
+          "unit": "tonnes",
+          "label": "Herzogenrath site - Electricity (kWh) CO₂e"
+        },
+        {
+          "value": 122.88,
+          "unit": "tonnes",
+          "label": "Herzogenrath site - Natural gas (kWh) CO₂e"
+        },
+        {
+          "value": 234.86,
+          "unit": "tonnes",
+          "label": "Herzogenrath site - District heating (kWh) CO₂e"
+        },
+        {
+          "value": 17.6,
+          "unit": "tonnes",
+          "label": "Herzogenrath site - Sulphur hexafluoride (SF6) in kg CO₂e"
+        }
+      ],
+      "2020": [
+        {
+          "value": 322.84,
+          "unit": "tonnes",
+          "label": "Consolidated - Scope 1 emissions"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2017": [
+        {
+          "value": 5408,
+          "unit": "tonnes",
+          "label": "Herzogenrath site - Total (kWh)/CO₂e in tonnes"
+        },
+        {
+          "value": 139.4,
+          "unit": "tonnes",
+          "label": "UK, Asia, USA - Total CO₂e in tonnes"
+        }
+      ],
+      "2018": [
+        {
+          "value": 445,
+          "unit": "tonnes",
+          "label": "Herzogenrath site - Total (kWh)/CO₂e in tonnes"
+        },
+        {
+          "value": 171.74,
+          "unit": "tonnes",
+          "label": "UK, Asia, USA - Total CO₂e in tonnes"
+        }
+      ],
+      "2019": [
+        {
+          "value": 381,
+          "unit": "tonnes",
+          "label": "Herzogenrath site - Total (kWh)/CO₂e in tonnes"
+        },
+        {
+          "value": 129.91,
+          "unit": "tonnes",
+          "label": "UK, Asia, USA - Total CO₂e in tonnes"
+        }
+      ],
+      "2020": [
+        {
+          "value": 557,
+          "unit": "tonnes",
+          "label": "Herzogenrath site - Total (kWh)/CO₂e in tonnes"
+        },
+        {
+          "value": 398.14,
+          "unit": "tonnes",
+          "label": "Consolidated - Scope 2 emissions"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {
+      "2020": [
+        {
+          "value": 1310.1,
+          "unit": "tonnes",
+          "label": "Consolidated - Scope 3 emissions"
+        }
+      ]
+    }
+  }
+}

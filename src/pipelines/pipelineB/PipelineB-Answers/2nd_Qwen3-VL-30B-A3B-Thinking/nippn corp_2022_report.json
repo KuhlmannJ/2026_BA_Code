@@ -1,0 +1,46 @@
+{
+  "report_name": "NIPP Integrated Report 2022",
+  "report_title": "NIPP Integrated Report 2022",
+  "emissions": {
+    "scope_1": {},
+    "scope_2_market_based": {},
+    "scope_2_location_based": {},
+    "scope_3": {
+      "2018": [
+        {
+          "value": 148,
+          "unit": "1,000 t-CO2",
+          "label": "CO2 Emissions (Consolidated)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 155,
+          "unit": "1,000 t-CO2",
+          "label": "CO2 Emissions (Consolidated)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 163,
+          "unit": "1,000 t-CO2",
+          "label": "CO2 Emissions (Consolidated)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 157,
+          "unit": "1,000 t-CO2",
+          "label": "CO2 Emissions (Consolidated)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 162,
+          "unit": "1,000 t-CO2",
+          "label": "CO2 Emissions (Consolidated)"
+        }
+      ]
+    }
+  }
+}

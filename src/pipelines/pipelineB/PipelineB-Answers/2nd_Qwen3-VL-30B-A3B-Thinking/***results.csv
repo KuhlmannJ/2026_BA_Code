@@ -1,0 +1,54 @@
+model,maxToken,report,duration,pages,t_inf/page
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,Allianz_2022_report,485.45,7,69.35
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,Daimler_2020_report,282.07,9,31.34
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,Fresenius SE_2019_report,139.73,7,19.96
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,ViacomCBS_ESG Report_2020-2021_vFINAL,524.46,7,74.92
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,acuity brands inc_2022_report,142.87,8,17.86
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,addtech_2022_report,159.33,9,17.7
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,aixtron_2020_report,144.77,7,20.68
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,allfunds group_2021_report,147.55,7,21.08
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,americold realty inc_2022_report,276.84,9,30.76
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,atlas arteria_2019_report,145.93,8,18.24
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,autoneum holding_2019_report,165.15,7,23.59
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,bekaert (d) sa_2022_report,839.99,7,120.0
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,blackline safety_2021_report,105.93,7,15.13
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,cabot corp_2018_report,171.08,7,24.44
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,cardinal energy ltd_2021_report,203.39,7,29.06
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,comerica inc_2019_report,650.69,7,92.96
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,cytokinetics inc_2022_report,102.34,9,11.37
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,dampskibsselskabet norden_2019_report,231.6,7,33.09
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,evolution mining ltd_2020_report,154.47,9,17.16
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,fujifilm_2022_report,158.03,7,22.58
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,georg fischer ag_2018_report,364.16,9,40.46
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,graincorp_2019_report,84.13,7,12.02
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,granite construction inc_2020_report,252.52,7,36.07
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,h. lundbeck_2021_report,268.76,7,38.39
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,hammerson reit_2021_report,187.83,9,20.87
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,hang lung properties_2018_report,117.24,9,13.03
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,healius ltd_2022_report,256.44,8,32.05
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,hudbay minerals inc_2020_report,124.67,9,13.85
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,huhtamaki_2018_report,199.42,7,28.49
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,huhtamaki_2019_report,215.59,9,23.95
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,inchcape plc_2022_report,299.99,9,33.33
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,innospec inc_2020_report,408.74,5,81.75
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,jetblue airways corp_2019_report,224.37,5,44.87
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,jpmorgan chase_2020_report,311.7,7,44.53
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,kfw_2018_report,312.87,7,44.7
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,kilroy realty_2017_report,243.3,9,27.03
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,kilroy realty_2018_report,447.23,9,49.69
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,kureha corp_2020_report,160.46,6,26.74
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,lundin gold inc_2021_report,98.5,5,19.7
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,lundin gold inc_2022_report,187.14,7,26.73
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,metro ag_2022_report,239.13,7,34.16
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,morinaga ltd_2020_report,354.96,7,50.71
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,nippn corp_2022_report,532.5,8,66.56
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,nordea_2017_report,226.67,9,25.19
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,polaris_2021_report,247.15,9,27.46
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,salzgitter ag_2018_report,72.65,7,10.38
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,sato oyj_2022_report,288.98,9,32.11
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,stantec inc_2019_report,219.82,7,31.4
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,sumitomo corporation_2021_report,382.15,9,42.46
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,toshiba tec corp_2022_report,120.44,9,13.38
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,uniper_2019_report.pdf,223.54,7,31.93
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,varta ag_2021_report,171.36,7,24.48
+Qwen/Qwen3-VL-30B-A3B-Thinking,16384,webuild_2019_report,228.02,9,25.34

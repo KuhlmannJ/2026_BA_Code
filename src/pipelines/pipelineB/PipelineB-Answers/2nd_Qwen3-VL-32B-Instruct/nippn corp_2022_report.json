@@ -1,0 +1,154 @@
+{
+  "report_name": "NIPPIN_Integrated_Report_2022",
+  "report_title": "NIPPIN Integrated Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2018": [
+        {
+          "value": 78.6,
+          "unit": "1,000 t-CO2",
+          "label": "CO2 emissions (Japan and overseas)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 81.3,
+          "unit": "1,000 t-CO2",
+          "label": "CO2 emissions (Japan and overseas)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 85.5,
+          "unit": "1,000 t-CO2",
+          "label": "CO2 emissions (Japan and overseas)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 84.5,
+          "unit": "1,000 t-CO2",
+          "label": "CO2 emissions (Japan and overseas)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 86.0,
+          "unit": "1,000 t-CO2",
+          "label": "CO2 emissions (Japan and overseas)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2018": [
+        {
+          "value": 47,
+          "unit": "1,000 t-CO2",
+          "label": "Scope 1"
+        }
+      ],
+      "2019": [
+        {
+          "value": 46,
+          "unit": "1,000 t-CO2",
+          "label": "Scope 1"
+        }
+      ],
+      "2020": [
+        {
+          "value": 47,
+          "unit": "1,000 t-CO2",
+          "label": "Scope 1"
+        }
+      ],
+      "2021": [
+        {
+          "value": 40,
+          "unit": "1,000 t-CO2",
+          "label": "Scope 1"
+        }
+      ],
+      "2022": [
+        {
+          "value": 44,
+          "unit": "1,000 t-CO2",
+          "label": "Scope 1"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2018": [
+        {
+          "value": 148,
+          "unit": "1,000 t-CO2",
+          "label": "CO2 emissions (Japan and overseas)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 155,
+          "unit": "1,000 t-CO2",
+          "label": "CO2 emissions (Japan and overseas)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 163,
+          "unit": "1,000 t-CO2",
+          "label": "CO2 emissions (Japan and overseas)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 157,
+          "unit": "1,000 t-CO2",
+          "label": "CO2 emissions (Japan and overseas)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 162,
+          "unit": "1,000 t-CO2",
+          "label": "CO2 emissions (Japan and overseas)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2018": [
+        {
+          "value": 48,
+          "unit": "kt-CO2",
+          "label": "CO2 Emissions in Logistics"
+        }
+      ],
+      "2019": [
+        {
+          "value": 114,
+          "unit": "1,000 t-CO2",
+          "label": "Scope 2"
+        }
+      ],
+      "2020": [
+        {
+          "value": 115,
+          "unit": "1,000 t-CO2",
+          "label": "Scope 2"
+        }
+      ],
+      "2021": [
+        {
+          "value": 115,
+          "unit": "1,000 t-CO2",
+          "label": "Scope 2"
+        }
+      ],
+      "2022": [
+        {
+          "value": 115,
+          "unit": "1,000 t-CO2",
+          "label": "Scope 2"
+        }
+      ]
+    }
+  }
+}

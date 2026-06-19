@@ -1,0 +1,186 @@
+{
+  "report_name": "ADDTECH ANNUAL REPORT 2021/2022",
+  "report_title": "ADDTECH ANNUAL REPORT 2021/2022",
+  "emissions": {
+    "scope_1": {
+      "2021/2022": [
+        {
+          "value": 2041,
+          "unit": "tonnes CO2e",
+          "label": "SCOPE 1 (tonnes CO2e)"
+        },
+        {
+          "value": 1500,
+          "unit": "tonnes CO2e",
+          "label": "Emissions from own vehicle fleet (tonnes CO2e)"
+        },
+        {
+          "value": 541,
+          "unit": "tonnes CO2e",
+          "label": "Emissions combustion fuels (tonnes CO2e)"
+        }
+      ],
+      "2020/2021": [
+        {
+          "value": 1910,
+          "unit": "tonnes CO2e",
+          "label": "SCOPE 1 (tonnes CO2e)"
+        },
+        {
+          "value": 1356,
+          "unit": "tonnes CO2e",
+          "label": "Emissions from own vehicle fleet (tonnes CO2e)"
+        },
+        {
+          "value": 554,
+          "unit": "tonnes CO2e",
+          "label": "Emissions combustion fuels (tonnes CO2e)"
+        }
+      ],
+      "2019/2020": [
+        {
+          "value": 2071,
+          "unit": "tonnes CO2e",
+          "label": "SCOPE 1 (tonnes CO2e)"
+        },
+        {
+          "value": 2071,
+          "unit": "tonnes CO2e",
+          "label": "Emissions from own vehicle fleet (tonnes CO2e)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2021/2022": [
+        {
+          "value": 4087,
+          "unit": "tonnes CO2e",
+          "label": "Emissions, energy consumption – Market Based Method (tonnes CO2e)"
+        }
+      ],
+      "2020/2021": [
+        {
+          "value": 4250,
+          "unit": "tonnes CO2e",
+          "label": "Emissions, energy consumption – Market Based Method (tonnes CO2e)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2021/2022": [
+        {
+          "value": 3709,
+          "unit": "tonnes CO2e",
+          "label": "Emissions, energy consumption – Location Based Method (tonnes CO2e)"
+        }
+      ],
+      "2020/2021": [
+        {
+          "value": 3395,
+          "unit": "tonnes CO2e",
+          "label": "Emissions, energy consumption – Location Based Method (tonnes CO2e)"
+        }
+      ],
+      "2019/2020": [
+        {
+          "value": 3979,
+          "unit": "tonnes CO2e",
+          "label": "Emissions, energy consumption – Location Based Method (tonnes CO2e)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2021/2022": [
+        {
+          "value": 22961,
+          "unit": "tonnes CO2e",
+          "label": "SCOPE 3 (tonnes CO2e)"
+        },
+        {
+          "value": 21782,
+          "unit": "tonnes CO2e",
+          "label": "Emissions freight, upstream & downstream (tonnes CO2e)"
+        },
+        {
+          "value": 10581,
+          "unit": "tonnes CO2e",
+          "label": "Emissions freight, upstream (tonnes CO2e)"
+        },
+        {
+          "value": 7781,
+          "unit": "tonnes CO2e",
+          "label": "Emissions freight, downstream (tonnes CO2e)"
+        },
+        {
+          "value": 1097,
+          "unit": "tonnes CO2e",
+          "label": "Business travel emissions, air and train (tonnes CO2e)"
+        },
+        {
+          "value": 82,
+          "unit": "tonnes CO2e",
+          "label": "Emissions, extraction, production and transport of purchased fuels (tonnes CO2e)"
+        }
+      ],
+      "2020/2021": [
+        {
+          "value": 19860,
+          "unit": "tonnes CO2e",
+          "label": "SCOPE 3 (tonnes CO2e)"
+        },
+        {
+          "value": 18733,
+          "unit": "tonnes CO2e",
+          "label": "Emissions freight, upstream & downstream (tonnes CO2e)"
+        },
+        {
+          "value": 10581,
+          "unit": "tonnes CO2e",
+          "label": "Emissions freight, upstream (tonnes CO2e)"
+        },
+        {
+          "value": 7781,
+          "unit": "tonnes CO2e",
+          "label": "Emissions freight, downstream (tonnes CO2e)"
+        },
+        {
+          "value": 1021,
+          "unit": "tonnes CO2e",
+          "label": "Business travel emissions, air and train (tonnes CO2e)"
+        },
+        {
+          "value": 106,
+          "unit": "tonnes CO2e",
+          "label": "Emissions, extraction, production and transport of purchased fuels (tonnes CO2e)"
+        }
+      ],
+      "2019/2020": [
+        {
+          "value": 23132,
+          "unit": "tonnes CO2e",
+          "label": "SCOPE 3 (tonnes CO2e)"
+        },
+        {
+          "value": 18362,
+          "unit": "tonnes CO2e",
+          "label": "Emissions freight, upstream & downstream (tonnes CO2e)"
+        },
+        {
+          "value": 10581,
+          "unit": "tonnes CO2e",
+          "label": "Emissions freight, upstream (tonnes CO2e)"
+        },
+        {
+          "value": 7781,
+          "unit": "tonnes CO2e",
+          "label": "Emissions freight, downstream (tonnes CO2e)"
+        },
+        {
+          "value": 4770,
+          "unit": "tonnes CO2e",
+          "label": "Business travel emissions, air and train (tonnes CO2e)"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "report_name": "Fresenius_Annual_Report_2019",
+  "report_title": "Fresenius Group Annual Report 2019",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 517,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Total"
+        },
+        {
+          "value": 227,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Fresenius Medical Care"
+        },
+        {
+          "value": 165,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Fresenius Kabi"
+        },
+        {
+          "value": 107,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Fresenius Helios"
+        },
+        {
+          "value": 18,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Fresenius Vamed"
+        }
+      ],
+      "2018": [
+        {
+          "value": 521,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Total"
+        },
+        {
+          "value": 219,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Fresenius Medical Care"
+        },
+        {
+          "value": 169,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Fresenius Kabi"
+        },
+        {
+          "value": 114,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Fresenius Helios"
+        },
+        {
+          "value": 19,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Fresenius Vamed"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [
+        {
+          "value": 992,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Total"
+        },
+        {
+          "value": 547,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Fresenius Medical Care"
+        },
+        {
+          "value": 249,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Fresenius Kabi"
+        },
+        {
+          "value": 178,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Fresenius Helios"
+        },
+        {
+          "value": 18,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Fresenius Vamed"
+        }
+      ],
+      "2018": [
+        {
+          "value": 1013,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Total"
+        },
+        {
+          "value": 557,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Fresenius Medical Care"
+        },
+        {
+          "value": 255,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Fresenius Kabi"
+        },
+        {
+          "value": 182,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Fresenius Helios"
+        },
+        {
+          "value": 19,
+          "unit": "t CO₂ equivalents in thousands",
+          "label": "Fresenius Vamed"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {}
+  }
+}

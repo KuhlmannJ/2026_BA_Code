@@ -1,0 +1,77 @@
+{
+  "report_name": "Uniper Sustainability Report 2019",
+  "report_title": "Uniper Sustainability Report 2019",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 47.0,
+          "unit": "million metric tons of CO₂",
+          "label": "Direct CO₂ emissions from fuel combustion (Total)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 59.5,
+          "unit": "million metric tons of CO₂",
+          "label": "Direct CO₂ emissions from fuel combustion (Total)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 63.3,
+          "unit": "million metric tons of CO₂",
+          "label": "Direct CO₂ emissions from fuel combustion (Total)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [
+        {
+          "value": 1573672,
+          "unit": "metric t CO₂",
+          "label": "Indirect CO₂ emissions (Total)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 1676689,
+          "unit": "metric t CO₂",
+          "label": "Indirect CO₂ emissions (Total)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 1129277,
+          "unit": "metric t CO₂",
+          "label": "Indirect CO₂ emissions (Total)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 1101032,
+          "unit": "metric t CO₂",
+          "label": "Indirect CO₂ emissions (Total)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 8.7,
+          "unit": "million metric tons of CO₂",
+          "label": "Upstream indirect Scope 3 CO₂ emissions"
+        }
+      ],
+      "2018": [
+        {
+          "value": 10.3,
+          "unit": "million metric tons of CO₂",
+          "label": "Upstream indirect Scope 3 CO₂ emissions"
+        }
+      ]
+    }
+  }
+}

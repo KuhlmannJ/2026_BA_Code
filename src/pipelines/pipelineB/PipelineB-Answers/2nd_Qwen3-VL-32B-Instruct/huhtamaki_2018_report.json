@@ -1,0 +1,82 @@
+{
+  "report_name": "HUHTAMAKI_CORPORATE_RESPONSIBILITY_REPORT_2018",
+  "report_title": "HUHTAMAKI CORPORATE RESPONSIBILITY REPORT 2018",
+  "emissions": {
+    "scope_1": {
+      "2014": [
+        {
+          "value": 188000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Direct (Scope 1) GHG emissions"
+        }
+      ],
+      "2015": [
+        {
+          "value": 191000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Direct (Scope 1) GHG emissions"
+        }
+      ],
+      "2016": [
+        {
+          "value": 198000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Direct (Scope 1) GHG emissions"
+        }
+      ],
+      "2017": [
+        {
+          "value": 207000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Direct (Scope 1) GHG emissions"
+        }
+      ],
+      "2018": [
+        {
+          "value": 207000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Direct (Scope 1) GHG emissions"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2014": [
+        {
+          "value": 291000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Energy indirect (Scope 2) GHG emissions"
+        }
+      ],
+      "2015": [
+        {
+          "value": 296000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Energy indirect (Scope 2) GHG emissions"
+        }
+      ],
+      "2016": [
+        {
+          "value": 328000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Energy indirect (Scope 2) GHG emissions"
+        }
+      ],
+      "2017": [
+        {
+          "value": 342000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Energy indirect (Scope 2) GHG emissions"
+        }
+      ],
+      "2018": [
+        {
+          "value": 352000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Energy indirect (Scope 2) GHG emissions"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {}
+  }
+}

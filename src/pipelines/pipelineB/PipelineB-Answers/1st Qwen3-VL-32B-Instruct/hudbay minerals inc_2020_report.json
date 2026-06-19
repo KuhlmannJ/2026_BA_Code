@@ -1,0 +1,68 @@
+{
+  "report_name": "Hudbay 2020 Annual Sustainability Report",
+  "report_title": "Hudbay 2020 Annual Sustainability Report",
+  "emissions": {
+    "scope_1": {
+      "2020": [
+        {
+          "value": 144,
+          "unit": "kilotonnes of CO₂-equivalent",
+          "label": "Direct CO₂e emissions"
+        }
+      ],
+      "2019": [
+        {
+          "value": 161,
+          "unit": "kilotonnes of CO₂-equivalent",
+          "label": "Direct CO₂e emissions"
+        }
+      ],
+      "2018": [
+        {
+          "value": 170,
+          "unit": "kilotonnes of CO₂-equivalent",
+          "label": "Direct CO₂e emissions"
+        }
+      ],
+      "2017": [
+        {
+          "value": 177,
+          "unit": "kilotonnes of CO₂-equivalent",
+          "label": "Direct CO₂e emissions"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2020": [
+        {
+          "value": 367,
+          "unit": "kilotonnes of CO₂-equivalent",
+          "label": "Indirect CO₂e emissions"
+        }
+      ],
+      "2019": [
+        {
+          "value": 402,
+          "unit": "kilotonnes of CO₂-equivalent",
+          "label": "Indirect CO₂e emissions"
+        }
+      ],
+      "2018": [
+        {
+          "value": 403,
+          "unit": "kilotonnes of CO₂-equivalent",
+          "label": "Indirect CO₂e emissions"
+        }
+      ],
+      "2017": [
+        {
+          "value": 363,
+          "unit": "kilotonnes of CO₂-equivalent",
+          "label": "Indirect CO₂e emissions"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {}
+  }
+}

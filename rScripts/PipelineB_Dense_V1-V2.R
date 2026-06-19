@@ -1,3 +1,5 @@
+rm(list=ls())
+
 df_1st <- read.csv(file="src/pipelines/pipelineB/PipelineB-Answers/1st_Qwen3-VL-32B-Thinking/***results.csv")
 df_2nd <- read.csv(file="src/pipelines/pipelineB/PipelineB-Answers/2nd_Qwen3-VL-32B-Thinking/***results.csv")
 
@@ -18,7 +20,7 @@ compare_per_report$abs_differnece   <- abs(compare_per_report$duration_second - 
 
 summary(compare_per_report)
 
-write.csv(compare_per_report, file="compare_per_report.csv", row.names=FALSE)
+write.csv(compare_per_report, file="PipelineB_Dense_V1-V2.csv", row.names=FALSE)
 
 # Top 5 most huge differences
 compare_per_report_diff <- compare_per_report[order(compare_per_report$abs_differnece, decreasing = TRUE), ]

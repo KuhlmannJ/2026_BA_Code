@@ -1,0 +1,63 @@
+{
+  "report_name": "allfunds-sustainability-report-2021",
+  "report_title": "Allfunds Sustainability Report 2021",
+  "emissions": {
+    "scope_1": {
+      "2020": [
+        {
+          "value": 0.0,
+          "unit": "t CO2eq",
+          "label": "Total for all sites"
+        }
+      ],
+      "2021": [
+        {
+          "value": 7.31,
+          "unit": "t CO2eq",
+          "label": "Total for all sites"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2020": [
+        {
+          "value": 91.69,
+          "unit": "t CO2eq",
+          "label": "Total for all sites"
+        }
+      ],
+      "2021": [
+        {
+          "value": 30.39,
+          "unit": "t CO2eq",
+          "label": "Total for all sites"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2020": [
+        {
+          "value": 91.69,
+          "unit": "t CO2eq",
+          "label": "Total for all sites"
+        }
+      ],
+      "2021": [
+        {
+          "value": 30.39,
+          "unit": "t CO2eq",
+          "label": "Total for all sites"
+        }
+      ]
+    },
+    "scope_3": {
+      "2020": [
+        {
+          "value": 393.82,
+          "unit": "t CO2eq",
+          "label": "Total for Spain"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "report_name": "Huhtamaki Sustainability Report 2019",
+  "report_title": "Huhtamaki Sustainability Report 2019",
+  "emissions": {
+    "scope_1": {
+      "2015": [
+        {
+          "value": 191000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Scope 1 greenhouse gas emissions"
+        }
+      ],
+      "2016": [
+        {
+          "value": 198000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Scope 1 greenhouse gas emissions"
+        }
+      ],
+      "2017": [
+        {
+          "value": 207000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Scope 1 greenhouse gas emissions"
+        }
+      ],
+      "2018": [
+        {
+          "value": 207000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Scope 1 greenhouse gas emissions"
+        }
+      ],
+      "2019": [
+        {
+          "value": 219000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Scope 1 greenhouse gas emissions"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2015": [
+        {
+          "value": 484000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Scope 2 greenhouse gas emissions (location-based)"
+        }
+      ],
+      "2016": [
+        {
+          "value": 512000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Scope 2 greenhouse gas emissions (location-based)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 534000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Scope 2 greenhouse gas emissions (location-based)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 544000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Scope 2 greenhouse gas emissions (location-based)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 546000,
+          "unit": "metric tons CO₂ eqv",
+          "label": "Scope 2 greenhouse gas emissions (location-based)"
+        }
+      ]
+    },
+    "scope_3": {}
+  }
+}

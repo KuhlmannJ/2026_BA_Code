@@ -1,0 +1,55 @@
+{
+  "report_name": "Autonuem Corporate Responsibility Report 2019",
+  "report_title": "Autonuem Corporate Responsibility Report 2019",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 116274,
+          "unit": "metric tons CO₂ equivalents",
+          "label": "CO₂ emissions"
+        }
+      ],
+      "2018": [
+        {
+          "value": 109577,
+          "unit": "metric tons CO₂ equivalents",
+          "label": "CO₂ emissions"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [
+        {
+          "value": 264287,
+          "unit": "metric tons CO₂ equivalents",
+          "label": "CO₂ emissions"
+        }
+      ],
+      "2018": [
+        {
+          "value": 256550,
+          "unit": "metric tons CO₂ equivalents",
+          "label": "CO₂ emissions"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {
+      "2019": [
+        {
+          "value": 420238,
+          "unit": "metric tons CO₂ equivalents",
+          "label": "CO₂ emissions"
+        }
+      ],
+      "2018": [
+        {
+          "value": 525214,
+          "unit": "metric tons CO₂ equivalents",
+          "label": "CO₂ emissions"
+        }
+      ]
+    }
+  }
+}

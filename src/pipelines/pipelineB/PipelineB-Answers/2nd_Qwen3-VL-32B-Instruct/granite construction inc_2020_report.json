@@ -1,0 +1,49 @@
+{
+  "report_name": "2020 Sustainability Report",
+  "report_title": "GRANITE CONSTRUCTION 2020 Sustainability Report",
+  "emissions": {
+    "scope_1": {
+      "2015": [
+        {
+          "value": 132285,
+          "unit": "US Tons",
+          "label": "Total Scope 1 CO2 Equivalents"
+        }
+      ],
+      "2020": [
+        {
+          "value": 244727.61,
+          "unit": "US Tons",
+          "label": "Total Scope 1"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2020": [
+        {
+          "value": 0,
+          "unit": "US Tons",
+          "label": "Not yet available"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2020": [
+        {
+          "value": 0,
+          "unit": "US Tons",
+          "label": "Not yet available"
+        }
+      ]
+    },
+    "scope_3": {
+      "2020": [
+        {
+          "value": 8399,
+          "unit": "US Tons",
+          "label": "Travel: Total Estimated CO2 Emissions"
+        }
+      ]
+    }
+  }
+}

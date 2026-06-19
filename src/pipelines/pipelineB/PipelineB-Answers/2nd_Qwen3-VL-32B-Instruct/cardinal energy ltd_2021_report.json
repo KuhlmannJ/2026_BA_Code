@@ -1,0 +1,89 @@
+{
+  "report_name": "2021 ESG Report",
+  "report_title": "2021 ESG Report",
+  "emissions": {
+    "scope_1": {
+      "2021": [
+        {
+          "value": 231,
+          "unit": "10^3 tonnes CO2e",
+          "label": "Direct GHG emissions"
+        },
+        {
+          "value": 12404,
+          "unit": "10^3 m3/yr",
+          "label": "Flared natural gas"
+        },
+        {
+          "value": 4178,
+          "unit": "10^3 m3/yr",
+          "label": "Vented natural gas"
+        },
+        {
+          "value": 66,
+          "unit": "10^3 tonnes CO2e",
+          "label": "Methane emissions"
+        }
+      ],
+      "2020": [
+        {
+          "value": 160,
+          "unit": "10^3 tonnes CO2e",
+          "label": "Direct GHG emissions"
+        },
+        {
+          "value": 7873,
+          "unit": "10^3 m3/yr",
+          "label": "Flared natural gas"
+        },
+        {
+          "value": 3727,
+          "unit": "10^3 m3/yr",
+          "label": "Vented natural gas"
+        }
+      ],
+      "2019": [
+        {
+          "value": 188,
+          "unit": "10^3 tonnes CO2e",
+          "label": "Direct GHG emissions"
+        },
+        {
+          "value": 8428,
+          "unit": "10^3 m3/yr",
+          "label": "Flared natural gas"
+        },
+        {
+          "value": 5609,
+          "unit": "10^3 m3/yr",
+          "label": "Vented natural gas"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2021": [
+        {
+          "value": 228,
+          "unit": "10^3 tonnes CO2e",
+          "label": "Indirect GHG emissions"
+        }
+      ],
+      "2020": [
+        {
+          "value": 259,
+          "unit": "10^3 tonnes CO2e",
+          "label": "Indirect GHG emissions"
+        }
+      ],
+      "2019": [
+        {
+          "value": 277,
+          "unit": "10^3 tonnes CO2e",
+          "label": "Indirect GHG emissions"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {}
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "report_name": "Lundin Gold 2022 Sustainability Report",
+  "report_title": "Lundin Gold 2022 Sustainability Report",
+  "emissions": {
+    "scope_1": {
+      "2022": [
+        {
+          "value": 24024,
+          "unit": "tCO₂e",
+          "label": "Total Scope 1 Emissions"
+        }
+      ],
+      "2021": [
+        {
+          "value": 25354,
+          "unit": "tCO₂e",
+          "label": "Total Scope 1 Emissions"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2022": [
+        {
+          "value": 5576,
+          "unit": "tCO₂e",
+          "label": "Total Scope 2 Emissions"
+        }
+      ],
+      "2021": [
+        {
+          "value": 5413,
+          "unit": "tCO₂e",
+          "label": "Total Scope 2 Emissions"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2022": [],
+      "2021": []
+    },
+    "scope_3": {
+      "2022": [
+        {
+          "value": 166742,
+          "unit": "tCO₂e",
+          "label": "Total Scope 3 Emissions"
+        }
+      ],
+      "2021": [
+        {
+          "value": 193764,
+          "unit": "tCO₂e",
+          "label": "Total Scope 3 Emissions"
+        }
+      ]
+    }
+  }
+}

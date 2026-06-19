@@ -1,0 +1,108 @@
+{
+  "report_name": "Allianz Group Sustainability Report 2022",
+  "report_title": "Allianz Group Sustainability Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2020": [
+        {
+          "value": 28714,
+          "unit": "t CO2e",
+          "label": "Operational"
+        }
+      ],
+      "2021": [
+        {
+          "value": 28699,
+          "unit": "t CO2e",
+          "label": "Operational"
+        }
+      ],
+      "2022": [
+        {
+          "value": 30953,
+          "unit": "t CO2e",
+          "label": "Operational"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2020": [
+        {
+          "value": 100722,
+          "unit": "t CO2e",
+          "label": "Operational"
+        }
+      ],
+      "2021": [
+        {
+          "value": 54689,
+          "unit": "t CO2e",
+          "label": "Operational"
+        }
+      ],
+      "2022": [
+        {
+          "value": 30490,
+          "unit": "t CO2e",
+          "label": "Operational"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2020": [
+        {
+          "value": 180826,
+          "unit": "t CO2e",
+          "label": "Operational"
+        }
+      ],
+      "2021": [
+        {
+          "value": 149599,
+          "unit": "t CO2e",
+          "label": "Operational"
+        }
+      ],
+      "2022": [
+        {
+          "value": 138339,
+          "unit": "t CO2e",
+          "label": "Operational"
+        }
+      ]
+    },
+    "scope_3": {
+      "2020": [
+        {
+          "value": 73916,
+          "unit": "t CO2e",
+          "label": "Operational"
+        }
+      ],
+      "2021": [
+        {
+          "value": 55359,
+          "unit": "t CO2e",
+          "label": "Operational"
+        },
+        {
+          "value": 29.0,
+          "unit": "mn t CO2e",
+          "label": "Portfolio"
+        }
+      ],
+      "2022": [
+        {
+          "value": 92467,
+          "unit": "t CO2e",
+          "label": "Operational"
+        },
+        {
+          "value": 46.3,
+          "unit": "mn t CO2e",
+          "label": "Portfolio"
+        }
+      ]
+    }
+  }
+}

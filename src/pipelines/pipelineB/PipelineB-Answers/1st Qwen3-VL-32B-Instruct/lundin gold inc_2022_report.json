@@ -1,0 +1,95 @@
+{
+  "report_name": "Lundin Gold 2022 Sustainability Report",
+  "report_title": "Lundin Gold 2022 Sustainability Report",
+  "emissions": {
+    "scope_1": {
+      "2022": [
+        {
+          "value": 24024,
+          "unit": "tCO2e",
+          "label": "Total Scope 1"
+        },
+        {
+          "value": 23011,
+          "unit": "tCO2e",
+          "label": "Fruta del Norte Site"
+        },
+        {
+          "value": 1013,
+          "unit": "tCO2e",
+          "label": "Exploration"
+        }
+      ],
+      "2021": [
+        {
+          "value": 25354,
+          "unit": "tCO2e",
+          "label": "Total Scope 1"
+        },
+        {
+          "value": 24981,
+          "unit": "tCO2e",
+          "label": "Fruta del Norte Site"
+        },
+        {
+          "value": 373,
+          "unit": "tCO2e",
+          "label": "Exploration"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2022": [
+        {
+          "value": 5576,
+          "unit": "tCO2e",
+          "label": "Total Scope 2"
+        },
+        {
+          "value": 5557,
+          "unit": "tCO2e",
+          "label": "Fruta del Norte Site"
+        },
+        {
+          "value": 19,
+          "unit": "tCO2e",
+          "label": "Ecuador Offices"
+        }
+      ],
+      "2021": [
+        {
+          "value": 5413,
+          "unit": "tCO2e",
+          "label": "Total Scope 2"
+        },
+        {
+          "value": 5397,
+          "unit": "tCO2e",
+          "label": "Fruta del Norte Site"
+        },
+        {
+          "value": 16,
+          "unit": "tCO2e",
+          "label": "Ecuador Offices"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {
+      "2022": [
+        {
+          "value": 166742,
+          "unit": "tCO2e",
+          "label": "Total Scope 3"
+        }
+      ],
+      "2021": [
+        {
+          "value": 193764,
+          "unit": "tCO2e",
+          "label": "Total Scope 3"
+        }
+      ]
+    }
+  }
+}

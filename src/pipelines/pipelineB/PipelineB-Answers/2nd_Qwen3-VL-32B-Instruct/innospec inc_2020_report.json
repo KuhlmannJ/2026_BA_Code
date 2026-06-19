@@ -1,0 +1,76 @@
+{
+  "report_name": "Innospec_Sustainability_Report_2020",
+  "report_title": "Innospec Sustainability Report 2020",
+  "emissions": {
+    "scope_1": {
+      "2020": [
+        {
+          "value": 51728,
+          "unit": "metric tonnes CO2 equivalent",
+          "label": "Absolute GHG Emissions (Scope 1 and 2*)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 96220,
+          "unit": "metric tonnes CO2 equivalent",
+          "label": "Absolute GHG Emissions (Scope 1 and 2*)"
+        }
+      ],
+      "2006": [
+        {
+          "value": 108000,
+          "unit": "metric tonnes CO2 equivalent",
+          "label": "Absolute GHG Emissions (Scope 1 and 2*)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2020": [
+        {
+          "value": 51728,
+          "unit": "metric tonnes CO2 equivalent",
+          "label": "Absolute GHG Emissions (Scope 1 and 2*)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 96220,
+          "unit": "metric tonnes CO2 equivalent",
+          "label": "Absolute GHG Emissions (Scope 1 and 2*)"
+        }
+      ],
+      "2006": [
+        {
+          "value": 108000,
+          "unit": "metric tonnes CO2 equivalent",
+          "label": "Absolute GHG Emissions (Scope 1 and 2*)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2020": [
+        {
+          "value": 51728,
+          "unit": "metric tonnes CO2 equivalent",
+          "label": "Absolute GHG Emissions (Scope 1 and 2*)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 96220,
+          "unit": "metric tonnes CO2 equivalent",
+          "label": "Absolute GHG Emissions (Scope 1 and 2*)"
+        }
+      ],
+      "2006": [
+        {
+          "value": 108000,
+          "unit": "metric tonnes CO2 equivalent",
+          "label": "Absolute GHG Emissions (Scope 1 and 2*)"
+        }
+      ]
+    },
+    "scope_3": {}
+  }
+}

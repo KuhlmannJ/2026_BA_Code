@@ -1,0 +1,158 @@
+{
+  "report_name": "Sustainability Report 2021",
+  "report_title": "Sustainability Report 2021",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 33,
+          "unit": "tCO2e",
+          "label": "TOTAL PORTFOLIO"
+        },
+        {
+          "value": 42,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS"
+        }
+      ],
+      "2020": [
+        {
+          "value": 7.407,
+          "unit": "tCO2e",
+          "label": "TOTAL PORTFOLIO"
+        },
+        {
+          "value": 7.485,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS"
+        }
+      ],
+      "2021": [
+        {
+          "value": 7.222,
+          "unit": "tCO2e",
+          "label": "TOTAL PORTFOLIO"
+        },
+        {
+          "value": 7.229,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [
+        {
+          "value": 353,
+          "unit": "tCO2e",
+          "label": "TOTAL PORTFOLIO"
+        },
+        {
+          "value": 378,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS"
+        }
+      ],
+      "2020": [
+        {
+          "value": 2.846,
+          "unit": "tCO2e",
+          "label": "TOTAL PORTFOLIO"
+        },
+        {
+          "value": 2.869,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS"
+        }
+      ],
+      "2021": [
+        {
+          "value": 3.21,
+          "unit": "tCO2e",
+          "label": "TOTAL PORTFOLIO"
+        },
+        {
+          "value": 3.231,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 353,
+          "unit": "tCO2e",
+          "label": "TOTAL PORTFOLIO"
+        },
+        {
+          "value": 378,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS"
+        }
+      ],
+      "2020": [
+        {
+          "value": 2.664,
+          "unit": "tCO2e",
+          "label": "TOTAL PORTFOLIO"
+        },
+        {
+          "value": 2.869,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS"
+        }
+      ],
+      "2021": [
+        {
+          "value": 3.069,
+          "unit": "tCO2e",
+          "label": "TOTAL PORTFOLIO"
+        },
+        {
+          "value": 3.37,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 13.668,
+          "unit": "tCO2e",
+          "label": "TOTAL PORTFOLIO"
+        },
+        {
+          "value": 14.067,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS"
+        }
+      ],
+      "2020": [
+        {
+          "value": 26.642,
+          "unit": "tCO2e",
+          "label": "TOTAL PORTFOLIO"
+        },
+        {
+          "value": 26.959,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS"
+        }
+      ],
+      "2021": [
+        {
+          "value": 78.294,
+          "unit": "tCO2e",
+          "label": "TOTAL PORTFOLIO"
+        },
+        {
+          "value": 78.645,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "report_name": "Sustainability Report 2018",
+  "report_title": "HANG LUNG PROPERTIES LIMITED Sustainability Report 2018",
+  "emissions": {
+    "scope_1": {
+      "2016": [
+        {
+          "value": 2285.31,
+          "unit": "Tonnes CO₂e",
+          "label": "Total"
+        }
+      ],
+      "2017": [
+        {
+          "value": 4967.91,
+          "unit": "Tonnes CO₂e",
+          "label": "Total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 3062.65,
+          "unit": "Tonnes CO₂e",
+          "label": "Total"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2016": [
+        {
+          "value": 209034.43,
+          "unit": "Tonnes CO₂e",
+          "label": "Total"
+        }
+      ],
+      "2017": [
+        {
+          "value": 231363.82,
+          "unit": "Tonnes CO₂e",
+          "label": "Total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 271239.53,
+          "unit": "Tonnes CO₂e",
+          "label": "Total"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {
+      "2016": [
+        {
+          "value": 449.99,
+          "unit": "Tonnes CO₂e",
+          "label": "Total"
+        }
+      ],
+      "2017": [
+        {
+          "value": 739.83,
+          "unit": "Tonnes CO₂e",
+          "label": "Total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 838.22,
+          "unit": "Tonnes CO₂e",
+          "label": "Total"
+        }
+      ]
+    }
+  }
+}

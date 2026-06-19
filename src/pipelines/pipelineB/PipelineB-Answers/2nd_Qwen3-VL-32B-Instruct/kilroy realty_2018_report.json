@@ -1,0 +1,158 @@
+{
+  "report_name": "kilroy-realty-corporation-2018-sustainability-report",
+  "report_title": "Kilroy Realty Corporation 2018 Sustainability Report",
+  "emissions": {
+    "scope_1": {
+      "2017": [
+        {
+          "value": 3647,
+          "unit": "Tonnes",
+          "label": "Office"
+        },
+        {
+          "value": 472,
+          "unit": "Tonnes",
+          "label": "Life Sciences"
+        },
+        {
+          "value": 4120,
+          "unit": "Tonnes",
+          "label": "Whole Portfolio"
+        }
+      ],
+      "2018": [
+        {
+          "value": 3493,
+          "unit": "Tonnes",
+          "label": "Office"
+        },
+        {
+          "value": 415,
+          "unit": "Tonnes",
+          "label": "Life Sciences"
+        },
+        {
+          "value": 3908,
+          "unit": "Tonnes",
+          "label": "Whole Portfolio"
+        },
+        {
+          "value": 3908,
+          "unit": "MtCO2e",
+          "label": "Data Verified - Whole Portfolio"
+        },
+        {
+          "value": 3782,
+          "unit": "MtCO2e",
+          "label": "Like-for-Like - Whole Portfolio"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2017": [
+        {
+          "value": 31565,
+          "unit": "Tonnes",
+          "label": "Office"
+        },
+        {
+          "value": 4170,
+          "unit": "Tonnes",
+          "label": "Life Sciences"
+        },
+        {
+          "value": 35735,
+          "unit": "Tonnes",
+          "label": "Whole Portfolio"
+        }
+      ],
+      "2018": [
+        {
+          "value": 26328,
+          "unit": "Tonnes",
+          "label": "Office"
+        },
+        {
+          "value": 4112,
+          "unit": "Tonnes",
+          "label": "Life Sciences"
+        },
+        {
+          "value": 30439,
+          "unit": "Tonnes",
+          "label": "Whole Portfolio"
+        },
+        {
+          "value": 30439,
+          "unit": "MtCO2e",
+          "label": "Data Verified - Whole Portfolio"
+        },
+        {
+          "value": 28568,
+          "unit": "MtCO2e",
+          "label": "Like-for-Like - Whole Portfolio"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2017": [
+        {
+          "value": 32335,
+          "unit": "Tonnes",
+          "label": "Office"
+        },
+        {
+          "value": 4170,
+          "unit": "Tonnes",
+          "label": "Life Sciences"
+        },
+        {
+          "value": 36504,
+          "unit": "Tonnes",
+          "label": "Whole Portfolio"
+        }
+      ],
+      "2018": [
+        {
+          "value": 29095,
+          "unit": "Tonnes",
+          "label": "Office"
+        },
+        {
+          "value": 4112,
+          "unit": "Tonnes",
+          "label": "Life Sciences"
+        },
+        {
+          "value": 33207,
+          "unit": "Tonnes",
+          "label": "Whole Portfolio"
+        },
+        {
+          "value": 33207,
+          "unit": "MtCO2e",
+          "label": "Data Verified - Whole Portfolio"
+        },
+        {
+          "value": 31336,
+          "unit": "MtCO2e",
+          "label": "Like-for-Like - Whole Portfolio"
+        }
+      ]
+    },
+    "scope_3": {
+      "2018": [
+        {
+          "value": 25961,
+          "unit": "MtCO2e",
+          "label": "Like-for-Like - Downstream Leased Assets"
+        },
+        {
+          "value": 31984,
+          "unit": "MtCO2e",
+          "label": "Data Verified - Downstream Leased Assets"
+        }
+      ]
+    }
+  }
+}

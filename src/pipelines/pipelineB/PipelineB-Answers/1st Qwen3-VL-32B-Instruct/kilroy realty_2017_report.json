@@ -1,0 +1,80 @@
+{
+  "report_name": "kilroy-realty-2017-sustainability-report",
+  "report_title": "Kilroy Realty 2017 Sustainability Report",
+  "emissions": {
+    "scope_1": {
+      "2017": [
+        {
+          "value": 4641,
+          "unit": "metric tons of CO2e",
+          "label": "Whole Portfolio"
+        },
+        {
+          "value": 4165,
+          "unit": "Tonnes",
+          "label": "Office"
+        },
+        {
+          "value": 476,
+          "unit": "Tonnes",
+          "label": "Life Sciences"
+        }
+      ],
+      "2016": [
+        {
+          "value": 4059,
+          "unit": "metric tons of CO2e",
+          "label": "Whole Portfolio"
+        },
+        {
+          "value": 3696,
+          "unit": "Tonnes",
+          "label": "Office"
+        },
+        {
+          "value": 363,
+          "unit": "Tonnes",
+          "label": "Life Sciences"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2017": [
+        {
+          "value": 42947,
+          "unit": "metric tons of CO2e",
+          "label": "Whole Portfolio"
+        },
+        {
+          "value": 39516,
+          "unit": "Tonnes",
+          "label": "Office"
+        },
+        {
+          "value": 4489,
+          "unit": "Tonnes",
+          "label": "Life Sciences"
+        }
+      ],
+      "2016": [
+        {
+          "value": 44145,
+          "unit": "metric tons of CO2e",
+          "label": "Whole Portfolio"
+        },
+        {
+          "value": 39670,
+          "unit": "Tonnes",
+          "label": "Office"
+        },
+        {
+          "value": 4475,
+          "unit": "Tonnes",
+          "label": "Life Sciences"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {}
+  }
+}

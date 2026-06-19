@@ -1,0 +1,62 @@
+{
+  "report_name": "Environmental Protection",
+  "report_title": "Environmental Protection",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 68.51,
+          "unit": "t CO2 eq",
+          "label": "Scope 1 CO2 emissions"
+        }
+      ],
+      "2020": [
+        {
+          "value": 0.0,
+          "unit": "t CO2 eq",
+          "label": "Scope 1 CO2 emissions"
+        }
+      ],
+      "2021": [
+        {
+          "value": 7.31,
+          "unit": "t CO2 eq",
+          "label": "Scope 1 CO2 emissions"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [
+        {
+          "value": 436.43,
+          "unit": "t CO2 eq",
+          "label": "Scope 2 CO2 emissions"
+        }
+      ],
+      "2020": [
+        {
+          "value": 91.69,
+          "unit": "t CO2 eq",
+          "label": "Scope 2 CO2 emissions"
+        }
+      ],
+      "2021": [
+        {
+          "value": 30.39,
+          "unit": "t CO2 eq",
+          "label": "Scope 2 CO2 emissions"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {
+      "2020": [
+        {
+          "value": 393.82,
+          "unit": "t CO2 eq",
+          "label": "Scope 3 CO2 emissions"
+        }
+      ]
+    }
+  }
+}

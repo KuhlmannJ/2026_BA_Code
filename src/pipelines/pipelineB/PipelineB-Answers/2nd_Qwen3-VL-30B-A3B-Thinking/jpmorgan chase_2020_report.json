@@ -1,0 +1,126 @@
+{
+  "report_name": "2020 Environmental, Social & Governance Report",
+  "report_title": "2020 Environmental, Social & Governance Report",
+  "emissions": {
+    "scope_1": {
+      "2020": [
+        {
+          "value": 69570,
+          "unit": "MtCO2e",
+          "label": "Direct emissions from owned or controlled sources"
+        }
+      ],
+      "2019": [
+        {
+          "value": 81655,
+          "unit": "MtCO2e",
+          "label": "Direct emissions from owned or controlled sources"
+        }
+      ],
+      "2018": [
+        {
+          "value": 83101,
+          "unit": "MtCO2e",
+          "label": "Direct emissions from owned or controlled sources"
+        }
+      ],
+      "2017": [
+        {
+          "value": 78229,
+          "unit": "MtCO2e",
+          "label": "Direct emissions from owned or controlled sources"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2020": [
+        {
+          "value": 4187,
+          "unit": "MtCO2e",
+          "label": "Indirect emissions from the generation of purchased electricity"
+        }
+      ],
+      "2019": [
+        {
+          "value": 556142,
+          "unit": "MtCO2e",
+          "label": "Indirect emissions from the generation of purchased electricity"
+        }
+      ],
+      "2018": [
+        {
+          "value": 572067,
+          "unit": "MtCO2e",
+          "label": "Indirect emissions from the generation of purchased electricity"
+        }
+      ],
+      "2017": [
+        {
+          "value": 596843,
+          "unit": "MtCO2e",
+          "label": "Indirect emissions from the generation of purchased electricity"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2020": [
+        {
+          "value": 660601,
+          "unit": "MtCO2e",
+          "label": "Indirect emissions from the generation of purchased electricity"
+        }
+      ],
+      "2019": [
+        {
+          "value": 692299,
+          "unit": "MtCO2e",
+          "label": "Indirect emissions from the generation of purchased electricity"
+        }
+      ],
+      "2018": [
+        {
+          "value": 739458,
+          "unit": "MtCO2e",
+          "label": "Indirect emissions from the generation of purchased electricity"
+        }
+      ],
+      "2017": [
+        {
+          "value": 770704,
+          "unit": "MtCO2e",
+          "label": "Indirect emissions from the generation of purchased electricity"
+        }
+      ]
+    },
+    "scope_3": {
+      "2020": [
+        {
+          "value": 36169,
+          "unit": "MtCO2e",
+          "label": "Business travel, including air, rail, reimbursed personal vehicle and rental car travel, as well as hotel stays"
+        }
+      ],
+      "2019": [
+        {
+          "value": 181004,
+          "unit": "MtCO2e",
+          "label": "Business travel, including air, rail, reimbursed personal vehicle and rental car travel, as well as hotel stays"
+        }
+      ],
+      "2018": [
+        {
+          "value": 176356,
+          "unit": "MtCO2e",
+          "label": "Business travel, including air, rail, reimbursed personal vehicle and rental car travel, as well as hotel stays"
+        }
+      ],
+      "2017": [
+        {
+          "value": 187020,
+          "unit": "MtCO2e",
+          "label": "Business travel, including air, rail, reimbursed personal vehicle and rental car travel, as well as hotel stays"
+        }
+      ]
+    }
+  }
+}

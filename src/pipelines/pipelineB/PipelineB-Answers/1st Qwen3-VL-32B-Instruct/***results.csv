@@ -1,0 +1,54 @@
+model,maxToken,report,duration,pages,t_inf/page
+Qwen/Qwen3-VL-32B-Instruct,16384,Allianz_2022_report,38.25,7,5.46
+Qwen/Qwen3-VL-32B-Instruct,16384,Daimler_2020_report,52.19,9,5.8
+Qwen/Qwen3-VL-32B-Instruct,16384,Fresenius SE_2019_report,57.91,7,8.27
+Qwen/Qwen3-VL-32B-Instruct,16384,ViacomCBS_ESG Report_2020-2021_vFINAL,76.47,7,10.92
+Qwen/Qwen3-VL-32B-Instruct,16384,acuity brands inc_2022_report,17.55,8,2.19
+Qwen/Qwen3-VL-32B-Instruct,16384,addtech_2022_report,49.9,9,5.54
+Qwen/Qwen3-VL-32B-Instruct,16384,aixtron_2020_report,32.5,7,4.64
+Qwen/Qwen3-VL-32B-Instruct,16384,allfunds group_2021_report,17.71,7,2.53
+Qwen/Qwen3-VL-32B-Instruct,16384,americold realty inc_2022_report,34.25,9,3.81
+Qwen/Qwen3-VL-32B-Instruct,16384,atlas arteria_2019_report,30.54,8,3.82
+Qwen/Qwen3-VL-32B-Instruct,16384,autoneum holding_2019_report,30.85,7,4.41
+Qwen/Qwen3-VL-32B-Instruct,16384,bekaert (d) sa_2022_report,48.82,7,6.97
+Qwen/Qwen3-VL-32B-Instruct,16384,blackline safety_2021_report,21.98,7,3.14
+Qwen/Qwen3-VL-32B-Instruct,16384,cabot corp_2018_report,21.99,7,3.14
+Qwen/Qwen3-VL-32B-Instruct,16384,cardinal energy ltd_2021_report,33.19,7,4.74
+Qwen/Qwen3-VL-32B-Instruct,16384,comerica inc_2019_report,70.92,7,10.13
+Qwen/Qwen3-VL-32B-Instruct,16384,cytokinetics inc_2022_report,13.22,9,1.47
+Qwen/Qwen3-VL-32B-Instruct,16384,dampskibsselskabet norden_2019_report,32.81,7,4.69
+Qwen/Qwen3-VL-32B-Instruct,16384,evolution mining ltd_2020_report,33.39,9,3.71
+Qwen/Qwen3-VL-32B-Instruct,16384,fujifilm_2022_report,105.04,7,15.01
+Qwen/Qwen3-VL-32B-Instruct,16384,georg fischer ag_2018_report,47.97,9,5.33
+Qwen/Qwen3-VL-32B-Instruct,16384,graincorp_2019_report,28.32,7,4.05
+Qwen/Qwen3-VL-32B-Instruct,16384,granite construction inc_2020_report,20.66,7,2.95
+Qwen/Qwen3-VL-32B-Instruct,16384,h. lundbeck_2021_report,52.22,7,7.46
+Qwen/Qwen3-VL-32B-Instruct,16384,hammerson reit_2021_report,28.4,9,3.16
+Qwen/Qwen3-VL-32B-Instruct,16384,hang lung properties_2018_report,30.2,9,3.36
+Qwen/Qwen3-VL-32B-Instruct,16384,healius ltd_2022_report,16.72,8,2.09
+Qwen/Qwen3-VL-32B-Instruct,16384,hudbay minerals inc_2020_report,30.18,9,3.35
+Qwen/Qwen3-VL-32B-Instruct,16384,huhtamaki_2018_report,36.19,7,5.17
+Qwen/Qwen3-VL-32B-Instruct,16384,huhtamaki_2019_report,34.5,9,3.83
+Qwen/Qwen3-VL-32B-Instruct,16384,inchcape plc_2022_report,33.67,9,3.74
+Qwen/Qwen3-VL-32B-Instruct,16384,innospec inc_2020_report,17.58,5,3.52
+Qwen/Qwen3-VL-32B-Instruct,16384,jetblue airways corp_2019_report,49.84,5,9.97
+Qwen/Qwen3-VL-32B-Instruct,16384,jpmorgan chase_2020_report,50.31,7,7.19
+Qwen/Qwen3-VL-32B-Instruct,16384,kfw_2018_report,41.42,7,5.92
+Qwen/Qwen3-VL-32B-Instruct,16384,kilroy realty_2017_report,35.52,9,3.95
+Qwen/Qwen3-VL-32B-Instruct,16384,kilroy realty_2018_report,61.18,9,6.8
+Qwen/Qwen3-VL-32B-Instruct,16384,kureha corp_2020_report,36.24,6,6.04
+Qwen/Qwen3-VL-32B-Instruct,16384,lundin gold inc_2021_report,24.81,5,4.96
+Qwen/Qwen3-VL-32B-Instruct,16384,lundin gold inc_2022_report,35.75,7,5.11
+Qwen/Qwen3-VL-32B-Instruct,16384,metro ag_2022_report,45.32,7,6.47
+Qwen/Qwen3-VL-32B-Instruct,16384,morinaga ltd_2020_report,88.08,7,12.58
+Qwen/Qwen3-VL-32B-Instruct,16384,nippn corp_2022_report,42.88,8,5.36
+Qwen/Qwen3-VL-32B-Instruct,16384,nordea_2017_report,22.67,9,2.52
+Qwen/Qwen3-VL-32B-Instruct,16384,polaris_2021_report,44.36,9,4.93
+Qwen/Qwen3-VL-32B-Instruct,16384,salzgitter ag_2018_report,23.76,7,3.39
+Qwen/Qwen3-VL-32B-Instruct,16384,sato oyj_2022_report,98.26,9,10.92
+Qwen/Qwen3-VL-32B-Instruct,16384,stantec inc_2019_report,37.39,7,5.34
+Qwen/Qwen3-VL-32B-Instruct,16384,sumitomo corporation_2021_report,81.11,9,9.01
+Qwen/Qwen3-VL-32B-Instruct,16384,toshiba tec corp_2022_report,24.69,9,2.74
+Qwen/Qwen3-VL-32B-Instruct,16384,uniper_2019_report.pdf,30.89,7,4.41
+Qwen/Qwen3-VL-32B-Instruct,16384,varta ag_2021_report,24.75,7,3.54
+Qwen/Qwen3-VL-32B-Instruct,16384,webuild_2019_report,31.65,9,3.52
