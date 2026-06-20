@@ -1,0 +1,45 @@
+#!/bin/bash
+
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --gres=gpu:1
+
+#SBATCH --mem=100G
+#SBATCH --cpus-per-task=16
+#SBATCH --partition=gpuh200  # Is enough as VRAM peak = 29GB for 1,5 min with 22GB RAM
+
+#SBATCH --time=08:00:00
+
+#SBATCH --output=/scratch/tmp/jkuhlma1/logs/%j_out.log    # stdout → Datei (%j = Job-ID)
+#SBATCH --error=/scratch/tmp/jkuhlma1/logs/%j_out.log     # stderr → Datei
+
+#SBATCH --job-name=FromPDF2Extract
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=jannik.kuhlmann@uni-muenster.de 
+
+# LOAD MODULES HERE IF REQUIRED
+ml palma/2024a GCCcore/13.3.0 Python/3.12.3 CUDA/13.0.2
+
+# SOURCE PYTHON VENV
+
+# source $HOME/venvs/colpali-a100/bin/activate
+source $HOME/venvs/colembed3Bv2-h200mini/bin/activate
+
+# SET EXISTING CHACHE
+export HF_HOME=$WORK/cache/huggingface
+export CUDA_HOME=$EBROOTCUDA
+export PIP_CACHE_DIR=$WORK/.cache/pip
+export RUN_TS=$(date +%m%d_%H%M) # To map the only the new retirevals
+
+
+###################
+## Computing
+
+#EMBEDDING
+python "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed.py" -t -bz 8
+
+#RETRIEVAL
+python "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-02-retrieval.py" -t -8B
+
+#EXTRACTION
+python -u "$HOME/2026_BA_Code/src/pipelines/pipelineB/B-03-HPC.py" "-t
