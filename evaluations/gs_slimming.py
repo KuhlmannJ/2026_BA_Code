@@ -17,7 +17,7 @@ gs["status"] = gs["report_name"].apply(lambda r: None if r in reports_downloaded
 
 
 # Stipping unnecessary columns
-toKeep = ["report_name", "year", "scope", "page", "value", "unit", "unit_normalized", "status"]
+toKeep = ["report_name", "year", "scope", "page", "value", "unit", "unit_normalized", "metric_name", "status"]
 gs_slim = gs[toKeep]
 
 # Sorting rows like VSC does it with JSON
@@ -42,8 +42,9 @@ scope_counts[["status", "scopes_present"]] = [
 
 gs_slim = gs_slim.drop(columns="status").merge(scope_counts[["status", "scopes_present"]], on="report_name")
 
-# Dropping '.pdf' from report_name for furhter usage
-gs_slim["report_name"] = gs_slim["report_name"].str.replace(".pdf", "")
+## Mapping gs_slim for better analysis capabilities down the road
+gs_slim["report_name"]  = gs_slim["report_name"].str.replace(".pdf", "")
+gs_slim = gs_slim.rename(columns={"metric_name": "label"})
 
 gs_slim.to_csv("evaluations/gs_slim.csv", index=False)
 
