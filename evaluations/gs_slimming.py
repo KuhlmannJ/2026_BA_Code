@@ -1,14 +1,19 @@
+import os
+
 import pandas as pd
 from pathlib import Path
 
-### Listing all downloadable reports
-reports_downloaded = {p.name for p in Path("localdata/all_esg_reports").glob("*.pdf")}
+BASE = os.path.dirname(os.path.abspath(__file__)) # sets "BASE" to directory this .py is located
 
+### Listing all downloadable reports
+#reports_downloaded = {p.name for p in Path("localdata/all_esg_reports").glob("*.pdf")}
+reports_downloaded = {p.name for p in (Path(BASE) / "../localdata/all_esg_reports").glob("*.pdf")}
 
 
 
 ### Loading Gold_Standard in full
-gs = pd.read_csv("evaluations/gold_standard.csv")
+#gs = pd.read_csv("evaluations/gold_standard.csv")
+gs = pd.read_csv((Path(BASE) / "../evaluations/gold_standard.csv"))
 
 # Finding wrong field name in gs and mapping it
 print("Mismatches:", reports_downloaded - set(gs["report_name"]))
@@ -81,7 +86,7 @@ gs_slim = gs_slim.merge(years_present, on="report_name")
 ##########################################
 ### Saving gs_slim to CSV
 
-gs_slim.to_csv("evaluations/gs_slim.csv", index=False)
+gs_slim.to_csv((Path(BASE) / "gs_slim.csv"), index=False)
 
 print("="*60)
 print(gs_slim.drop_duplicates("report_name")["status"].value_counts())
