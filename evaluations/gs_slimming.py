@@ -25,8 +25,14 @@ gs["status"] = gs["report_name"].apply(lambda r: None if r in reports_downloaded
 # Stipping unnecessary columns
 toKeep = ["report_name", "year", "scope", "page", "value", "unit", "unit_normalized", "metric_name", "status"]
 gs_slim = gs[toKeep]
+gs_slim = gs_slim[gs_slim["status"]!="notavail"]
 
 
+
+print()
+print(f"No. of gold_standard reports: {gs['report_name'].nunique()}")
+print()
+print(f"No. of downloadable reports: {len(reports_downloaded)}")
 
 ##########################################
 ### NOW Manipulating gs_slim
@@ -88,8 +94,12 @@ gs_slim = gs_slim.merge(years_present, on="report_name")
 
 gs_slim.to_csv((Path(BASE) / "gs_slim.csv"), index=False)
 
+
 print("="*60)
+print("="*60)
+print()
+print(f"No. of reports in gs_slim: {gs_slim['report_name'].nunique()}")
+print()
 print(gs_slim.drop_duplicates("report_name")["status"].value_counts())
-print("="*60)
+print()
 print(gs_slim.drop_duplicates("report_name")["scopes_present"].value_counts(dropna=False))
-print("="*60)
