@@ -30,6 +30,7 @@ parser.add_argument("--model", "-m",
                    choices=["think", "moe", "instr"],
                    default="think",
                    help="Model to use: %(choices)s")
+
 args = parser.parse_args()
 
 
@@ -62,10 +63,13 @@ banner("START: B-03-HPC.py")
 banner("STEP 0: GLOBAL VARIABLES")
 
 MAX_TOKENS = args.maxTokens
-MODEL_NAME = args.model
+match args.model:
+    case "think": MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"
+    case "moe":   MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"
+    case "instr": MODEL_NAME = "Qwen/Qwen3-VL-32B-Instruct"
 
-# NOTE: Fixed RETRIEVAL_DIR!
 
+# NOTE: Fixed RETRIEVAL_DIR for all models!
 match True:
     case args.test:
         RETRIEVAL_DIR = Path(f"/scratch/tmp/jkuhlma1/results/A-02-retrievals/test/nvidia/nemotron-colembed-vl-8b-v2/")
@@ -117,8 +121,8 @@ print(f"  UUID : {gpu_uuid}")
 banner("STEP 2: LOAD VLM")
 
 t_vlmLoad_start = time.time()
-# Because of a default in arguments, no need for a default case here
-match MODEL_NAME:
+
+match args.model:
     case "think":
         model = Qwen3VLForConditionalGeneration.from_pretrained(
             MODEL_NAME,
