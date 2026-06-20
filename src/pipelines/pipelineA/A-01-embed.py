@@ -60,7 +60,7 @@ else :
 
 match True:
     case args.test:
-        PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/test_sg_reports")
+        PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/test_esg_reports")
     case args.all:
         PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/all_esg_reports")
     case _:
