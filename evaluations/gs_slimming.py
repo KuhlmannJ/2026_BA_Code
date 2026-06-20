@@ -5,6 +5,8 @@ from pathlib import Path
 reports_downloaded = {p.name for p in Path("localdata/all_esg_reports").glob("*.pdf")}
 
 
+
+
 ### Loading Gold_Standard in full
 gs = pd.read_csv("evaluations/gold_standard.csv")
 
@@ -15,36 +17,69 @@ gs["report_name"] = gs["report_name"].replace("viacomcbs_2020_report.pdf", "Viac
 # Defining Status Column for each report, beginning with "notavail"
 gs["status"] = gs["report_name"].apply(lambda r: None if r in reports_downloaded else "notavail")
 
-
 # Stipping unnecessary columns
 toKeep = ["report_name", "year", "scope", "page", "value", "unit", "unit_normalized", "metric_name", "status"]
 gs_slim = gs[toKeep]
+
+
+
+##########################################
+### NOW Manipulating gs_slim
+
+## Mapping gs_slim for better analysis capabilities down the road
+gs_slim["report_name"]  = gs_slim["report_name"].str.replace(".pdf", "")
+gs_slim = gs_slim.rename(columns={"metric_name": "label"})
 
 # Sorting rows like VSC does it with JSON
 gs_slim["_sort"] = gs_slim["report_name"].str.lower() # need to circumvent ASCII case-sensitive sorting
 gs_slim = gs_slim.sort_values(["_sort", "scope", "year"], ignore_index=True).drop(columns="_sort")
 
+
+##########################################
+### Evaluation which scopes for which reports are present and defining "status" for each report
+
+
 # Categorizing reports by scope coverage
+# Counting how many non-null values in ["values"] are present for each combination of ["report_name", "scope"]
+# Per report one row and writes scopes in colums to concante later
 scope_counts = (
     gs_slim.groupby(["report_name", "scope"])["value"]
     .apply(lambda x: x.notna().sum())
     .unstack(fill_value=0)
 )
 
+# Returns categories for each scope for every report
+# "useless" if all are None
+# "complete" if all 4 Scopes are avail
+# "partial" else
 def categorize(row):
     present = [s for s in ["1", "2lb", "2mb", "3"] if row.get(s, 0) > 0]
     if not present: return "useless", None
     return ("complete" if len(present) == 4 else "partial"), "+".join(present)
 
-scope_counts[["status", "scopes_present"]] = [
-    categorize(row) for row in scope_counts.to_dict("records")
-]
+# Applying func `categorize` on every created rows on scope_coounts, "result_type="expand"" brings ouput into two columns
+scope_counts[["status", "scopes_present"]] = scope_counts.apply(categorize, axis=1, result_type="expand")
 
+# Merging those resilts back onto gs_slim
 gs_slim = gs_slim.drop(columns="status").merge(scope_counts[["status", "scopes_present"]], on="report_name")
 
-## Mapping gs_slim for better analysis capabilities down the road
-gs_slim["report_name"]  = gs_slim["report_name"].str.replace(".pdf", "")
-gs_slim = gs_slim.rename(columns={"metric_name": "label"})
+
+##########################################
+### Evaluation which years for which reports are filled with data 
+
+years_present = (
+    gs_slim[gs_slim["value"].notna()]
+    .groupby("report_name")["year"]
+    .apply(lambda x: "+".join(sorted(x.astype(str).unique())))
+    .rename("years_present")
+)
+
+gs_slim = gs_slim.merge(years_present, on="report_name")
+
+
+
+##########################################
+### Saving gs_slim to CSV
 
 gs_slim.to_csv("evaluations/gs_slim.csv", index=False)
 
