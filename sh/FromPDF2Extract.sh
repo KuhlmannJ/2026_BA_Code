@@ -36,7 +36,7 @@ export RUN_TS=$(date +%m%d_%H%M) # To map the only the new retirevals
 ## Computing
 
 #EMBEDDING
-python "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed.py" -t -bz 8
+python "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed.py" -t -bz 8 -8B
 
 #RETRIEVAL
 python "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-02-retrieval.py" -t -8B
