@@ -1,9 +1,12 @@
+import os
 import json
 import pandas as pd
 from pathlib import Path
 
 #### GLOBAL VARIABLES
 SCOPES = ["scope_1", "scope_2_market_based", "scope_2_location_based", "scope_3"]
+
+BASE = os.path.dirname(os.path.abspath(__file__)) # sets "BASE" to directory this .py is located
 
 
 def banner(msg: str):
@@ -34,22 +37,26 @@ def flatten_json(filepath: Path) -> list[dict]:
 
     return rows
 
-inputs  = [
-    "./evaluations/PipelineB/PipelineB-Answers/1st_Qwen3-VL-30B-A3B-Thinking",
-    "./evaluations/PipelineB/PipelineB-Answers/1st_Qwen3-VL-32B-Instruct",
-    "./evaluations/PipelineB/PipelineB-Answers/1st_Qwen3-VL-32B-Thinking",
-    "./evaluations/PipelineB/PipelineB-Answers/2nd_Qwen3-VL-32B-Instruct",
-    "./evaluations/PipelineB/PipelineB-Answers/2nd_Qwen3-VL-30B-A3B-Thinking",
-    "./evaluations/PipelineB/PipelineB-Answers/2nd_Qwen3-VL-32B-Thinking",
-]
-outputs = [
-    "./evaluations/PipelineB/PipelineB-Answers/1st_Qwen3-VL-32B-Instruct.csv",
-    "./evaluations/PipelineB/PipelineB-Answers/1st_Qwen3-VL-30B-A3B-Thinking.csv",
-    "./evaluations/PipelineB/PipelineB-Answers/1st_Qwen3-VL-32B-Thinking.csv",
-    "./evaluations/PipelineB/PipelineB-Answers/2nd_Qwen3-VL-32B-Instruct.csv",
-    "./evaluations/PipelineB/PipelineB-Answers/2nd_Qwen3-VL-30B-A3B-Thinking.csv",
-    "./evaluations/PipelineB/PipelineB-Answers/2nd_Qwen3-VL-32B-Thinking.csv",
-]
+input_dir = Path(BASE) / "PipelineB-Answers"
+inputs  = sorted(p for p in input_dir.iterdir() if p.is_dir())
+outputs = [p.with_suffix(".csv") for p in inputs]
+## the above is esentially this:
+# inputs  = [
+#     Path(BASE) / "PipelineB-Answers/1st_Qwen3-VL-30B-A3B-Thinking",
+#     Path(BASE) / "PipelineB-Answers/1st_Qwen3-VL-32B-Instruct",
+#     Path(BASE) / "PipelineB-Answers/1st_Qwen3-VL-32B-Thinking",
+#     Path(BASE) / "PipelineB-Answers/2nd_Qwen3-VL-32B-Instruct",
+#     Path(BASE) / "PipelineB-Answers/2nd_Qwen3-VL-30B-A3B-Thinking",
+#     Path(BASE) / "PipelineB-Answers/2nd_Qwen3-VL-32B-Thinking",
+# ]
+# outputs = [
+#     Path(BASE) / "PipelineB-Answers/1st_Qwen3-VL-32B-Instruct.csv",
+#     Path(BASE) / "PipelineB-Answers/1st_Qwen3-VL-30B-A3B-Thinking.csv",
+#     Path(BASE) / "PipelineB-Answers/1st_Qwen3-VL-32B-Thinking.csv",
+#     Path(BASE) / "PipelineB-Answers/2nd_Qwen3-VL-32B-Instruct.csv",
+#     Path(BASE) / "PipelineB-Answers/2nd_Qwen3-VL-30B-A3B-Thinking.csv",
+#     Path(BASE) / "PipelineB-Answers/2nd_Qwen3-VL-32B-Thinking.csv",
+# ]
 
 for i in range(len(inputs)):
 
