@@ -528,6 +528,9 @@ nippn corp_2022_report,scope_1,2022,47.0,"1,000 t-CO2",Scope 1
 nippn corp_2022_report,scope_2_location_based,2021,114.0,"1,000 t-CO2",Scope 2
 nippn corp_2022_report,scope_2_location_based,2022,115.0,"1,000 t-CO2",Scope 2
 nippn corp_2022_report,scope_3,2022,48.0,kt-CO2,CO2 Emissions in Logistics
+nok corporation_2021_report,scope_1,2020,38.0,"1,000 tons-CO2",Scope 1 (Fuel)
+nok corporation_2021_report,scope_2_location_based,2020,602.0,"1,000 tons-CO2",Scope 2 (Electricity/heat)
+nok corporation_2021_report,scope_3,2020,269.0,"1,000 tons-CO2",Scope 3 (Indirect Emissions)
 nordea_2017_report,scope_1,2017,51.0,tonnes,diesel generators (scope 1)
 nordea_2017_report,scope_1,2016,48.0,tonnes,diesel generators (scope 1)
 nordea_2017_report,scope_2_location_based,2017,3187.0,tonnes,"electricity, heating, district cooling (scope 2)"
