@@ -42,4 +42,4 @@ python "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-01-embed.py" -t -bz 8 -8B
 python "$HOME/2026_BA_Code/src/pipelines/pipelineA/A-02-retrieval.py" -t -8B
 
 #EXTRACTION
-python -u "$HOME/2026_BA_Code/src/pipelines/pipelineB/B-03-HPC.py" "-t
+python -u "$HOME/2026_BA_Code/src/pipelines/pipelineB/B-03-HPC.py" -t

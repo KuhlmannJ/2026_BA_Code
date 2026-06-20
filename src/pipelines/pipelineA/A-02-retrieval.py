@@ -124,7 +124,7 @@ def save_top10_results_json(report_name: str, scores: torch.Tensor) -> None:
 
 
 
-
+banner("START: A-02-retrieval.py")
 
 #### 0. GLOBAL VARIABLES ########################################
 banner("STEP 0: GLOBAL VARIABLES")
@@ -315,3 +315,4 @@ for pdf_path in PDF_LIST:
 ##################################################
 overall_time = round(time.time() - t0, TIME_ROUND)
 print(f"DONE in {overall_time}s")
+banner("END: A-02-retrieval.py")

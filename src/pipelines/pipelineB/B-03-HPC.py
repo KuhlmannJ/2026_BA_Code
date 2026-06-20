@@ -53,6 +53,8 @@ def strip_thinking(text: str) -> str:
         return text.split("</think>", 1)[1].strip()
     return text.strip()
 
+banner("START: B-03-HPC.py")
+
 #### 0. GLOBAL VARIABLES ########################################
 banner("STEP 0: GLOBAL VARIABLES")
 
@@ -262,4 +264,4 @@ with open(csv_file, "w", newline="", encoding="utf-8") as f:
     writer.writeheader()
     writer.writerows(results)
 
-banner("Done.")
+banner("END: B-03-HPC.py")

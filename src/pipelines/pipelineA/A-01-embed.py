@@ -38,7 +38,7 @@ def banner(title):
     print(f"  {title}")
     print("=" * 60)
 
-
+banner("START: A-01-embed.py")
 #### 0. GLOBAL VARIABLES ########################################
 
 match True:
@@ -218,4 +218,4 @@ print(f"  GPU-Kapazität      : {vram_total:.1f} GB")
 print(f"  Auslastung am Peak : {100 * global_peak_gb / vram_total:.0f} %")
 
 #################################################################
-banner("DONE.")
+banner("END: A-01-embed.py")
