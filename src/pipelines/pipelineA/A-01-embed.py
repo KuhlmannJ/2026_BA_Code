@@ -82,7 +82,6 @@ LOG_FILE = SAVE_DIR / f"kpi_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
 LOG_FIELDS = ["report", "pages", "elapsed_s", "s_per_page", "peak_vram_gb", "peak_ram_gb", "file_size_mb", "embed_dim"]
 with open(LOG_FILE, "w", newline="") as f:
     csv.DictWriter(f, fieldnames=LOG_FIELDS).writeheader()
-print(f"  KPI-Log : {LOG_FILE}")
 
 #### PARAMS OUTPUT
 banner("STEP 0: PARAMS")
