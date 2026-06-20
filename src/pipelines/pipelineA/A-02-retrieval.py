@@ -189,7 +189,7 @@ EMD_LIST = sorted(list(EMB_DIR.glob("*.pt")))
 # OUTPUT Path for extracted PDF Pages "Retirevals"
 match True:
     case args.test:
-        RETRIEVALS_DIR  =Path(f"/scratch/tmp/jkuhlma1/results/A-02-retrievals/test/{MODEL_NAME}")
+        RETRIEVALS_DIR = Path(f"/scratch/tmp/jkuhlma1/results/A-02-retrievals/test/{MODEL_NAME}")
     case _:
         RETRIEVALS_DIR = Path(f"/scratch/tmp/jkuhlma1/results/A-02-retrievals/{MODEL_NAME}")
         

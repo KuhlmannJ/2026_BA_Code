@@ -60,7 +60,13 @@ MAX_TOKENS = args.maxTokens
 MODEL_NAME = args.model
 
 # NOTE: Fixed RETRIEVAL_DIR!
-RETRIEVAL_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals/nvidia/nemotron-colembed-vl-8b-v2/")
+
+match True:
+    case args.test:
+        RETRIEVAL_DIR = Path(f"/scratch/tmp/jkuhlma1/results/A-02-retrievals/test/nvidia/nemotron-colembed-vl-8b-v2/")
+    case _:
+        RETRIEVAL_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals/nvidia/nemotron-colembed-vl-8b-v2/")
+
 RETRIEVAL_LIST = sorted(list(RETRIEVAL_DIR.glob("*.pdf")))
 
 # For Testing just one, hopefully 'Allianz_2022_report.pdf'
