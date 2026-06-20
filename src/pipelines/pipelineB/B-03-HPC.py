@@ -22,11 +22,14 @@ load_dotenv(find_dotenv())
 # ── Arguments for Dev'ing
 parser = argparse.ArgumentParser()
 parser.add_argument("--test",       "-t",   action="store_true" , help="Toggle Testing Path")
-parser.add_argument("--model",      "-m"                        , help="Give Model Name")
 parser.add_argument("--maxTokens",  "-mt",  type=int, default=16384, help="Control Thinking Tokens")
 # A hard-limit on the length of the thought process
 # 16384 was seen in some HF examples of the authors, besides 128 (way too small)
 
+parser.add_argument("--model", "-m",
+                   choices=["think", "moe", "instr"],
+                   default="think",
+                   help="Model to use: %(choices)s")
 args = parser.parse_args()
 
 
@@ -114,22 +117,23 @@ print(f"  UUID : {gpu_uuid}")
 banner("STEP 2: LOAD VLM")
 
 t_vlmLoad_start = time.time()
+# Because of a default in arguments, no need for a default case here
 match MODEL_NAME:
-    case "Qwen/Qwen3-VL-32B-Thinking":
+    case "think":
         model = Qwen3VLForConditionalGeneration.from_pretrained(
             MODEL_NAME,
             dtype=torch.bfloat16,
             attn_implementation="flash_attention_2",
             device_map='cuda:0',
         )
-    case "Qwen/Qwen3-VL-30B-A3B-Thinking":
+    case "moe":
         model = Qwen3VLMoeForConditionalGeneration.from_pretrained(
             MODEL_NAME,
             dtype=torch.bfloat16,
             attn_implementation="flash_attention_2",
             device_map='cuda:0',
         )
-    case "Qwen/Qwen3-VL-32B-Instruct":
+    case "instr":
         model = Qwen3VLForConditionalGeneration.from_pretrained(
             MODEL_NAME,
             dtype=torch.bfloat16,

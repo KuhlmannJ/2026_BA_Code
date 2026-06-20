@@ -127,11 +127,10 @@ def save_top10_results_json(report_name: str, scores: torch.Tensor) -> None:
 banner("START: A-02-retrieval.py")
 
 #### 0. GLOBAL VARIABLES ########################################
-banner("STEP 0: GLOBAL VARIABLES")
 
 # Loding and logging loaded .env
 from dotenv import load_dotenv, find_dotenv
-print(".env loaded:", load_dotenv(find_dotenv()))
+load_dotenv(find_dotenv())
 
 
 match True:
