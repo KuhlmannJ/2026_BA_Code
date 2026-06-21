@@ -1,5 +1,5 @@
 import os
-
+import json
 import pandas as pd
 from pathlib import Path
 
@@ -64,9 +64,11 @@ scope_counts = (
 # "complete" if all 4 Scopes are avail
 # "partial" else
 def categorize(row):
-    present = [s for s in ["1", "2lb", "2mb", "3"] if row.get(s, 0) > 0]
-    if not present: return "useless", None
-    return ("complete" if len(present) == 4 else "partial"), "+".join(present)
+    ORDER = ["1", "2lb", "2mb", "3"]
+    present = [s for s in ORDER if row.get(s, 0) > 0]
+    if not present:
+        return "useless", []
+    return ("complete" if len(present) == 4 else "partial"), present
 
 # Applying func `categorize` on every created rows on scope_coounts, "result_type="expand"" brings ouput into two columns
 scope_counts[["status", "scopes_present"]] = scope_counts.apply(categorize, axis=1, result_type="expand")
@@ -81,7 +83,7 @@ gs_slim = gs_slim.drop(columns="status").merge(scope_counts[["status", "scopes_p
 years_present = (
     gs_slim[gs_slim["value"].notna()]
     .groupby("report_name")["year"]
-    .apply(lambda x: "+".join(sorted(x.astype(str).unique())))
+    .apply(lambda x: sorted(x.astype(str).unique()))
     .rename("years_present")
 )
 
@@ -89,16 +91,23 @@ gs_slim = gs_slim.merge(years_present, on="report_name")
 
 
 
+# ##########################################
+# ### Prepare export-friendly scope columns
+
+# # Ensure `scopes_present` is a list for downstream processing
+# gs_slim["scopes_present"] = gs_slim["scopes_present"].apply(lambda x: x if isinstance(x, (list, tuple)) else [])
+# # JSON-serializable column for CSV/transfer and a human-readable string column
+# gs_slim["scopes_present_export"] = gs_slim["scopes_present"].apply(json.dumps)
+
 ##########################################
-### Saving gs_slim to CSV
-
-gs_slim.to_csv((Path(BASE) / "gs_slim.csv"), index=False)
-
+### Saving gs_slim to JSON
+gs_slim.to_json(Path(BASE) / "gs_slim.json",index=False, orient="records", indent=4)
 
 print("="*60)
 print("="*60)
 print()
 print(f"No. of reports in gs_slim: {gs_slim['report_name'].nunique()}")
+print()
 print()
 print(gs_slim.drop_duplicates("report_name")["status"].value_counts())
 print()
