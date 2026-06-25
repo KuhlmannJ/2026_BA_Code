@@ -6,7 +6,7 @@
 
 #SBATCH --mem=50G
 #SBATCH --cpus-per-task=8
-#SBATCH --partition=gpuh200mini  # Is enough as VRAM peak = 29GB for 1,5 min with 22GB RAM
+#SBATCH --partition=gpua100
 
 #SBATCH --time=08:00:00
 
