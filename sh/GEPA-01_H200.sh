@@ -35,3 +35,4 @@ export RUN_TS=$(date +%m%d_%H%M) # To map the only the new retirevals
 
 # START THE APPLICATION
 python -u "$HOME/2026_BA_Code/src/GEPA/oa_main.py" "$@"
+
