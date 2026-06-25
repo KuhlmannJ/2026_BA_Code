@@ -2,11 +2,11 @@
 
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --gres=gpu:1
+#SBATCH --gres=gpu:3
 
 #SBATCH --mem=100G
 #SBATCH --cpus-per-task=16
-#SBATCH --partition=gpuh200  # Is enough as VRAM peak = 29GB for 1,5 min with 22GB RAM
+#SBATCH --partition=gpuh200
 
 #SBATCH --time=00:30:00
 
@@ -29,9 +29,9 @@ export CUDA_HOME=$EBROOTCUDA
 export PIP_CACHE_DIR=$WORK/.cache/pip
 export RUN_TS=$(date +%m%d_%H%M) # To map the only the new retirevals
 
-pip install gepa
-pip install openai
-pip install litellm
+#pip install gepa
+#pip install openai
+#pip install litellm
 
 # START THE APPLICATION
 python -u "$HOME/2026_BA_Code/src/GEPA/oa_main.py" "$@"

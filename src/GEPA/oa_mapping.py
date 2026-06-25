@@ -67,7 +67,8 @@ def map_to_goldstandard(run_dir: Path, gs_path: Path) -> pd.DataFrame:
     #### Getting GoldStandard ready
     gs = pd.read_json(gs_path)
     gs["year"] = gs["year"].astype(int) #As we normalize the years
-
+    
+    #### Getting extraction ready (reading jsons)
     all_rows = []
     errors   = []
     for f in sorted(run_dir.glob("*.json")):
@@ -82,7 +83,7 @@ def map_to_goldstandard(run_dir: Path, gs_path: Path) -> pd.DataFrame:
             print(f"  {err}")
 
     
-    #### Getting extraction ready
+    #### Getting extraction ready (putting jsons into dataFrame)
     extraction = pd.DataFrame(all_rows, columns=["report_name", "scope", "year", "value", "unit", "label"])
 
     extraction["scope"] = extraction["scope"].replace(SCOPE_MAPPING)

@@ -147,14 +147,14 @@ match args.model:
             MODEL_NAME,
             dtype=torch.bfloat16,
             attn_implementation="flash_attention_2",
-            device_map='cuda:0',
+            device_map="auto",
         )
     case "moe":
         model = Qwen3VLMoeForConditionalGeneration.from_pretrained(
             MODEL_NAME,
             dtype=torch.bfloat16,
             attn_implementation="flash_attention_2",
-            device_map='cuda:0',
+            device_map="auto",
         )
     case "instr":
         model = Qwen3VLForConditionalGeneration.from_pretrained(
@@ -212,7 +212,7 @@ for pdf_path in sorted(RETRIEVAL_LIST):
         add_generation_prompt=True,
         return_dict=True,
         return_tensors="pt"
-    ).to(model.device)
+    ).to("cuda") #"cuda" better for multi H200mini GPUs than (model.device)
     
     output_JSON = None  # Default: to detect token-overflow
     tokens_needed = MAX_TOKENS

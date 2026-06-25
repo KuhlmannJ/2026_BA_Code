@@ -71,13 +71,18 @@ def evaluate(candidate: str) -> tuple[float, dict]:
 
     run_dir = RUNS_DIR / str(_run_counter)
     run_dir.mkdir(parents=True, exist_ok=True)
+    print(f"\n[evaluate] Run #{_run_counter} — output dir: {run_dir}")
     _run_counter += 1
 
     # Run: B-03-HPC.py
+    print(f"[evaluate] Running extraction (B-03-HPC.py)...")
     _run_extraction(candidate, run_dir)
+    print(f"[evaluate] Extraction done.")
 
     # Run: oa_mapping.py (esentially "01-ReferenceDFs.ipynb" and "02-Evaluation.ipynb")
+    print(f"[evaluate] Mapping to gold standard...")
     merged = map_to_goldstandard(run_dir, GS_PATH)
+    print(f"[evaluate] Mapping done — {len(merged)} rows.")
 
     hits   = 0
     total  = 0
@@ -95,4 +100,5 @@ def evaluate(candidate: str) -> tuple[float, dict]:
     score        = hits / total if total > 0 else 0.0
     misses_clean = {cat: errs for cat, errs in misses.items() if errs}
 
+    print(f"[evaluate] Score: {score:.4f}  ({hits}/{total} hits)")
     return score, {"misses": misses_clean}
