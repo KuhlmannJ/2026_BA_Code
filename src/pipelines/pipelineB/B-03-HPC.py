@@ -30,7 +30,7 @@ parser.add_argument("--maxTokens",  "-mt",  type=int, default=16384, help="Contr
 parser.add_argument("--gepaTrainSet", "-gt", action="store_true", help="Toggle Training Set of Reports")
 
 parser.add_argument("--model", "-m",
-                    choices=["think", "moe", "instr", "instrFP8", "intr8B"],
+                    choices=["think", "moe", "instr", "instrFP8", "instr8B"],
                     default="think",
                     help="Model to use: %(choices)s")
 
@@ -79,7 +79,7 @@ match args.model:
     case "moe":         MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"
     case "instr":       MODEL_NAME = "Qwen/Qwen3-VL-32B-Instruct"
     case "instrFP8":    MODEL_NAME = "Qwen/Qwen3-VL-32B-Instruct-FP8"
-    case "intr8B":      MODEL_NAME = "Qwen/Qwen3-VL-8B-Instruct"
+    case "instr8B":     MODEL_NAME = "Qwen/Qwen3-VL-8B-Instruct"
 
 
 # NOTE: Fixed RETRIEVAL_DIR for all models!
@@ -178,7 +178,7 @@ match args.model:
             attn_implementation="flash_attention_2",
             device_map="auto",
         )
-    case "intr8B":
+    case "instr8B":
         model = Qwen3VLForConditionalGeneration.from_pretrained(
             MODEL_NAME,
             dtype=torch.bfloat16,
