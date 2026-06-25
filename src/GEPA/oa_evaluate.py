@@ -91,7 +91,7 @@ def evaluate(candidate: str) -> tuple[float, dict]:
     for _, row in merged.iterrows():
         for cat in CATEGORIES:
             total += 1
-            hit, detail = check_hit_with_detail(row, f"{cat}_i1", cat)
+            hit, detail = check_hit_with_detail(row, f"{cat}_instr", cat)
             if hit:
                 hits += 1
             elif detail:
