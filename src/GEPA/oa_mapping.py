@@ -102,6 +102,10 @@ def map_to_goldstandard(run_dir: Path, gs_path: Path) -> pd.DataFrame:
         .rename(columns={col: f"{col}{SUFFIX}" for col in AGG_COLS})
     )
 
+    # Slimming down GoldStandard even furhter to just include the reports that were extracted (e.g. via a smaller traning set for GEPA)
+    extraced_reports = set(agg["report_name"].unique())
+    gs = gs[gs["report_name"].isin(extraced_reports)]
+    
     merged = pd.merge(gs, agg, on=MERGE_ON, how="left") #"Left" to map extraction onto Gold-Standard
 
     for col in [f"{c}{SUFFIX}" for c in AGG_COLS]:
