@@ -2,11 +2,17 @@
 
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --gres=gpu:2
+#SBATCH --gres=gpu:1
 
-#SBATCH --mem=64G
+# --gres=gpu:2
+
+#SBATCH --mem=100G
 #SBATCH --cpus-per-task=8
-#SBATCH --partition=gpuh200mini
+#SBATCH --partition=gpuh200
+
+# --mem=64G
+# --cpus-per-task=8
+# --partition=gpuh200mini
 
 #SBATCH --time=00:30:00
 
