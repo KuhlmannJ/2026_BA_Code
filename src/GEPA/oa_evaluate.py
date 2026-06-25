@@ -1,3 +1,4 @@
+import csv
 import subprocess
 import pandas as pd
 from pathlib import Path
@@ -10,10 +11,12 @@ _SCRATCH           = Path("/scratch/tmp/jkuhlma1/gepa")
 RUNS_DIR           = _SCRATCH / "runs"
 GS_PATH            = _HERE.parent.parent / "evaluations" / "gs_slim.json"
 EXTRACTION_SCRIPT  = _HERE.parent / "pipelines" / "pipelineB" / "B-03-HPC.py"
+EVAL_LOG           = RUNS_DIR / "eval_log.csv"
 
 CATEGORIES = ["value", "unit"]
 
 _run_counter = 0
+_best_score  = -1.0
 
 def banner(title):
     print()
@@ -106,8 +109,20 @@ def evaluate(candidate: str) -> tuple[float, dict]:
             elif detail:
                 misses[cat].append(detail)
 
+    global _best_score
     score        = hits / total if total > 0 else 0.0
     misses_clean = {cat: errs for cat, errs in misses.items() if errs}
 
-    print(f"[evaluate] Score: {score:.4f}  ({hits}/{total} hits)")
+    is_best = score > _best_score
+    if is_best:
+        _best_score = score
+
+    write_header = not EVAL_LOG.exists()
+    with EVAL_LOG.open("a", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=["run", "score", "hits", "total", "is_best"])
+        if write_header:
+            writer.writeheader()
+        writer.writerow({"run": _run_counter - 1, "score": round(score, 6), "hits": hits, "total": total, "is_best": is_best})
+
+    print(f"[evaluate] Score: {score:.4f}  ({hits}/{total} hits)  is_best={is_best}")
     return score, {"misses": misses_clean}

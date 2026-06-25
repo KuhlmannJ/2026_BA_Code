@@ -1,0 +1,21 @@
+report_name,year,scope,gs_value,raw_extracted,ynorm_extracted,raw_was_list,ynorm_was_list
+addtech_2022_report,2022,1,,,['2041'],False,True
+addtech_2022_report,2022,2lb,,,['3709'],False,True
+addtech_2022_report,2022,2mb,,,['4087'],False,True
+addtech_2022_report,2022,3,,,['22961'],False,True
+evolution mining ltd_2020_report,2016,2mb,,,['472257'],False,True
+evolution mining ltd_2020_report,2017,2mb,,,['430993'],False,True
+evolution mining ltd_2020_report,2018,2mb,,,['394144'],False,True
+evolution mining ltd_2020_report,2019,2mb,,,['383449'],False,True
+evolution mining ltd_2020_report,2020,2mb,,,['398187'],False,True
+graincorp_2019_report,2016,2mb,,,['165563'],False,True
+graincorp_2019_report,2017,2mb,,,['167666'],False,True
+graincorp_2019_report,2018,2mb,,,['151718'],False,True
+graincorp_2019_report,2019,2mb,,,['145806'],False,True
+morinaga ltd_2020_report,2018,1,,,['56745'],False,True
+morinaga ltd_2020_report,2019,1,,,['58133'],False,True
+morinaga ltd_2020_report,2018,2lb,,,['52024'],False,True
+morinaga ltd_2020_report,2019,2lb,,,['49605'],False,True
+morinaga ltd_2020_report,2018,2mb,,,['52024'],False,True
+morinaga ltd_2020_report,2019,2mb,,,['49605'],False,True
+morinaga ltd_2020_report,2018,3,,,"['248003', '122971', '3774', '15809', '4176', '618', '1607', '557']",False,True
