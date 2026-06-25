@@ -8,7 +8,7 @@ from oa_mapping import map_to_goldstandard
 _HERE              = Path(__file__).parent
 _SCRATCH           = Path("/scratch/tmp/jkuhlma1/gepa")
 RUNS_DIR           = _SCRATCH / "runs"
-GS_PATH            = _HERE.parent.parent / "evaluations" / "PipelineB" / "gs_slim.json"
+GS_PATH            = _HERE.parent.parent / "evaluations" / "gs_slim.json"
 EXTRACTION_SCRIPT  = _HERE.parent / "pipelines" / "pipelineB" / "B-03-HPC.py"
 
 CATEGORIES = ["value", "unit"]
