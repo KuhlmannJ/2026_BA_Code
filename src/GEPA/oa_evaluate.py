@@ -15,6 +15,12 @@ CATEGORIES = ["value", "unit"]
 
 _run_counter = 0
 
+def banner(title):
+    print()
+    print("=" * 60)
+    print(f"  {title}")
+    print("=" * 60)
+
 
 def check_hit_with_detail(row, extraction_col, gs_col) -> tuple[bool, dict | None]:
     
@@ -71,6 +77,9 @@ def evaluate(candidate: str) -> tuple[float, dict]:
 
     run_dir = RUNS_DIR / str(_run_counter)
     run_dir.mkdir(parents=True, exist_ok=True)
+    
+    banner(_run_counter)
+    
     print(f"\n[evaluate] Run #{_run_counter} — output dir: {run_dir}")
     _run_counter += 1
 
