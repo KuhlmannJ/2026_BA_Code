@@ -174,7 +174,7 @@ match args.model:
     case "instrFP8":
         model = Qwen3VLForConditionalGeneration.from_pretrained(
             MODEL_NAME,
-            dtype=torch.float8_e4m3fn,
+            dtype="auto",
             attn_implementation="flash_attention_2",
             device_map="auto",
         )
