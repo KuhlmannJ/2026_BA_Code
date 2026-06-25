@@ -241,8 +241,11 @@ for pdf_path in sorted(RETRIEVAL_LIST):
         return_tensors="pt"
     ).to("cuda") #"cuda" better for multi H200mini GPUs than (model.device)
     
+    
+    
     output_JSON = None  # Default: to detect token-overflow
     tokens_needed = MAX_TOKENS
+    
     # This loop allows for one(!) retry of VLM extraction with double the tokens if needed
     for attempt, now_max_tokens in enumerate([MAX_TOKENS, MAX_TOKENS * 2]):
         print(f"    Attempt: {attempt} with {now_max_tokens} Token-Limit")
@@ -276,6 +279,9 @@ for pdf_path in sorted(RETRIEVAL_LIST):
             if attempt == 0: #attempt += 1 with for-loop
                 print(f"  [WARN] JSON failed, retrying with {now_max_tokens * 2} tokens...")
                 tokens_needed = MAX_TOKENS * 2
+                banner("JSON ERROR START")
+                print(output_clean)
+                banner("JSON ERROR END")
             else:
                 print(f"  [ERROR] JSON failed after retry, skipping {report_name}") #Leaves for loop with output_JSON = None
         
