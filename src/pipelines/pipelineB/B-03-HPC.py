@@ -26,10 +26,20 @@ parser.add_argument("--maxTokens",  "-mt",  type=int, default=16384, help="Contr
 # A hard-limit on the length of the thought process
 # 16384 was seen in some HF examples of the authors, besides 128 (way too small)
 
+parser.add_argument("--gepaTrainSet", "-gt", action="store_true", help="Toggle Training Set of Reports")
+
 parser.add_argument("--model", "-m",
-                   choices=["think", "moe", "instr"],
-                   default="think",
-                   help="Model to use: %(choices)s")
+                    choices=["think", "moe", "instr"],
+                    default="think",
+                    help="Model to use: %(choices)s")
+
+parser.add_argument("--prompt-file", "-p",
+                    type=Path, default=None,
+                    help="Path to prompt .txt file (overrides default BaselineA-Prompt.txt)")
+
+parser.add_argument("--output-dir", "-o",
+                    type=Path, default=None,
+                    help="Output directory for JSON results (overrides default scratch path)")
 
 args = parser.parse_args()
 
@@ -71,26 +81,35 @@ match args.model:
 
 # NOTE: Fixed RETRIEVAL_DIR for all models!
 match True:
+    case args.gepaTrainSet:
+        RETRIEVAL_DIR = Path("/scratch/tmp/jkuhlma1/gepa/gepaTrainSet/")
     case args.test:
-        RETRIEVAL_DIR = Path(f"/scratch/tmp/jkuhlma1/results/A-02-retrievals/test/nvidia/nemotron-colembed-vl-8b-v2/")
+        RETRIEVAL_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals/test/nvidia/nemotron-colembed-vl-8b-v2/")
     case _:
         RETRIEVAL_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals/nvidia/nemotron-colembed-vl-8b-v2/")
 
 RETRIEVAL_LIST = sorted(list(RETRIEVAL_DIR.glob("*.pdf")))
 
-match True:
-    case args.test:
-        OUTPUT_DIR    = Path(f"/scratch/tmp/jkuhlma1/results/B-03-answers/test/{MODEL_NAME}")
-    case _:
-        OUTPUT_DIR    = Path(f"/scratch/tmp/jkuhlma1/results/B-03-answers/{MODEL_NAME}")
+
+if args.output_dir is not None:
+    OUTPUT_DIR = args.output_dir
+elif args.test:
+    OUTPUT_DIR = Path(f"/scratch/tmp/jkuhlma1/results/B-03-answers/test/{MODEL_NAME}")
+else:
+    OUTPUT_DIR = Path(f"/scratch/tmp/jkuhlma1/results/B-03-answers/{MODEL_NAME}")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
 RESULTS_FILE  = OUTPUT_DIR / "results.json"
+
 
 DPI = 150
 TIME_ROUND = 2 # Rounding for time logging
 
-PROMT_PATH = Path("/home/j/jkuhlma1/2026_BA_Code/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
-
+PROMT_PATH = (
+    args.prompt_file
+    if args.prompt_file is not None
+    else Path("/home/j/jkuhlma1/2026_BA_Code/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
+)
 EXTRACTION_PROMT = PROMT_PATH.read_text()
 
 print(f"RETRIEVAL_DIR:  {RETRIEVAL_DIR}")
