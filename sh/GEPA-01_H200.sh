@@ -6,7 +6,7 @@
 
 # --gres=gpu:2
 
-#SBATCH --mem=50G
+#SBATCH --mem=100G
 #SBATCH --cpus-per-task=8
 #SBATCH --partition=gpuh200
 
