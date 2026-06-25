@@ -8,7 +8,7 @@
 #SBATCH --cpus-per-task=8
 #SBATCH --partition=gpuh200
 
-#SBATCH --time=02:00:00
+#SBATCH --time=03:00:00
 
 #SBATCH --output=/scratch/tmp/jkuhlma1/logs/%j_out.log    # stdout → Datei (%j = Job-ID)
 #SBATCH --error=/scratch/tmp/jkuhlma1/logs/%j_out.log     # stderr → Datei
