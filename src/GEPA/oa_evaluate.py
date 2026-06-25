@@ -15,7 +15,7 @@ GEPA_TRAIN_DIR     = Path("/scratch/tmp/jkuhlma1/gepa/gepaTrainSet/")
 # ── Load VLM once at startup
 from B_03_HPC_fn import load_model, run_extraction as _vlm_run_extraction
 
-_model, _processor, _model_name = load_model("instr8B") #choices=["think", "moe", "instr", "instrFP8", "instr8B"]
+_model, _processor, _model_name = load_model("instr") #choices=["think", "moe", "instr", "instrFP8", "instr8B"]
 
 CATEGORIES = ["value", "unit"]
 
