@@ -17,6 +17,7 @@ load_dotenv(find_dotenv())
 # MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"         # 66.7GB VRAM, takes 5min/report, 2nd 88GB VRAM, 67.21 GB
 # MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"     # 62.1GB VRAM
 # MODEL_NAME = "Qwen/Qwen3-VL-32B-Instruct"         # NON-Thinking
+# MODEL_NAME = "Qwen/Qwen3-VL-32B-Instruct-FP8"     # NON-Thinking-FP8
 
 
 # ── Arguments for Dev'ing
@@ -29,7 +30,7 @@ parser.add_argument("--maxTokens",  "-mt",  type=int, default=16384, help="Contr
 parser.add_argument("--gepaTrainSet", "-gt", action="store_true", help="Toggle Training Set of Reports")
 
 parser.add_argument("--model", "-m",
-                    choices=["think", "moe", "instr"],
+                    choices=["think", "moe", "instr", "instrFP8"],
                     default="think",
                     help="Model to use: %(choices)s")
 
@@ -74,9 +75,10 @@ banner("STEP 0: GLOBAL VARIABLES")
 
 MAX_TOKENS = args.maxTokens
 match args.model:
-    case "think": MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"
-    case "moe":   MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"
-    case "instr": MODEL_NAME = "Qwen/Qwen3-VL-32B-Instruct"
+    case "think":       MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"
+    case "moe":         MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"
+    case "instr":       MODEL_NAME = "Qwen/Qwen3-VL-32B-Instruct"
+    case "instrFP8":    MODEL_NAME = "Qwen/Qwen3-VL-32B-Instruct-FP8"
 
 
 # NOTE: Fixed RETRIEVAL_DIR for all models!
@@ -133,6 +135,11 @@ print(f"  GPU  : {gpu_name}")
 print(f"  VRAM : {vram_total:.1f} GB")
 print(f"  UUID : {gpu_uuid}")
 
+num_gpus = torch.cuda.device_count()
+print(f"  Available GPUs: {num_gpus}")
+for i in range(num_gpus):
+    props = torch.cuda.get_device_properties(i)
+    print(f"    GPU {i}: {torch.cuda.get_device_name(i)} ({props.total_memory / 1e9:.1f} GB)")
 
 
 
@@ -163,6 +170,18 @@ match args.model:
             attn_implementation="flash_attention_2",
             device_map="auto",
         )
+    case "instrFP8":
+        model = Qwen3VLForConditionalGeneration.from_pretrained(
+            MODEL_NAME,
+            dtype=torch.float8_e4m3fn,
+            attn_implementation="flash_attention_2",
+            device_map="auto",
+        )
+
+print("\n=== Model Device Mapping ===")
+for name, param in model.named_parameters():
+    print(f"{name}: {param.device}")
+    break  # nur erste Parameter prüfen
 
 processor = AutoProcessor.from_pretrained(MODEL_NAME)
 
