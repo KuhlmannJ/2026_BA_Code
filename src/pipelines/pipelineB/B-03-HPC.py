@@ -79,6 +79,7 @@ match args.model:
     case "moe":         MODEL_NAME = "Qwen/Qwen3-VL-30B-A3B-Thinking"
     case "instr":       MODEL_NAME = "Qwen/Qwen3-VL-32B-Instruct"
     case "instrFP8":    MODEL_NAME = "Qwen/Qwen3-VL-32B-Instruct-FP8"
+    case "intr8B":      MODEL_NAME = "Qwen/Qwen3-VL-8B-Instruct"
 
 
 # NOTE: Fixed RETRIEVAL_DIR for all models!
@@ -174,6 +175,13 @@ match args.model:
         model = Qwen3VLForConditionalGeneration.from_pretrained(
             MODEL_NAME,
             dtype=torch.float8_e4m3fn,
+            attn_implementation="flash_attention_2",
+            device_map="auto",
+        )
+    case "intr8B":
+        model = Qwen3VLForConditionalGeneration.from_pretrained(
+            MODEL_NAME,
+            dtype=torch.bfloat16,
             attn_implementation="flash_attention_2",
             device_map="auto",
         )
