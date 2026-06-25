@@ -270,7 +270,7 @@ for pdf_path in sorted(RETRIEVAL_LIST):
         # strip_thinking() drops "thinking" part of the response
         # An "<|im_end|>" is always at the end of the output, needs to be removed
         # .strip() drops random empty lines
-        output_clean = strip_thinking(output_text).replace("<|im_end|>", "").strip()
+        output_clean = clean_json(strip_thinking(output_text))
         
         try:
             output_JSON = json.loads(output_clean)
