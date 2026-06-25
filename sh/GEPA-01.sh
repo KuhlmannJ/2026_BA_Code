@@ -4,15 +4,9 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --gres=gpu:1
 
-# --gres=gpu:2
-
 #SBATCH --mem=50G
 #SBATCH --cpus-per-task=8
 #SBATCH --partition=gpua100
-
-# --mem=64G
-# --cpus-per-task=8
-# --partition=gpuh200mini
 
 #SBATCH --time=00:30:00
 
