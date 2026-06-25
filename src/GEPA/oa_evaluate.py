@@ -57,7 +57,7 @@ def _run_extraction(candidate: str, run_dir: Path) -> None:
     subprocess.run(
         [
             "python", str(EXTRACTION_SCRIPT),
-            "--model",       "instrFP8",
+            "--model",       "instr8B",
             "--prompt-file", str(prompt_file),
             "--output-dir",  str(run_dir),
             "--gepaTrainSet",
