@@ -1,5 +1,4 @@
 import csv
-import subprocess
 import pandas as pd
 from pathlib import Path
 
@@ -10,8 +9,13 @@ _HERE              = Path(__file__).parent
 _SCRATCH           = Path("/scratch/tmp/jkuhlma1/gepa")
 RUNS_DIR           = _SCRATCH / "runs"
 GS_PATH            = _HERE.parent.parent / "evaluations" / "gs_slim.json"
-EXTRACTION_SCRIPT  = _HERE.parent / "pipelines" / "pipelineB" / "B-03-HPC.py"
 EVAL_LOG           = RUNS_DIR / "eval_log.csv"
+GEPA_TRAIN_DIR     = Path("/scratch/tmp/jkuhlma1/gepa/gepaTrainSet/")
+
+# ── Load VLM once at startup
+from B_03_HPC_fn import load_model, run_extraction as _vlm_run_extraction
+
+_model, _processor, _model_name = load_model("instr")
 
 CATEGORIES = ["value", "unit"]
 
@@ -57,21 +61,15 @@ def check_hit_with_detail(row, extraction_col, gs_col) -> tuple[bool, dict | Non
         "year":     row.get("year"),
     }
 
-# Runs B-03-HPC.py
 def _run_extraction(candidate: str, run_dir: Path) -> None:
-
-    prompt_file = run_dir / "prompt.txt"
-    prompt_file.write_text(candidate)
-
-    subprocess.run(
-        [
-            "python", str(EXTRACTION_SCRIPT),
-            "--model",       "instr",       # choices=["think", "moe", "instr", "instrFP8", "instr8B"]
-            "--prompt-file", str(prompt_file),
-            "--output-dir",  str(run_dir),
-            "--gepaTrainSet",
-        ],
-        check=True,
+    (run_dir / "prompt.txt").write_text(candidate)  # keep for traceability
+    _vlm_run_extraction(
+        model=_model,
+        processor=_processor,
+        model_name=_model_name,
+        extraction_prompt=candidate,
+        output_dir=run_dir,
+        retrieval_dir=GEPA_TRAIN_DIR,
     )
 
 
