@@ -30,7 +30,7 @@ parser.add_argument("--maxTokens",  "-mt",  type=int, default=16384, help="Contr
 parser.add_argument("--gepaTrainSet", "-gt", action="store_true", help="Toggle Training Set of Reports")
 
 parser.add_argument("--model", "-m",
-                    choices=["think", "moe", "instr", "instrFP8"],
+                    choices=["think", "moe", "instr", "instrFP8", "intr8B"],
                     default="think",
                     help="Model to use: %(choices)s")
 
