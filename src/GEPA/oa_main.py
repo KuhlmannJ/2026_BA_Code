@@ -45,7 +45,7 @@ result = oa.optimize_anything(
     objective=OBJECTIVE,
     config=GEPAConfig(
         engine=EngineConfig(
-            max_metric_calls=10,  # each call = one full extraction run, adjust to time budget
+            max_metric_calls=30,  # each call = one full extraction run, adjust to time budget
         ),
         reflection=ReflectionConfig(
             reflection_lm=REFLECTION_LM,
