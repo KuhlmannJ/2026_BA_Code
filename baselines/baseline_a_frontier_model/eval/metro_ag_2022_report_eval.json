@@ -1,22 +1,22 @@
 {
-  "report": "huhtamaki_2019_report",
+  "report": "metro_ag_2022_report",
   "results": [
     {
-      "year": 2015,
+      "year": 2020,
       "scope": "1",
-      "extracted_value": 191000,
-      "extracted_unit": "metric tons CO2 eqv",
+      "extracted_value": 270761.0,
+      "extracted_unit": "Metric tons (t) CO2e",
       "extracted_label": "Direct (Scope 1) GHG emissions",
       "extracted_t_co2e": null,
       "unit_known": false,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 191000.0,
-          "unit": "metric tons CO₂ eqv",
+          "value": 270761.0,
+          "unit": "Metric tons (t) CO2e",
           "unit_norm": "t CO2e",
-          "value_t_co2e": 191000.0,
-          "page": 44.0,
+          "value_t_co2e": 270761.0,
+          "page": 47.0,
           "rel_error": null
         }
       ],
@@ -24,21 +24,21 @@
       "is_match": false
     },
     {
-      "year": 2016,
+      "year": 2021,
       "scope": "1",
-      "extracted_value": 198000,
-      "extracted_unit": "metric tons CO2 eqv",
+      "extracted_value": 264654.8,
+      "extracted_unit": "Metric tons (t) CO2e",
       "extracted_label": "Direct (Scope 1) GHG emissions",
       "extracted_t_co2e": null,
       "unit_known": false,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 198000.0,
-          "unit": "metric tons CO₂ eqv",
+          "value": 264654.8,
+          "unit": "Metric tons (t) CO2e",
           "unit_norm": "t CO2e",
-          "value_t_co2e": 198000.0,
-          "page": 44.0,
+          "value_t_co2e": 264654.8,
+          "page": 47.0,
           "rel_error": null
         }
       ],
@@ -46,21 +46,21 @@
       "is_match": false
     },
     {
-      "year": 2017,
+      "year": 2022,
       "scope": "1",
-      "extracted_value": 207000,
-      "extracted_unit": "metric tons CO2 eqv",
+      "extracted_value": 266631.8,
+      "extracted_unit": "Metric tons (t) CO2e",
       "extracted_label": "Direct (Scope 1) GHG emissions",
       "extracted_t_co2e": null,
       "unit_known": false,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 207000.0,
-          "unit": "metric tons CO₂ eqv",
+          "value": 266631.8,
+          "unit": "Metric tons (t) CO2e",
           "unit_norm": "t CO2e",
-          "value_t_co2e": 207000.0,
-          "page": 44.0,
+          "value_t_co2e": 266631.8,
+          "page": 47.0,
           "rel_error": null
         }
       ],
@@ -68,65 +68,21 @@
       "is_match": false
     },
     {
-      "year": 2018,
-      "scope": "1",
-      "extracted_value": 207000,
-      "extracted_unit": "metric tons CO2 eqv",
-      "extracted_label": "Direct (Scope 1) GHG emissions",
-      "extracted_t_co2e": null,
-      "unit_known": false,
-      "in_gold": true,
-      "gold_entries": [
-        {
-          "value": 207000.0,
-          "unit": "metric tons CO₂ eqv",
-          "unit_norm": "t CO2e",
-          "value_t_co2e": 207000.0,
-          "page": 44.0,
-          "rel_error": null
-        }
-      ],
-      "best_rel_error": null,
-      "is_match": false
-    },
-    {
-      "year": 2019,
-      "scope": "1",
-      "extracted_value": 219000,
-      "extracted_unit": "metric tons CO2 eqv",
-      "extracted_label": "Direct (Scope 1) GHG emissions",
-      "extracted_t_co2e": null,
-      "unit_known": false,
-      "in_gold": true,
-      "gold_entries": [
-        {
-          "value": 219000.0,
-          "unit": "metric tons CO₂ eqv",
-          "unit_norm": "t CO2e",
-          "value_t_co2e": 219000.0,
-          "page": 44.0,
-          "rel_error": null
-        }
-      ],
-      "best_rel_error": null,
-      "is_match": false
-    },
-    {
-      "year": 2015,
+      "year": 2020,
       "scope": "2lb",
-      "extracted_value": 534000,
-      "extracted_unit": "metric tons CO2 eqv",
-      "extracted_label": "Indirect (Scope 2) GHG emissions, location-based",
+      "extracted_value": 17872.0,
+      "extracted_unit": "Metric tons (t) CO2e",
+      "extracted_label": "Energy indirect (Scope 2) GHG emissions (method not specified in report)",
       "extracted_t_co2e": null,
       "unit_known": false,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 484000.0,
-          "unit": "metric tons CO₂ eqv",
+          "value": 17872.0,
+          "unit": "Metric tons (t) CO2e",
           "unit_norm": "t CO2e",
-          "value_t_co2e": 484000.0,
-          "page": 44.0,
+          "value_t_co2e": 17872.0,
+          "page": 47.0,
           "rel_error": null
         }
       ],
@@ -134,21 +90,21 @@
       "is_match": false
     },
     {
-      "year": 2016,
+      "year": 2021,
       "scope": "2lb",
-      "extracted_value": 544000,
-      "extracted_unit": "metric tons CO2 eqv",
-      "extracted_label": "Indirect (Scope 2) GHG emissions, location-based",
+      "extracted_value": 14668.3,
+      "extracted_unit": "Metric tons (t) CO2e",
+      "extracted_label": "Energy indirect (Scope 2) GHG emissions (method not specified in report)",
       "extracted_t_co2e": null,
       "unit_known": false,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 512000.0,
-          "unit": "metric tons CO₂ eqv",
+          "value": 14668.3,
+          "unit": "Metric tons (t) CO2e",
           "unit_norm": "t CO2e",
-          "value_t_co2e": 512000.0,
-          "page": 44.0,
+          "value_t_co2e": 14668.3,
+          "page": 47.0,
           "rel_error": null
         }
       ],
@@ -156,21 +112,21 @@
       "is_match": false
     },
     {
-      "year": 2017,
+      "year": 2022,
       "scope": "2lb",
-      "extracted_value": 546000,
-      "extracted_unit": "metric tons CO2 eqv",
-      "extracted_label": "Indirect (Scope 2) GHG emissions, location-based",
+      "extracted_value": 14785.4,
+      "extracted_unit": "Metric tons (t) CO2e",
+      "extracted_label": "Energy indirect (Scope 2) GHG emissions (method not specified in report)",
       "extracted_t_co2e": null,
       "unit_known": false,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 534000.0,
-          "unit": "metric tons CO₂ eqv",
+          "value": 14785.4,
+          "unit": "Metric tons (t) CO2e",
           "unit_norm": "t CO2e",
-          "value_t_co2e": 534000.0,
-          "page": 44.0,
+          "value_t_co2e": 14785.4,
+          "page": 47.0,
           "rel_error": null
         }
       ],
@@ -178,21 +134,21 @@
       "is_match": false
     },
     {
-      "year": 2018,
-      "scope": "2lb",
-      "extracted_value": 484000,
-      "extracted_unit": "metric tons CO2 eqv",
-      "extracted_label": "Indirect (Scope 2) GHG emissions, location-based",
+      "year": 2020,
+      "scope": "3",
+      "extracted_value": 114503.4,
+      "extracted_unit": "Metric tons (t) CO2e",
+      "extracted_label": "Other indirect (Scope 3) GHG emissions for the categories: Business Travel, Waste and Upstream Transportation",
       "extracted_t_co2e": null,
       "unit_known": false,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 544000.0,
-          "unit": "metric tons CO₂ eqv",
+          "value": 114503.4,
+          "unit": "Metric tons (t) CO2e",
           "unit_norm": "t CO2e",
-          "value_t_co2e": 544000.0,
-          "page": 44.0,
+          "value_t_co2e": 114503.4,
+          "page": 47.0,
           "rel_error": null
         }
       ],
@@ -200,21 +156,43 @@
       "is_match": false
     },
     {
-      "year": 2019,
-      "scope": "2lb",
-      "extracted_value": 512000,
-      "extracted_unit": "metric tons CO2 eqv",
-      "extracted_label": "Indirect (Scope 2) GHG emissions, location-based",
+      "year": 2021,
+      "scope": "3",
+      "extracted_value": 116700.4,
+      "extracted_unit": "Metric tons (t) CO2e",
+      "extracted_label": "Other indirect (Scope 3) GHG emissions for the categories: Business Travel, Waste and Upstream Transportation",
       "extracted_t_co2e": null,
       "unit_known": false,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 546000.0,
-          "unit": "metric tons CO₂ eqv",
+          "value": 116700.4,
+          "unit": "Metric tons (t) CO2e",
           "unit_norm": "t CO2e",
-          "value_t_co2e": 546000.0,
-          "page": 44.0,
+          "value_t_co2e": 116700.4,
+          "page": 47.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2022,
+      "scope": "3",
+      "extracted_value": 114172.7,
+      "extracted_unit": "Metric tons (t) CO2e",
+      "extracted_label": "Other indirect (Scope 3) GHG emissions for the categories: Business Travel, Waste and Upstream Transportation",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 114172.7,
+          "unit": "Metric tons (t) CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 114172.7,
+          "page": 47.0,
           "rel_error": null
         }
       ],
@@ -223,8 +201,8 @@
     }
   ],
   "summary": {
-    "total_extracted": 10,
-    "in_gold": 10,
+    "total_extracted": 9,
+    "in_gold": 9,
     "not_in_gold": 0,
     "matched": 0,
     "precision": 0.0,
@@ -265,6 +243,14 @@
       },
       {
         "year": 2015,
+        "scope": "1"
+      },
+      {
+        "year": 2015,
+        "scope": "2lb"
+      },
+      {
+        "year": 2015,
         "scope": "2mb"
       },
       {
@@ -273,6 +259,14 @@
       },
       {
         "year": 2016,
+        "scope": "1"
+      },
+      {
+        "year": 2016,
+        "scope": "2lb"
+      },
+      {
+        "year": 2016,
         "scope": "2mb"
       },
       {
@@ -281,6 +275,14 @@
       },
       {
         "year": 2017,
+        "scope": "1"
+      },
+      {
+        "year": 2017,
+        "scope": "2lb"
+      },
+      {
+        "year": 2017,
         "scope": "2mb"
       },
       {
@@ -289,6 +291,14 @@
       },
       {
         "year": 2018,
+        "scope": "1"
+      },
+      {
+        "year": 2018,
+        "scope": "2lb"
+      },
+      {
+        "year": 2018,
         "scope": "2mb"
       },
       {
@@ -297,6 +307,14 @@
       },
       {
         "year": 2019,
+        "scope": "1"
+      },
+      {
+        "year": 2019,
+        "scope": "2lb"
+      },
+      {
+        "year": 2019,
         "scope": "2mb"
       },
       {
@@ -305,51 +323,15 @@
       },
       {
         "year": 2020,
-        "scope": "1"
-      },
-      {
-        "year": 2020,
-        "scope": "2lb"
-      },
-      {
-        "year": 2020,
         "scope": "2mb"
-      },
-      {
-        "year": 2020,
-        "scope": "3"
-      },
-      {
-        "year": 2021,
-        "scope": "1"
-      },
-      {
-        "year": 2021,
-        "scope": "2lb"
       },
       {
         "year": 2021,
         "scope": "2mb"
       },
       {
-        "year": 2021,
-        "scope": "3"
-      },
-      {
-        "year": 2022,
-        "scope": "1"
-      },
-      {
-        "year": 2022,
-        "scope": "2lb"
-      },
-      {
         "year": 2022,
         "scope": "2mb"
-      },
-      {
-        "year": 2022,
-        "scope": "3"
       }
     ]
   }

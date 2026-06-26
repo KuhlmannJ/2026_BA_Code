@@ -17,9 +17,9 @@ def banner(text: str) -> None:
 
 #### GLOBAL VARIABLES ####
 
-CHECKLIST_PATH = Path("checklist.csv")
-RAW_DIR        = Path("baselines/baseline_a_frontier_model/raw")
-RESULTS_DIR    = Path("baselines/baseline_a_frontier_model/eval")
+CHECKLIST_PATH = Path("../gs_slim.json")
+RAW_DIR        = Path("../../baselines/baseline_a_frontier_model/raw")
+RESULTS_DIR    = Path("../../baselines/baseline_a_frontier_model/eval")
 
 SCOPE_MAP: dict[str, str] = {
     "scope_1":                "1",
@@ -166,8 +166,6 @@ def evaluate_json(json_path: Path, gold: pd.DataFrame,
                     "unit":         row["unit"],
                     "unit_norm":    row["unit_normalized"],
                     "value_t_co2e": gold_t,
-                    "metric_name":  row["metric_name"],
-                    "display_type": row["display_type"],
                     "page":         row["page"],
                     "rel_error":    round(rel_err, 6) if rel_err is not None else None,
                 })
@@ -258,7 +256,7 @@ def main() -> None:
     banner("Baseline A — Evaluation against Beck et al. Gold Standard")
 
     print(f"  Loading gold standard: {CHECKLIST_PATH}")
-    gold = pd.read_csv(CHECKLIST_PATH)
+    gold = pd.read_json(CHECKLIST_PATH)
     print(f"  Gold rows loaded     : {len(gold)}")
 
     # Build normalized name → original PDF name lookup

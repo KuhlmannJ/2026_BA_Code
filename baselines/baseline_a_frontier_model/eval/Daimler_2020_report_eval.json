@@ -16,9 +16,7 @@
           "unit": "thousand tonnes",
           "unit_norm": "kt",
           "value_t_co2e": 1056000.0,
-          "metric_name": "CO2 direct (Scope 1)",
-          "display_type": "Table",
-          "page": "63",
+          "page": 63.0,
           "rel_error": null
         }
       ],
@@ -40,9 +38,7 @@
           "unit": "thousand tonnes",
           "unit_norm": "kt",
           "value_t_co2e": 1192000.0,
-          "metric_name": "CO2 direct (Scope 1)",
-          "display_type": "Table",
-          "page": "63",
+          "page": 63.0,
           "rel_error": null
         }
       ],
@@ -64,9 +60,7 @@
           "unit": "thousand tonnes",
           "unit_norm": "kt",
           "value_t_co2e": 1247000.0,
-          "metric_name": "CO2 direct (Scope 1)",
-          "display_type": "Table",
-          "page": "63",
+          "page": 63.0,
           "rel_error": null
         }
       ],
@@ -88,9 +82,7 @@
           "unit": "thousand tonnes",
           "unit_norm": "kt",
           "value_t_co2e": 1239000.0,
-          "metric_name": "CO2 direct (Scope 1)",
-          "display_type": "Table",
-          "page": "63",
+          "page": 63.0,
           "rel_error": null
         }
       ],
@@ -112,9 +104,7 @@
           "unit": "thousand tonnes",
           "unit_norm": "kt",
           "value_t_co2e": 1027000.0,
-          "metric_name": "CO2 direct (Scope 1)",
-          "display_type": "Table",
-          "page": "63",
+          "page": 63.0,
           "rel_error": null
         }
       ],
@@ -136,9 +126,7 @@
           "unit": "CO2 emissions from energy consumption (in 1,000 t)",
           "unit_norm": "CO2 emissions from energy consumption (in 1,000 t)",
           "value_t_co2e": 2141000.0,
-          "metric_name": "CO2 indirect (Scope 2) - location-based",
-          "display_type": "Table",
-          "page": "63",
+          "page": 63.0,
           "rel_error": null
         }
       ],
@@ -160,9 +148,7 @@
           "unit": "CO2 emissions from energy consumption (in 1,000 t)",
           "unit_norm": "CO2 emissions from energy consumption (in 1,000 t)",
           "value_t_co2e": 2041000.0,
-          "metric_name": "CO2 indirect (Scope 2) - location-based",
-          "display_type": "Table",
-          "page": "63",
+          "page": 63.0,
           "rel_error": null
         }
       ],
@@ -184,9 +170,7 @@
           "unit": "CO2 emissions from energy consumption (in 1,000 t)",
           "unit_norm": "CO2 emissions from energy consumption (in 1,000 t)",
           "value_t_co2e": 1985000.0,
-          "metric_name": "CO2 indirect (Scope 2) - location-based",
-          "display_type": "Table",
-          "page": "63",
+          "page": 63.0,
           "rel_error": null
         }
       ],
@@ -208,9 +192,7 @@
           "unit": "CO2 emissions from energy consumption (in 1,000 t)",
           "unit_norm": "CO2 emissions from energy consumption (in 1,000 t)",
           "value_t_co2e": 1706000.0,
-          "metric_name": "CO2 indirect (Scope 2) - location-based",
-          "display_type": "Table",
-          "page": "63",
+          "page": 63.0,
           "rel_error": null
         }
       ],
@@ -232,9 +214,7 @@
           "unit": "CO2 emissions from energy consumption (in 1,000 t)",
           "unit_norm": "CO2 emissions from energy consumption (in 1,000 t)",
           "value_t_co2e": 1492000.0,
-          "metric_name": "CO2 indirect (Scope 2) - location-based",
-          "display_type": "Table",
-          "page": "63",
+          "page": 63.0,
           "rel_error": null
         }
       ],
@@ -256,9 +236,7 @@
           "unit": "thousand tonnes",
           "unit_norm": "kt",
           "value_t_co2e": 1882000.0,
-          "metric_name": "CO2 indirect (Scope 2) - market-based",
-          "display_type": "Table",
-          "page": "63",
+          "page": 63.0,
           "rel_error": null
         }
       ],
@@ -280,9 +258,7 @@
           "unit": "thousand tonnes",
           "unit_norm": "kt",
           "value_t_co2e": 1763000.0,
-          "metric_name": "CO2 indirect (Scope 2) - market-based",
-          "display_type": "Table",
-          "page": "63",
+          "page": 63.0,
           "rel_error": null
         }
       ],
@@ -304,9 +280,7 @@
           "unit": "thousand tonnes",
           "unit_norm": "kt",
           "value_t_co2e": 1687000.0,
-          "metric_name": "CO2 indirect (Scope 2) - market-based",
-          "display_type": "Table",
-          "page": "63",
+          "page": 63.0,
           "rel_error": null
         }
       ],
@@ -328,9 +302,7 @@
           "unit": "thousand tonnes",
           "unit_norm": "kt",
           "value_t_co2e": 1276000.0,
-          "metric_name": "CO2 indirect (Scope 2) - market-based",
-          "display_type": "Table",
-          "page": "63",
+          "page": 63.0,
           "rel_error": null
         }
       ],
@@ -352,9 +324,7 @@
           "unit": "thousand tonnes",
           "unit_norm": "kt",
           "value_t_co2e": 1035000.0,
-          "metric_name": "CO2 indirect (Scope 2) - market-based",
-          "display_type": "Table",
-          "page": "63",
+          "page": 63.0,
           "rel_error": null
         }
       ],
@@ -369,20 +339,126 @@
       "extracted_label": "Scope 3 Production: Procured goods and services (supply chain), Mercedes-Benz Cars (Diagram 9)",
       "extracted_t_co2e": null,
       "unit_known": false,
-      "in_gold": false,
-      "gold_entries": [],
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": NaN,
+          "unit": NaN,
+          "unit_norm": NaN,
+          "value_t_co2e": null,
+          "page": NaN,
+          "rel_error": null
+        }
+      ],
       "best_rel_error": null,
       "is_match": false
     }
   ],
   "summary": {
     "total_extracted": 16,
-    "in_gold": 15,
-    "not_in_gold": 1,
+    "in_gold": 16,
+    "not_in_gold": 0,
     "matched": 0,
     "precision": 0.0,
     "recall": 0.0,
     "mean_rel_error_matched": null,
-    "missing_in_extraction": []
+    "missing_in_extraction": [
+      {
+        "year": 2013,
+        "scope": "1"
+      },
+      {
+        "year": 2013,
+        "scope": "2lb"
+      },
+      {
+        "year": 2013,
+        "scope": "2mb"
+      },
+      {
+        "year": 2013,
+        "scope": "3"
+      },
+      {
+        "year": 2014,
+        "scope": "1"
+      },
+      {
+        "year": 2014,
+        "scope": "2lb"
+      },
+      {
+        "year": 2014,
+        "scope": "2mb"
+      },
+      {
+        "year": 2014,
+        "scope": "3"
+      },
+      {
+        "year": 2015,
+        "scope": "1"
+      },
+      {
+        "year": 2015,
+        "scope": "2lb"
+      },
+      {
+        "year": 2015,
+        "scope": "2mb"
+      },
+      {
+        "year": 2015,
+        "scope": "3"
+      },
+      {
+        "year": 2016,
+        "scope": "3"
+      },
+      {
+        "year": 2017,
+        "scope": "3"
+      },
+      {
+        "year": 2018,
+        "scope": "3"
+      },
+      {
+        "year": 2019,
+        "scope": "3"
+      },
+      {
+        "year": 2021,
+        "scope": "1"
+      },
+      {
+        "year": 2021,
+        "scope": "2lb"
+      },
+      {
+        "year": 2021,
+        "scope": "2mb"
+      },
+      {
+        "year": 2021,
+        "scope": "3"
+      },
+      {
+        "year": 2022,
+        "scope": "1"
+      },
+      {
+        "year": 2022,
+        "scope": "2lb"
+      },
+      {
+        "year": 2022,
+        "scope": "2mb"
+      },
+      {
+        "year": 2022,
+        "scope": "3"
+      }
+    ]
   }
 }

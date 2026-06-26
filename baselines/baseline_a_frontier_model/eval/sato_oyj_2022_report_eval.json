@@ -1,0 +1,752 @@
+{
+  "report": "sato_oyj_2022_report",
+  "results": [
+    {
+      "year": 2015,
+      "scope": "1",
+      "extracted_value": 135,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-1 Direct greenhouse gas emissions (scope 1)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 135.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 135.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2016,
+      "scope": "1",
+      "extracted_value": 170,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-1 Direct greenhouse gas emissions (scope 1)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 170.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 170.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2017,
+      "scope": "1",
+      "extracted_value": 214,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-1 Direct greenhouse gas emissions (scope 1)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 214.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 214.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2018,
+      "scope": "1",
+      "extracted_value": 179,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-1 Direct greenhouse gas emissions (scope 1)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 179.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 179.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2019,
+      "scope": "1",
+      "extracted_value": 177,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-1 Direct greenhouse gas emissions (scope 1)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 177.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 177.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2020,
+      "scope": "1",
+      "extracted_value": 147,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-1 Direct greenhouse gas emissions (scope 1)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 147.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 147.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2021,
+      "scope": "1",
+      "extracted_value": 105,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-1 Direct greenhouse gas emissions (scope 1)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 105.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 105.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2022,
+      "scope": "1",
+      "extracted_value": 20,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-1 Direct greenhouse gas emissions (scope 1)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 20.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 20.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2015,
+      "scope": "2lb",
+      "extracted_value": 41962,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-2 Indirect greenhouse gas emissions (location-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 41962.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 41962.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2016,
+      "scope": "2lb",
+      "extracted_value": 52583,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-2 Indirect greenhouse gas emissions (location-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 52583.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 52583.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2017,
+      "scope": "2lb",
+      "extracted_value": 43163,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-2 Indirect greenhouse gas emissions (location-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 43163.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 43163.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2018,
+      "scope": "2lb",
+      "extracted_value": 40152,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-2 Indirect greenhouse gas emissions (location-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 40152.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 40152.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2019,
+      "scope": "2lb",
+      "extracted_value": 37468,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-2 Indirect greenhouse gas emissions (location-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 37468.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 37468.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2020,
+      "scope": "2lb",
+      "extracted_value": 34456,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-2 Indirect greenhouse gas emissions (location-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 34456.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 34456.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2021,
+      "scope": "2lb",
+      "extracted_value": 45754,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-2 Indirect greenhouse gas emissions (location-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 45754.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 45754.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2022,
+      "scope": "2lb",
+      "extracted_value": 40393,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-2 Indirect greenhouse gas emissions (location-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 40393.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 40393.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2015,
+      "scope": "2mb",
+      "extracted_value": 37674,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-2 Indirect greenhouse gas emissions (market-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 37674.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 37674.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2016,
+      "scope": "2mb",
+      "extracted_value": 48560,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-2 Indirect greenhouse gas emissions (market-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 48560.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 48560.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2017,
+      "scope": "2mb",
+      "extracted_value": 39430,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-2 Indirect greenhouse gas emissions (market-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 39430.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 39430.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2018,
+      "scope": "2mb",
+      "extracted_value": 36728,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-2 Indirect greenhouse gas emissions (market-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 36728.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 36728.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2019,
+      "scope": "2mb",
+      "extracted_value": 34292,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-2 Indirect greenhouse gas emissions (market-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 34292.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 34292.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2020,
+      "scope": "2mb",
+      "extracted_value": 30915,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-2 Indirect greenhouse gas emissions (market-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 30915.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 30915.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2021,
+      "scope": "2mb",
+      "extracted_value": 43349,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-2 Indirect greenhouse gas emissions (market-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 43349.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 43349.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2022,
+      "scope": "2mb",
+      "extracted_value": 37920,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-2 Indirect greenhouse gas emissions (market-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 37920.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 37920.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2015,
+      "scope": "3",
+      "extracted_value": 1834,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-3 Other indirect greenhouse gas emissions (scope 3) - emissions from residents' waste",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 1834.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 1834.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2016,
+      "scope": "3",
+      "extracted_value": 948,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-3 Other indirect greenhouse gas emissions (scope 3) - emissions from residents' waste",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 948.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 948.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2017,
+      "scope": "3",
+      "extracted_value": 240,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-3 Other indirect greenhouse gas emissions (scope 3) - emissions from residents' waste",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 240.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 240.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2018,
+      "scope": "3",
+      "extracted_value": 49,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-3 Other indirect greenhouse gas emissions (scope 3) - emissions from residents' waste",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 49.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 49.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2019,
+      "scope": "3",
+      "extracted_value": 46,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-3 Other indirect greenhouse gas emissions (scope 3) - emissions from residents' waste",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 46.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 46.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2020,
+      "scope": "3",
+      "extracted_value": 37,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-3 Other indirect greenhouse gas emissions (scope 3) - emissions from residents' waste",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 37.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 37.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2021,
+      "scope": "3",
+      "extracted_value": 49,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-3 Other indirect greenhouse gas emissions (scope 3) - emissions from residents' waste",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 49.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 49.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2022,
+      "scope": "3",
+      "extracted_value": 49,
+      "extracted_unit": "t CO2-e",
+      "extracted_label": "GRI 305-3 Other indirect greenhouse gas emissions (scope 3) - emissions from residents' waste",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 49.0,
+          "unit": "t CO2-e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 49.0,
+          "page": 34.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    }
+  ],
+  "summary": {
+    "total_extracted": 32,
+    "in_gold": 32,
+    "not_in_gold": 0,
+    "matched": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "mean_rel_error_matched": null,
+    "missing_in_extraction": [
+      {
+        "year": 2013,
+        "scope": "1"
+      },
+      {
+        "year": 2013,
+        "scope": "2lb"
+      },
+      {
+        "year": 2013,
+        "scope": "2mb"
+      },
+      {
+        "year": 2013,
+        "scope": "3"
+      },
+      {
+        "year": 2014,
+        "scope": "1"
+      },
+      {
+        "year": 2014,
+        "scope": "2lb"
+      },
+      {
+        "year": 2014,
+        "scope": "2mb"
+      },
+      {
+        "year": 2014,
+        "scope": "3"
+      }
+    ]
+  }
+}

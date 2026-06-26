@@ -11,12 +11,112 @@
     "mean_rel_error_matched": null,
     "missing_in_extraction": [
       {
+        "year": 2013,
+        "scope": "1"
+      },
+      {
+        "year": 2013,
+        "scope": "2lb"
+      },
+      {
+        "year": 2013,
+        "scope": "2mb"
+      },
+      {
+        "year": 2013,
+        "scope": "3"
+      },
+      {
+        "year": 2014,
+        "scope": "1"
+      },
+      {
+        "year": 2014,
+        "scope": "2lb"
+      },
+      {
+        "year": 2014,
+        "scope": "2mb"
+      },
+      {
+        "year": 2014,
+        "scope": "3"
+      },
+      {
+        "year": 2015,
+        "scope": "1"
+      },
+      {
+        "year": 2015,
+        "scope": "2lb"
+      },
+      {
+        "year": 2015,
+        "scope": "2mb"
+      },
+      {
+        "year": 2015,
+        "scope": "3"
+      },
+      {
+        "year": 2016,
+        "scope": "1"
+      },
+      {
+        "year": 2016,
+        "scope": "2lb"
+      },
+      {
+        "year": 2016,
+        "scope": "2mb"
+      },
+      {
+        "year": 2016,
+        "scope": "3"
+      },
+      {
+        "year": 2017,
+        "scope": "1"
+      },
+      {
+        "year": 2017,
+        "scope": "2lb"
+      },
+      {
+        "year": 2017,
+        "scope": "2mb"
+      },
+      {
+        "year": 2017,
+        "scope": "3"
+      },
+      {
+        "year": 2018,
+        "scope": "1"
+      },
+      {
+        "year": 2018,
+        "scope": "2lb"
+      },
+      {
+        "year": 2018,
+        "scope": "2mb"
+      },
+      {
+        "year": 2018,
+        "scope": "3"
+      },
+      {
         "year": 2019,
         "scope": "1"
       },
       {
         "year": 2019,
         "scope": "2lb"
+      },
+      {
+        "year": 2019,
+        "scope": "2mb"
       },
       {
         "year": 2019,
@@ -52,6 +152,22 @@
       },
       {
         "year": 2021,
+        "scope": "3"
+      },
+      {
+        "year": 2022,
+        "scope": "1"
+      },
+      {
+        "year": 2022,
+        "scope": "2lb"
+      },
+      {
+        "year": 2022,
+        "scope": "2mb"
+      },
+      {
+        "year": 2022,
         "scope": "3"
       }
     ]

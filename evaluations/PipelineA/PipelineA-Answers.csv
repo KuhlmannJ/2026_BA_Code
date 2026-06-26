@@ -31,39 +31,43 @@ Daimler_2020_report,scope_3,2020,1.0,tons CO2 per vehicle,"Scope 3 Logistics: Tr
 Daimler_2020_report,scope_3,2020,5.6,tons CO2 per vehicle,Scope 3 Use phase: Fuel and electricity production (well-to-tank) (Mercedes-Benz Cars)
 Daimler_2020_report,scope_3,2020,33.7,tons CO2 per vehicle,Scope 3 Use phase: Vehicle operation (tank-to-wheel) (Mercedes-Benz Cars)
 Daimler_2020_report,scope_3,2020,0.4,tons CO2 per vehicle,Scope 3 End of Life: Recycling and waste disposal (Mercedes-Benz Cars)
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_1,2014,8297.0,metric tons CO2e,Scope 1 (legacy Viacom only)
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_1,2015,9045.0,metric tons CO2e,Scope 1 (legacy Viacom only)
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_1,2016,24672.0,metric tons CO2e,Scope 1
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_1,2017,26834.0,metric tons CO2e,Scope 1
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_1,2018,31737.0,metric tons CO2e,Scope 1
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_1,2019,38240.0,metric tons CO2e,Scope 1
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_1,2020,32097.0,metric tons CO2e,Scope 1
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_2_market_based,2014,37114.0,metric tons CO2e,"Scope 2 (market-based, legacy Viacom only)"
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_2_market_based,2015,50828.0,metric tons CO2e,"Scope 2 (market-based, legacy Viacom only)"
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_2_market_based,2016,213701.0,metric tons CO2e,Scope 2 (market-based)
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_2_market_based,2017,219375.0,metric tons CO2e,Scope 2 (market-based)
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_2_market_based,2018,219385.0,metric tons CO2e,Scope 2 (market-based)
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_2_market_based,2019,123106.0,metric tons CO2e,Scope 2 (market-based)
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_2_market_based,2020,134333.0,metric tons CO2e,Scope 2 (market-based)
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_2_location_based,2014,39252.0,metric tons CO2e,"Scope 2 (location-based, legacy Viacom only)"
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_2_location_based,2015,50828.0,metric tons CO2e,"Scope 2 (location-based, legacy Viacom only)"
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_2_location_based,2016,216737.0,metric tons CO2e,Scope 2 (location-based)
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_2_location_based,2017,219851.0,metric tons CO2e,Scope 2 (location-based)
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_2_location_based,2018,229073.0,metric tons CO2e,Scope 2 (location-based)
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_2_location_based,2019,144268.0,metric tons CO2e,Scope 2 (location-based)
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_2_location_based,2020,139608.0,metric tons CO2e,Scope 2 (location-based)
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_3,2014,28499.0,metric tons CO2e,Scope 3 (legacy Viacom only)
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_3,2015,33242.0,metric tons CO2e,Scope 3 (legacy Viacom only)
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_3,2016,47190.0,metric tons CO2e,Scope 3
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_3,2017,39356.0,metric tons CO2e,Scope 3
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_3,2018,37891.0,metric tons CO2e,Scope 3
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_3,2019,819682.0,metric tons CO2e,Scope 3
-ViacomCBS_ESG_Report_2020-2021_vFINAL,scope_3,2020,6897654.0,metric tons CO2e,Scope 3 (market-based)
-acuity_brands_inc_2022_report,scope_1,2022,34327.0,MT CO2e,Total Scope 1
-acuity_brands_inc_2022_report,scope_2_market_based,2022,42234.0,MT CO2e,Total Scope 2 (Market-based)
-acuity_brands_inc_2022_report,scope_2_location_based,2022,46637.0,MT CO2e,Scope 2 (Location-based)
-acuity_brands_inc_2022_report,scope_3,2022,35119419.0,MT CO2e,Total Scope 3
-acuity_brands_inc_2022_report,scope_3,2021,27651800.0,MT CO2e,Revised FY21 baseline - Use of Sold Products (Scope 3 Category 11)
+Fresenius SE_2019_report,scope_1,2019,517.0,thousand t CO2 equivalents,Fresenius Group Total Scope 1
+Fresenius SE_2019_report,scope_1,2018,521.0,thousand t CO2 equivalents,Fresenius Group Total Scope 1
+Fresenius SE_2019_report,scope_2_location_based,2019,992.0,thousand t CO2 equivalents,Fresenius Group Total Scope 2
+Fresenius SE_2019_report,scope_2_location_based,2018,1013.0,thousand t CO2 equivalents,Fresenius Group Total Scope 2
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2014,8297.0,metric tons CO2e,Scope 1 (legacy Viacom only)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2015,9045.0,metric tons CO2e,Scope 1 (legacy Viacom only)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2016,24672.0,metric tons CO2e,Scope 1
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2017,26834.0,metric tons CO2e,Scope 1
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2018,31737.0,metric tons CO2e,Scope 1
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2019,38240.0,metric tons CO2e,Scope 1
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2020,32097.0,metric tons CO2e,Scope 1
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2014,37114.0,metric tons CO2e,"Scope 2 (market-based, legacy Viacom only)"
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2015,50828.0,metric tons CO2e,"Scope 2 (market-based, legacy Viacom only)"
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2016,213701.0,metric tons CO2e,Scope 2 (market-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2017,219375.0,metric tons CO2e,Scope 2 (market-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2018,219385.0,metric tons CO2e,Scope 2 (market-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2019,123106.0,metric tons CO2e,Scope 2 (market-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2020,134333.0,metric tons CO2e,Scope 2 (market-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2014,39252.0,metric tons CO2e,"Scope 2 (location-based, legacy Viacom only)"
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2015,50828.0,metric tons CO2e,"Scope 2 (location-based, legacy Viacom only)"
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2016,216737.0,metric tons CO2e,Scope 2 (location-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2017,219851.0,metric tons CO2e,Scope 2 (location-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2018,229073.0,metric tons CO2e,Scope 2 (location-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2019,144268.0,metric tons CO2e,Scope 2 (location-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2020,139608.0,metric tons CO2e,Scope 2 (location-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2014,28499.0,metric tons CO2e,Scope 3 (legacy Viacom only)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2015,33242.0,metric tons CO2e,Scope 3 (legacy Viacom only)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2016,47190.0,metric tons CO2e,Scope 3
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2017,39356.0,metric tons CO2e,Scope 3
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2018,37891.0,metric tons CO2e,Scope 3
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2019,819682.0,metric tons CO2e,Scope 3
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2020,6897654.0,metric tons CO2e,Scope 3 (market-based)
+acuity brands inc_2022_report,scope_1,2022,34327.0,MT CO2e,Total Scope 1
+acuity brands inc_2022_report,scope_2_market_based,2022,42234.0,MT CO2e,Total Scope 2 (Market-based)
+acuity brands inc_2022_report,scope_2_location_based,2022,46637.0,MT CO2e,Scope 2 (Location-based)
+acuity brands inc_2022_report,scope_3,2022,35119419.0,MT CO2e,Total Scope 3
+acuity brands inc_2022_report,scope_3,2021,27651800.0,MT CO2e,Revised FY21 baseline - Use of Sold Products (Scope 3 Category 11)
 addtech_2022_report,scope_1,2021/2022,2041.0,tonnes CO2e,SCOPE 1
 addtech_2022_report,scope_1,2020/2021,1910.0,tonnes CO2e,SCOPE 1
 addtech_2022_report,scope_1,2019/2020,2071.0,tonnes CO2e,SCOPE 1
@@ -81,162 +85,174 @@ aixtron_2020_report,scope_2_location_based,2020,398.14,tonnes CO2e,"Scope 2 - In
 aixtron_2020_report,scope_2_location_based,2019,406.6,tonnes CO2e,Scope 2 - Indirect emissions
 aixtron_2020_report,scope_3,2020,1310.1,tonnes CO2e,"Scope 3 - Indirect emissions (upstream and downstream value chain: fuel/energy provision, water supply, wastewater, waste, operating materials, materials and supplies, flights, transport, production service providers)"
 aixtron_2020_report,scope_3,2019,3637.97,tonnes CO2e,Scope 3 - Indirect emissions
-allfunds_group_2021_report,scope_1,2019,68.51,tCO2e,Scope 1 CO2 emissions
-allfunds_group_2021_report,scope_1,2020,0.0,tCO2e,Scope 1 CO2 emissions
-allfunds_group_2021_report,scope_1,2021,7.31,tCO2e,Scope 1 CO2 emissions
-allfunds_group_2021_report,scope_2_market_based,2019,436.43,tCO2e,Scope 2 CO2 emissions
-allfunds_group_2021_report,scope_2_market_based,2020,0.0,tCO2e,"Scope 2 CO2 emissions (Spain inventory, ISO 14064-1)"
-allfunds_group_2021_report,scope_2_market_based,2021,30.39,tCO2e,Scope 2 CO2 emissions
-allfunds_group_2021_report,scope_2_location_based,2020,91.69,tCO2e,Scope 2 CO2 emissions (key indicators table)
-allfunds_group_2021_report,scope_3,2020,393.82,tCO2e,Scope 3 CO2 emissions (Spain only)
-americold_realty_inc_2022_report,scope_1,2021,72134.0,MTCO2e,Scope 1 Emissions - Total Company
-americold_realty_inc_2022_report,scope_1,2022,102340.0,MTCO2e,Scope 1 Emissions - 2022 Total Company (Owned 1/1/22 ~ 12/31/22)
-americold_realty_inc_2022_report,scope_2_market_based,2021,556660.0,MTCO2e,Market-Based Scope 2 Emissions - Total Company
-americold_realty_inc_2022_report,scope_2_market_based,2022,554491.0,MTCO2e,Market-Based Scope 2 Emissions - 2022 Total Company (Owned 1/1/22 ~ 12/31/22)
-americold_realty_inc_2022_report,scope_2_location_based,2021,556660.0,MTCO2e,Scope 2 Location-Based Emissions (same as market-based per report note) - Total Company
-americold_realty_inc_2022_report,scope_2_location_based,2022,554491.0,MTCO2e,Scope 2 Location-Based Emissions (same as market-based per report note) - 2022 Total Company
-americold_realty_inc_2022_report,scope_3,2021,1067697.0,MTCO2e,Scope 3 Emissions - Total Company
-americold_realty_inc_2022_report,scope_3,2022,611634.0,MTCO2e,Scope 3 Emissions - 2022 Total Company (Owned 1/1/22 ~ 12/31/22)
-autoneum_holding_2019_report,scope_1,2019,116274.0,metric tons CO2 equivalents,Scope 1
-autoneum_holding_2019_report,scope_1,2018,109577.0,metric tons CO2 equivalents,Scope 1
-autoneum_holding_2019_report,scope_1,2017,81077.0,metric tons CO2 equivalents,Scope 1
-autoneum_holding_2019_report,scope_2_location_based,2019,264287.0,metric tons CO2 equivalents,"Scope 2 (location-based, used as approximation for market-based)"
-autoneum_holding_2019_report,scope_2_location_based,2018,256550.0,metric tons CO2 equivalents,"Scope 2 (location-based, used as approximation for market-based)"
-autoneum_holding_2019_report,scope_2_location_based,2017,235014.0,metric tons CO2 equivalents,"Scope 2 (location-based, used as approximation for market-based)"
-autoneum_holding_2019_report,scope_3,2019,420238.0,metric tons CO2 equivalents,Scope 3 (17% of purchased direct materials and 100% of business travel; excludes UGN)
-autoneum_holding_2019_report,scope_3,2018,525214.0,metric tons CO2 equivalents,Scope 3
-autoneum_holding_2019_report,scope_3,2017,448185.0,metric tons CO2 equivalents,Scope 3
-bekaert__d__sa_2022_report,scope_1,2019,294799.0,ton CO2,"Scope 1 GHG emissions natural gas, LPG and fuel (Excluding JVs) - calculated: 286932 + 7867"
-bekaert__d__sa_2022_report,scope_1,2019,338420.0,ton CO2,"Scope 1 GHG emissions natural gas, LPG and fuel (Including JVs) - calculated: 329982 + 8438"
-bekaert__d__sa_2022_report,scope_1,2020,271230.0,ton CO2,"Scope 1 GHG emissions natural gas, LPG and fuel (Excluding JVs) - calculated: 263785 + 7445"
-bekaert__d__sa_2022_report,scope_1,2020,313527.0,ton CO2,"Scope 1 GHG emissions natural gas, LPG and fuel (Including JVs) - calculated: 305547 + 7980"
-bekaert__d__sa_2022_report,scope_1,2021,284910.0,ton CO2,"Scope 1 GHG emissions natural gas, LPG and fuel (Excluding JVs) - calculated: 277023 + 7887"
-bekaert__d__sa_2022_report,scope_1,2021,336201.0,ton CO2,"Scope 1 GHG emissions natural gas, LPG and fuel (Including JVs) - calculated: 327690 + 8511"
-bekaert__d__sa_2022_report,scope_1,2022,269969.0,ton CO2,"Scope 1 GHG emissions natural gas, LPG and fuel (Excluding JVs) - calculated: 262581 + 7388"
-bekaert__d__sa_2022_report,scope_1,2022,316951.0,ton CO2,"Scope 1 GHG emissions natural gas, LPG and fuel (Including JVs, total reported)"
-bekaert__d__sa_2022_report,scope_3,2019,4874911.0,ton CO2e,Purchased goods & services (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2019,72870.0,ton CO2e,Capital goods (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2019,352555.0,ton CO2e,Fuel & energy related activities (not included in Scope 1 or 2) (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2019,31487.0,ton CO2e,Upstream transportation & distribution (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2019,27261.0,ton CO2e,Waste generated in operations (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2019,2740.0,ton CO2e,Business travel (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2019,20400.0,ton CO2e,Employee commuting (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2019,0.0,ton CO2e,Upstream leased assets (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2019,47230.0,ton CO2e,Downstream transportation & distribution (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2019,161870.0,ton CO2e,Processing of sold products (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2019,100000.0,ton CO2e,Use of sold products (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2019,106999.0,ton CO2e,End of life treatment of sold products (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2019,0.0,ton CO2e,Downstream Leased Assets (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2019,0.0,ton CO2e,Franchises (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2019,247313.0,ton CO2e,Total JVs
-bekaert__d__sa_2022_report,scope_3,2019,6045636.0,ton CO2e,Total Scope 3 emissions
-bekaert__d__sa_2022_report,scope_3,2021,5446554.0,ton CO2e,Purchased goods & services (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2021,113767.0,ton CO2e,Capital goods (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2021,348402.0,ton CO2e,Fuel & energy related activities (not included in Scope 1 or 2) (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2021,44627.0,ton CO2e,Upstream transportation & distribution (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2021,32713.0,ton CO2e,Waste generated in operations (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2021,1000.0,ton CO2e,Business travel (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2021,20400.0,ton CO2e,Employee commuting (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2021,0.0,ton CO2e,Upstream leased assets (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2021,66941.0,ton CO2e,Downstream transportation & distribution (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2021,163893.0,ton CO2e,Processing of sold products (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2021,100000.0,ton CO2e,Use of sold products (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2021,108341.0,ton CO2e,End of life treatment of sold products (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2021,0.0,ton CO2e,Downstream Leased Assets (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2021,0.0,ton CO2e,Franchises (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2021,290324.0,ton CO2e,Total JVs
-bekaert__d__sa_2022_report,scope_3,2021,6736962.0,ton CO2e,Total Scope 3 emissions
-bekaert__d__sa_2022_report,scope_3,2022,4762032.0,ton CO2e,Purchased goods & services (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2022,133995.0,ton CO2e,Capital goods (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2022,325115.0,ton CO2e,Fuel & energy related activities (not included in Scope 1 or 2) (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2022,77972.0,ton CO2e,Upstream transportation & distribution (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2022,37984.0,ton CO2e,Waste generated in operations (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2022,2100.0,ton CO2e,Business travel (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2022,20400.0,ton CO2e,Employee commuting (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2022,0.0,ton CO2e,Upstream leased assets (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2022,116899.0,ton CO2e,Downstream transportation & distribution (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2022,156846.0,ton CO2e,Processing of sold products (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2022,100000.0,ton CO2e,Use of sold products (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2022,94448.0,ton CO2e,End of life treatment of sold products (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2022,0.0,ton CO2e,Downstream Leased Assets (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2022,0.0,ton CO2e,Franchises (excluding JVs)
-bekaert__d__sa_2022_report,scope_3,2022,359295.0,ton CO2e,Total JVs
-bekaert__d__sa_2022_report,scope_3,2022,6187086.0,ton CO2e,Total Scope 3 emissions
-blackline_safety_2021_report,scope_1,FY2021,215.0,MT CO2e,Scope 1
-blackline_safety_2021_report,scope_1,FY2020,165.6,MT CO2e,Scope 1
-blackline_safety_2021_report,scope_2_location_based,FY2021,576.0,MT CO2e,Scope 2 (location-based)
-blackline_safety_2021_report,scope_2_location_based,FY2020,227.4,MT CO2e,Scope 2 (location-based)
-blackline_safety_2021_report,scope_3,FY2021,1606.2,MT CO2e,"Scope 3 (categories 3, 6, 7; spend-based method)"
-blackline_safety_2021_report,scope_3,FY2020,1661.2,MT CO2e,"Scope 3 (categories 3, 6, 7; spend-based method)"
-cabot_corp_2018_report,scope_1,2016,4.5,MM MT CO2e,Scope 1 Absolute Emissions
-cabot_corp_2018_report,scope_1,2017,4.58,MM MT CO2e,Scope 1 Absolute Emissions
-cabot_corp_2018_report,scope_1,2018,4.77,MM MT CO2e,Scope 1 Absolute Emissions
-cabot_corp_2018_report,scope_2_location_based,2016,0.34,MM MT CO2e,Scope 2 Absolute Emissions
-cabot_corp_2018_report,scope_2_location_based,2017,0.33,MM MT CO2e,Scope 2 Absolute Emissions
-cabot_corp_2018_report,scope_2_location_based,2018,0.32,MM MT CO2e,Scope 2 Absolute Emissions
-cardinal_energy_ltd_2021_report,scope_1,2021,231.0,10^3 tonnes CO2e,Direct GHG emissions
-cardinal_energy_ltd_2021_report,scope_1,2020,160.0,10^3 tonnes CO2e,Direct GHG emissions
-cardinal_energy_ltd_2021_report,scope_1,2019,188.0,10^3 tonnes CO2e,Direct GHG emissions
-cardinal_energy_ltd_2021_report,scope_3,2021,228.0,10^3 tonnes CO2e,Indirect GHG emissions
-cardinal_energy_ltd_2021_report,scope_3,2020,259.0,10^3 tonnes CO2e,Indirect GHG emissions
-cardinal_energy_ltd_2021_report,scope_3,2019,277.0,10^3 tonnes CO2e,Indirect GHG emissions
-comerica_inc_2019_report,scope_1,2012,6950.0,Metric tons of CO2e,"Scope 1 GHG emissions- natural gas, jet fuel, diesel, gasoline, and refrigerants"
-comerica_inc_2019_report,scope_1,2018,6371.0,Metric tons of CO2e,"Scope 1 GHG emissions- natural gas, jet fuel, diesel, gasoline, and refrigerants"
-comerica_inc_2019_report,scope_1,2019,6304.0,Metric tons of CO2e,"Scope 1 GHG emissions- natural gas, jet fuel, diesel, gasoline, and refrigerants"
-comerica_inc_2019_report,scope_2_location_based,2012,74784.0,Metric tons of CO2e,"Scope 2 GHG emissions- electricity, steam, and chilled water in company-controlled buildings"
-comerica_inc_2019_report,scope_2_location_based,2018,39916.0,Metric tons of CO2e,"Scope 2 GHG emissions- electricity, steam, and chilled water in company-controlled buildings"
-comerica_inc_2019_report,scope_2_location_based,2019,36316.0,Metric tons of CO2e,"Scope 2 GHG emissions- electricity, steam, and chilled water in company-controlled buildings"
-comerica_inc_2019_report,scope_3,2012,3055.0,Metric tons of CO2e,Total lifecycle paper emissions (Purchased Goods and Services)
-comerica_inc_2019_report,scope_3,2012,520.0,Metric tons of CO2e,Total lifecycle computer emissions (Purchased Goods and Services)
-comerica_inc_2019_report,scope_3,2012,137.0,Metric tons of CO2e,Total lifecycle carpeting emissions (Purchased Goods and Services)
-comerica_inc_2019_report,scope_3,2012,2052.0,Metric tons of CO2e,Scope 3 lifecycle emissions associated with landfilled mixed solid waste
-comerica_inc_2019_report,scope_3,2012,4431.0,Metric tons of CO2e,Employee business travel by air and car
-comerica_inc_2019_report,scope_3,2012,1257.0,Metric tons of CO2e,Total subleased emissions (Downstream Leased Assets)
-comerica_inc_2019_report,scope_3,2018,5257.0,Metric tons of CO2e,Total lifecycle paper emissions (Purchased Goods and Services)
-comerica_inc_2019_report,scope_3,2018,3031.0,Metric tons of CO2e,Total lifecycle computer emissions (Purchased Goods and Services)
-comerica_inc_2019_report,scope_3,2018,289.0,Metric tons of CO2e,Total lifecycle carpeting emissions (Purchased Goods and Services)
-comerica_inc_2019_report,scope_3,2018,1283.0,Metric tons of CO2e,Total lifecycle furniture emissions (Capital Goods)
-comerica_inc_2019_report,scope_3,2018,1868.0,Metric tons of CO2e,Electricity transmission/distribution loss emissions (Fuel-and-energy related activities)
-comerica_inc_2019_report,scope_3,2018,133.0,Metric tons of CO2e,Shipping emissions (Upstream Transportation and Distribution)
-comerica_inc_2019_report,scope_3,2018,59.0,Metric tons of CO2e,Armored vehicle emissions (Upstream Transportation and Distribution)
-comerica_inc_2019_report,scope_3,2018,514.0,Metric tons of CO2e,Scope 3 lifecycle emissions associated with landfilled mixed solid waste
-comerica_inc_2019_report,scope_3,2018,3453.0,Metric tons of CO2e,Employee business travel by air and car
-comerica_inc_2019_report,scope_3,2018,25544.0,Metric tons of CO2e,Employee commuting emissions
-comerica_inc_2019_report,scope_3,2018,1027.0,Metric tons of CO2e,Total subleased emissions (Downstream Leased Assets)
-comerica_inc_2019_report,scope_3,2018,181.0,Metric tons of CO2e,CBRE Business Travel on Comerica Account (Other Downstream)
-comerica_inc_2019_report,scope_3,2019,4560.0,Metric tons of CO2e,Total lifecycle paper emissions (Purchased Goods and Services)
-comerica_inc_2019_report,scope_3,2019,2816.0,Metric tons of CO2e,Total lifecycle computer emissions (Purchased Goods and Services)
-comerica_inc_2019_report,scope_3,2019,504.0,Metric tons of CO2e,Total lifecycle carpeting emissions (Purchased Goods and Services)
-comerica_inc_2019_report,scope_3,2019,989.0,Metric tons of CO2e,Total lifecycle furniture emissions (Capital Goods)
-comerica_inc_2019_report,scope_3,2019,1708.0,Metric tons of CO2e,Electricity transmission/distribution loss emissions (Fuel-and-energy related activities)
-comerica_inc_2019_report,scope_3,2019,195.0,Metric tons of CO2e,Shipping emissions (Upstream Transportation and Distribution)
-comerica_inc_2019_report,scope_3,2019,69.0,Metric tons of CO2e,Armored vehicle emissions (Upstream Transportation and Distribution)
-comerica_inc_2019_report,scope_3,2019,505.0,Metric tons of CO2e,Scope 3 lifecycle emissions associated with landfilled mixed solid waste
-comerica_inc_2019_report,scope_3,2019,3515.0,Metric tons of CO2e,Employee business travel by air and car
-comerica_inc_2019_report,scope_3,2019,25837.0,Metric tons of CO2e,Employee commuting emissions
-comerica_inc_2019_report,scope_3,2019,629.0,Metric tons of CO2e,Total subleased emissions (Downstream Leased Assets)
-comerica_inc_2019_report,scope_3,2019,171.0,Metric tons of CO2e,CBRE Business Travel on Comerica Account (Other Downstream)
-cytokinetics_inc_2022_report,scope_1,2022,0.67,metric kilotons CO2e,"Scope 1 (fuels, natural gas, refrigerants)"
-cytokinetics_inc_2022_report,scope_2_location_based,2022,0.83,metric kilotons CO2e,Scope 2 (electricity use)
-dampskibsselskabet_norden_2019_report,scope_1,2019,4088.0,"1,000 tonnes CO2",Direct CO2 emissions (Scope 1 GHG protocol)
-dampskibsselskabet_norden_2019_report,scope_1,2018,3829.0,"1,000 tonnes CO2",Direct CO2 emissions (Scope 1 GHG protocol)
-dampskibsselskabet_norden_2019_report,scope_1,2017,3757.0,"1,000 tonnes CO2",Direct CO2 emissions (Scope 1 GHG protocol)
-dampskibsselskabet_norden_2019_report,scope_2_location_based,2019,0.2,"1,000 tonnes CO2",Indirect CO2 emissions (Scope 2 GHG protocol)
-dampskibsselskabet_norden_2019_report,scope_2_location_based,2018,0.4,"1,000 tonnes CO2",Indirect CO2 emissions (Scope 2 GHG protocol)
-dampskibsselskabet_norden_2019_report,scope_2_location_based,2017,0.4,"1,000 tonnes CO2",Indirect CO2 emissions (Scope 2 GHG protocol)
-dampskibsselskabet_norden_2019_report,scope_3,2019,3.6,"1,000 tonnes CO2",Other indirect CO2 emissions (Scope 3 GHG protocol)
-dampskibsselskabet_norden_2019_report,scope_3,2018,3.0,"1,000 tonnes CO2",Other indirect CO2 emissions (Scope 3 GHG protocol)
-dampskibsselskabet_norden_2019_report,scope_3,2017,3.3,"1,000 tonnes CO2",Other indirect CO2 emissions (Scope 3 GHG protocol)
-evolution_mining_ltd_2020_report,scope_1,FY20,157857.0,t CO2-e,Greenhouse gas emissions Scope 1
-evolution_mining_ltd_2020_report,scope_1,FY19,155085.0,t CO2-e,Greenhouse gas emissions Scope 1
-evolution_mining_ltd_2020_report,scope_1,FY18,159061.0,t CO2-e,Greenhouse gas emissions Scope 1
-evolution_mining_ltd_2020_report,scope_1,FY17,167734.0,t CO2-e,Greenhouse gas emissions Scope 1
-evolution_mining_ltd_2020_report,scope_1,FY16,157584.0,t CO2-e,Greenhouse gas emissions Scope 1
-evolution_mining_ltd_2020_report,scope_2_location_based,FY20,398187.0,t CO2-e,Greenhouse gas emissions Scope 2
-evolution_mining_ltd_2020_report,scope_2_location_based,FY19,383449.0,t CO2-e,Greenhouse gas emissions Scope 2
-evolution_mining_ltd_2020_report,scope_2_location_based,FY18,394144.0,t CO2-e,Greenhouse gas emissions Scope 2
-evolution_mining_ltd_2020_report,scope_2_location_based,FY17,430993.0,t CO2-e,Greenhouse gas emissions Scope 2
-evolution_mining_ltd_2020_report,scope_2_location_based,FY16,472257.0,t CO2-e,Greenhouse gas emissions Scope 2
+allfunds group_2021_report,scope_1,2019,68.51,tCO2e,Scope 1 CO2 emissions
+allfunds group_2021_report,scope_1,2020,0.0,tCO2e,Scope 1 CO2 emissions
+allfunds group_2021_report,scope_1,2021,7.31,tCO2e,Scope 1 CO2 emissions
+allfunds group_2021_report,scope_2_market_based,2019,436.43,tCO2e,Scope 2 CO2 emissions
+allfunds group_2021_report,scope_2_market_based,2020,0.0,tCO2e,"Scope 2 CO2 emissions (Spain inventory, ISO 14064-1)"
+allfunds group_2021_report,scope_2_market_based,2021,30.39,tCO2e,Scope 2 CO2 emissions
+allfunds group_2021_report,scope_2_location_based,2020,91.69,tCO2e,Scope 2 CO2 emissions (key indicators table)
+allfunds group_2021_report,scope_3,2020,393.82,tCO2e,Scope 3 CO2 emissions (Spain only)
+americold realty inc_2022_report,scope_1,2021,72134.0,MTCO2e,Scope 1 Emissions - Total Company
+americold realty inc_2022_report,scope_1,2022,102340.0,MTCO2e,Scope 1 Emissions - 2022 Total Company (Owned 1/1/22 ~ 12/31/22)
+americold realty inc_2022_report,scope_2_market_based,2021,556660.0,MTCO2e,Market-Based Scope 2 Emissions - Total Company
+americold realty inc_2022_report,scope_2_market_based,2022,554491.0,MTCO2e,Market-Based Scope 2 Emissions - 2022 Total Company (Owned 1/1/22 ~ 12/31/22)
+americold realty inc_2022_report,scope_2_location_based,2021,556660.0,MTCO2e,Scope 2 Location-Based Emissions (same as market-based per report note) - Total Company
+americold realty inc_2022_report,scope_2_location_based,2022,554491.0,MTCO2e,Scope 2 Location-Based Emissions (same as market-based per report note) - 2022 Total Company
+americold realty inc_2022_report,scope_3,2021,1067697.0,MTCO2e,Scope 3 Emissions - Total Company
+americold realty inc_2022_report,scope_3,2022,611634.0,MTCO2e,Scope 3 Emissions - 2022 Total Company (Owned 1/1/22 ~ 12/31/22)
+atlas arteria_2019_report,scope_1,2016,6182.0,tonnes CO2e,"Scope 1 (APRR only, 31.14% equity share)"
+atlas arteria_2019_report,scope_1,2017,6541.0,tonnes CO2e,"Scope 1 (APRR only, 31.14% equity share)"
+atlas arteria_2019_report,scope_1,2018,5942.0,tonnes CO2e,"Scope 1 (APRR only, 31.14% equity share)"
+atlas arteria_2019_report,scope_1,2019,6027.0,tonnes CO2e,"Scope 1 (APRR only, 31.14% equity share)"
+atlas arteria_2019_report,scope_3,2016,1913208.0,tonnes CO2e,"Scope 3 - customer traffic emissions (APRR only, 31.14% equity share)"
+atlas arteria_2019_report,scope_3,2017,2135936.0,tonnes CO2e,"Scope 3 - customer traffic emissions (APRR only, 31.14% equity share)"
+atlas arteria_2019_report,scope_3,2018,2212963.0,tonnes CO2e,"Scope 3 - customer traffic emissions (APRR only, 31.14% equity share)"
+atlas arteria_2019_report,scope_3,2019,2230582.0,tonnes CO2e,"Scope 3 - customer traffic emissions (APRR only, 31.14% equity share)"
+atlas arteria_2019_report,scope_2_location_based,2016,1291.0,tonnes CO2e,"Scope 2 (APRR only, 31.14% equity share)"
+atlas arteria_2019_report,scope_2_location_based,2017,1244.0,tonnes CO2e,"Scope 2 (APRR only, 31.14% equity share)"
+atlas arteria_2019_report,scope_2_location_based,2018,957.0,tonnes CO2e,"Scope 2 (APRR only, 31.14% equity share)"
+atlas arteria_2019_report,scope_2_location_based,2019,773.0,tonnes CO2e,"Scope 2 (APRR only, 31.14% equity share)"
+autoneum holding_2019_report,scope_1,2019,116274.0,metric tons CO2 equivalents,Scope 1
+autoneum holding_2019_report,scope_1,2018,109577.0,metric tons CO2 equivalents,Scope 1
+autoneum holding_2019_report,scope_1,2017,81077.0,metric tons CO2 equivalents,Scope 1
+autoneum holding_2019_report,scope_2_location_based,2019,264287.0,metric tons CO2 equivalents,"Scope 2 (location-based, used as approximation for market-based)"
+autoneum holding_2019_report,scope_2_location_based,2018,256550.0,metric tons CO2 equivalents,"Scope 2 (location-based, used as approximation for market-based)"
+autoneum holding_2019_report,scope_2_location_based,2017,235014.0,metric tons CO2 equivalents,"Scope 2 (location-based, used as approximation for market-based)"
+autoneum holding_2019_report,scope_3,2019,420238.0,metric tons CO2 equivalents,Scope 3 (17% of purchased direct materials and 100% of business travel; excludes UGN)
+autoneum holding_2019_report,scope_3,2018,525214.0,metric tons CO2 equivalents,Scope 3
+autoneum holding_2019_report,scope_3,2017,448185.0,metric tons CO2 equivalents,Scope 3
+bekaert (d) sa_2022_report,scope_1,2019,294799.0,ton CO2,"Scope 1 GHG emissions natural gas, LPG and fuel (Excluding JVs) - calculated: 286932 + 7867"
+bekaert (d) sa_2022_report,scope_1,2019,338420.0,ton CO2,"Scope 1 GHG emissions natural gas, LPG and fuel (Including JVs) - calculated: 329982 + 8438"
+bekaert (d) sa_2022_report,scope_1,2020,271230.0,ton CO2,"Scope 1 GHG emissions natural gas, LPG and fuel (Excluding JVs) - calculated: 263785 + 7445"
+bekaert (d) sa_2022_report,scope_1,2020,313527.0,ton CO2,"Scope 1 GHG emissions natural gas, LPG and fuel (Including JVs) - calculated: 305547 + 7980"
+bekaert (d) sa_2022_report,scope_1,2021,284910.0,ton CO2,"Scope 1 GHG emissions natural gas, LPG and fuel (Excluding JVs) - calculated: 277023 + 7887"
+bekaert (d) sa_2022_report,scope_1,2021,336201.0,ton CO2,"Scope 1 GHG emissions natural gas, LPG and fuel (Including JVs) - calculated: 327690 + 8511"
+bekaert (d) sa_2022_report,scope_1,2022,269969.0,ton CO2,"Scope 1 GHG emissions natural gas, LPG and fuel (Excluding JVs) - calculated: 262581 + 7388"
+bekaert (d) sa_2022_report,scope_1,2022,316951.0,ton CO2,"Scope 1 GHG emissions natural gas, LPG and fuel (Including JVs, total reported)"
+bekaert (d) sa_2022_report,scope_3,2019,4874911.0,ton CO2e,Purchased goods & services (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2019,72870.0,ton CO2e,Capital goods (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2019,352555.0,ton CO2e,Fuel & energy related activities (not included in Scope 1 or 2) (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2019,31487.0,ton CO2e,Upstream transportation & distribution (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2019,27261.0,ton CO2e,Waste generated in operations (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2019,2740.0,ton CO2e,Business travel (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2019,20400.0,ton CO2e,Employee commuting (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2019,0.0,ton CO2e,Upstream leased assets (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2019,47230.0,ton CO2e,Downstream transportation & distribution (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2019,161870.0,ton CO2e,Processing of sold products (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2019,100000.0,ton CO2e,Use of sold products (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2019,106999.0,ton CO2e,End of life treatment of sold products (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2019,0.0,ton CO2e,Downstream Leased Assets (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2019,0.0,ton CO2e,Franchises (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2019,247313.0,ton CO2e,Total JVs
+bekaert (d) sa_2022_report,scope_3,2019,6045636.0,ton CO2e,Total Scope 3 emissions
+bekaert (d) sa_2022_report,scope_3,2021,5446554.0,ton CO2e,Purchased goods & services (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2021,113767.0,ton CO2e,Capital goods (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2021,348402.0,ton CO2e,Fuel & energy related activities (not included in Scope 1 or 2) (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2021,44627.0,ton CO2e,Upstream transportation & distribution (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2021,32713.0,ton CO2e,Waste generated in operations (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2021,1000.0,ton CO2e,Business travel (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2021,20400.0,ton CO2e,Employee commuting (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2021,0.0,ton CO2e,Upstream leased assets (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2021,66941.0,ton CO2e,Downstream transportation & distribution (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2021,163893.0,ton CO2e,Processing of sold products (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2021,100000.0,ton CO2e,Use of sold products (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2021,108341.0,ton CO2e,End of life treatment of sold products (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2021,0.0,ton CO2e,Downstream Leased Assets (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2021,0.0,ton CO2e,Franchises (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2021,290324.0,ton CO2e,Total JVs
+bekaert (d) sa_2022_report,scope_3,2021,6736962.0,ton CO2e,Total Scope 3 emissions
+bekaert (d) sa_2022_report,scope_3,2022,4762032.0,ton CO2e,Purchased goods & services (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2022,133995.0,ton CO2e,Capital goods (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2022,325115.0,ton CO2e,Fuel & energy related activities (not included in Scope 1 or 2) (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2022,77972.0,ton CO2e,Upstream transportation & distribution (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2022,37984.0,ton CO2e,Waste generated in operations (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2022,2100.0,ton CO2e,Business travel (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2022,20400.0,ton CO2e,Employee commuting (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2022,0.0,ton CO2e,Upstream leased assets (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2022,116899.0,ton CO2e,Downstream transportation & distribution (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2022,156846.0,ton CO2e,Processing of sold products (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2022,100000.0,ton CO2e,Use of sold products (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2022,94448.0,ton CO2e,End of life treatment of sold products (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2022,0.0,ton CO2e,Downstream Leased Assets (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2022,0.0,ton CO2e,Franchises (excluding JVs)
+bekaert (d) sa_2022_report,scope_3,2022,359295.0,ton CO2e,Total JVs
+bekaert (d) sa_2022_report,scope_3,2022,6187086.0,ton CO2e,Total Scope 3 emissions
+blackline safety_2021_report,scope_1,FY2021,215.0,MT CO2e,Scope 1
+blackline safety_2021_report,scope_1,FY2020,165.6,MT CO2e,Scope 1
+blackline safety_2021_report,scope_2_location_based,FY2021,576.0,MT CO2e,Scope 2 (location-based)
+blackline safety_2021_report,scope_2_location_based,FY2020,227.4,MT CO2e,Scope 2 (location-based)
+blackline safety_2021_report,scope_3,FY2021,1606.2,MT CO2e,"Scope 3 (categories 3, 6, 7; spend-based method)"
+blackline safety_2021_report,scope_3,FY2020,1661.2,MT CO2e,"Scope 3 (categories 3, 6, 7; spend-based method)"
+cabot corp_2018_report,scope_1,2016,4.5,MM MT CO2e,Scope 1 Absolute Emissions
+cabot corp_2018_report,scope_1,2017,4.58,MM MT CO2e,Scope 1 Absolute Emissions
+cabot corp_2018_report,scope_1,2018,4.77,MM MT CO2e,Scope 1 Absolute Emissions
+cabot corp_2018_report,scope_2_location_based,2016,0.34,MM MT CO2e,Scope 2 Absolute Emissions
+cabot corp_2018_report,scope_2_location_based,2017,0.33,MM MT CO2e,Scope 2 Absolute Emissions
+cabot corp_2018_report,scope_2_location_based,2018,0.32,MM MT CO2e,Scope 2 Absolute Emissions
+cardinal energy ltd_2021_report,scope_1,2021,231.0,10^3 tonnes CO2e,Direct GHG emissions
+cardinal energy ltd_2021_report,scope_1,2020,160.0,10^3 tonnes CO2e,Direct GHG emissions
+cardinal energy ltd_2021_report,scope_1,2019,188.0,10^3 tonnes CO2e,Direct GHG emissions
+cardinal energy ltd_2021_report,scope_3,2021,228.0,10^3 tonnes CO2e,Indirect GHG emissions
+cardinal energy ltd_2021_report,scope_3,2020,259.0,10^3 tonnes CO2e,Indirect GHG emissions
+cardinal energy ltd_2021_report,scope_3,2019,277.0,10^3 tonnes CO2e,Indirect GHG emissions
+comerica inc_2019_report,scope_1,2012,6950.0,Metric tons of CO2e,"Scope 1 GHG emissions- natural gas, jet fuel, diesel, gasoline, and refrigerants"
+comerica inc_2019_report,scope_1,2018,6371.0,Metric tons of CO2e,"Scope 1 GHG emissions- natural gas, jet fuel, diesel, gasoline, and refrigerants"
+comerica inc_2019_report,scope_1,2019,6304.0,Metric tons of CO2e,"Scope 1 GHG emissions- natural gas, jet fuel, diesel, gasoline, and refrigerants"
+comerica inc_2019_report,scope_2_location_based,2012,74784.0,Metric tons of CO2e,"Scope 2 GHG emissions- electricity, steam, and chilled water in company-controlled buildings"
+comerica inc_2019_report,scope_2_location_based,2018,39916.0,Metric tons of CO2e,"Scope 2 GHG emissions- electricity, steam, and chilled water in company-controlled buildings"
+comerica inc_2019_report,scope_2_location_based,2019,36316.0,Metric tons of CO2e,"Scope 2 GHG emissions- electricity, steam, and chilled water in company-controlled buildings"
+comerica inc_2019_report,scope_3,2012,3055.0,Metric tons of CO2e,Total lifecycle paper emissions (Purchased Goods and Services)
+comerica inc_2019_report,scope_3,2012,520.0,Metric tons of CO2e,Total lifecycle computer emissions (Purchased Goods and Services)
+comerica inc_2019_report,scope_3,2012,137.0,Metric tons of CO2e,Total lifecycle carpeting emissions (Purchased Goods and Services)
+comerica inc_2019_report,scope_3,2012,2052.0,Metric tons of CO2e,Scope 3 lifecycle emissions associated with landfilled mixed solid waste
+comerica inc_2019_report,scope_3,2012,4431.0,Metric tons of CO2e,Employee business travel by air and car
+comerica inc_2019_report,scope_3,2012,1257.0,Metric tons of CO2e,Total subleased emissions (Downstream Leased Assets)
+comerica inc_2019_report,scope_3,2018,5257.0,Metric tons of CO2e,Total lifecycle paper emissions (Purchased Goods and Services)
+comerica inc_2019_report,scope_3,2018,3031.0,Metric tons of CO2e,Total lifecycle computer emissions (Purchased Goods and Services)
+comerica inc_2019_report,scope_3,2018,289.0,Metric tons of CO2e,Total lifecycle carpeting emissions (Purchased Goods and Services)
+comerica inc_2019_report,scope_3,2018,1283.0,Metric tons of CO2e,Total lifecycle furniture emissions (Capital Goods)
+comerica inc_2019_report,scope_3,2018,1868.0,Metric tons of CO2e,Electricity transmission/distribution loss emissions (Fuel-and-energy related activities)
+comerica inc_2019_report,scope_3,2018,133.0,Metric tons of CO2e,Shipping emissions (Upstream Transportation and Distribution)
+comerica inc_2019_report,scope_3,2018,59.0,Metric tons of CO2e,Armored vehicle emissions (Upstream Transportation and Distribution)
+comerica inc_2019_report,scope_3,2018,514.0,Metric tons of CO2e,Scope 3 lifecycle emissions associated with landfilled mixed solid waste
+comerica inc_2019_report,scope_3,2018,3453.0,Metric tons of CO2e,Employee business travel by air and car
+comerica inc_2019_report,scope_3,2018,25544.0,Metric tons of CO2e,Employee commuting emissions
+comerica inc_2019_report,scope_3,2018,1027.0,Metric tons of CO2e,Total subleased emissions (Downstream Leased Assets)
+comerica inc_2019_report,scope_3,2018,181.0,Metric tons of CO2e,CBRE Business Travel on Comerica Account (Other Downstream)
+comerica inc_2019_report,scope_3,2019,4560.0,Metric tons of CO2e,Total lifecycle paper emissions (Purchased Goods and Services)
+comerica inc_2019_report,scope_3,2019,2816.0,Metric tons of CO2e,Total lifecycle computer emissions (Purchased Goods and Services)
+comerica inc_2019_report,scope_3,2019,504.0,Metric tons of CO2e,Total lifecycle carpeting emissions (Purchased Goods and Services)
+comerica inc_2019_report,scope_3,2019,989.0,Metric tons of CO2e,Total lifecycle furniture emissions (Capital Goods)
+comerica inc_2019_report,scope_3,2019,1708.0,Metric tons of CO2e,Electricity transmission/distribution loss emissions (Fuel-and-energy related activities)
+comerica inc_2019_report,scope_3,2019,195.0,Metric tons of CO2e,Shipping emissions (Upstream Transportation and Distribution)
+comerica inc_2019_report,scope_3,2019,69.0,Metric tons of CO2e,Armored vehicle emissions (Upstream Transportation and Distribution)
+comerica inc_2019_report,scope_3,2019,505.0,Metric tons of CO2e,Scope 3 lifecycle emissions associated with landfilled mixed solid waste
+comerica inc_2019_report,scope_3,2019,3515.0,Metric tons of CO2e,Employee business travel by air and car
+comerica inc_2019_report,scope_3,2019,25837.0,Metric tons of CO2e,Employee commuting emissions
+comerica inc_2019_report,scope_3,2019,629.0,Metric tons of CO2e,Total subleased emissions (Downstream Leased Assets)
+comerica inc_2019_report,scope_3,2019,171.0,Metric tons of CO2e,CBRE Business Travel on Comerica Account (Other Downstream)
+cytokinetics inc_2022_report,scope_1,2022,0.67,metric kilotons CO2e,"Scope 1 (fuels, natural gas, refrigerants)"
+cytokinetics inc_2022_report,scope_2_location_based,2022,0.83,metric kilotons CO2e,Scope 2 (electricity use)
+dampskibsselskabet norden_2019_report,scope_1,2019,4088.0,"1,000 tonnes CO2",Direct CO2 emissions (Scope 1 GHG protocol)
+dampskibsselskabet norden_2019_report,scope_1,2018,3829.0,"1,000 tonnes CO2",Direct CO2 emissions (Scope 1 GHG protocol)
+dampskibsselskabet norden_2019_report,scope_1,2017,3757.0,"1,000 tonnes CO2",Direct CO2 emissions (Scope 1 GHG protocol)
+dampskibsselskabet norden_2019_report,scope_2_location_based,2019,0.2,"1,000 tonnes CO2",Indirect CO2 emissions (Scope 2 GHG protocol)
+dampskibsselskabet norden_2019_report,scope_2_location_based,2018,0.4,"1,000 tonnes CO2",Indirect CO2 emissions (Scope 2 GHG protocol)
+dampskibsselskabet norden_2019_report,scope_2_location_based,2017,0.4,"1,000 tonnes CO2",Indirect CO2 emissions (Scope 2 GHG protocol)
+dampskibsselskabet norden_2019_report,scope_3,2019,3.6,"1,000 tonnes CO2",Other indirect CO2 emissions (Scope 3 GHG protocol)
+dampskibsselskabet norden_2019_report,scope_3,2018,3.0,"1,000 tonnes CO2",Other indirect CO2 emissions (Scope 3 GHG protocol)
+dampskibsselskabet norden_2019_report,scope_3,2017,3.3,"1,000 tonnes CO2",Other indirect CO2 emissions (Scope 3 GHG protocol)
+evolution mining ltd_2020_report,scope_1,FY20,157857.0,t CO2-e,Greenhouse gas emissions Scope 1
+evolution mining ltd_2020_report,scope_1,FY19,155085.0,t CO2-e,Greenhouse gas emissions Scope 1
+evolution mining ltd_2020_report,scope_1,FY18,159061.0,t CO2-e,Greenhouse gas emissions Scope 1
+evolution mining ltd_2020_report,scope_1,FY17,167734.0,t CO2-e,Greenhouse gas emissions Scope 1
+evolution mining ltd_2020_report,scope_1,FY16,157584.0,t CO2-e,Greenhouse gas emissions Scope 1
+evolution mining ltd_2020_report,scope_2_location_based,FY20,398187.0,t CO2-e,Greenhouse gas emissions Scope 2
+evolution mining ltd_2020_report,scope_2_location_based,FY19,383449.0,t CO2-e,Greenhouse gas emissions Scope 2
+evolution mining ltd_2020_report,scope_2_location_based,FY18,394144.0,t CO2-e,Greenhouse gas emissions Scope 2
+evolution mining ltd_2020_report,scope_2_location_based,FY17,430993.0,t CO2-e,Greenhouse gas emissions Scope 2
+evolution mining ltd_2020_report,scope_2_location_based,FY16,472257.0,t CO2-e,Greenhouse gas emissions Scope 2
 fujifilm_2022_report,scope_1,FY2017,687.0,kt CO2e,Fujifilm Group Total
 fujifilm_2022_report,scope_1,FY2018,672.0,kt CO2e,Fujifilm Group Total
 fujifilm_2022_report,scope_1,FY2019,633.0,kt CO2e,Fujifilm Group Total
@@ -253,24 +269,24 @@ fujifilm_2022_report,scope_2_location_based,FY2019,514.0,kt CO2e,Fujifilm Group 
 fujifilm_2022_report,scope_2_location_based,FY2020,475.0,kt CO2e,Fujifilm Group Total
 fujifilm_2022_report,scope_2_location_based,FY2021,494.0,kt CO2e,Fujifilm Group Total
 fujifilm_2022_report,scope_3,FY2021,3473.0,kt CO2e,Total Scope 3 emissions (Fujifilm Group)
-georg_fischer_ag_2018_report,scope_1,2018,312.0,1'000 tonnes CO2e,Scope 1 (Direct emissions: energy consumption)
-georg_fischer_ag_2018_report,scope_1,2017,325.0,1'000 tonnes CO2e,Scope 1 (Direct emissions: energy consumption)
-georg_fischer_ag_2018_report,scope_1,2017_pro_rata,304.0,1'000 tonnes CO2e,Scope 1 (Direct emissions: energy consumption) - 2017 pro rata
-georg_fischer_ag_2018_report,scope_1,2016,307.0,1'000 tonnes CO2e,Scope 1 (Direct emissions: energy consumption)
-georg_fischer_ag_2018_report,scope_1,2015,313.0,1'000 tonnes CO2e,Scope 1 (Direct emissions: energy consumption)
-georg_fischer_ag_2018_report,scope_1,2014,313.0,1'000 tonnes CO2e,Scope 1 (Direct emissions: energy consumption)
-georg_fischer_ag_2018_report,scope_2_location_based,2018,312.0,1'000 tonnes CO2e,Scope 2 (Indirect emissions: electricity and district heating)
-georg_fischer_ag_2018_report,scope_2_location_based,2017,337.0,1'000 tonnes CO2e,Scope 2 (Indirect emissions: electricity and district heating)
-georg_fischer_ag_2018_report,scope_2_location_based,2017_pro_rata,330.0,1'000 tonnes CO2e,Scope 2 (Indirect emissions: electricity and district heating) - 2017 pro rata
-georg_fischer_ag_2018_report,scope_2_location_based,2016,299.0,1'000 tonnes CO2e,Scope 2 (Indirect emissions: electricity and district heating)
-georg_fischer_ag_2018_report,scope_2_location_based,2015,264.0,1'000 tonnes CO2e,Scope 2 (Indirect emissions: electricity and district heating)
-georg_fischer_ag_2018_report,scope_2_location_based,2014,264.0,1'000 tonnes CO2e,Scope 2 (Indirect emissions: electricity and district heating)
-georg_fischer_ag_2018_report,scope_3,2018,6.0,1'000 tonnes CO2e,Scope 3 (Indirect emissions: business travel)
-georg_fischer_ag_2018_report,scope_3,2017,7.0,1'000 tonnes CO2e,Scope 3 (Indirect emissions: business travel)
-georg_fischer_ag_2018_report,scope_3,2017_pro_rata,7.0,1'000 tonnes CO2e,Scope 3 (Indirect emissions: business travel) - 2017 pro rata
-georg_fischer_ag_2018_report,scope_3,2016,4.0,1'000 tonnes CO2e,Scope 3 (Indirect emissions: business travel)
-georg_fischer_ag_2018_report,scope_3,2015,3.0,1'000 tonnes CO2e,Scope 3 (Indirect emissions: business travel)
-georg_fischer_ag_2018_report,scope_3,2014,3.0,1'000 tonnes CO2e,Scope 3 (Indirect emissions: business travel)
+georg fischer ag_2018_report,scope_1,2018,312.0,1'000 tonnes CO2e,Scope 1 (Direct emissions: energy consumption)
+georg fischer ag_2018_report,scope_1,2017,325.0,1'000 tonnes CO2e,Scope 1 (Direct emissions: energy consumption)
+georg fischer ag_2018_report,scope_1,2017_pro_rata,304.0,1'000 tonnes CO2e,Scope 1 (Direct emissions: energy consumption) - 2017 pro rata
+georg fischer ag_2018_report,scope_1,2016,307.0,1'000 tonnes CO2e,Scope 1 (Direct emissions: energy consumption)
+georg fischer ag_2018_report,scope_1,2015,313.0,1'000 tonnes CO2e,Scope 1 (Direct emissions: energy consumption)
+georg fischer ag_2018_report,scope_1,2014,313.0,1'000 tonnes CO2e,Scope 1 (Direct emissions: energy consumption)
+georg fischer ag_2018_report,scope_2_location_based,2018,312.0,1'000 tonnes CO2e,Scope 2 (Indirect emissions: electricity and district heating)
+georg fischer ag_2018_report,scope_2_location_based,2017,337.0,1'000 tonnes CO2e,Scope 2 (Indirect emissions: electricity and district heating)
+georg fischer ag_2018_report,scope_2_location_based,2017_pro_rata,330.0,1'000 tonnes CO2e,Scope 2 (Indirect emissions: electricity and district heating) - 2017 pro rata
+georg fischer ag_2018_report,scope_2_location_based,2016,299.0,1'000 tonnes CO2e,Scope 2 (Indirect emissions: electricity and district heating)
+georg fischer ag_2018_report,scope_2_location_based,2015,264.0,1'000 tonnes CO2e,Scope 2 (Indirect emissions: electricity and district heating)
+georg fischer ag_2018_report,scope_2_location_based,2014,264.0,1'000 tonnes CO2e,Scope 2 (Indirect emissions: electricity and district heating)
+georg fischer ag_2018_report,scope_3,2018,6.0,1'000 tonnes CO2e,Scope 3 (Indirect emissions: business travel)
+georg fischer ag_2018_report,scope_3,2017,7.0,1'000 tonnes CO2e,Scope 3 (Indirect emissions: business travel)
+georg fischer ag_2018_report,scope_3,2017_pro_rata,7.0,1'000 tonnes CO2e,Scope 3 (Indirect emissions: business travel) - 2017 pro rata
+georg fischer ag_2018_report,scope_3,2016,4.0,1'000 tonnes CO2e,Scope 3 (Indirect emissions: business travel)
+georg fischer ag_2018_report,scope_3,2015,3.0,1'000 tonnes CO2e,Scope 3 (Indirect emissions: business travel)
+georg fischer ag_2018_report,scope_3,2014,3.0,1'000 tonnes CO2e,Scope 3 (Indirect emissions: business travel)
 graincorp_2019_report,scope_1,FY16,235772.0,tCO2-e,Scope 1 GHG Emissions
 graincorp_2019_report,scope_1,FY17,216108.0,tCO2-e,Scope 1 GHG Emissions
 graincorp_2019_report,scope_1,FY18,211316.0,tCO2-e,Scope 1 GHG Emissions
@@ -279,61 +295,61 @@ graincorp_2019_report,scope_2_location_based,FY16,165563.0,tCO2-e,Scope 2 GHG Em
 graincorp_2019_report,scope_2_location_based,FY17,167666.0,tCO2-e,Scope 2 GHG Emissions
 graincorp_2019_report,scope_2_location_based,FY18,151718.0,tCO2-e,Scope 2 GHG Emissions
 graincorp_2019_report,scope_2_location_based,FY19,145806.0,tCO2-e,Scope 2 GHG Emissions
-granite_construction_inc_2020_report,scope_1,2015,132285.0,US Tons CO2e,Total Scope 1 CO2 Equivalents
-granite_construction_inc_2020_report,scope_1,2020,244727.61,US Tons CO2e,Total Scope 1 CO2 Equivalents
-granite_construction_inc_2020_report,scope_3,2020,4663.0,US Tons CO2,Scope 3 Employee Travel - Air travel (estimated)
-granite_construction_inc_2020_report,scope_3,2020,3601.0,US Tons CO2,Scope 3 Employee Travel - Hotel (estimated)
-granite_construction_inc_2020_report,scope_3,2020,135.0,US Tons CO2,Scope 3 Employee Travel - Car (estimated)
-granite_construction_inc_2020_report,scope_3,2020,8399.0,US Tons CO2,Scope 3 Travel: Total Estimated CO2 Emissions
-h__lundbeck_2021_report,scope_1,2019,29025.0,Tonne CO2e,Scope 1 GHGs
-h__lundbeck_2021_report,scope_1,2020,22050.0,Tonne CO2e,Scope 1 GHGs
-h__lundbeck_2021_report,scope_1,2021,24689.0,Tonne CO2e,Scope 1 GHGs
-h__lundbeck_2021_report,scope_2_market_based,2019,9405.0,Tonne CO2e,Scope 2 GHGs (market based)
-h__lundbeck_2021_report,scope_2_market_based,2020,8480.0,Tonne CO2e,Scope 2 GHGs (market based)
-h__lundbeck_2021_report,scope_2_market_based,2021,7486.0,Tonne CO2e,Scope 2 GHGs (market based)
-h__lundbeck_2021_report,scope_2_location_based,2019,17745.0,Tonne CO2e,Scope 2 GHGs (location based)
-h__lundbeck_2021_report,scope_2_location_based,2020,14861.0,Tonne CO2e,Scope 2 GHGs (location based)
-h__lundbeck_2021_report,scope_2_location_based,2021,15798.0,Tonne CO2e,Scope 2 GHGs (location based)
-h__lundbeck_2021_report,scope_3,2019,99375.0,Tonne CO2e,Scope 3 GHGs: Purchased goods and services
-h__lundbeck_2021_report,scope_3,2019,11815.0,Tonne CO2e,Scope 3 GHGs: Up-stream transportation and distribution
-h__lundbeck_2021_report,scope_3,2019,6733.0,Tonne CO2e,Scope 3 GHGs: Business travel
-h__lundbeck_2021_report,scope_3,2020,123589.0,Tonne CO2e,Scope 3 GHGs: Purchased goods and services
-h__lundbeck_2021_report,scope_3,2020,12858.0,Tonne CO2e,Scope 3 GHGs: Up-stream transportation and distribution
-h__lundbeck_2021_report,scope_3,2020,2950.0,Tonne CO2e,Scope 3 GHGs: Business travel
-h__lundbeck_2021_report,scope_3,2021,133445.0,Tonne CO2e,Scope 3 GHGs: Purchased goods and services
-h__lundbeck_2021_report,scope_3,2021,12491.0,Tonne CO2e,Scope 3 GHGs: Up-stream transportation and distribution
-h__lundbeck_2021_report,scope_3,2021,2587.0,Tonne CO2e,Scope 3 GHGs: Business travel
-hammerson_reit_2021_report,scope_1,2020,3309.0,tCO2e,Scope 1: Direct emissions from owned/controlled operations - Total
-hammerson_reit_2021_report,scope_1,2021,4293.0,tCO2e,Scope 1: Direct emissions from owned/controlled operations - Total
-hammerson_reit_2021_report,scope_2_market_based,2020,3331.0,tCO2e,Scope 2 Total - Market Based Method
-hammerson_reit_2021_report,scope_2_market_based,2021,3850.0,tCO2e,Scope 2 Total - Market Based Method
-hammerson_reit_2021_report,scope_2_location_based,2020,13711.0,tCO2e,Scope 2 Total - Location Based
-hammerson_reit_2021_report,scope_2_location_based,2021,13210.0,tCO2e,Scope 2 Total - Location Based
-hammerson_reit_2021_report,scope_3,2020,825.0,tCO2e,"Scope 3: Other indirect emissions - Total (Business travel, Waste, Water)"
-hammerson_reit_2021_report,scope_3,2021,692.0,tCO2e,"Scope 3: Other indirect emissions - Total (Business travel, Waste, Water)"
-hang_lung_properties_2018_report,scope_1,2016,2285.31,Tonnes CO2e,Direct emissions (Scope 1) - Building operation (Total)
-hang_lung_properties_2018_report,scope_1,2017,4967.91,Tonnes CO2e,Direct emissions (Scope 1) - Building operation (Total)
-hang_lung_properties_2018_report,scope_1,2017,61.81,Tonnes CO2e,Direct emissions (Scope 1) - Company vehicles and vessels (HK)
-hang_lung_properties_2018_report,scope_1,2018,3062.65,Tonnes CO2e,Direct emissions (Scope 1) - Building operation (Total)
-hang_lung_properties_2018_report,scope_1,2018,41.45,Tonnes CO2e,Direct emissions (Scope 1) - Company vehicles and vessels (HK)
-hang_lung_properties_2018_report,scope_2_location_based,2016,209034.43,Tonnes CO2e,Energy indirect emissions (Scope 2) - Building operation (Total)
-hang_lung_properties_2018_report,scope_2_location_based,2017,231363.82,Tonnes CO2e,Energy indirect emissions (Scope 2) - Building operation (Total)
-hang_lung_properties_2018_report,scope_2_location_based,2018,271239.53,Tonnes CO2e,Energy indirect emissions (Scope 2) - Building operation (Total)
-hang_lung_properties_2018_report,scope_3,2016,449.99,Tonnes CO2e,Other indirect emissions (Scope 3) - Business air travel (Total)
-hang_lung_properties_2018_report,scope_3,2017,739.83,Tonnes CO2e,Other indirect emissions (Scope 3) - Business air travel (Total)
-hang_lung_properties_2018_report,scope_3,2018,838.22,Tonnes CO2e,Other indirect emissions (Scope 3) - Business air travel (Total)
-healius_ltd_2022_report,scope_1,FY 2022,6533.0,tonnes,Scope 1
-healius_ltd_2022_report,scope_1,FY 2021,6602.0,tonnes,Scope 1
-healius_ltd_2022_report,scope_2_location_based,FY 2022,25610.0,tonnes,Scope 2
-healius_ltd_2022_report,scope_2_location_based,FY 2021,27038.0,tonnes,Scope 2
-hudbay_minerals_inc_2020_report,scope_1,2020,144.0,kilotonnes of CO2-equivalent,Direct CO2e emissions
-hudbay_minerals_inc_2020_report,scope_1,2019,161.0,kilotonnes of CO2-equivalent,Direct CO2e emissions
-hudbay_minerals_inc_2020_report,scope_1,2018,170.0,kilotonnes of CO2-equivalent,Direct CO2e emissions
-hudbay_minerals_inc_2020_report,scope_1,2017,177.0,kilotonnes of CO2-equivalent,Direct CO2e emissions
-hudbay_minerals_inc_2020_report,scope_2_location_based,2020,367.0,kilotonnes of CO2-equivalent,Indirect CO2e emissions
-hudbay_minerals_inc_2020_report,scope_2_location_based,2019,402.0,kilotonnes of CO2-equivalent,Indirect CO2e emissions
-hudbay_minerals_inc_2020_report,scope_2_location_based,2018,403.0,kilotonnes of CO2-equivalent,Indirect CO2e emissions
-hudbay_minerals_inc_2020_report,scope_2_location_based,2017,363.0,kilotonnes of CO2-equivalent,Indirect CO2e emissions
+granite construction inc_2020_report,scope_1,2015,132285.0,US Tons CO2e,Total Scope 1 CO2 Equivalents
+granite construction inc_2020_report,scope_1,2020,244727.61,US Tons CO2e,Total Scope 1 CO2 Equivalents
+granite construction inc_2020_report,scope_3,2020,4663.0,US Tons CO2,Scope 3 Employee Travel - Air travel (estimated)
+granite construction inc_2020_report,scope_3,2020,3601.0,US Tons CO2,Scope 3 Employee Travel - Hotel (estimated)
+granite construction inc_2020_report,scope_3,2020,135.0,US Tons CO2,Scope 3 Employee Travel - Car (estimated)
+granite construction inc_2020_report,scope_3,2020,8399.0,US Tons CO2,Scope 3 Travel: Total Estimated CO2 Emissions
+h. lundbeck_2021_report,scope_1,2019,29025.0,Tonne CO2e,Scope 1 GHGs
+h. lundbeck_2021_report,scope_1,2020,22050.0,Tonne CO2e,Scope 1 GHGs
+h. lundbeck_2021_report,scope_1,2021,24689.0,Tonne CO2e,Scope 1 GHGs
+h. lundbeck_2021_report,scope_2_market_based,2019,9405.0,Tonne CO2e,Scope 2 GHGs (market based)
+h. lundbeck_2021_report,scope_2_market_based,2020,8480.0,Tonne CO2e,Scope 2 GHGs (market based)
+h. lundbeck_2021_report,scope_2_market_based,2021,7486.0,Tonne CO2e,Scope 2 GHGs (market based)
+h. lundbeck_2021_report,scope_2_location_based,2019,17745.0,Tonne CO2e,Scope 2 GHGs (location based)
+h. lundbeck_2021_report,scope_2_location_based,2020,14861.0,Tonne CO2e,Scope 2 GHGs (location based)
+h. lundbeck_2021_report,scope_2_location_based,2021,15798.0,Tonne CO2e,Scope 2 GHGs (location based)
+h. lundbeck_2021_report,scope_3,2019,99375.0,Tonne CO2e,Scope 3 GHGs: Purchased goods and services
+h. lundbeck_2021_report,scope_3,2019,11815.0,Tonne CO2e,Scope 3 GHGs: Up-stream transportation and distribution
+h. lundbeck_2021_report,scope_3,2019,6733.0,Tonne CO2e,Scope 3 GHGs: Business travel
+h. lundbeck_2021_report,scope_3,2020,123589.0,Tonne CO2e,Scope 3 GHGs: Purchased goods and services
+h. lundbeck_2021_report,scope_3,2020,12858.0,Tonne CO2e,Scope 3 GHGs: Up-stream transportation and distribution
+h. lundbeck_2021_report,scope_3,2020,2950.0,Tonne CO2e,Scope 3 GHGs: Business travel
+h. lundbeck_2021_report,scope_3,2021,133445.0,Tonne CO2e,Scope 3 GHGs: Purchased goods and services
+h. lundbeck_2021_report,scope_3,2021,12491.0,Tonne CO2e,Scope 3 GHGs: Up-stream transportation and distribution
+h. lundbeck_2021_report,scope_3,2021,2587.0,Tonne CO2e,Scope 3 GHGs: Business travel
+hammerson reit_2021_report,scope_1,2020,3309.0,tCO2e,Scope 1: Direct emissions from owned/controlled operations - Total
+hammerson reit_2021_report,scope_1,2021,4293.0,tCO2e,Scope 1: Direct emissions from owned/controlled operations - Total
+hammerson reit_2021_report,scope_2_market_based,2020,3331.0,tCO2e,Scope 2 Total - Market Based Method
+hammerson reit_2021_report,scope_2_market_based,2021,3850.0,tCO2e,Scope 2 Total - Market Based Method
+hammerson reit_2021_report,scope_2_location_based,2020,13711.0,tCO2e,Scope 2 Total - Location Based
+hammerson reit_2021_report,scope_2_location_based,2021,13210.0,tCO2e,Scope 2 Total - Location Based
+hammerson reit_2021_report,scope_3,2020,825.0,tCO2e,"Scope 3: Other indirect emissions - Total (Business travel, Waste, Water)"
+hammerson reit_2021_report,scope_3,2021,692.0,tCO2e,"Scope 3: Other indirect emissions - Total (Business travel, Waste, Water)"
+hang lung properties_2018_report,scope_1,2016,2285.31,Tonnes CO2e,Direct emissions (Scope 1) - Building operation (Total)
+hang lung properties_2018_report,scope_1,2017,4967.91,Tonnes CO2e,Direct emissions (Scope 1) - Building operation (Total)
+hang lung properties_2018_report,scope_1,2017,61.81,Tonnes CO2e,Direct emissions (Scope 1) - Company vehicles and vessels (HK)
+hang lung properties_2018_report,scope_1,2018,3062.65,Tonnes CO2e,Direct emissions (Scope 1) - Building operation (Total)
+hang lung properties_2018_report,scope_1,2018,41.45,Tonnes CO2e,Direct emissions (Scope 1) - Company vehicles and vessels (HK)
+hang lung properties_2018_report,scope_2_location_based,2016,209034.43,Tonnes CO2e,Energy indirect emissions (Scope 2) - Building operation (Total)
+hang lung properties_2018_report,scope_2_location_based,2017,231363.82,Tonnes CO2e,Energy indirect emissions (Scope 2) - Building operation (Total)
+hang lung properties_2018_report,scope_2_location_based,2018,271239.53,Tonnes CO2e,Energy indirect emissions (Scope 2) - Building operation (Total)
+hang lung properties_2018_report,scope_3,2016,449.99,Tonnes CO2e,Other indirect emissions (Scope 3) - Business air travel (Total)
+hang lung properties_2018_report,scope_3,2017,739.83,Tonnes CO2e,Other indirect emissions (Scope 3) - Business air travel (Total)
+hang lung properties_2018_report,scope_3,2018,838.22,Tonnes CO2e,Other indirect emissions (Scope 3) - Business air travel (Total)
+healius ltd_2022_report,scope_1,FY 2022,6533.0,tonnes,Scope 1
+healius ltd_2022_report,scope_1,FY 2021,6602.0,tonnes,Scope 1
+healius ltd_2022_report,scope_2_location_based,FY 2022,25610.0,tonnes,Scope 2
+healius ltd_2022_report,scope_2_location_based,FY 2021,27038.0,tonnes,Scope 2
+hudbay minerals inc_2020_report,scope_1,2020,144.0,kilotonnes of CO2-equivalent,Direct CO2e emissions
+hudbay minerals inc_2020_report,scope_1,2019,161.0,kilotonnes of CO2-equivalent,Direct CO2e emissions
+hudbay minerals inc_2020_report,scope_1,2018,170.0,kilotonnes of CO2-equivalent,Direct CO2e emissions
+hudbay minerals inc_2020_report,scope_1,2017,177.0,kilotonnes of CO2-equivalent,Direct CO2e emissions
+hudbay minerals inc_2020_report,scope_2_location_based,2020,367.0,kilotonnes of CO2-equivalent,Indirect CO2e emissions
+hudbay minerals inc_2020_report,scope_2_location_based,2019,402.0,kilotonnes of CO2-equivalent,Indirect CO2e emissions
+hudbay minerals inc_2020_report,scope_2_location_based,2018,403.0,kilotonnes of CO2-equivalent,Indirect CO2e emissions
+hudbay minerals inc_2020_report,scope_2_location_based,2017,363.0,kilotonnes of CO2-equivalent,Indirect CO2e emissions
 huhtamaki_2018_report,scope_1,2014,188000.0,metric tons CO2 eqv,Scope 1
 huhtamaki_2018_report,scope_1,2015,191000.0,metric tons CO2 eqv,Scope 1
 huhtamaki_2018_report,scope_1,2016,198000.0,metric tons CO2 eqv,Scope 1
@@ -354,57 +370,57 @@ huhtamaki_2019_report,scope_2_location_based,2016,544000.0,metric tons CO2 eqv,I
 huhtamaki_2019_report,scope_2_location_based,2017,546000.0,metric tons CO2 eqv,Indirect (Scope 2) GHG emissions (location-based)
 huhtamaki_2019_report,scope_2_location_based,2018,484000.0,metric tons CO2 eqv,Indirect (Scope 2) GHG emissions (location-based)
 huhtamaki_2019_report,scope_2_location_based,2019,512000.0,metric tons CO2 eqv,Indirect (Scope 2) GHG emissions (location-based)
-inchcape_plc_2022_report,scope_1,2022,17002.0,tCO2e,Scope 1 Emissions (Global)
-inchcape_plc_2022_report,scope_1,2022,2791.0,tCO2e,"Scope 1 Emissions (Fugitive, Global)"
-inchcape_plc_2022_report,scope_1,2022,3617.0,tCO2e,Scope 1 Emissions (UK & Offshore)
-inchcape_plc_2022_report,scope_1,2022,216.0,tCO2e,"Scope 1 Emissions (Fugitive, UK & Offshore)"
-inchcape_plc_2022_report,scope_1,2021,9752.0,tCO2e,Scope 1 Emissions (Global)
-inchcape_plc_2022_report,scope_1,2021,2486.0,tCO2e,Scope 1 Emissions (UK & Offshore)
-inchcape_plc_2022_report,scope_2_market_based,2022,30805.0,tCO2e,"Total Scope 1 & 2 Emissions (Market-based, Global) - combined scope 1+2"
-inchcape_plc_2022_report,scope_2_market_based,2022,3624.0,tCO2e,"Total Scope 1 & 2 Emissions (Market-based, UK & Offshore) - combined scope 1+2"
-inchcape_plc_2022_report,scope_2_market_based,2021,32949.0,tCO2e,"Total Scope 1 & 2 Emissions (Market-based, Global) - combined scope 1+2"
-inchcape_plc_2022_report,scope_2_market_based,2021,2486.0,tCO2e,"Total Scope 1 & 2 Emissions (Market-based, UK & Offshore) - combined scope 1+2"
-inchcape_plc_2022_report,scope_2_market_based,2019,50801.0,tCO2e,Scope 1 and 2 emissions baseline (combined)
-inchcape_plc_2022_report,scope_2_location_based,2022,22223.0,tCO2e,"Scope 2 Emissions (Location-based, Global)"
-inchcape_plc_2022_report,scope_2_location_based,2022,2886.0,tCO2e,"Scope 2 Emissions (Location-based, UK & Offshore)"
-inchcape_plc_2022_report,scope_2_location_based,2021,27277.0,tCO2e,"Scope 2 Emissions (Location-based, Global)"
-inchcape_plc_2022_report,scope_2_location_based,2021,3689.0,tCO2e,"Scope 2 Emissions (Location-based, UK & Offshore)"
-inchcape_plc_2022_report,scope_3,2022,187713.0,tCO2e,"Scope 3 Emissions (Business Travel & Upstream Transport, Global)"
-inchcape_plc_2022_report,scope_3,2022,2975.0,tCO2e,"Scope 3 Emissions (Business Travel & Upstream Transport, UK & Offshore)"
-inchcape_plc_2022_report,scope_3,2021,82068.0,tCO2e,"Scope 3 Emissions (Business Travel & Upstream Transport, Global)"
-inchcape_plc_2022_report,scope_3,2021,9221.0,tCO2e,"Scope 3 Emissions (Business Travel & Upstream Transport, UK & Offshore)"
-inchcape_plc_2022_report,scope_3,2019,18700000.0,tCO2e,"Scope 3 emissions baseline (total footprint, 99.97% of total)"
-jetblue_airways_corp_2019_report,scope_1,2015,6903710.0,tCO2e,Direct (Scope 1) - Total
-jetblue_airways_corp_2019_report,scope_1,2016,7491616.0,tCO2e,Direct (Scope 1) - Total
-jetblue_airways_corp_2019_report,scope_1,2017,7809488.0,tCO2e,Direct (Scope 1) - Total
-jetblue_airways_corp_2019_report,scope_1,2018,8370944.0,tCO2e,Direct (Scope 1) - Total
-jetblue_airways_corp_2019_report,scope_1,2019,8730756.0,tCO2e,Direct (Scope 1) - Total
-jetblue_airways_corp_2019_report,scope_2_location_based,2015,25768.0,tCO2e,Indirect Energy (Scope 2) - Purchased Electricity
-jetblue_airways_corp_2019_report,scope_2_location_based,2016,27702.0,tCO2e,Indirect Energy (Scope 2) - Purchased Electricity
-jetblue_airways_corp_2019_report,scope_2_location_based,2017,26521.0,tCO2e,Indirect Energy (Scope 2) - Purchased Electricity
-jetblue_airways_corp_2019_report,scope_2_location_based,2018,26656.0,tCO2e,Indirect Energy (Scope 2) - Purchased Electricity
-jetblue_airways_corp_2019_report,scope_2_location_based,2019,25944.0,tCO2e,Indirect Energy (Scope 2) - Purchased Electricity
-jetblue_airways_corp_2019_report,scope_3,2015,1402791.0,tCO2e,"Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
-jetblue_airways_corp_2019_report,scope_3,2016,1522142.0,tCO2e,"Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
-jetblue_airways_corp_2019_report,scope_3,2017,1586368.0,tCO2e,"Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
-jetblue_airways_corp_2019_report,scope_3,2018,1698105.0,tCO2e,"Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
-jetblue_airways_corp_2019_report,scope_3,2019,1772985.0,tCO2e,"Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
-jpmorgan_chase_2020_report,scope_1,2020,69570.0,MtCO2e,Scope 1 - direct
-jpmorgan_chase_2020_report,scope_1,2019,81655.0,MtCO2e,Scope 1 - direct
-jpmorgan_chase_2020_report,scope_1,2018,83101.0,MtCO2e,Scope 1 - direct
-jpmorgan_chase_2020_report,scope_1,2017,78229.0,MtCO2e,Scope 1 - direct
-jpmorgan_chase_2020_report,scope_2_market_based,2020,4187.0,MtCO2e,Scope 2 (market) - indirect
-jpmorgan_chase_2020_report,scope_2_market_based,2019,556142.0,MtCO2e,Scope 2 (market) - indirect
-jpmorgan_chase_2020_report,scope_2_market_based,2018,572067.0,MtCO2e,Scope 2 (market) - indirect
-jpmorgan_chase_2020_report,scope_2_market_based,2017,596843.0,MtCO2e,Scope 2 (market) - indirect
-jpmorgan_chase_2020_report,scope_2_location_based,2020,660601.0,MtCO2e,Scope 2 (location) - indirect
-jpmorgan_chase_2020_report,scope_2_location_based,2019,692299.0,MtCO2e,Scope 2 (location) - indirect
-jpmorgan_chase_2020_report,scope_2_location_based,2018,739458.0,MtCO2e,Scope 2 (location) - indirect
-jpmorgan_chase_2020_report,scope_2_location_based,2017,770704.0,MtCO2e,Scope 2 (location) - indirect
-jpmorgan_chase_2020_report,scope_3,2020,36169.0,MtCO2e,Scope 3 (category 6 - business travel)
-jpmorgan_chase_2020_report,scope_3,2019,181004.0,MtCO2e,Scope 3 (category 6 - business travel)
-jpmorgan_chase_2020_report,scope_3,2018,176356.0,MtCO2e,Scope 3 (category 6 - business travel)
-jpmorgan_chase_2020_report,scope_3,2017,187020.0,MtCO2e,Scope 3 (category 6 - business travel)
+inchcape plc_2022_report,scope_1,2022,17002.0,tCO2e,Scope 1 Emissions (Global)
+inchcape plc_2022_report,scope_1,2022,2791.0,tCO2e,"Scope 1 Emissions (Fugitive, Global)"
+inchcape plc_2022_report,scope_1,2022,3617.0,tCO2e,Scope 1 Emissions (UK & Offshore)
+inchcape plc_2022_report,scope_1,2022,216.0,tCO2e,"Scope 1 Emissions (Fugitive, UK & Offshore)"
+inchcape plc_2022_report,scope_1,2021,9752.0,tCO2e,Scope 1 Emissions (Global)
+inchcape plc_2022_report,scope_1,2021,2486.0,tCO2e,Scope 1 Emissions (UK & Offshore)
+inchcape plc_2022_report,scope_2_market_based,2022,30805.0,tCO2e,"Total Scope 1 & 2 Emissions (Market-based, Global) - combined scope 1+2"
+inchcape plc_2022_report,scope_2_market_based,2022,3624.0,tCO2e,"Total Scope 1 & 2 Emissions (Market-based, UK & Offshore) - combined scope 1+2"
+inchcape plc_2022_report,scope_2_market_based,2021,32949.0,tCO2e,"Total Scope 1 & 2 Emissions (Market-based, Global) - combined scope 1+2"
+inchcape plc_2022_report,scope_2_market_based,2021,2486.0,tCO2e,"Total Scope 1 & 2 Emissions (Market-based, UK & Offshore) - combined scope 1+2"
+inchcape plc_2022_report,scope_2_market_based,2019,50801.0,tCO2e,Scope 1 and 2 emissions baseline (combined)
+inchcape plc_2022_report,scope_2_location_based,2022,22223.0,tCO2e,"Scope 2 Emissions (Location-based, Global)"
+inchcape plc_2022_report,scope_2_location_based,2022,2886.0,tCO2e,"Scope 2 Emissions (Location-based, UK & Offshore)"
+inchcape plc_2022_report,scope_2_location_based,2021,27277.0,tCO2e,"Scope 2 Emissions (Location-based, Global)"
+inchcape plc_2022_report,scope_2_location_based,2021,3689.0,tCO2e,"Scope 2 Emissions (Location-based, UK & Offshore)"
+inchcape plc_2022_report,scope_3,2022,187713.0,tCO2e,"Scope 3 Emissions (Business Travel & Upstream Transport, Global)"
+inchcape plc_2022_report,scope_3,2022,2975.0,tCO2e,"Scope 3 Emissions (Business Travel & Upstream Transport, UK & Offshore)"
+inchcape plc_2022_report,scope_3,2021,82068.0,tCO2e,"Scope 3 Emissions (Business Travel & Upstream Transport, Global)"
+inchcape plc_2022_report,scope_3,2021,9221.0,tCO2e,"Scope 3 Emissions (Business Travel & Upstream Transport, UK & Offshore)"
+inchcape plc_2022_report,scope_3,2019,18700000.0,tCO2e,"Scope 3 emissions baseline (total footprint, 99.97% of total)"
+jetblue airways corp_2019_report,scope_1,2015,6903710.0,tCO2e,Direct (Scope 1) - Total
+jetblue airways corp_2019_report,scope_1,2016,7491616.0,tCO2e,Direct (Scope 1) - Total
+jetblue airways corp_2019_report,scope_1,2017,7809488.0,tCO2e,Direct (Scope 1) - Total
+jetblue airways corp_2019_report,scope_1,2018,8370944.0,tCO2e,Direct (Scope 1) - Total
+jetblue airways corp_2019_report,scope_1,2019,8730756.0,tCO2e,Direct (Scope 1) - Total
+jetblue airways corp_2019_report,scope_2_location_based,2015,25768.0,tCO2e,Indirect Energy (Scope 2) - Purchased Electricity
+jetblue airways corp_2019_report,scope_2_location_based,2016,27702.0,tCO2e,Indirect Energy (Scope 2) - Purchased Electricity
+jetblue airways corp_2019_report,scope_2_location_based,2017,26521.0,tCO2e,Indirect Energy (Scope 2) - Purchased Electricity
+jetblue airways corp_2019_report,scope_2_location_based,2018,26656.0,tCO2e,Indirect Energy (Scope 2) - Purchased Electricity
+jetblue airways corp_2019_report,scope_2_location_based,2019,25944.0,tCO2e,Indirect Energy (Scope 2) - Purchased Electricity
+jetblue airways corp_2019_report,scope_3,2015,1402791.0,tCO2e,"Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
+jetblue airways corp_2019_report,scope_3,2016,1522142.0,tCO2e,"Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
+jetblue airways corp_2019_report,scope_3,2017,1586368.0,tCO2e,"Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
+jetblue airways corp_2019_report,scope_3,2018,1698105.0,tCO2e,"Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
+jetblue airways corp_2019_report,scope_3,2019,1772985.0,tCO2e,"Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
+jpmorgan chase_2020_report,scope_1,2020,69570.0,MtCO2e,Scope 1 - direct
+jpmorgan chase_2020_report,scope_1,2019,81655.0,MtCO2e,Scope 1 - direct
+jpmorgan chase_2020_report,scope_1,2018,83101.0,MtCO2e,Scope 1 - direct
+jpmorgan chase_2020_report,scope_1,2017,78229.0,MtCO2e,Scope 1 - direct
+jpmorgan chase_2020_report,scope_2_market_based,2020,4187.0,MtCO2e,Scope 2 (market) - indirect
+jpmorgan chase_2020_report,scope_2_market_based,2019,556142.0,MtCO2e,Scope 2 (market) - indirect
+jpmorgan chase_2020_report,scope_2_market_based,2018,572067.0,MtCO2e,Scope 2 (market) - indirect
+jpmorgan chase_2020_report,scope_2_market_based,2017,596843.0,MtCO2e,Scope 2 (market) - indirect
+jpmorgan chase_2020_report,scope_2_location_based,2020,660601.0,MtCO2e,Scope 2 (location) - indirect
+jpmorgan chase_2020_report,scope_2_location_based,2019,692299.0,MtCO2e,Scope 2 (location) - indirect
+jpmorgan chase_2020_report,scope_2_location_based,2018,739458.0,MtCO2e,Scope 2 (location) - indirect
+jpmorgan chase_2020_report,scope_2_location_based,2017,770704.0,MtCO2e,Scope 2 (location) - indirect
+jpmorgan chase_2020_report,scope_3,2020,36169.0,MtCO2e,Scope 3 (category 6 - business travel)
+jpmorgan chase_2020_report,scope_3,2019,181004.0,MtCO2e,Scope 3 (category 6 - business travel)
+jpmorgan chase_2020_report,scope_3,2018,176356.0,MtCO2e,Scope 3 (category 6 - business travel)
+jpmorgan chase_2020_report,scope_3,2017,187020.0,MtCO2e,Scope 3 (category 6 - business travel)
 kfw_2018_report,scope_1,2014,4636.0,tonnes CO2e,"Emissions from direct energy consumption (Scope 1) - Natural gas, wood pellets and own fleet"
 kfw_2018_report,scope_1,2015,5095.0,tonnes CO2e,"Emissions from direct energy consumption (Scope 1) - Natural gas, wood pellets and own fleet"
 kfw_2018_report,scope_1,2016,5260.0,tonnes CO2e,"Emissions from direct energy consumption (Scope 1) - Natural gas, wood pellets and own fleet"
@@ -427,57 +443,60 @@ kfw_2018_report,scope_3,2017,8208.0,tonnes CO2e,Total business travel (Scope 3) 
 kfw_2018_report,scope_3,2017,87.0,tonnes CO2e,Events (Scope 3)
 kfw_2018_report,scope_3,2018,8665.0,tonnes CO2e,Total business travel (Scope 3) - only flights
 kfw_2018_report,scope_3,2018,101.0,tonnes CO2e,Events (Scope 3)
-kilroy_realty_2017_report,scope_1,2016,4059.0,Tonnes CO2e,Whole Portfolio Scope 1 Absolute
-kilroy_realty_2017_report,scope_1,2017,4641.0,Tonnes CO2e,Whole Portfolio Scope 1 Absolute
-kilroy_realty_2017_report,scope_2_location_based,2016,44145.0,Tonnes CO2e,Whole Portfolio Scope 2 Absolute
-kilroy_realty_2017_report,scope_2_location_based,2017,42947.0,Tonnes CO2e,Whole Portfolio Scope 2 Absolute
-kilroy_realty_2018_report,scope_1,2017,4120.0,Tonnes,Whole Portfolio Scope 1 Absolute
-kilroy_realty_2018_report,scope_1,2018,3908.0,MtCO2e,Whole Portfolio Scope 1 Absolute
-kilroy_realty_2018_report,scope_2_market_based,2017,35735.0,Tonnes,Whole Portfolio Scope 2 Market-Based Absolute
-kilroy_realty_2018_report,scope_2_market_based,2018,30439.0,MtCO2e,Whole Portfolio Scope 2 Market-Based Absolute
-kilroy_realty_2018_report,scope_2_location_based,2017,36504.0,Tonnes,Whole Portfolio Scope 2 Location-Based Absolute
-kilroy_realty_2018_report,scope_2_location_based,2018,33207.0,MtCO2e,Whole Portfolio Scope 2 Location-Based Absolute
-kilroy_realty_2018_report,scope_3,2018,31984.0,MtCO2e,Scope 3 Emissions (Downstream Leased Assets)
-kureha_corp_2020_report,scope_1,2017,363.0,"1,000 t CO2",Scope 1 (Kureha)
-kureha_corp_2020_report,scope_1,2018,338.0,"1,000 t CO2",Scope 1 (Kureha)
-kureha_corp_2020_report,scope_1,2019,356.0,"1,000 t CO2",Scope 1 (Kureha)
-kureha_corp_2020_report,scope_2_location_based,2017,34.0,"1,000 t CO2",Scope 2 (Kureha)
-kureha_corp_2020_report,scope_2_location_based,2018,42.0,"1,000 t CO2",Scope 2 (Kureha)
-kureha_corp_2020_report,scope_2_location_based,2019,31.0,"1,000 t CO2",Scope 2 (Kureha)
-kureha_corp_2020_report,scope_3,2017,7.0,"1,000 t CO2","Scope 3 (Kureha) - Categories 4, 6, 7, 9"
-kureha_corp_2020_report,scope_3,2018,7.0,"1,000 t CO2","Scope 3 (Kureha) - Categories 4, 6, 7, 9"
-kureha_corp_2020_report,scope_3,2019,6.0,"1,000 t CO2","Scope 3 (Kureha) - Categories 4, 6, 7, 9"
-lundin_gold_inc_2022_report,scope_1,2022,24024.0,tCO2e,Total Scope 1 emissions
-lundin_gold_inc_2022_report,scope_1,2021,25354.0,tCO2e,Total Scope 1 emissions (recalculated baseline)
-lundin_gold_inc_2022_report,scope_2_location_based,2022,5576.0,tCO2e,Total Scope 2 emissions
-lundin_gold_inc_2022_report,scope_2_location_based,2021,5413.0,tCO2e,Total Scope 2 emissions (recalculated baseline)
-lundin_gold_inc_2022_report,scope_3,2022,166742.0,tCO2e,Total Scope 3 emissions
-lundin_gold_inc_2022_report,scope_3,2021,193764.0,tCO2e,Total Scope 3 emissions (recalculated)
-metro_ag_2022_report,scope_1,2022,266631.8,metric tons CO2e,Direct (Scope 1) GHG emissions
-metro_ag_2022_report,scope_1,2021,264654.8,metric tons CO2e,Direct (Scope 1) GHG emissions
-metro_ag_2022_report,scope_1,2020,270761.0,metric tons CO2e,Direct (Scope 1) GHG emissions
-metro_ag_2022_report,scope_2_location_based,2022,14785.4,metric tons CO2e,Energy indirect (Scope 2) GHG emissions
-metro_ag_2022_report,scope_2_location_based,2021,14668.3,metric tons CO2e,Energy indirect (Scope 2) GHG emissions
-metro_ag_2022_report,scope_2_location_based,2020,17872.0,metric tons CO2e,Energy indirect (Scope 2) GHG emissions
-metro_ag_2022_report,scope_3,2022,114172.7,metric tons CO2e,"Other indirect (Scope 3) GHG emissions for the categories: Business Travel, Waste and Upstream Transportation"
-metro_ag_2022_report,scope_3,2021,116700.4,metric tons CO2e,"Other indirect (Scope 3) GHG emissions for the categories: Business Travel, Waste and Upstream Transportation"
-metro_ag_2022_report,scope_3,2020,114503.4,metric tons CO2e,"Other indirect (Scope 3) GHG emissions for the categories: Business Travel, Waste and Upstream Transportation"
-morinaga_ltd_2020_report,scope_1,FY2020/3,20794.0,t-CO2e,Scope 1 Total - Domestic consolidated companies
-morinaga_ltd_2020_report,scope_2_market_based,FY2020/3,49605.0,t-CO2e,Scope 2 (Market standard) Total - Domestic consolidated companies
-morinaga_ltd_2020_report,scope_2_location_based,FY2020/3,52024.0,t-CO2e,Scope 2 (Location standard) Total - Domestic consolidated companies
-morinaga_ltd_2020_report,scope_3,FY2020/3,248003.0,t-CO2e,Category 1: Purchased goods and services
-morinaga_ltd_2020_report,scope_3,FY2020/3,122971.0,t-CO2e,Category 2: Capital goods
-morinaga_ltd_2020_report,scope_3,FY2020/3,3774.0,t-CO2e,Category 3: Fuel- and energy-related activities
-morinaga_ltd_2020_report,scope_3,FY2020/3,15809.0,t-CO2e,Category 4: Upstream transportation and distribution
-morinaga_ltd_2020_report,scope_3,FY2020/3,4176.0,t-CO2e,Category 5: Waste generated in operations
-morinaga_ltd_2020_report,scope_3,FY2020/3,618.0,t-CO2e,Category 6: Business travel
-morinaga_ltd_2020_report,scope_3,FY2020/3,1607.0,t-CO2e,Category 7: Employee commuting
-morinaga_ltd_2020_report,scope_3,FY2020/3,557.0,t-CO2e,Category 8: Upstream leased assets
-morinaga_ltd_2020_report,scope_3,FY2020/3,6603.0,t-CO2e,Category 12: Disposal of sold products
-nippn_corp_2022_report,scope_1,FY2021,46.0,"1,000 t-CO2",Scope 1 (Consolidated)
-nippn_corp_2022_report,scope_1,FY2022,47.0,"1,000 t-CO2",Scope 1 (Consolidated)
-nippn_corp_2022_report,scope_2_location_based,FY2021,114.0,"1,000 t-CO2",Scope 2 (Consolidated)
-nippn_corp_2022_report,scope_2_location_based,FY2022,115.0,"1,000 t-CO2",Scope 2 (Consolidated)
+kilroy realty_2017_report,scope_1,2016,4059.0,Tonnes CO2e,Whole Portfolio Scope 1 Absolute
+kilroy realty_2017_report,scope_1,2017,4641.0,Tonnes CO2e,Whole Portfolio Scope 1 Absolute
+kilroy realty_2017_report,scope_2_location_based,2016,44145.0,Tonnes CO2e,Whole Portfolio Scope 2 Absolute
+kilroy realty_2017_report,scope_2_location_based,2017,42947.0,Tonnes CO2e,Whole Portfolio Scope 2 Absolute
+kilroy realty_2018_report,scope_1,2017,4120.0,Tonnes,Whole Portfolio Scope 1 Absolute
+kilroy realty_2018_report,scope_1,2018,3908.0,MtCO2e,Whole Portfolio Scope 1 Absolute
+kilroy realty_2018_report,scope_2_market_based,2017,35735.0,Tonnes,Whole Portfolio Scope 2 Market-Based Absolute
+kilroy realty_2018_report,scope_2_market_based,2018,30439.0,MtCO2e,Whole Portfolio Scope 2 Market-Based Absolute
+kilroy realty_2018_report,scope_2_location_based,2017,36504.0,Tonnes,Whole Portfolio Scope 2 Location-Based Absolute
+kilroy realty_2018_report,scope_2_location_based,2018,33207.0,MtCO2e,Whole Portfolio Scope 2 Location-Based Absolute
+kilroy realty_2018_report,scope_3,2018,31984.0,MtCO2e,Scope 3 Emissions (Downstream Leased Assets)
+kureha corp_2020_report,scope_1,2017,363.0,"1,000 t CO2",Scope 1 (Kureha)
+kureha corp_2020_report,scope_1,2018,338.0,"1,000 t CO2",Scope 1 (Kureha)
+kureha corp_2020_report,scope_1,2019,356.0,"1,000 t CO2",Scope 1 (Kureha)
+kureha corp_2020_report,scope_2_location_based,2017,34.0,"1,000 t CO2",Scope 2 (Kureha)
+kureha corp_2020_report,scope_2_location_based,2018,42.0,"1,000 t CO2",Scope 2 (Kureha)
+kureha corp_2020_report,scope_2_location_based,2019,31.0,"1,000 t CO2",Scope 2 (Kureha)
+kureha corp_2020_report,scope_3,2017,7.0,"1,000 t CO2","Scope 3 (Kureha) - Categories 4, 6, 7, 9"
+kureha corp_2020_report,scope_3,2018,7.0,"1,000 t CO2","Scope 3 (Kureha) - Categories 4, 6, 7, 9"
+kureha corp_2020_report,scope_3,2019,6.0,"1,000 t CO2","Scope 3 (Kureha) - Categories 4, 6, 7, 9"
+lundin gold inc_2021_report,scope_1,2021,25399.0,tCO2e,"Total Scope 1 (Fruta del Norte, Exploration, Ecuador Offices, Vancouver Offices)"
+lundin gold inc_2021_report,scope_2_location_based,2021,24170.0,tCO2e,"Total Scope 2 (Fruta del Norte, Ecuador Offices, Vancouver Offices)"
+lundin gold inc_2021_report,scope_3,2021,746750.0,tCO2e,"Total Scope 3 (Fruta del Norte - includes cement consumption, land/air transportation of doré, land/water transportation of concentrate, ~90% of land transportation of materials to site, and employee commuting air travel)"
+lundin gold inc_2022_report,scope_1,2022,24024.0,tCO2e,Total Scope 1 emissions
+lundin gold inc_2022_report,scope_1,2021,25354.0,tCO2e,Total Scope 1 emissions (recalculated baseline)
+lundin gold inc_2022_report,scope_2_location_based,2022,5576.0,tCO2e,Total Scope 2 emissions
+lundin gold inc_2022_report,scope_2_location_based,2021,5413.0,tCO2e,Total Scope 2 emissions (recalculated baseline)
+lundin gold inc_2022_report,scope_3,2022,166742.0,tCO2e,Total Scope 3 emissions
+lundin gold inc_2022_report,scope_3,2021,193764.0,tCO2e,Total Scope 3 emissions (recalculated)
+metro ag_2022_report,scope_1,2022,266631.8,metric tons CO2e,Direct (Scope 1) GHG emissions
+metro ag_2022_report,scope_1,2021,264654.8,metric tons CO2e,Direct (Scope 1) GHG emissions
+metro ag_2022_report,scope_1,2020,270761.0,metric tons CO2e,Direct (Scope 1) GHG emissions
+metro ag_2022_report,scope_2_location_based,2022,14785.4,metric tons CO2e,Energy indirect (Scope 2) GHG emissions
+metro ag_2022_report,scope_2_location_based,2021,14668.3,metric tons CO2e,Energy indirect (Scope 2) GHG emissions
+metro ag_2022_report,scope_2_location_based,2020,17872.0,metric tons CO2e,Energy indirect (Scope 2) GHG emissions
+metro ag_2022_report,scope_3,2022,114172.7,metric tons CO2e,"Other indirect (Scope 3) GHG emissions for the categories: Business Travel, Waste and Upstream Transportation"
+metro ag_2022_report,scope_3,2021,116700.4,metric tons CO2e,"Other indirect (Scope 3) GHG emissions for the categories: Business Travel, Waste and Upstream Transportation"
+metro ag_2022_report,scope_3,2020,114503.4,metric tons CO2e,"Other indirect (Scope 3) GHG emissions for the categories: Business Travel, Waste and Upstream Transportation"
+morinaga ltd_2020_report,scope_1,FY2020/3,20794.0,t-CO2e,Scope 1 Total - Domestic consolidated companies
+morinaga ltd_2020_report,scope_2_market_based,FY2020/3,49605.0,t-CO2e,Scope 2 (Market standard) Total - Domestic consolidated companies
+morinaga ltd_2020_report,scope_2_location_based,FY2020/3,52024.0,t-CO2e,Scope 2 (Location standard) Total - Domestic consolidated companies
+morinaga ltd_2020_report,scope_3,FY2020/3,248003.0,t-CO2e,Category 1: Purchased goods and services
+morinaga ltd_2020_report,scope_3,FY2020/3,122971.0,t-CO2e,Category 2: Capital goods
+morinaga ltd_2020_report,scope_3,FY2020/3,3774.0,t-CO2e,Category 3: Fuel- and energy-related activities
+morinaga ltd_2020_report,scope_3,FY2020/3,15809.0,t-CO2e,Category 4: Upstream transportation and distribution
+morinaga ltd_2020_report,scope_3,FY2020/3,4176.0,t-CO2e,Category 5: Waste generated in operations
+morinaga ltd_2020_report,scope_3,FY2020/3,618.0,t-CO2e,Category 6: Business travel
+morinaga ltd_2020_report,scope_3,FY2020/3,1607.0,t-CO2e,Category 7: Employee commuting
+morinaga ltd_2020_report,scope_3,FY2020/3,557.0,t-CO2e,Category 8: Upstream leased assets
+morinaga ltd_2020_report,scope_3,FY2020/3,6603.0,t-CO2e,Category 12: Disposal of sold products
+nippn corp_2022_report,scope_1,FY2021,46.0,"1,000 t-CO2",Scope 1 (Consolidated)
+nippn corp_2022_report,scope_1,FY2022,47.0,"1,000 t-CO2",Scope 1 (Consolidated)
+nippn corp_2022_report,scope_2_location_based,FY2021,114.0,"1,000 t-CO2",Scope 2 (Consolidated)
+nippn corp_2022_report,scope_2_location_based,FY2022,115.0,"1,000 t-CO2",Scope 2 (Consolidated)
 nordea_2017_report,scope_1,2017,51.0,tonnes CO2e,diesel generators (scope 1)
 nordea_2017_report,scope_1,2016,48.0,tonnes CO2e,diesel generators (scope 1)
 nordea_2017_report,scope_2_market_based,2017,3187.0,tonnes CO2e,"electricity, heating, district cooling (scope 2) - net emissions after Guarantees of Origin"
@@ -494,108 +513,108 @@ polaris_2021_report,scope_2_location_based,2021,3231.0,tCO2e,Total Polaris Scope
 polaris_2021_report,scope_3,2019,14067.0,tCO2e,Total Polaris Scope 3
 polaris_2021_report,scope_3,2020,26959.0,tCO2e,Total Polaris Scope 3
 polaris_2021_report,scope_3,2021,78645.0,tCO2e,Total Polaris Scope 3
-salzgitter_ag_2018_report,scope_1,2018,8710.0,kt CO2,Direct GHG emissions from operating plants (Scope 1)
-salzgitter_ag_2018_report,scope_1,2017,8470.0,kt CO2,Direct GHG emissions from operating plants (Scope 1)
-salzgitter_ag_2018_report,scope_3,2018,1508.0,kt CO2,Other indirect GHG emissions from feedstock purchase (Scope 3)
-salzgitter_ag_2018_report,scope_3,2017,1362.0,kt CO2,Other indirect GHG emissions from feedstock purchase (Scope 3)
-sato_oyj_2022_report,scope_1,2015,135.0,t CO2-e,Direct greenhouse gas emissions (scope 1)
-sato_oyj_2022_report,scope_1,2016,170.0,t CO2-e,Direct greenhouse gas emissions (scope 1)
-sato_oyj_2022_report,scope_1,2017,214.0,t CO2-e,Direct greenhouse gas emissions (scope 1)
-sato_oyj_2022_report,scope_1,2018,179.0,t CO2-e,Direct greenhouse gas emissions (scope 1)
-sato_oyj_2022_report,scope_1,2019,177.0,t CO2-e,Direct greenhouse gas emissions (scope 1)
-sato_oyj_2022_report,scope_1,2020,147.0,t CO2-e,Direct greenhouse gas emissions (scope 1)
-sato_oyj_2022_report,scope_1,2021,105.0,t CO2-e,Direct greenhouse gas emissions (scope 1)
-sato_oyj_2022_report,scope_1,2022,20.0,t CO2-e,Direct greenhouse gas emissions (scope 1)
-sato_oyj_2022_report,scope_2_market_based,2015,37674.0,t CO2-e,Indirect greenhouse gas emissions (market-based)
-sato_oyj_2022_report,scope_2_market_based,2016,48560.0,t CO2-e,Indirect greenhouse gas emissions (market-based)
-sato_oyj_2022_report,scope_2_market_based,2017,39430.0,t CO2-e,Indirect greenhouse gas emissions (market-based)
-sato_oyj_2022_report,scope_2_market_based,2018,36728.0,t CO2-e,Indirect greenhouse gas emissions (market-based)
-sato_oyj_2022_report,scope_2_market_based,2019,34292.0,t CO2-e,Indirect greenhouse gas emissions (market-based)
-sato_oyj_2022_report,scope_2_market_based,2020,30915.0,t CO2-e,Indirect greenhouse gas emissions (market-based)
-sato_oyj_2022_report,scope_2_market_based,2021,43349.0,t CO2-e,Indirect greenhouse gas emissions (market-based)
-sato_oyj_2022_report,scope_2_market_based,2022,37920.0,t CO2-e,Indirect greenhouse gas emissions (market-based)
-sato_oyj_2022_report,scope_2_location_based,2015,41962.0,t CO2-e,Indirect greenhouse gas emissions (location-based)
-sato_oyj_2022_report,scope_2_location_based,2016,52583.0,t CO2-e,Indirect greenhouse gas emissions (location-based)
-sato_oyj_2022_report,scope_2_location_based,2017,43163.0,t CO2-e,Indirect greenhouse gas emissions (location-based)
-sato_oyj_2022_report,scope_2_location_based,2018,40152.0,t CO2-e,Indirect greenhouse gas emissions (location-based)
-sato_oyj_2022_report,scope_2_location_based,2019,37468.0,t CO2-e,Indirect greenhouse gas emissions (location-based)
-sato_oyj_2022_report,scope_2_location_based,2020,34456.0,t CO2-e,Indirect greenhouse gas emissions (location-based)
-sato_oyj_2022_report,scope_2_location_based,2021,45754.0,t CO2-e,Indirect greenhouse gas emissions (location-based)
-sato_oyj_2022_report,scope_2_location_based,2022,40393.0,t CO2-e,Indirect greenhouse gas emissions (location-based)
-sato_oyj_2022_report,scope_3,2015,1834.0,t CO2-e,Other indirect greenhouse gas emissions (scope 3) - Emissions from residents' waste
-sato_oyj_2022_report,scope_3,2016,948.0,t CO2-e,Other indirect greenhouse gas emissions (scope 3) - Emissions from residents' waste
-sato_oyj_2022_report,scope_3,2017,240.0,t CO2-e,Other indirect greenhouse gas emissions (scope 3) - Emissions from residents' waste
-sato_oyj_2022_report,scope_3,2018,49.0,t CO2-e,Other indirect greenhouse gas emissions (scope 3) - Emissions from residents' waste
-sato_oyj_2022_report,scope_3,2019,46.0,t CO2-e,Other indirect greenhouse gas emissions (scope 3) - Emissions from residents' waste
-sato_oyj_2022_report,scope_3,2020,37.0,t CO2-e,Other indirect greenhouse gas emissions (scope 3) - Emissions from residents' waste
-sato_oyj_2022_report,scope_3,2021,49.0,t CO2-e,Other indirect greenhouse gas emissions (scope 3) - Emissions from residents' waste
-sato_oyj_2022_report,scope_3,2022,49.0,t CO2-e,Other indirect greenhouse gas emissions (scope 3) - Emissions from residents' waste
-stantec_inc_2019_report,scope_1,2019,7540.0,mtCO2e,Scope 1
-stantec_inc_2019_report,scope_1,2018,10333.0,mtCO2e,Scope 1
-stantec_inc_2019_report,scope_1,2017,9585.0,mtCO2e,Scope 1
-stantec_inc_2019_report,scope_2_location_based,2019,40726.0,mtCO2e,Scope 2
-stantec_inc_2019_report,scope_2_location_based,2018,37810.0,mtCO2e,Scope 2
-stantec_inc_2019_report,scope_2_location_based,2017,43228.0,mtCO2e,Scope 2
-stantec_inc_2019_report,scope_3,2019,29301.0,mtCO2e,Scope 3
-stantec_inc_2019_report,scope_3,2018,29318.0,mtCO2e,Scope 3
-stantec_inc_2019_report,scope_3,2017,26800.0,mtCO2e,Scope 3
-sumitomo_corporation_2021_report,scope_1,FY2018,939346.0,t-CO2e,Scope1 <Energy-related CO2> Consolidated
-sumitomo_corporation_2021_report,scope_1,FY2018,0.0,t-CO2e,Scope1 <other GHGs> Consolidated
-sumitomo_corporation_2021_report,scope_1,FY2019,791730.0,t-CO2e,Scope1 <Energy-related CO2> Consolidated
-sumitomo_corporation_2021_report,scope_1,FY2019,0.0,t-CO2e,Scope1 <other GHGs> Consolidated
-sumitomo_corporation_2021_report,scope_1,FY2020,1526724.0,t-CO2e,Scope 1 total (Energy-related CO2 + other GHGs) Consolidated
-sumitomo_corporation_2021_report,scope_1,FY2020,1522514.0,t-CO2e,Scope1 <Energy-related CO2> Consolidated
-sumitomo_corporation_2021_report,scope_1,FY2020,4210.0,t-CO2e,Scope1 <other GHGs> (N2O) Consolidated
-sumitomo_corporation_2021_report,scope_2_location_based,FY2017,752378.0,t-CO2e,Scope2 Consolidated
-sumitomo_corporation_2021_report,scope_2_location_based,FY2018,630412.0,t-CO2e,Scope2 Consolidated
-sumitomo_corporation_2021_report,scope_2_location_based,FY2019,683156.0,t-CO2e,Scope2 Consolidated
-sumitomo_corporation_2021_report,scope_2_location_based,FY2020,652611.0,t-CO2e,Scope2 Consolidated
-sumitomo_corporation_2021_report,scope_3,FY2017,7803.0,t-CO2e,Scope3 Logistics (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2017,6.0,t-CO2e,Scope3 Waste (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2017,28569.0,t-CO2e,Scope3 Overseas Business Trips (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2017,709.0,t-CO2e,Scope3 Commuting (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2017,36894.0,t-CO2e,Scope3 Downstream Leased Assets (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2017,73980.0,t-CO2e,Scope3 Total (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2018,5216.0,t-CO2e,Scope3 Logistics (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2018,6.0,t-CO2e,Scope3 Waste (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2018,30232.0,t-CO2e,Scope3 Overseas Business Trips (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2018,636.0,t-CO2e,Scope3 Commuting (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2018,35230.0,t-CO2e,Scope3 Downstream Leased Assets (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2018,71320.0,t-CO2e,Scope3 Total (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2019,5501.0,t-CO2e,Scope3 Logistics (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2019,15.0,t-CO2e,Scope3 Waste (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2019,22400.0,t-CO2e,Scope3 Overseas Business Trips (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2019,609.0,t-CO2e,Scope3 Commuting (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2019,33662.0,t-CO2e,Scope3 Downstream Leased Assets (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2019,62187.0,t-CO2e,Scope3 Total (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2020,3875.0,t-CO2e,Scope3 Logistics / Upstream Transportation and Distribution (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2020,5.0,t-CO2e,Scope3 Waste (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2020,67.0,t-CO2e,Scope3 Overseas Business Trips (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2020,140.0,t-CO2e,Scope3 Commuting (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2020,30294.0,t-CO2e,Scope3 Downstream Leased Assets (Non-consolidated in Japan)
-sumitomo_corporation_2021_report,scope_3,FY2020,34381.0,t-CO2e,Scope3 Total (Non-consolidated in Japan)
-toshiba_tec_corp_2022_report,scope_1,2020,3.0,thousand t-CO2,Direct emissions (Scope 1)
-toshiba_tec_corp_2022_report,scope_1,2021,3.1,thousand t-CO2,Direct emissions (Scope 1)
-toshiba_tec_corp_2022_report,scope_2_market_based,2020,48.8,thousand t-CO2,Indirect emissions associated with energy use (Scope 2) - includes contribution based on environmental value certification
-toshiba_tec_corp_2022_report,scope_2_market_based,2021,45.5,thousand t-CO2,Indirect emissions associated with energy use (Scope 2) - includes contribution based on environmental value certification
-toshiba_tec_corp_2022_report,scope_3,2020,98.6,thousand t-CO2,Category 1: Purchased goods and services
-toshiba_tec_corp_2022_report,scope_3,2020,42.5,thousand t-CO2,Category 2: Capital goods
-toshiba_tec_corp_2022_report,scope_3,2020,8.9,thousand t-CO2,Category 3: Fuel- and energy-related activities not included in Scope 1 and 2
-toshiba_tec_corp_2022_report,scope_3,2020,2.3,thousand t-CO2,Category 4: Transport and delivery (upstream)
-toshiba_tec_corp_2022_report,scope_3,2020,0.2,thousand t-CO2,Category 5: Waste generated in operations
-toshiba_tec_corp_2022_report,scope_3,2020,1.6,thousand t-CO2,Category 6: Business travel
-toshiba_tec_corp_2022_report,scope_3,2020,1.0,thousand t-CO2,Category 7: Employees' commuting
-toshiba_tec_corp_2022_report,scope_3,2020,275.5,thousand t-CO2,Category 13: Use of sold products
-toshiba_tec_corp_2022_report,scope_3,2020,3.8,thousand t-CO2,Category 14: End-of-life treatment of sold products
-toshiba_tec_corp_2022_report,scope_3,2021,102.3,thousand t-CO2,Category 1: Purchased goods and services
-toshiba_tec_corp_2022_report,scope_3,2021,42.7,thousand t-CO2,Category 2: Capital goods
-toshiba_tec_corp_2022_report,scope_3,2021,10.7,thousand t-CO2,Category 3: Fuel- and energy-related activities not included in Scope 1 and 2
-toshiba_tec_corp_2022_report,scope_3,2021,2.3,thousand t-CO2,Category 4: Transport and delivery (upstream)
-toshiba_tec_corp_2022_report,scope_3,2021,0.2,thousand t-CO2,Category 5: Waste generated in operations
-toshiba_tec_corp_2022_report,scope_3,2021,1.6,thousand t-CO2,Category 6: Business travel
-toshiba_tec_corp_2022_report,scope_3,2021,0.8,thousand t-CO2,Category 7: Employees' commuting
-toshiba_tec_corp_2022_report,scope_3,2021,252.6,thousand t-CO2,Category 13: Use of sold products
-toshiba_tec_corp_2022_report,scope_3,2021,4.2,thousand t-CO2,Category 14: End-of-life treatment of sold products
+salzgitter ag_2018_report,scope_1,2018,8710.0,kt CO2,Direct GHG emissions from operating plants (Scope 1)
+salzgitter ag_2018_report,scope_1,2017,8470.0,kt CO2,Direct GHG emissions from operating plants (Scope 1)
+salzgitter ag_2018_report,scope_3,2018,1508.0,kt CO2,Other indirect GHG emissions from feedstock purchase (Scope 3)
+salzgitter ag_2018_report,scope_3,2017,1362.0,kt CO2,Other indirect GHG emissions from feedstock purchase (Scope 3)
+sato oyj_2022_report,scope_1,2015,135.0,t CO2-e,Direct greenhouse gas emissions (scope 1)
+sato oyj_2022_report,scope_1,2016,170.0,t CO2-e,Direct greenhouse gas emissions (scope 1)
+sato oyj_2022_report,scope_1,2017,214.0,t CO2-e,Direct greenhouse gas emissions (scope 1)
+sato oyj_2022_report,scope_1,2018,179.0,t CO2-e,Direct greenhouse gas emissions (scope 1)
+sato oyj_2022_report,scope_1,2019,177.0,t CO2-e,Direct greenhouse gas emissions (scope 1)
+sato oyj_2022_report,scope_1,2020,147.0,t CO2-e,Direct greenhouse gas emissions (scope 1)
+sato oyj_2022_report,scope_1,2021,105.0,t CO2-e,Direct greenhouse gas emissions (scope 1)
+sato oyj_2022_report,scope_1,2022,20.0,t CO2-e,Direct greenhouse gas emissions (scope 1)
+sato oyj_2022_report,scope_2_market_based,2015,37674.0,t CO2-e,Indirect greenhouse gas emissions (market-based)
+sato oyj_2022_report,scope_2_market_based,2016,48560.0,t CO2-e,Indirect greenhouse gas emissions (market-based)
+sato oyj_2022_report,scope_2_market_based,2017,39430.0,t CO2-e,Indirect greenhouse gas emissions (market-based)
+sato oyj_2022_report,scope_2_market_based,2018,36728.0,t CO2-e,Indirect greenhouse gas emissions (market-based)
+sato oyj_2022_report,scope_2_market_based,2019,34292.0,t CO2-e,Indirect greenhouse gas emissions (market-based)
+sato oyj_2022_report,scope_2_market_based,2020,30915.0,t CO2-e,Indirect greenhouse gas emissions (market-based)
+sato oyj_2022_report,scope_2_market_based,2021,43349.0,t CO2-e,Indirect greenhouse gas emissions (market-based)
+sato oyj_2022_report,scope_2_market_based,2022,37920.0,t CO2-e,Indirect greenhouse gas emissions (market-based)
+sato oyj_2022_report,scope_2_location_based,2015,41962.0,t CO2-e,Indirect greenhouse gas emissions (location-based)
+sato oyj_2022_report,scope_2_location_based,2016,52583.0,t CO2-e,Indirect greenhouse gas emissions (location-based)
+sato oyj_2022_report,scope_2_location_based,2017,43163.0,t CO2-e,Indirect greenhouse gas emissions (location-based)
+sato oyj_2022_report,scope_2_location_based,2018,40152.0,t CO2-e,Indirect greenhouse gas emissions (location-based)
+sato oyj_2022_report,scope_2_location_based,2019,37468.0,t CO2-e,Indirect greenhouse gas emissions (location-based)
+sato oyj_2022_report,scope_2_location_based,2020,34456.0,t CO2-e,Indirect greenhouse gas emissions (location-based)
+sato oyj_2022_report,scope_2_location_based,2021,45754.0,t CO2-e,Indirect greenhouse gas emissions (location-based)
+sato oyj_2022_report,scope_2_location_based,2022,40393.0,t CO2-e,Indirect greenhouse gas emissions (location-based)
+sato oyj_2022_report,scope_3,2015,1834.0,t CO2-e,Other indirect greenhouse gas emissions (scope 3) - Emissions from residents' waste
+sato oyj_2022_report,scope_3,2016,948.0,t CO2-e,Other indirect greenhouse gas emissions (scope 3) - Emissions from residents' waste
+sato oyj_2022_report,scope_3,2017,240.0,t CO2-e,Other indirect greenhouse gas emissions (scope 3) - Emissions from residents' waste
+sato oyj_2022_report,scope_3,2018,49.0,t CO2-e,Other indirect greenhouse gas emissions (scope 3) - Emissions from residents' waste
+sato oyj_2022_report,scope_3,2019,46.0,t CO2-e,Other indirect greenhouse gas emissions (scope 3) - Emissions from residents' waste
+sato oyj_2022_report,scope_3,2020,37.0,t CO2-e,Other indirect greenhouse gas emissions (scope 3) - Emissions from residents' waste
+sato oyj_2022_report,scope_3,2021,49.0,t CO2-e,Other indirect greenhouse gas emissions (scope 3) - Emissions from residents' waste
+sato oyj_2022_report,scope_3,2022,49.0,t CO2-e,Other indirect greenhouse gas emissions (scope 3) - Emissions from residents' waste
+stantec inc_2019_report,scope_1,2019,7540.0,mtCO2e,Scope 1
+stantec inc_2019_report,scope_1,2018,10333.0,mtCO2e,Scope 1
+stantec inc_2019_report,scope_1,2017,9585.0,mtCO2e,Scope 1
+stantec inc_2019_report,scope_2_location_based,2019,40726.0,mtCO2e,Scope 2
+stantec inc_2019_report,scope_2_location_based,2018,37810.0,mtCO2e,Scope 2
+stantec inc_2019_report,scope_2_location_based,2017,43228.0,mtCO2e,Scope 2
+stantec inc_2019_report,scope_3,2019,29301.0,mtCO2e,Scope 3
+stantec inc_2019_report,scope_3,2018,29318.0,mtCO2e,Scope 3
+stantec inc_2019_report,scope_3,2017,26800.0,mtCO2e,Scope 3
+sumitomo corporation_2021_report,scope_1,FY2018,939346.0,t-CO2e,Scope1 <Energy-related CO2> Consolidated
+sumitomo corporation_2021_report,scope_1,FY2018,0.0,t-CO2e,Scope1 <other GHGs> Consolidated
+sumitomo corporation_2021_report,scope_1,FY2019,791730.0,t-CO2e,Scope1 <Energy-related CO2> Consolidated
+sumitomo corporation_2021_report,scope_1,FY2019,0.0,t-CO2e,Scope1 <other GHGs> Consolidated
+sumitomo corporation_2021_report,scope_1,FY2020,1526724.0,t-CO2e,Scope 1 total (Energy-related CO2 + other GHGs) Consolidated
+sumitomo corporation_2021_report,scope_1,FY2020,1522514.0,t-CO2e,Scope1 <Energy-related CO2> Consolidated
+sumitomo corporation_2021_report,scope_1,FY2020,4210.0,t-CO2e,Scope1 <other GHGs> (N2O) Consolidated
+sumitomo corporation_2021_report,scope_2_location_based,FY2017,752378.0,t-CO2e,Scope2 Consolidated
+sumitomo corporation_2021_report,scope_2_location_based,FY2018,630412.0,t-CO2e,Scope2 Consolidated
+sumitomo corporation_2021_report,scope_2_location_based,FY2019,683156.0,t-CO2e,Scope2 Consolidated
+sumitomo corporation_2021_report,scope_2_location_based,FY2020,652611.0,t-CO2e,Scope2 Consolidated
+sumitomo corporation_2021_report,scope_3,FY2017,7803.0,t-CO2e,Scope3 Logistics (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2017,6.0,t-CO2e,Scope3 Waste (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2017,28569.0,t-CO2e,Scope3 Overseas Business Trips (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2017,709.0,t-CO2e,Scope3 Commuting (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2017,36894.0,t-CO2e,Scope3 Downstream Leased Assets (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2017,73980.0,t-CO2e,Scope3 Total (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2018,5216.0,t-CO2e,Scope3 Logistics (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2018,6.0,t-CO2e,Scope3 Waste (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2018,30232.0,t-CO2e,Scope3 Overseas Business Trips (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2018,636.0,t-CO2e,Scope3 Commuting (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2018,35230.0,t-CO2e,Scope3 Downstream Leased Assets (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2018,71320.0,t-CO2e,Scope3 Total (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2019,5501.0,t-CO2e,Scope3 Logistics (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2019,15.0,t-CO2e,Scope3 Waste (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2019,22400.0,t-CO2e,Scope3 Overseas Business Trips (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2019,609.0,t-CO2e,Scope3 Commuting (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2019,33662.0,t-CO2e,Scope3 Downstream Leased Assets (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2019,62187.0,t-CO2e,Scope3 Total (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2020,3875.0,t-CO2e,Scope3 Logistics / Upstream Transportation and Distribution (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2020,5.0,t-CO2e,Scope3 Waste (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2020,67.0,t-CO2e,Scope3 Overseas Business Trips (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2020,140.0,t-CO2e,Scope3 Commuting (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2020,30294.0,t-CO2e,Scope3 Downstream Leased Assets (Non-consolidated in Japan)
+sumitomo corporation_2021_report,scope_3,FY2020,34381.0,t-CO2e,Scope3 Total (Non-consolidated in Japan)
+toshiba tec corp_2022_report,scope_1,2020,3.0,thousand t-CO2,Direct emissions (Scope 1)
+toshiba tec corp_2022_report,scope_1,2021,3.1,thousand t-CO2,Direct emissions (Scope 1)
+toshiba tec corp_2022_report,scope_2_market_based,2020,48.8,thousand t-CO2,Indirect emissions associated with energy use (Scope 2) - includes contribution based on environmental value certification
+toshiba tec corp_2022_report,scope_2_market_based,2021,45.5,thousand t-CO2,Indirect emissions associated with energy use (Scope 2) - includes contribution based on environmental value certification
+toshiba tec corp_2022_report,scope_3,2020,98.6,thousand t-CO2,Category 1: Purchased goods and services
+toshiba tec corp_2022_report,scope_3,2020,42.5,thousand t-CO2,Category 2: Capital goods
+toshiba tec corp_2022_report,scope_3,2020,8.9,thousand t-CO2,Category 3: Fuel- and energy-related activities not included in Scope 1 and 2
+toshiba tec corp_2022_report,scope_3,2020,2.3,thousand t-CO2,Category 4: Transport and delivery (upstream)
+toshiba tec corp_2022_report,scope_3,2020,0.2,thousand t-CO2,Category 5: Waste generated in operations
+toshiba tec corp_2022_report,scope_3,2020,1.6,thousand t-CO2,Category 6: Business travel
+toshiba tec corp_2022_report,scope_3,2020,1.0,thousand t-CO2,Category 7: Employees' commuting
+toshiba tec corp_2022_report,scope_3,2020,275.5,thousand t-CO2,Category 13: Use of sold products
+toshiba tec corp_2022_report,scope_3,2020,3.8,thousand t-CO2,Category 14: End-of-life treatment of sold products
+toshiba tec corp_2022_report,scope_3,2021,102.3,thousand t-CO2,Category 1: Purchased goods and services
+toshiba tec corp_2022_report,scope_3,2021,42.7,thousand t-CO2,Category 2: Capital goods
+toshiba tec corp_2022_report,scope_3,2021,10.7,thousand t-CO2,Category 3: Fuel- and energy-related activities not included in Scope 1 and 2
+toshiba tec corp_2022_report,scope_3,2021,2.3,thousand t-CO2,Category 4: Transport and delivery (upstream)
+toshiba tec corp_2022_report,scope_3,2021,0.2,thousand t-CO2,Category 5: Waste generated in operations
+toshiba tec corp_2022_report,scope_3,2021,1.6,thousand t-CO2,Category 6: Business travel
+toshiba tec corp_2022_report,scope_3,2021,0.8,thousand t-CO2,Category 7: Employees' commuting
+toshiba tec corp_2022_report,scope_3,2021,252.6,thousand t-CO2,Category 13: Use of sold products
+toshiba tec corp_2022_report,scope_3,2021,4.2,thousand t-CO2,Category 14: End-of-life treatment of sold products
 uniper_2019_report,scope_1,2019,47.0,million metric tons CO2,Total direct Scope 1 emissions from fuel combustion
 uniper_2019_report,scope_1,2018,59.5,million metric tons CO2,Total direct Scope 1 emissions from fuel combustion
 uniper_2019_report,scope_1,2017,63.3,million metric tons CO2,Total direct Scope 1 emissions from fuel combustion
@@ -605,15 +624,15 @@ uniper_2019_report,scope_2_location_based,2019,1129277.0,metric tons CO2,Indirec
 uniper_2019_report,scope_2_location_based,2018,1101032.0,metric tons CO2,Indirect Scope 2 emissions (location-based method)
 uniper_2019_report,scope_3,2019,8.7,million metric tons CO2,"Upstream indirect Scope 3 CO2 emissions (extraction, refining and transportation of fuels)"
 uniper_2019_report,scope_3,2018,10.3,million metric tons CO2,"Upstream indirect Scope 3 CO2 emissions (extraction, refining and transportation of fuels)"
-varta_ag_2021_report,scope_1,2019,3598.0,CO2 eq t,Scope 1
-varta_ag_2021_report,scope_1,2020,4417.0,CO2 eq t,Scope 1
-varta_ag_2021_report,scope_1,2021,5894.0,CO2 eq t,Scope 1 (emergency diesel generators used due to construction work)
-varta_ag_2021_report,scope_2_market_based,2019,10347.0,CO2 eq t,Scope 2 (market-based)
-varta_ag_2021_report,scope_2_market_based,2020,12296.0,CO2 eq t,Scope 2 (market-based)
-varta_ag_2021_report,scope_2_market_based,2021,1168.0,CO2 eq t,Scope 2 (market-based)
-varta_ag_2021_report,scope_2_location_based,2019,17038.0,CO2-eq t,Scope 2 (location-based)
-varta_ag_2021_report,scope_2_location_based,2020,20885.0,CO2-eq t,Scope 2 (location-based)
-varta_ag_2021_report,scope_2_location_based,2021,23503.0,CO2-eq t,Scope 2 (location-based)
+varta ag_2021_report,scope_1,2019,3598.0,CO2 eq t,Scope 1
+varta ag_2021_report,scope_1,2020,4417.0,CO2 eq t,Scope 1
+varta ag_2021_report,scope_1,2021,5894.0,CO2 eq t,Scope 1 (emergency diesel generators used due to construction work)
+varta ag_2021_report,scope_2_market_based,2019,10347.0,CO2 eq t,Scope 2 (market-based)
+varta ag_2021_report,scope_2_market_based,2020,12296.0,CO2 eq t,Scope 2 (market-based)
+varta ag_2021_report,scope_2_market_based,2021,1168.0,CO2 eq t,Scope 2 (market-based)
+varta ag_2021_report,scope_2_location_based,2019,17038.0,CO2-eq t,Scope 2 (location-based)
+varta ag_2021_report,scope_2_location_based,2020,20885.0,CO2-eq t,Scope 2 (location-based)
+varta ag_2021_report,scope_2_location_based,2021,23503.0,CO2-eq t,Scope 2 (location-based)
 webuild_2019_report,scope_1,2017,566952.0,tCO2e,Direct emissions (Scope 1)
 webuild_2019_report,scope_1,2018,467234.0,tCO2e,Direct emissions (Scope 1)
 webuild_2019_report,scope_1,2019,350593.0,tCO2e,Direct emissions (Scope 1)

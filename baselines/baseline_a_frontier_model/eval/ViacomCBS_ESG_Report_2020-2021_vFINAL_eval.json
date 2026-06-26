@@ -1,0 +1,680 @@
+{
+  "report": "ViacomCBS_ESG_Report_2020-2021_vFINAL",
+  "results": [
+    {
+      "year": 2014,
+      "scope": "1",
+      "extracted_value": 8297,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 1 (2014 data is for legacy Viacom only)",
+      "extracted_t_co2e": 8297.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 8297.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 8297.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2015,
+      "scope": "1",
+      "extracted_value": 9045,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 1 (2015 data is for legacy Viacom only)",
+      "extracted_t_co2e": 9045.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 9045.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 9045.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2016,
+      "scope": "1",
+      "extracted_value": 24672,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 1",
+      "extracted_t_co2e": 24672.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 24672.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 24672.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2017,
+      "scope": "1",
+      "extracted_value": 26834,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 1",
+      "extracted_t_co2e": 26834.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 26834.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 26834.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2018,
+      "scope": "1",
+      "extracted_value": 31737,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 1",
+      "extracted_t_co2e": 31737.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 31737.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 31737.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2019,
+      "scope": "1",
+      "extracted_value": 38240,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 1",
+      "extracted_t_co2e": 38240.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 38240.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 38240.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2020,
+      "scope": "1",
+      "extracted_value": 32097,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 1",
+      "extracted_t_co2e": 32097.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 32097.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 32097.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2014,
+      "scope": "2lb",
+      "extracted_value": 39252,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 2 (location-based) (2014 data is for legacy Viacom only)",
+      "extracted_t_co2e": 39252.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 39252.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 39252.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2015,
+      "scope": "2lb",
+      "extracted_value": 50828,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 2 (location-based) (2015 data is for legacy Viacom only)",
+      "extracted_t_co2e": 50828.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 50828.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 50828.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2016,
+      "scope": "2lb",
+      "extracted_value": 216737,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 2 (location-based)",
+      "extracted_t_co2e": 216737.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 216737.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 216737.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2017,
+      "scope": "2lb",
+      "extracted_value": 219851,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 2 (location-based)",
+      "extracted_t_co2e": 219851.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 219851.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 219851.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2018,
+      "scope": "2lb",
+      "extracted_value": 229073,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 2 (location-based)",
+      "extracted_t_co2e": 229073.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 229073.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 229073.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2019,
+      "scope": "2lb",
+      "extracted_value": 144268,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 2 (location-based)",
+      "extracted_t_co2e": 144268.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 144268.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 144268.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2020,
+      "scope": "2lb",
+      "extracted_value": 139608,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 2 (location-based)",
+      "extracted_t_co2e": 139608.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 139608.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 139608.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2014,
+      "scope": "2mb",
+      "extracted_value": 37114,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 2 (market-based) (2014 data is for legacy Viacom only)",
+      "extracted_t_co2e": 37114.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 37114.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 37114.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2015,
+      "scope": "2mb",
+      "extracted_value": 50828,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 2 (market-based) (2015 data is for legacy Viacom only)",
+      "extracted_t_co2e": 50828.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 50828.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 50828.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2016,
+      "scope": "2mb",
+      "extracted_value": 213701,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 2 (market-based)",
+      "extracted_t_co2e": 213701.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 213701.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 213701.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2017,
+      "scope": "2mb",
+      "extracted_value": 219375,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 2 (market-based)",
+      "extracted_t_co2e": 219375.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 219375.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 219375.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2018,
+      "scope": "2mb",
+      "extracted_value": 219385,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 2 (market-based)",
+      "extracted_t_co2e": 219385.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 219385.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 219385.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2019,
+      "scope": "2mb",
+      "extracted_value": 123106,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 2 (market-based)",
+      "extracted_t_co2e": 123106.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 123106.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 123106.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2020,
+      "scope": "2mb",
+      "extracted_value": 134333,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 2 (market-based)",
+      "extracted_t_co2e": 134333.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 134333.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 134333.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2014,
+      "scope": "3",
+      "extracted_value": 28499,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 3 (2014 data is for legacy Viacom only)",
+      "extracted_t_co2e": 28499.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 28499.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 28499.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2015,
+      "scope": "3",
+      "extracted_value": 33242,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 3 (2015 data is for legacy Viacom only)",
+      "extracted_t_co2e": 33242.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 33242.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 33242.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2016,
+      "scope": "3",
+      "extracted_value": 47190,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 3",
+      "extracted_t_co2e": 47190.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 47190.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 47190.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2017,
+      "scope": "3",
+      "extracted_value": 39356,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 3",
+      "extracted_t_co2e": 39356.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 39356.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 39356.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2018,
+      "scope": "3",
+      "extracted_value": 37891,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 3",
+      "extracted_t_co2e": 37891.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 37891.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 37891.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2019,
+      "scope": "3",
+      "extracted_value": 819682,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 3 total (GHG emissions chart, p. 47)",
+      "extracted_t_co2e": 819682.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 819682.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 819682.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2020,
+      "scope": "3",
+      "extracted_value": 6897654,
+      "extracted_unit": "metric tons CO2e",
+      "extracted_label": "Scope 3 (market-based) total (GHG emissions chart, p. 47)",
+      "extracted_t_co2e": 6897654.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 6897654.0,
+          "unit": "metric tons CO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 6897654.0,
+          "page": 47.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    }
+  ],
+  "summary": {
+    "total_extracted": 28,
+    "in_gold": 28,
+    "not_in_gold": 0,
+    "matched": 28,
+    "precision": 1.0,
+    "recall": 0.7,
+    "mean_rel_error_matched": 0.0,
+    "missing_in_extraction": [
+      {
+        "year": 2013,
+        "scope": "1"
+      },
+      {
+        "year": 2013,
+        "scope": "2lb"
+      },
+      {
+        "year": 2013,
+        "scope": "2mb"
+      },
+      {
+        "year": 2013,
+        "scope": "3"
+      },
+      {
+        "year": 2021,
+        "scope": "1"
+      },
+      {
+        "year": 2021,
+        "scope": "2lb"
+      },
+      {
+        "year": 2021,
+        "scope": "2mb"
+      },
+      {
+        "year": 2021,
+        "scope": "3"
+      },
+      {
+        "year": 2022,
+        "scope": "1"
+      },
+      {
+        "year": 2022,
+        "scope": "2lb"
+      },
+      {
+        "year": 2022,
+        "scope": "2mb"
+      },
+      {
+        "year": 2022,
+        "scope": "3"
+      }
+    ]
+  }
+}

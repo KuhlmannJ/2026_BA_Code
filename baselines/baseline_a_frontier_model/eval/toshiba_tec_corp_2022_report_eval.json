@@ -1,58 +1,58 @@
 {
-  "report": "nordea_2017_report",
+  "report": "toshiba_tec_corp_2022_report",
   "results": [
     {
-      "year": 2016,
+      "year": 2020,
       "scope": "1",
-      "extracted_value": 48,
-      "extracted_unit": "tonnes CO2e",
-      "extracted_label": "diesel generators (scope 1)",
-      "extracted_t_co2e": 48.0,
-      "unit_known": true,
+      "extracted_value": 3.0,
+      "extracted_unit": "thousand t-CO2",
+      "extracted_label": "Direct emissions (Scope 1), FY2020",
+      "extracted_t_co2e": null,
+      "unit_known": false,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 48.0,
-          "unit": "CO2e emissions (tonnes)",
-          "unit_norm": "CO2e emissions (tonnes)",
-          "value_t_co2e": 48.0,
-          "page": 37.0,
-          "rel_error": 0.0
+          "value": 3.0,
+          "unit": "thousand t-CO2",
+          "unit_norm": "kt CO2",
+          "value_t_co2e": 3000.0,
+          "page": 31.0,
+          "rel_error": null
         }
       ],
-      "best_rel_error": 0.0,
-      "is_match": true
+      "best_rel_error": null,
+      "is_match": false
     },
     {
-      "year": 2017,
+      "year": 2021,
       "scope": "1",
-      "extracted_value": 51,
-      "extracted_unit": "tonnes CO2e",
-      "extracted_label": "diesel generators (scope 1)",
-      "extracted_t_co2e": 51.0,
-      "unit_known": true,
+      "extracted_value": 3.1,
+      "extracted_unit": "thousand t-CO2",
+      "extracted_label": "Direct emissions (Scope 1), FY2021",
+      "extracted_t_co2e": null,
+      "unit_known": false,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 51.0,
-          "unit": "CO2e emissions (tonnes)",
-          "unit_norm": "CO2e emissions (tonnes)",
-          "value_t_co2e": 51.0,
-          "page": 37.0,
-          "rel_error": 0.0
+          "value": 3.1,
+          "unit": "thousand t-CO2",
+          "unit_norm": "kt CO2",
+          "value_t_co2e": 3100.0,
+          "page": 31.0,
+          "rel_error": null
         }
       ],
-      "best_rel_error": 0.0,
-      "is_match": true
+      "best_rel_error": null,
+      "is_match": false
     },
     {
-      "year": 2016,
+      "year": 2020,
       "scope": "2mb",
-      "extracted_value": 3409,
-      "extracted_unit": "tonnes CO2e",
-      "extracted_label": "electricity, heating, district cooling (scope 2); net emissions after buying Guarantees of Origin",
-      "extracted_t_co2e": 3409.0,
-      "unit_known": true,
+      "extracted_value": 48.8,
+      "extracted_unit": "thousand t-CO2",
+      "extracted_label": "Indirect emissions associated with energy use (Scope 2), FY2020; includes contribution based on environmental value certification",
+      "extracted_t_co2e": null,
+      "unit_known": false,
       "in_gold": true,
       "gold_entries": [
         {
@@ -68,13 +68,13 @@
       "is_match": false
     },
     {
-      "year": 2017,
+      "year": 2021,
       "scope": "2mb",
-      "extracted_value": 3187,
-      "extracted_unit": "tonnes CO2e",
-      "extracted_label": "electricity, heating, district cooling (scope 2); net emissions after buying Guarantees of Origin",
-      "extracted_t_co2e": 3187.0,
-      "unit_known": true,
+      "extracted_value": 45.5,
+      "extracted_unit": "thousand t-CO2",
+      "extracted_label": "Indirect emissions associated with energy use (Scope 2), FY2021; includes contribution based on environmental value certification",
+      "extracted_t_co2e": null,
+      "unit_known": false,
       "in_gold": true,
       "gold_entries": [
         {
@@ -90,13 +90,13 @@
       "is_match": false
     },
     {
-      "year": 2016,
+      "year": 2020,
       "scope": "3",
-      "extracted_value": 13576,
-      "extracted_unit": "tonnes CO2e",
-      "extracted_label": "business travel (scope 3)",
-      "extracted_t_co2e": 13576.0,
-      "unit_known": true,
+      "extracted_value": 434.5,
+      "extracted_unit": "thousand t-CO2",
+      "extracted_label": "Total Scope 3 (sum of upstream and downstream categories), FY2020",
+      "extracted_t_co2e": null,
+      "unit_known": false,
       "in_gold": true,
       "gold_entries": [
         {
@@ -104,7 +104,7 @@
           "unit": NaN,
           "unit_norm": NaN,
           "value_t_co2e": null,
-          "page": 37.0,
+          "page": NaN,
           "rel_error": null
         }
       ],
@@ -112,13 +112,13 @@
       "is_match": false
     },
     {
-      "year": 2017,
+      "year": 2021,
       "scope": "3",
-      "extracted_value": 19500,
-      "extracted_unit": "tonnes CO2e",
-      "extracted_label": "business travel (scope 3)",
-      "extracted_t_co2e": 19500.0,
-      "unit_known": true,
+      "extracted_value": 417.5,
+      "extracted_unit": "thousand t-CO2",
+      "extracted_label": "Total Scope 3 (sum of upstream and downstream categories), FY2021",
+      "extracted_t_co2e": null,
+      "unit_known": false,
       "in_gold": true,
       "gold_entries": [
         {
@@ -138,10 +138,10 @@
     "total_extracted": 6,
     "in_gold": 6,
     "not_in_gold": 0,
-    "matched": 2,
-    "precision": 0.3333,
-    "recall": 0.05,
-    "mean_rel_error_matched": 0.0,
+    "matched": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "mean_rel_error_matched": null,
     "missing_in_extraction": [
       {
         "year": 2013,
@@ -193,13 +193,37 @@
       },
       {
         "year": 2016,
+        "scope": "1"
+      },
+      {
+        "year": 2016,
         "scope": "2lb"
+      },
+      {
+        "year": 2016,
+        "scope": "2mb"
+      },
+      {
+        "year": 2016,
+        "scope": "3"
+      },
+      {
+        "year": 2017,
+        "scope": "1"
       },
       {
         "year": 2017,
         "scope": "2lb"
       },
       {
+        "year": 2017,
+        "scope": "2mb"
+      },
+      {
+        "year": 2017,
+        "scope": "3"
+      },
+      {
         "year": 2018,
         "scope": "1"
       },
@@ -233,35 +257,11 @@
       },
       {
         "year": 2020,
-        "scope": "1"
-      },
-      {
-        "year": 2020,
-        "scope": "2lb"
-      },
-      {
-        "year": 2020,
-        "scope": "2mb"
-      },
-      {
-        "year": 2020,
-        "scope": "3"
-      },
-      {
-        "year": 2021,
-        "scope": "1"
-      },
-      {
-        "year": 2021,
         "scope": "2lb"
       },
       {
         "year": 2021,
-        "scope": "2mb"
-      },
-      {
-        "year": 2021,
-        "scope": "3"
+        "scope": "2lb"
       },
       {
         "year": 2022,

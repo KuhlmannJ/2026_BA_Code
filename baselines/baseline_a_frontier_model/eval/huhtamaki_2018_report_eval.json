@@ -16,9 +16,7 @@
           "unit": "metric tons CO₂ eqv",
           "unit_norm": "t CO2e",
           "value_t_co2e": 188000.0,
-          "metric_name": "Scope 1",
-          "display_type": "Graphic",
-          "page": "48",
+          "page": 48.0,
           "rel_error": null
         }
       ],
@@ -40,9 +38,7 @@
           "unit": "metric tons CO₂ eqv",
           "unit_norm": "t CO2e",
           "value_t_co2e": 191000.0,
-          "metric_name": "Scope 1",
-          "display_type": "Graphic",
-          "page": "48",
+          "page": 48.0,
           "rel_error": null
         }
       ],
@@ -64,9 +60,7 @@
           "unit": "metric tons CO₂ eqv",
           "unit_norm": "t CO2e",
           "value_t_co2e": 198000.0,
-          "metric_name": "Scope 1",
-          "display_type": "Graphic",
-          "page": "48",
+          "page": 48.0,
           "rel_error": null
         }
       ],
@@ -88,9 +82,7 @@
           "unit": "metric tons CO₂ eqv",
           "unit_norm": "t CO2e",
           "value_t_co2e": 207000.0,
-          "metric_name": "Scope 1",
-          "display_type": "Graphic",
-          "page": "48",
+          "page": 48.0,
           "rel_error": null
         }
       ],
@@ -112,9 +104,7 @@
           "unit": "metric tons CO₂ eqv",
           "unit_norm": "t CO2e",
           "value_t_co2e": 207000.0,
-          "metric_name": "Scope 1",
-          "display_type": "Graphic",
-          "page": "48",
+          "page": 48.0,
           "rel_error": null
         }
       ],
@@ -136,9 +126,7 @@
           "unit": "metric tons CO₂ eqv",
           "unit_norm": "t CO2e",
           "value_t_co2e": 479000.0,
-          "metric_name": "Scope 2",
-          "display_type": "Graphic",
-          "page": "48",
+          "page": 48.0,
           "rel_error": null
         }
       ],
@@ -160,9 +148,7 @@
           "unit": "metric tons CO₂ eqv",
           "unit_norm": "t CO2e",
           "value_t_co2e": 487000.0,
-          "metric_name": "Scope 2",
-          "display_type": "Graphic",
-          "page": "48",
+          "page": 48.0,
           "rel_error": null
         }
       ],
@@ -184,9 +170,7 @@
           "unit": "metric tons CO₂ eqv",
           "unit_norm": "t CO2e",
           "value_t_co2e": 526000.0,
-          "metric_name": "Scope 2",
-          "display_type": "Graphic",
-          "page": "48",
+          "page": 48.0,
           "rel_error": null
         }
       ],
@@ -208,9 +192,7 @@
           "unit": "metric tons CO₂ eqv",
           "unit_norm": "t CO2e",
           "value_t_co2e": 549000.0,
-          "metric_name": "Scope 2",
-          "display_type": "Graphic",
-          "page": "48",
+          "page": 48.0,
           "rel_error": null
         }
       ],
@@ -232,9 +214,7 @@
           "unit": "metric tons CO₂ eqv",
           "unit_norm": "t CO2e",
           "value_t_co2e": 559000.0,
-          "metric_name": "Scope 2",
-          "display_type": "Graphic",
-          "page": "48",
+          "page": 48.0,
           "rel_error": null
         }
       ],
@@ -250,6 +230,127 @@
     "precision": 0.0,
     "recall": 0.0,
     "mean_rel_error_matched": null,
-    "missing_in_extraction": []
+    "missing_in_extraction": [
+      {
+        "year": 2013,
+        "scope": "1"
+      },
+      {
+        "year": 2013,
+        "scope": "2lb"
+      },
+      {
+        "year": 2013,
+        "scope": "2mb"
+      },
+      {
+        "year": 2013,
+        "scope": "3"
+      },
+      {
+        "year": 2014,
+        "scope": "2mb"
+      },
+      {
+        "year": 2014,
+        "scope": "3"
+      },
+      {
+        "year": 2015,
+        "scope": "2mb"
+      },
+      {
+        "year": 2015,
+        "scope": "3"
+      },
+      {
+        "year": 2016,
+        "scope": "2mb"
+      },
+      {
+        "year": 2016,
+        "scope": "3"
+      },
+      {
+        "year": 2017,
+        "scope": "2mb"
+      },
+      {
+        "year": 2017,
+        "scope": "3"
+      },
+      {
+        "year": 2018,
+        "scope": "2mb"
+      },
+      {
+        "year": 2018,
+        "scope": "3"
+      },
+      {
+        "year": 2019,
+        "scope": "1"
+      },
+      {
+        "year": 2019,
+        "scope": "2lb"
+      },
+      {
+        "year": 2019,
+        "scope": "2mb"
+      },
+      {
+        "year": 2019,
+        "scope": "3"
+      },
+      {
+        "year": 2020,
+        "scope": "1"
+      },
+      {
+        "year": 2020,
+        "scope": "2lb"
+      },
+      {
+        "year": 2020,
+        "scope": "2mb"
+      },
+      {
+        "year": 2020,
+        "scope": "3"
+      },
+      {
+        "year": 2021,
+        "scope": "1"
+      },
+      {
+        "year": 2021,
+        "scope": "2lb"
+      },
+      {
+        "year": 2021,
+        "scope": "2mb"
+      },
+      {
+        "year": 2021,
+        "scope": "3"
+      },
+      {
+        "year": 2022,
+        "scope": "1"
+      },
+      {
+        "year": 2022,
+        "scope": "2lb"
+      },
+      {
+        "year": 2022,
+        "scope": "2mb"
+      },
+      {
+        "year": 2022,
+        "scope": "3"
+      }
+    ]
   }
 }

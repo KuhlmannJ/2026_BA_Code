@@ -1,0 +1,320 @@
+{
+  "report": "hudbay_minerals_inc_2020_report",
+  "results": [
+    {
+      "year": 2017,
+      "scope": "1",
+      "extracted_value": 177,
+      "extracted_unit": "kilotonnes of CO2-equivalent",
+      "extracted_label": "Direct CO2e emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 177.0,
+          "unit": "kilotonnes of CO2-equivalent",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 177000.0,
+          "page": 95.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2018,
+      "scope": "1",
+      "extracted_value": 170,
+      "extracted_unit": "kilotonnes of CO2-equivalent",
+      "extracted_label": "Direct CO2e emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 170.0,
+          "unit": "kilotonnes of CO2-equivalent",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 170000.0,
+          "page": 95.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2019,
+      "scope": "1",
+      "extracted_value": 161,
+      "extracted_unit": "kilotonnes of CO2-equivalent",
+      "extracted_label": "Direct CO2e emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 161.0,
+          "unit": "kilotonnes of CO2-equivalent",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 161000.0,
+          "page": 95.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2020,
+      "scope": "1",
+      "extracted_value": 144,
+      "extracted_unit": "kilotonnes of CO2-equivalent",
+      "extracted_label": "Direct CO2e emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 144.0,
+          "unit": "kilotonnes of CO2-equivalent",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 144000.0,
+          "page": 95.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2017,
+      "scope": "2lb",
+      "extracted_value": 363,
+      "extracted_unit": "kilotonnes of CO2-equivalent",
+      "extracted_label": "Indirect CO2e emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 363.0,
+          "unit": "kilotonnes of CO2-equivalent",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 363000.0,
+          "page": 95.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2018,
+      "scope": "2lb",
+      "extracted_value": 403,
+      "extracted_unit": "kilotonnes of CO2-equivalent",
+      "extracted_label": "Indirect CO2e emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 403.0,
+          "unit": "kilotonnes of CO2-equivalent",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 403000.0,
+          "page": 95.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2019,
+      "scope": "2lb",
+      "extracted_value": 402,
+      "extracted_unit": "kilotonnes of CO2-equivalent",
+      "extracted_label": "Indirect CO2e emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 402.0,
+          "unit": "kilotonnes of CO2-equivalent",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 402000.0,
+          "page": 95.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2020,
+      "scope": "2lb",
+      "extracted_value": 367,
+      "extracted_unit": "kilotonnes of CO2-equivalent",
+      "extracted_label": "Indirect CO2e emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 367.0,
+          "unit": "kilotonnes of CO2-equivalent",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 367000.0,
+          "page": 95.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    }
+  ],
+  "summary": {
+    "total_extracted": 8,
+    "in_gold": 8,
+    "not_in_gold": 0,
+    "matched": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "mean_rel_error_matched": null,
+    "missing_in_extraction": [
+      {
+        "year": 2013,
+        "scope": "1"
+      },
+      {
+        "year": 2013,
+        "scope": "2lb"
+      },
+      {
+        "year": 2013,
+        "scope": "2mb"
+      },
+      {
+        "year": 2013,
+        "scope": "3"
+      },
+      {
+        "year": 2014,
+        "scope": "1"
+      },
+      {
+        "year": 2014,
+        "scope": "2lb"
+      },
+      {
+        "year": 2014,
+        "scope": "2mb"
+      },
+      {
+        "year": 2014,
+        "scope": "3"
+      },
+      {
+        "year": 2015,
+        "scope": "1"
+      },
+      {
+        "year": 2015,
+        "scope": "2lb"
+      },
+      {
+        "year": 2015,
+        "scope": "2mb"
+      },
+      {
+        "year": 2015,
+        "scope": "3"
+      },
+      {
+        "year": 2016,
+        "scope": "1"
+      },
+      {
+        "year": 2016,
+        "scope": "2lb"
+      },
+      {
+        "year": 2016,
+        "scope": "2mb"
+      },
+      {
+        "year": 2016,
+        "scope": "3"
+      },
+      {
+        "year": 2017,
+        "scope": "2mb"
+      },
+      {
+        "year": 2017,
+        "scope": "3"
+      },
+      {
+        "year": 2018,
+        "scope": "2mb"
+      },
+      {
+        "year": 2018,
+        "scope": "3"
+      },
+      {
+        "year": 2019,
+        "scope": "2mb"
+      },
+      {
+        "year": 2019,
+        "scope": "3"
+      },
+      {
+        "year": 2020,
+        "scope": "2mb"
+      },
+      {
+        "year": 2020,
+        "scope": "3"
+      },
+      {
+        "year": 2021,
+        "scope": "1"
+      },
+      {
+        "year": 2021,
+        "scope": "2lb"
+      },
+      {
+        "year": 2021,
+        "scope": "2mb"
+      },
+      {
+        "year": 2021,
+        "scope": "3"
+      },
+      {
+        "year": 2022,
+        "scope": "1"
+      },
+      {
+        "year": 2022,
+        "scope": "2lb"
+      },
+      {
+        "year": 2022,
+        "scope": "2mb"
+      },
+      {
+        "year": 2022,
+        "scope": "3"
+      }
+    ]
+  }
+}

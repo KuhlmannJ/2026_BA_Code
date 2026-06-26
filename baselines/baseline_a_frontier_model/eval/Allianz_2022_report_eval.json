@@ -16,9 +16,7 @@
           "unit": "t CO2e",
           "unit_norm": "t CO2e",
           "value_t_co2e": 28714.0,
-          "metric_name": "Scope 1 – Direct GHG emissions",
-          "display_type": "Table",
-          "page": "78",
+          "page": 78.0,
           "rel_error": 0.0
         },
         {
@@ -26,9 +24,7 @@
           "unit": "ktCO₂eq",
           "unit_norm": "kt CO2e",
           "value_t_co2e": 29000.0,
-          "metric_name": "Allianz Group operational greenhouse gas emissions - Scope 1/Scope 1",
-          "display_type": "Graphic/Table",
-          "page": "92",
+          "page": 92.0,
           "rel_error": 0.009862
         }
       ],
@@ -50,9 +46,7 @@
           "unit": "t CO2e",
           "unit_norm": "t CO2e",
           "value_t_co2e": 28699.0,
-          "metric_name": "Scope 1 – Direct GHG emissions",
-          "display_type": "Table",
-          "page": "78",
+          "page": 78.0,
           "rel_error": 0.0
         },
         {
@@ -60,9 +54,7 @@
           "unit": "ktCO₂eq",
           "unit_norm": "kt CO2e",
           "value_t_co2e": 29000.0,
-          "metric_name": "Allianz Group operational greenhouse gas emissions - Scope 1/Scope 1",
-          "display_type": "Graphic",
-          "page": "92",
+          "page": 92.0,
           "rel_error": 0.010379
         }
       ],
@@ -84,9 +76,7 @@
           "unit": "t CO2e",
           "unit_norm": "t CO2e",
           "value_t_co2e": 30953.0,
-          "metric_name": "Scope 1 – Direct GHG emissions",
-          "display_type": "Table",
-          "page": "78",
+          "page": 78.0,
           "rel_error": 0.0
         },
         {
@@ -94,9 +84,7 @@
           "unit": "ktCO₂eq",
           "unit_norm": "kt CO2e",
           "value_t_co2e": 31000.0,
-          "metric_name": "Allianz Group operational greenhouse gas emissions - Scope 1/Scope 1",
-          "display_type": "Graphic",
-          "page": "92",
+          "page": 92.0,
           "rel_error": 0.001516
         }
       ],
@@ -118,9 +106,7 @@
           "unit": "t CO2e",
           "unit_norm": "t CO2e",
           "value_t_co2e": 180826.0,
-          "metric_name": "Scope 2 – Indirect GHG emissions (location based)",
-          "display_type": "Table",
-          "page": "78",
+          "page": 78.0,
           "rel_error": 0.0
         }
       ],
@@ -142,9 +128,7 @@
           "unit": "t CO2e",
           "unit_norm": "t CO2e",
           "value_t_co2e": 149599.0,
-          "metric_name": "Scope 2 – Indirect GHG emissions (location based)",
-          "display_type": "Table",
-          "page": "78",
+          "page": 78.0,
           "rel_error": 0.0
         }
       ],
@@ -166,9 +150,7 @@
           "unit": "t CO2e",
           "unit_norm": "t CO2e",
           "value_t_co2e": 138339.0,
-          "metric_name": "Scope 2 – Indirect GHG emissions (location based)",
-          "display_type": "Table",
-          "page": "78",
+          "page": 78.0,
           "rel_error": 0.0
         }
       ],
@@ -190,9 +172,7 @@
           "unit": "t CO2e",
           "unit_norm": "t CO2e",
           "value_t_co2e": 100722.0,
-          "metric_name": "Scope 2 – Indirect GHG emissions (market based)/Scope 2 – Indirect GHG emissions (market based)",
-          "display_type": "Table",
-          "page": "78",
+          "page": 78.0,
           "rel_error": 0.0
         },
         {
@@ -200,9 +180,7 @@
           "unit": "ktCO₂eq",
           "unit_norm": "kt CO2e",
           "value_t_co2e": 101000.0,
-          "metric_name": "Allianz Group operational greenhouse gas emissions - Scope 2 - market based",
-          "display_type": "Graphic",
-          "page": "92",
+          "page": 92.0,
           "rel_error": 0.002752
         }
       ],
@@ -224,9 +202,7 @@
           "unit": "t CO2e",
           "unit_norm": "t CO2e",
           "value_t_co2e": 54689.0,
-          "metric_name": "Scope 2 – Indirect GHG emissions (market based)/Scope 2 – Indirect GHG emissions (market based)",
-          "display_type": "Table",
-          "page": "78",
+          "page": 78.0,
           "rel_error": 0.0
         },
         {
@@ -234,9 +210,7 @@
           "unit": "ktCO₂eq",
           "unit_norm": "kt CO2e",
           "value_t_co2e": 55000.0,
-          "metric_name": "Allianz Group operational greenhouse gas emissions - Scope 2 - market based",
-          "display_type": "Graphic",
-          "page": "92",
+          "page": 92.0,
           "rel_error": 0.005655
         }
       ],
@@ -258,9 +232,7 @@
           "unit": "t CO2e",
           "unit_norm": "t CO2e",
           "value_t_co2e": 30490.0,
-          "metric_name": "Scope 2 – Indirect GHG emissions (market based)/Scope 2 – Indirect GHG emissions (market based)",
-          "display_type": "Table",
-          "page": "78",
+          "page": 78.0,
           "rel_error": 0.0
         },
         {
@@ -268,9 +240,7 @@
           "unit": "ktCO₂eq",
           "unit_norm": "kt CO2e",
           "value_t_co2e": 30000.0,
-          "metric_name": "Allianz Group operational greenhouse gas emissions - Scope 2 - market based",
-          "display_type": "Graphic",
-          "page": "92",
+          "page": 92.0,
           "rel_error": 0.016333
         }
       ],
@@ -292,9 +262,7 @@
           "unit": "t CO2e",
           "unit_norm": "t CO2e",
           "value_t_co2e": 73916.0,
-          "metric_name": "Scope 3 – Other indirect GHG emissions",
-          "display_type": "Table",
-          "page": "78",
+          "page": 78.0,
           "rel_error": 0.0
         },
         {
@@ -302,9 +270,7 @@
           "unit": "ktCO₂eq",
           "unit_norm": "kt CO2e",
           "value_t_co2e": 74000.0,
-          "metric_name": "Allianz Group operational greenhouse gas emissions - Scope 3",
-          "display_type": "Graphic",
-          "page": "92",
+          "page": 92.0,
           "rel_error": 0.001135
         }
       ],
@@ -326,9 +292,7 @@
           "unit": "t CO2e",
           "unit_norm": "t CO2e",
           "value_t_co2e": 55359.0,
-          "metric_name": "Scope 3 – Other indirect GHG emissions",
-          "display_type": "Table",
-          "page": "78",
+          "page": 78.0,
           "rel_error": 0.0
         },
         {
@@ -336,9 +300,7 @@
           "unit": "ktCO₂eq",
           "unit_norm": "kt CO2e",
           "value_t_co2e": 55000.0,
-          "metric_name": "Allianz Group operational greenhouse gas emissions - Scope 3",
-          "display_type": "Graphic",
-          "page": "92",
+          "page": 92.0,
           "rel_error": 0.006527
         }
       ],
@@ -360,9 +322,7 @@
           "unit": "t CO2e",
           "unit_norm": "t CO2e",
           "value_t_co2e": 92467.0,
-          "metric_name": "Scope 3 – Other indirect GHG emissions",
-          "display_type": "Table",
-          "page": "78",
+          "page": 78.0,
           "rel_error": 0.0
         },
         {
@@ -370,9 +330,7 @@
           "unit": "ktCO₂eq",
           "unit_norm": "kt CO2e",
           "value_t_co2e": 92000.0,
-          "metric_name": "Allianz Group operational greenhouse gas emissions - Scope 3",
-          "display_type": "Graphic",
-          "page": "92",
+          "page": 92.0,
           "rel_error": 0.005076
         }
       ],
@@ -386,12 +344,112 @@
     "not_in_gold": 0,
     "matched": 12,
     "precision": 1.0,
-    "recall": 0.8,
+    "recall": 0.3,
     "mean_rel_error_matched": 0.0,
     "missing_in_extraction": [
       {
+        "year": 2013,
+        "scope": "1"
+      },
+      {
+        "year": 2013,
+        "scope": "2lb"
+      },
+      {
+        "year": 2013,
+        "scope": "2mb"
+      },
+      {
+        "year": 2013,
+        "scope": "3"
+      },
+      {
+        "year": 2014,
+        "scope": "1"
+      },
+      {
+        "year": 2014,
+        "scope": "2lb"
+      },
+      {
+        "year": 2014,
+        "scope": "2mb"
+      },
+      {
+        "year": 2014,
+        "scope": "3"
+      },
+      {
+        "year": 2015,
+        "scope": "1"
+      },
+      {
+        "year": 2015,
+        "scope": "2lb"
+      },
+      {
+        "year": 2015,
+        "scope": "2mb"
+      },
+      {
+        "year": 2015,
+        "scope": "3"
+      },
+      {
+        "year": 2016,
+        "scope": "1"
+      },
+      {
+        "year": 2016,
+        "scope": "2lb"
+      },
+      {
+        "year": 2016,
+        "scope": "2mb"
+      },
+      {
+        "year": 2016,
+        "scope": "3"
+      },
+      {
+        "year": 2017,
+        "scope": "1"
+      },
+      {
+        "year": 2017,
+        "scope": "2lb"
+      },
+      {
+        "year": 2017,
+        "scope": "2mb"
+      },
+      {
+        "year": 2017,
+        "scope": "3"
+      },
+      {
+        "year": 2018,
+        "scope": "1"
+      },
+      {
+        "year": 2018,
+        "scope": "2lb"
+      },
+      {
+        "year": 2018,
+        "scope": "2mb"
+      },
+      {
+        "year": 2018,
+        "scope": "3"
+      },
+      {
         "year": 2019,
         "scope": "1"
+      },
+      {
+        "year": 2019,
+        "scope": "2lb"
       },
       {
         "year": 2019,

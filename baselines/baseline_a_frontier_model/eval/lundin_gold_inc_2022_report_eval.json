@@ -1,30 +1,66 @@
 {
-  "report": "acuity_brands_inc_2022_report",
+  "report": "lundin_gold_inc_2022_report",
   "results": [
     {
-      "year": 2022,
+      "year": 2021,
       "scope": "1",
-      "extracted_value": 34327,
-      "extracted_unit": "MT CO2e",
-      "extracted_label": "Total Scope 1 (FY2022)",
-      "extracted_t_co2e": 34327.0,
+      "extracted_value": 25354,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Total Scope 1 (recalculated baseline year)",
+      "extracted_t_co2e": 25354.0,
       "unit_known": true,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 34327.0,
-          "unit": "MtCO2e",
-          "unit_norm": "Mt CO2e",
-          "value_t_co2e": 34327.0,
-          "page": 101.0,
+          "value": 25354.0,
+          "unit": "tCO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 25354.0,
+          "page": 13.0,
           "rel_error": 0.0
-        },
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2022,
+      "scope": "1",
+      "extracted_value": 24024,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Total Scope 1 (FDN, exploration, Ecuador and Vancouver offices)",
+      "extracted_t_co2e": 24024.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
         {
-          "value": 34327.0,
-          "unit": "MT CO2e",
-          "unit_norm": "MT CO2e",
-          "value_t_co2e": 34327.0,
-          "page": 99.0,
+          "value": 24024.0,
+          "unit": "tCO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 24024.0,
+          "page": 13.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2021,
+      "scope": "2lb",
+      "extracted_value": 5413,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Total Scope 2 (recalculated baseline year, average emission factor)",
+      "extracted_t_co2e": 5413.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 5413.0,
+          "unit": "tCO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 5413.0,
+          "page": 13.0,
           "rel_error": 0.0
         }
       ],
@@ -34,19 +70,19 @@
     {
       "year": 2022,
       "scope": "2lb",
-      "extracted_value": 46637,
-      "extracted_unit": "MT CO2e",
-      "extracted_label": "Scope 2, Location-based (FY2022)",
-      "extracted_t_co2e": 46637.0,
+      "extracted_value": 5576,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Total Scope 2 (average grid emission factor)",
+      "extracted_t_co2e": 5576.0,
       "unit_known": true,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 46637.0,
-          "unit": "MtCO2e",
-          "unit_norm": "Mt CO2e",
-          "value_t_co2e": 46637.0,
-          "page": 101.0,
+          "value": 5576.0,
+          "unit": "tCO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 5576.0,
+          "page": 13.0,
           "rel_error": 0.0
         }
       ],
@@ -54,29 +90,21 @@
       "is_match": true
     },
     {
-      "year": 2022,
-      "scope": "2mb",
-      "extracted_value": 42234,
-      "extracted_unit": "MT CO2e",
-      "extracted_label": "Total Scope 2, Market-based (FY2022)",
-      "extracted_t_co2e": 42234.0,
+      "year": 2021,
+      "scope": "3",
+      "extracted_value": 193764,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Total Scope 3 (recalculated)",
+      "extracted_t_co2e": 193764.0,
       "unit_known": true,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 42234.0,
-          "unit": "MtCO2e",
-          "unit_norm": "Mt CO2e",
-          "value_t_co2e": 42234.0,
-          "page": 101.0,
-          "rel_error": 0.0
-        },
-        {
-          "value": 42234.0,
-          "unit": "MT CO2e",
-          "unit_norm": "MT CO2e",
-          "value_t_co2e": 42234.0,
-          "page": 99.0,
+          "value": 193764.0,
+          "unit": "tCO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 193764.0,
+          "page": 13.0,
           "rel_error": 0.0
         }
       ],
@@ -86,19 +114,19 @@
     {
       "year": 2022,
       "scope": "3",
-      "extracted_value": 35119419,
-      "extracted_unit": "MT CO2e",
-      "extracted_label": "Total Scope 3 (FY2022)",
-      "extracted_t_co2e": 35119419.0,
+      "extracted_value": 166742,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Total Scope 3",
+      "extracted_t_co2e": 166742.0,
       "unit_known": true,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 35119419.0,
-          "unit": "MT CO2e",
-          "unit_norm": "MT CO2e",
-          "value_t_co2e": 35119419.0,
-          "page": 99.0,
+          "value": 166742.0,
+          "unit": "tCO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 166742.0,
+          "page": 13.0,
           "rel_error": 0.0
         }
       ],
@@ -107,12 +135,12 @@
     }
   ],
   "summary": {
-    "total_extracted": 4,
-    "in_gold": 4,
+    "total_extracted": 6,
+    "in_gold": 6,
     "not_in_gold": 0,
-    "matched": 4,
+    "matched": 6,
     "precision": 1.0,
-    "recall": 0.1,
+    "recall": 0.15,
     "mean_rel_error_matched": 0.0,
     "missing_in_extraction": [
       {
@@ -245,19 +273,11 @@
       },
       {
         "year": 2021,
-        "scope": "1"
-      },
-      {
-        "year": 2021,
-        "scope": "2lb"
-      },
-      {
-        "year": 2021,
         "scope": "2mb"
       },
       {
-        "year": 2021,
-        "scope": "3"
+        "year": 2022,
+        "scope": "2mb"
       }
     ]
   }

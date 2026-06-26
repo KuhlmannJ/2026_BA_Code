@@ -30,7 +30,10 @@ def flatten_json(filepath: Path) -> list[dict]:
             raise ValueError(f"{report_name}: expected dict for scope '{scope}', got {type(years).__name__}")
 
         if scope not in SCOPES:
-            raise ValueError(f"{report_name}: unexpected scope '{scope}'")
+            if scope =="scope_2":
+                scope = "scope_2_location_based" # Three reports only got back with "scope_2": This meant location based
+            else:
+                raise ValueError(f"{report_name}: unexpected scope '{scope}'")
 
         for year, entries in years.items():
             for entry in entries or []:

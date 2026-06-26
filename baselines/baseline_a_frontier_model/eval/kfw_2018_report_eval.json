@@ -16,9 +16,7 @@
           "unit": "tonnes",
           "unit_norm": "t",
           "value_t_co2e": 4636.0,
-          "metric_name": "Emissions from direct energy consumption (Scope 1)",
-          "display_type": "Table",
-          "page": "91",
+          "page": 91.0,
           "rel_error": 0.0
         }
       ],
@@ -40,9 +38,7 @@
           "unit": "tonnes",
           "unit_norm": "t",
           "value_t_co2e": 5095.0,
-          "metric_name": "Emissions from direct energy consumption (Scope 1)",
-          "display_type": "Table",
-          "page": "91",
+          "page": 91.0,
           "rel_error": 0.0
         }
       ],
@@ -64,9 +60,7 @@
           "unit": "tonnes",
           "unit_norm": "t",
           "value_t_co2e": 5260.0,
-          "metric_name": "Emissions from direct energy consumption (Scope 1)",
-          "display_type": "Table",
-          "page": "91",
+          "page": 91.0,
           "rel_error": 0.0
         }
       ],
@@ -88,9 +82,7 @@
           "unit": "tonnes",
           "unit_norm": "t",
           "value_t_co2e": 5616.0,
-          "metric_name": "Emissions from direct energy consumption (Scope 1)",
-          "display_type": "Table",
-          "page": "91",
+          "page": 91.0,
           "rel_error": 0.0
         }
       ],
@@ -112,9 +104,7 @@
           "unit": "tonnes",
           "unit_norm": "t",
           "value_t_co2e": 5571.0,
-          "metric_name": "Emissions from direct energy consumption (Scope 1)",
-          "display_type": "Table",
-          "page": "91",
+          "page": 91.0,
           "rel_error": 0.0
         }
       ],
@@ -136,9 +126,7 @@
           "unit": "tonnes",
           "unit_norm": "t",
           "value_t_co2e": 16592.0,
-          "metric_name": "Location-based, 2017",
-          "display_type": "Table",
-          "page": "91",
+          "page": 91.0,
           "rel_error": 0.0
         }
       ],
@@ -160,9 +148,7 @@
           "unit": "tonnes",
           "unit_norm": "t",
           "value_t_co2e": 9564.0,
-          "metric_name": "Location-based, 2018",
-          "display_type": "Table",
-          "page": "91",
+          "page": 91.0,
           "rel_error": 0.0
         }
       ],
@@ -177,8 +163,17 @@
       "extracted_label": "Emissions from indirect energy consumption (Scope 2), method not specified",
       "extracted_t_co2e": 2073.0,
       "unit_known": true,
-      "in_gold": false,
-      "gold_entries": [],
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": NaN,
+          "unit": NaN,
+          "unit_norm": NaN,
+          "value_t_co2e": null,
+          "page": NaN,
+          "rel_error": null
+        }
+      ],
       "best_rel_error": null,
       "is_match": false
     },
@@ -190,8 +185,17 @@
       "extracted_label": "Emissions from indirect energy consumption (Scope 2), method not specified",
       "extracted_t_co2e": 1097.0,
       "unit_known": true,
-      "in_gold": false,
-      "gold_entries": [],
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": NaN,
+          "unit": NaN,
+          "unit_norm": NaN,
+          "value_t_co2e": null,
+          "page": NaN,
+          "rel_error": null
+        }
+      ],
       "best_rel_error": null,
       "is_match": false
     },
@@ -203,8 +207,17 @@
       "extracted_label": "Emissions from indirect energy consumption (Scope 2), method not specified",
       "extracted_t_co2e": 1400.0,
       "unit_known": true,
-      "in_gold": false,
-      "gold_entries": [],
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": NaN,
+          "unit": NaN,
+          "unit_norm": NaN,
+          "value_t_co2e": null,
+          "page": NaN,
+          "rel_error": null
+        }
+      ],
       "best_rel_error": null,
       "is_match": false
     },
@@ -223,9 +236,7 @@
           "unit": "tonnes",
           "unit_norm": "t",
           "value_t_co2e": 16257.0,
-          "metric_name": "Market-based, 2017",
-          "display_type": "Table",
-          "page": "91",
+          "page": 91.0,
           "rel_error": 0.915852
         }
       ],
@@ -247,9 +258,7 @@
           "unit": "tonnes",
           "unit_norm": "t",
           "value_t_co2e": 7732.0,
-          "metric_name": "Market-based, 2018",
-          "display_type": "Table",
-          "page": "91",
+          "page": 91.0,
           "rel_error": 0.754527
         }
       ],
@@ -264,8 +273,17 @@
       "extracted_label": "Total business travel (Scope 3)",
       "extracted_t_co2e": 9446.0,
       "unit_known": true,
-      "in_gold": false,
-      "gold_entries": [],
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": NaN,
+          "unit": NaN,
+          "unit_norm": NaN,
+          "value_t_co2e": null,
+          "page": NaN,
+          "rel_error": null
+        }
+      ],
       "best_rel_error": null,
       "is_match": false
     },
@@ -277,8 +295,17 @@
       "extracted_label": "Total business travel (Scope 3)",
       "extracted_t_co2e": 7394.0,
       "unit_known": true,
-      "in_gold": false,
-      "gold_entries": [],
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": NaN,
+          "unit": NaN,
+          "unit_norm": NaN,
+          "value_t_co2e": null,
+          "page": NaN,
+          "rel_error": null
+        }
+      ],
       "best_rel_error": null,
       "is_match": false
     },
@@ -290,8 +317,17 @@
       "extracted_label": "Total business travel (Scope 3)",
       "extracted_t_co2e": 7411.0,
       "unit_known": true,
-      "in_gold": false,
-      "gold_entries": [],
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": NaN,
+          "unit": NaN,
+          "unit_norm": NaN,
+          "value_t_co2e": null,
+          "page": NaN,
+          "rel_error": null
+        }
+      ],
       "best_rel_error": null,
       "is_match": false
     },
@@ -303,8 +339,17 @@
       "extracted_label": "Total business travel (Scope 3)",
       "extracted_t_co2e": 8208.0,
       "unit_known": true,
-      "in_gold": false,
-      "gold_entries": [],
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": NaN,
+          "unit": NaN,
+          "unit_norm": NaN,
+          "value_t_co2e": null,
+          "page": NaN,
+          "rel_error": null
+        }
+      ],
       "best_rel_error": null,
       "is_match": false
     },
@@ -316,20 +361,122 @@
       "extracted_label": "Total business travel (Scope 3)",
       "extracted_t_co2e": 8665.0,
       "unit_known": true,
-      "in_gold": false,
-      "gold_entries": [],
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": NaN,
+          "unit": NaN,
+          "unit_norm": NaN,
+          "value_t_co2e": null,
+          "page": NaN,
+          "rel_error": null
+        }
+      ],
       "best_rel_error": null,
       "is_match": false
     }
   ],
   "summary": {
     "total_extracted": 17,
-    "in_gold": 9,
-    "not_in_gold": 8,
+    "in_gold": 17,
+    "not_in_gold": 0,
     "matched": 7,
     "precision": 0.4118,
-    "recall": 0.7778,
+    "recall": 0.175,
     "mean_rel_error_matched": 0.0,
-    "missing_in_extraction": []
+    "missing_in_extraction": [
+      {
+        "year": 2013,
+        "scope": "1"
+      },
+      {
+        "year": 2013,
+        "scope": "2lb"
+      },
+      {
+        "year": 2013,
+        "scope": "2mb"
+      },
+      {
+        "year": 2013,
+        "scope": "3"
+      },
+      {
+        "year": 2014,
+        "scope": "2lb"
+      },
+      {
+        "year": 2015,
+        "scope": "2lb"
+      },
+      {
+        "year": 2016,
+        "scope": "2lb"
+      },
+      {
+        "year": 2019,
+        "scope": "1"
+      },
+      {
+        "year": 2019,
+        "scope": "2lb"
+      },
+      {
+        "year": 2019,
+        "scope": "2mb"
+      },
+      {
+        "year": 2019,
+        "scope": "3"
+      },
+      {
+        "year": 2020,
+        "scope": "1"
+      },
+      {
+        "year": 2020,
+        "scope": "2lb"
+      },
+      {
+        "year": 2020,
+        "scope": "2mb"
+      },
+      {
+        "year": 2020,
+        "scope": "3"
+      },
+      {
+        "year": 2021,
+        "scope": "1"
+      },
+      {
+        "year": 2021,
+        "scope": "2lb"
+      },
+      {
+        "year": 2021,
+        "scope": "2mb"
+      },
+      {
+        "year": 2021,
+        "scope": "3"
+      },
+      {
+        "year": 2022,
+        "scope": "1"
+      },
+      {
+        "year": 2022,
+        "scope": "2lb"
+      },
+      {
+        "year": 2022,
+        "scope": "2mb"
+      },
+      {
+        "year": 2022,
+        "scope": "3"
+      }
+    ]
   }
 }

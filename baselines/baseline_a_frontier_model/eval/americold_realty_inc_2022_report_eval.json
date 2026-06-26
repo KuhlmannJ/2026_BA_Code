@@ -1,22 +1,44 @@
 {
-  "report": "aixtron_2020_report",
+  "report": "americold_realty_inc_2022_report",
   "results": [
     {
-      "year": 2019,
+      "year": 2021,
       "scope": "1",
-      "extracted_value": 170.8,
-      "extracted_unit": "tonnes CO2e",
-      "extracted_label": "Direct (Scope 1) GHG emissions, consolidated",
-      "extracted_t_co2e": 170.8,
+      "extracted_value": 72134,
+      "extracted_unit": "MTCO2e",
+      "extracted_label": "Total Company",
+      "extracted_t_co2e": 72134.0,
       "unit_known": true,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 170.8,
-          "unit": "tonnes of CO2 equivalents",
-          "unit_norm": "t CO2e",
-          "value_t_co2e": 170.8,
-          "page": 50.0,
+          "value": 72314.0,
+          "unit": "MTCO2e",
+          "unit_norm": "MT CO2e",
+          "value_t_co2e": 72314.0,
+          "page": 53.0,
+          "rel_error": 0.002489
+        }
+      ],
+      "best_rel_error": 0.002489,
+      "is_match": true
+    },
+    {
+      "year": 2022,
+      "scope": "1",
+      "extracted_value": 102340,
+      "extracted_unit": "MTCO2e",
+      "extracted_label": "Total Company (Owned 1/1/22 ~ 12/31/22)",
+      "extracted_t_co2e": 102340.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 102340.0,
+          "unit": "MTCO2e",
+          "unit_norm": "MT CO2e",
+          "value_t_co2e": 102340.0,
+          "page": 53.0,
           "rel_error": 0.0
         }
       ],
@@ -24,42 +46,12 @@
       "is_match": true
     },
     {
-      "year": 2020,
-      "scope": "1",
-      "extracted_value": 322.84,
-      "extracted_unit": "tonnes CO2e",
-      "extracted_label": "Direct (Scope 1) GHG emissions, consolidated",
-      "extracted_t_co2e": 322.84,
-      "unit_known": true,
-      "in_gold": true,
-      "gold_entries": [
-        {
-          "value": 322.84,
-          "unit": "metric tons of CO2 equivalents",
-          "unit_norm": "t CO2e",
-          "value_t_co2e": 322.84,
-          "page": 49.0,
-          "rel_error": 0.0
-        },
-        {
-          "value": 322.84,
-          "unit": "tonnes of CO2 equivalents",
-          "unit_norm": "t CO2e",
-          "value_t_co2e": 322.84,
-          "page": 50.0,
-          "rel_error": 0.0
-        }
-      ],
-      "best_rel_error": 0.0,
-      "is_match": true
-    },
-    {
-      "year": 2019,
-      "scope": "2mb",
-      "extracted_value": 406.6,
-      "extracted_unit": "tonnes CO2e",
-      "extracted_label": "Energy indirect (Scope 2) GHG emissions, consolidated",
-      "extracted_t_co2e": 406.6,
+      "year": 2021,
+      "scope": "2lb",
+      "extracted_value": 556660,
+      "extracted_unit": "MTCO2e",
+      "extracted_label": "Total Company (Scope 2 location-based equals market-based per report note)",
+      "extracted_t_co2e": 556660.0,
       "unit_known": true,
       "in_gold": true,
       "gold_entries": [
@@ -76,12 +68,12 @@
       "is_match": false
     },
     {
-      "year": 2020,
-      "scope": "2mb",
-      "extracted_value": 398.14,
-      "extracted_unit": "tonnes CO2e",
-      "extracted_label": "Energy indirect (Scope 2) GHG emissions, consolidated",
-      "extracted_t_co2e": 398.14,
+      "year": 2022,
+      "scope": "2lb",
+      "extracted_value": 554491,
+      "extracted_unit": "MTCO2e",
+      "extracted_label": "Total Company (Owned 1/1/22 ~ 12/31/22; location-based equals market-based per report note)",
+      "extracted_t_co2e": 554491.0,
       "unit_known": true,
       "in_gold": true,
       "gold_entries": [
@@ -98,21 +90,21 @@
       "is_match": false
     },
     {
-      "year": 2019,
-      "scope": "3",
-      "extracted_value": 3637.97,
-      "extracted_unit": "tonnes CO2e",
-      "extracted_label": "Other indirect (Scope 3) GHG emissions, consolidated",
-      "extracted_t_co2e": 3637.97,
+      "year": 2021,
+      "scope": "2mb",
+      "extracted_value": 556660,
+      "extracted_unit": "MTCO2e",
+      "extracted_label": "Total Company",
+      "extracted_t_co2e": 556660.0,
       "unit_known": true,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 3637.97,
-          "unit": "tonnes of CO2 equivalents",
-          "unit_norm": "t CO2e",
-          "value_t_co2e": 3637.97,
-          "page": 50.0,
+          "value": 556660.0,
+          "unit": "MTCO2e",
+          "unit_norm": "MT CO2e",
+          "value_t_co2e": 556660.0,
+          "page": 53.0,
           "rel_error": 0.0
         }
       ],
@@ -120,29 +112,65 @@
       "is_match": true
     },
     {
-      "year": 2020,
-      "scope": "3",
-      "extracted_value": 1310.1,
-      "extracted_unit": "tonnes CO2e",
-      "extracted_label": "Other indirect (Scope 3) GHG emissions, consolidated",
-      "extracted_t_co2e": 1310.1,
+      "year": 2022,
+      "scope": "2mb",
+      "extracted_value": 554491,
+      "extracted_unit": "MTCO2e",
+      "extracted_label": "Total Company (Owned 1/1/22 ~ 12/31/22)",
+      "extracted_t_co2e": 554491.0,
       "unit_known": true,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 1310.1,
-          "unit": "metric tons of CO2 equivalents",
-          "unit_norm": "t CO2e",
-          "value_t_co2e": 1310.1,
-          "page": 49.0,
+          "value": 554491.0,
+          "unit": "MTCO2e",
+          "unit_norm": "MT CO2e",
+          "value_t_co2e": 554491.0,
+          "page": 53.0,
           "rel_error": 0.0
-        },
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2021,
+      "scope": "3",
+      "extracted_value": 1067697,
+      "extracted_unit": "MTCO2e",
+      "extracted_label": "Total Company",
+      "extracted_t_co2e": 1067697.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
         {
-          "value": 1310.1,
-          "unit": "tonnes of CO2 equivalents",
-          "unit_norm": "t CO2e",
-          "value_t_co2e": 1310.1,
-          "page": 50.0,
+          "value": 1067697.0,
+          "unit": "MTCO2e",
+          "unit_norm": "MT CO2e",
+          "value_t_co2e": 1067697.0,
+          "page": 53.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2022,
+      "scope": "3",
+      "extracted_value": 611634,
+      "extracted_unit": "MTCO2e",
+      "extracted_label": "Total Company (Owned 1/1/22 ~ 12/31/22)",
+      "extracted_t_co2e": 611634.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 611634.0,
+          "unit": "MTCO2e",
+          "unit_norm": "MT CO2e",
+          "value_t_co2e": 611634.0,
+          "page": 53.0,
           "rel_error": 0.0
         }
       ],
@@ -151,13 +179,13 @@
     }
   ],
   "summary": {
-    "total_extracted": 6,
-    "in_gold": 6,
+    "total_extracted": 8,
+    "in_gold": 8,
     "not_in_gold": 0,
-    "matched": 4,
-    "precision": 0.6667,
-    "recall": 0.1,
-    "mean_rel_error_matched": 0.0,
+    "matched": 6,
+    "precision": 0.75,
+    "recall": 0.15,
+    "mean_rel_error_matched": 0.000415,
     "missing_in_extraction": [
       {
         "year": 2013,
@@ -257,42 +285,34 @@
       },
       {
         "year": 2019,
+        "scope": "1"
+      },
+      {
+        "year": 2019,
         "scope": "2lb"
+      },
+      {
+        "year": 2019,
+        "scope": "2mb"
+      },
+      {
+        "year": 2019,
+        "scope": "3"
+      },
+      {
+        "year": 2020,
+        "scope": "1"
       },
       {
         "year": 2020,
         "scope": "2lb"
       },
       {
-        "year": 2021,
-        "scope": "1"
-      },
-      {
-        "year": 2021,
-        "scope": "2lb"
-      },
-      {
-        "year": 2021,
+        "year": 2020,
         "scope": "2mb"
       },
       {
-        "year": 2021,
-        "scope": "3"
-      },
-      {
-        "year": 2022,
-        "scope": "1"
-      },
-      {
-        "year": 2022,
-        "scope": "2lb"
-      },
-      {
-        "year": 2022,
-        "scope": "2mb"
-      },
-      {
-        "year": 2022,
+        "year": 2020,
         "scope": "3"
       }
     ]

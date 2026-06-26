@@ -1,22 +1,22 @@
 {
-  "report": "webuild_2019_report",
+  "report": "inchcape_plc_2022_report",
   "results": [
     {
-      "year": 2017,
+      "year": 2021,
       "scope": "1",
-      "extracted_value": 566952,
+      "extracted_value": 9752,
       "extracted_unit": "tCO2e",
-      "extracted_label": "Direct emissions (Scope 1)",
-      "extracted_t_co2e": 566952.0,
+      "extracted_label": "Scope 1 Emissions (Global)",
+      "extracted_t_co2e": 9752.0,
       "unit_known": true,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 566952.0,
+          "value": 9752.0,
           "unit": "tCO2e",
           "unit_norm": "t CO2e",
-          "value_t_co2e": 566952.0,
-          "page": 44.0,
+          "value_t_co2e": 9752.0,
+          "page": 120.0,
           "rel_error": 0.0
         }
       ],
@@ -24,21 +24,21 @@
       "is_match": true
     },
     {
-      "year": 2018,
+      "year": 2022,
       "scope": "1",
-      "extracted_value": 467234,
+      "extracted_value": 17002,
       "extracted_unit": "tCO2e",
-      "extracted_label": "Direct emissions (Scope 1)",
-      "extracted_t_co2e": 467234.0,
+      "extracted_label": "Scope 1 Emissions (Global)",
+      "extracted_t_co2e": 17002.0,
       "unit_known": true,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 467234.0,
+          "value": 17002.0,
           "unit": "tCO2e",
           "unit_norm": "t CO2e",
-          "value_t_co2e": 467234.0,
-          "page": 44.0,
+          "value_t_co2e": 17002.0,
+          "page": 120.0,
           "rel_error": 0.0
         }
       ],
@@ -46,43 +46,21 @@
       "is_match": true
     },
     {
-      "year": 2019,
-      "scope": "1",
-      "extracted_value": 350593,
-      "extracted_unit": "tCO2e",
-      "extracted_label": "Direct emissions (Scope 1)",
-      "extracted_t_co2e": 350593.0,
-      "unit_known": true,
-      "in_gold": true,
-      "gold_entries": [
-        {
-          "value": 350593.0,
-          "unit": "tCO2e",
-          "unit_norm": "t CO2e",
-          "value_t_co2e": 350593.0,
-          "page": 44.0,
-          "rel_error": 0.0
-        }
-      ],
-      "best_rel_error": 0.0,
-      "is_match": true
-    },
-    {
-      "year": 2017,
+      "year": 2021,
       "scope": "2lb",
-      "extracted_value": 43388,
+      "extracted_value": 27277,
       "extracted_unit": "tCO2e",
-      "extracted_label": "Indirect emissions (Scope 2) - location-based method",
-      "extracted_t_co2e": 43388.0,
+      "extracted_label": "Scope 2 Emissions (Location-based) (Global)",
+      "extracted_t_co2e": 27277.0,
       "unit_known": true,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 43388.0,
+          "value": 27277.0,
           "unit": "tCO2e",
           "unit_norm": "t CO2e",
-          "value_t_co2e": 43388.0,
-          "page": 44.0,
+          "value_t_co2e": 27277.0,
+          "page": 120.0,
           "rel_error": 0.0
         }
       ],
@@ -90,87 +68,21 @@
       "is_match": true
     },
     {
-      "year": 2018,
+      "year": 2022,
       "scope": "2lb",
-      "extracted_value": 54637,
+      "extracted_value": 22223,
       "extracted_unit": "tCO2e",
-      "extracted_label": "Indirect emissions (Scope 2) - location-based method",
-      "extracted_t_co2e": 54637.0,
+      "extracted_label": "Scope 2 Emissions (Location-based) (Global)",
+      "extracted_t_co2e": 22223.0,
       "unit_known": true,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 54637.0,
+          "value": 22223.0,
           "unit": "tCO2e",
           "unit_norm": "t CO2e",
-          "value_t_co2e": 54637.0,
-          "page": 44.0,
-          "rel_error": 0.0
-        }
-      ],
-      "best_rel_error": 0.0,
-      "is_match": true
-    },
-    {
-      "year": 2019,
-      "scope": "2lb",
-      "extracted_value": 43371,
-      "extracted_unit": "tCO2e",
-      "extracted_label": "Indirect emissions (Scope 2) - location-based method",
-      "extracted_t_co2e": 43371.0,
-      "unit_known": true,
-      "in_gold": true,
-      "gold_entries": [
-        {
-          "value": 43371.0,
-          "unit": "tCO2e",
-          "unit_norm": "t CO2e",
-          "value_t_co2e": 43371.0,
-          "page": 44.0,
-          "rel_error": 0.0
-        }
-      ],
-      "best_rel_error": 0.0,
-      "is_match": true
-    },
-    {
-      "year": 2017,
-      "scope": "3",
-      "extracted_value": 137577,
-      "extracted_unit": "tCO2e",
-      "extracted_label": "Other indirect emissions (Scope 3)",
-      "extracted_t_co2e": 137577.0,
-      "unit_known": true,
-      "in_gold": true,
-      "gold_entries": [
-        {
-          "value": 137577.0,
-          "unit": "tCO2e",
-          "unit_norm": "t CO2e",
-          "value_t_co2e": 137577.0,
-          "page": 44.0,
-          "rel_error": 0.0
-        }
-      ],
-      "best_rel_error": 0.0,
-      "is_match": true
-    },
-    {
-      "year": 2018,
-      "scope": "3",
-      "extracted_value": 117528,
-      "extracted_unit": "tCO2e",
-      "extracted_label": "Other indirect emissions (Scope 3)",
-      "extracted_t_co2e": 117528.0,
-      "unit_known": true,
-      "in_gold": true,
-      "gold_entries": [
-        {
-          "value": 117528.0,
-          "unit": "tCO2e",
-          "unit_norm": "t CO2e",
-          "value_t_co2e": 117528.0,
-          "page": 44.0,
+          "value_t_co2e": 22223.0,
+          "page": 120.0,
           "rel_error": 0.0
         }
       ],
@@ -180,19 +92,63 @@
     {
       "year": 2019,
       "scope": "3",
-      "extracted_value": 61573,
+      "extracted_value": 18700000,
       "extracted_unit": "tCO2e",
-      "extracted_label": "Other indirect emissions (Scope 3)",
-      "extracted_t_co2e": 61573.0,
+      "extracted_label": "Total Scope 3 footprint, 2019 baseline (stated as 18.7m tCO2e)",
+      "extracted_t_co2e": 18700000.0,
       "unit_known": true,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 61573.0,
+          "value": 18.7,
+          "unit": "m tCO2e",
+          "unit_norm": "m t CO2e",
+          "value_t_co2e": 18700000.0,
+          "page": 54.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2021,
+      "scope": "3",
+      "extracted_value": 82068,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Scope 3 Emissions (Business Travel & Upstream Transport) (Global)",
+      "extracted_t_co2e": 82068.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 82068.0,
           "unit": "tCO2e",
           "unit_norm": "t CO2e",
-          "value_t_co2e": 61573.0,
-          "page": 44.0,
+          "value_t_co2e": 82068.0,
+          "page": 120.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2022,
+      "scope": "3",
+      "extracted_value": 187713,
+      "extracted_unit": "tCO2e",
+      "extracted_label": "Scope 3 Emissions (Business Travel & Upstream Transport) (Global)",
+      "extracted_t_co2e": 187713.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 187713.0,
+          "unit": "tCO2e",
+          "unit_norm": "t CO2e",
+          "value_t_co2e": 187713.0,
+          "page": 120.0,
           "rel_error": 0.0
         }
       ],
@@ -201,12 +157,12 @@
     }
   ],
   "summary": {
-    "total_extracted": 9,
-    "in_gold": 9,
+    "total_extracted": 7,
+    "in_gold": 7,
     "not_in_gold": 0,
-    "matched": 9,
+    "matched": 7,
     "precision": 1.0,
-    "recall": 0.225,
+    "recall": 0.175,
     "mean_rel_error_matched": 0.0,
     "missing_in_extraction": [
       {
@@ -275,11 +231,43 @@
       },
       {
         "year": 2017,
+        "scope": "1"
+      },
+      {
+        "year": 2017,
+        "scope": "2lb"
+      },
+      {
+        "year": 2017,
         "scope": "2mb"
+      },
+      {
+        "year": 2017,
+        "scope": "3"
+      },
+      {
+        "year": 2018,
+        "scope": "1"
+      },
+      {
+        "year": 2018,
+        "scope": "2lb"
       },
       {
         "year": 2018,
         "scope": "2mb"
+      },
+      {
+        "year": 2018,
+        "scope": "3"
+      },
+      {
+        "year": 2019,
+        "scope": "1"
+      },
+      {
+        "year": 2019,
+        "scope": "2lb"
       },
       {
         "year": 2019,
@@ -303,35 +291,11 @@
       },
       {
         "year": 2021,
-        "scope": "1"
-      },
-      {
-        "year": 2021,
-        "scope": "2lb"
-      },
-      {
-        "year": 2021,
-        "scope": "2mb"
-      },
-      {
-        "year": 2021,
-        "scope": "3"
-      },
-      {
-        "year": 2022,
-        "scope": "1"
-      },
-      {
-        "year": 2022,
-        "scope": "2lb"
-      },
-      {
-        "year": 2022,
         "scope": "2mb"
       },
       {
         "year": 2022,
-        "scope": "3"
+        "scope": "2mb"
       }
     ]
   }

@@ -1,0 +1,284 @@
+{
+  "report": "cardinal_energy_ltd_2021_report",
+  "results": [
+    {
+      "year": 2019,
+      "scope": "1",
+      "extracted_value": 188,
+      "extracted_unit": "10^3 tonnes CO2e",
+      "extracted_label": "Direct GHG emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 188.0,
+          "unit": "10^3 tonnes CO2e",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 188000.0,
+          "page": 19.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2020,
+      "scope": "1",
+      "extracted_value": 160,
+      "extracted_unit": "10^3 tonnes CO2e",
+      "extracted_label": "Direct GHG emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 160.0,
+          "unit": "10^3 tonnes CO2e",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 160000.0,
+          "page": 19.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2021,
+      "scope": "1",
+      "extracted_value": 231,
+      "extracted_unit": "10^3 tonnes CO2e",
+      "extracted_label": "Direct GHG emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 231.0,
+          "unit": "10^3 tonnes CO2e",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 231000.0,
+          "page": 19.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2019,
+      "scope": "2lb",
+      "extracted_value": 277,
+      "extracted_unit": "10^3 tonnes CO2e",
+      "extracted_label": "Indirect GHG emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 277.0,
+          "unit": "10^3 tonnes CO2e",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 277000.0,
+          "page": 19.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2020,
+      "scope": "2lb",
+      "extracted_value": 259,
+      "extracted_unit": "10^3 tonnes CO2e",
+      "extracted_label": "Indirect GHG emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 259.0,
+          "unit": "10^3 tonnes CO2e",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 259000.0,
+          "page": 19.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2021,
+      "scope": "2lb",
+      "extracted_value": 228,
+      "extracted_unit": "10^3 tonnes CO2e",
+      "extracted_label": "Indirect GHG emissions",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 228.0,
+          "unit": "10^3 tonnes CO2e",
+          "unit_norm": "kt CO2e",
+          "value_t_co2e": 228000.0,
+          "page": 19.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    }
+  ],
+  "summary": {
+    "total_extracted": 6,
+    "in_gold": 6,
+    "not_in_gold": 0,
+    "matched": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "mean_rel_error_matched": null,
+    "missing_in_extraction": [
+      {
+        "year": 2013,
+        "scope": "1"
+      },
+      {
+        "year": 2013,
+        "scope": "2lb"
+      },
+      {
+        "year": 2013,
+        "scope": "2mb"
+      },
+      {
+        "year": 2013,
+        "scope": "3"
+      },
+      {
+        "year": 2014,
+        "scope": "1"
+      },
+      {
+        "year": 2014,
+        "scope": "2lb"
+      },
+      {
+        "year": 2014,
+        "scope": "2mb"
+      },
+      {
+        "year": 2014,
+        "scope": "3"
+      },
+      {
+        "year": 2015,
+        "scope": "1"
+      },
+      {
+        "year": 2015,
+        "scope": "2lb"
+      },
+      {
+        "year": 2015,
+        "scope": "2mb"
+      },
+      {
+        "year": 2015,
+        "scope": "3"
+      },
+      {
+        "year": 2016,
+        "scope": "1"
+      },
+      {
+        "year": 2016,
+        "scope": "2lb"
+      },
+      {
+        "year": 2016,
+        "scope": "2mb"
+      },
+      {
+        "year": 2016,
+        "scope": "3"
+      },
+      {
+        "year": 2017,
+        "scope": "1"
+      },
+      {
+        "year": 2017,
+        "scope": "2lb"
+      },
+      {
+        "year": 2017,
+        "scope": "2mb"
+      },
+      {
+        "year": 2017,
+        "scope": "3"
+      },
+      {
+        "year": 2018,
+        "scope": "1"
+      },
+      {
+        "year": 2018,
+        "scope": "2lb"
+      },
+      {
+        "year": 2018,
+        "scope": "2mb"
+      },
+      {
+        "year": 2018,
+        "scope": "3"
+      },
+      {
+        "year": 2019,
+        "scope": "2mb"
+      },
+      {
+        "year": 2019,
+        "scope": "3"
+      },
+      {
+        "year": 2020,
+        "scope": "2mb"
+      },
+      {
+        "year": 2020,
+        "scope": "3"
+      },
+      {
+        "year": 2021,
+        "scope": "2mb"
+      },
+      {
+        "year": 2021,
+        "scope": "3"
+      },
+      {
+        "year": 2022,
+        "scope": "1"
+      },
+      {
+        "year": 2022,
+        "scope": "2lb"
+      },
+      {
+        "year": 2022,
+        "scope": "2mb"
+      },
+      {
+        "year": 2022,
+        "scope": "3"
+      }
+    ]
+  }
+}

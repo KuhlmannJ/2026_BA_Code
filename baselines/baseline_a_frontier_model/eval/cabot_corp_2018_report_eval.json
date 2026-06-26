@@ -1,22 +1,22 @@
 {
-  "report": "nordea_2017_report",
+  "report": "cabot_corp_2018_report",
   "results": [
     {
       "year": 2016,
       "scope": "1",
-      "extracted_value": 48,
-      "extracted_unit": "tonnes CO2e",
-      "extracted_label": "diesel generators (scope 1)",
-      "extracted_t_co2e": 48.0,
+      "extracted_value": 4.5,
+      "extracted_unit": "MM MT CO2e",
+      "extracted_label": "Scope 1 absolute emissions",
+      "extracted_t_co2e": 4500000.0,
       "unit_known": true,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 48.0,
-          "unit": "CO2e emissions (tonnes)",
-          "unit_norm": "CO2e emissions (tonnes)",
-          "value_t_co2e": 48.0,
-          "page": 37.0,
+          "value": 4.5,
+          "unit": "MM MT CO2e",
+          "unit_norm": "MM MT CO2e",
+          "value_t_co2e": 4500000.0,
+          "page": 22.0,
           "rel_error": 0.0
         }
       ],
@@ -26,19 +26,41 @@
     {
       "year": 2017,
       "scope": "1",
-      "extracted_value": 51,
-      "extracted_unit": "tonnes CO2e",
-      "extracted_label": "diesel generators (scope 1)",
-      "extracted_t_co2e": 51.0,
+      "extracted_value": 4.58,
+      "extracted_unit": "MM MT CO2e",
+      "extracted_label": "Scope 1 absolute emissions",
+      "extracted_t_co2e": 4580000.0,
       "unit_known": true,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": 51.0,
-          "unit": "CO2e emissions (tonnes)",
-          "unit_norm": "CO2e emissions (tonnes)",
-          "value_t_co2e": 51.0,
-          "page": 37.0,
+          "value": 4.58,
+          "unit": "MM MT CO2e",
+          "unit_norm": "MM MT CO2e",
+          "value_t_co2e": 4580000.0,
+          "page": 22.0,
+          "rel_error": 0.0
+        }
+      ],
+      "best_rel_error": 0.0,
+      "is_match": true
+    },
+    {
+      "year": 2018,
+      "scope": "1",
+      "extracted_value": 4.77,
+      "extracted_unit": "MM MT CO2e",
+      "extracted_label": "Scope 1 absolute emissions",
+      "extracted_t_co2e": 4770000.0,
+      "unit_known": true,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 4.77,
+          "unit": "MM MT CO2e",
+          "unit_norm": "MM MT CO2e",
+          "value_t_co2e": 4770000.0,
+          "page": 22.0,
           "rel_error": 0.0
         }
       ],
@@ -47,100 +69,78 @@
     },
     {
       "year": 2016,
-      "scope": "2mb",
-      "extracted_value": 3409,
-      "extracted_unit": "tonnes CO2e",
-      "extracted_label": "electricity, heating, district cooling (scope 2); net emissions after buying Guarantees of Origin",
-      "extracted_t_co2e": 3409.0,
+      "scope": "2lb",
+      "extracted_value": 0.34,
+      "extracted_unit": "MM MT CO2e",
+      "extracted_label": "Scope 2 absolute emissions (methodology not specified as market- or location-based)",
+      "extracted_t_co2e": 340000.0,
       "unit_known": true,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": NaN,
-          "unit": NaN,
-          "unit_norm": NaN,
-          "value_t_co2e": null,
-          "page": NaN,
-          "rel_error": null
+          "value": 0.34,
+          "unit": "MM MT CO2e",
+          "unit_norm": "MM MT CO2e",
+          "value_t_co2e": 340000.0,
+          "page": 22.0,
+          "rel_error": 0.0
         }
       ],
-      "best_rel_error": null,
-      "is_match": false
+      "best_rel_error": 0.0,
+      "is_match": true
     },
     {
       "year": 2017,
-      "scope": "2mb",
-      "extracted_value": 3187,
-      "extracted_unit": "tonnes CO2e",
-      "extracted_label": "electricity, heating, district cooling (scope 2); net emissions after buying Guarantees of Origin",
-      "extracted_t_co2e": 3187.0,
+      "scope": "2lb",
+      "extracted_value": 0.33,
+      "extracted_unit": "MM MT CO2e",
+      "extracted_label": "Scope 2 absolute emissions (methodology not specified as market- or location-based)",
+      "extracted_t_co2e": 330000.0,
       "unit_known": true,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": NaN,
-          "unit": NaN,
-          "unit_norm": NaN,
-          "value_t_co2e": null,
-          "page": NaN,
-          "rel_error": null
+          "value": 0.33,
+          "unit": "MM MT CO2e",
+          "unit_norm": "MM MT CO2e",
+          "value_t_co2e": 330000.0,
+          "page": 22.0,
+          "rel_error": 0.0
         }
       ],
-      "best_rel_error": null,
-      "is_match": false
+      "best_rel_error": 0.0,
+      "is_match": true
     },
     {
-      "year": 2016,
-      "scope": "3",
-      "extracted_value": 13576,
-      "extracted_unit": "tonnes CO2e",
-      "extracted_label": "business travel (scope 3)",
-      "extracted_t_co2e": 13576.0,
+      "year": 2018,
+      "scope": "2lb",
+      "extracted_value": 0.32,
+      "extracted_unit": "MM MT CO2e",
+      "extracted_label": "Scope 2 absolute emissions (methodology not specified as market- or location-based)",
+      "extracted_t_co2e": 320000.0,
       "unit_known": true,
       "in_gold": true,
       "gold_entries": [
         {
-          "value": NaN,
-          "unit": NaN,
-          "unit_norm": NaN,
-          "value_t_co2e": null,
-          "page": 37.0,
-          "rel_error": null
+          "value": 0.32,
+          "unit": "MM MT CO2e",
+          "unit_norm": "MM MT CO2e",
+          "value_t_co2e": 320000.0,
+          "page": 22.0,
+          "rel_error": 0.0
         }
       ],
-      "best_rel_error": null,
-      "is_match": false
-    },
-    {
-      "year": 2017,
-      "scope": "3",
-      "extracted_value": 19500,
-      "extracted_unit": "tonnes CO2e",
-      "extracted_label": "business travel (scope 3)",
-      "extracted_t_co2e": 19500.0,
-      "unit_known": true,
-      "in_gold": true,
-      "gold_entries": [
-        {
-          "value": NaN,
-          "unit": NaN,
-          "unit_norm": NaN,
-          "value_t_co2e": null,
-          "page": NaN,
-          "rel_error": null
-        }
-      ],
-      "best_rel_error": null,
-      "is_match": false
+      "best_rel_error": 0.0,
+      "is_match": true
     }
   ],
   "summary": {
     "total_extracted": 6,
     "in_gold": 6,
     "not_in_gold": 0,
-    "matched": 2,
-    "precision": 0.3333,
-    "recall": 0.05,
+    "matched": 6,
+    "precision": 1.0,
+    "recall": 0.15,
     "mean_rel_error_matched": 0.0,
     "missing_in_extraction": [
       {
@@ -193,19 +193,19 @@
       },
       {
         "year": 2016,
-        "scope": "2lb"
+        "scope": "2mb"
+      },
+      {
+        "year": 2016,
+        "scope": "3"
       },
       {
         "year": 2017,
-        "scope": "2lb"
+        "scope": "2mb"
       },
       {
-        "year": 2018,
-        "scope": "1"
-      },
-      {
-        "year": 2018,
-        "scope": "2lb"
+        "year": 2017,
+        "scope": "3"
       },
       {
         "year": 2018,

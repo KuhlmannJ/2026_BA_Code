@@ -1,0 +1,338 @@
+{
+  "report": "varta_ag_2021_report",
+  "results": [
+    {
+      "year": 2019,
+      "scope": "1",
+      "extracted_value": 3598,
+      "extracted_unit": "CO2 eq t",
+      "extracted_label": "Scope 1",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 3598.0,
+          "unit": "CO2-eq t",
+          "unit_norm": "CO2e t",
+          "value_t_co2e": 3598.0,
+          "page": 39.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2020,
+      "scope": "1",
+      "extracted_value": 4417,
+      "extracted_unit": "CO2 eq t",
+      "extracted_label": "Scope 1",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 4417.0,
+          "unit": "CO2-eq t",
+          "unit_norm": "CO2e t",
+          "value_t_co2e": 4417.0,
+          "page": 39.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2021,
+      "scope": "1",
+      "extracted_value": 5894,
+      "extracted_unit": "CO2 eq t",
+      "extracted_label": "Scope 1",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 5894.0,
+          "unit": "CO2-eq t",
+          "unit_norm": "CO2e t",
+          "value_t_co2e": 5894.0,
+          "page": 39.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2019,
+      "scope": "2lb",
+      "extracted_value": 17038,
+      "extracted_unit": "CO2 eq t",
+      "extracted_label": "Scope 2 (location-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 17038.0,
+          "unit": "CO2-eq t",
+          "unit_norm": "CO2e t",
+          "value_t_co2e": 17038.0,
+          "page": 39.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2020,
+      "scope": "2lb",
+      "extracted_value": 20885,
+      "extracted_unit": "CO2 eq t",
+      "extracted_label": "Scope 2 (location-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 20885.0,
+          "unit": "CO2-eq t",
+          "unit_norm": "CO2e t",
+          "value_t_co2e": 20885.0,
+          "page": 39.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2021,
+      "scope": "2lb",
+      "extracted_value": 23503,
+      "extracted_unit": "CO2 eq t",
+      "extracted_label": "Scope 2 (location-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 23503.0,
+          "unit": "CO2-eq t",
+          "unit_norm": "CO2e t",
+          "value_t_co2e": 23503.0,
+          "page": 39.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2019,
+      "scope": "2mb",
+      "extracted_value": 10347,
+      "extracted_unit": "CO2 eq t",
+      "extracted_label": "Scope 2 (market-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 10347.0,
+          "unit": "CO2-eq t",
+          "unit_norm": "CO2e t",
+          "value_t_co2e": 10347.0,
+          "page": 39.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2020,
+      "scope": "2mb",
+      "extracted_value": 12296,
+      "extracted_unit": "CO2 eq t",
+      "extracted_label": "Scope 2 (market-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 12296.0,
+          "unit": "CO2-eq t",
+          "unit_norm": "CO2e t",
+          "value_t_co2e": 12296.0,
+          "page": 39.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    },
+    {
+      "year": 2021,
+      "scope": "2mb",
+      "extracted_value": 1168,
+      "extracted_unit": "CO2 eq t",
+      "extracted_label": "Scope 2 (market-based)",
+      "extracted_t_co2e": null,
+      "unit_known": false,
+      "in_gold": true,
+      "gold_entries": [
+        {
+          "value": 1168.0,
+          "unit": "CO2-eq t",
+          "unit_norm": "CO2e t",
+          "value_t_co2e": 1168.0,
+          "page": 39.0,
+          "rel_error": null
+        }
+      ],
+      "best_rel_error": null,
+      "is_match": false
+    }
+  ],
+  "summary": {
+    "total_extracted": 9,
+    "in_gold": 9,
+    "not_in_gold": 0,
+    "matched": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "mean_rel_error_matched": null,
+    "missing_in_extraction": [
+      {
+        "year": 2013,
+        "scope": "1"
+      },
+      {
+        "year": 2013,
+        "scope": "2lb"
+      },
+      {
+        "year": 2013,
+        "scope": "2mb"
+      },
+      {
+        "year": 2013,
+        "scope": "3"
+      },
+      {
+        "year": 2014,
+        "scope": "1"
+      },
+      {
+        "year": 2014,
+        "scope": "2lb"
+      },
+      {
+        "year": 2014,
+        "scope": "2mb"
+      },
+      {
+        "year": 2014,
+        "scope": "3"
+      },
+      {
+        "year": 2015,
+        "scope": "1"
+      },
+      {
+        "year": 2015,
+        "scope": "2lb"
+      },
+      {
+        "year": 2015,
+        "scope": "2mb"
+      },
+      {
+        "year": 2015,
+        "scope": "3"
+      },
+      {
+        "year": 2016,
+        "scope": "1"
+      },
+      {
+        "year": 2016,
+        "scope": "2lb"
+      },
+      {
+        "year": 2016,
+        "scope": "2mb"
+      },
+      {
+        "year": 2016,
+        "scope": "3"
+      },
+      {
+        "year": 2017,
+        "scope": "1"
+      },
+      {
+        "year": 2017,
+        "scope": "2lb"
+      },
+      {
+        "year": 2017,
+        "scope": "2mb"
+      },
+      {
+        "year": 2017,
+        "scope": "3"
+      },
+      {
+        "year": 2018,
+        "scope": "1"
+      },
+      {
+        "year": 2018,
+        "scope": "2lb"
+      },
+      {
+        "year": 2018,
+        "scope": "2mb"
+      },
+      {
+        "year": 2018,
+        "scope": "3"
+      },
+      {
+        "year": 2019,
+        "scope": "3"
+      },
+      {
+        "year": 2020,
+        "scope": "3"
+      },
+      {
+        "year": 2021,
+        "scope": "3"
+      },
+      {
+        "year": 2022,
+        "scope": "1"
+      },
+      {
+        "year": 2022,
+        "scope": "2lb"
+      },
+      {
+        "year": 2022,
+        "scope": "2mb"
+      },
+      {
+        "year": 2022,
+        "scope": "3"
+      }
+    ]
+  }
+}
