@@ -1,0 +1,3170 @@
+
+============================================================
+  LOAD VLM: Qwen/Qwen3-VL-32B-Instruct
+============================================================
+
+Seed prompt loaded from: /home/j/jkuhlma1/2026_BA_Code/src/GEPA/Query0_Extraction.txt
+
+============================================================
+  0
+============================================================
+
+[evaluate] Run #0 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/0
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.39s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 38.5s
+    t_processorbatch: 0.0s
+    t_pdf: 39.23s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/0/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.72s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 53.43s
+    t_processorbatch: 0.0s
+    t_pdf: 54.83s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/0/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.07s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 105.62s
+    t_processorbatch: 0.0s
+    t_pdf: 105.95s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/0/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.1s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 51.11s
+    t_processorbatch: 0.0s
+    t_pdf: 51.56s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/0/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.08s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 93.7s
+    t_processorbatch: 0.0s
+    t_pdf: 94.19s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/0/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.7611  (344/452 hits)  is_best=True
+Iteration 0: Base program full valset score: 0.7610619469026548 over 1 / 1 examples
+Iteration 1: Selected program 0 score: 0.7610619469026548
+
+============================================================
+  1
+============================================================
+
+[evaluate] Run #1 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/1
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 37.73s
+    t_processorbatch: 0.0s
+    t_pdf: 38.34s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/1/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.69s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.22s
+    t_processorbatch: 0.0s
+    t_pdf: 51.83s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/1/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 105.16s
+    t_processorbatch: 0.0s
+    t_pdf: 105.46s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/1/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 51.3s
+    t_processorbatch: 0.0s
+    t_pdf: 51.75s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/1/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.08s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 93.82s
+    t_processorbatch: 0.0s
+    t_pdf: 94.31s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/1/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.7854  (355/452 hits)  is_best=True
+Iteration 1: Proposed new text for current_candidate: You are an expert in corporate sustainability reporting and greenhouse‑gas (GHG) accounting, and you will extract ONLY the *total* reported emissions for each scope from the given PDF.
+
+**What to extract**
+- Scope 1 (direct)
+- Scope 2 – Location‑based
+- Scope 2 – Market‑based
+- Scope 3 (all other indirect)
+
+For every year that appears in the report, extract the *total* value for the scope (the row/entry explicitly labelled “Total”, “Grand total”, “Scope X total”, “All emissions”, etc.).  
+If a total for a given year cannot be identified with certainty, **omit that year entirely** (do NOT output a partial or guessed value).  
+
+**How to extract**
+1. Scan the whole document, including tables, charts and narrative text.  
+2. When you encounter a table, treat the *year* as the row label (or, if the table is transposed, as the column label) and take the value that sits in the same row/column as that year.  
+3. Keep the number exactly as written, but:
+   - Remove thousands separators (commas, spaces) so the JSON value is a plain number.
+   - Preserve any decimal fraction.
+4. Capture the unit string exactly as it appears next to the number (e.g., `ktCO₂eq`, `tonnes CO2e`, `t CO2e`). Do not convert or normalise units.
+5. If the source provides an additional descriptive label for the value (e.g., “Scope 1 total (including biogenic)”), store it in the `label` field; otherwise set `label` to an empty string `""`.
+
+**Output format**
+Return **only** a single JSON object that matches this schema (replace placeholders with your extracted data). The keys must appear in the order shown.
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+**Additional rules**
+- Do **not** output years for which no total value is found.
+- Do **not** output multiple entries for the same year unless the source provides distinct labelled totals (e.g., “Scope 2 (location‑based) – Total” and “Scope 2 (location‑based) – Purchased electricity”). In that case include each as a separate object in the array.
+- Do **not** add any commentary, explanations, or extra whitespace outside the JSON object.
+- If the report name or title cannot be determined, use an empty string `""` for the respective field.
+
+Proceed with the extraction.
+
+============================================================
+  2
+============================================================
+
+[evaluate] Run #2 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/2
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.5s
+    t_processorbatch: 0.0s
+    t_pdf: 41.1s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/2/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.68s
+    t_processorbatch: 0.0s
+    t_pdf: 44.04s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/2/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 51.27s
+    t_processorbatch: 0.0s
+    t_pdf: 51.57s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/2/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 41.91s
+    t_processorbatch: 0.0s
+    t_pdf: 42.37s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/2/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.07s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.65s
+    t_processorbatch: 0.0s
+    t_pdf: 108.14s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/2/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=True
+Iteration 1: New subsample score 0.8230088495575221 is better than old score 0.7853982300884956. Continue to full eval and add to candidate pool.
+
+============================================================
+  3
+============================================================
+
+[evaluate] Run #3 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/3
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.55s
+    t_processorbatch: 0.0s
+    t_pdf: 41.15s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/3/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.73s
+    t_processorbatch: 0.0s
+    t_pdf: 44.1s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/3/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 46.88s
+    t_processorbatch: 0.0s
+    t_pdf: 47.19s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/3/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.21s
+    t_processorbatch: 0.0s
+    t_pdf: 42.67s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/3/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.07s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.29s
+    t_processorbatch: 0.0s
+    t_pdf: 107.79s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/3/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 1: Found a better program on the valset with score 0.8230088495575221.
+Iteration 1: Valset score for new program: 0.8230088495575221 (coverage 1 / 1)
+Iteration 1: Val aggregate for new program: 0.8230088495575221
+Iteration 1: Individual valset scores for new program: {0: 0.8230088495575221}
+Iteration 1: New valset pareto front scores: {0: 0.8230088495575221}
+Iteration 1: Valset pareto front aggregate score: 0.8230088495575221
+Iteration 1: Updated valset pareto front programs: {0: {1}}
+Iteration 1: Best valset aggregate score so far: 0.8230088495575221
+Iteration 1: Best program as per aggregate score on valset: 1
+Iteration 1: Best score on valset: 0.8230088495575221
+Iteration 1: Linear pareto front program index: 1
+Iteration 1: New program candidate index: 1
+Iteration 2: Selected program 1 score: 0.8230088495575221
+
+============================================================
+  4
+============================================================
+
+[evaluate] Run #4 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/4
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.48s
+    t_processorbatch: 0.0s
+    t_pdf: 41.08s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/4/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.81s
+    t_processorbatch: 0.0s
+    t_pdf: 44.18s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/4/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 46.88s
+    t_processorbatch: 0.0s
+    t_pdf: 47.2s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/4/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.1s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.16s
+    t_processorbatch: 0.0s
+    t_pdf: 42.63s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/4/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.07s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.72s
+    t_processorbatch: 0.0s
+    t_pdf: 108.21s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/4/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 2: Proposed new text for current_candidate: You are an expert in corporate sustainability reporting and greenhouse‑gas (GHG) accounting.  
+Your ONLY task is to extract the **total reported emissions** for each scope from the supplied PDF and return a JSON object that follows the exact schema below.
+
+--------------------------------------------------------------------
+### WHAT TO EXTRACT
+For **every year** that appears in the document, extract the *total* value for each of the four scopes:
+
+* **Scope 1** – direct emissions  
+* **Scope 2 – location‑based**  
+* **Scope 2 – market‑based**  
+* **Scope 3** – all other indirect emissions  
+
+A *total* is a cell/line that is explicitly labelled with any of the following (case‑insensitive, possibly with surrounding text):
+- “Total”, “Grand total”, “Scope X total”, “All emissions”, “Total emissions”, “Total Scope X”, etc.  
+
+If a total for a particular year cannot be found **with certainty**, **do not output that year** for that scope.
+
+--------------------------------------------------------------------
+### HOW TO FIND THE VALUES
+1. **Scan the entire PDF** – text, tables, charts, footnotes and captions.  
+2. **Identify scope sections** – headings, table titles, column headers or row headers that contain “Scope 1”, “Scope 2 (location‑based)”, “Scope 2 (market‑based)”, “Scope 3”, or obvious synonyms.  
+3. **Locate the total row/column** inside each identified scope section.  
+   - The total may be a **row** (e.g., “Total” in the first column) **or a column** (e.g., “Total” in the header).  
+   - If the table is transposed, treat the *year* as the column header; otherwise treat the *year* as the row header.  
+4. **Match years to values**  
+   - Find every year string (e.g., “2019”, “2020”, “2021”, …) that appears as a header or row label in the same table.  
+   - Take the numeric token that lies in the intersecting cell with the total label.  
+   - **Do not shift values**: the value for year Y must come from the cell that is exactly in the same row/column as year Y and the total label.  
+5. **Extract the number**  
+   - Accept formats like `1,234`, `1 234`, `1234.56`, `1 234,56` (comma as thousand separator is optional).  
+   - Remove all thousands separators (commas, spaces, non‑breaking spaces) but keep the decimal point.  
+   - Store the result as a JSON number (no quotes).  
+6. **Extract the unit**  
+   - The unit is the token(s) immediately following the number (e.g., `ktCO₂eq`, `tonnes CO2e`, `t CO₂e`).  
+   - Capture it **exactly as written** (including case and any superscripts).  
+   - If the unit cannot be identified, set the `unit` field to an empty string `""`.  
+7. **Extract the label**  
+   - Use the exact wording of the total label (the text that indicates the row/column is a total), **excluding the year**.  
+   - If the label is simply “Total”, set `label` to an empty string `""`.  
+
+--------------------------------------------------------------------
+### WHAT NOT TO EXTRACT
+- Partial totals, breakdowns, intensity figures, percentages, or any number that is **not** explicitly marked as a total for the whole scope.  
+- Numbers that belong to footnotes, page numbers, page‑footer dates, or unrelated tables.  
+- Values that are ambiguous (e.g., multiple candidates for the same year without a clear “total” label).  
+
+--------------------------------------------------------------------
+### OUTPUT FORMAT
+Return **exactly one** JSON object that matches the schema below.  
+*The keys must appear in the order shown.*  
+If a field (report name, title, unit, label) cannot be determined, use an empty string `""`.  
+If a scope has no extracted years, provide an empty object `{}` for that scope.
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+        /* additional objects only if distinct total labels exist for the same year */
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+--------------------------------------------------------------------
+### ADDITIONAL RULES
+- Do **not** output any commentary, explanations, or extra whitespace outside the JSON object.  
+- Do **not** output a year for which a total could not be identified with certainty.  
+- If multiple distinct total rows exist for the same scope and year (e.g., “Total (including biogenic)”, “Total (excluding biogenic)”), include each as a separate object in the array, preserving its specific `label`.  
+- If the report name or title cannot be found, use `""` for the respective field.  
+
+Proceed with the extraction now.
+
+============================================================
+  5
+============================================================
+
+[evaluate] Run #5 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/5
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.66s
+    t_processorbatch: 0.0s
+    t_pdf: 41.26s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/5/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.59s
+    t_processorbatch: 0.0s
+    t_pdf: 51.96s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/5/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.04s
+    t_processorbatch: 0.0s
+    t_pdf: 50.35s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/5/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 48.14s
+    t_processorbatch: 0.0s
+    t_pdf: 48.6s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/5/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.07s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.62s
+    t_processorbatch: 0.0s
+    t_pdf: 108.11s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/5/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.7965  (360/452 hits)  is_best=False
+Iteration 2: New subsample score 0.7964601769911505 is not better than old score 0.8230088495575221, skipping
+Iteration 3: Selected program 1 score: 0.8230088495575221
+
+============================================================
+  6
+============================================================
+
+[evaluate] Run #6 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/6
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.42s
+    t_processorbatch: 0.0s
+    t_pdf: 41.02s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/6/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.66s
+    t_processorbatch: 0.0s
+    t_pdf: 44.02s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/6/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 46.67s
+    t_processorbatch: 0.0s
+    t_pdf: 46.99s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/6/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.1s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.24s
+    t_processorbatch: 0.0s
+    t_pdf: 42.71s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/6/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.07s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.26s
+    t_processorbatch: 0.0s
+    t_pdf: 107.74s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/6/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 3: Proposed new text for current_candidate: You are an expert in corporate sustainability reporting, GHG accounting, and PDF text extraction. Your task is to **extract ONLY the total reported emissions** for each scope from the supplied PDF and output a single JSON object that follows the exact schema provided.
+
+### Scopes to extract
+- **Scope 1** – direct emissions  
+- **Scope 2 – location‑based**  
+- **Scope 2 – market‑based**  
+- **Scope 3** – all other indirect emissions  
+
+### What counts as a “total”
+A value is a *total* only if the surrounding label (row header, column header, caption, or adjacent narrative) explicitly contains one of the following phrases (case‑insensitive, may be combined with other words):
+- “total”, “grand total”, “overall”, “all emissions”, “scope X total”, “scope X grand total”, etc.  
+
+If a value is presented as a subset (e.g., “purchased electricity”, “biogenic”, “per employee”) **do not** treat it as a total. If you cannot locate a value that is unequivocally the total for a given year and scope, **omit that year entirely** for that scope.
+
+### How to locate values
+1. **Search the whole document** – tables, figures, footnotes, and narrative text.  
+2. **Identify a table that reports emissions for the required scope**:
+   - The **year** will appear as a 4‑digit number (1900–2100) either in a row header or a column header.  
+   - The **scope label** will contain “Scope 1”, “Scope 2 (location‑based)”, “Scope 2 (market‑based)”, or “Scope 3”.  
+   - The **total** label will contain the words listed above.  
+3. **Determine the orientation**:
+   - If the year appears in the leftmost column, treat years as rows and read horizontally.  
+   - If the year appears in the top row, treat years as columns and read vertically.  
+   - If both axes contain years (a matrix), choose the axis where the scope/total label is unambiguous (usually the opposite axis).  
+4. **Extract the numeric string that sits at the intersection of the year and the total‑scope cell**.  
+5. **Clean the number**:
+   - Remove any thousands separators (commas, spaces, thin spaces).  
+   - Keep the decimal part exactly as written.  
+   - Convert the cleaned string to a JSON number (no quotes).  
+6. **Capture the unit**:
+   - Take the unit token that immediately follows the number or that appears in the same table header (e.g., `ktCO₂eq`, `t CO2e`, `tonnes CO₂e`).  
+   - Preserve the unit exactly, including case, superscripts, and spaces. Do not perform any conversion.  
+7. **Capture an optional label**:
+   - If the cell or surrounding header includes extra descriptive text (e.g., “Scope 1 total (including biogenic)”), store that text in the `label` field.  
+   - If no extra text is present, set `label` to an empty string `""`.
+
+### Output format
+Return **only** a single JSON object that matches the schema below. The keys must appear in the exact order shown. Do not add comments, extra whitespace, or any text outside the JSON.
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Important constraints
+- **Do not output a year** for a scope if the total cannot be identified with certainty.  
+- **Do not output partial or guessed values**; omit them completely.  
+- If a report provides **multiple distinct totals** for the same year and scope (e.g., “Scope 2 (location‑based) – Total” and “Scope 2 (location‑based) – Purchased electricity”), include each as a separate object in the array for that year.  
+- If `report_name` or `report_title` cannot be determined, use an empty string `""`.  
+- The evaluator will normalise year strings with a regular expression, so you may output the year exactly as it appears in the document.  
+
+Proceed with the extraction now.
+
+============================================================
+  7
+============================================================
+
+[evaluate] Run #7 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/7
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 33.37s
+    t_processorbatch: 0.0s
+    t_pdf: 33.98s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/7/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.69s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.75s
+    t_processorbatch: 0.0s
+    t_pdf: 44.12s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/7/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 51.2s
+    t_processorbatch: 0.0s
+    t_pdf: 51.52s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/7/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.1s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.3s
+    t_processorbatch: 0.0s
+    t_pdf: 42.76s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/7/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.07s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 22.35s
+    t_processorbatch: 0.0s
+    t_pdf: 22.84s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/7/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.6991  (316/452 hits)  is_best=False
+Iteration 3: New subsample score 0.6991150442477876 is not better than old score 0.8230088495575221, skipping
+Iteration 4: Selected program 1 score: 0.8230088495575221
+
+============================================================
+  8
+============================================================
+
+[evaluate] Run #8 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/8
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.46s
+    t_processorbatch: 0.0s
+    t_pdf: 41.06s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/8/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.75s
+    t_processorbatch: 0.0s
+    t_pdf: 44.12s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/8/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 51.22s
+    t_processorbatch: 0.0s
+    t_pdf: 51.53s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/8/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.16s
+    t_processorbatch: 0.0s
+    t_pdf: 42.62s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/8/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.08s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.1s
+    t_processorbatch: 0.0s
+    t_pdf: 107.59s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/8/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 4: Proposed new text for current_candidate: You are an expert in corporate sustainability reporting and greenhouse‑gas (GHG) accounting. Your task is to extract **only the total reported emissions** for each scope from the supplied PDF and return them in the exact JSON schema shown at the end.
+
+### What must be extracted
+- **Scope 1** – direct emissions  
+- **Scope 2 – Location‑based**  
+- **Scope 2 – Market‑based**  
+- **Scope 3** – all other indirect emissions  
+
+For **every year** that appears in the report, locate the row/column that is explicitly labelled as the *total* for the given scope. Acceptable total‑type labels include (but are not limited to):
+`Total`, `Grand total`, `Scope X total`, `All emissions`, `Total Scope X`, `Scope X – Total`, etc.  
+If a total for a particular year cannot be found with certainty, **do not output that year at all**.
+
+### How to locate the values
+1. **Search the whole document** – tables, figures, sidebars, narrative text.  
+2. **Identify the table orientation**:  
+   * If years appear as **row headers**, the total value sits in the same row as the year.  
+   * If years appear as **column headers**, the total value sits in the same column as the year.  
+3. **Match the total label** exactly (case‑insensitive) and pair it with the year label.  
+4. **Take the number that is directly adjacent to that label** (usually in the same cell).  
+5. **Remove any thousands separators** (commas, spaces) but keep decimal points.  
+6. **Capture the unit string that appears immediately after the number** (e.g., `ktCO₂eq`, `tonnes CO2e`, `t CO2e`). Do **not** convert or rename units.  
+7. **Label field**: if the cell contains an additional descriptive phrase (e.g., “Scope 1 total (including biogenic)”), copy the full phrase into `label`. If no extra phrase is present, set `label` to `""`.
+
+### What to omit
+- Any year for which a total cannot be identified with certainty.  
+- Numbers that are not explicitly labelled as a total (e.g., “Purchased electricity”, “Scope 2 – Purchased electricity”).  
+- Duplicate entries for the same year unless the source provides distinct total rows with different labels.  
+
+### Output format
+Return **only** a single JSON object that precisely follows this schema. Preserve key order exactly as shown. Use an empty string (`""`) for `report_name` or `report_title` if they cannot be determined.
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Additional strict rules
+- Do **not** add any commentary, explanations, or extra whitespace outside the JSON object.  
+- Do **not** output `null` or `NaN`; simply omit the year entry if no valid total is found.  
+- Keep the `value` field as a numeric literal (no quotes).  
+- Keep the `unit` exactly as it appears in the source (including case and special characters).  
+
+Proceed with the extraction.
+
+============================================================
+  9
+============================================================
+
+[evaluate] Run #9 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/9
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.43s
+    t_processorbatch: 0.0s
+    t_pdf: 41.04s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/9/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.68s
+    t_processorbatch: 0.0s
+    t_pdf: 52.05s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/9/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 47.08s
+    t_processorbatch: 0.0s
+    t_pdf: 47.4s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/9/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 53.05s
+    t_processorbatch: 0.0s
+    t_pdf: 53.51s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/9/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.08s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.32s
+    t_processorbatch: 0.0s
+    t_pdf: 107.82s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/9/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8009  (362/452 hits)  is_best=False
+Iteration 4: New subsample score 0.8008849557522124 is not better than old score 0.8230088495575221, skipping
+Iteration 5: Selected program 1 score: 0.8230088495575221
+
+============================================================
+  10
+============================================================
+
+[evaluate] Run #10 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/10
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.48s
+    t_processorbatch: 0.0s
+    t_pdf: 41.09s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/10/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.66s
+    t_processorbatch: 0.0s
+    t_pdf: 44.03s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/10/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 46.77s
+    t_processorbatch: 0.0s
+    t_pdf: 47.08s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/10/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 44.45s
+    t_processorbatch: 0.0s
+    t_pdf: 44.92s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/10/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.08s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.24s
+    t_processorbatch: 0.0s
+    t_pdf: 107.74s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/10/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 5: Proposed new text for current_candidate: You are an expert in corporate sustainability reporting and GHG accounting.  
+Your ONLY task is to extract the **total** GHG emissions that the report explicitly labels as a total for each scope and each reported year.
+
+### What must be extracted
+- **Scope 1** (direct emissions)  
+- **Scope 2 – Location‑based**  
+- **Scope 2 – Market‑based**  
+- **Scope 3** (all other indirect emissions)
+
+For every year that appears in the PDF, extract the *single* total value that is clearly marked as a total for the corresponding scope (e.g., “Scope 1 Total”, “Total Scope 2 (location‑based)”, “Grand total”, “All emissions”, etc.).  
+If the report provides more than one labelled total for the same scope‑year (for example, separate totals for different fuel types), include each as a separate object in the array, preserving the label text verbatim.
+
+**Do NOT extract**:
+- Sub‑totals, line‑item numbers, or any value that is not explicitly labelled as a total for the scope.
+- Values where the label is ambiguous or where the total cannot be identified with certainty. Omit that year‑scope completely.
+
+### How to locate the value
+1. **Search the entire document** (text, tables, figures, captions).  
+2. **Identify tables that contain yearly data**.  
+   - The year will appear as a row header **or** as a column header.  
+   - The total for a scope will appear in the same row (if years are rows) **or** the same column (if years are columns) as the year label, **and** the cell’s accompanying label must contain the word *total* (case‑insensitive) together with the scope identifier.  
+3. **If a table is transposed**, treat the year as the column label and the total label as the row label; the intersection cell is the value.  
+4. **If the value is presented in narrative text**, only accept it when the sentence explicitly says “… total … for [Year] … Scope X …” and the number is the only figure in that clause.  
+5. **Extract the numeric string exactly as written**:
+   - Remove thousands separators (commas, spaces, non‑breaking spaces).  
+   - Keep any decimal separator (dot).  
+   - Do NOT round or convert the number.  
+6. **Extract the unit** that appears directly next to the number within the same cell or sentence (e.g., `ktCO₂eq`, `t CO2e`, `tonnes CO2e`). Preserve the unit string verbatim; do not normalise it.  
+7. **Capture the label** that accompanies the number (the exact text that includes “total”). If no extra label exists, set `label` to an empty string `""`.
+
+### Output format
+Return **exactly one** JSON object that follows this schema.  Keys must appear in the order shown.  Use an empty string `""` for `report_name` or `report_title` if they cannot be determined.
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Additional strict rules
+- **Never output a year for which no total could be unambiguously found.**  
+- **Never output more than one entry for the same year‑scope unless the source supplies distinct labelled totals.**  
+- **Do not output any commentary, explanations, or extra whitespace outside the JSON object.**  
+- **If any required field (value, unit, label) is missing for a candidate total, discard that candidate.**  
+- **Values that are clearly not the total (e.g., line‑item emissions, percentages, scopes of sub‑categories) must be ignored.**  
+
+Proceed with the extraction.
+
+============================================================
+  11
+============================================================
+
+[evaluate] Run #11 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/11
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.44s
+    t_processorbatch: 0.0s
+    t_pdf: 41.05s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/11/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.48s
+    t_processorbatch: 0.0s
+    t_pdf: 51.85s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/11/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.72s
+    t_processorbatch: 0.0s
+    t_pdf: 51.03s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/11/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 48.05s
+    t_processorbatch: 0.0s
+    t_pdf: 48.51s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/11/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.07s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.04s
+    t_processorbatch: 0.0s
+    t_pdf: 107.54s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/11/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 5: New subsample score 0.8230088495575221 is not better than old score 0.8230088495575221, skipping
+Iteration 6: Selected program 1 score: 0.8230088495575221
+
+============================================================
+  12
+============================================================
+
+[evaluate] Run #12 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/12
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.54s
+    t_processorbatch: 0.0s
+    t_pdf: 41.15s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/12/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.78s
+    t_processorbatch: 0.0s
+    t_pdf: 44.15s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/12/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 46.93s
+    t_processorbatch: 0.0s
+    t_pdf: 47.24s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/12/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 44.12s
+    t_processorbatch: 0.0s
+    t_pdf: 44.58s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/12/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.08s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.39s
+    t_processorbatch: 0.0s
+    t_pdf: 107.89s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/12/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 6: Proposed new text for current_candidate: You are an expert in corporate sustainability reporting and greenhouse‑gas (GHG) accounting.  
+Your task is to extract **only the total reported emissions for each scope** from the supplied PDF and output a **single JSON object** that matches the schema below **exactly**, with no extra text, comments, or whitespace.
+
+---
+
+### What to extract
+- **Scope 1** (direct)
+- **Scope 2 – Location‑based**
+- **Scope 2 – Market‑based**
+- **Scope 3** (all other indirect)
+
+For **every year** that appears in the report, locate the **cell that is explicitly labelled as a total for that scope** (e.g. “Total”, “Grand total”, “Scope 1 total”, “All emissions”, etc.).  
+If a total for a given year cannot be found with certainty, **omit that year completely** for that scope.
+
+---
+
+### How to extract
+
+1. **Read the whole document** – tables, charts, narrative text, footnotes, annexes.  
+2. **Identify years** – any four‑digit number that is used as a row label or column label in a table.  
+3. **Locate the total for the required scope**  
+   - If the table is oriented *year‑rows* → use the cell in the same row as the year.  
+   - If the table is *year‑columns* → use the cell in the same column as the year.  
+   - If the total is given in a separate “Total” row/column, first find that row/column, then intersect it with the year cell.  
+4. **Extract the numeric value** exactly as written, then:
+   - Remove any thousands separators (commas, spaces, thin spaces).  
+   - Preserve any decimal fraction.  
+   - Do **not** perform any unit conversion.  
+5. **Extract the unit** that appears directly next to the numeric value (same cell or immediately adjacent). Preserve the exact string, including case, superscripts, and special characters (e.g. `ktCO₂eq`, `t CO₂e`, `tonnes CO2e`).  
+6. **Extract a descriptive label** if the source provides one for that total (e.g., “Scope 1 total (including biogenic)”).  
+   - If no label is present, use an empty string `""`.  
+7. **Do not** use grand‑total rows that sum across scopes for an individual scope’s entry.  
+8. **Do not** guess; if you are unsure about the total for a year, skip that year entirely.
+
+---
+
+### Output format
+Return **only** a single JSON object with the exact structure below.  
+All keys must appear in the order shown, and every year must be a **string** key (`"2020"`).  
+Each year maps to an **array** (allowing multiple labelled totals).  
+If a scope has no extracted years, provide an empty object `{}` for that scope.
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+- **Do not** output any additional fields, comments, or whitespace outside this JSON.  
+- If `report_name` or `report_title` cannot be determined, set the value to an empty string `""`.  
+
+Proceed with the extraction.
+
+============================================================
+  13
+============================================================
+
+[evaluate] Run #13 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/13
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.34s
+    t_processorbatch: 0.0s
+    t_pdf: 40.94s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/13/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.41s
+    t_processorbatch: 0.0s
+    t_pdf: 51.78s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/13/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.44s
+    t_processorbatch: 0.0s
+    t_pdf: 50.75s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/13/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 47.63s
+    t_processorbatch: 0.0s
+    t_pdf: 48.09s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/13/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.07s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.26s
+    t_processorbatch: 0.0s
+    t_pdf: 107.75s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/13/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.7965  (360/452 hits)  is_best=False
+Iteration 6: New subsample score 0.7964601769911505 is not better than old score 0.8230088495575221, skipping
+Iteration 7: Selected program 1 score: 0.8230088495575221
+
+============================================================
+  14
+============================================================
+
+[evaluate] Run #14 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/14
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.46s
+    t_processorbatch: 0.0s
+    t_pdf: 41.07s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/14/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.73s
+    t_processorbatch: 0.0s
+    t_pdf: 44.1s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/14/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 46.8s
+    t_processorbatch: 0.0s
+    t_pdf: 47.11s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/14/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.01s
+    t_processorbatch: 0.0s
+    t_pdf: 42.47s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/14/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.08s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.81s
+    t_processorbatch: 0.0s
+    t_pdf: 108.31s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/14/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 7: Proposed new text for current_candidate: You are a specialist in corporate sustainability reporting and GHG accounting. Your task is to extract **only the *total* emissions** reported for each scope from a PDF document and output them in a single JSON object that follows the exact schema provided.
+
+### What must be extracted
+- **Scope 1** – direct emissions  
+- **Scope 2 – location‑based**  
+- **Scope 2 – market‑based**  
+- **Scope 3** – all other indirect emissions  
+
+For **every year** that appears in the report you must provide the *total* value for each scope (i.e., the entry that is explicitly labelled “Total”, “Grand total”, “Scope X total”, “All emissions”, etc.).  
+If a total for a given year cannot be identified **with absolute certainty**, omit that year for that scope – do not guess or output a partial value.
+
+### How to locate the totals
+1. **Search the whole document** – tables, charts, footnotes and narrative text.  
+2. **Identify tables** that contain emissions data.  
+   - **Year orientation**:  
+     *If years appear as row labels, treat each row as a year.*  
+     *If years appear as column headers (transposed table), treat each column as a year.*  
+     Verify the orientation before extracting values.  
+3. **Find the total row/column** for the required scope: look for any of the following keywords (case‑insensitive) in the same row/column label:  
+   `total`, `grand total`, `scope 1 total`, `scope 2 total`, `scope 3 total`, `all emissions`, `overall total`.  
+   - If more than one total line exists for the same scope/year (e.g., “Scope 2 (location‑based) – Total” vs. “Scope 2 (location‑based) – Purchased electricity”), treat each as a separate entry and include both in the array.  
+   - If the label does **not** contain a total keyword, ignore that entry.  
+4. **Extract the numeric value** exactly as written, then:
+   - Remove any thousands separators (commas, spaces, non‑breaking spaces).  
+   - Keep the decimal point and any trailing zeros (e.g., `2071.0`).  
+   - Preserve the sign if present.  
+5. **Capture the unit** that appears **immediately after** the numeric value (allow for a space). Record it verbatim, including superscripts or special characters (e.g., `ktCO₂eq`, `tonnes CO2e`, `t CO2e`, `tCO₂e`). Do **not** normalise or convert units.  
+6. **Label**: if the source supplies an additional descriptive label for the total (the text before the number, such as “Scope 1 total (including biogenic)”), copy that text into the `label` field. If there is no extra label, set `label` to an empty string `""`.
+
+### Output format
+Return **only** one JSON object, exactly matching this schema (order matters). Use the filename **without** the `.pdf` extension for `report_name`. If the report title cannot be determined, use `""`. Do not include any extra characters, commentary, or whitespace outside the JSON.
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Additional strict rules
+- **Do not output years** for which a total cannot be confidently identified.  
+- **Do not output duplicate entries** for the same year unless they have distinct labels, as described above.  
+- **Do not output any text** other than the JSON object.  
+- If `report_name` or `report_title` is missing, use an empty string `""`.  
+
+Proceed with the extraction using the guidelines above.
+
+============================================================
+  15
+============================================================
+
+[evaluate] Run #15 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/15
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.35s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.52s
+    t_processorbatch: 0.0s
+    t_pdf: 41.14s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/15/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.56s
+    t_processorbatch: 0.0s
+    t_pdf: 52.18s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/15/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.81s
+    t_processorbatch: 0.0s
+    t_pdf: 51.12s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/15/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 48.21s
+    t_processorbatch: 0.0s
+    t_pdf: 48.67s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/15/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.07s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.79s
+    t_processorbatch: 0.0s
+    t_pdf: 108.29s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/15/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 7: New subsample score 0.8230088495575221 is not better than old score 0.8230088495575221, skipping
+Iteration 8: Selected program 1 score: 0.8230088495575221
+
+============================================================
+  16
+============================================================
+
+[evaluate] Run #16 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/16
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.51s
+    t_processorbatch: 0.0s
+    t_pdf: 41.11s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/16/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.91s
+    t_processorbatch: 0.0s
+    t_pdf: 44.29s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/16/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 51.21s
+    t_processorbatch: 0.0s
+    t_pdf: 51.52s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/16/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.05s
+    t_processorbatch: 0.0s
+    t_pdf: 42.52s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/16/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.08s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.73s
+    t_processorbatch: 0.0s
+    t_pdf: 108.23s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/16/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 8: Proposed new text for current_candidate: You are an expert in corporate sustainability reporting and GHG accounting. Your ONLY task is to extract the *total* emissions reported for each scope from the provided PDF and output a single JSON object that exactly matches the schema at the end of this prompt.
+
+### Scopes to extract
+- Scope 1 (direct)
+- Scope 2 – Location‑based
+- Scope 2 – Market‑based
+- Scope 3 (all other indirect)
+
+### Definition of “total”
+A total is an entry that is explicitly labelled as the overall amount for the scope for a given year. Acceptable labels (case‑insensitive, may contain extra text) include, but are not limited to:
+- “Total”, “Grand total”, “Scope 1 total”, “Scope 2 total”, “Scope 2 (location‑based) – Total”, “Scope 2 (market‑based) – Total”, “Scope 3 total”, “All emissions”, “Grand total emissions”, “Total emissions”.
+
+If a table contains both a breakdown and a grand‑total for the same year, **use only the grand‑total**. If no grand‑total can be identified with certainty, **omit that year completely** – never guess or output a partial value.
+
+### Extraction procedure
+1. **Search the entire document** – tables, figures, footnotes, and narrative text.
+2. **Determine table orientation**:
+   - If years appear in the leftmost column (or first column after row headers) → treat years as **row labels**.
+   - If years appear in the top row (or first row after column headers) → treat years as **column labels**.
+3. **Locate the total cell for the required scope**:
+   - *Row‑label orientation*: find the cell in the same row whose column header (or the first column of that row) contains a total‑type label.
+   - *Column‑label orientation*: find the cell in the same column whose row header contains a total‑type label.
+4. **Extract the numeric value exactly as printed**, then:
+   - Remove any thousands separators (commas, spaces, thin spaces).
+   - Preserve any decimal fraction; output as a JSON numeric literal (e.g., `2071.0`).
+5. **Extract the unit string** that appears immediately adjacent to the number
+   (e.g., `ktCO₂eq`, `tonnes CO2e`, `t CO2e`, `tCO₂e`). Keep the string unchanged; do not convert units.
+6. **Extract the label**: capture the exact wording that identifies the total
+   (e.g., “Scope 1 total (including biogenic)”). If no extra label exists, set
+   `"label"` to an empty string `""`.
+
+### Output format
+Return **only** one JSON object, nothing else, that follows this schema **exactly** (field order matters):
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Mandatory output rules
+- **Include only years for which a total was found**; do not create entries with `null`, `NaN`, or any placeholder.
+- If a scope has **multiple distinct labeled totals** for the same year, include each as a separate object in the array, preserving its label.
+- Do **not** output any commentary, explanations, or extra whitespace outside the JSON object.
+- If the report name or title cannot be determined, use an empty string `""` for that field.
+- Never output `nan`, `null`, or placeholder strings; simply omit the year if the total is ambiguous.
+
+### Pitfalls to avoid
+- Selecting the first numeric entry after a year instead of the cell explicitly labelled as a total.
+- Confusing sub‑category values (e.g., “Purchased electricity”) with the grand total.
+- Leaving commas or spaces in the numeric value.
+- Taking a unit from a different column/row; always take the unit adjacent to the extracted number.
+- Shifting values to the wrong year (e.g., using 2020’s value for 2021). Ensure the year‑value pairing matches the table orientation described above.
+- Outputting `nan` or any placeholder when the total cannot be verified.
+
+Proceed with the extraction, adhering strictly to every rule above.
+
+============================================================
+  17
+============================================================
+
+[evaluate] Run #17 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/17
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.53s
+    t_processorbatch: 0.0s
+    t_pdf: 41.14s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/17/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.6s
+    t_processorbatch: 0.0s
+    t_pdf: 51.98s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/17/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 51.01s
+    t_processorbatch: 0.0s
+    t_pdf: 51.32s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/17/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 48.09s
+    t_processorbatch: 0.0s
+    t_pdf: 48.56s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/17/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.08s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 22.31s
+    t_processorbatch: 0.0s
+    t_pdf: 22.81s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/17/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.6991  (316/452 hits)  is_best=False
+Iteration 8: New subsample score 0.6991150442477876 is not better than old score 0.8230088495575221, skipping
+Iteration 9: Selected program 1 score: 0.8230088495575221
+
+============================================================
+  18
+============================================================
+
+[evaluate] Run #18 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/18
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.58s
+    t_processorbatch: 0.0s
+    t_pdf: 41.19s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/18/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.68s
+    t_processorbatch: 0.0s
+    t_pdf: 44.04s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/18/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 51.26s
+    t_processorbatch: 0.0s
+    t_pdf: 51.57s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/18/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 53.07s
+    t_processorbatch: 0.0s
+    t_pdf: 53.53s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/18/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.08s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.46s
+    t_processorbatch: 0.0s
+    t_pdf: 107.95s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/18/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8009  (362/452 hits)  is_best=False
+Iteration 9: Proposed new text for current_candidate: You are an expert in corporate sustainability reporting and GHG accounting. Your task is to extract **only the total reported emissions** for each scope from a given PDF and return them in a strict JSON object that matches the schema below.
+
+### What to extract
+- **Scope 1** (direct emissions)
+- **Scope 2 – Location‑based**
+- **Scope 2 – Market‑based**
+- **Scope 3** (all other indirect emissions)
+
+For every year that appears in the report, extract the *total* value for the corresponding scope. A total is a number that is explicitly labelled with any of the following (case‑insensitive):  
+`total`, `grand total`, `scope 1 total`, `scope 2 total`, `scope 3 total`, `all emissions`, `overall emissions`, etc.  
+If you cannot locate a clear total for a given year‑scope combination, **do not output that year at all**.
+
+### How to extract
+1. **Search the entire document** – tables, charts, sidebars, narrative text, footnotes, annexes.  
+2. When you find a table, determine whether the years are in rows **or** columns.  
+   - If years are rows, the total for a year is the cell in the same row under the column that contains the total label.  
+   - If years are columns, the total for a year is the cell in the same column in the row that contains the total label.  
+3. **Confirm the label** of the cell you are taking: it must contain a total‑indicating keyword (see list above). If the label is missing or ambiguous, skip that year.  
+4. Record the **numeric value exactly as printed** (preserve any decimal fraction). Remove only visual thousands separators such as commas, spaces or thin‑spaces so the value is a plain number.  
+5. Capture the **unit string exactly as it appears next to the number** (e.g., `ktCO₂eq`, `tonnes CO2e`, `t CO2e`, `tCO₂e`). Do **not** convert or normalise units.  
+6. If the source provides an additional descriptive label for the total (e.g., “Scope 1 total (including biogenic)”), copy that whole label into the `label` field. If no extra label is present, set `label` to an empty string `""`.  
+7. **Do not create placeholder values** such as `null`, `NaN`, or `"nan"`. Omit any year‑scope pair for which the total cannot be identified with certainty.
+
+### Output format
+Return **exactly one JSON object** that follows this schema. Do not add any extra text, comments, or whitespace outside the JSON.
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Additional rules
+- **Only include years** for which a verified total has been found.  
+- If a year contains *multiple distinct totals* for the same scope (e.g., separate rows for “Scope 2 – Location‑based – Total” and “Scope 2 – Location‑based – Purchased electricity”), list each as a separate object inside the array for that year.  
+- Preserve the order of keys shown in the schema; do not rename them.  
+- If the report name or title cannot be determined, use an empty string `""` for that field.  
+
+Proceed with the extraction now.
+
+============================================================
+  19
+============================================================
+
+[evaluate] Run #19 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/19
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.64s
+    t_processorbatch: 0.0s
+    t_pdf: 41.24s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/19/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.61s
+    t_processorbatch: 0.0s
+    t_pdf: 51.98s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/19/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.77s
+    t_processorbatch: 0.0s
+    t_pdf: 51.08s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/19/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 48.19s
+    t_processorbatch: 0.0s
+    t_pdf: 48.66s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/19/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.08s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.54s
+    t_processorbatch: 0.0s
+    t_pdf: 108.04s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/19/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 9: New subsample score 0.8230088495575221 is better than old score 0.8008849557522124. Continue to full eval and add to candidate pool.
+
+============================================================
+  20
+============================================================
+
+[evaluate] Run #20 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/20
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.53s
+    t_processorbatch: 0.0s
+    t_pdf: 41.14s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/20/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.64s
+    t_processorbatch: 0.0s
+    t_pdf: 52.01s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/20/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.04s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 51.18s
+    t_processorbatch: 0.0s
+    t_pdf: 51.49s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/20/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.4s
+    t_processorbatch: 0.0s
+    t_pdf: 42.86s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/20/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.07s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.53s
+    t_processorbatch: 0.0s
+    t_pdf: 108.02s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/20/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 9: Valset score for new program: 0.8230088495575221 (coverage 1 / 1)
+Iteration 9: Val aggregate for new program: 0.8230088495575221
+Iteration 9: Individual valset scores for new program: {0: 0.8230088495575221}
+Iteration 9: New valset pareto front scores: {0: 0.8230088495575221}
+Iteration 9: Valset pareto front aggregate score: 0.8230088495575221
+Iteration 9: Updated valset pareto front programs: {0: {1, 2}}
+Iteration 9: Best valset aggregate score so far: 0.8230088495575221
+Iteration 9: Best program as per aggregate score on valset: 1
+Iteration 9: Best score on valset: 0.8230088495575221
+Iteration 9: Linear pareto front program index: 1
+Iteration 9: New program candidate index: 2
+Iteration 10: Selected program 2 score: 0.8230088495575221
+
+============================================================
+  21
+============================================================
+
+[evaluate] Run #21 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/21
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.6s
+    t_processorbatch: 0.0s
+    t_pdf: 41.21s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/21/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.84s
+    t_processorbatch: 0.0s
+    t_pdf: 52.21s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/21/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.88s
+    t_processorbatch: 0.0s
+    t_pdf: 51.19s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/21/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.29s
+    t_processorbatch: 0.0s
+    t_pdf: 42.75s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/21/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.07s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.53s
+    t_processorbatch: 0.0s
+    t_pdf: 108.02s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/21/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 10: Proposed new text for current_candidate: You are an expert in corporate sustainability reporting and GHG accounting.  
+Your task is to **extract only the total reported emissions** for each scope from a PDF and return them in a single JSON object that exactly follows the schema provided at the end of this prompt.
+
+--------------------------------------------------------------------
+## 1. What constitutes a *total* value
+A cell (or a pair of adjacent cells) is a *total* if **both** of the following are true:
+
+1. The numeric value (or its range) is accompanied by the emission unit on the same cell or in the immediately adjacent cell (e.g., “2071 ktCO₂eq”, “2071 ktCO₂eq”, “2071 t CO₂e”). Preserve the unit *exactly* as it appears, including spaces, superscripts, or special characters.
+2. The **row‑label** or **column‑label** that the numeric cell belongs to contains at least one of the following (case‑insensitive) keywords:  
+
+   `total`, `grand total`, `overall`, `sum`, `all emissions`, `total emissions`,  
+   `scope 1 total`, `scope 2 total`, `scope 3 total`, `scope 2 – location‑based total`, `scope 2 – market‑based total`, `scope 2 location‑based`, `scope 2 market‑based`.
+
+   The label must also mention the correct scope (1, 2‑lb, 2‑mb, or 3).  
+   If the label is missing, vague (e.g., just a year), or mixes several categories, **do not** treat the number as a total.
+
+--------------------------------------------------------------------
+## 2. Extraction workflow
+Follow this exact sequence for **each** PDF.
+
+### 2.1 Locate every table (or matrix) that contains GHG numbers
+- Scan the whole document: tables, figures, side‑bars, footnotes, annexes, narrative paragraphs that present a year‑by‑year table.
+- For each candidate table, determine whether **years** are situated in the **first column** (row‑oriented) or in the **first row** (column‑oriented).  
+  *Record the orientation before extracting any numbers.*
+
+### 2.2 Identify the scope rows/columns
+- Find the row‑label or column‑label that contains the exact scope text (`Scope 1`, `Scope 2 – Location‑Based`, `Scope 2 – Market‑Based`, `Scope 3`).  
+- If a table aggregates several sub‑categories (e.g., “Scope 2 – Location‑Based – Purchased electricity”), treat each distinct label as a separate entry **only when it also contains a total‑indicating keyword**.
+
+### 2.3 Extract the numeric value and unit
+- Locate the intersection cell of the identified **year** and the identified **total‑label**.
+- The cell may contain only a number; the unit may be in the same cell or in the next cell to the right (or below, depending on table layout).  
+  - If the unit is separate, concatenate them with a single space (`<number> <unit>`).  
+- Strip ONLY visual thousands separators (commas, spaces, thin‑spaces). Do **not** alter decimal marks, scientific notation, or the unit string.
+- Record the value as a **JSON number** (no quotes) and the unit as a **JSON string**.
+
+### 2.4 Capture an optional descriptive label
+- Copy the full text of the row/column label that supplied the total (e.g., “Scope 2 – Location‑Based (including biogenic)”).  
+- If the label is exactly the generic keyword “Total”, set `label` to an empty string `""`.
+
+### 2.5 Validation before output
+- Verify that the numeric part can be parsed as a float after removing thousands separators.
+- Verify that a unit string was captured; if the unit is missing, **skip** that entry.
+- Verify that the scope of the label matches the JSON field you are populating; if there is any mismatch, skip the entry.
+- Do **not** generate any placeholder (`null`, `NaN`, `"nan"`). Omit any year‑scope pair that fails any of the above checks.
+
+--------------------------------------------------------------------
+## 3. JSON output requirements
+Return **exactly one** JSON object, no extra text, no comments, no trailing commas, and no whitespace outside the JSON structure.
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Additional formatting rules
+- Preserve the order of keys exactly as shown.
+- For each `<year>` field, the value must be an **array**; if the source provides several distinct totals for the same scope and year, include each as a separate object in that array.
+- If the report name or title cannot be determined, use an empty string `""`.
+- Do **not** include years for which a verified total could not be extracted.
+
+--------------------------------------------------------------------
+## 4. Quick checklist (run this mentally before producing output)
+
+- [ ] Did I first determine the orientation of the table (years in rows vs columns)?
+- [ ] Did I locate a label that contains both the correct scope **and** a total‑indicating keyword?
+- [ ] Did I extract the number **and** the accompanying unit (even if in a neighboring cell)?
+- [ ] Did I remove commas/thin‑spaces only from the number, leaving the unit untouched?
+- [ ] Is the unit string exactly as printed (including superscripts, spaces, “CO₂e”, “CO2e”, etc.)?
+- [ ] Is the `label` field the full label text, or `""` if no extra text?
+- [ ] Is the JSON syntactically valid and matches the schema exactly?
+- [ ] No `null`, `NaN`, or placeholder values are present.
+
+Proceed with the extraction now.
+
+============================================================
+  22
+============================================================
+
+[evaluate] Run #22 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/22
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.61s
+    t_processorbatch: 0.0s
+    t_pdf: 41.23s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/22/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.69s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.5s
+    t_processorbatch: 0.0s
+    t_pdf: 51.87s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/22/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 51.05s
+    t_processorbatch: 0.0s
+    t_pdf: 51.37s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/22/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 48.3s
+    t_processorbatch: 0.0s
+    t_pdf: 48.76s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/22/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.08s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 22.48s
+    t_processorbatch: 0.0s
+    t_pdf: 22.98s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/22/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.6991  (316/452 hits)  is_best=False
+Iteration 10: New subsample score 0.6991150442477876 is not better than old score 0.8230088495575221, skipping
+Iteration 11: Selected program 2 score: 0.8230088495575221
+
+============================================================
+  23
+============================================================
+
+[evaluate] Run #23 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/23
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.55s
+    t_processorbatch: 0.0s
+    t_pdf: 41.15s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/23/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.47s
+    t_processorbatch: 0.0s
+    t_pdf: 52.1s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/23/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 51.31s
+    t_processorbatch: 0.0s
+    t_pdf: 51.63s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/23/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.26s
+    t_processorbatch: 0.0s
+    t_pdf: 42.72s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/23/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.07s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.59s
+    t_processorbatch: 0.0s
+    t_pdf: 108.08s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/23/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 11: Proposed new text for current_candidate: You are a specialist in corporate sustainability reporting and GHG accounting. Your sole task is to read a PDF ESG/sustainability report and extract **only the total reported emissions** for each scope, for every year that appears in the document. Return the extraction as a single JSON object that **exactly** follows the schema provided at the end of this prompt. No extra text, comments, or whitespace may appear outside the JSON.
+
+### What counts as a “total”  
+A cell/value is a total only if its **label** (the text directly adjacent to the number, or the row/column header that contains the number) includes one of the following case‑insensitive keywords:
+
+- total, grand total, overall, all emissions, scope 1 total, scope 2 total, scope 3 total,
+- “scope 2 – location‑based total”, “scope 2 – market‑based total”, “scope 2 location‑based”, “scope 2 market‑based”,  
+- any label that explicitly says *total* for the given scope.
+
+If the label does **not** contain a total‑indicating keyword, the cell must be ignored. Do **not** infer a total when it is missing; simply omit that year‑scope entry.
+
+### Extraction procedure
+1. **Scan the whole PDF** – tables, charts, sidebars, narrative paragraphs, footnotes, annexes.
+2. Identify every table that contains **years** (four‑digit numbers) and **scope identifiers** (e.g., “Scope 1”, “Scope 2 – Location‑Based”, “Scope 2 – Market‑Based”, “Scope 3”).
+3. Determine the orientation:
+   - **Years in rows, scopes in columns** – the total for a given year is the cell in that row under the column whose header contains a total keyword for the required scope.
+   - **Years in columns, scopes in rows** – the total for a given year is the cell in that column on the row whose header contains a total keyword for the required scope.
+4. **Validate the label** of the selected cell: it must contain a total keyword (see list above). If the label is ambiguous, skip the year.
+5. **Extract the numeric value** exactly as printed:
+   - Keep the decimal point `.` as the separator.
+   - Remove only visual thousands separators such as commas, spaces, thin‑spaces, or apostrophes.
+   - Output the value as a JSON number (not a string).
+6. **Extract the unit string** that appears immediately after the number (e.g., `ktCO₂eq`, `t CO2e`, `tCO₂e`, `tonnes CO₂e`). Capture the unit **exactly** as it appears, including any superscript characters. If a unit is not present, use an empty string `""`.
+7. **Extract the optional descriptive label** (the full text of the label that contains the total keyword). If no extra description exists, set `label` to `""`.
+8. If a scope‑year combination has **multiple distinct totals** (e.g., separate rows for “Scope 2 – Location‑Based – Total” and “Scope 2 – Location‑Based – Purchased electricity”), include each as a separate object in the array for that year.
+9. **Do not create placeholder values** (`null`, `"nan"`, `NaN`, etc.). If you cannot locate a verified total for a year‑scope pair, simply do not include that year under that scope.
+
+### JSON schema (must be followed exactly)
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Additional rules
+- Preserve the order of the top‑level keys exactly as shown.
+- If the report name or title cannot be determined, use an empty string `""` for that field.
+- Years must be represented exactly as they appear (four digits); the evaluator will normalise them later.
+- Keep the JSON **compact**: no trailing commas, no comments, no extra whitespace outside the JSON structure.
+- **Never output a year for which a total could not be confidently identified.**  
+
+Proceed with the extraction now.
+
+============================================================
+  24
+============================================================
+
+[evaluate] Run #24 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/24
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.34s
+    t_processorbatch: 0.0s
+    t_pdf: 40.95s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/24/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.41s
+    t_processorbatch: 0.0s
+    t_pdf: 51.77s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/24/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.67s
+    t_processorbatch: 0.0s
+    t_pdf: 50.99s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/24/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 47.77s
+    t_processorbatch: 0.0s
+    t_pdf: 48.22s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/24/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.07s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.25s
+    t_processorbatch: 0.0s
+    t_pdf: 107.74s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/24/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 11: New subsample score 0.8230088495575221 is not better than old score 0.8230088495575221, skipping
+Iteration 12: Selected program 2 score: 0.8230088495575221
+
+============================================================
+  25
+============================================================
+
+[evaluate] Run #25 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/25
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.59s
+    t_processorbatch: 0.0s
+    t_pdf: 41.2s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/25/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.57s
+    t_processorbatch: 0.0s
+    t_pdf: 51.94s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/25/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.95s
+    t_processorbatch: 0.0s
+    t_pdf: 51.27s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/25/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.26s
+    t_processorbatch: 0.0s
+    t_pdf: 42.72s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/25/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.08s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.51s
+    t_processorbatch: 0.0s
+    t_pdf: 108.0s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/25/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 12: Proposed new text for current_candidate: You are an expert in corporate sustainability reporting and GHG accounting, and you are guiding a Vision‑Language Model (VLM) to extract **only the total reported emissions** from a PDF ESG report.
+
+### Goal
+For every year that appears in the report, obtain the **single total value** for each of the four scopes:
+- Scope 1 (direct)
+- Scope 2 – Location‑based
+- Scope 2 – Market‑based
+- Scope 3 (other indirect)
+
+If a year‑scope combination does **not** contain an unambiguous total, omit that year for that scope.
+
+### What qualifies as a “total”
+A cell (or line of text) is a total when its **label** contains any of the following case‑insensitive cues (the list is exhaustive for this task):
+
+```
+total
+grand total
+overall emissions
+all emissions
+scope 1 total
+scope 2 total
+scope 2 – location‑based total
+scope 2 – market‑based total
+scope 3 total
+scope 1 – total
+scope 2 – location‑based – total
+scope 2 – market‑based – total
+scope 3 – total
+```
+
+The label may have additional descriptors (e.g., “Scope 1 total (including biogenic)”). Capture the whole label in the `label` field. If the word “total” appears **anywhere** in the label, the cell is considered a total.
+
+### Extraction Procedure
+1. **Scan the whole document** – tables, figures, sidebars, narrative paragraphs, footnotes, annexes.
+2. **Identify tables that contain both a year dimension and a scope dimension.**  
+   - Years may be in rows *or* columns. Detect them with the regular expression `\b(19|20)\d{2}\b`.  
+   - Scope identifiers appear as “Scope 1”, “Scope 2 – Location‑based”, “Scope 2 – Market‑based”, “Scope 3” (or abbreviations like “S1”, “S2‑LB”, etc.).  
+3. **Locate the total label** within that table (or paragraph).  
+   - If years are rows, the total for a given year is the cell in that row under the column whose header contains a total‑indicating cue.  
+   - If years are columns, the total for a given year is the cell in that column in the row whose label contains a total‑indicating cue.  
+   - For narrative text, the number must be directly followed (or preceded) by a total‑indicating cue and a year. Treat that as the total for that year‑scope.
+4. **Validate the extraction**  
+   - The number must be adjacent to a unit (e.g., `ktCO₂eq`, `tonnes CO2e`, `t CO2e`, `tCO₂e`). Use the unit that appears **in the same cell** or immediately next to the number. Do **not** infer a unit from a different column or from a table header unless the unit is missing from the cell, in which case take it from the nearest column/row header.  
+   - Preserve the number exactly as printed, removing only visual thousand‑separators (commas, spaces, thin‑spaces). Keep decimals.  
+   - If the unit is missing or ambiguous, treat the extraction as invalid and skip that year‑scope pair.
+5. **Record the result** as a JSON object that follows the schema exactly (see below).  
+   - Each year maps to an *array* of objects; even if there is only one total, wrap it in an array.  
+   - If a table lists multiple distinct totals for the same scope and year (e.g., “Scope 2 – Location‑based – Total” and “Scope 2 – Location‑based – Purchased electricity”), include **both** objects in the array.  
+   - Do **not** create placeholder values (`null`, `"nan"`, `"NaN"`). Omit any year‑scope pair that cannot be confirmed as a total.
+
+### Output JSON Schema
+Return **exactly one** JSON object, no extra text, no markdown, no trailing commas.
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+        /* possibly more objects */
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Additional Rules
+- **Report name / title**: If the filename cannot be parsed, set `report_name` to `""`. If the title page is absent, set `report_title` to `""`.
+- **Year ordering**: Years may appear in any order in the source; keep the keys exactly as they appear after extraction (the evaluator will normalise them later).
+- **No extra keys**: Do not add fields not listed in the schema.
+- **Whitespace**: Do not add whitespace outside the JSON object itself; internal indentation is allowed for readability but not required.
+- **Determinism**: Follow the steps above in order; this reduces off‑by‑one or “previous‑year” drift observed in earlier runs.
+
+Proceed with the extraction now.
+
+============================================================
+  26
+============================================================
+
+[evaluate] Run #26 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/26
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.55s
+    t_processorbatch: 0.0s
+    t_pdf: 41.16s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/26/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.73s
+    t_processorbatch: 0.0s
+    t_pdf: 52.1s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/26/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.71s
+    t_processorbatch: 0.0s
+    t_pdf: 51.02s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/26/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 48.12s
+    t_processorbatch: 0.0s
+    t_pdf: 48.58s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/26/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.08s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.36s
+    t_processorbatch: 0.0s
+    t_pdf: 107.86s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/26/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 12: New subsample score 0.8230088495575221 is not better than old score 0.8230088495575221, skipping
+Iteration 13: Selected program 2 score: 0.8230088495575221
+
+============================================================
+  27
+============================================================
+
+[evaluate] Run #27 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/27
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.49s
+    t_processorbatch: 0.0s
+    t_pdf: 41.1s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/27/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.37s
+    t_processorbatch: 0.0s
+    t_pdf: 51.74s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/27/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.9s
+    t_processorbatch: 0.0s
+    t_pdf: 51.21s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/27/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.24s
+    t_processorbatch: 0.0s
+    t_pdf: 42.7s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/27/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.07s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.4s
+    t_processorbatch: 0.0s
+    t_pdf: 107.9s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/27/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 13: Proposed new text for current_candidate: You are an expert in corporate sustainability reporting and GHG accounting.  
+Your task is to read a **single PDF document** and return **only the total reported emissions** for each GHG scope, for every year that appears in the report.  
+The output must be a **single JSON object** that exactly follows the schema provided at the end of this prompt.  
+
+--------------------------------------------------------------------
+### 1️⃣ What counts as a *total*  
+
+A cell is a *total* only if its **label** (the text in the same row or column that identifies the value) contains **both**:
+
+* a scope identifier – one of  
+  * `scope 1`  
+  * `scope 2 – location‑based` (or `scope 2 location‑based`)  
+  * `scope 2 – market‑based` (or `scope 2 market‑based`)  
+  * `scope 3`  
+
+* a total‑indicating keyword – case‑insensitive, any of  
+  `total`, `grand total`, `overall`, `all emissions`, `total emissions`, `total (including ...)`, `total‑including`, `totals`, `aggregate`, `sum`, `combined`, `combined total`, `combined emissions`.
+
+The keyword can appear **anywhere** in the label (beginning, middle, or end) and may be surrounded by punctuation or parentheses.  
+If a label mentions the scope but **does not** contain a total keyword, it must be ignored.
+
+--------------------------------------------------------------------
+### 2️⃣ How to locate the numbers  
+
+1. **Search the whole document** – tables, figures, sidebars, narrative paragraphs, footnotes, annexes.  
+2. **Identify every table that contains at least one year** (four‑digit number, e.g., 2019) **and at least one total label** as defined above.  
+3. Determine the **orientation** of the year dimension:  
+   * **Years in rows** → a column header contains the year.  
+   * **Years in columns** → a row header contains the year.  
+4. For each scope‑total label you have found, **intersect** it with every year header to obtain the cell that holds the numeric emission value.  
+5. **Extract the number** from that cell:  
+   * Keep the exact numeric value (including decimal part).  
+   * Remove only visual thousands separators – commas `,`, thin‑spaces, regular spaces.  
+   * Do **not** apply any unit conversion, rounding, or scientific‑notation formatting.  
+6. **Extract the unit** that appears **immediately after the number** in the same cell (e.g., `2071 ktCO₂eq`).  
+   * If the unit is placed in a separate column of the same row, take the unit from that column.  
+   * Preserve the unit **exactly as printed**, including superscripts, underscores, or spaces (e.g., `tCO₂e`, `ktCO₂eq`, `tonnes CO2e`).  
+7. **Extract the label** – copy the full text of the label cell (the one that contained the total keyword).  
+   * If the label consists only of the word “Total” (or similar) with no extra description, set `label` to an empty string `""`.  
+
+--------------------------------------------------------------------
+### 3️⃣ When to omit a year‑scope entry  
+
+* The cell that should contain the number is empty, contains non‑numeric text, or the unit cannot be identified → **omit** that year‑scope pair.  
+* The label does not contain a total‑indicating keyword → **omit**.  
+* More than one total cell exists for the same scope and year (e.g., “Scope 2 – Location‑based – Total” and “Scope 2 – Location‑based – Purchased electricity – Total”). **Treat each as a separate object** inside the year’s array.  
+
+--------------------------------------------------------------------
+### 4️⃣ Output format (do **not** add any extra text)  
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+*Keep the keys in the exact order shown.*  
+If the report name or title cannot be determined, use an empty string `""`.  
+If a particular scope has no verified totals for any year, its object must still be present but can be empty (`{}`).
+
+--------------------------------------------------------------------
+### 5️⃣ Strict rules  
+
+* **Never** output placeholder values such as `null`, `NaN`, `"nan"` or empty numbers.  
+* Do **not** perform any unit conversion, aggregation, or arithmetic.  
+* Do **not** include any explanatory text, comments, or whitespace outside the JSON object.  
+
+--------------------------------------------------------------------
+### 6️⃣ Quick checklist before finishing  
+
+- [ ] All extracted numbers are plain numbers (no commas, no spaces).  
+- [ ] Units are exactly as they appear next to the number.  
+- [ ] Labels contain the scope name and a total keyword; extra description is kept verbatim.  
+- [ ] Every year‑scope pair appears only if a **verified total** was found.  
+- [ ] The JSON structure matches the schema exactly.
+
+Proceed with the extraction now.
+
+============================================================
+  28
+============================================================
+
+[evaluate] Run #28 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/28
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.68s
+    t_processorbatch: 0.0s
+    t_pdf: 41.29s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/28/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.75s
+    t_processorbatch: 0.0s
+    t_pdf: 52.13s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/28/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.01s
+    t_processorbatch: 0.0s
+    t_pdf: 50.32s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/28/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 48.22s
+    t_processorbatch: 0.0s
+    t_pdf: 48.68s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/28/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.08s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.69s
+    t_processorbatch: 0.0s
+    t_pdf: 108.18s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/28/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.7965  (360/452 hits)  is_best=False
+Iteration 13: New subsample score 0.7964601769911505 is not better than old score 0.8230088495575221, skipping
+Iteration 14: Selected program 2 score: 0.8230088495575221
+
+============================================================
+  29
+============================================================
+
+[evaluate] Run #29 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/29
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.59s
+    t_processorbatch: 0.0s
+    t_pdf: 41.2s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/29/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 50.69s
+    t_processorbatch: 0.0s
+    t_pdf: 52.06s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/29/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 51.44s
+    t_processorbatch: 0.0s
+    t_pdf: 51.75s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/29/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 42.35s
+    t_processorbatch: 0.0s
+    t_pdf: 42.81s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/29/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.07s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 107.89s
+    t_processorbatch: 0.0s
+    t_pdf: 108.39s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/29/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 14: Proposed new text for current_candidate: You are an expert in corporate sustainability reporting and GHG accounting.  
+Your task is to read a PDF report and **extract only the *total* emission figures** for each of the four scopes, for every year that appears in the report.  
+Return the data in **exactly one JSON object** that follows the schema given at the end of this prompt.  
+Do not add any text, comments, or whitespace outside the JSON.
+
+--------------------------------------------------------------------
+### 1️⃣ What counts as a “total” value?
+
+A cell (or inline figure) is a total **iff** its label (the text attached to the same row, column or the same sentence) contains **any** of the following case‑insensitive keywords (or obvious synonyms):
+
+* total, grand total, overall, all emissions, total emissions  
+* “Scope 1 total”, “Scope 2 total”, “Scope 3 total”, “Scope 2 – location‑based total”, “Scope 2 – market‑based total”
+
+If the label does **not** contain a total‑indicating keyword, the figure must be ignored.
+
+--------------------------------------------------------------------
+### 2️⃣ How to locate totals
+
+1. **Search the whole document** – tables, figures, sidebars, narratives, footnotes, annexes.  
+2. **Identify tables** that list GHG emissions by year.  
+   * Determine whether years are written in the **first column**, the **first row**, or in the **header/footer** of the table.  
+   * Identify the **row or column that contains the total‑keyword label** for the required scope.  
+3. The *total* for a given year is the **numeric cell that sits at the intersection of the year and the total‑label row/column**.  
+4. If the report presents the total inline (e.g., “Scope 1 total for 2020 = 2 071 t CO₂e”), treat the same way – the number next to the total‑keyword label is the value.
+
+--------------------------------------------------------------------
+### 3️⃣ Extraction rules
+
+* **Value** – copy the number exactly as printed (keep decimal part, keep sign).  
+  * Remove only visual thousands separators: commas, spaces, thin‑spaces, period‑as‑thousands (if the locale uses them).  
+  * Do **not** perform any unit conversion or rounding.  
+* **Unit** – copy the unit string that appears **immediately after** the number (may be separated by a space).  
+  * Accept any of the common GHG units (e.g., `t CO2e`, `tCO₂e`, `tonnes CO2e`, `ktCO₂eq`).  
+  * If a unit cannot be identified, **skip this figure** (do not output a placeholder).  
+* **Label** – copy the full label that contains the total‑keyword (everything in the same cell/row/column header).  
+  * If the label is just the keyword (e.g., “Total”), set `"label": ""`.  
+* **Year** – the evaluator will normalise years with a regex, so you may output the year exactly as you see it (e.g., “2020”, “FY2020”).  
+* **Multiple totals for the same year and scope** – if the report lists distinct totals (e.g., “Scope 2 – Location‑based – Total” and “Scope 2 – Location‑based – Purchased electricity”), output each as a separate object inside the year‑array.
+
+--------------------------------------------------------------------
+### 4️⃣ What to **omit**
+
+* Any figure that lacks a total‑keyword label.  
+* Any figure missing a clearly visible unit.  
+* Any placeholder such as `null`, `NaN`, `"nan"` or an empty array entry.  
+* Years for which no qualifying total can be found.
+
+--------------------------------------------------------------------
+### 5️⃣ Output JSON schema
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+* Preserve the order of keys exactly as shown.  
+* Use an empty string `""` for `report_name`, `report_title`, or `label` when they cannot be determined.  
+* Do **not** include any extra keys or trailing commas.
+
+--------------------------------------------------------------------
+### 6️⃣ Final instruction
+
+Extract the data now, following the rules above, and output **only** the JSON object.
+
+============================================================
+  30
+============================================================
+
+[evaluate] Run #30 — output dir: /scratch/tmp/jkuhlma1/gepa/runs/30
+[evaluate] Running extraction (B-03-HPC.py)...
+
+============================================================
+  PDF PROCESSING
+============================================================
+Allianz_2022_report
+    PDF2Image done. t_pymupdf: 0.34s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 40.57s
+    t_processorbatch: 0.0s
+    t_pdf: 41.18s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/30/Allianz_2022_report.json
+    1 / 5
+addtech_2022_report
+    PDF2Image done. t_pymupdf: 0.7s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 48.54s
+    t_processorbatch: 0.0s
+    t_pdf: 49.91s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/30/addtech_2022_report.json
+    2 / 5
+fujifilm_2022_report
+    PDF2Image done. t_pymupdf: 0.05s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 49.37s
+    t_processorbatch: 0.0s
+    t_pdf: 49.68s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/30/fujifilm_2022_report.json
+    3 / 5
+jetblue airways corp_2019_report
+    PDF2Image done. t_pymupdf: 0.09s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 47.57s
+    t_processorbatch: 0.0s
+    t_pdf: 48.03s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/30/jetblue airways corp_2019_report.json
+    4 / 5
+sato oyj_2022_report
+    PDF2Image done. t_pymupdf: 0.08s
+    Attempt: 0 with 16384 Token-Limit
+    t_inference: 106.43s
+    t_processorbatch: 0.0s
+    t_pdf: 106.92s
+    Saved to /scratch/tmp/jkuhlma1/gepa/runs/30/sato oyj_2022_report.json
+    5 / 5
+[evaluate] Extraction done.
+[evaluate] Mapping to gold standard...
+[evaluate] Mapping done — 226 rows.
+[evaluate] Score: 0.8230  (372/452 hits)  is_best=False
+Iteration 14: New subsample score 0.8230088495575221 is not better than old score 0.8230088495575221, skipping
+
+============================================================
+  Best score: 0.8230
+============================================================
+You are an expert in corporate sustainability reporting and greenhouse‑gas (GHG) accounting, and you will extract ONLY the *total* reported emissions for each scope from the given PDF.
+
+**What to extract**
+- Scope 1 (direct)
+- Scope 2 – Location‑based
+- Scope 2 – Market‑based
+- Scope 3 (all other indirect)
+
+For every year that appears in the report, extract the *total* value for the scope (the row/entry explicitly labelled “Total”, “Grand total”, “Scope X total”, “All emissions”, etc.).  
+If a total for a given year cannot be identified with certainty, **omit that year entirely** (do NOT output a partial or guessed value).  
+
+**How to extract**
+1. Scan the whole document, including tables, charts and narrative text.  
+2. When you encounter a table, treat the *year* as the row label (or, if the table is transposed, as the column label) and take the value that sits in the same row/column as that year.  
+3. Keep the number exactly as written, but:
+   - Remove thousands separators (commas, spaces) so the JSON value is a plain number.
+   - Preserve any decimal fraction.
+4. Capture the unit string exactly as it appears next to the number (e.g., `ktCO₂eq`, `tonnes CO2e`, `t CO2e`). Do not convert or normalise units.
+5. If the source provides an additional descriptive label for the value (e.g., “Scope 1 total (including biogenic)”), store it in the `label` field; otherwise set `label` to an empty string `""`.
+
+**Output format**
+Return **only** a single JSON object that matches this schema (replace placeholders with your extracted data). The keys must appear in the order shown.
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+**Additional rules**
+- Do **not** output years for which no total value is found.
+- Do **not** output multiple entries for the same year unless the source provides distinct labelled totals (e.g., “Scope 2 (location‑based) – Total” and “Scope 2 (location‑based) – Purchased electricity”). In that case include each as a separate object in the array.
+- Do **not** add any commentary, explanations, or extra whitespace outside the JSON object.
+- If the report name or title cannot be determined, use an empty string `""` for the respective field.
+
+Proceed with the extraction.
+
+Saved to: /home/j/jkuhlma1/2026_BA_Code/src/GEPA/oa_result.txt
+################################# JOB REPORT ##################################
+Job ID: 43305397
+Cluster: palma2
+User/Group: jkuhlma1/u0dawin
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 8
+CPU Utilized: 02:31:25
+CPU Efficiency: 12.28% of 20:32:32 core-walltime
+Job Wall-clock time: 02:34:04
+Memory Utilized: 63.12 GB
+Memory Efficiency: 63.12% of 100.00 GB (100.00 GB/node)
+###############################################################################
