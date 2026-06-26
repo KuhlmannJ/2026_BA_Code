@@ -1,0 +1,336 @@
+{
+  "report_name": "FUJIFILM Holdings Corporation Sustainability Report 2022",
+  "report_title": "Environmental Aspects",
+  "emissions": {
+    "scope_1": {
+      "2017": [
+        {
+          "value": 687,
+          "unit": "kt CO2e",
+          "label": "Fujifilm Group Total"
+        },
+        {
+          "value": 644,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 43,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "2018": [
+        {
+          "value": 672,
+          "unit": "kt CO2e",
+          "label": "Fujifilm Group Total"
+        },
+        {
+          "value": 629,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 43,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "2019": [
+        {
+          "value": 633,
+          "unit": "kt CO2e",
+          "label": "Fujifilm Group Total"
+        },
+        {
+          "value": 594,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 40,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "2020": [
+        {
+          "value": 603,
+          "unit": "kt CO2e",
+          "label": "Fujifilm Group Total"
+        },
+        {
+          "value": 567,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 36,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "2021": [
+        {
+          "value": 633,
+          "unit": "kt CO2e",
+          "label": "Fujifilm Group Total"
+        },
+        {
+          "value": 599,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 34,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2017": [
+        {
+          "value": 531,
+          "unit": "kt CO2e",
+          "label": "Fujifilm Group Total"
+        },
+        {
+          "value": 379,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 152,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "2018": [
+        {
+          "value": 510,
+          "unit": "kt CO2e",
+          "label": "Fujifilm Group Total"
+        },
+        {
+          "value": 366,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 143,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "2019": [
+        {
+          "value": 451,
+          "unit": "kt CO2e",
+          "label": "Fujifilm Group Total"
+        },
+        {
+          "value": 325,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 126,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "2020": [
+        {
+          "value": 409,
+          "unit": "kt CO2e",
+          "label": "Fujifilm Group Total"
+        },
+        {
+          "value": 294,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 115,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "2021": [
+        {
+          "value": 420,
+          "unit": "kt CO2e",
+          "label": "Fujifilm Group Total"
+        },
+        {
+          "value": 306,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 114,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2017": [
+        {
+          "value": 593,
+          "unit": "kt CO2e",
+          "label": "Fujifilm Group Total"
+        },
+        {
+          "value": 436,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 157,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "2018": [
+        {
+          "value": 576,
+          "unit": "kt CO2e",
+          "label": "Fujifilm Group Total"
+        },
+        {
+          "value": 427,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 149,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "2019": [
+        {
+          "value": 514,
+          "unit": "kt CO2e",
+          "label": "Fujifilm Group Total"
+        },
+        {
+          "value": 382,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 132,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "2020": [
+        {
+          "value": 475,
+          "unit": "kt CO2e",
+          "label": "Fujifilm Group Total"
+        },
+        {
+          "value": 354,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 120,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "2021": [
+        {
+          "value": 494,
+          "unit": "kt CO2e",
+          "label": "Fujifilm Group Total"
+        },
+        {
+          "value": 375,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 118,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ]
+    },
+    "scope_3": {
+      "2021": [
+        {
+          "value": 2130,
+          "unit": "kt CO2e",
+          "label": "Purchased goods and services"
+        },
+        {
+          "value": 441,
+          "unit": "kt CO2e",
+          "label": "Capital goods"
+        },
+        {
+          "value": 144,
+          "unit": "kt CO2e",
+          "label": "Energy excluding Scope 1,2"
+        },
+        {
+          "value": 12,
+          "unit": "kt CO2e",
+          "label": "Transportation and distribution (Upstream)"
+        },
+        {
+          "value": 9,
+          "unit": "kt CO2e",
+          "label": "Waste generated in operation"
+        },
+        {
+          "value": 10,
+          "unit": "kt CO2e",
+          "label": "Business travel"
+        },
+        {
+          "value": 29,
+          "unit": "kt CO2e",
+          "label": "Employee commuting"
+        },
+        {
+          "value": 286,
+          "unit": "kt CO2e",
+          "label": "Transportation and Distribution (Downstream)"
+        },
+        {
+          "value": 77,
+          "unit": "kt CO2e",
+          "label": "Processing of sold products"
+        },
+        {
+          "value": 90,
+          "unit": "kt CO2e",
+          "label": "Use of sold products"
+        },
+        {
+          "value": 88,
+          "unit": "kt CO2e",
+          "label": "Disposal of sold products"
+        },
+        {
+          "value": 158,
+          "unit": "kt CO2e",
+          "label": "Leased assets (Downstream)"
+        },
+        {
+          "value": 3473,
+          "unit": "kt CO2e",
+          "label": "Total"
+        }
+      ]
+    }
+  }
+}

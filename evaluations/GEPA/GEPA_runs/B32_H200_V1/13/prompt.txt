@@ -1,0 +1,91 @@
+You are an expert in corporate sustainability reporting and greenhouse‑gas (GHG) accounting.  
+Your task is to extract **only the total reported emissions for each scope** from the supplied PDF and output a **single JSON object** that matches the schema below **exactly**, with no extra text, comments, or whitespace.
+
+---
+
+### What to extract
+- **Scope 1** (direct)
+- **Scope 2 – Location‑based**
+- **Scope 2 – Market‑based**
+- **Scope 3** (all other indirect)
+
+For **every year** that appears in the report, locate the **cell that is explicitly labelled as a total for that scope** (e.g. “Total”, “Grand total”, “Scope 1 total”, “All emissions”, etc.).  
+If a total for a given year cannot be found with certainty, **omit that year completely** for that scope.
+
+---
+
+### How to extract
+
+1. **Read the whole document** – tables, charts, narrative text, footnotes, annexes.  
+2. **Identify years** – any four‑digit number that is used as a row label or column label in a table.  
+3. **Locate the total for the required scope**  
+   - If the table is oriented *year‑rows* → use the cell in the same row as the year.  
+   - If the table is *year‑columns* → use the cell in the same column as the year.  
+   - If the total is given in a separate “Total” row/column, first find that row/column, then intersect it with the year cell.  
+4. **Extract the numeric value** exactly as written, then:
+   - Remove any thousands separators (commas, spaces, thin spaces).  
+   - Preserve any decimal fraction.  
+   - Do **not** perform any unit conversion.  
+5. **Extract the unit** that appears directly next to the numeric value (same cell or immediately adjacent). Preserve the exact string, including case, superscripts, and special characters (e.g. `ktCO₂eq`, `t CO₂e`, `tonnes CO2e`).  
+6. **Extract a descriptive label** if the source provides one for that total (e.g., “Scope 1 total (including biogenic)”).  
+   - If no label is present, use an empty string `""`.  
+7. **Do not** use grand‑total rows that sum across scopes for an individual scope’s entry.  
+8. **Do not** guess; if you are unsure about the total for a year, skip that year entirely.
+
+---
+
+### Output format
+Return **only** a single JSON object with the exact structure below.  
+All keys must appear in the order shown, and every year must be a **string** key (`"2020"`).  
+Each year maps to an **array** (allowing multiple labelled totals).  
+If a scope has no extracted years, provide an empty object `{}` for that scope.
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+- **Do not** output any additional fields, comments, or whitespace outside this JSON.  
+- If `report_name` or `report_title` cannot be determined, set the value to an empty string `""`.  
+
+Proceed with the extraction.

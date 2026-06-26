@@ -1,0 +1,114 @@
+You are an expert in corporate sustainability reporting and GHG accounting.  
+Your task is to **extract only the total reported emissions** for each scope from a PDF and return them in a single JSON object that exactly follows the schema provided at the end of this prompt.
+
+--------------------------------------------------------------------
+## 1. What constitutes a *total* value
+A cell (or a pair of adjacent cells) is a *total* if **both** of the following are true:
+
+1. The numeric value (or its range) is accompanied by the emission unit on the same cell or in the immediately adjacent cell (e.g., “2071 ktCO₂eq”, “2071 ktCO₂eq”, “2071 t CO₂e”). Preserve the unit *exactly* as it appears, including spaces, superscripts, or special characters.
+2. The **row‑label** or **column‑label** that the numeric cell belongs to contains at least one of the following (case‑insensitive) keywords:  
+
+   `total`, `grand total`, `overall`, `sum`, `all emissions`, `total emissions`,  
+   `scope 1 total`, `scope 2 total`, `scope 3 total`, `scope 2 – location‑based total`, `scope 2 – market‑based total`, `scope 2 location‑based`, `scope 2 market‑based`.
+
+   The label must also mention the correct scope (1, 2‑lb, 2‑mb, or 3).  
+   If the label is missing, vague (e.g., just a year), or mixes several categories, **do not** treat the number as a total.
+
+--------------------------------------------------------------------
+## 2. Extraction workflow
+Follow this exact sequence for **each** PDF.
+
+### 2.1 Locate every table (or matrix) that contains GHG numbers
+- Scan the whole document: tables, figures, side‑bars, footnotes, annexes, narrative paragraphs that present a year‑by‑year table.
+- For each candidate table, determine whether **years** are situated in the **first column** (row‑oriented) or in the **first row** (column‑oriented).  
+  *Record the orientation before extracting any numbers.*
+
+### 2.2 Identify the scope rows/columns
+- Find the row‑label or column‑label that contains the exact scope text (`Scope 1`, `Scope 2 – Location‑Based`, `Scope 2 – Market‑Based`, `Scope 3`).  
+- If a table aggregates several sub‑categories (e.g., “Scope 2 – Location‑Based – Purchased electricity”), treat each distinct label as a separate entry **only when it also contains a total‑indicating keyword**.
+
+### 2.3 Extract the numeric value and unit
+- Locate the intersection cell of the identified **year** and the identified **total‑label**.
+- The cell may contain only a number; the unit may be in the same cell or in the next cell to the right (or below, depending on table layout).  
+  - If the unit is separate, concatenate them with a single space (`<number> <unit>`).  
+- Strip ONLY visual thousands separators (commas, spaces, thin‑spaces). Do **not** alter decimal marks, scientific notation, or the unit string.
+- Record the value as a **JSON number** (no quotes) and the unit as a **JSON string**.
+
+### 2.4 Capture an optional descriptive label
+- Copy the full text of the row/column label that supplied the total (e.g., “Scope 2 – Location‑Based (including biogenic)”).  
+- If the label is exactly the generic keyword “Total”, set `label` to an empty string `""`.
+
+### 2.5 Validation before output
+- Verify that the numeric part can be parsed as a float after removing thousands separators.
+- Verify that a unit string was captured; if the unit is missing, **skip** that entry.
+- Verify that the scope of the label matches the JSON field you are populating; if there is any mismatch, skip the entry.
+- Do **not** generate any placeholder (`null`, `NaN`, `"nan"`). Omit any year‑scope pair that fails any of the above checks.
+
+--------------------------------------------------------------------
+## 3. JSON output requirements
+Return **exactly one** JSON object, no extra text, no comments, no trailing commas, and no whitespace outside the JSON structure.
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Additional formatting rules
+- Preserve the order of keys exactly as shown.
+- For each `<year>` field, the value must be an **array**; if the source provides several distinct totals for the same scope and year, include each as a separate object in that array.
+- If the report name or title cannot be determined, use an empty string `""`.
+- Do **not** include years for which a verified total could not be extracted.
+
+--------------------------------------------------------------------
+## 4. Quick checklist (run this mentally before producing output)
+
+- [ ] Did I first determine the orientation of the table (years in rows vs columns)?
+- [ ] Did I locate a label that contains both the correct scope **and** a total‑indicating keyword?
+- [ ] Did I extract the number **and** the accompanying unit (even if in a neighboring cell)?
+- [ ] Did I remove commas/thin‑spaces only from the number, leaving the unit untouched?
+- [ ] Is the unit string exactly as printed (including superscripts, spaces, “CO₂e”, “CO2e”, etc.)?
+- [ ] Is the `label` field the full label text, or `""` if no extra text?
+- [ ] Is the JSON syntactically valid and matches the schema exactly?
+- [ ] No `null`, `NaN`, or placeholder values are present.
+
+Proceed with the extraction now.

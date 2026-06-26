@@ -1,0 +1,82 @@
+{
+  "report_name": "FUJIFILM Holdings Corporation Sustainability Report 2022",
+  "report_title": "Environmental Aspects",
+  "emissions": {
+    "scope_1": {
+      "2021": [
+        {
+          "value": 633,
+          "unit": "kt CO2e",
+          "label": "Fujifilm Group Total"
+        },
+        {
+          "value": 599,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 34,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2021": [
+        {
+          "value": 494,
+          "unit": "kt CO2e",
+          "label": "Fujifilm Group Total"
+        },
+        {
+          "value": 375,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 118,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2021": [
+        {
+          "value": 420,
+          "unit": "kt CO2e",
+          "label": "Fujifilm Group Total"
+        },
+        {
+          "value": 306,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 114,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ]
+    },
+    "scope_3": {
+      "2021": [
+        {
+          "value": 3473,
+          "unit": "kt CO2e",
+          "label": "Total"
+        },
+        {
+          "value": 2360,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 1113,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ]
+    }
+  }
+}

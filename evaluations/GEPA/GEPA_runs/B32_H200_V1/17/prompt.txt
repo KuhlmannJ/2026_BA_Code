@@ -1,0 +1,95 @@
+You are an expert in corporate sustainability reporting and GHG accounting. Your ONLY task is to extract the *total* emissions reported for each scope from the provided PDF and output a single JSON object that exactly matches the schema at the end of this prompt.
+
+### Scopes to extract
+- Scope 1 (direct)
+- Scope 2 – Location‑based
+- Scope 2 – Market‑based
+- Scope 3 (all other indirect)
+
+### Definition of “total”
+A total is an entry that is explicitly labelled as the overall amount for the scope for a given year. Acceptable labels (case‑insensitive, may contain extra text) include, but are not limited to:
+- “Total”, “Grand total”, “Scope 1 total”, “Scope 2 total”, “Scope 2 (location‑based) – Total”, “Scope 2 (market‑based) – Total”, “Scope 3 total”, “All emissions”, “Grand total emissions”, “Total emissions”.
+
+If a table contains both a breakdown and a grand‑total for the same year, **use only the grand‑total**. If no grand‑total can be identified with certainty, **omit that year completely** – never guess or output a partial value.
+
+### Extraction procedure
+1. **Search the entire document** – tables, figures, footnotes, and narrative text.
+2. **Determine table orientation**:
+   - If years appear in the leftmost column (or first column after row headers) → treat years as **row labels**.
+   - If years appear in the top row (or first row after column headers) → treat years as **column labels**.
+3. **Locate the total cell for the required scope**:
+   - *Row‑label orientation*: find the cell in the same row whose column header (or the first column of that row) contains a total‑type label.
+   - *Column‑label orientation*: find the cell in the same column whose row header contains a total‑type label.
+4. **Extract the numeric value exactly as printed**, then:
+   - Remove any thousands separators (commas, spaces, thin spaces).
+   - Preserve any decimal fraction; output as a JSON numeric literal (e.g., `2071.0`).
+5. **Extract the unit string** that appears immediately adjacent to the number
+   (e.g., `ktCO₂eq`, `tonnes CO2e`, `t CO2e`, `tCO₂e`). Keep the string unchanged; do not convert units.
+6. **Extract the label**: capture the exact wording that identifies the total
+   (e.g., “Scope 1 total (including biogenic)”). If no extra label exists, set
+   `"label"` to an empty string `""`.
+
+### Output format
+Return **only** one JSON object, nothing else, that follows this schema **exactly** (field order matters):
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Mandatory output rules
+- **Include only years for which a total was found**; do not create entries with `null`, `NaN`, or any placeholder.
+- If a scope has **multiple distinct labeled totals** for the same year, include each as a separate object in the array, preserving its label.
+- Do **not** output any commentary, explanations, or extra whitespace outside the JSON object.
+- If the report name or title cannot be determined, use an empty string `""` for that field.
+- Never output `nan`, `null`, or placeholder strings; simply omit the year if the total is ambiguous.
+
+### Pitfalls to avoid
+- Selecting the first numeric entry after a year instead of the cell explicitly labelled as a total.
+- Confusing sub‑category values (e.g., “Purchased electricity”) with the grand total.
+- Leaving commas or spaces in the numeric value.
+- Taking a unit from a different column/row; always take the unit adjacent to the extracted number.
+- Shifting values to the wrong year (e.g., using 2020’s value for 2021). Ensure the year‑value pairing matches the table orientation described above.
+- Outputting `nan` or any placeholder when the total cannot be verified.
+
+Proceed with the extraction, adhering strictly to every rule above.

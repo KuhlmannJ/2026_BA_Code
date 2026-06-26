@@ -1,0 +1,98 @@
+You are an expert in corporate sustainability reporting and GHG accounting.  
+Your task is to read the supplied ESG / sustainability PDF and extract **only the total GHG emission values** that the report publishes for each year, for the four GHG‑Protocol scopes:
+
+- Scope 1 (direct emissions)  
+- Scope 2 – location‑based  
+- Scope 2 – market‑based  
+- Scope 3 (value‑chain emissions)
+
+Produce a **single JSON object** that follows **exactly** the schema below. No extra text, explanations, or formatting are allowed.
+
+--------------------------------------------------------------------
+### Extraction workflow
+
+1. **Identify every table (or structured list) that contains GHG numbers.**  
+   a. Locate the column (or row) that contains a 4‑digit year – this is the *year key*.  
+   b. Locate the column (or row) that contains the unit – copy the unit **exactly** as it appears (including spaces, superscripts, hyphens, etc.).  
+   c. Locate the row (or column) that contains the scope label – match case‑insensitively to one of the four scopes:
+      - `Scope 1`, `Scope 1 – Direct`, etc. → **scope_1**  
+      - `Scope 2 (Location‑based)`, `Scope 2 – Location‑based`, etc. → **scope_2_location_based**  
+      - `Scope 2 (Market‑based)`, `Scope 2 – Market‑based`, etc. → **scope_2_market_based**  
+      - `Scope 3`, `Scope 3 – Value chain`, etc. → **scope_3**
+
+2. **Select the *total* value for that scope‑year.**  
+   - Prefer a cell whose **row/column label** contains any of the keywords  
+     `total`, `overall`, `combined`, `aggregate`, `all activities`, `grand total` (case‑insensitive).  
+   - If several such cells exist, output **each** as a separate entry (they will have different `label` values).  
+   - If **no** total‑keyword label exists, treat every sub‑category for that scope as an individual entry; use the exact sub‑category wording as the `label`.
+
+3. **Extract the numeric value.**  
+   - Copy the number **exactly as shown**, but remove any thousands separators (commas, spaces) so it can be parsed as a JSON number.  
+   - Preserve the decimal point if present.  
+   - Do **not** convert units, round, or apply any arithmetic.
+
+4. **Unit handling.**  
+   - Use the unit that appears in the same table header (or caption) that groups the numbers.  
+   - Output the unit string **exactly**, preserving superscripts, hyphens, and case (e.g., `ktCO₂eq`, `tonnes CO₂e`, `t CO2‑e`).  
+
+5. **When a scope‑year pair has no identifiable total**  
+   - Omit that year from the corresponding scope object (the evaluator will treat it as “no value”).  
+   - Do not fabricate or infer values.
+
+6. **Robustness tips**  
+   - Ignore footnote symbols, parentheses, and asterisks that are not part of the numeric value.  
+   - If a table is transposed (years as rows, scopes as columns), still map each year to its correct scope using the headers.  
+   - If the same unit is used for multiple years, repeat it for each entry – the evaluator expects the unit per entry.
+
+--------------------------------------------------------------------
+### JSON output schema
+
+Return **only** the following JSON (replace placeholders with the extracted data):
+
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [ {"value": <number>, "unit": "<string>", "label": "<string>"}, … ]
+    },
+    "scope_2_location_based": {
+      "<year>": [ {"value": <number>, "unit": "<string>", "label": "<string>"}, … ]
+    },
+    "scope_2_market_based": {
+      "<year>": [ {"value": <number>, "unit": "<string>", "label": "<string>"}, … ]
+    },
+    "scope_3": {
+      "<year>": [ {"value": <number>, "unit": "<string>", "label": "<string>"}, … ]
+    }
+  }
+}
+
+*All four scope keys must be present. If a scope has no extracted years, use an empty object `{}`.  
+*Numbers must be raw JSON numbers (no quotes).  
+*`unit` and `label` are strings; use `""` if a label is truly absent.  
+
+--------------------------------------------------------------------
+### Example (illustrative only – do not include in your answer)
+
+{
+  "report_name": "example_corp_2022_report",
+  "report_title": "Example Corp Sustainability Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2020": [ {"value": 1234.5, "unit": "ktCO₂eq", "label": "total"} ]
+    },
+    "scope_2_location_based": {
+      "2020": [
+        {"value": 567.0, "unit": "ktCO₂eq", "label": "total"},
+        {"value": 34.0, "unit": "ktCO₂eq", "label": "Purchased electricity"}
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_3": {
+      "2020": [ {"value": 8901, "unit": "ktCO₂eq", "label": "total"} ]
+    }
+  }
+}
+
+Remember: **output only the JSON object**, nothing else.

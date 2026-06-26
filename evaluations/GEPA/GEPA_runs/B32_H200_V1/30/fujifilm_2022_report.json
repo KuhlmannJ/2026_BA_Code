@@ -1,0 +1,126 @@
+{
+  "report_name": "",
+  "report_title": "",
+  "emissions": {
+    "scope_1": {
+      "FY2017": [
+        {
+          "value": 687,
+          "unit": "kt CO2e",
+          "label": "Total direct GHG emissions (Scope 1)"
+        }
+      ],
+      "FY2018": [
+        {
+          "value": 672,
+          "unit": "kt CO2e",
+          "label": "Total direct GHG emissions (Scope 1)"
+        }
+      ],
+      "FY2019": [
+        {
+          "value": 633,
+          "unit": "kt CO2e",
+          "label": "Total direct GHG emissions (Scope 1)"
+        }
+      ],
+      "FY2020": [
+        {
+          "value": 603,
+          "unit": "kt CO2e",
+          "label": "Total direct GHG emissions (Scope 1)"
+        }
+      ],
+      "FY2021": [
+        {
+          "value": 633,
+          "unit": "kt CO2e",
+          "label": "Total direct GHG emissions (Scope 1)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "FY2017": [
+        {
+          "value": 593,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Location-based"
+        }
+      ],
+      "FY2018": [
+        {
+          "value": 576,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Location-based"
+        }
+      ],
+      "FY2019": [
+        {
+          "value": 514,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Location-based"
+        }
+      ],
+      "FY2020": [
+        {
+          "value": 475,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Location-based"
+        }
+      ],
+      "FY2021": [
+        {
+          "value": 494,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Location-based"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "FY2017": [
+        {
+          "value": 531,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Market-based"
+        }
+      ],
+      "FY2018": [
+        {
+          "value": 510,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Market-based"
+        }
+      ],
+      "FY2019": [
+        {
+          "value": 451,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Market-based"
+        }
+      ],
+      "FY2020": [
+        {
+          "value": 409,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Market-based"
+        }
+      ],
+      "FY2021": [
+        {
+          "value": 420,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Market-based"
+        }
+      ]
+    },
+    "scope_3": {
+      "FY2021": [
+        {
+          "value": 3473,
+          "unit": "kt CO2e",
+          "label": "Total"
+        }
+      ]
+    }
+  }
+}

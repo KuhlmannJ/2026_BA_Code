@@ -1,0 +1,286 @@
+{
+  "report_name": "Fujifilm Holdings Corporation Sustainability Report 2022",
+  "report_title": "Environmental Aspects",
+  "emissions": {
+    "scope_1": {
+      "FY2017": [
+        {
+          "value": 687,
+          "unit": "kt CO2e",
+          "label": "Total direct GHG emissions (Scope 1)"
+        },
+        {
+          "value": 644,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 43,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "FY2018": [
+        {
+          "value": 672,
+          "unit": "kt CO2e",
+          "label": "Total direct GHG emissions (Scope 1)"
+        },
+        {
+          "value": 629,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 43,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "FY2019": [
+        {
+          "value": 633,
+          "unit": "kt CO2e",
+          "label": "Total direct GHG emissions (Scope 1)"
+        },
+        {
+          "value": 594,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 40,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "FY2020": [
+        {
+          "value": 603,
+          "unit": "kt CO2e",
+          "label": "Total direct GHG emissions (Scope 1)"
+        },
+        {
+          "value": 567,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 36,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "FY2021": [
+        {
+          "value": 633,
+          "unit": "kt CO2e",
+          "label": "Total direct GHG emissions (Scope 1)"
+        },
+        {
+          "value": 599,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 34,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "FY2017": [
+        {
+          "value": 593,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Location-based"
+        },
+        {
+          "value": 436,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 157,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "FY2018": [
+        {
+          "value": 576,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Location-based"
+        },
+        {
+          "value": 427,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 149,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "FY2019": [
+        {
+          "value": 514,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Location-based"
+        },
+        {
+          "value": 382,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 132,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "FY2020": [
+        {
+          "value": 475,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Location-based"
+        },
+        {
+          "value": 354,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 120,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "FY2021": [
+        {
+          "value": 494,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Location-based"
+        },
+        {
+          "value": 375,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 118,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "FY2017": [
+        {
+          "value": 531,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Market-based"
+        },
+        {
+          "value": 379,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 152,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "FY2018": [
+        {
+          "value": 510,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Market-based"
+        },
+        {
+          "value": 366,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 143,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "FY2019": [
+        {
+          "value": 451,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Market-based"
+        },
+        {
+          "value": 325,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 126,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "FY2020": [
+        {
+          "value": 409,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Market-based"
+        },
+        {
+          "value": 294,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 115,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ],
+      "FY2021": [
+        {
+          "value": 420,
+          "unit": "kt CO2e",
+          "label": "Total indirect GHG emissions (Scope 2) Market-based"
+        },
+        {
+          "value": 306,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 114,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ]
+    },
+    "scope_3": {
+      "FY2021": [
+        {
+          "value": 3473,
+          "unit": "kt CO2e",
+          "label": "Total"
+        },
+        {
+          "value": 2360,
+          "unit": "kt CO2e",
+          "label": "Fujifilm"
+        },
+        {
+          "value": 1113,
+          "unit": "kt CO2e",
+          "label": "FUJIFILM Business Innovation"
+        }
+      ]
+    }
+  }
+}

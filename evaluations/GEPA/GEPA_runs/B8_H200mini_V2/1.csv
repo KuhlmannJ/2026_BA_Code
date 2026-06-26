@@ -1,0 +1,99 @@
+report_name,scope,year,value,unit,label
+Allianz_2022_report,scope_1,2022,30953,t CO2e,Scope 1 – Direct GHG emissions
+Allianz_2022_report,scope_1,2021,28699,t CO2e,Scope 1 – Direct GHG emissions
+Allianz_2022_report,scope_1,2020,28714,t CO2e,Scope 1 – Direct GHG emissions
+Allianz_2022_report,scope_2_market_based,2022,30490,t CO2e,Scope 2 – Indirect GHG emissions (market based)
+Allianz_2022_report,scope_2_market_based,2021,54689,t CO2e,Scope 2 – Indirect GHG emissions (market based)
+Allianz_2022_report,scope_2_market_based,2020,100722,t CO2e,Scope 2 – Indirect GHG emissions (market based)
+Allianz_2022_report,scope_2_location_based,2022,138339,t CO2e,Scope 2 – Indirect GHG emissions (location based)
+Allianz_2022_report,scope_2_location_based,2021,149599,t CO2e,Scope 2 – Indirect GHG emissions (location based)
+Allianz_2022_report,scope_2_location_based,2020,180826,t CO2e,Scope 2 – Indirect GHG emissions (location based)
+Allianz_2022_report,scope_3,2022,92467,t CO2e,Scope 3 – Other indirect GHG emissions
+Allianz_2022_report,scope_3,2021,55359,t CO2e,Scope 3 – Other indirect GHG emissions
+Allianz_2022_report,scope_3,2020,73916,t CO2e,Scope 3 – Other indirect GHG emissions
+addtech_2022_report,scope_1,2021/2022,2041,tonnes CO2e,Emissions from own vehicle fleet
+addtech_2022_report,scope_1,2021/2022,541,tonnes CO2e,Emissions combustion fuels
+addtech_2022_report,scope_1,2020/2021,1910,tonnes CO2e,Emissions from own vehicle fleet
+addtech_2022_report,scope_1,2020/2021,554,tonnes CO2e,Emissions combustion fuels
+addtech_2022_report,scope_1,2019/2020,2071,tonnes CO2e,Emissions from own vehicle fleet
+addtech_2022_report,scope_2_market_based,2021/2022,4087,tonnes CO2e,"Emissions, energy consumption – Market Based Method"
+addtech_2022_report,scope_2_market_based,2020/2021,4250,tonnes CO2e,"Emissions, energy consumption – Market Based Method"
+addtech_2022_report,scope_2_location_based,2021/2022,3709,tonnes CO2e,"Emissions, energy consumption – Location Based Method"
+addtech_2022_report,scope_2_location_based,2020/2021,3395,tonnes CO2e,"Emissions, energy consumption – Location Based Method"
+addtech_2022_report,scope_3,2021/2022,22961,tonnes CO2e,"Emissions freight, upstream & downstream"
+addtech_2022_report,scope_3,2021/2022,21782,tonnes CO2e,"Emissions freight, upstream"
+addtech_2022_report,scope_3,2021/2022,1097,tonnes CO2e,"Business travel emissions, air and train"
+addtech_2022_report,scope_3,2021/2022,82,tonnes CO2e,"Emissions, extraction, production and transport of purchased fuels"
+addtech_2022_report,scope_3,2020/2021,19860,tonnes CO2e,"Emissions freight, upstream & downstream"
+addtech_2022_report,scope_3,2020/2021,18733,tonnes CO2e,"Emissions freight, upstream"
+addtech_2022_report,scope_3,2020/2021,1021,tonnes CO2e,"Business travel emissions, air and train"
+addtech_2022_report,scope_3,2020/2021,106,tonnes CO2e,"Emissions, extraction, production and transport of purchased fuels"
+addtech_2022_report,scope_3,2019/2020,23132,tonnes CO2e,"Emissions freight, upstream & downstream"
+addtech_2022_report,scope_3,2019/2020,18362,tonnes CO2e,"Emissions freight, upstream"
+addtech_2022_report,scope_3,2019/2020,4770,tonnes CO2e,"Business travel emissions, air and train"
+fujifilm_2022_report,scope_1,2017,687,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_1,2017,644,kt CO2e,Fujifilm
+fujifilm_2022_report,scope_1,2017,43,kt CO2e,FUJIFILM Business Innovation
+fujifilm_2022_report,scope_1,2018,672,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_1,2018,629,kt CO2e,Fujifilm
+fujifilm_2022_report,scope_1,2018,43,kt CO2e,FUJIFILM Business Innovation
+fujifilm_2022_report,scope_1,2019,633,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_1,2019,594,kt CO2e,Fujifilm
+fujifilm_2022_report,scope_1,2019,40,kt CO2e,FUJIFILM Business Innovation
+fujifilm_2022_report,scope_1,2020,603,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_1,2020,567,kt CO2e,Fujifilm
+fujifilm_2022_report,scope_1,2020,36,kt CO2e,FUJIFILM Business Innovation
+fujifilm_2022_report,scope_1,2021,633,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_1,2021,599,kt CO2e,Fujifilm
+fujifilm_2022_report,scope_1,2021,34,kt CO2e,FUJIFILM Business Innovation
+fujifilm_2022_report,scope_2_market_based,2017,531,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_market_based,2017,379,kt CO2e,Fujifilm
+fujifilm_2022_report,scope_2_market_based,2017,152,kt CO2e,FUJIFILM Business Innovation
+fujifilm_2022_report,scope_2_market_based,2018,510,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_market_based,2018,366,kt CO2e,Fujifilm
+fujifilm_2022_report,scope_2_market_based,2018,143,kt CO2e,FUJIFILM Business Innovation
+fujifilm_2022_report,scope_2_market_based,2019,451,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_market_based,2019,325,kt CO2e,Fujifilm
+fujifilm_2022_report,scope_2_market_based,2019,126,kt CO2e,FUJIFILM Business Innovation
+fujifilm_2022_report,scope_2_market_based,2020,409,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_market_based,2020,294,kt CO2e,Fujifilm
+fujifilm_2022_report,scope_2_market_based,2020,115,kt CO2e,FUJIFILM Business Innovation
+fujifilm_2022_report,scope_2_market_based,2021,420,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_market_based,2021,306,kt CO2e,Fujifilm
+fujifilm_2022_report,scope_2_market_based,2021,114,kt CO2e,FUJIFILM Business Innovation
+fujifilm_2022_report,scope_2_location_based,2017,593,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_location_based,2017,436,kt CO2e,Fujifilm
+fujifilm_2022_report,scope_2_location_based,2017,157,kt CO2e,FUJIFILM Business Innovation
+fujifilm_2022_report,scope_2_location_based,2018,576,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_location_based,2018,427,kt CO2e,Fujifilm
+fujifilm_2022_report,scope_2_location_based,2018,149,kt CO2e,FUJIFILM Business Innovation
+fujifilm_2022_report,scope_2_location_based,2019,514,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_location_based,2019,382,kt CO2e,Fujifilm
+fujifilm_2022_report,scope_2_location_based,2019,132,kt CO2e,FUJIFILM Business Innovation
+fujifilm_2022_report,scope_2_location_based,2020,475,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_location_based,2020,354,kt CO2e,Fujifilm
+fujifilm_2022_report,scope_2_location_based,2020,120,kt CO2e,FUJIFILM Business Innovation
+fujifilm_2022_report,scope_2_location_based,2021,494,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_location_based,2021,375,kt CO2e,Fujifilm
+fujifilm_2022_report,scope_2_location_based,2021,118,kt CO2e,FUJIFILM Business Innovation
+fujifilm_2022_report,scope_3,2021,2130,kt CO2e,Purchased goods and services
+fujifilm_2022_report,scope_3,2021,441,kt CO2e,Capital goods
+fujifilm_2022_report,scope_3,2021,144,kt CO2e,"Energy excluding Scope 1,2"
+fujifilm_2022_report,scope_3,2021,12,kt CO2e,Transportation and distribution (Upstream)
+fujifilm_2022_report,scope_3,2021,9,kt CO2e,Waste generated in operation
+fujifilm_2022_report,scope_3,2021,10,kt CO2e,Business travel
+fujifilm_2022_report,scope_3,2021,29,kt CO2e,Employee commuting
+fujifilm_2022_report,scope_3,2021,286,kt CO2e,Transportation and Distribution (Downstream)
+fujifilm_2022_report,scope_3,2021,77,kt CO2e,Processing of sold products
+fujifilm_2022_report,scope_3,2021,90,kt CO2e,Use of sold products
+fujifilm_2022_report,scope_3,2021,88,kt CO2e,Disposal of sold products
+fujifilm_2022_report,scope_3,2021,158,kt CO2e,Leased assets (Downstream)
+fujifilm_2022_report,scope_3,2021,3473,kt CO2e,Total
+jetblue airways corp_2019_report,scope_1,2019,8730756,tCO2e,Direct (Scope 1)
+jetblue airways corp_2019_report,scope_2_market_based,2019,25944,tCO2e,Indirect Energy (Scope 2)
+jetblue airways corp_2019_report,scope_2_location_based,2019,25944,tCO2e,Indirect Energy (Scope 2)
+jetblue airways corp_2019_report,scope_3,2019,1772985,tCO2e,Indirect Other (Scope 3)
+sato oyj_2022_report,scope_1,2022,20,t CO2-e,"GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+sato oyj_2022_report,scope_2_market_based,2022,37920,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (market-based)"
+sato oyj_2022_report,scope_2_location_based,2022,40393,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (location-based)"
+sato oyj_2022_report,scope_3,2022,49,t CO2-e,"GRI-305-3 Other indirect greenhouse gas emissions, t CO2-e** (scope 3)"

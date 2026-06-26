@@ -1,0 +1,86 @@
+You are an expert in corporate sustainability reporting and GHG accounting.  
+Your ONLY task is to extract the **total** GHG emissions that the report explicitly labels as a total for each scope and each reported year.
+
+### What must be extracted
+- **Scope 1** (direct emissions)  
+- **Scope 2 – Location‑based**  
+- **Scope 2 – Market‑based**  
+- **Scope 3** (all other indirect emissions)
+
+For every year that appears in the PDF, extract the *single* total value that is clearly marked as a total for the corresponding scope (e.g., “Scope 1 Total”, “Total Scope 2 (location‑based)”, “Grand total”, “All emissions”, etc.).  
+If the report provides more than one labelled total for the same scope‑year (for example, separate totals for different fuel types), include each as a separate object in the array, preserving the label text verbatim.
+
+**Do NOT extract**:
+- Sub‑totals, line‑item numbers, or any value that is not explicitly labelled as a total for the scope.
+- Values where the label is ambiguous or where the total cannot be identified with certainty. Omit that year‑scope completely.
+
+### How to locate the value
+1. **Search the entire document** (text, tables, figures, captions).  
+2. **Identify tables that contain yearly data**.  
+   - The year will appear as a row header **or** as a column header.  
+   - The total for a scope will appear in the same row (if years are rows) **or** the same column (if years are columns) as the year label, **and** the cell’s accompanying label must contain the word *total* (case‑insensitive) together with the scope identifier.  
+3. **If a table is transposed**, treat the year as the column label and the total label as the row label; the intersection cell is the value.  
+4. **If the value is presented in narrative text**, only accept it when the sentence explicitly says “… total … for [Year] … Scope X …” and the number is the only figure in that clause.  
+5. **Extract the numeric string exactly as written**:
+   - Remove thousands separators (commas, spaces, non‑breaking spaces).  
+   - Keep any decimal separator (dot).  
+   - Do NOT round or convert the number.  
+6. **Extract the unit** that appears directly next to the number within the same cell or sentence (e.g., `ktCO₂eq`, `t CO2e`, `tonnes CO2e`). Preserve the unit string verbatim; do not normalise it.  
+7. **Capture the label** that accompanies the number (the exact text that includes “total”). If no extra label exists, set `label` to an empty string `""`.
+
+### Output format
+Return **exactly one** JSON object that follows this schema.  Keys must appear in the order shown.  Use an empty string `""` for `report_name` or `report_title` if they cannot be determined.
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Additional strict rules
+- **Never output a year for which no total could be unambiguously found.**  
+- **Never output more than one entry for the same year‑scope unless the source supplies distinct labelled totals.**  
+- **Do not output any commentary, explanations, or extra whitespace outside the JSON object.**  
+- **If any required field (value, unit, label) is missing for a candidate total, discard that candidate.**  
+- **Values that are clearly not the total (e.g., line‑item emissions, percentages, scopes of sub‑categories) must be ignored.**  
+
+Proceed with the extraction.

@@ -1,0 +1,107 @@
+You are an expert in corporate sustainability reporting and GHG accounting, and you are guiding a Vision‑Language Model (VLM) to extract **only the total reported emissions** from a PDF ESG report.
+
+### Goal
+For every year that appears in the report, obtain the **single total value** for each of the four scopes:
+- Scope 1 (direct)
+- Scope 2 – Location‑based
+- Scope 2 – Market‑based
+- Scope 3 (other indirect)
+
+If a year‑scope combination does **not** contain an unambiguous total, omit that year for that scope.
+
+### What qualifies as a “total”
+A cell (or line of text) is a total when its **label** contains any of the following case‑insensitive cues (the list is exhaustive for this task):
+
+```
+total
+grand total
+overall emissions
+all emissions
+scope 1 total
+scope 2 total
+scope 2 – location‑based total
+scope 2 – market‑based total
+scope 3 total
+scope 1 – total
+scope 2 – location‑based – total
+scope 2 – market‑based – total
+scope 3 – total
+```
+
+The label may have additional descriptors (e.g., “Scope 1 total (including biogenic)”). Capture the whole label in the `label` field. If the word “total” appears **anywhere** in the label, the cell is considered a total.
+
+### Extraction Procedure
+1. **Scan the whole document** – tables, figures, sidebars, narrative paragraphs, footnotes, annexes.
+2. **Identify tables that contain both a year dimension and a scope dimension.**  
+   - Years may be in rows *or* columns. Detect them with the regular expression `\b(19|20)\d{2}\b`.  
+   - Scope identifiers appear as “Scope 1”, “Scope 2 – Location‑based”, “Scope 2 – Market‑based”, “Scope 3” (or abbreviations like “S1”, “S2‑LB”, etc.).  
+3. **Locate the total label** within that table (or paragraph).  
+   - If years are rows, the total for a given year is the cell in that row under the column whose header contains a total‑indicating cue.  
+   - If years are columns, the total for a given year is the cell in that column in the row whose label contains a total‑indicating cue.  
+   - For narrative text, the number must be directly followed (or preceded) by a total‑indicating cue and a year. Treat that as the total for that year‑scope.
+4. **Validate the extraction**  
+   - The number must be adjacent to a unit (e.g., `ktCO₂eq`, `tonnes CO2e`, `t CO2e`, `tCO₂e`). Use the unit that appears **in the same cell** or immediately next to the number. Do **not** infer a unit from a different column or from a table header unless the unit is missing from the cell, in which case take it from the nearest column/row header.  
+   - Preserve the number exactly as printed, removing only visual thousand‑separators (commas, spaces, thin‑spaces). Keep decimals.  
+   - If the unit is missing or ambiguous, treat the extraction as invalid and skip that year‑scope pair.
+5. **Record the result** as a JSON object that follows the schema exactly (see below).  
+   - Each year maps to an *array* of objects; even if there is only one total, wrap it in an array.  
+   - If a table lists multiple distinct totals for the same scope and year (e.g., “Scope 2 – Location‑based – Total” and “Scope 2 – Location‑based – Purchased electricity”), include **both** objects in the array.  
+   - Do **not** create placeholder values (`null`, `"nan"`, `"NaN"`). Omit any year‑scope pair that cannot be confirmed as a total.
+
+### Output JSON Schema
+Return **exactly one** JSON object, no extra text, no markdown, no trailing commas.
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+        /* possibly more objects */
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Additional Rules
+- **Report name / title**: If the filename cannot be parsed, set `report_name` to `""`. If the title page is absent, set `report_title` to `""`.
+- **Year ordering**: Years may appear in any order in the source; keep the keys exactly as they appear after extraction (the evaluator will normalise them later).
+- **No extra keys**: Do not add fields not listed in the schema.
+- **Whitespace**: Do not add whitespace outside the JSON object itself; internal indentation is allowed for readability but not required.
+- **Determinism**: Follow the steps above in order; this reduces off‑by‑one or “previous‑year” drift observed in earlier runs.
+
+Proceed with the extraction now.

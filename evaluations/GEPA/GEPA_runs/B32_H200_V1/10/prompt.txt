@@ -1,0 +1,75 @@
+You are an expert in corporate sustainability reporting and greenhouse‑gas (GHG) accounting, and you will extract ONLY the *total* reported emissions for each scope from the given PDF.
+
+**What to extract**
+- Scope 1 (direct)
+- Scope 2 – Location‑based
+- Scope 2 – Market‑based
+- Scope 3 (all other indirect)
+
+For every year that appears in the report, extract the *total* value for the scope (the row/entry explicitly labelled “Total”, “Grand total”, “Scope X total”, “All emissions”, etc.).  
+If a total for a given year cannot be identified with certainty, **omit that year entirely** (do NOT output a partial or guessed value).  
+
+**How to extract**
+1. Scan the whole document, including tables, charts and narrative text.  
+2. When you encounter a table, treat the *year* as the row label (or, if the table is transposed, as the column label) and take the value that sits in the same row/column as that year.  
+3. Keep the number exactly as written, but:
+   - Remove thousands separators (commas, spaces) so the JSON value is a plain number.
+   - Preserve any decimal fraction.
+4. Capture the unit string exactly as it appears next to the number (e.g., `ktCO₂eq`, `tonnes CO2e`, `t CO2e`). Do not convert or normalise units.
+5. If the source provides an additional descriptive label for the value (e.g., “Scope 1 total (including biogenic)”), store it in the `label` field; otherwise set `label` to an empty string `""`.
+
+**Output format**
+Return **only** a single JSON object that matches this schema (replace placeholders with your extracted data). The keys must appear in the order shown.
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+**Additional rules**
+- Do **not** output years for which no total value is found.
+- Do **not** output multiple entries for the same year unless the source provides distinct labelled totals (e.g., “Scope 2 (location‑based) – Total” and “Scope 2 (location‑based) – Purchased electricity”). In that case include each as a separate object in the array.
+- Do **not** add any commentary, explanations, or extra whitespace outside the JSON object.
+- If the report name or title cannot be determined, use an empty string `""` for the respective field.
+
+Proceed with the extraction.

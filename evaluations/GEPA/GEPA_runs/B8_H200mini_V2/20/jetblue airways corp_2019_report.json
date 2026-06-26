@@ -1,0 +1,118 @@
+{
+  "report_name": "ABBREVIATED ESG REPORT",
+  "report_title": "2019 GREENHOUSE GAS INVENTORY",
+  "emissions": {
+    "scope_1": {
+      "2015": [
+        {
+          "value": 6903710,
+          "unit": "tCO2e",
+          "label": "Direct (Scope 1)"
+        }
+      ],
+      "2016": [
+        {
+          "value": 7491616,
+          "unit": "tCO2e",
+          "label": "Direct (Scope 1)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 7809488,
+          "unit": "tCO2e",
+          "label": "Direct (Scope 1)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 8370944,
+          "unit": "tCO2e",
+          "label": "Direct (Scope 1)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 8730756,
+          "unit": "tCO2e",
+          "label": "Direct (Scope 1)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2015": [
+        {
+          "value": 25768,
+          "unit": "tCO2e",
+          "label": "Indirect Energy (Scope 2)"
+        }
+      ],
+      "2016": [
+        {
+          "value": 27702,
+          "unit": "tCO2e",
+          "label": "Indirect Energy (Scope 2)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 26521,
+          "unit": "tCO2e",
+          "label": "Indirect Energy (Scope 2)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 26656,
+          "unit": "tCO2e",
+          "label": "Indirect Energy (Scope 2)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 25944,
+          "unit": "tCO2e",
+          "label": "Indirect Energy (Scope 2)"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_3": {
+      "2015": [
+        {
+          "value": 1402791,
+          "unit": "tCO2e",
+          "label": "Indirect Other (Scope 3)"
+        }
+      ],
+      "2016": [
+        {
+          "value": 1522142,
+          "unit": "tCO2e",
+          "label": "Indirect Other (Scope 3)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 1586368,
+          "unit": "tCO2e",
+          "label": "Indirect Other (Scope 3)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 1698105,
+          "unit": "tCO2e",
+          "label": "Indirect Other (Scope 3)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 1772985,
+          "unit": "tCO2e",
+          "label": "Indirect Other (Scope 3)"
+        }
+      ]
+    }
+  }
+}

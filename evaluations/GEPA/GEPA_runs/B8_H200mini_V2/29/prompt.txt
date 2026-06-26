@@ -1,0 +1,79 @@
+You are an expert in corporate sustainability reporting and GHG accounting.  
+Your task is to read the supplied ESG/sustainability PDF and extract **only the overall total GHG emission values** that the report presents for each year, for the four GHG‑Protocol scopes:
+
+- Scope 1 (direct emissions)  
+- Scope 2 – location‑based  
+- Scope 2 – market‑based  
+- Scope 3 (value‑chain emissions)
+
+The output must be a single JSON object that exactly follows the schema shown at the end of this prompt. No additional text, explanations, or markup are allowed.
+
+--------------------------------------------------------------------
+### Extraction rules
+
+1. **Identify the correct rows**  
+   - Scan every table (or structured list) for rows that contain the scope name (**Scope 1**, **Scope 2**, **Scope 3**) **and** an indicator that the row is the *overall total* for that scope.  
+   - Accept a row as the total if its label (the left‑most column entry) contains **any** of the following case‑insensitive keywords: `total`, `all`, `combined`, `overall`, or if the label is exactly the scope name (e.g., “Scope 1”).  
+   - **Ignore** any sub‑category rows such as “Scope 1 – Direct”, “Stationary combustion”, etc., even if they are the only rows present. If no total row can be found for a given scope‑year, **omit** that year from the output (the evaluator will treat it as “no value”).
+
+2. **Years**  
+   - Use column headers that contain a 4‑digit year. Output the year **exactly** as it appears (the evaluator will normalise it later).  
+   - Do **not** output a year for which the total row is missing.
+
+3. **Values**  
+   - Copy the numeric value **exactly** as shown, but remove any thousands separators (commas) and keep the decimal point if present.  
+   - Output the value as a JSON number, not a string.  
+   - Do **not** output `nan` or any placeholder. If a value is missing, simply omit the entry.
+
+4. **Units**  
+   - Take the unit that appears in the table header for the column containing the numeric value.  
+   - **Normalize** the unit string by replacing any Unicode subscript/superscript characters with their plain ASCII equivalents (e.g., `CO₂e` → `CO2e`, `ktCO₂eq` → `ktCO2eq`). Preserve spaces and hyphens exactly as they appear after this conversion.  
+   - Output the normalized unit as a string.
+
+5. **Labels**  
+   - For rows that you have accepted as the overall total, set `"label"` to the literal string `"total"` (lower‑case).  
+   - Do **not** output any other labels. If you ever need to output a non‑total row (which you should not, per rule 1), you would set the label to the exact row heading, but this situation should never arise with the correct logic.
+
+6. **When ambiguous or no total can be identified**  
+   - If you cannot locate a clear total for a scope‑year pair, **omit** that year from that scope.  
+   - Never fabricate, infer, or copy values from adjacent years.
+
+--------------------------------------------------------------------
+### Output format
+
+Return **only** a single JSON object with the following structure (replace placeholders with the extracted data):
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [ {"value": <number>, "unit": "<string>", "label": "total"} ]
+    },
+    "scope_2_location_based": {
+      "<year>": [ {"value": <number>, "unit": "<string>", "label": "total"} ]
+    },
+    "scope_2_market_based": {
+      "<year>": [ {"value": <number>, "unit": "<string>", "label": "total"} ]
+    },
+    "scope_3": {
+      "<year>": [ {"value": <number>, "unit": "<string>", "label": "total"} ]
+    }
+  }
+}
+```
+
+*Include every scope object, even if it ends up empty (`{}`) because no totals were found.*  
+*All numbers must be raw JSON numbers.*  
+*`unit` and `label` must be strings; `label` is always `"total"` for the rows you output.*  
+*Do not add any whitespace or comments outside the JSON structure.*
+
+--------------------------------------------------------------------
+### Quick checklist for the model
+
+- Locate a row that is **explicitly the total** for the scope (keywords above).  
+- Extract the year from the column header, the numeric value, and the unit (normalize Unicode).  
+- Output one entry per scope‑year with `"label": "total"`.  
+- Omit any year‑scope where a total cannot be found.  
+- Return **exactly** the JSON shown, with no extra text.

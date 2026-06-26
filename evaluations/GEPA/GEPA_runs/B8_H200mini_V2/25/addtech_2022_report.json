@@ -1,0 +1,42 @@
+{
+  "report_name": "ADDTECH ANNUAL REPORT 2021/2022",
+  "report_title": "ADDTECH ANNUAL REPORT 2021/2022",
+  "emissions": {
+    "scope_1": {
+      "2021/2022": [
+        {
+          "value": 2041.0,
+          "unit": "tonnes CO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2021/2022": [
+        {
+          "value": 3709.0,
+          "unit": "tonnes CO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2021/2022": [
+        {
+          "value": 4087.0,
+          "unit": "tonnes CO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_3": {
+      "2021/2022": [
+        {
+          "value": 22961.0,
+          "unit": "tonnes CO2e",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}

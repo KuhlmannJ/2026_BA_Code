@@ -1,0 +1,48 @@
+report_name,scope,year,value,unit,label
+Allianz_2022_report,scope_1,2022,30953.0,t CO2e,
+Allianz_2022_report,scope_1,2021,28699.0,t CO2e,
+Allianz_2022_report,scope_1,2020,28714.0,t CO2e,
+Allianz_2022_report,scope_2_location_based,2022,138339.0,t CO2e,
+Allianz_2022_report,scope_2_location_based,2021,149599.0,t CO2e,
+Allianz_2022_report,scope_2_location_based,2020,180826.0,t CO2e,
+Allianz_2022_report,scope_2_market_based,2022,30490.0,t CO2e,
+Allianz_2022_report,scope_2_market_based,2021,54689.0,t CO2e,
+Allianz_2022_report,scope_2_market_based,2020,100722.0,t CO2e,
+Allianz_2022_report,scope_3,2022,92467.0,t CO2e,
+Allianz_2022_report,scope_3,2021,55359.0,t CO2e,
+Allianz_2022_report,scope_3,2020,73916.0,t CO2e,
+addtech_2022_report,scope_1,2021/2022,2041.0,tonnes CO2e,
+addtech_2022_report,scope_1,2020/2021,1910.0,tonnes CO2e,
+addtech_2022_report,scope_1,2019/2020,2071.0,tonnes CO2e,
+addtech_2022_report,scope_2_location_based,2021/2022,3709.0,tonnes CO2e,
+addtech_2022_report,scope_2_location_based,2020/2021,3395.0,tonnes CO2e,
+addtech_2022_report,scope_2_location_based,2019/2020,3979.0,tonnes CO2e,
+addtech_2022_report,scope_2_market_based,2021/2022,4087.0,tonnes CO2e,
+addtech_2022_report,scope_2_market_based,2020/2021,4250.0,tonnes CO2e,
+addtech_2022_report,scope_2_market_based,2019/2020,0.0,tonnes CO2e,
+addtech_2022_report,scope_3,2021/2022,22961.0,tonnes CO2e,
+addtech_2022_report,scope_3,2020/2021,19860.0,tonnes CO2e,
+addtech_2022_report,scope_3,2019/2020,23132.0,tonnes CO2e,
+fujifilm_2022_report,scope_1,2017,687.0,kt CO2e,Total direct GHG emissions (Scope 1)
+fujifilm_2022_report,scope_1,2018,672.0,kt CO2e,Total direct GHG emissions (Scope 1)
+fujifilm_2022_report,scope_1,2019,633.0,kt CO2e,Total direct GHG emissions (Scope 1)
+fujifilm_2022_report,scope_1,2020,603.0,kt CO2e,Total direct GHG emissions (Scope 1)
+fujifilm_2022_report,scope_1,2021,633.0,kt CO2e,Total direct GHG emissions (Scope 1)
+fujifilm_2022_report,scope_2_location_based,2017,593.0,kt CO2e,Total indirect GHG emissions (Scope 2) Location-based
+fujifilm_2022_report,scope_2_location_based,2018,576.0,kt CO2e,Total indirect GHG emissions (Scope 2) Location-based
+fujifilm_2022_report,scope_2_location_based,2019,514.0,kt CO2e,Total indirect GHG emissions (Scope 2) Location-based
+fujifilm_2022_report,scope_2_location_based,2020,475.0,kt CO2e,Total indirect GHG emissions (Scope 2) Location-based
+fujifilm_2022_report,scope_2_location_based,2021,494.0,kt CO2e,Total indirect GHG emissions (Scope 2) Location-based
+fujifilm_2022_report,scope_2_market_based,2017,531.0,kt CO2e,Total indirect GHG emissions (Scope 2) Market-based
+fujifilm_2022_report,scope_2_market_based,2018,510.0,kt CO2e,Total indirect GHG emissions (Scope 2) Market-based
+fujifilm_2022_report,scope_2_market_based,2019,451.0,kt CO2e,Total indirect GHG emissions (Scope 2) Market-based
+fujifilm_2022_report,scope_2_market_based,2020,409.0,kt CO2e,Total indirect GHG emissions (Scope 2) Market-based
+fujifilm_2022_report,scope_2_market_based,2021,420.0,kt CO2e,Total indirect GHG emissions (Scope 2) Market-based
+fujifilm_2022_report,scope_3,2021,3473.0,kt CO2e,Total
+jetblue airways corp_2019_report,scope_1,2019,8730756.0,tonnes CO2e,total
+jetblue airways corp_2019_report,scope_2_location_based,2019,25944.0,tonnes CO2e,total
+jetblue airways corp_2019_report,scope_3,2019,1772985.0,tonnes CO2e,total
+sato oyj_2022_report,scope_1,2022,20.0,t CO2-e,
+sato oyj_2022_report,scope_2_location_based,2022,40393.0,t CO2-e,
+sato oyj_2022_report,scope_2_market_based,2022,37920.0,t CO2-e,
+sato oyj_2022_report,scope_3,2022,49.0,t CO2-e,

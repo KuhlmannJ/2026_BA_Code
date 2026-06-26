@@ -1,0 +1,6 @@
+model,maxToken,report,duration,pages,t_inf/page
+Qwen/Qwen3-VL-32B-Instruct,16384,Allianz_2022_report,40.42,7,5.77
+Qwen/Qwen3-VL-32B-Instruct,16384,addtech_2022_report,42.66,9,4.74
+Qwen/Qwen3-VL-32B-Instruct,16384,fujifilm_2022_report,46.67,7,6.67
+Qwen/Qwen3-VL-32B-Instruct,16384,jetblue airways corp_2019_report,42.24,5,8.45
+Qwen/Qwen3-VL-32B-Instruct,16384,sato oyj_2022_report,107.26,9,11.92

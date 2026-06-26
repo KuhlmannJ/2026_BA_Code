@@ -1,0 +1,28 @@
+report_name,scope,year,value,unit,label
+Allianz_2022_report,scope_1,2022,30953.0,t CO2e,total
+Allianz_2022_report,scope_1,2021,28699.0,t CO2e,total
+Allianz_2022_report,scope_1,2020,28714.0,t CO2e,total
+Allianz_2022_report,scope_2_location_based,2022,138339.0,t CO2e,total
+Allianz_2022_report,scope_2_location_based,2021,149599.0,t CO2e,total
+Allianz_2022_report,scope_2_location_based,2020,180826.0,t CO2e,total
+Allianz_2022_report,scope_2_market_based,2022,30490.0,t CO2e,total
+Allianz_2022_report,scope_2_market_based,2021,54689.0,t CO2e,total
+Allianz_2022_report,scope_2_market_based,2020,100722.0,t CO2e,total
+Allianz_2022_report,scope_3,2022,92467.0,t CO2e,total
+Allianz_2022_report,scope_3,2021,55359.0,t CO2e,total
+Allianz_2022_report,scope_3,2020,73916.0,t CO2e,total
+addtech_2022_report,scope_1,2021/2022,2041.0,tonnes CO2e,total
+addtech_2022_report,scope_2_location_based,2021/2022,3709.0,tonnes CO2e,total
+addtech_2022_report,scope_2_market_based,2021/2022,4087.0,tonnes CO2e,total
+addtech_2022_report,scope_3,2021/2022,22961.0,tonnes CO2e,total
+fujifilm_2022_report,scope_1,2021,633.0,kt CO2e,total
+fujifilm_2022_report,scope_2_location_based,2021,494.0,kt CO2e,total
+fujifilm_2022_report,scope_2_market_based,2021,420.0,kt CO2e,total
+fujifilm_2022_report,scope_3,2021,3473.0,kt CO2e,total
+jetblue airways corp_2019_report,scope_1,2019,8730756.0,tCO2e,total
+jetblue airways corp_2019_report,scope_2_location_based,2019,25944.0,tCO2e,total
+jetblue airways corp_2019_report,scope_3,2019,1772985.0,tCO2e,total
+sato oyj_2022_report,scope_1,2022,20.0,t CO2-e,total
+sato oyj_2022_report,scope_2_location_based,2022,40393.0,t CO2-e,total
+sato oyj_2022_report,scope_2_market_based,2022,37920.0,t CO2-e,total
+sato oyj_2022_report,scope_3,2022,49.0,t CO2-e,total

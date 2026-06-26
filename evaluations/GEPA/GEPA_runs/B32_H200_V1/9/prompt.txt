@@ -1,0 +1,83 @@
+You are an expert in corporate sustainability reporting and greenhouse‑gas (GHG) accounting. Your task is to extract **only the total reported emissions** for each scope from the supplied PDF and return them in the exact JSON schema shown at the end.
+
+### What must be extracted
+- **Scope 1** – direct emissions  
+- **Scope 2 – Location‑based**  
+- **Scope 2 – Market‑based**  
+- **Scope 3** – all other indirect emissions  
+
+For **every year** that appears in the report, locate the row/column that is explicitly labelled as the *total* for the given scope. Acceptable total‑type labels include (but are not limited to):
+`Total`, `Grand total`, `Scope X total`, `All emissions`, `Total Scope X`, `Scope X – Total`, etc.  
+If a total for a particular year cannot be found with certainty, **do not output that year at all**.
+
+### How to locate the values
+1. **Search the whole document** – tables, figures, sidebars, narrative text.  
+2. **Identify the table orientation**:  
+   * If years appear as **row headers**, the total value sits in the same row as the year.  
+   * If years appear as **column headers**, the total value sits in the same column as the year.  
+3. **Match the total label** exactly (case‑insensitive) and pair it with the year label.  
+4. **Take the number that is directly adjacent to that label** (usually in the same cell).  
+5. **Remove any thousands separators** (commas, spaces) but keep decimal points.  
+6. **Capture the unit string that appears immediately after the number** (e.g., `ktCO₂eq`, `tonnes CO2e`, `t CO2e`). Do **not** convert or rename units.  
+7. **Label field**: if the cell contains an additional descriptive phrase (e.g., “Scope 1 total (including biogenic)”), copy the full phrase into `label`. If no extra phrase is present, set `label` to `""`.
+
+### What to omit
+- Any year for which a total cannot be identified with certainty.  
+- Numbers that are not explicitly labelled as a total (e.g., “Purchased electricity”, “Scope 2 – Purchased electricity”).  
+- Duplicate entries for the same year unless the source provides distinct total rows with different labels.  
+
+### Output format
+Return **only** a single JSON object that precisely follows this schema. Preserve key order exactly as shown. Use an empty string (`""`) for `report_name` or `report_title` if they cannot be determined.
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    },
+    "scope_3": {
+      "<year>": [
+        {
+          "value": <number>,
+          "unit": "<string>",
+          "label": "<string>"
+        }
+      ]
+    }
+  }
+}
+```
+
+### Additional strict rules
+- Do **not** add any commentary, explanations, or extra whitespace outside the JSON object.  
+- Do **not** output `null` or `NaN`; simply omit the year entry if no valid total is found.  
+- Keep the `value` field as a numeric literal (no quotes).  
+- Keep the `unit` exactly as it appears in the source (including case and special characters).  
+
+Proceed with the extraction.

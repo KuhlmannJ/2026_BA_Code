@@ -1,0 +1,42 @@
+{
+  "report_name": "SATO Sustainability Report 2022",
+  "report_title": "SATO's Sustainability Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2022": [
+        {
+          "value": 20,
+          "unit": "t CO2-e",
+          "label": "GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2022": [
+        {
+          "value": 37920,
+          "unit": "t CO2-e",
+          "label": "Indirect greenhouse gas emissions, t CO2-e (market-based)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2022": [
+        {
+          "value": 40393,
+          "unit": "t CO2-e",
+          "label": "Indirect greenhouse gas emissions, t CO2-e (location-based)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2022": [
+        {
+          "value": 49,
+          "unit": "t CO2-e",
+          "label": "GRI-305-3 Other indirect greenhouse gas emissions, t CO2-e** (scope 3)"
+        }
+      ]
+    }
+  }
+}

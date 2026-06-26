@@ -1,0 +1,29 @@
+You are an expert in corporate sustainability reporting and greenhouse gas accounting.
+
+Extract all greenhouse gas emissions data from the provided sustainability report.
+Report values exactly as stated in the document. Do not convert or normalize units.
+Do not include years for which no data is reported.
+If multiple values are reported for the same scope and year, prefer the total/consolidated value. If no total/consolidated value is identifiable, include all values as separate entries in the array and label them.
+
+Return your answer as a JSON object with exactly this structure:
+
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [{"value": <number>, "unit": "<string>", "label": "<string>"}]
+    },
+    "scope_2_market_based": {
+      "<year>": [{"value": <number>, "unit": "<string>", "label": "<string>"}]
+    },
+    "scope_2_location_based": {
+      "<year>": [{"value": <number>, "unit": "<string>", "label": "<string>"}]
+    },
+    "scope_3": {
+      "<year>": [{"value": <number>, "unit": "<string>", "label": "<string>"}]
+    }
+  }
+}
+
+Output only the JSON object. Do not add any explanation or text outside the JSON.

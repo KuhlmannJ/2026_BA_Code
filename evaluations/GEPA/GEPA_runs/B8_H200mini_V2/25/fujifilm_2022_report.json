@@ -1,0 +1,42 @@
+{
+  "report_name": "Fujifilm Holdings Corporation Sustainability Report 2022",
+  "report_title": "Environmental Aspects",
+  "emissions": {
+    "scope_1": {
+      "2021": [
+        {
+          "value": 633,
+          "unit": "kt CO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2021": [
+        {
+          "value": 494,
+          "unit": "kt CO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2021": [
+        {
+          "value": 420,
+          "unit": "kt CO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_3": {
+      "2021": [
+        {
+          "value": 3473,
+          "unit": "kt CO2e",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}

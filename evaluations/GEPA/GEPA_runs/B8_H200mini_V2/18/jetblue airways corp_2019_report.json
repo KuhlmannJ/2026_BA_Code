@@ -1,0 +1,34 @@
+{
+  "report_name": "ABBREVIATED ESG REPORT",
+  "report_title": "2019 GREENHOUSE GAS INVENTORY",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 8730756,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 25944,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_3": {
+      "2019": [
+        {
+          "value": 1772985,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}
