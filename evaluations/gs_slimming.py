@@ -19,6 +19,14 @@ gs = pd.read_csv((Path(BASE) / "../evaluations/gold_standard.csv"))
 print("Mismatches:", reports_downloaded - set(gs["report_name"]))
 gs["report_name"] = gs["report_name"].replace("viacomcbs_2020_report.pdf", "ViacomCBS_ESG Report_2020-2021_vFINAL.pdf")
 
+# Correcting wrong page number for 1 report in GS
+gs.loc[
+    (gs["report_name"] == "sumitomo corporation_2021_report.pdf") & 
+    (gs["page"].notna()) & 
+    (gs["page"] == "121"), 
+    "page"
+] = "124"
+
 # Defining Status Column for each report, beginning with "notavail"
 gs["status"] = gs["report_name"].apply(lambda r: None if r in reports_downloaded else "notavail")
 

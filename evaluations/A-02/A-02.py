@@ -1,5 +1,6 @@
 import ast
 import csv
+import json
 from pathlib import Path
 import os
 import argparse
@@ -26,12 +27,12 @@ banner("STEP 0: GLOBAL VARIABLES")
 # ── Adjust these paths ───────────────────────────────────────
 
 if args.local :
-    GOLD_PATH      = Path("../../checklist.csv")
+    GOLD_PATH      = Path(__file__).parent.parent / "gs_slim.json"
     RETRIEVAL_LOG  = Path("../../localdata/A-02-retrieval_log.csv")
     OUTPUT_DIR     = Path("../A-02")
     RUN_TS         = args.runts
 else:
-    GOLD_PATH      = Path("/scratch/tmp/jkuhlma1/data/checklist.csv")
+    GOLD_PATH      = Path("/home/j/jkuhlma1/2026_BA_Code/evaluations/gs_slim.json")
     RETRIEVAL_LOG  = Path("/scratch/tmp/jkuhlma1/results/A-02-retrieval_log.csv")
     OUTPUT_DIR     = Path("/scratch/tmp/jkuhlma1/evaluations/A-02")
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -52,18 +53,21 @@ print()
 # PDFs starting at printed page 1 (normal) have offset -1 (gold 63 = index 62).
 # PDFs with non-numeric first pages (e.g. Allianz "A") have offset 0 (gold 78 = index 78).
 # We check both gold_page and gold_page-1 against retrieved indices to handle both cases.
+# gs_slim.json is used as gold source (pages already cleaned to plain integer strings).
 
 
 #### 1. Load Gold Standard ######################################
 banner("STEP 1: Load Gold Standard")
 
-gold = pd.read_csv(GOLD_PATH, dtype={"page": str})  # page as str: handles "Env33" etc.
-gold["report_stem"] = gold["report_name"].str.replace(r"\.pdf$", "", regex=True)
+with open(GOLD_PATH, encoding="utf-8") as f:
+    gold = pd.DataFrame(json.load(f))
+
+gold = gold.rename(columns={"report_name": "report_stem"})
 
 # NOTE: Get unique (report, page) pairs. We only care about whether the page was found,
 # not how many scope/year entries are on it
 gold_pages = (
-    gold[["report_stem", "page"]]
+    gold[gold["page"].notna()][["report_stem", "page"]]
     .drop_duplicates()
     .copy()
 )
@@ -142,13 +146,30 @@ n_total    = len(merged)
 n_topk     = merged["hit_topk"].sum()
 n_expanded = merged["hit_expanded"].sum()
 
+# ── MRR@3: rank of first hit within top-3 only ──────────────────
+merged["top_10_list"] = merged["top_10"].apply(ast.literal_eval)
+
+def first_hit_rank_top3(row):
+    try:
+        page = int(row["page"])
+    except (ValueError, TypeError):
+        return None
+    for i, idx in enumerate(row["top_10_list"][:3]):
+        if idx == page or idx == page - 1:
+            return i + 1
+    return None
+
+merged["rank"] = merged.apply(first_hit_rank_top3, axis=1)
+mrr = merged["rank"].apply(lambda r: 1 / r if r else 0).mean()
+
 print(f"  Evaluated: {n_total} (report, page) pairs across {merged['report_stem'].nunique()} reports")
 print()
-print(f"  Hit@TopK     (before ±1 expansion): {n_topk/n_total:.1%}  ({n_topk}/{n_total})")
-print(f"  Hit@Expanded (after  ±1 expansion): {n_expanded/n_total:.1%}  ({n_expanded}/{n_total})")
+print(f"  Recall@3 (before ±1 expansion): {n_topk/n_total:.1%}  ({n_topk}/{n_total})")
+print(f"  Recall@3 (after  ±1 expansion): {n_expanded/n_total:.1%}  ({n_expanded}/{n_total})")
+print(f"  MRR@3                         : {mrr:.3f}")
 print()
-print("Note, both already include an abritary 'off-by-one-error'-correction")
-print("by checking the hit page and the previous one in the source document.")
+print("  Note: offset-correction (page and page-1) applied in all metrics.")
+print("  ±1 neighbour expansion is a separate generosity layer (Beck et al.).")
 
 
 
