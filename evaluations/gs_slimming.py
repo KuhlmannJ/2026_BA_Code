@@ -15,17 +15,33 @@ reports_downloaded = {p.name for p in (Path(BASE) / "../localdata/all_esg_report
 #gs = pd.read_csv("evaluations/gold_standard.csv")
 gs = pd.read_csv((Path(BASE) / "../evaluations/gold_standard.csv"))
 
+#### FIXING ERRORS IN GOLD STANDARD
 # Finding wrong field name in gs and mapping it
 print("Mismatches:", reports_downloaded - set(gs["report_name"]))
 gs["report_name"] = gs["report_name"].replace("viacomcbs_2020_report.pdf", "ViacomCBS_ESG Report_2020-2021_vFINAL.pdf")
 
-# Correcting wrong page number for 1 report in GS
 gs.loc[
     (gs["report_name"] == "sumitomo corporation_2021_report.pdf") & 
     (gs["page"].notna()) & 
     (gs["page"] == "121"), 
     "page"
-] = "124"
+] = "124" # On 121 there is nothing worth extracting, whearas on p. 124 there is a GHG emissions table, which the retirever also found
+
+gs.loc[
+    (gs["report_name"] == "sumitomo corporation_2021_report.pdf") & 
+    (gs["page"].notna()) & 
+    (gs["page"] == "136"), 
+    "page"
+] = "139" # On 121 there is nothing worth extracting, whearas on p. 124 there is a GHG emissions table, which the retirever also found
+
+gs.loc[
+    (gs["report_name"] == "innospec inc_2020_report.pdf") & 
+    (gs["page"] == "Env33"), 
+    "page"
+] = "36" # Yes, page is called ENV33 but it is the 3zth page in the PDF
+
+# Some page values have "*66" which I ommit to parse easier
+gs["page"] = gs["page"].str.lstrip('*')
 
 # Defining Status Column for each report, beginning with "notavail"
 gs["status"] = gs["report_name"].apply(lambda r: None if r in reports_downloaded else "notavail")

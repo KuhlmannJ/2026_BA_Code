@@ -10,7 +10,7 @@ import pandas as pd
 # ── Arguments for Dev'ing
 parser = argparse.ArgumentParser()
 parser.add_argument("--local", "-l", action="store_true", help="For local execution and Paths")
-parser.add_argument("--runts", "-r",                      help="For local execution a given RUN_TS")
+parser.add_argument("--runts", "-r", default="0613_1445", help="For local execution a given RUN_TS")
 args = parser.parse_args()
 
 #### Helping Functions ##########################################
@@ -60,19 +60,17 @@ print()
 banner("STEP 1: Load Gold Standard")
 
 with open(GOLD_PATH, encoding="utf-8") as f:
-    gold = pd.DataFrame(json.load(f))
-
-gold = gold.rename(columns={"report_name": "report_stem"})
+    gs = pd.DataFrame(json.load(f))
 
 # NOTE: Get unique (report, page) pairs. We only care about whether the page was found,
 # not how many scope/year entries are on it
 gold_pages = (
-    gold[gold["page"].notna()][["report_stem", "page"]]
+    gs[gs["page"].notna()][["report_name", "page"]]
     .drop_duplicates()
     .copy()
 )
 
-print(f"Reports: {gold['report_stem'].nunique()}")
+print(f"Reports: {gs['report_name'].nunique()}")
 print(f"RUN_TS: {RUN_TS}")
 
 
@@ -100,7 +98,7 @@ with open(RETRIEVAL_LOG, newline="", encoding="utf-8") as f:
                     
         RETRIEVAL_LOG_rows.append({
             "model":         row["model"],
-            "report_stem":   row["report"],
+            "report_name":   row["report"],
             "phase":         row["phase"],
             "top_k_pages":   top_k,
             "expanded":      expanded,
@@ -110,14 +108,25 @@ with open(RETRIEVAL_LOG, newline="", encoding="utf-8") as f:
 
 ret_df = pd.DataFrame(RETRIEVAL_LOG_rows)
 print(f"Retrieval log entries: {len(ret_df)}")
-print(f"Reports in log:        {ret_df['report_stem'].nunique()}")
+print(f"Reports in log:        {ret_df['report_name'].nunique()}")
 print(f"Retrieval Model used:  {ret_df["model"][0]}")
+
+
+### MISSING REPORTS?
+# Compare report sets: which reports are present in one but not the other
+ret_reports = set(ret_df['report_name'].unique())
+gold_reports = set(gs['report_name'].unique())
+
+in_gold_not_ret = sorted(gold_reports - ret_reports)
+in_ret_not_gold = sorted(ret_reports - gold_reports)
+
+print(f"Reports only in gold ({len(in_gold_not_ret)}): {in_gold_not_ret}")
+print(f"Reports only in retrieval log ({len(in_ret_not_gold)}): {in_ret_not_gold}")
 
 #### 3. Retrieval Evaluation ####################################
 banner("STEP 3: Retrieval Evaluation")
 
-merged = gold_pages.merge(ret_df, on="report_stem", how="inner")
-#merged = gold_pages.merge(ret_df, on="report_stem", how="outer")
+merged = gold_pages.merge(ret_df, on="report_name", how="left")
 
 def hit_topk(row):
     top_k = row["top_k_pages"]
@@ -162,7 +171,7 @@ def first_hit_rank_top3(row):
 merged["rank"] = merged.apply(first_hit_rank_top3, axis=1)
 mrr = merged["rank"].apply(lambda r: 1 / r if r else 0).mean()
 
-print(f"  Evaluated: {n_total} (report, page) pairs across {merged['report_stem'].nunique()} reports")
+print(f"  Evaluated: {n_total} (report, page) pairs across {merged['report_name'].nunique()} reports")
 print()
 print(f"  Recall@3 (before ±1 expansion): {n_topk/n_total:.1%}  ({n_topk}/{n_total})")
 print(f"  Recall@3 (after  ±1 expansion): {n_expanded/n_total:.1%}  ({n_expanded}/{n_total})")
@@ -171,13 +180,8 @@ print()
 print("  Note: offset-correction (page and page-1) applied in all metrics.")
 print("  ±1 neighbour expansion is a separate generosity layer (Beck et al.).")
 
-
-
-#### 4. Per-Report Breakdown ####################################
-banner("STEP 4: Per-Report Breakdown (just to file)")
-
 per_report = (
-    merged.groupby("report_stem")
+    merged.groupby("report_name")
     .agg(
         gold_pages    = ("page",         "count"),
         hit_topk      = ("hit_topk",     "sum"),
@@ -185,23 +189,27 @@ per_report = (
     )
     .reset_index()
 )
-per_report["hit_topk_pct"]     = per_report["hit_topk"]     / per_report["gold_pages"]
-per_report["hit_expanded_pct"] = per_report["hit_expanded"] / per_report["gold_pages"]
-
 # Flag reports with complete miss (no gold page retrieved at all)
 per_report["full_miss"] = per_report["hit_expanded"] == 0
 
-full_misses = per_report[per_report["full_miss"]]["report_stem"].tolist()
+full_misses = per_report[per_report["full_miss"]]["report_name"].tolist()
 print(f"\n  Full misses ({len(full_misses)} reports): {full_misses}")
 
+# ── Missed (report, page) pairs after ±1 expansion ──────────────
+misses = merged[~merged["hit_expanded"]][["report_name", "page", "phase", "top_k_pages", "top_10"]].copy()
+misses = misses.sort_values(["report_name", "page"])
 
-#### 5. Save ####################################################
-banner("STEP 5: Save")
+print(f"\n  Missed pages ({len(misses)} total):")
+for _, row in misses.iterrows():
+    print(f"    {row['report_name']}  p.{row['page']}  (top_k={row['top_k_pages']})")
 
-merged_sorted = merged[["model","report_stem","page","phase","top_k_pages","hit_topk","hit_expanded","top_10","top_10_scores"]]
 
+#### 4. Save ####################################################
+banner("STEP 4: Save")
+
+merged_sorted = merged[["model","report_name","page","phase","top_k_pages","hit_topk","hit_expanded","top_10","top_10_scores"]]
 merged_sorted.to_csv(OUTPUT_DIR / "retrieval_evaluation.csv", index=False)
-per_report.to_csv(OUTPUT_DIR / "retrieval_per_report.csv", index=False)
-
 print(f"  → {OUTPUT_DIR / 'retrieval_evaluation.csv'}")
-print(f"  → {OUTPUT_DIR / 'retrieval_per_report.csv'}")
+
+misses.to_csv(OUTPUT_DIR / "retrieval_misses.csv", index=False)
+print(f"  → {OUTPUT_DIR / 'retrieval_misses.csv'}")
