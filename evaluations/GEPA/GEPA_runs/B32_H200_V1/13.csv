@@ -1,0 +1,87 @@
+report_name,scope,year,value,unit,label
+Allianz_2022_report,scope_1,2022,30953,t CO₂e,Scope 1 – Direct GHG emissions
+Allianz_2022_report,scope_1,2021,28699,t CO₂e,Scope 1 – Direct GHG emissions
+Allianz_2022_report,scope_1,2020,28714,t CO₂e,Scope 1 – Direct GHG emissions
+Allianz_2022_report,scope_2_location_based,2022,138339,t CO₂e,Scope 2 – Indirect GHG emissions (location based)
+Allianz_2022_report,scope_2_location_based,2021,149599,t CO₂e,Scope 2 – Indirect GHG emissions (location based)
+Allianz_2022_report,scope_2_location_based,2020,180826,t CO₂e,Scope 2 – Indirect GHG emissions (location based)
+Allianz_2022_report,scope_2_market_based,2022,30490,t CO₂e,Scope 2 – Indirect GHG emissions (market based)
+Allianz_2022_report,scope_2_market_based,2021,54689,t CO₂e,Scope 2 – Indirect GHG emissions (market based)
+Allianz_2022_report,scope_2_market_based,2020,100722,t CO₂e,Scope 2 – Indirect GHG emissions (market based)
+Allianz_2022_report,scope_3,2022,92467,t CO₂e,Scope 3 – Other indirect GHG emissions
+Allianz_2022_report,scope_3,2021,55359,t CO₂e,Scope 3 – Other indirect GHG emissions
+Allianz_2022_report,scope_3,2020,73916,t CO₂e,Scope 3 – Other indirect GHG emissions
+addtech_2022_report,scope_1,2021/2022,2041,tonnes CO2e,SCOPE 1 (tonnes CO2e)
+addtech_2022_report,scope_1,2020/2021,1910,tonnes CO2e,SCOPE 1 (tonnes CO2e)
+addtech_2022_report,scope_1,2019/2020,2071,tonnes CO2e,SCOPE 1 (tonnes CO2e)
+addtech_2022_report,scope_2_location_based,2021/2022,3709,tonnes CO2e,"Emissions, energy consumption – Location Based Method (tonnes CO2e)"
+addtech_2022_report,scope_2_location_based,2020/2021,3395,tonnes CO2e,"Emissions, energy consumption – Location Based Method (tonnes CO2e)"
+addtech_2022_report,scope_2_location_based,2019/2020,3979,tonnes CO2e,"Emissions, energy consumption – Location Based Method (tonnes CO2e)"
+addtech_2022_report,scope_2_market_based,2021/2022,4087,tonnes CO2e,"Emissions, energy consumption – Market Based Method (tonnes CO2e)"
+addtech_2022_report,scope_2_market_based,2020/2021,4250,tonnes CO2e,"Emissions, energy consumption – Market Based Method (tonnes CO2e)"
+addtech_2022_report,scope_3,2021/2022,22961,tonnes CO2e,SCOPE 3 (tonnes CO2e)
+addtech_2022_report,scope_3,2020/2021,19860,tonnes CO2e,SCOPE 3 (tonnes CO2e)
+addtech_2022_report,scope_3,2019/2020,23132,tonnes CO2e,SCOPE 3 (tonnes CO2e)
+fujifilm_2022_report,scope_1,2017,687,kt CO2e,Total direct GHG emissions (Scope 1)
+fujifilm_2022_report,scope_1,2018,672,kt CO2e,Total direct GHG emissions (Scope 1)
+fujifilm_2022_report,scope_1,2019,633,kt CO2e,Total direct GHG emissions (Scope 1)
+fujifilm_2022_report,scope_1,2020,603,kt CO2e,Total direct GHG emissions (Scope 1)
+fujifilm_2022_report,scope_1,2021,633,kt CO2e,Total direct GHG emissions (Scope 1)
+fujifilm_2022_report,scope_2_location_based,2017,593,kt CO2e,Total indirect GHG emissions (Scope 2) Location-based
+fujifilm_2022_report,scope_2_location_based,2018,576,kt CO2e,Total indirect GHG emissions (Scope 2) Location-based
+fujifilm_2022_report,scope_2_location_based,2019,514,kt CO2e,Total indirect GHG emissions (Scope 2) Location-based
+fujifilm_2022_report,scope_2_location_based,2020,475,kt CO2e,Total indirect GHG emissions (Scope 2) Location-based
+fujifilm_2022_report,scope_2_location_based,2021,494,kt CO2e,Total indirect GHG emissions (Scope 2) Location-based
+fujifilm_2022_report,scope_2_market_based,2017,531,kt CO2e,Total indirect GHG emissions (Scope 2) Market-based
+fujifilm_2022_report,scope_2_market_based,2018,510,kt CO2e,Total indirect GHG emissions (Scope 2) Market-based
+fujifilm_2022_report,scope_2_market_based,2019,451,kt CO2e,Total indirect GHG emissions (Scope 2) Market-based
+fujifilm_2022_report,scope_2_market_based,2020,409,kt CO2e,Total indirect GHG emissions (Scope 2) Market-based
+fujifilm_2022_report,scope_2_market_based,2021,420,kt CO2e,Total indirect GHG emissions (Scope 2) Market-based
+fujifilm_2022_report,scope_3,2021,3473,kt CO2e,Total GHG Emissions (Scope 3)
+jetblue airways corp_2019_report,scope_1,2015,6903710,tCO₂e,Direct (Scope 1)
+jetblue airways corp_2019_report,scope_1,2016,7484799,tCO₂e,Direct (Scope 1)
+jetblue airways corp_2019_report,scope_1,2017,7809488,tCO₂e,Direct (Scope 1)
+jetblue airways corp_2019_report,scope_1,2018,8370944,tCO₂e,Direct (Scope 1)
+jetblue airways corp_2019_report,scope_1,2019,8730756,tCO₂e,Direct (Scope 1)
+jetblue airways corp_2019_report,scope_2_location_based,2015,25768,tCO₂e,Indirect Energy (Scope 2)
+jetblue airways corp_2019_report,scope_2_location_based,2016,27702,tCO₂e,Indirect Energy (Scope 2)
+jetblue airways corp_2019_report,scope_2_location_based,2017,26521,tCO₂e,Indirect Energy (Scope 2)
+jetblue airways corp_2019_report,scope_2_location_based,2018,26656,tCO₂e,Indirect Energy (Scope 2)
+jetblue airways corp_2019_report,scope_2_location_based,2019,25944,tCO₂e,Indirect Energy (Scope 2)
+jetblue airways corp_2019_report,scope_3,2015,1402791,tCO₂e,Indirect Other (Scope 3)
+jetblue airways corp_2019_report,scope_3,2016,1522142,tCO₂e,Indirect Other (Scope 3)
+jetblue airways corp_2019_report,scope_3,2017,1586368,tCO₂e,Indirect Other (Scope 3)
+jetblue airways corp_2019_report,scope_3,2018,1698105,tCO₂e,Indirect Other (Scope 3)
+jetblue airways corp_2019_report,scope_3,2019,1772985,tCO₂e,Indirect Other (Scope 3)
+sato oyj_2022_report,scope_1,2015,135,t CO2-e,"GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+sato oyj_2022_report,scope_1,2016,170,t CO2-e,"GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+sato oyj_2022_report,scope_1,2017,214,t CO2-e,"GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+sato oyj_2022_report,scope_1,2018,179,t CO2-e,"GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+sato oyj_2022_report,scope_1,2019,177,t CO2-e,"GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+sato oyj_2022_report,scope_1,2020,147,t CO2-e,"GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+sato oyj_2022_report,scope_1,2021,105,t CO2-e,"GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+sato oyj_2022_report,scope_1,2022,20,t CO2-e,"GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+sato oyj_2022_report,scope_2_location_based,2015,41962,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (location-based)"
+sato oyj_2022_report,scope_2_location_based,2016,52583,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (location-based)"
+sato oyj_2022_report,scope_2_location_based,2017,43163,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (location-based)"
+sato oyj_2022_report,scope_2_location_based,2018,40152,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (location-based)"
+sato oyj_2022_report,scope_2_location_based,2019,37468,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (location-based)"
+sato oyj_2022_report,scope_2_location_based,2020,34456,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (location-based)"
+sato oyj_2022_report,scope_2_location_based,2021,45754,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (location-based)"
+sato oyj_2022_report,scope_2_location_based,2022,40393,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (location-based)"
+sato oyj_2022_report,scope_2_market_based,2015,37674,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (market-based)"
+sato oyj_2022_report,scope_2_market_based,2016,48560,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (market-based)"
+sato oyj_2022_report,scope_2_market_based,2017,39430,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (market-based)"
+sato oyj_2022_report,scope_2_market_based,2018,36728,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (market-based)"
+sato oyj_2022_report,scope_2_market_based,2019,34292,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (market-based)"
+sato oyj_2022_report,scope_2_market_based,2020,30915,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (market-based)"
+sato oyj_2022_report,scope_2_market_based,2021,43349,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (market-based)"
+sato oyj_2022_report,scope_2_market_based,2022,37920,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (market-based)"
+sato oyj_2022_report,scope_3,2015,1834,t CO2-e,"GRI-305-3 Other indirect greenhouse gas emissions, t CO2-e** (scope 3)"
+sato oyj_2022_report,scope_3,2016,948,t CO2-e,"GRI-305-3 Other indirect greenhouse gas emissions, t CO2-e** (scope 3)"
+sato oyj_2022_report,scope_3,2017,240,t CO2-e,"GRI-305-3 Other indirect greenhouse gas emissions, t CO2-e** (scope 3)"
+sato oyj_2022_report,scope_3,2018,49,t CO2-e,"GRI-305-3 Other indirect greenhouse gas emissions, t CO2-e** (scope 3)"
+sato oyj_2022_report,scope_3,2019,46,t CO2-e,"GRI-305-3 Other indirect greenhouse gas emissions, t CO2-e** (scope 3)"
+sato oyj_2022_report,scope_3,2020,37,t CO2-e,"GRI-305-3 Other indirect greenhouse gas emissions, t CO2-e** (scope 3)"
+sato oyj_2022_report,scope_3,2021,49,t CO2-e,"GRI-305-3 Other indirect greenhouse gas emissions, t CO2-e** (scope 3)"
+sato oyj_2022_report,scope_3,2022,49,t CO2-e,"GRI-305-3 Other indirect greenhouse gas emissions, t CO2-e** (scope 3)"
