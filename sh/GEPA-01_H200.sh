@@ -8,12 +8,12 @@
 #SBATCH --cpus-per-task=8
 #SBATCH --partition=gpuh200
 
-#SBATCH --time=03:00:00
+#SBATCH --time=3-12:00:00
 
 #SBATCH --output=/scratch/tmp/jkuhlma1/logs/%j_out.log    # stdout → Datei (%j = Job-ID)
 #SBATCH --error=/scratch/tmp/jkuhlma1/logs/%j_out.log     # stderr → Datei
 
-#SBATCH --job-name=GEPA-H200
+#SBATCH --job-name=GEPAthink
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=jannik.kuhlmann@uni-muenster.de 
 
