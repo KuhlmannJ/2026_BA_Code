@@ -1,0 +1,1023 @@
+report_name,scope,year,value,unit,label
+Allianz_2022_report,scope_1,2019,149.0,ktCO2eq,direct
+Allianz_2022_report,scope_1,2020,28714.0,t CO2e,direct
+Allianz_2022_report,scope_1,2020,74.0,ktCO2eq,direct
+Allianz_2022_report,scope_1,2021,28699.0,t CO2e,direct
+Allianz_2022_report,scope_1,2021,55.0,ktCO2eq,direct
+Allianz_2022_report,scope_1,2022,30953.0,t CO2e,direct
+Allianz_2022_report,scope_1,2022,92.0,ktCO2eq,direct
+Allianz_2022_report,scope_2_market_based,2019,143.0,ktCO2eq,market_based
+Allianz_2022_report,scope_2_market_based,2020,100722.0,t CO2e,market_based
+Allianz_2022_report,scope_2_market_based,2020,101.0,ktCO2eq,market_based
+Allianz_2022_report,scope_2_market_based,2021,54689.0,t CO2e,market_based
+Allianz_2022_report,scope_2_market_based,2021,55.0,ktCO2eq,market_based
+Allianz_2022_report,scope_2_market_based,2022,30490.0,t CO2e,market_based
+Allianz_2022_report,scope_2_market_based,2022,30.0,ktCO2eq,market_based
+Allianz_2022_report,scope_2_location_based,2020,180826.0,t CO2e,location_based
+Allianz_2022_report,scope_2_location_based,2021,149599.0,t CO2e,location_based
+Allianz_2022_report,scope_2_location_based,2022,138339.0,t CO2e,location_based
+Allianz_2022_report,scope_3,2019,42.0,ktCO2eq,indirect
+Allianz_2022_report,scope_3,2019,24.9,mn tCO2eq,unspecified/total
+Allianz_2022_report,scope_3,2019,3.7,mn tCO2eq,unspecified/listed_equities
+Allianz_2022_report,scope_3,2019,21.2,mn tCO2eq,unspecified/corporate_bonds
+Allianz_2022_report,scope_3,2019,0.33,mn tCO2eq,unspecified/direct_real_estate_and_JVs
+Allianz_2022_report,scope_3,2019,0.3,mn tCO2eq,unspecified/direct_infrastructure_equity
+Allianz_2022_report,scope_3,2020,73916.0,t CO2e,indirect
+Allianz_2022_report,scope_3,2020,56316.0,t CO2e,total/business_travel
+Allianz_2022_report,scope_3,2020,0.4,t CO2e/empl,unspecified/per_employee
+Allianz_2022_report,scope_3,2020,22.2,mn tCO2eq,unspecified/total
+Allianz_2022_report,scope_3,2020,2.2,mn tCO2eq,unspecified/listed_equities
+Allianz_2022_report,scope_3,2020,20.0,mn tCO2eq,unspecified/corporate_bonds
+Allianz_2022_report,scope_3,2020,0.2,mn tCO2eq,unspecified/direct_real_estate_and_JVs
+Allianz_2022_report,scope_3,2020,29.0,ktCO2eq,indirect
+Allianz_2022_report,scope_3,2021,55359.0,t CO2e,indirect
+Allianz_2022_report,scope_3,2021,39570.0,t CO2e,total/business_travel
+Allianz_2022_report,scope_3,2021,0.3,t CO2e/empl,unspecified/per_employee
+Allianz_2022_report,scope_3,2021,18.7,mn tCO2eq,unspecified/total
+Allianz_2022_report,scope_3,2021,2.3,mn tCO2eq,unspecified/listed_equities
+Allianz_2022_report,scope_3,2021,16.4,mn tCO2eq,unspecified/corporate_bonds
+Allianz_2022_report,scope_3,2021,0.14,mn tCO2eq,unspecified/direct_real_estate_and_JVs
+Allianz_2022_report,scope_3,2021,29.0,ktCO2eq,indirect
+Allianz_2022_report,scope_3,2021,19.1,mn t CO2e,total/absolute
+Allianz_2022_report,scope_3,2021,77.7,t CO2e/€ mn invested,total/relative
+Allianz_2022_report,scope_3,2021,16.4,mn t CO2e,unspecified/absolute
+Allianz_2022_report,scope_3,2021,83.2,t CO2e/€ mn invested,unspecified/relative
+Allianz_2022_report,scope_3,2021,2.3,mn t CO2e,unspecified/absolute
+Allianz_2022_report,scope_3,2021,55.7,t CO2e/€ mn invested,unspecified/relative
+Allianz_2022_report,scope_3,2021,0.4,mn t CO2e,unspecified/absolute
+Allianz_2022_report,scope_3,2021,63.9,t CO2e/€ mn invested,unspecified/relative
+Allianz_2022_report,scope_3,2022,92467.0,t CO2e,indirect
+Allianz_2022_report,scope_3,2022,74339.0,t CO2e,total/business_travel
+Allianz_2022_report,scope_3,2022,0.5,t CO2e/empl,unspecified/per_employee
+Allianz_2022_report,scope_3,2022,46.4,mn tCO2eq,unspecified/total
+Allianz_2022_report,scope_3,2022,0.4,mn tCO2eq,unspecified/listed_equities
+Allianz_2022_report,scope_3,2022,0.3,mn tCO2eq,unspecified/corporate_bonds
+Allianz_2022_report,scope_3,2022,29.5,mn tCO2eq,unspecified/direct_real_estate_and_JVs
+Allianz_2022_report,scope_3,2022,1.1,mn tCO2eq,unspecified/direct_infrastructure_equity
+Allianz_2022_report,scope_3,2022,15.1,mn tCO2eq,unspecified/sovereign
+Allianz_2022_report,scope_3,2022,0.15,mn tCO2eq,unspecified/forthcoming
+Allianz_2022_report,scope_3,2022,31.0,ktCO2eq,indirect
+Allianz_2022_report,scope_3,2022,46.3,mn t CO2e,total/absolute
+Allianz_2022_report,scope_3,2022,110.8,t CO2e/€ mn invested,total/relative
+Allianz_2022_report,scope_3,2022,15.1,mn t CO2e,unspecified/absolute
+Allianz_2022_report,scope_3,2022,78.1,t CO2e/€ mn invested,unspecified/relative
+Allianz_2022_report,scope_3,2022,1.1,mn t CO2e,unspecified/absolute
+Allianz_2022_report,scope_3,2022,52.7,t CO2e/€ mn invested,unspecified/relative
+Allianz_2022_report,scope_3,2022,29.5,mn t CO2e,unspecified/absolute
+Allianz_2022_report,scope_3,2022,192.6,t CO2e/€ mn invested,unspecified/relative
+Allianz_2022_report,scope_3,2022,0.3,mn t CO2e,unspecified/absolute
+Allianz_2022_report,scope_3,2022,33.0,kgCO2e/sqm,unspecified/relative
+Allianz_2022_report,scope_3,2022,0.4,mn t CO2e,unspecified/absolute
+Allianz_2022_report,scope_3,2022,60.3,t CO2e/€ mn invested,unspecified/relative
+Fresenius SE_2019_report,scope_1,2019,227.0,tCO₂ equivalents in thousands,direct
+Fresenius SE_2019_report,scope_1,2019,165.0,tCO₂ equivalents in thousands,direct
+Fresenius SE_2019_report,scope_1,2019,107.0,tCO₂ equivalents in thousands,direct
+Fresenius SE_2019_report,scope_1,2019,18.0,tCO₂ equivalents in thousands,direct
+Fresenius SE_2019_report,scope_1,2019,517.0,tCO₂ equivalents in thousands,total
+Fresenius SE_2019_report,scope_1,2018,219.0,tCO₂ equivalents in thousands,direct
+Fresenius SE_2019_report,scope_1,2018,169.0,tCO₂ equivalents in thousands,direct
+Fresenius SE_2019_report,scope_1,2018,114.0,tCO₂ equivalents in thousands,direct
+Fresenius SE_2019_report,scope_1,2018,19.0,tCO₂ equivalents in thousands,direct
+Fresenius SE_2019_report,scope_1,2018,521.0,tCO₂ equivalents in thousands,total
+Fresenius SE_2019_report,scope_2_location_based,2019,547.0,tCO₂ equivalents in thousands,indirect
+Fresenius SE_2019_report,scope_2_location_based,2019,249.0,tCO₂ equivalents in thousands,indirect
+Fresenius SE_2019_report,scope_2_location_based,2019,178.0,tCO₂ equivalents in thousands,indirect
+Fresenius SE_2019_report,scope_2_location_based,2019,18.0,tCO₂ equivalents in thousands,indirect
+Fresenius SE_2019_report,scope_2_location_based,2019,992.0,tCO₂ equivalents in thousands,total
+Fresenius SE_2019_report,scope_2_location_based,2018,557.0,tCO₂ equivalents in thousands,indirect
+Fresenius SE_2019_report,scope_2_location_based,2018,255.0,tCO₂ equivalents in thousands,indirect
+Fresenius SE_2019_report,scope_2_location_based,2018,182.0,tCO₂ equivalents in thousands,indirect
+Fresenius SE_2019_report,scope_2_location_based,2018,19.0,tCO₂ equivalents in thousands,indirect
+Fresenius SE_2019_report,scope_2_location_based,2018,1013.0,tCO₂ equivalents in thousands,total
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2014,8297.0,METRIC TONS CO2e,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2015,9045.0,METRIC TONS CO2e,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2016,24672.0,METRIC TONS CO2e,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2017,26834.0,METRIC TONS CO2e,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2018,31737.0,METRIC TONS CO2e,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2019,38240.0,METRIC TONS CO2e,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2020,32097.0,METRIC TONS CO2e,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2014,39252.0,METRIC TONS CO2e,location_based
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2015,50828.0,METRIC TONS CO2e,location_based
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2016,216737.0,METRIC TONS CO2e,location_based
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2017,219851.0,METRIC TONS CO2e,location_based
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2018,229073.0,METRIC TONS CO2e,location_based
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2019,144268.0,METRIC TONS CO2e,location_based
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2020,139608.0,METRIC TONS CO2e,location_based
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2014,37114.0,METRIC TONS CO2e,market_based
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2015,50828.0,METRIC TONS CO2e,market_based
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2016,213701.0,METRIC TONS CO2e,market_based
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2017,219375.0,METRIC TONS CO2e,market_based
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2018,219385.0,METRIC TONS CO2e,market_based
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2019,123106.0,METRIC TONS CO2e,market_based
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2020,134333.0,METRIC TONS CO2e,market_based
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2014,28499.0,METRIC TONS CO2e,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2015,33242.0,METRIC TONS CO2e,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2016,47190.0,METRIC TONS CO2e,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2017,39356.0,METRIC TONS CO2e,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2018,37891.0,METRIC TONS CO2e,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2019,819682.0,METRIC TONS CO2e,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2019,819682.0,MT,total
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2019,637543.0,MT,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2019,115600.0,MT,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2019,54439.0,MT,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2019,2435.0,MT,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2019,9665.0,MT,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2020,6897654.0,METRIC TONS CO2e,market_based
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2020,6878548.0,MT,total
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2020,6306008.0,MT,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2020,524161.0,MT,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2020,14443.0,MT,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2020,8936.0,MT,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2020,18192.0,MT,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2020,5092.0,MT,unspecified
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2020,1715.0,MT,unspecified
+acuity brands inc_2022_report,scope_1,2022,34327.0,MT CO2e,total
+acuity brands inc_2022_report,scope_1,2022,34327.0,MtCO2e,total
+acuity brands inc_2022_report,scope_2_market_based,2022,42234.0,MT CO2e,total
+acuity brands inc_2022_report,scope_2_market_based,2022,42234.0,MtCO2e,total
+acuity brands inc_2022_report,scope_2_location_based,2022,46637.0,MtCO2e,location_based
+acuity brands inc_2022_report,scope_3,2022,35119419.0,MT CO2e,total
+acuity brands inc_2022_report,scope_3,2022,1765189.0,MT CO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,35556.0,MT CO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,28695.0,MT CO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,55784.0,MT CO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,2572.0,MT CO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,3234.0,MT CO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,8767.0,MT CO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,62866.0,MT CO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,33136905.0,MT CO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,19669.0,MT CO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,182.0,MT CO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,1765189.0,MtCO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,35556.0,MtCO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,28695.0,MtCO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,55784.0,MtCO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,2572.0,MtCO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,3234.0,MtCO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,8767.0,MtCO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,62866.0,MtCO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,33136905.0,MtCO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,19669.0,MtCO2e,unspecified
+acuity brands inc_2022_report,scope_3,2022,182.0,MtCO2e,unspecified
+addtech_2022_report,scope_1,2021/2022,2041.0,tonnes CO2e,total
+addtech_2022_report,scope_1,2021/2022,1500.0,tonnes CO2e,unspecified
+addtech_2022_report,scope_1,2021/2022,541.0,tonnes CO2e,unspecified
+addtech_2022_report,scope_1,2020/2021,1910.0,tonnes CO2e,total
+addtech_2022_report,scope_1,2020/2021,1356.0,tonnes CO2e,unspecified
+addtech_2022_report,scope_1,2020/2021,554.0,tonnes CO2e,unspecified
+addtech_2022_report,scope_1,2019/2020,2071.0,tonnes CO2e,total
+addtech_2022_report,scope_1,2019/2020,2071.0,tonnes CO2e,unspecified
+addtech_2022_report,scope_2_market_based,2021/2022,4087.0,tonnes CO2e,market_based
+addtech_2022_report,scope_2_market_based,2020/2021,4250.0,tonnes CO2e,market_based
+addtech_2022_report,scope_2_location_based,2021/2022,3709.0,tonnes CO2e,location_based
+addtech_2022_report,scope_2_location_based,2020/2021,3395.0,tonnes CO2e,location_based
+addtech_2022_report,scope_2_location_based,2019/2020,3979.0,tonnes CO2e,location_based
+addtech_2022_report,scope_3,2021/2022,22961.0,tonnes CO2e,total
+addtech_2022_report,scope_3,2021/2022,21782.0,tonnes CO2e,unspecified
+addtech_2022_report,scope_3,2021/2022,1097.0,tonnes CO2e,unspecified
+addtech_2022_report,scope_3,2021/2022,82.0,tonnes CO2e,unspecified
+addtech_2022_report,scope_3,2020/2021,19860.0,tonnes CO2e,total
+addtech_2022_report,scope_3,2020/2021,18733.0,tonnes CO2e,unspecified
+addtech_2022_report,scope_3,2020/2021,1021.0,tonnes CO2e,unspecified
+addtech_2022_report,scope_3,2020/2021,106.0,tonnes CO2e,unspecified
+addtech_2022_report,scope_3,2019/2020,23132.0,tonnes CO2e,total
+addtech_2022_report,scope_3,2019/2020,18362.0,tonnes CO2e,unspecified
+addtech_2022_report,scope_3,2019/2020,10581.0,tonnes CO2e,unspecified
+addtech_2022_report,scope_3,2019/2020,7781.0,tonnes CO2e,unspecified
+addtech_2022_report,scope_3,2019/2020,4770.0,tonnes CO2e,unspecified
+aixtron_2020_report,scope_1,2019,170.8,tonnes,direct
+aixtron_2020_report,scope_1,2020,322.84,tonnes,direct
+aixtron_2020_report,scope_3,2019,3637.97,tonnes,indirect
+aixtron_2020_report,scope_3,2020,1310.1,tonnes,indirect
+autoneum holding_2019_report,scope_1,2019,116274.0,metric tons CO₂ equivalents,direct
+autoneum holding_2019_report,scope_1,2019,50.6,metric tons CO₂ equivalents per CHF million revenue,direct/intensity
+autoneum holding_2019_report,scope_1,2018,109577.0,metric tons CO₂ equivalents,direct
+autoneum holding_2019_report,scope_1,2018,48.0,metric tons CO₂ equivalents per CHF million revenue,direct/intensity
+autoneum holding_2019_report,scope_1,2017,81077.0,metric tons CO₂ equivalents,direct
+autoneum holding_2019_report,scope_1,2017,36.8,metric tons CO₂ equivalents per CHF million revenue,direct/intensity
+autoneum holding_2019_report,scope_2_location_based,2019,264287.0,metric tons CO₂ equivalents,indirect
+autoneum holding_2019_report,scope_2_location_based,2019,115.0,metric tons CO₂ equivalents per CHF million revenue,indirect/intensity
+autoneum holding_2019_report,scope_2_location_based,2018,256550.0,metric tons CO₂ equivalents,indirect
+autoneum holding_2019_report,scope_2_location_based,2018,112.4,metric tons CO₂ equivalents per CHF million revenue,indirect/intensity
+autoneum holding_2019_report,scope_2_location_based,2017,235014.0,metric tons CO₂ equivalents,indirect
+autoneum holding_2019_report,scope_2_location_based,2017,106.7,metric tons CO₂ equivalents per CHF million revenue,indirect/intensity
+autoneum holding_2019_report,scope_3,2019,420238.0,metric tons CO₂ equivalents,indirect
+autoneum holding_2019_report,scope_3,2018,525214.0,metric tons CO₂ equivalents,indirect
+autoneum holding_2019_report,scope_3,2017,448185.0,metric tons CO₂ equivalents,indirect
+bekaert (d) sa_2022_report,scope_1,2019,286932.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,7867.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,329982.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,8438.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,30845.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,7910.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,77384.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,5373.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,19750.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,40011.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,13796.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,42766.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,155655.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,108597.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,16452.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,8922.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,5173.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,165134.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,142738.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,16452.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,8922.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2019,5173.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,263785.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,7445.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,305547.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,7980.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,29266.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,5776.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,70306.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,5469.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,18970.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,39310.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,12582.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,36913.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,141491.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,99425.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,16029.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,9267.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,5019.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,150674.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,132539.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,16029.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,9267.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2020,5019.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,277023.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,7887.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,327690.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,8511.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,31070.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,5382.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,70248.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,6891.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,20034.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,43305.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,14532.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,35591.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,152814.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,102830.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,15229.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,9048.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,4989.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,166366.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,140569.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,15229.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,9048.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2021,4989.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,262581.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,7388.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,309001.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,7950.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,26584.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,5463.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,66598.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,7254.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,15994.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,42040.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,15253.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,36657.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,140995.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,102636.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,14647.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,8119.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,3572.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,154874.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,135739.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,14647.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,8119.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_1,2022,3572.0,ton CO2,direct
+bekaert (d) sa_2022_report,scope_2_market_based,2019,0.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2019,15541.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2019,794058.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2019,80962.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2019,161983.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2019,162.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2019,87027.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2019,92616.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2019,1222347.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2019,95320.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2019,17141.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2019,24949.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2019,3303.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2019,1243295.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2019,114729.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2019,17141.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2019,24949.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2019,3303.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2020,8382.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2020,14087.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2020,750752.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2020,74461.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2020,148406.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2020,25270.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2020,72933.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2020,59126.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2020,1088383.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2020,101986.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2020,19482.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2020,24037.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2020,2958.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2020,1104536.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2020,119027.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2020,19482.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2020,24037.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2020,2958.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2021,7768.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2021,16289.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2021,777225.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2021,101462.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2021,165128.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2021,31525.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2021,90440.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2021,71747.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2021,1189756.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2021,117159.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2021,22889.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2021,29061.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2021,3478.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2021,1217766.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2021,143505.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2021,22889.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2021,29061.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2021,3478.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2022,6971.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2022,13678.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2022,711082.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2022,77419.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2022,143252.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2022,31214.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2022,87638.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2022,42456.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2022,1071971.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2022,115592.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2022,25290.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2022,26916.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2022,1249.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2022,1097982.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2022,138192.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2022,25290.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2022,26916.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_2_market_based,2022,1249.0,ton CO2,market_based
+bekaert (d) sa_2022_report,scope_3,2019,6045636.0,ton CO2e,total
+bekaert (d) sa_2022_report,scope_3,2019,4874911.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2019,72870.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2019,352555.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2019,31487.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2019,27261.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2019,2740.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2019,20400.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2019,0.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2019,47230.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2019,161870.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2019,100000.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2019,106999.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2019,0.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2019,0.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2019,247313.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2019,6045636.0,ton CO2e,total
+bekaert (d) sa_2022_report,scope_3,2019,18578.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2019,9284.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2019,800.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2019,2740.0,ton CO2e (without radiative forcing (RF)),indirect
+bekaert (d) sa_2022_report,scope_3,2020,3606.0,ton CO2e/year,indirect
+bekaert (d) sa_2022_report,scope_3,2020,1700.0,ton CO2e (without radiative forcing (RF)),indirect
+bekaert (d) sa_2022_report,scope_3,2021,6736962.0,ton CO2e,total
+bekaert (d) sa_2022_report,scope_3,2021,5446554.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2021,113767.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2021,348402.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2021,44627.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2021,32713.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2021,1000.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2021,20400.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2021,0.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2021,66941.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2021,163893.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2021,100000.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2021,108341.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2021,0.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2021,0.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2021,290324.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2021,6736962.0,ton CO2e,total
+bekaert (d) sa_2022_report,scope_3,2021,31137.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2021,10562.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2021,4118.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2021,1000.0,ton CO2e (without radiative forcing (RF)),indirect
+bekaert (d) sa_2022_report,scope_3,2021,3508.0,ton CO2e/year,indirect
+bekaert (d) sa_2022_report,scope_3,2022,6187086.0,ton CO2e,total
+bekaert (d) sa_2022_report,scope_3,2022,4762032.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2022,133995.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2022,325115.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2022,77972.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2022,37984.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2022,2100.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2022,20400.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2022,0.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2022,116899.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2022,156846.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2022,100000.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2022,94448.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2022,0.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2022,0.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2022,359295.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2022,6187086.0,ton CO2e,total
+bekaert (d) sa_2022_report,scope_3,2022,29263.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2022,82854.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2022,4782.0,ton CO2e,indirect
+bekaert (d) sa_2022_report,scope_3,2022,2100.0,ton CO2e (without radiative forcing (RF)),indirect
+bekaert (d) sa_2022_report,scope_3,2022,3497.0,ton CO2e/year,indirect
+blackline safety_2021_report,scope_1,2020,165.6,MT CO2e,unspecified
+blackline safety_2021_report,scope_1,2021,215.0,MT CO2e,unspecified
+blackline safety_2021_report,scope_2_location_based,2020,227.4,MT CO2e,location_based
+blackline safety_2021_report,scope_2_location_based,2021,576.0,MT CO2e,location_based
+blackline safety_2021_report,scope_3,2020,1661.2,MT CO2e,indirect
+blackline safety_2021_report,scope_3,2021,1606.2,MT CO2e,indirect
+cabot corp_2018_report,scope_1,2016,4.5,MM MT CO2e,unspecified/absolute
+cabot corp_2018_report,scope_1,2016,2.25,MT CO2e / MT Production,unspecified/intensity
+cabot corp_2018_report,scope_1,2017,4.58,MM MT CO2e,unspecified/absolute
+cabot corp_2018_report,scope_1,2017,2.2,MT CO2e / MT Production,unspecified/intensity
+cabot corp_2018_report,scope_1,2018,4.77,MM MT CO2e,unspecified/absolute
+cabot corp_2018_report,scope_1,2018,2.18,MT CO2e / MT Production,unspecified/intensity
+cabot corp_2018_report,scope_2_location_based,2016,0.34,MM MT CO2e,unspecified/absolute
+cabot corp_2018_report,scope_2_location_based,2016,0.17,MT CO2e / MT Production,unspecified/intensity
+cabot corp_2018_report,scope_2_location_based,2017,0.33,MM MT CO2e,unspecified/absolute
+cabot corp_2018_report,scope_2_location_based,2017,0.16,MT CO2e / MT Production,unspecified/intensity
+cabot corp_2018_report,scope_2_location_based,2018,0.32,MM MT CO2e,unspecified/absolute
+cabot corp_2018_report,scope_2_location_based,2018,0.15,MT CO2e / MT Production,unspecified/intensity
+dampskibsselskabet norden_2019_report,scope_1,2019,4088.0,"1,000 tonnes",direct
+dampskibsselskabet norden_2019_report,scope_1,2018,3829.0,"1,000 tonnes",direct
+dampskibsselskabet norden_2019_report,scope_1,2017,3757.0,"1,000 tonnes",direct
+dampskibsselskabet norden_2019_report,scope_2_location_based,2019,0.2,"1,000 tonnes",indirect
+dampskibsselskabet norden_2019_report,scope_2_location_based,2018,0.4,"1,000 tonnes",indirect
+dampskibsselskabet norden_2019_report,scope_2_location_based,2017,0.4,"1,000 tonnes",indirect
+dampskibsselskabet norden_2019_report,scope_3,2019,3.6,"1,000 tonnes",indirect
+dampskibsselskabet norden_2019_report,scope_3,2018,3.0,"1,000 tonnes",indirect
+dampskibsselskabet norden_2019_report,scope_3,2017,3.3,"1,000 tonnes",indirect
+evolution mining ltd_2020_report,scope_1,FY20,157857.0,t CO2-e,unspecified
+evolution mining ltd_2020_report,scope_1,FY19,155085.0,t CO2-e,unspecified
+evolution mining ltd_2020_report,scope_1,FY18,159061.0,t CO2-e,unspecified
+evolution mining ltd_2020_report,scope_1,FY17,167734.0,t CO2-e,unspecified
+evolution mining ltd_2020_report,scope_1,FY16,157584.0,t CO2-e,unspecified
+evolution mining ltd_2020_report,scope_2_location_based,FY20,398187.0,t CO2-e,unspecified
+evolution mining ltd_2020_report,scope_2_location_based,FY19,383449.0,t CO2-e,unspecified
+evolution mining ltd_2020_report,scope_2_location_based,FY18,394144.0,t CO2-e,unspecified
+evolution mining ltd_2020_report,scope_2_location_based,FY17,430993.0,t CO2-e,unspecified
+evolution mining ltd_2020_report,scope_2_location_based,FY16,472257.0,t CO2-e,unspecified
+fujifilm_2022_report,scope_1,2017,687.0,kt CO2e,total
+fujifilm_2022_report,scope_1,2017,644.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_1,2017,43.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_1,2018,672.0,kt CO2e,total
+fujifilm_2022_report,scope_1,2018,629.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_1,2018,43.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_1,2019,633.0,kt CO2e,total
+fujifilm_2022_report,scope_1,2019,594.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_1,2019,40.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_1,2020,603.0,kt CO2e,total
+fujifilm_2022_report,scope_1,2020,567.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_1,2020,36.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_1,2021,633.0,kt CO2e,total
+fujifilm_2022_report,scope_1,2021,599.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_1,2021,34.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_market_based,2017,531.0,kt CO2e,total
+fujifilm_2022_report,scope_2_market_based,2017,379.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_market_based,2017,152.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_market_based,2018,510.0,kt CO2e,total
+fujifilm_2022_report,scope_2_market_based,2018,366.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_market_based,2018,143.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_market_based,2019,451.0,kt CO2e,total
+fujifilm_2022_report,scope_2_market_based,2019,325.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_market_based,2019,126.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_market_based,2020,409.0,kt CO2e,total
+fujifilm_2022_report,scope_2_market_based,2020,294.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_market_based,2020,115.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_market_based,2021,420.0,kt CO2e,total
+fujifilm_2022_report,scope_2_market_based,2021,306.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_market_based,2021,114.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_location_based,2017,593.0,kt CO2e,total
+fujifilm_2022_report,scope_2_location_based,2017,436.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_location_based,2017,157.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_location_based,2018,576.0,kt CO2e,total
+fujifilm_2022_report,scope_2_location_based,2018,427.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_location_based,2018,149.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_location_based,2019,514.0,kt CO2e,total
+fujifilm_2022_report,scope_2_location_based,2019,382.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_location_based,2019,132.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_location_based,2020,475.0,kt CO2e,total
+fujifilm_2022_report,scope_2_location_based,2020,354.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_location_based,2020,120.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_location_based,2021,494.0,kt CO2e,total
+fujifilm_2022_report,scope_2_location_based,2021,375.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_2_location_based,2021,118.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,2130.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,1462.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,667.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,441.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,348.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,93.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,144.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,136.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,8.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,12.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,6.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,6.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,9.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,8.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,1.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,10.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,5.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,5.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,29.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,15.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,14.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,286.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,125.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,161.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,77.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,77.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,90.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,90.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,88.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,88.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,158.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,158.0,kt CO2e,unspecified
+fujifilm_2022_report,scope_3,2021,3473.0,kt CO2e,total
+fujifilm_2022_report,scope_3,2021,2360.0,kt CO2e,total
+fujifilm_2022_report,scope_3,2021,1113.0,kt CO2e,total
+georg fischer ag_2018_report,scope_1,2018,312.0,1'000 tonnes,direct
+georg fischer ag_2018_report,scope_1,2017 pro rata,304.0,1'000 tonnes,direct
+georg fischer ag_2018_report,scope_1,2017,325.0,1'000 tonnes,direct
+georg fischer ag_2018_report,scope_1,2016,307.0,1'000 tonnes,direct
+georg fischer ag_2018_report,scope_1,2015,313.0,1'000 tonnes,direct
+georg fischer ag_2018_report,scope_1,2014,313.0,1'000 tonnes,direct
+georg fischer ag_2018_report,scope_2_location_based,2018,312.0,1'000 tonnes,indirect
+georg fischer ag_2018_report,scope_2_location_based,2017 pro rata,330.0,1'000 tonnes,indirect
+georg fischer ag_2018_report,scope_2_location_based,2017,337.0,1'000 tonnes,indirect
+georg fischer ag_2018_report,scope_2_location_based,2016,299.0,1'000 tonnes,indirect
+georg fischer ag_2018_report,scope_2_location_based,2015,264.0,1'000 tonnes,indirect
+georg fischer ag_2018_report,scope_2_location_based,2014,264.0,1'000 tonnes,indirect
+georg fischer ag_2018_report,scope_3,2018,6.0,1'000 tonnes,indirect
+georg fischer ag_2018_report,scope_3,2017 pro rata,7.0,1'000 tonnes,indirect
+georg fischer ag_2018_report,scope_3,2017,7.0,1'000 tonnes,indirect
+georg fischer ag_2018_report,scope_3,2016,4.0,1'000 tonnes,indirect
+georg fischer ag_2018_report,scope_3,2015,3.0,1'000 tonnes,indirect
+georg fischer ag_2018_report,scope_3,2014,3.0,1'000 tonnes,indirect
+granite construction inc_2020_report,scope_1,2015,132285.0,US Tons,total
+granite construction inc_2020_report,scope_1,2015,0.055792,CO2 Equivalents/$ Thousand,unspecified/intensity
+granite construction inc_2020_report,scope_1,2020,244727.0,US Tons,total
+granite construction inc_2020_report,scope_1,2020,244727.61,US Tons,total
+granite construction inc_2020_report,scope_1,2020,244727.61,US Tons,total
+granite construction inc_2020_report,scope_1,2020,96953.0,US Tons,unspecified/asphalt_plants
+granite construction inc_2020_report,scope_1,2020,145281.81,US Tons,unspecified/equipment_fleet
+granite construction inc_2020_report,scope_1,2020,2057.8,US Tons,unspecified/heating
+granite construction inc_2020_report,scope_1,2020,435.0,US Tons,unspecified/inliner_processing
+granite construction inc_2020_report,scope_1,2020,0.068696,CO2 Equivalents/$ Thousand,unspecified/intensity
+granite construction inc_2020_report,scope_1,2020,0.068696,CO2 Equivalent (US tons)/Thousand $,unspecified/intensity
+granite construction inc_2020_report,scope_3,2020,4663.0,US Tons,unspecified/air_travel
+granite construction inc_2020_report,scope_3,2020,3601.0,US Tons,unspecified/hotel
+granite construction inc_2020_report,scope_3,2020,135.0,US Tons,unspecified/car
+granite construction inc_2020_report,scope_3,2020,8399.0,US Tons,total
+granite construction inc_2020_report,scope_3,2020,8399.0,US Tons,indirect
+h. lundbeck_2021_report,scope_1,2019,29025.0,Tonne CO2e,unspecified
+h. lundbeck_2021_report,scope_1,2020,22050.0,Tonne CO2e,unspecified
+h. lundbeck_2021_report,scope_1,2021,24689.0,Tonne CO2e,unspecified
+h. lundbeck_2021_report,scope_2_market_based,2019,9405.0,Tonne CO2e,market_based
+h. lundbeck_2021_report,scope_2_market_based,2020,8480.0,Tonne CO2e,market_based
+h. lundbeck_2021_report,scope_2_market_based,2021,7486.0,Tonne CO2e,market_based
+h. lundbeck_2021_report,scope_2_location_based,2019,17745.0,Tonne CO2e,location_based
+h. lundbeck_2021_report,scope_2_location_based,2020,14861.0,Tonne CO2e,location_based
+h. lundbeck_2021_report,scope_2_location_based,2021,15798.0,Tonne CO2e,location_based
+h. lundbeck_2021_report,scope_3,2019,99375.0,Tonne CO2e,unspecified
+h. lundbeck_2021_report,scope_3,2019,11815.0,Tonne CO2e,indirect
+h. lundbeck_2021_report,scope_3,2019,6733.0,Tonne CO2e,unspecified
+h. lundbeck_2021_report,scope_3,2020,123589.0,Tonne CO2e,unspecified
+h. lundbeck_2021_report,scope_3,2020,12858.0,Tonne CO2e,indirect
+h. lundbeck_2021_report,scope_3,2020,2950.0,Tonne CO2e,unspecified
+h. lundbeck_2021_report,scope_3,2021,133445.0,Tonne CO2e,unspecified
+h. lundbeck_2021_report,scope_3,2021,12491.0,Tonne CO2e,indirect
+h. lundbeck_2021_report,scope_3,2021,2587.0,Tonne CO2e,unspecified
+hammerson reit_2021_report,scope_1,2020,3295.0,tCO2e,direct/stationary_operations
+hammerson reit_2021_report,scope_1,2020,1786.0,tCO2e,direct/stationary_operations
+hammerson reit_2021_report,scope_1,2020,1026.0,tCO2e,direct/stationary_operations
+hammerson reit_2021_report,scope_1,2020,483.0,tCO2e,direct/stationary_operations
+hammerson reit_2021_report,scope_1,2020,14.0,tCO2e,direct/mobile_combustion
+hammerson reit_2021_report,scope_1,2020,3.0,tCO2e,direct/mobile_combustion
+hammerson reit_2021_report,scope_1,2020,11.0,tCO2e,direct/mobile_combustion
+hammerson reit_2021_report,scope_1,2020,0.0,tCO2e,direct/mobile_combustion
+hammerson reit_2021_report,scope_1,2020,0.0,tCO2e,direct/fugitive_sources
+hammerson reit_2021_report,scope_1,2020,0.0,tCO2e,direct/fugitive_sources
+hammerson reit_2021_report,scope_1,2020,0.0,tCO2e,direct/fugitive_sources
+hammerson reit_2021_report,scope_1,2020,0.0,tCO2e,direct/fugitive_sources
+hammerson reit_2021_report,scope_1,2020,3309.0,tCO2e,direct/total
+hammerson reit_2021_report,scope_1,2020,1789.0,tCO2e,direct/total
+hammerson reit_2021_report,scope_1,2020,1037.0,tCO2e,direct/total
+hammerson reit_2021_report,scope_1,2020,483.0,tCO2e,direct/total
+hammerson reit_2021_report,scope_1,2021,3436.0,tCO2e,direct/stationary_operations
+hammerson reit_2021_report,scope_1,2021,2317.0,tCO2e,direct/stationary_operations
+hammerson reit_2021_report,scope_1,2021,872.0,tCO2e,direct/stationary_operations
+hammerson reit_2021_report,scope_1,2021,247.0,tCO2e,direct/stationary_operations
+hammerson reit_2021_report,scope_1,2021,3.0,tCO2e,direct/mobile_combustion
+hammerson reit_2021_report,scope_1,2021,0.0,tCO2e,direct/mobile_combustion
+hammerson reit_2021_report,scope_1,2021,3.0,tCO2e,direct/mobile_combustion
+hammerson reit_2021_report,scope_1,2021,0.0,tCO2e,direct/mobile_combustion
+hammerson reit_2021_report,scope_1,2021,854.0,tCO2e,direct/fugitive_sources
+hammerson reit_2021_report,scope_1,2021,854.0,tCO2e,direct/fugitive_sources
+hammerson reit_2021_report,scope_1,2021,0.0,tCO2e,direct/fugitive_sources
+hammerson reit_2021_report,scope_1,2021,0.0,tCO2e,direct/fugitive_sources
+hammerson reit_2021_report,scope_1,2021,4293.0,tCO2e,direct/total
+hammerson reit_2021_report,scope_1,2021,3171.0,tCO2e,direct/total
+hammerson reit_2021_report,scope_1,2021,875.0,tCO2e,direct/total
+hammerson reit_2021_report,scope_1,2021,247.0,tCO2e,direct/total
+hammerson reit_2021_report,scope_2_market_based,2020,2400.0,tCO2e,market_based/electricity
+hammerson reit_2021_report,scope_2_market_based,2020,1358.0,tCO2e,market_based/electricity
+hammerson reit_2021_report,scope_2_market_based,2020,1019.0,tCO2e,market_based/electricity
+hammerson reit_2021_report,scope_2_market_based,2020,23.0,tCO2e,market_based/electricity
+hammerson reit_2021_report,scope_2_market_based,2020,3331.0,tCO2e,total
+hammerson reit_2021_report,scope_2_market_based,2020,1538.0,tCO2e,total
+hammerson reit_2021_report,scope_2_market_based,2020,1770.0,tCO2e,total
+hammerson reit_2021_report,scope_2_market_based,2020,23.0,tCO2e,total
+hammerson reit_2021_report,scope_2_market_based,2021,2221.0,tCO2e,market_based/electricity
+hammerson reit_2021_report,scope_2_market_based,2021,1076.0,tCO2e,market_based/electricity
+hammerson reit_2021_report,scope_2_market_based,2021,1132.0,tCO2e,market_based/electricity
+hammerson reit_2021_report,scope_2_market_based,2021,13.0,tCO2e,market_based/electricity
+hammerson reit_2021_report,scope_2_market_based,2021,3850.0,tCO2e,total
+hammerson reit_2021_report,scope_2_market_based,2021,1382.0,tCO2e,total
+hammerson reit_2021_report,scope_2_market_based,2021,2455.0,tCO2e,total
+hammerson reit_2021_report,scope_2_market_based,2021,13.0,tCO2e,total
+hammerson reit_2021_report,scope_2_location_based,2020,12780.0,tCO2e,indirect/electricity
+hammerson reit_2021_report,scope_2_location_based,2020,8204.0,tCO2e,indirect/electricity
+hammerson reit_2021_report,scope_2_location_based,2020,1300.0,tCO2e,indirect/electricity
+hammerson reit_2021_report,scope_2_location_based,2020,3276.0,tCO2e,indirect/electricity
+hammerson reit_2021_report,scope_2_location_based,2020,0.0,tCO2e,indirect/steam
+hammerson reit_2021_report,scope_2_location_based,2020,0.0,tCO2e,indirect/steam
+hammerson reit_2021_report,scope_2_location_based,2020,0.0,tCO2e,indirect/steam
+hammerson reit_2021_report,scope_2_location_based,2020,0.0,tCO2e,indirect/steam
+hammerson reit_2021_report,scope_2_location_based,2020,916.0,tCO2e,indirect/heating
+hammerson reit_2021_report,scope_2_location_based,2020,165.0,tCO2e,indirect/heating
+hammerson reit_2021_report,scope_2_location_based,2020,751.0,tCO2e,indirect/heating
+hammerson reit_2021_report,scope_2_location_based,2020,0.0,tCO2e,indirect/heating
+hammerson reit_2021_report,scope_2_location_based,2020,15.0,tCO2e,indirect/cooling
+hammerson reit_2021_report,scope_2_location_based,2020,15.0,tCO2e,indirect/cooling
+hammerson reit_2021_report,scope_2_location_based,2020,0.0,tCO2e,indirect/cooling
+hammerson reit_2021_report,scope_2_location_based,2020,0.0,tCO2e,indirect/cooling
+hammerson reit_2021_report,scope_2_location_based,2020,13711.0,tCO2e,total
+hammerson reit_2021_report,scope_2_location_based,2020,8384.0,tCO2e,total
+hammerson reit_2021_report,scope_2_location_based,2020,2051.0,tCO2e,total
+hammerson reit_2021_report,scope_2_location_based,2020,3276.0,tCO2e,total
+hammerson reit_2021_report,scope_2_location_based,2021,11581.0,tCO2e,indirect/electricity
+hammerson reit_2021_report,scope_2_location_based,2021,7908.0,tCO2e,indirect/electricity
+hammerson reit_2021_report,scope_2_location_based,2021,1041.0,tCO2e,indirect/electricity
+hammerson reit_2021_report,scope_2_location_based,2021,2631.0,tCO2e,indirect/electricity
+hammerson reit_2021_report,scope_2_location_based,2021,0.0,tCO2e,indirect/steam
+hammerson reit_2021_report,scope_2_location_based,2021,0.0,tCO2e,indirect/steam
+hammerson reit_2021_report,scope_2_location_based,2021,0.0,tCO2e,indirect/steam
+hammerson reit_2021_report,scope_2_location_based,2021,0.0,tCO2e,indirect/steam
+hammerson reit_2021_report,scope_2_location_based,2021,1531.0,tCO2e,indirect/heating
+hammerson reit_2021_report,scope_2_location_based,2021,257.0,tCO2e,indirect/heating
+hammerson reit_2021_report,scope_2_location_based,2021,1274.0,tCO2e,indirect/heating
+hammerson reit_2021_report,scope_2_location_based,2021,0.0,tCO2e,indirect/heating
+hammerson reit_2021_report,scope_2_location_based,2021,98.0,tCO2e,indirect/cooling
+hammerson reit_2021_report,scope_2_location_based,2021,49.0,tCO2e,indirect/cooling
+hammerson reit_2021_report,scope_2_location_based,2021,49.0,tCO2e,indirect/cooling
+hammerson reit_2021_report,scope_2_location_based,2021,0.0,tCO2e,indirect/cooling
+hammerson reit_2021_report,scope_2_location_based,2021,13210.0,tCO2e,total
+hammerson reit_2021_report,scope_2_location_based,2021,8215.0,tCO2e,total
+hammerson reit_2021_report,scope_2_location_based,2021,2364.0,tCO2e,total
+hammerson reit_2021_report,scope_2_location_based,2021,2631.0,tCO2e,total
+hammerson reit_2021_report,scope_3,2020,200.0,tCO2e,indirect/business_travel
+hammerson reit_2021_report,scope_3,2020,92.0,tCO2e,indirect/business_travel
+hammerson reit_2021_report,scope_3,2020,50.0,tCO2e,indirect/business_travel
+hammerson reit_2021_report,scope_3,2020,58.0,tCO2e,indirect/business_travel
+hammerson reit_2021_report,scope_3,2020,381.0,tCO2e,indirect/waste
+hammerson reit_2021_report,scope_3,2020,240.0,tCO2e,indirect/waste
+hammerson reit_2021_report,scope_3,2020,85.0,tCO2e,indirect/waste
+hammerson reit_2021_report,scope_3,2020,56.0,tCO2e,indirect/waste
+hammerson reit_2021_report,scope_3,2020,244.0,tCO2e,indirect/water
+hammerson reit_2021_report,scope_3,2020,123.0,tCO2e,indirect/water
+hammerson reit_2021_report,scope_3,2020,73.0,tCO2e,indirect/water
+hammerson reit_2021_report,scope_3,2020,48.0,tCO2e,indirect/water
+hammerson reit_2021_report,scope_3,2020,825.0,tCO2e,total
+hammerson reit_2021_report,scope_3,2020,455.0,tCO2e,total
+hammerson reit_2021_report,scope_3,2020,208.0,tCO2e,total
+hammerson reit_2021_report,scope_3,2020,162.0,tCO2e,total
+hammerson reit_2021_report,scope_3,2021,66.0,tCO2e,indirect/business_travel
+hammerson reit_2021_report,scope_3,2021,43.0,tCO2e,indirect/business_travel
+hammerson reit_2021_report,scope_3,2021,21.0,tCO2e,indirect/business_travel
+hammerson reit_2021_report,scope_3,2021,2.0,tCO2e,indirect/business_travel
+hammerson reit_2021_report,scope_3,2021,511.0,tCO2e,indirect/waste
+hammerson reit_2021_report,scope_3,2021,369.0,tCO2e,indirect/waste
+hammerson reit_2021_report,scope_3,2021,78.0,tCO2e,indirect/waste
+hammerson reit_2021_report,scope_3,2021,64.0,tCO2e,indirect/waste
+hammerson reit_2021_report,scope_3,2021,115.0,tCO2e,indirect/water
+hammerson reit_2021_report,scope_3,2021,64.0,tCO2e,indirect/water
+hammerson reit_2021_report,scope_3,2021,29.0,tCO2e,indirect/water
+hammerson reit_2021_report,scope_3,2021,22.0,tCO2e,indirect/water
+hammerson reit_2021_report,scope_3,2021,692.0,tCO2e,total
+hammerson reit_2021_report,scope_3,2021,476.0,tCO2e,total
+hammerson reit_2021_report,scope_3,2021,128.0,tCO2e,total
+hammerson reit_2021_report,scope_3,2021,88.0,tCO2e,total
+huhtamaki_2018_report,scope_1,2014,188000.0,metric tons CO2 eqv,direct
+huhtamaki_2018_report,scope_1,2015,191000.0,metric tons CO2 eqv,direct
+huhtamaki_2018_report,scope_1,2016,198000.0,metric tons CO2 eqv,direct
+huhtamaki_2018_report,scope_1,2017,207000.0,metric tons CO2 eqv,direct
+huhtamaki_2018_report,scope_1,2018,207000.0,metric tons CO2 eqv,direct
+huhtamaki_2018_report,scope_2_location_based,2014,479000.0,metric tons CO2 eqv,indirect
+huhtamaki_2018_report,scope_2_location_based,2015,487000.0,metric tons CO2 eqv,indirect
+huhtamaki_2018_report,scope_2_location_based,2016,526000.0,metric tons CO2 eqv,indirect
+huhtamaki_2018_report,scope_2_location_based,2017,549000.0,metric tons CO2 eqv,indirect
+huhtamaki_2018_report,scope_2_location_based,2018,559000.0,metric tons CO2 eqv,indirect
+inchcape plc_2022_report,scope_1,2021,2486.0,tCO2e,direct
+inchcape plc_2022_report,scope_1,2021,9752.0,tCO2e,direct
+inchcape plc_2022_report,scope_1,2022,3617.0,tCO2e,direct
+inchcape plc_2022_report,scope_1,2022,17002.0,tCO2e,direct
+inchcape plc_2022_report,scope_1,2022,216.0,tCO2e,unspecified/fugitive
+inchcape plc_2022_report,scope_1,2022,2791.0,tCO2e,unspecified/fugitive
+inchcape plc_2022_report,scope_2_location_based,2021,3689.0,tCO2e,location_based
+inchcape plc_2022_report,scope_2_location_based,2021,27277.0,tCO2e,location_based
+inchcape plc_2022_report,scope_2_location_based,2022,2886.0,tCO2e,location_based
+inchcape plc_2022_report,scope_2_location_based,2022,22223.0,tCO2e,location_based
+inchcape plc_2022_report,scope_3,2021,9221.0,tCO2e,unspecified/business_travel_upstream_transport
+inchcape plc_2022_report,scope_3,2021,82068.0,tCO2e,unspecified/business_travel_upstream_transport
+inchcape plc_2022_report,scope_3,2022,2975.0,tCO2e,unspecified/business_travel_upstream_transport
+inchcape plc_2022_report,scope_3,2022,187713.0,tCO2e,unspecified/business_travel_upstream_transport
+innospec inc_2020_report,scope_1,2020,51728.0,metric tonnes CO2 equivalent,total
+innospec inc_2020_report,scope_1,2020,101.0,kg CO2 equivalent per metric tonne of product,total/per_metric_tonne
+innospec inc_2020_report,scope_1,2020,1104.0,metric tonnes,unspecified/reduction
+innospec inc_2020_report,scope_2_market_based,2020,51728.0,metric tonnes CO2 equivalent,total
+innospec inc_2020_report,scope_2_market_based,2020,101.0,kg CO2 equivalent per metric tonne of product,total/per_metric_tonne
+innospec inc_2020_report,scope_2_market_based,2020,1104.0,metric tonnes,unspecified/reduction
+kfw_2018_report,scope_1,2014,4636.0,tonnes,direct
+kfw_2018_report,scope_1,2015,5095.0,tonnes,direct
+kfw_2018_report,scope_1,2016,5260.0,tonnes,direct
+kfw_2018_report,scope_1,2017,5616.0,tonnes,direct
+kfw_2018_report,scope_1,2018,5571.0,tonnes,direct
+kfw_2018_report,scope_2_market_based,2017,16257.0,tonnes,total
+kfw_2018_report,scope_2_market_based,2017,4636.0,tonnes,unspecified/Green electricity
+kfw_2018_report,scope_2_market_based,2017,2073.0,tonnes,unspecified/Emergency power generators (diesel)
+kfw_2018_report,scope_2_market_based,2017,9446.0,tonnes,unspecified/Heating oil
+kfw_2018_report,scope_2_market_based,2017,102.0,tonnes,unspecified/District heating
+kfw_2018_report,scope_2_market_based,2018,7732.0,tonnes,total
+kfw_2018_report,scope_2_market_based,2018,4596.0,tonnes,unspecified/Green electricity
+kfw_2018_report,scope_2_market_based,2018,2902.0,tonnes,unspecified/Emergency power generators (diesel)
+kfw_2018_report,scope_2_market_based,2018,80.0,tonnes,unspecified/Heating oil
+kfw_2018_report,scope_2_market_based,2018,163.0,tonnes,unspecified/District heating
+kfw_2018_report,scope_2_location_based,2017,16592.0,tonnes,total
+kfw_2018_report,scope_2_location_based,2017,5869.0,tonnes,unspecified/Green electricity
+kfw_2018_report,scope_2_location_based,2017,2555.0,tonnes,unspecified/Emergency power generators (diesel)
+kfw_2018_report,scope_2_location_based,2017,8113.0,tonnes,unspecified/Heating oil
+kfw_2018_report,scope_2_location_based,2017,55.0,tonnes,unspecified/District heating
+kfw_2018_report,scope_2_location_based,2018,9564.0,tonnes,total
+kfw_2018_report,scope_2_location_based,2018,5819.0,tonnes,unspecified/Green electricity
+kfw_2018_report,scope_2_location_based,2018,3577.0,tonnes,unspecified/Emergency power generators (diesel)
+kfw_2018_report,scope_2_location_based,2018,80.0,tonnes,unspecified/Heating oil
+kfw_2018_report,scope_2_location_based,2018,88.0,tonnes,unspecified/District heating
+kfw_2018_report,scope_3,2014,9446.0,tonnes,total
+kfw_2018_report,scope_3,2014,102.0,tonnes,unspecified/Events
+kfw_2018_report,scope_3,2015,7394.0,tonnes,total
+kfw_2018_report,scope_3,2015,102.0,tonnes,unspecified/Events
+kfw_2018_report,scope_3,2016,7411.0,tonnes,total
+kfw_2018_report,scope_3,2016,74.0,tonnes,unspecified/Events
+kfw_2018_report,scope_3,2017,8208.0,tonnes,total
+kfw_2018_report,scope_3,2017,87.0,tonnes,unspecified/Events
+kfw_2018_report,scope_3,2018,8665.0,tonnes,total
+kfw_2018_report,scope_3,2018,101.0,tonnes,unspecified/Events
+kilroy realty_2017_report,scope_1,2016,3696.0,Tonnes,direct
+kilroy realty_2017_report,scope_1,2016,2747.0,Tonnes,direct
+kilroy realty_2017_report,scope_1,2016,363.0,Tonnes,direct
+kilroy realty_2017_report,scope_1,2016,363.0,Tonnes,direct
+kilroy realty_2017_report,scope_1,2016,4059.0,Tonnes,direct
+kilroy realty_2017_report,scope_1,2016,3110.0,Tonnes,direct
+kilroy realty_2017_report,scope_1,2017,4165.0,Tonnes,direct
+kilroy realty_2017_report,scope_1,2017,2821.0,Tonnes,direct
+kilroy realty_2017_report,scope_1,2017,476.0,Tonnes,direct
+kilroy realty_2017_report,scope_1,2017,476.0,Tonnes,direct
+kilroy realty_2017_report,scope_1,2017,4641.0,Tonnes,direct
+kilroy realty_2017_report,scope_1,2017,3296.0,Tonnes,direct
+kilroy realty_2017_report,scope_1,2017,4641.0,metric tons of CO2e,direct
+kilroy realty_2017_report,scope_2_location_based,2016,39670.0,Tonnes,indirect
+kilroy realty_2017_report,scope_2_location_based,2016,35009.0,Tonnes,indirect
+kilroy realty_2017_report,scope_2_location_based,2016,4475.0,Tonnes,indirect
+kilroy realty_2017_report,scope_2_location_based,2016,4475.0,Tonnes,indirect
+kilroy realty_2017_report,scope_2_location_based,2016,44145.0,Tonnes,indirect
+kilroy realty_2017_report,scope_2_location_based,2016,39484.0,Tonnes,indirect
+kilroy realty_2017_report,scope_2_location_based,2017,39516.0,Tonnes,indirect
+kilroy realty_2017_report,scope_2_location_based,2017,32059.0,Tonnes,indirect
+kilroy realty_2017_report,scope_2_location_based,2017,4489.0,Tonnes,indirect
+kilroy realty_2017_report,scope_2_location_based,2017,4489.0,Tonnes,indirect
+kilroy realty_2017_report,scope_2_location_based,2017,42947.0,Tonnes,indirect
+kilroy realty_2017_report,scope_2_location_based,2017,35490.0,Tonnes,indirect
+kilroy realty_2017_report,scope_2_location_based,2017,42947.0,metric tons of CO2e,indirect
+kilroy realty_2018_report,scope_1,2017,3647.0,Tonnes,unspecified/Office
+kilroy realty_2018_report,scope_1,2017,472.0,Tonnes,unspecified/Life Sciences
+kilroy realty_2018_report,scope_1,2017,4120.0,Tonnes,unspecified/Whole Portfolio
+kilroy realty_2018_report,scope_1,2017,3447.0,Tonnes,unspecified/Office/Like for Like
+kilroy realty_2018_report,scope_1,2017,472.0,Tonnes,unspecified/Life Sciences/Like for Like
+kilroy realty_2018_report,scope_1,2017,3919.0,Tonnes,unspecified/Whole Portfolio/Like for Like
+kilroy realty_2018_report,scope_1,2018,3493.0,Tonnes,unspecified/Office
+kilroy realty_2018_report,scope_1,2018,415.0,Tonnes,unspecified/Life Sciences
+kilroy realty_2018_report,scope_1,2018,3908.0,Tonnes,unspecified/Whole Portfolio
+kilroy realty_2018_report,scope_1,2018,3367.0,Tonnes,unspecified/Office/Like for Like
+kilroy realty_2018_report,scope_1,2018,415.0,Tonnes,unspecified/Life Sciences/Like for Like
+kilroy realty_2018_report,scope_1,2018,3782.0,Tonnes,unspecified/Whole Portfolio/Like for Like
+kilroy realty_2018_report,scope_1,2018,3908.0,MtCO2e,unspecified
+kilroy realty_2018_report,scope_1,2018,3782.0,MtCO2e,unspecified/like for like
+kilroy realty_2018_report,scope_2_location_based,2017,32335.0,Tonnes,unspecified/Office
+kilroy realty_2018_report,scope_2_location_based,2017,4170.0,Tonnes,unspecified/Life Sciences
+kilroy realty_2018_report,scope_2_location_based,2017,36504.0,Tonnes,unspecified/Whole Portfolio
+kilroy realty_2018_report,scope_2_location_based,2017,29031.0,Tonnes,unspecified/Office/Like for Like
+kilroy realty_2018_report,scope_2_location_based,2017,4170.0,Tonnes,unspecified/Life Sciences/Like for Like
+kilroy realty_2018_report,scope_2_location_based,2017,33201.0,Tonnes,unspecified/Whole Portfolio/Like for Like
+kilroy realty_2018_report,scope_2_location_based,2018,29095.0,Tonnes,unspecified/Office
+kilroy realty_2018_report,scope_2_location_based,2018,4112.0,Tonnes,unspecified/Life Sciences
+kilroy realty_2018_report,scope_2_location_based,2018,33207.0,Tonnes,unspecified/Whole Portfolio
+kilroy realty_2018_report,scope_2_location_based,2018,27224.0,Tonnes,unspecified/Office/Like for Like
+kilroy realty_2018_report,scope_2_location_based,2018,4112.0,Tonnes,unspecified/Life Sciences/Like for Like
+kilroy realty_2018_report,scope_2_location_based,2018,31336.0,Tonnes,unspecified/Whole Portfolio/Like for Like
+kilroy realty_2018_report,scope_2_location_based,2018,33207.0,MtCO2e,unspecified
+kilroy realty_2018_report,scope_2_location_based,2018,31336.0,MtCO2e,unspecified/like for like
+kilroy realty_2018_report,scope_2_market_based,2017,31565.0,Tonnes,unspecified/Office
+kilroy realty_2018_report,scope_2_market_based,2017,4170.0,Tonnes,unspecified/Life Sciences
+kilroy realty_2018_report,scope_2_market_based,2017,35735.0,Tonnes,unspecified/Whole Portfolio
+kilroy realty_2018_report,scope_2_market_based,2017,28262.0,Tonnes,unspecified/Office/Like for Like
+kilroy realty_2018_report,scope_2_market_based,2017,4170.0,Tonnes,unspecified/Life Sciences/Like for Like
+kilroy realty_2018_report,scope_2_market_based,2017,32431.0,Tonnes,unspecified/Whole Portfolio/Like for Like
+kilroy realty_2018_report,scope_2_market_based,2018,26328.0,Tonnes,unspecified/Office
+kilroy realty_2018_report,scope_2_market_based,2018,4112.0,Tonnes,unspecified/Life Sciences
+kilroy realty_2018_report,scope_2_market_based,2018,30439.0,Tonnes,unspecified/Whole Portfolio
+kilroy realty_2018_report,scope_2_market_based,2018,24456.0,Tonnes,unspecified/Office/Like for Like
+kilroy realty_2018_report,scope_2_market_based,2018,4112.0,Tonnes,unspecified/Life Sciences/Like for Like
+kilroy realty_2018_report,scope_2_market_based,2018,28568.0,Tonnes,unspecified/Whole Portfolio/Like for Like
+kilroy realty_2018_report,scope_2_market_based,2018,30439.0,MtCO2e,unspecified
+kilroy realty_2018_report,scope_2_market_based,2018,28568.0,MtCO2e,unspecified/like for like
+kilroy realty_2018_report,scope_3,2018,31984.0,MtCO2e,unspecified/Downstream Leased Assets
+kilroy realty_2018_report,scope_3,2018,25961.0,MtCO2e,unspecified/Downstream Leased Assets/like for like
+morinaga ltd_2020_report,scope_1,FY2020/3,20794.0,t-CO2e,total
+morinaga ltd_2020_report,scope_2_market_based,FY2020/3,49605.0,t-CO2e,total
+morinaga ltd_2020_report,scope_2_location_based,FY2020/3,52024.0,t-CO2e,total
+morinaga ltd_2020_report,scope_3,FY2020/3,248003.0,t-CO2e,unspecified/category_1
+morinaga ltd_2020_report,scope_3,FY2020/3,122971.0,t-CO2e,unspecified/category_2
+morinaga ltd_2020_report,scope_3,FY2020/3,3774.0,t-CO2e,unspecified/category_3
+morinaga ltd_2020_report,scope_3,FY2020/3,15809.0,t-CO2e,unspecified/category_4
+morinaga ltd_2020_report,scope_3,FY2020/3,4176.0,t-CO2e,unspecified/category_5
+morinaga ltd_2020_report,scope_3,FY2020/3,618.0,t-CO2e,unspecified/category_6
+morinaga ltd_2020_report,scope_3,FY2020/3,1607.0,t-CO2e,unspecified/category_7
+morinaga ltd_2020_report,scope_3,FY2020/3,557.0,t-CO2e,unspecified/category_8
+nok corporation_2021_report,scope_1,2020,38.0,"1,000 tons-CO2",unspecified/1
+nok corporation_2021_report,scope_2_location_based,2020,602.0,"1,000 tons-CO2",unspecified/2
+nok corporation_2021_report,scope_3,2020,168.0,"1,000 tons-CO2",unspecified/Purchased goods and services
+nok corporation_2021_report,scope_3,2020,22.0,"1,000 tons-CO2",unspecified/Capital goods
+nok corporation_2021_report,scope_3,2020,0.0,"1,000 tons-CO2",unspecified/Fuel- and energy-related activities (not included in Scope 1 and 2)
+nok corporation_2021_report,scope_3,2020,10.0,"1,000 tons-CO2",unspecified/Upstream transportation and distribution
+nok corporation_2021_report,scope_3,2020,14.0,"1,000 tons-CO2",unspecified/Waste generated from operation
+nok corporation_2021_report,scope_3,2020,5.0,"1,000 tons-CO2",unspecified/Business travel
+nok corporation_2021_report,scope_3,2020,15.0,"1,000 tons-CO2",unspecified/Employee commuting
+nok corporation_2021_report,scope_3,2020,0.0,"1,000 tons-CO2",unspecified/Upstream leased assets
+nok corporation_2021_report,scope_3,2020,0.0,"1,000 tons-CO2",unspecified/Downstream transportation and distribution
+nok corporation_2021_report,scope_3,2020,0.0,"1,000 tons-CO2",unspecified/Processing of sold products
+nok corporation_2021_report,scope_3,2020,0.0,"1,000 tons-CO2",unspecified/Use of sold products
+nok corporation_2021_report,scope_3,2020,0.0,"1,000 tons-CO2",unspecified/End-of-life treatment of sold products
+nok corporation_2021_report,scope_3,2020,0.0,"1,000 tons-CO2",unspecified/Downstream leased assets
+nok corporation_2021_report,scope_3,2020,0.0,"1,000 tons-CO2",unspecified/Franchises
+nok corporation_2021_report,scope_3,2020,0.0,"1,000 tons-CO2",unspecified/Investments
+nok corporation_2021_report,scope_3,2020,269.0,"1,000 tons-CO2",total
+nordea_2017_report,scope_1,2017,51.0,tonnes,direct
+nordea_2017_report,scope_1,2016,48.0,tonnes,direct
+nordea_2017_report,scope_2_market_based,2017,3187.0,tonnes,market_based
+nordea_2017_report,scope_2_market_based,2016,3409.0,tonnes,market_based
+nordea_2017_report,scope_3,2017,19500.0,tonnes,indirect
+nordea_2017_report,scope_3,2016,13576.0,tonnes,indirect
+salzgitter ag_2018_report,scope_1,2018,8710.0,kt CO2,direct
+salzgitter ag_2018_report,scope_1,2017,8470.0,kt CO2,direct
+salzgitter ag_2018_report,scope_2_location_based,2018,600.0,kt CO2,indirect
+salzgitter ag_2018_report,scope_2_location_based,2017,693.0,kt CO2,indirect
+salzgitter ag_2018_report,scope_3,2018,1508.0,kt CO2,indirect
+salzgitter ag_2018_report,scope_3,2017,1362.0,kt CO2,indirect
+sato oyj_2022_report,scope_1,2015,135.0,t CO2-e,direct
+sato oyj_2022_report,scope_1,2016,170.0,t CO2-e,direct
+sato oyj_2022_report,scope_1,2017,214.0,t CO2-e,direct
+sato oyj_2022_report,scope_1,2018,179.0,t CO2-e,direct
+sato oyj_2022_report,scope_1,2019,177.0,t CO2-e,direct
+sato oyj_2022_report,scope_1,2020,147.0,t CO2-e,direct
+sato oyj_2022_report,scope_1,2021,105.0,t CO2-e,direct
+sato oyj_2022_report,scope_1,2022,20.0,t CO2-e,direct
+sato oyj_2022_report,scope_2_market_based,2015,37674.0,t CO2-e,market_based
+sato oyj_2022_report,scope_2_market_based,2016,48560.0,t CO2-e,market_based
+sato oyj_2022_report,scope_2_market_based,2017,39430.0,t CO2-e,market_based
+sato oyj_2022_report,scope_2_market_based,2018,36728.0,t CO2-e,market_based
+sato oyj_2022_report,scope_2_market_based,2019,34292.0,t CO2-e,market_based
+sato oyj_2022_report,scope_2_market_based,2020,30915.0,t CO2-e,market_based
+sato oyj_2022_report,scope_2_market_based,2021,43349.0,t CO2-e,market_based
+sato oyj_2022_report,scope_2_market_based,2022,37920.0,t CO2-e,market_based
+sato oyj_2022_report,scope_2_location_based,2015,41962.0,t CO2-e,location_based
+sato oyj_2022_report,scope_2_location_based,2016,52583.0,t CO2-e,location_based
+sato oyj_2022_report,scope_2_location_based,2017,43163.0,t CO2-e,location_based
+sato oyj_2022_report,scope_2_location_based,2018,40152.0,t CO2-e,location_based
+sato oyj_2022_report,scope_2_location_based,2019,37468.0,t CO2-e,location_based
+sato oyj_2022_report,scope_2_location_based,2020,34456.0,t CO2-e,location_based
+sato oyj_2022_report,scope_2_location_based,2021,45754.0,t CO2-e,location_based
+sato oyj_2022_report,scope_2_location_based,2022,40393.0,t CO2-e,location_based
+sato oyj_2022_report,scope_3,2015,1834.0,t CO2-e,indirect
+sato oyj_2022_report,scope_3,2016,948.0,t CO2-e,indirect
+sato oyj_2022_report,scope_3,2017,240.0,t CO2-e,indirect
+sato oyj_2022_report,scope_3,2018,49.0,t CO2-e,indirect
+sato oyj_2022_report,scope_3,2019,46.0,t CO2-e,indirect
+sato oyj_2022_report,scope_3,2020,37.0,t CO2-e,indirect
+sato oyj_2022_report,scope_3,2021,49.0,t CO2-e,indirect
+sato oyj_2022_report,scope_3,2022,49.0,t CO2-e,indirect
+stantec inc_2019_report,scope_1,2017,9585.0,mtCO2e,direct
+stantec inc_2019_report,scope_1,2018,10333.0,mtCO2e,direct
+stantec inc_2019_report,scope_1,2019,7540.0,mtCO2e,direct
+stantec inc_2019_report,scope_2_location_based,2017,43228.0,mtCO2e,indirect
+stantec inc_2019_report,scope_2_location_based,2018,37810.0,mtCO2e,indirect
+stantec inc_2019_report,scope_2_location_based,2019,40726.0,mtCO2e,indirect
+stantec inc_2019_report,scope_3,2017,26800.0,mtCO2e,indirect
+stantec inc_2019_report,scope_3,2017,1.4,mtCO2e,unspecified/per_employee
+stantec inc_2019_report,scope_3,2018,29318.0,mtCO2e,indirect
+stantec inc_2019_report,scope_3,2018,1.4,mtCO2e,unspecified/per_employee
+stantec inc_2019_report,scope_3,2019,29301.0,mtCO2e,indirect
+stantec inc_2019_report,scope_3,2019,1.3,mtCO2e,unspecified/per_employee
+toshiba tec corp_2022_report,scope_1,2020,3.0,thousand t-CO2,direct
+toshiba tec corp_2022_report,scope_1,2021,3.1,thousand t-CO2,direct
+toshiba tec corp_2022_report,scope_2_location_based,2020,48.8,thousand t-CO2,indirect
+toshiba tec corp_2022_report,scope_2_location_based,2021,45.5,thousand t-CO2,indirect
+toshiba tec corp_2022_report,scope_3,2020,98.6,thousand t-CO2,indirect/upstream
+toshiba tec corp_2022_report,scope_3,2020,42.5,thousand t-CO2,indirect/upstream
+toshiba tec corp_2022_report,scope_3,2020,8.9,thousand t-CO2,indirect/upstream
+toshiba tec corp_2022_report,scope_3,2020,2.3,thousand t-CO2,indirect/upstream
+toshiba tec corp_2022_report,scope_3,2020,0.2,thousand t-CO2,indirect/upstream
+toshiba tec corp_2022_report,scope_3,2020,1.6,thousand t-CO2,indirect/upstream
+toshiba tec corp_2022_report,scope_3,2020,1.0,thousand t-CO2,indirect/upstream
+toshiba tec corp_2022_report,scope_3,2020,275.5,thousand t-CO2,indirect/downstream
+toshiba tec corp_2022_report,scope_3,2020,3.8,thousand t-CO2,indirect/downstream
+toshiba tec corp_2022_report,scope_3,2021,102.3,thousand t-CO2,indirect/upstream
+toshiba tec corp_2022_report,scope_3,2021,42.7,thousand t-CO2,indirect/upstream
+toshiba tec corp_2022_report,scope_3,2021,10.7,thousand t-CO2,indirect/upstream
+toshiba tec corp_2022_report,scope_3,2021,2.3,thousand t-CO2,indirect/upstream
+toshiba tec corp_2022_report,scope_3,2021,0.2,thousand t-CO2,indirect/upstream
+toshiba tec corp_2022_report,scope_3,2021,1.6,thousand t-CO2,indirect/upstream
+toshiba tec corp_2022_report,scope_3,2021,0.8,thousand t-CO2,indirect/upstream
+toshiba tec corp_2022_report,scope_3,2021,252.6,thousand t-CO2,indirect/downstream
+toshiba tec corp_2022_report,scope_3,2021,4.2,thousand t-CO2,indirect/downstream
+toshiba tec corp_2022_report,scope_3,2021,161.0,thousand t-CO2,indirect/upstream
+toshiba tec corp_2022_report,scope_3,2021,257.0,thousand t-CO2,indirect/downstream
+uniper_2019_report,scope_1,2019,24.9,Million metric tons,direct
+uniper_2019_report,scope_1,2019,11.1,Million metric tons,direct
+uniper_2019_report,scope_1,2019,5.6,Million metric tons,direct
+uniper_2019_report,scope_1,2019,3.2,Million metric tons,direct
+uniper_2019_report,scope_1,2019,1.0,Million metric tons,direct
+uniper_2019_report,scope_1,2019,0.9,Million metric tons,direct
+uniper_2019_report,scope_1,2019,0.1,Million metric tons,direct
+uniper_2019_report,scope_1,2019,47.0,Million metric tons,total
+uniper_2019_report,scope_1,2019,47.0,m metric tons of CO2,total
+uniper_2019_report,scope_1,2018,25.3,Million metric tons,direct
+uniper_2019_report,scope_1,2018,17.2,Million metric tons,direct
+uniper_2019_report,scope_1,2018,7.6,Million metric tons,direct
+uniper_2019_report,scope_1,2018,5.5,Million metric tons,direct
+uniper_2019_report,scope_1,2018,2.9,Million metric tons,direct
+uniper_2019_report,scope_1,2018,0.8,Million metric tons,direct
+uniper_2019_report,scope_1,2018,59.5,Million metric tons,total
+uniper_2019_report,scope_1,2018,59.5,m metric tons of CO2,total
+uniper_2019_report,scope_1,2017,26.4,Million metric tons,direct
+uniper_2019_report,scope_1,2017,16.9,Million metric tons,direct
+uniper_2019_report,scope_1,2017,6.2,Million metric tons,direct
+uniper_2019_report,scope_1,2017,7.9,Million metric tons,direct
+uniper_2019_report,scope_1,2017,5.1,Million metric tons,direct
+uniper_2019_report,scope_1,2017,0.8,Million metric tons,direct
+uniper_2019_report,scope_1,2017,63.3,Million metric tons,total
+uniper_2019_report,scope_2_market_based,2019,1.57,million metric tons of CO2,total
+uniper_2019_report,scope_2_market_based,2019,1.57,m metric tons of CO2,total
+uniper_2019_report,scope_2_market_based,2019,1467501.0,metric t CO2,indirect
+uniper_2019_report,scope_2_market_based,2019,106171.0,metric t CO2,indirect
+uniper_2019_report,scope_2_market_based,2019,1573672.0,metric t CO2,total
+uniper_2019_report,scope_2_market_based,2018,1.67,million metric tons of CO2,total
+uniper_2019_report,scope_2_market_based,2018,1.67,m metric tons of CO2,total
+uniper_2019_report,scope_2_market_based,2018,1584188.0,metric t CO2,indirect
+uniper_2019_report,scope_2_market_based,2018,92501.0,metric t CO2,indirect
+uniper_2019_report,scope_2_market_based,2018,1676689.0,metric t CO2,total
+uniper_2019_report,scope_2_location_based,2019,1.12,million metric tons of CO2,total
+uniper_2019_report,scope_2_location_based,2019,1.12,m metric tons of CO2,total
+uniper_2019_report,scope_2_location_based,2019,1023106.0,metric t CO2,indirect
+uniper_2019_report,scope_2_location_based,2019,106171.0,metric t CO2,indirect
+uniper_2019_report,scope_2_location_based,2019,1129277.0,metric t CO2,total
+uniper_2019_report,scope_2_location_based,2018,1.1,million metric tons of CO2,total
+uniper_2019_report,scope_2_location_based,2018,1.1,m metric tons of CO2,total
+uniper_2019_report,scope_2_location_based,2018,1008531.0,metric t CO2,indirect
+uniper_2019_report,scope_2_location_based,2018,92501.0,metric t CO2,indirect
+uniper_2019_report,scope_2_location_based,2018,1101032.0,metric t CO2,total
+uniper_2019_report,scope_3,2019,8.7,million metric tons of CO2,total
+uniper_2019_report,scope_3,2019,8.7,m metric t CO2,total
+uniper_2019_report,scope_3,2018,10.3,million metric tons of CO2,total
+uniper_2019_report,scope_3,2018,10.3,m metric t CO2,total
+varta ag_2021_report,scope_1,2019,3598.0,CO2 eq t,direct
+varta ag_2021_report,scope_1,2020,4417.0,CO2 eq t,direct
+varta ag_2021_report,scope_1,2021,5894.0,CO2 eq t,direct
+varta ag_2021_report,scope_2_market_based,2019,10347.0,CO2 eq t,market_based
+varta ag_2021_report,scope_2_market_based,2020,12296.0,CO2 eq t,market_based
+varta ag_2021_report,scope_2_market_based,2021,1168.0,CO2 eq t,market_based
+varta ag_2021_report,scope_2_location_based,2019,17038.0,CO2-eq t,location_based
+varta ag_2021_report,scope_2_location_based,2020,20885.0,CO2-eq t,location_based
+varta ag_2021_report,scope_2_location_based,2021,23503.0,CO2-eq t,location_based

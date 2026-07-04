@@ -1,0 +1,320 @@
+report_name,scope,year,value,unit,label
+Allianz_2022_report,scope_1,2020,28714.0,t CO2e,Scope 1 – Direct GHG emissions
+Allianz_2022_report,scope_1,2021,28699.0,t CO2e,Scope 1 – Direct GHG emissions
+Allianz_2022_report,scope_1,2022,30953.0,t CO2e,Scope 1 – Direct GHG emissions
+Allianz_2022_report,scope_2_location_based,2020,180826.0,t CO2e,Scope 2 – Indirect GHG emissions (location based)
+Allianz_2022_report,scope_2_location_based,2021,149599.0,t CO2e,Scope 2 – Indirect GHG emissions (location based)
+Allianz_2022_report,scope_2_location_based,2022,138339.0,t CO2e,Scope 2 – Indirect GHG emissions (location based)
+Allianz_2022_report,scope_2_market_based,2020,100722.0,t CO2e,Scope 2 – Indirect GHG emissions (market based)
+Allianz_2022_report,scope_2_market_based,2021,54689.0,t CO2e,Scope 2 – Indirect GHG emissions (market based)
+Allianz_2022_report,scope_2_market_based,2022,30490.0,t CO2e,Scope 2 – Indirect GHG emissions (market based)
+Allianz_2022_report,scope_3,2020,73916.0,t CO2e,Scope 3 – Other indirect GHG emissions
+Allianz_2022_report,scope_3,2021,55359.0,t CO2e,Scope 3 – Other indirect GHG emissions
+Allianz_2022_report,scope_3,2022,92467.0,t CO2e,Scope 3 – Other indirect GHG emissions
+Fresenius SE_2019_report,scope_1,2019,517.0,t CO2 equivalents in thousands,total
+Fresenius SE_2019_report,scope_1,2018,521.0,t CO2 equivalents in thousands,total
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2014,8297.0,metric tons CO2e,Scope 1
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2015,9045.0,metric tons CO2e,Scope 1
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2016,24672.0,metric tons CO2e,Scope 1
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2017,26834.0,metric tons CO2e,Scope 1
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2018,31737.0,metric tons CO2e,Scope 1
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2019,38240.0,metric tons CO2e,Scope 1
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_1,2020,32097.0,metric tons CO2e,Scope 1
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2014,39252.0,metric tons CO2e,Scope 2 (location-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2015,50828.0,metric tons CO2e,Scope 2 (location-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2016,216737.0,metric tons CO2e,Scope 2 (location-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2017,219851.0,metric tons CO2e,Scope 2 (location-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2018,229073.0,metric tons CO2e,Scope 2 (location-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2019,144268.0,metric tons CO2e,Scope 2 (location-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_location_based,2020,139608.0,metric tons CO2e,Scope 2 (location-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2014,37114.0,metric tons CO2e,Scope 2 (market-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2015,50828.0,metric tons CO2e,Scope 2 (market-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2016,213701.0,metric tons CO2e,Scope 2 (market-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2017,219375.0,metric tons CO2e,Scope 2 (market-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2018,219385.0,metric tons CO2e,Scope 2 (market-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2019,123106.0,metric tons CO2e,Scope 2 (market-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_2_market_based,2020,134333.0,metric tons CO2e,Scope 2 (market-based)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2014,28499.0,metric tons CO2e,Scope 3
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2015,33242.0,metric tons CO2e,Scope 3
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2016,47190.0,metric tons CO2e,Scope 3
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2017,39356.0,metric tons CO2e,Scope 3
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2018,37891.0,metric tons CO2e,Scope 3
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2019,819682.0,metric tons CO2e,Scope 3
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2020,6897654.0,metric tons CO2e,Scope 3
+acuity brands inc_2022_report,scope_1,FY 2022,34327.0,MtCO2e,total
+acuity brands inc_2022_report,scope_2_location_based,FY 2022,46637.0,MtCO2e,total
+acuity brands inc_2022_report,scope_2_market_based,FY 2022,42234.0,MtCO2e,total
+acuity brands inc_2022_report,scope_3,fiscal 2022,35119419.0,MT CO2e,total
+addtech_2022_report,scope_1,2021/2022,2041.0,tonnes CO2e,SCOPE 1 (tonnes CO2e)
+addtech_2022_report,scope_1,2020/2021,1910.0,tonnes CO2e,SCOPE 1 (tonnes CO2e)
+addtech_2022_report,scope_1,2019/2020,2071.0,tonnes CO2e,SCOPE 1 (tonnes CO2e)
+addtech_2022_report,scope_2_location_based,2021/2022,3709.0,tonnes CO2e,"Emissions, energy consumption – Location Based Method (tonnes CO2e)"
+addtech_2022_report,scope_2_location_based,2020/2021,3395.0,tonnes CO2e,"Emissions, energy consumption – Location Based Method (tonnes CO2e)"
+addtech_2022_report,scope_2_location_based,2019/2020,3979.0,tonnes CO2e,"Emissions, energy consumption – Location Based Method (tonnes CO2e)"
+addtech_2022_report,scope_2_market_based,2021/2022,4087.0,tonnes CO2e,"Emissions, energy consumption – Market Based Method (tonnes CO2e)"
+addtech_2022_report,scope_2_market_based,2020/2021,4250.0,tonnes CO2e,"Emissions, energy consumption – Market Based Method (tonnes CO2e)"
+addtech_2022_report,scope_3,2021/2022,22961.0,tonnes CO2e,SCOPE 3 (tonnes CO2e)
+addtech_2022_report,scope_3,2020/2021,19860.0,tonnes CO2e,SCOPE 3 (tonnes CO2e)
+addtech_2022_report,scope_3,2019/2020,23132.0,tonnes CO2e,SCOPE 3 (tonnes CO2e)
+aixtron_2020_report,scope_1,2019,170.8,tonnes,total
+aixtron_2020_report,scope_1,2020,322.84,tonnes,total
+aixtron_2020_report,scope_2_location_based,2019,406.6,tonnes,total
+aixtron_2020_report,scope_2_location_based,2020,398.14,tonnes,total
+aixtron_2020_report,scope_3,2019,3637.97,tonnes,total
+aixtron_2020_report,scope_3,2020,1310.1,tonnes,total
+autoneum holding_2019_report,scope_1,2017,81077.0,metric tons CO₂ equivalents,Scope 1
+autoneum holding_2019_report,scope_1,2018,109577.0,metric tons CO₂ equivalents,Scope 1
+autoneum holding_2019_report,scope_1,2019,116274.0,metric tons CO₂ equivalents,Scope 1
+autoneum holding_2019_report,scope_2_location_based,2017,235014.0,metric tons CO₂ equivalents,Scope 2
+autoneum holding_2019_report,scope_2_location_based,2018,256550.0,metric tons CO₂ equivalents,Scope 2
+autoneum holding_2019_report,scope_2_location_based,2019,264287.0,metric tons CO₂ equivalents,Scope 2
+autoneum holding_2019_report,scope_3,2017,448185.0,metric tons CO₂ equivalents,Scope 3
+autoneum holding_2019_report,scope_3,2018,525214.0,metric tons CO₂ equivalents,Scope 3
+autoneum holding_2019_report,scope_3,2019,420238.0,metric tons CO₂ equivalents,Scope 3
+bekaert (d) sa_2022_report,scope_1,2022,316951.0,ton CO2,total
+bekaert (d) sa_2022_report,scope_3,2019,6045636.0,ton CO2e,total
+bekaert (d) sa_2022_report,scope_3,2021,6736962.0,ton CO2e,total
+bekaert (d) sa_2022_report,scope_3,2022,6187086.0,ton CO2e,total
+blackline safety_2021_report,scope_1,FY2021,215.0,MT CO2e,Scope 1 - MT CO2e
+blackline safety_2021_report,scope_1,FY2020,165.6,MT CO2e,Scope 1 - MT CO2e
+blackline safety_2021_report,scope_2_location_based,FY2021,576.0,MT CO2e,Scope 2 - MT CO2e*
+blackline safety_2021_report,scope_2_location_based,FY2020,227.4,MT CO2e,Scope 2 - MT CO2e*
+blackline safety_2021_report,scope_3,FY2021,1606.2,MT CO2e,Scope 3 - MT CO2e**
+blackline safety_2021_report,scope_3,FY2020,1661.2,MT CO2e,Scope 3 - MT CO2e**
+cabot corp_2018_report,scope_1,2016,4.5,MM MT CO2e,total
+cabot corp_2018_report,scope_1,2017,4.58,MM MT CO2e,total
+cabot corp_2018_report,scope_1,2018,4.77,MM MT CO2e,total
+cabot corp_2018_report,scope_2_location_based,2016,0.34,MM MT CO2e,total
+cabot corp_2018_report,scope_2_location_based,2017,0.33,MM MT CO2e,total
+cabot corp_2018_report,scope_2_location_based,2018,0.32,MM MT CO2e,total
+dampskibsselskabet norden_2019_report,scope_1,2019,4088.0,"1,000 tonnes",Direct CO2 emissions (Scope 1 GHG protocol) *
+dampskibsselskabet norden_2019_report,scope_1,2018,3829.0,"1,000 tonnes",Direct CO2 emissions (Scope 1 GHG protocol) *
+dampskibsselskabet norden_2019_report,scope_1,2017,3757.0,"1,000 tonnes",Direct CO2 emissions (Scope 1 GHG protocol) *
+dampskibsselskabet norden_2019_report,scope_2_location_based,2019,0.2,"1,000 tonnes",Indirect CO2 emissions (Scope 2 GHG protocol) **
+dampskibsselskabet norden_2019_report,scope_2_location_based,2018,0.4,"1,000 tonnes",Indirect CO2 emissions (Scope 2 GHG protocol) **
+dampskibsselskabet norden_2019_report,scope_2_location_based,2017,0.4,"1,000 tonnes",Indirect CO2 emissions (Scope 2 GHG protocol) **
+dampskibsselskabet norden_2019_report,scope_3,2019,3.6,"1,000 tonnes",Other indirect CO2 emissions (Scope 3 GHG protocol) *
+dampskibsselskabet norden_2019_report,scope_3,2018,3.0,"1,000 tonnes",Other indirect CO2 emissions (Scope 3 GHG protocol) *
+dampskibsselskabet norden_2019_report,scope_3,2017,3.3,"1,000 tonnes",Other indirect CO2 emissions (Scope 3 GHG protocol) *
+evolution mining ltd_2020_report,scope_1,FY20,157857.0,t CO₂-e,Greenhouse gas emissions Scope 1 (t CO₂-e)
+evolution mining ltd_2020_report,scope_1,FY19,155085.0,t CO₂-e,Greenhouse gas emissions Scope 1 (t CO₂-e)
+evolution mining ltd_2020_report,scope_1,FY18,159061.0,t CO₂-e,Greenhouse gas emissions Scope 1 (t CO₂-e)
+evolution mining ltd_2020_report,scope_1,FY17,167734.0,t CO₂-e,Greenhouse gas emissions Scope 1 (t CO₂-e)
+evolution mining ltd_2020_report,scope_1,FY16,157584.0,t CO₂-e,Greenhouse gas emissions Scope 1 (t CO₂-e)
+evolution mining ltd_2020_report,scope_2_location_based,FY20,398187.0,t CO₂-e,Greenhouse gas emissions Scope 2 (t CO₂-e)
+evolution mining ltd_2020_report,scope_2_location_based,FY19,383449.0,t CO₂-e,Greenhouse gas emissions Scope 2 (t CO₂-e)
+evolution mining ltd_2020_report,scope_2_location_based,FY18,394144.0,t CO₂-e,Greenhouse gas emissions Scope 2 (t CO₂-e)
+evolution mining ltd_2020_report,scope_2_location_based,FY17,430993.0,t CO₂-e,Greenhouse gas emissions Scope 2 (t CO₂-e)
+evolution mining ltd_2020_report,scope_2_location_based,FY16,472257.0,t CO₂-e,Greenhouse gas emissions Scope 2 (t CO₂-e)
+fujifilm_2022_report,scope_1,FY2017,687.0,kt CO2e,total
+fujifilm_2022_report,scope_1,FY2018,672.0,kt CO2e,total
+fujifilm_2022_report,scope_1,FY2019,633.0,kt CO2e,total
+fujifilm_2022_report,scope_1,FY2020,603.0,kt CO2e,total
+fujifilm_2022_report,scope_1,FY2021,633.0,kt CO2e,total
+fujifilm_2022_report,scope_2_location_based,FY2017,593.0,kt CO2e,total
+fujifilm_2022_report,scope_2_location_based,FY2018,576.0,kt CO2e,total
+fujifilm_2022_report,scope_2_location_based,FY2019,514.0,kt CO2e,total
+fujifilm_2022_report,scope_2_location_based,FY2020,475.0,kt CO2e,total
+fujifilm_2022_report,scope_2_location_based,FY2021,494.0,kt CO2e,total
+fujifilm_2022_report,scope_2_market_based,FY2017,531.0,kt CO2e,total
+fujifilm_2022_report,scope_2_market_based,FY2018,510.0,kt CO2e,total
+fujifilm_2022_report,scope_2_market_based,FY2019,451.0,kt CO2e,total
+fujifilm_2022_report,scope_2_market_based,FY2020,409.0,kt CO2e,total
+fujifilm_2022_report,scope_2_market_based,FY2021,420.0,kt CO2e,total
+fujifilm_2022_report,scope_3,FY2021,3473.0,kt CO2e,total
+georg fischer ag_2018_report,scope_1,2018²,312.0,1'000 tonnes,Scope 1 (Direct emissions: energy consumption)
+georg fischer ag_2018_report,scope_1,2017 pro rata²,304.0,1'000 tonnes,Scope 1 (Direct emissions: energy consumption)
+georg fischer ag_2018_report,scope_1,2017,325.0,1'000 tonnes,Scope 1 (Direct emissions: energy consumption)
+georg fischer ag_2018_report,scope_1,2016,307.0,1'000 tonnes,Scope 1 (Direct emissions: energy consumption)
+georg fischer ag_2018_report,scope_1,2015,313.0,1'000 tonnes,Scope 1 (Direct emissions: energy consumption)
+georg fischer ag_2018_report,scope_1,2014,313.0,1'000 tonnes,Scope 1 (Direct emissions: energy consumption)
+georg fischer ag_2018_report,scope_2_location_based,2018²,312.0,1'000 tonnes,Scope 2 (Indirect emissions: electricity and district heating)
+georg fischer ag_2018_report,scope_2_location_based,2017 pro rata²,330.0,1'000 tonnes,Scope 2 (Indirect emissions: electricity and district heating)
+georg fischer ag_2018_report,scope_2_location_based,2017,337.0,1'000 tonnes,Scope 2 (Indirect emissions: electricity and district heating)
+georg fischer ag_2018_report,scope_2_location_based,2016,299.0,1'000 tonnes,Scope 2 (Indirect emissions: electricity and district heating)
+georg fischer ag_2018_report,scope_2_location_based,2015,264.0,1'000 tonnes,Scope 2 (Indirect emissions: electricity and district heating)
+georg fischer ag_2018_report,scope_2_location_based,2014,264.0,1'000 tonnes,Scope 2 (Indirect emissions: electricity and district heating)
+georg fischer ag_2018_report,scope_3,2018²,6.0,1'000 tonnes,Scope 3 (Indirect emissions: business travel)
+georg fischer ag_2018_report,scope_3,2017 pro rata²,7.0,1'000 tonnes,Scope 3 (Indirect emissions: business travel)
+georg fischer ag_2018_report,scope_3,2017,7.0,1'000 tonnes,Scope 3 (Indirect emissions: business travel)
+georg fischer ag_2018_report,scope_3,2016,4.0,1'000 tonnes,Scope 3 (Indirect emissions: business travel)
+georg fischer ag_2018_report,scope_3,2015,3.0,1'000 tonnes,Scope 3 (Indirect emissions: business travel)
+georg fischer ag_2018_report,scope_3,2014,3.0,1'000 tonnes,Scope 3 (Indirect emissions: business travel)
+granite construction inc_2020_report,scope_1,2015,132285.0,US Tons,total
+granite construction inc_2020_report,scope_1,2020,244727.61,CO2 equivalents (US tons),total
+granite construction inc_2020_report,scope_3,2020,8399.0,CO2 (US tons),Other indirect (Scope 3) GHG emissions
+h. lundbeck_2021_report,scope_1,2019,29025.0,Tonne CO2e,Scope 1 GHGs
+h. lundbeck_2021_report,scope_1,2020,22050.0,Tonne CO2e,Scope 1 GHGs
+h. lundbeck_2021_report,scope_1,2021,24689.0,Tonne CO2e,Scope 1 GHGs
+h. lundbeck_2021_report,scope_2_location_based,2019,17745.0,Tonne CO2e,Scope 2 GHGs (location based)
+h. lundbeck_2021_report,scope_2_location_based,2020,14861.0,Tonne CO2e,Scope 2 GHGs (location based)
+h. lundbeck_2021_report,scope_2_location_based,2021,15798.0,Tonne CO2e,Scope 2 GHGs (location based)
+h. lundbeck_2021_report,scope_2_market_based,2019,9405.0,Tonne CO2e,Scope 2 GHGs (market based)
+h. lundbeck_2021_report,scope_2_market_based,2020,8480.0,Tonne CO2e,Scope 2 GHGs (market based)
+h. lundbeck_2021_report,scope_2_market_based,2021,7486.0,Tonne CO2e,Scope 2 GHGs (market based)
+h. lundbeck_2021_report,scope_3,2019,99375.0,Tonne CO2e,Purchased goods and services
+h. lundbeck_2021_report,scope_3,2019,11815.0,Tonne CO2e,Up-stream transportation and distribution
+h. lundbeck_2021_report,scope_3,2019,6733.0,Tonne CO2e,Business travel
+h. lundbeck_2021_report,scope_3,2020,123589.0,Tonne CO2e,Purchased goods and services
+h. lundbeck_2021_report,scope_3,2020,12858.0,Tonne CO2e,Up-stream transportation and distribution
+h. lundbeck_2021_report,scope_3,2020,2950.0,Tonne CO2e,Business travel
+h. lundbeck_2021_report,scope_3,2021,133445.0,Tonne CO2e,Purchased goods and services
+h. lundbeck_2021_report,scope_3,2021,12491.0,Tonne CO2e,Up-stream transportation and distribution
+h. lundbeck_2021_report,scope_3,2021,2587.0,Tonne CO2e,Business travel
+hammerson reit_2021_report,scope_1,2020,3309.0,tCO2e,total
+hammerson reit_2021_report,scope_1,2021,4293.0,tCO2e,total
+hammerson reit_2021_report,scope_2_location_based,2020,13711.0,tCO2e,total
+hammerson reit_2021_report,scope_2_location_based,2021,13210.0,tCO2e,total
+hammerson reit_2021_report,scope_2_market_based,2020,3331.0,tCO2e,total
+hammerson reit_2021_report,scope_2_market_based,2021,3850.0,tCO2e,total
+hammerson reit_2021_report,scope_3,2020,825.0,tCO2e,total
+hammerson reit_2021_report,scope_3,2021,692.0,tCO2e,total
+huhtamaki_2018_report,scope_1,2014,188000.0,metric tons CO₂ eqv,total
+huhtamaki_2018_report,scope_1,2015,191000.0,metric tons CO₂ eqv,total
+huhtamaki_2018_report,scope_1,2016,198000.0,metric tons CO₂ eqv,total
+huhtamaki_2018_report,scope_1,2017,207000.0,metric tons CO₂ eqv,total
+huhtamaki_2018_report,scope_1,2018,207000.0,metric tons CO₂ eqv,total
+huhtamaki_2018_report,scope_2_location_based,2014,479000.0,metric tons CO₂ eqv,total
+huhtamaki_2018_report,scope_2_location_based,2015,487000.0,metric tons CO₂ eqv,total
+huhtamaki_2018_report,scope_2_location_based,2016,526000.0,metric tons CO₂ eqv,total
+huhtamaki_2018_report,scope_2_location_based,2017,549000.0,metric tons CO₂ eqv,total
+huhtamaki_2018_report,scope_2_location_based,2018,559000.0,metric tons CO₂ eqv,total
+inchcape plc_2022_report,scope_1,2022,3617.0,tCO₂e,Scope 1 Emissions (tCO₂e)
+inchcape plc_2022_report,scope_1,2022,17002.0,tCO₂e,Scope 1 Emissions (tCO₂e)
+inchcape plc_2022_report,scope_1,2021,2486.0,tCO₂e,Scope 1 Emissions (tCO₂e)
+inchcape plc_2022_report,scope_1,2021,9752.0,tCO₂e,Scope 1 Emissions (tCO₂e)
+inchcape plc_2022_report,scope_2_location_based,2022,2886.0,tCO₂e,"Scope 2 Emissions (Location-based, tCO₂e)"
+inchcape plc_2022_report,scope_2_location_based,2022,22223.0,tCO₂e,"Scope 2 Emissions (Location-based, tCO₂e)"
+inchcape plc_2022_report,scope_2_location_based,2021,3689.0,tCO₂e,"Scope 2 Emissions (Location-based, tCO₂e)"
+inchcape plc_2022_report,scope_2_location_based,2021,27277.0,tCO₂e,"Scope 2 Emissions (Location-based, tCO₂e)"
+inchcape plc_2022_report,scope_2_market_based,2022,3624.0,tCO₂e,"Scope 2 Emissions (Market-based, tCO₂e)"
+inchcape plc_2022_report,scope_2_market_based,2022,30805.0,tCO₂e,"Scope 2 Emissions (Market-based, tCO₂e)"
+inchcape plc_2022_report,scope_2_market_based,2021,2486.0,tCO₂e,"Scope 2 Emissions (Market-based, tCO₂e)"
+inchcape plc_2022_report,scope_2_market_based,2021,32949.0,tCO₂e,"Scope 2 Emissions (Market-based, tCO₂e)"
+inchcape plc_2022_report,scope_3,2022,2975.0,tCO₂e,"Scope 3 Emissions (Business Travel & Upstream Transport, tCO₂e)"
+inchcape plc_2022_report,scope_3,2022,187713.0,tCO₂e,"Scope 3 Emissions (Business Travel & Upstream Transport, tCO₂e)"
+inchcape plc_2022_report,scope_3,2021,9221.0,tCO₂e,"Scope 3 Emissions (Business Travel & Upstream Transport, tCO₂e)"
+inchcape plc_2022_report,scope_3,2021,82068.0,tCO₂e,"Scope 3 Emissions (Business Travel & Upstream Transport, tCO₂e)"
+innospec inc_2020_report,scope_2_market_based,2020,0.0,metric tonnes CO2 equivalent,total
+kfw_2018_report,scope_1,2014,4636.0,tonnes,Emissions from direct energy consumption (Scope 1)
+kfw_2018_report,scope_1,2015,5095.0,tonnes,Emissions from direct energy consumption (Scope 1)
+kfw_2018_report,scope_1,2016,5260.0,tonnes,Emissions from direct energy consumption (Scope 1)
+kfw_2018_report,scope_1,2017,5616.0,tonnes,Emissions from direct energy consumption (Scope 1)
+kfw_2018_report,scope_1,2018,5571.0,tonnes,Emissions from direct energy consumption (Scope 1)
+kfw_2018_report,scope_2_location_based,2017,16592.0,tonnes,total
+kfw_2018_report,scope_2_location_based,2018,9564.0,tonnes,total
+kfw_2018_report,scope_2_market_based,2017,16257.0,tonnes,total
+kfw_2018_report,scope_2_market_based,2018,7732.0,tonnes,total
+kfw_2018_report,scope_3,2014,9446.0,tonnes,Total business travel (Scope 3)
+kfw_2018_report,scope_3,2014,102.0,tonnes,Events (Scope 3)
+kfw_2018_report,scope_3,2015,7394.0,tonnes,Total business travel (Scope 3)
+kfw_2018_report,scope_3,2015,102.0,tonnes,Events (Scope 3)
+kfw_2018_report,scope_3,2016,7411.0,tonnes,Total business travel (Scope 3)
+kfw_2018_report,scope_3,2016,74.0,tonnes,Events (Scope 3)
+kfw_2018_report,scope_3,2017,8208.0,tonnes,Total business travel (Scope 3)
+kfw_2018_report,scope_3,2017,87.0,tonnes,Events (Scope 3)
+kfw_2018_report,scope_3,2018,8665.0,tonnes,Total business travel (Scope 3)
+kfw_2018_report,scope_3,2018,101.0,tonnes,Events (Scope 3)
+kilroy realty_2017_report,scope_1,2016,4059.0,Emissions (Tonnes),2016
+kilroy realty_2017_report,scope_1,2016,3110.0,Emissions (Tonnes),2016
+kilroy realty_2017_report,scope_1,2017,4641.0,Emissions (Tonnes),2017
+kilroy realty_2017_report,scope_1,2017,3296.0,Emissions (Tonnes),2017
+kilroy realty_2018_report,scope_1,2017,4120.0,MtCO2e,Scope 1
+kilroy realty_2018_report,scope_1,2018,3908.0,MtCO2e,Scope 1 Emissions
+kilroy realty_2018_report,scope_2_location_based,2017,36504.0,MtCO2e,Scope 2 (Location-Based)
+kilroy realty_2018_report,scope_2_location_based,2018,33207.0,MtCO2e,Scope 2 Emissions (Location-Based)
+kilroy realty_2018_report,scope_2_market_based,2017,35735.0,MtCO2e,Scope 2 (Market-Based)
+kilroy realty_2018_report,scope_2_market_based,2018,30439.0,MtCO2e,Scope 2 Emissions (Market-Based)
+kilroy realty_2018_report,scope_3,2018,31984.0,MtCO2e,Scope 3 Emissions (Downstream Leased Assets)
+morinaga ltd_2020_report,scope_1,FY2020/3,20794.0,t-CO2e,Total
+morinaga ltd_2020_report,scope_2_location_based,FY2020/3,52024.0,t-CO2e,Total
+morinaga ltd_2020_report,scope_2_market_based,FY2020/3,49605.0,t-CO2e,Total
+morinaga ltd_2020_report,scope_3,FY2020/3,248003.0,t-CO2e,Category 1: Purchased goods and services
+morinaga ltd_2020_report,scope_3,FY2020/3,122971.0,t-CO2e,Category 2: Capital goods
+morinaga ltd_2020_report,scope_3,FY2020/3,3774.0,t-CO2e,Category 3: Fuel- and energy-related activities
+morinaga ltd_2020_report,scope_3,FY2020/3,15809.0,t-CO2e,Category 4: Upstream transportation and distribution
+morinaga ltd_2020_report,scope_3,FY2020/3,4176.0,t-CO2e,Category 5: Waste generated in operations
+morinaga ltd_2020_report,scope_3,FY2020/3,618.0,t-CO2e,Category 6: Business travel
+morinaga ltd_2020_report,scope_3,FY2020/3,1607.0,t-CO2e,Category 7: Employee commuting
+morinaga ltd_2020_report,scope_3,FY2020/3,557.0,t-CO2e,Category 8: Upstream leased assets
+morinaga ltd_2020_report,scope_3,FY2020/3,6603.0,t-CO2e,Category 12: Disposal of sold products
+nok corporation_2021_report,scope_1,FY 2020,38.0,"1,000 tons-CO2",Scope 1 (Fuel)
+nok corporation_2021_report,scope_2_location_based,FY 2020,602.0,"1,000 tons-CO2",Scope 2 (Electricity/heat)
+nok corporation_2021_report,scope_3,FY 2020,269.0,"1,000 tons-CO2",total
+nordea_2017_report,scope_1,2017,51.0,tonnes,diesel generators (scope 1)
+nordea_2017_report,scope_1,2016,48.0,tonnes,diesel generators (scope 1)
+nordea_2017_report,scope_2_location_based,2017,3187.0,tonnes,"electricity, heating, district cooling (scope 2)"
+nordea_2017_report,scope_2_location_based,2016,3409.0,tonnes,"electricity, heating, district cooling (scope 2)"
+nordea_2017_report,scope_3,2017,19500.0,tonnes,business travel (scope 3)
+nordea_2017_report,scope_3,2016,13576.0,tonnes,business travel (scope 3)
+salzgitter ag_2018_report,scope_1,2018,8710.0,kt CO2,Direct GHG emissions from operating plants (Scope 1)
+salzgitter ag_2018_report,scope_1,2017,8470.0,kt CO2,Direct GHG emissions from operating plants (Scope 1)
+salzgitter ag_2018_report,scope_2_location_based,2018,600.0,kt CO2,Indirect GHG emissions (Scope 2)
+salzgitter ag_2018_report,scope_2_location_based,2017,693.0,kt CO2,Indirect GHG emissions (Scope 2)
+salzgitter ag_2018_report,scope_3,2018,1508.0,kt CO2,Other indirect GHG emissions from feedstock purchase (Scope 3)
+salzgitter ag_2018_report,scope_3,2017,1362.0,kt CO2,Other indirect GHG emissions from feedstock purchase (Scope 3)
+sato oyj_2022_report,scope_1,2015,135.0,t CO2-e,"GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+sato oyj_2022_report,scope_1,2016,170.0,t CO2-e,"GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+sato oyj_2022_report,scope_1,2017,214.0,t CO2-e,"GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+sato oyj_2022_report,scope_1,2018,179.0,t CO2-e,"GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+sato oyj_2022_report,scope_1,2019,177.0,t CO2-e,"GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+sato oyj_2022_report,scope_1,2020,147.0,t CO2-e,"GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+sato oyj_2022_report,scope_1,2021,105.0,t CO2-e,"GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+sato oyj_2022_report,scope_1,2022,20.0,t CO2-e,"GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+sato oyj_2022_report,scope_2_location_based,2015,41962.0,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (location-based)"
+sato oyj_2022_report,scope_2_location_based,2016,52583.0,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (location-based)"
+sato oyj_2022_report,scope_2_location_based,2017,43163.0,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (location-based)"
+sato oyj_2022_report,scope_2_location_based,2018,40152.0,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (location-based)"
+sato oyj_2022_report,scope_2_location_based,2019,37468.0,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (location-based)"
+sato oyj_2022_report,scope_2_location_based,2020,34456.0,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (location-based)"
+sato oyj_2022_report,scope_2_location_based,2021,45754.0,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (location-based)"
+sato oyj_2022_report,scope_2_location_based,2022,40393.0,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (location-based)"
+sato oyj_2022_report,scope_2_market_based,2015,37674.0,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (market-based)"
+sato oyj_2022_report,scope_2_market_based,2016,48560.0,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (market-based)"
+sato oyj_2022_report,scope_2_market_based,2017,39430.0,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (market-based)"
+sato oyj_2022_report,scope_2_market_based,2018,36728.0,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (market-based)"
+sato oyj_2022_report,scope_2_market_based,2019,34292.0,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (market-based)"
+sato oyj_2022_report,scope_2_market_based,2020,30915.0,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (market-based)"
+sato oyj_2022_report,scope_2_market_based,2021,43349.0,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (market-based)"
+sato oyj_2022_report,scope_2_market_based,2022,37920.0,t CO2-e,"Indirect greenhouse gas emissions, t CO2-e (market-based)"
+sato oyj_2022_report,scope_3,2015,1834.0,t CO2-e,"GRI-305-3 Other indirect greenhouse gas emissions, t CO2-e** (scope 3)"
+sato oyj_2022_report,scope_3,2016,948.0,t CO2-e,"GRI-305-3 Other indirect greenhouse gas emissions, t CO2-e** (scope 3)"
+sato oyj_2022_report,scope_3,2017,240.0,t CO2-e,"GRI-305-3 Other indirect greenhouse gas emissions, t CO2-e** (scope 3)"
+sato oyj_2022_report,scope_3,2018,49.0,t CO2-e,"GRI-305-3 Other indirect greenhouse gas emissions, t CO2-e** (scope 3)"
+sato oyj_2022_report,scope_3,2019,46.0,t CO2-e,"GRI-305-3 Other indirect greenhouse gas emissions, t CO2-e** (scope 3)"
+sato oyj_2022_report,scope_3,2020,37.0,t CO2-e,"GRI-305-3 Other indirect greenhouse gas emissions, t CO2-e** (scope 3)"
+sato oyj_2022_report,scope_3,2021,49.0,t CO2-e,"GRI-305-3 Other indirect greenhouse gas emissions, t CO2-e** (scope 3)"
+sato oyj_2022_report,scope_3,2022,49.0,t CO2-e,"GRI-305-3 Other indirect greenhouse gas emissions, t CO2-e** (scope 3)"
+stantec inc_2019_report,scope_1,2017,9585.0,mtCO2e,Scope 1
+stantec inc_2019_report,scope_1,2018,10333.0,mtCO2e,Scope 1
+stantec inc_2019_report,scope_1,2019,7540.0,mtCO2e,Scope 1
+stantec inc_2019_report,scope_2_location_based,2017,43228.0,mtCO2e,Scope 2
+stantec inc_2019_report,scope_2_location_based,2018,37810.0,mtCO2e,Scope 2
+stantec inc_2019_report,scope_2_location_based,2019,40726.0,mtCO2e,Scope 2
+stantec inc_2019_report,scope_3,2017,26800.0,mtCO2e,Scope 3
+stantec inc_2019_report,scope_3,2018,29318.0,mtCO2e,Scope 3
+stantec inc_2019_report,scope_3,2019,29301.0,mtCO2e,Scope 3
+toshiba tec corp_2022_report,scope_1,FY2020,3.0,thousand t-CO₂,9 Direct emissions (Scope 1)
+toshiba tec corp_2022_report,scope_1,FY2021,3.1,thousand t-CO₂,9 Direct emissions (Scope 1)
+toshiba tec corp_2022_report,scope_2_location_based,FY2020,48.8,thousand t-CO₂,10 Indirect emissions associated with energy use (Scope 2)
+toshiba tec corp_2022_report,scope_2_location_based,FY2021,45.5,thousand t-CO₂,10 Indirect emissions associated with energy use (Scope 2)
+toshiba tec corp_2022_report,scope_3,FY2021,161.0,thousand t-CO₂,Upstream (Scope 3)
+toshiba tec corp_2022_report,scope_3,FY2021,257.0,thousand t-CO₂,Downstream (Scope 3)
+uniper_2019_report,scope_1,2017,63.3,Million metric tons,total
+uniper_2019_report,scope_1,2018,59.5,Million metric tons,total
+uniper_2019_report,scope_1,2019,47.0,Million metric tons,total
+uniper_2019_report,scope_2_location_based,2018,1101032.0,metric t CO₂,total
+uniper_2019_report,scope_2_location_based,2019,1129277.0,metric t CO₂,total
+uniper_2019_report,scope_2_market_based,2018,1676689.0,metric t CO₂,total
+uniper_2019_report,scope_2_market_based,2019,1573672.0,metric t CO₂,total
+uniper_2019_report,scope_3,2018,10.3,m metric t CO₂,Upstream indirect Scope 3 CO₂ emissions
+uniper_2019_report,scope_3,2019,8.7,m metric t CO₂,Upstream indirect Scope 3 CO₂ emissions
+varta ag_2021_report,scope_1,2019,3598.0,,Scope 1
+varta ag_2021_report,scope_1,2020,4417.0,,Scope 1
+varta ag_2021_report,scope_1,2021,5894.0,,Scope 1
+varta ag_2021_report,scope_2_location_based,2019,17038.0,CO2-eq t,location-based
+varta ag_2021_report,scope_2_location_based,2020,20885.0,CO2-eq t,location-based
+varta ag_2021_report,scope_2_location_based,2021,23503.0,CO2-eq t,location-based
+varta ag_2021_report,scope_2_market_based,2019,10347.0,,Scope 2
+varta ag_2021_report,scope_2_market_based,2020,12296.0,,Scope 2
+varta ag_2021_report,scope_2_market_based,2021,1168.0,,Scope 2

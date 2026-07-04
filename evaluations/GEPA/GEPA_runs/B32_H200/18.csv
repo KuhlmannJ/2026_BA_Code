@@ -1,0 +1,50 @@
+report_name,scope,year,value,unit,label
+Fresenius SE_2019_report,scope_1,2019,517.0,,Total
+Fresenius SE_2019_report,scope_1,2018,521.0,,Total
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2019,819682.0,MT,Scope 3 (TOTAL)
+ViacomCBS_ESG Report_2020-2021_vFINAL,scope_3,2020,6878548.0,MT,Scope 3 (TOTAL)
+acuity brands inc_2022_report,scope_1,2022,34327.0,MT CO2e,Total Scope 1
+acuity brands inc_2022_report,scope_2_market_based,2022,42234.0,MT CO2e,Total Scope 2
+acuity brands inc_2022_report,scope_3,2022,35119419.0,MT CO2e,Total Scope 3
+bekaert (d) sa_2022_report,scope_3,2019,6045636.0,ton CO2e,Total Scope 3 emissions
+bekaert (d) sa_2022_report,scope_3,2021,6736962.0,ton CO2e,Total Scope 3 emissions
+bekaert (d) sa_2022_report,scope_3,2022,6187086.0,ton CO2e,Total Scope 3 emissions
+fujifilm_2022_report,scope_1,FY2017,687.0,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_1,FY2018,672.0,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_1,FY2019,633.0,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_1,FY2020,603.0,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_1,FY2021,633.0,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_location_based,FY2017,593.0,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_location_based,FY2018,576.0,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_location_based,FY2019,514.0,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_location_based,FY2020,475.0,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_location_based,FY2021,494.0,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_market_based,FY2017,531.0,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_market_based,FY2018,510.0,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_market_based,FY2019,451.0,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_market_based,FY2020,409.0,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_2_market_based,FY2021,420.0,kt CO2e,Fujifilm Group Total
+fujifilm_2022_report,scope_3,FY2021,3473.0,kt CO2e,Total
+granite construction inc_2020_report,scope_1,2020,244727.61,CO2 equivalents (US tons),Total Scope 1
+granite construction inc_2020_report,scope_3,2020,8399.0,CO2 (US tons),Travel: Total Estimated CO2 Emissions
+hammerson reit_2021_report,scope_1,2020,3309.0,tCO2e,Totals
+hammerson reit_2021_report,scope_1,2021,4293.0,tCO2e,Totals
+hammerson reit_2021_report,scope_3,2020,825.0,tCO2e,Totals
+hammerson reit_2021_report,scope_3,2021,692.0,tCO2e,Totals
+kfw_2018_report,scope_3,2014,9446.0,tonnes,Total business travel (Scope 3)
+kfw_2018_report,scope_3,2015,7394.0,tonnes,Total business travel (Scope 3)
+kfw_2018_report,scope_3,2016,7411.0,tonnes,Total business travel (Scope 3)
+kfw_2018_report,scope_3,2017,8208.0,tonnes,Total business travel (Scope 3)
+kfw_2018_report,scope_3,2018,8665.0,tonnes,Total business travel (Scope 3)
+kilroy realty_2018_report,scope_1,2018,3908.0,MtCO2e,Whole Portfolio
+kilroy realty_2018_report,scope_2_location_based,2018,33207.0,MtCO2e,Whole Portfolio
+kilroy realty_2018_report,scope_2_market_based,2018,30439.0,MtCO2e,Whole Portfolio
+kilroy realty_2018_report,scope_3,2018,31984.0,MtCO2e,Whole Portfolio
+nok corporation_2021_report,scope_3,2020 (FY),269.0,"1,000 tons-CO2",Total
+uniper_2019_report,scope_1,2019,47.0,Million metric tons,Total
+uniper_2019_report,scope_1,2018,59.5,Million metric tons,Total
+uniper_2019_report,scope_1,2017,63.3,Million metric tons,Total
+uniper_2019_report,scope_2_location_based,2019,1129277.0,metric t CO2,Total
+uniper_2019_report,scope_2_location_based,2018,1101032.0,metric t CO2,Total
+uniper_2019_report,scope_2_market_based,2019,1573672.0,metric t CO2,Total
+uniper_2019_report,scope_2_market_based,2018,1676689.0,metric t CO2,Total

@@ -1,0 +1,38 @@
+report_name,scope,year,value,unit,label
+Allianz_2022_report,scope_1,2019,42,ktCO2eq,Scope 1
+Allianz_2022_report,scope_1,2020,29,ktCO2eq,Scope 1
+Allianz_2022_report,scope_1,2020,28714,t CO2e,Scope 1 – Direct GHG emissions
+Allianz_2022_report,scope_1,2021,29,ktCO2eq,Scope 1
+Allianz_2022_report,scope_1,2021,28699,t CO2e,Scope 1 – Direct GHG emissions
+Allianz_2022_report,scope_1,2022,31,ktCO2eq,Scope 1
+Allianz_2022_report,scope_1,2022,30953,t CO2e,Scope 1 – Direct GHG emissions
+Allianz_2022_report,scope_2_location_based,2020,180826,t CO2e,Scope 2 – Indirect GHG emissions (location based)
+Allianz_2022_report,scope_2_location_based,2021,149599,t CO2e,Scope 2 – Indirect GHG emissions (location based)
+Allianz_2022_report,scope_2_location_based,2022,138339,t CO2e,Scope 2 – Indirect GHG emissions (location based)
+Allianz_2022_report,scope_2_market_based,2019,143,ktCO2eq,Scope 2 – market based
+Allianz_2022_report,scope_2_market_based,2020,101,ktCO2eq,Scope 2 – market based
+Allianz_2022_report,scope_2_market_based,2020,100722,t CO2e,Scope 2 – Indirect GHG emissions (market based)
+Allianz_2022_report,scope_2_market_based,2021,55,ktCO2eq,Scope 2 – market based
+Allianz_2022_report,scope_2_market_based,2021,54689,t CO2e,Scope 2 – Indirect GHG emissions (market based)
+Allianz_2022_report,scope_2_market_based,2022,92,ktCO2eq,Scope 2 – market based
+Allianz_2022_report,scope_2_market_based,2022,30490,t CO2e,Scope 2 – Indirect GHG emissions (market based)
+Allianz_2022_report,scope_3,2019,149,ktCO2eq,Scope 3
+Allianz_2022_report,scope_3,2020,74,ktCO2eq,Scope 3
+Allianz_2022_report,scope_3,2020,73916,t CO2e,Scope 3 – Other indirect GHG emissions
+Allianz_2022_report,scope_3,2021,55,ktCO2eq,Scope 3
+Allianz_2022_report,scope_3,2021,55359,t CO2e,Scope 3 – Other indirect GHG emissions
+Allianz_2022_report,scope_3,2022,30,ktCO2eq,Scope 3
+Allianz_2022_report,scope_3,2022,92467,t CO2e,Scope 3 – Other indirect GHG emissions
+Fresenius SE_2019_report,scope_1,2019,227,tCO2e in thousands,Fresenius Medical Care
+Fresenius SE_2019_report,scope_1,2019,165,tCO2e in thousands,Fresenius Kabi
+Fresenius SE_2019_report,scope_1,2019,107,tCO2e in thousands,Fresenius Helios
+Fresenius SE_2019_report,scope_1,2019,18,tCO2e in thousands,Fresenius Vamed
+Fresenius SE_2019_report,scope_1,2019,517,tCO2e in thousands,total
+Fresenius SE_2019_report,scope_1,2018,219,tCO2e in thousands,Fresenius Medical Care
+Fresenius SE_2019_report,scope_1,2018,169,tCO2e in thousands,Fresenius Kabi
+Fresenius SE_2019_report,scope_1,2018,114,tCO2e in thousands,Fresenius Helios
+Fresenius SE_2019_report,scope_1,2018,19,tCO2e in thousands,Fresenius Vamed
+Fresenius SE_2019_report,scope_1,2018,521,tCO2e in thousands,total
+Fresenius SE_2019_report,scope_1,2017,174,tCO2e in thousands,Fresenius Kabi
+Fresenius SE_2019_report,scope_1,2017,103,tCO2e in thousands,Fresenius Helios
+Fresenius SE_2019_report,scope_1,2017,3,tCO2e in thousands,Fresenius Vamed
