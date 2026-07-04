@@ -1,0 +1,105 @@
+{
+  "report_name": "Bekaert Integrated Annual Report 2022",
+  "report_title": "Bekaert Integrated Annual Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 329982,
+          "unit": "ton CO2",
+          "label": "natural gas & LPG"
+        },
+        {
+          "value": 8438,
+          "unit": "ton CO2",
+          "label": "fuel"
+        }
+      ],
+      "2020": [
+        {
+          "value": 305547,
+          "unit": "ton CO2",
+          "label": "natural gas & LPG"
+        },
+        {
+          "value": 7980,
+          "unit": "ton CO2",
+          "label": "fuel"
+        }
+      ],
+      "2021": [
+        {
+          "value": 327690,
+          "unit": "ton CO2",
+          "label": "natural gas & LPG"
+        },
+        {
+          "value": 8511,
+          "unit": "ton CO2",
+          "label": "fuel"
+        }
+      ],
+      "2022": [
+        {
+          "value": 316951,
+          "unit": "ton CO2",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 1243295,
+          "unit": "ton CO2",
+          "label": "total"
+        }
+      ],
+      "2020": [
+        {
+          "value": 1104536,
+          "unit": "ton CO2",
+          "label": "total"
+        }
+      ],
+      "2021": [
+        {
+          "value": 1217766,
+          "unit": "ton CO2",
+          "label": "total"
+        }
+      ],
+      "2022": [
+        {
+          "value": 1289629,
+          "unit": "ton CO2",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 6045636,
+          "unit": "ton CO2e",
+          "label": "total"
+        }
+      ],
+      "2021": [
+        {
+          "value": 6736962,
+          "unit": "ton CO2e",
+          "label": "total"
+        }
+      ],
+      "2022": [
+        {
+          "value": 6187086,
+          "unit": "ton CO2e",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}

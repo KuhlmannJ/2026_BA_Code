@@ -1,0 +1,1172 @@
+{
+  "report_name": "Bekaert Integrated Annual Report 2022",
+  "report_title": "Bekaert Integrated Annual Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 286932,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 7867,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 329982,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 8438,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 30845,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 7910,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 77384,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 5373,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 19750,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 40011,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 13796,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 42766,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 155655,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 108597,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 16452,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 8922,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 5173,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 165134,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 142738,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 16452,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 8922,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 5173,
+          "unit": "ton CO2",
+          "label": "direct"
+        }
+      ],
+      "2020": [
+        {
+          "value": 263785,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 7445,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 305547,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 7980,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 29266,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 5776,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 70306,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 5469,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 18970,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 39310,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 12582,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 36913,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 141491,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 99425,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 16029,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 9267,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 5019,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 150674,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 132539,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 16029,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 9267,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 5019,
+          "unit": "ton CO2",
+          "label": "direct"
+        }
+      ],
+      "2021": [
+        {
+          "value": 277023,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 7887,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 327690,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 8511,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 31070,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 5382,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 70248,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 6891,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 20034,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 43305,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 14532,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 35591,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 152814,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 102830,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 15229,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 9048,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 4989,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 166366,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 140569,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 15229,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 9048,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 4989,
+          "unit": "ton CO2",
+          "label": "direct"
+        }
+      ],
+      "2022": [
+        {
+          "value": 262581,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 7388,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 309001,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 7950,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 26584,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 5463,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 66598,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 7254,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 15994,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 42040,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 15253,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 36657,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 140995,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 102636,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 14647,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 8119,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 3572,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 154874,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 135739,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 14647,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 8119,
+          "unit": "ton CO2",
+          "label": "direct"
+        },
+        {
+          "value": 3572,
+          "unit": "ton CO2",
+          "label": "direct"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_2_market_based": {
+      "2019": [
+        {
+          "value": 0,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 15541,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 794058,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 80962,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 161983,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 162,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 87027,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 92616,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 1222347,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 95320,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 17141,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 24949,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 3303,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 1243295,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 114729,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 17141,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 24949,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 3303,
+          "unit": "ton CO2",
+          "label": "market_based"
+        }
+      ],
+      "2020": [
+        {
+          "value": 8382,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 14087,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 750752,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 74461,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 148406,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 25270,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 72933,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 59126,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 1088383,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 101986,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 19482,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 24037,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 2958,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 1104536,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 119027,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 19482,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 24037,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 2958,
+          "unit": "ton CO2",
+          "label": "market_based"
+        }
+      ],
+      "2021": [
+        {
+          "value": 7768,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 16289,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 777225,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 101462,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 165128,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 31525,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 90440,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 71747,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 1189756,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 117159,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 22889,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 29061,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 3478,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 1217766,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 143505,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 22889,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 29061,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 3478,
+          "unit": "ton CO2",
+          "label": "market_based"
+        }
+      ],
+      "2022": [
+        {
+          "value": 6971,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 13678,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 711082,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 77419,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 143252,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 31214,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 87638,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 42456,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 1071971,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 115592,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 25290,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 26916,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 1249,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 1097982,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 138192,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 25290,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 26916,
+          "unit": "ton CO2",
+          "label": "market_based"
+        },
+        {
+          "value": 1249,
+          "unit": "ton CO2",
+          "label": "market_based"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 6045636,
+          "unit": "ton CO2e",
+          "label": "total"
+        },
+        {
+          "value": 4874911,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 72870,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 352555,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 31487,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 27261,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 2740,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 20400,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 0,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 47230,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 161870,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 100000,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 106999,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 0,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 0,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 247313,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 6045636,
+          "unit": "ton CO2e",
+          "label": "total"
+        },
+        {
+          "value": 18578,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 9284,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 800,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 2740,
+          "unit": "ton CO2e (without radiative forcing (RF))",
+          "label": "indirect"
+        }
+      ],
+      "2020": [
+        {
+          "value": 3606,
+          "unit": "ton CO2e/year",
+          "label": "indirect"
+        },
+        {
+          "value": 1700,
+          "unit": "ton CO2e (without radiative forcing (RF))",
+          "label": "indirect"
+        }
+      ],
+      "2021": [
+        {
+          "value": 6736962,
+          "unit": "ton CO2e",
+          "label": "total"
+        },
+        {
+          "value": 5446554,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 113767,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 348402,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 44627,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 32713,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 1000,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 20400,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 0,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 66941,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 163893,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 100000,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 108341,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 0,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 0,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 290324,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 6736962,
+          "unit": "ton CO2e",
+          "label": "total"
+        },
+        {
+          "value": 31137,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 10562,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 4118,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 1000,
+          "unit": "ton CO2e (without radiative forcing (RF))",
+          "label": "indirect"
+        },
+        {
+          "value": 3508,
+          "unit": "ton CO2e/year",
+          "label": "indirect"
+        }
+      ],
+      "2022": [
+        {
+          "value": 6187086,
+          "unit": "ton CO2e",
+          "label": "total"
+        },
+        {
+          "value": 4762032,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 133995,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 325115,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 77972,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 37984,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 2100,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 20400,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 0,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 116899,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 156846,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 100000,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 94448,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 0,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 0,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 359295,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 6187086,
+          "unit": "ton CO2e",
+          "label": "total"
+        },
+        {
+          "value": 29263,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 82854,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 4782,
+          "unit": "ton CO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 2100,
+          "unit": "ton CO2e (without radiative forcing (RF))",
+          "label": "indirect"
+        },
+        {
+          "value": 3497,
+          "unit": "ton CO2e/year",
+          "label": "indirect"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "report_name": "Bekaert Integrated Annual Report 2022",
+  "report_title": "Bekaert Integrated Annual Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 286932,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 256158,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas"
+        },
+        {
+          "value": 30774,
+          "unit": "ton CO2",
+          "label": "GHG emission LPG"
+        },
+        {
+          "value": 7867,
+          "unit": "ton CO2",
+          "label": "GHG emission fuel"
+        },
+        {
+          "value": 329982,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 299207,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas"
+        },
+        {
+          "value": 30774,
+          "unit": "ton CO2",
+          "label": "GHG emission LPG"
+        },
+        {
+          "value": 8438,
+          "unit": "ton CO2",
+          "label": "GHG emission fuel"
+        }
+      ],
+      "2020": [
+        {
+          "value": 263785,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 234792,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas"
+        },
+        {
+          "value": 28993,
+          "unit": "ton CO2",
+          "label": "GHG emission LPG"
+        },
+        {
+          "value": 7445,
+          "unit": "ton CO2",
+          "label": "GHG emission fuel"
+        },
+        {
+          "value": 305547,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 274823,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas"
+        },
+        {
+          "value": 30724,
+          "unit": "ton CO2",
+          "label": "GHG emission LPG"
+        },
+        {
+          "value": 7980,
+          "unit": "ton CO2",
+          "label": "GHG emission fuel"
+        }
+      ],
+      "2021": [
+        {
+          "value": 277023,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 243897,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas"
+        },
+        {
+          "value": 33127,
+          "unit": "ton CO2",
+          "label": "GHG emission LPG"
+        },
+        {
+          "value": 7887,
+          "unit": "ton CO2",
+          "label": "GHG emission fuel"
+        },
+        {
+          "value": 327690,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 288240,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas"
+        },
+        {
+          "value": 39449,
+          "unit": "ton CO2",
+          "label": "GHG emission LPG"
+        },
+        {
+          "value": 8511,
+          "unit": "ton CO2",
+          "label": "GHG emission fuel"
+        }
+      ],
+      "2022": [
+        {
+          "value": 262581,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 248561,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas"
+        },
+        {
+          "value": 14021,
+          "unit": "ton CO2",
+          "label": "GHG emission LPG"
+        },
+        {
+          "value": 7388,
+          "unit": "ton CO2",
+          "label": "GHG emission fuel"
+        },
+        {
+          "value": 309001,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 287587,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas"
+        },
+        {
+          "value": 21414,
+          "unit": "ton CO2",
+          "label": "GHG emission LPG"
+        },
+        {
+          "value": 7950,
+          "unit": "ton CO2",
+          "label": "GHG emission fuel"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_2_market_based": {},
+    "scope_3": {
+      "2019": [
+        {
+          "value": 247313,
+          "unit": "ton CO2e",
+          "label": "Total JVs"
+        },
+        {
+          "value": 6045636,
+          "unit": "ton CO2e",
+          "label": "total"
+        }
+      ],
+      "2021": [
+        {
+          "value": 290324,
+          "unit": "ton CO2e",
+          "label": "Total JVs"
+        },
+        {
+          "value": 6736962,
+          "unit": "ton CO2e",
+          "label": "total"
+        }
+      ],
+      "2022": [
+        {
+          "value": 359295,
+          "unit": "ton CO2e",
+          "label": "Total JVs"
+        },
+        {
+          "value": 6187086,
+          "unit": "ton CO2e",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}

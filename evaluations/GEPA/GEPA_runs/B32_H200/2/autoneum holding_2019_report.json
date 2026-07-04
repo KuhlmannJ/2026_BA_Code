@@ -1,0 +1,106 @@
+{
+  "report_name": "Autoneum_Corporate_Responsibility_Report_2019",
+  "report_title": "Autoneum | Corporate Responsibility Report 2019",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 116274,
+          "unit": "metric tons CO₂ equivalents",
+          "label": "direct"
+        },
+        {
+          "value": 50.6,
+          "unit": "metric tons CO₂ equivalents per CHF million revenue",
+          "label": "direct/intensity"
+        }
+      ],
+      "2018": [
+        {
+          "value": 109577,
+          "unit": "metric tons CO₂ equivalents",
+          "label": "direct"
+        },
+        {
+          "value": 48.0,
+          "unit": "metric tons CO₂ equivalents per CHF million revenue",
+          "label": "direct/intensity"
+        }
+      ],
+      "2017": [
+        {
+          "value": 81077,
+          "unit": "metric tons CO₂ equivalents",
+          "label": "direct"
+        },
+        {
+          "value": 36.8,
+          "unit": "metric tons CO₂ equivalents per CHF million revenue",
+          "label": "direct/intensity"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 264287,
+          "unit": "metric tons CO₂ equivalents",
+          "label": "indirect"
+        },
+        {
+          "value": 115.0,
+          "unit": "metric tons CO₂ equivalents per CHF million revenue",
+          "label": "indirect/intensity"
+        }
+      ],
+      "2018": [
+        {
+          "value": 256550,
+          "unit": "metric tons CO₂ equivalents",
+          "label": "indirect"
+        },
+        {
+          "value": 112.4,
+          "unit": "metric tons CO₂ equivalents per CHF million revenue",
+          "label": "indirect/intensity"
+        }
+      ],
+      "2017": [
+        {
+          "value": 235014,
+          "unit": "metric tons CO₂ equivalents",
+          "label": "indirect"
+        },
+        {
+          "value": 106.7,
+          "unit": "metric tons CO₂ equivalents per CHF million revenue",
+          "label": "indirect/intensity"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 420238,
+          "unit": "metric tons CO₂ equivalents",
+          "label": "indirect"
+        }
+      ],
+      "2018": [
+        {
+          "value": 525214,
+          "unit": "metric tons CO₂ equivalents",
+          "label": "indirect"
+        }
+      ],
+      "2017": [
+        {
+          "value": 448185,
+          "unit": "metric tons CO₂ equivalents",
+          "label": "indirect"
+        }
+      ]
+    }
+  }
+}

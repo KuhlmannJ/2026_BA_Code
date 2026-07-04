@@ -1,0 +1,559 @@
+{
+  "report_name": "Bekaert Integrated Annual Report 2022",
+  "report_title": "Bekaert Integrated Annual Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 286932,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 256158,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas"
+        },
+        {
+          "value": 30774,
+          "unit": "ton CO2",
+          "label": "GHG emission LPG"
+        },
+        {
+          "value": 7867,
+          "unit": "ton CO2",
+          "label": "GHG emission fuel"
+        },
+        {
+          "value": 329982,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 299207,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas"
+        },
+        {
+          "value": 30774,
+          "unit": "ton CO2",
+          "label": "GHG emission LPG"
+        },
+        {
+          "value": 8438,
+          "unit": "ton CO2",
+          "label": "GHG emission fuel"
+        },
+        {
+          "value": 30845,
+          "unit": "ton CO2",
+          "label": "Belgium"
+        },
+        {
+          "value": 7910,
+          "unit": "ton CO2",
+          "label": "Chile"
+        },
+        {
+          "value": 77384,
+          "unit": "ton CO2",
+          "label": "China"
+        },
+        {
+          "value": 5373,
+          "unit": "ton CO2",
+          "label": "India"
+        },
+        {
+          "value": 19750,
+          "unit": "ton CO2",
+          "label": "Indonesia"
+        },
+        {
+          "value": 40011,
+          "unit": "ton CO2",
+          "label": "Slovakia"
+        },
+        {
+          "value": 13796,
+          "unit": "ton CO2",
+          "label": "Turkey"
+        },
+        {
+          "value": 42766,
+          "unit": "ton CO2",
+          "label": "US"
+        },
+        {
+          "value": 155655,
+          "unit": "ton CO2",
+          "label": "Rubber Reinforcement"
+        },
+        {
+          "value": 108597,
+          "unit": "ton CO2",
+          "label": "Steel Wire Solutions"
+        },
+        {
+          "value": 16452,
+          "unit": "ton CO2",
+          "label": "Bridon-Bekaert Ropes Group"
+        },
+        {
+          "value": 8922,
+          "unit": "ton CO2",
+          "label": "Speciality Businesses"
+        },
+        {
+          "value": 5173,
+          "unit": "ton CO2",
+          "label": "Corporate"
+        },
+        {
+          "value": 165134,
+          "unit": "ton CO2",
+          "label": "Rubber Reinforcement"
+        },
+        {
+          "value": 142738,
+          "unit": "ton CO2",
+          "label": "Steel Wire Solutions"
+        },
+        {
+          "value": 16452,
+          "unit": "ton CO2",
+          "label": "Bridon-Bekaert Ropes Group"
+        },
+        {
+          "value": 8922,
+          "unit": "ton CO2",
+          "label": "Speciality Businesses"
+        },
+        {
+          "value": 5173,
+          "unit": "ton CO2",
+          "label": "Corporate"
+        }
+      ],
+      "2020": [
+        {
+          "value": 263785,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 234792,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas"
+        },
+        {
+          "value": 28993,
+          "unit": "ton CO2",
+          "label": "GHG emission LPG"
+        },
+        {
+          "value": 7445,
+          "unit": "ton CO2",
+          "label": "GHG emission fuel"
+        },
+        {
+          "value": 305547,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 274823,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas"
+        },
+        {
+          "value": 30724,
+          "unit": "ton CO2",
+          "label": "GHG emission LPG"
+        },
+        {
+          "value": 7980,
+          "unit": "ton CO2",
+          "label": "GHG emission fuel"
+        },
+        {
+          "value": 29266,
+          "unit": "ton CO2",
+          "label": "Belgium"
+        },
+        {
+          "value": 5776,
+          "unit": "ton CO2",
+          "label": "Chile"
+        },
+        {
+          "value": 70306,
+          "unit": "ton CO2",
+          "label": "China"
+        },
+        {
+          "value": 5469,
+          "unit": "ton CO2",
+          "label": "India"
+        },
+        {
+          "value": 18970,
+          "unit": "ton CO2",
+          "label": "Indonesia"
+        },
+        {
+          "value": 39310,
+          "unit": "ton CO2",
+          "label": "Slovakia"
+        },
+        {
+          "value": 12582,
+          "unit": "ton CO2",
+          "label": "Turkey"
+        },
+        {
+          "value": 36913,
+          "unit": "ton CO2",
+          "label": "US"
+        },
+        {
+          "value": 141491,
+          "unit": "ton CO2",
+          "label": "Rubber Reinforcement"
+        },
+        {
+          "value": 99425,
+          "unit": "ton CO2",
+          "label": "Steel Wire Solutions"
+        },
+        {
+          "value": 16029,
+          "unit": "ton CO2",
+          "label": "Bridon-Bekaert Ropes Group"
+        },
+        {
+          "value": 9267,
+          "unit": "ton CO2",
+          "label": "Speciality Businesses"
+        },
+        {
+          "value": 5019,
+          "unit": "ton CO2",
+          "label": "Corporate"
+        },
+        {
+          "value": 150674,
+          "unit": "ton CO2",
+          "label": "Rubber Reinforcement"
+        },
+        {
+          "value": 132539,
+          "unit": "ton CO2",
+          "label": "Steel Wire Solutions"
+        },
+        {
+          "value": 16029,
+          "unit": "ton CO2",
+          "label": "Bridon-Bekaert Ropes Group"
+        },
+        {
+          "value": 9267,
+          "unit": "ton CO2",
+          "label": "Speciality Businesses"
+        },
+        {
+          "value": 5019,
+          "unit": "ton CO2",
+          "label": "Corporate"
+        }
+      ],
+      "2021": [
+        {
+          "value": 277023,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 243897,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas"
+        },
+        {
+          "value": 33127,
+          "unit": "ton CO2",
+          "label": "GHG emission LPG"
+        },
+        {
+          "value": 7887,
+          "unit": "ton CO2",
+          "label": "GHG emission fuel"
+        },
+        {
+          "value": 327690,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 288240,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas"
+        },
+        {
+          "value": 39449,
+          "unit": "ton CO2",
+          "label": "GHG emission LPG"
+        },
+        {
+          "value": 8511,
+          "unit": "ton CO2",
+          "label": "GHG emission fuel"
+        },
+        {
+          "value": 31070,
+          "unit": "ton CO2",
+          "label": "Belgium"
+        },
+        {
+          "value": 5382,
+          "unit": "ton CO2",
+          "label": "Chile"
+        },
+        {
+          "value": 70248,
+          "unit": "ton CO2",
+          "label": "China"
+        },
+        {
+          "value": 6891,
+          "unit": "ton CO2",
+          "label": "India"
+        },
+        {
+          "value": 20034,
+          "unit": "ton CO2",
+          "label": "Indonesia"
+        },
+        {
+          "value": 43305,
+          "unit": "ton CO2",
+          "label": "Slovakia"
+        },
+        {
+          "value": 14532,
+          "unit": "ton CO2",
+          "label": "Turkey"
+        },
+        {
+          "value": 35591,
+          "unit": "ton CO2",
+          "label": "US"
+        },
+        {
+          "value": 152814,
+          "unit": "ton CO2",
+          "label": "Rubber Reinforcement"
+        },
+        {
+          "value": 102830,
+          "unit": "ton CO2",
+          "label": "Steel Wire Solutions"
+        },
+        {
+          "value": 15229,
+          "unit": "ton CO2",
+          "label": "Bridon-Bekaert Ropes Group"
+        },
+        {
+          "value": 9048,
+          "unit": "ton CO2",
+          "label": "Speciality Businesses"
+        },
+        {
+          "value": 4989,
+          "unit": "ton CO2",
+          "label": "Corporate"
+        },
+        {
+          "value": 166366,
+          "unit": "ton CO2",
+          "label": "Rubber Reinforcement"
+        },
+        {
+          "value": 140569,
+          "unit": "ton CO2",
+          "label": "Steel Wire Solutions"
+        },
+        {
+          "value": 15229,
+          "unit": "ton CO2",
+          "label": "Bridon-Bekaert Ropes Group"
+        },
+        {
+          "value": 9048,
+          "unit": "ton CO2",
+          "label": "Speciality Businesses"
+        },
+        {
+          "value": 4989,
+          "unit": "ton CO2",
+          "label": "Corporate"
+        }
+      ],
+      "2022": [
+        {
+          "value": 262581,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 248561,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas"
+        },
+        {
+          "value": 14021,
+          "unit": "ton CO2",
+          "label": "GHG emission LPG"
+        },
+        {
+          "value": 7388,
+          "unit": "ton CO2",
+          "label": "GHG emission fuel"
+        },
+        {
+          "value": 309001,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 287587,
+          "unit": "ton CO2",
+          "label": "GHG emission natural gas"
+        },
+        {
+          "value": 21414,
+          "unit": "ton CO2",
+          "label": "GHG emission LPG"
+        },
+        {
+          "value": 7950,
+          "unit": "ton CO2",
+          "label": "GHG emission fuel"
+        },
+        {
+          "value": 26584,
+          "unit": "ton CO2",
+          "label": "Belgium"
+        },
+        {
+          "value": 5463,
+          "unit": "ton CO2",
+          "label": "Chile"
+        },
+        {
+          "value": 66598,
+          "unit": "ton CO2",
+          "label": "China"
+        },
+        {
+          "value": 7254,
+          "unit": "ton CO2",
+          "label": "India"
+        },
+        {
+          "value": 15994,
+          "unit": "ton CO2",
+          "label": "Indonesia"
+        },
+        {
+          "value": 42040,
+          "unit": "ton CO2",
+          "label": "Slovakia"
+        },
+        {
+          "value": 15253,
+          "unit": "ton CO2",
+          "label": "Turkey"
+        },
+        {
+          "value": 36657,
+          "unit": "ton CO2",
+          "label": "US"
+        },
+        {
+          "value": 140995,
+          "unit": "ton CO2",
+          "label": "Rubber Reinforcement"
+        },
+        {
+          "value": 102636,
+          "unit": "ton CO2",
+          "label": "Steel Wire Solutions"
+        },
+        {
+          "value": 14647,
+          "unit": "ton CO2",
+          "label": "Bridon-Bekaert Ropes Group"
+        },
+        {
+          "value": 8119,
+          "unit": "ton CO2",
+          "label": "Speciality Businesses"
+        },
+        {
+          "value": 3572,
+          "unit": "ton CO2",
+          "label": "Corporate"
+        },
+        {
+          "value": 154874,
+          "unit": "ton CO2",
+          "label": "Rubber Reinforcement"
+        },
+        {
+          "value": 135739,
+          "unit": "ton CO2",
+          "label": "Steel Wire Solutions"
+        },
+        {
+          "value": 14647,
+          "unit": "ton CO2",
+          "label": "Bridon-Bekaert Ropes Group"
+        },
+        {
+          "value": 8119,
+          "unit": "ton CO2",
+          "label": "Speciality Businesses"
+        },
+        {
+          "value": 3572,
+          "unit": "ton CO2",
+          "label": "Corporate"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 6045636,
+          "unit": "ton CO2e",
+          "label": "total"
+        }
+      ],
+      "2021": [
+        {
+          "value": 6736962,
+          "unit": "ton CO2e",
+          "label": "total"
+        }
+      ],
+      "2022": [
+        {
+          "value": 6187086,
+          "unit": "ton CO2e",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "report_name": "2022 EarthLight Report",
+  "report_title": "2022 EarthLight Report",
+  "emissions": {
+    "scope_1": {
+      "2022": [
+        {
+          "value": 34327,
+          "unit": "MT CO2e",
+          "label": "total"
+        },
+        {
+          "value": 34327,
+          "unit": "MtCO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2022": [
+        {
+          "value": 42234,
+          "unit": "MT CO2e",
+          "label": "total"
+        },
+        {
+          "value": 42234,
+          "unit": "MtCO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2022": [
+        {
+          "value": 46637,
+          "unit": "MtCO2e",
+          "label": "location_based"
+        }
+      ]
+    },
+    "scope_3": {
+      "2022": [
+        {
+          "value": 35119419,
+          "unit": "MT CO2e",
+          "label": "total"
+        },
+        {
+          "value": 1765189,
+          "unit": "MT CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 35556,
+          "unit": "MT CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 28695,
+          "unit": "MT CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 55784,
+          "unit": "MT CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 2572,
+          "unit": "MT CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 3234,
+          "unit": "MT CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 8767,
+          "unit": "MT CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 62866,
+          "unit": "MT CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 33136905,
+          "unit": "MT CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 19669,
+          "unit": "MT CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 182,
+          "unit": "MT CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 1765189,
+          "unit": "MtCO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 35556,
+          "unit": "MtCO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 28695,
+          "unit": "MtCO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 55784,
+          "unit": "MtCO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 2572,
+          "unit": "MtCO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 3234,
+          "unit": "MtCO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 8767,
+          "unit": "MtCO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 62866,
+          "unit": "MtCO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 33136905,
+          "unit": "MtCO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 19669,
+          "unit": "MtCO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 182,
+          "unit": "MtCO2e",
+          "label": "unspecified"
+        }
+      ]
+    }
+  }
+}

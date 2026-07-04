@@ -1,0 +1,118 @@
+{
+  "report_name": "Toshiba Tec Group Integrated Report 2022",
+  "report_title": "Toshiba Tec Group Integrated Report 2022",
+  "emissions": {
+    "scope_1": {
+      "FY2020": [
+        {
+          "value": 3.0,
+          "unit": "thousand t-CO2",
+          "label": "9 Direct emissions (Scope 1)"
+        }
+      ],
+      "FY2021": [
+        {
+          "value": 3.1,
+          "unit": "thousand t-CO2",
+          "label": "9 Direct emissions (Scope 1)"
+        }
+      ]
+    },
+    "scope_3": {
+      "FY2020": [
+        {
+          "value": 98.6,
+          "unit": "thousand t-CO2",
+          "label": "1 Purchased goods and services"
+        },
+        {
+          "value": 42.5,
+          "unit": "thousand t-CO2",
+          "label": "2 Capital goods"
+        },
+        {
+          "value": 8.9,
+          "unit": "thousand t-CO2",
+          "label": "3 Fuel- and energy-related activities not included in Scope 1 and 2"
+        },
+        {
+          "value": 2.3,
+          "unit": "thousand t-CO2",
+          "label": "4 Transport and delivery (upstream)"
+        },
+        {
+          "value": 0.2,
+          "unit": "thousand t-CO2",
+          "label": "5 Waste generated in operations"
+        },
+        {
+          "value": 1.6,
+          "unit": "thousand t-CO2",
+          "label": "6 Business travel"
+        },
+        {
+          "value": 1.0,
+          "unit": "thousand t-CO2",
+          "label": "7 Employees' commuting"
+        },
+        {
+          "value": 275.5,
+          "unit": "thousand t-CO2",
+          "label": "13 Use of sold products"
+        },
+        {
+          "value": 3.8,
+          "unit": "thousand t-CO2",
+          "label": "14 End-of-life treatment of sold products"
+        }
+      ],
+      "FY2021": [
+        {
+          "value": 102.3,
+          "unit": "thousand t-CO2",
+          "label": "1 Purchased goods and services"
+        },
+        {
+          "value": 42.7,
+          "unit": "thousand t-CO2",
+          "label": "2 Capital goods"
+        },
+        {
+          "value": 10.7,
+          "unit": "thousand t-CO2",
+          "label": "3 Fuel- and energy-related activities not included in Scope 1 and 2"
+        },
+        {
+          "value": 2.3,
+          "unit": "thousand t-CO2",
+          "label": "4 Transport and delivery (upstream)"
+        },
+        {
+          "value": 0.2,
+          "unit": "thousand t-CO2",
+          "label": "5 Waste generated in operations"
+        },
+        {
+          "value": 1.6,
+          "unit": "thousand t-CO2",
+          "label": "6 Business travel"
+        },
+        {
+          "value": 0.8,
+          "unit": "thousand t-CO2",
+          "label": "7 Employees' commuting"
+        },
+        {
+          "value": 252.6,
+          "unit": "thousand t-CO2",
+          "label": "13 Use of sold products"
+        },
+        {
+          "value": 4.2,
+          "unit": "thousand t-CO2",
+          "label": "14 End-of-life treatment of sold products"
+        }
+      ]
+    }
+  }
+}

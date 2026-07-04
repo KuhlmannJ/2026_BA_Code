@@ -1,0 +1,65 @@
+{
+  "report_name": "Fresenius_Annual_Report_2019",
+  "report_title": "Fresenius | Annual Report 2019",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 227,
+          "unit": "t CO2 equivalents in thousands",
+          "label": "Fresenius Medical Care"
+        },
+        {
+          "value": 165,
+          "unit": "t CO2 equivalents in thousands",
+          "label": "Fresenius Kabi"
+        },
+        {
+          "value": 107,
+          "unit": "t CO2 equivalents in thousands",
+          "label": "Fresenius Helios"
+        },
+        {
+          "value": 18,
+          "unit": "t CO2 equivalents in thousands",
+          "label": "Fresenius Vamed"
+        },
+        {
+          "value": 517,
+          "unit": "t CO2 equivalents in thousands",
+          "label": "total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 219,
+          "unit": "t CO2 equivalents in thousands",
+          "label": "Fresenius Medical Care"
+        },
+        {
+          "value": 169,
+          "unit": "t CO2 equivalents in thousands",
+          "label": "Fresenius Kabi"
+        },
+        {
+          "value": 114,
+          "unit": "t CO2 equivalents in thousands",
+          "label": "Fresenius Helios"
+        },
+        {
+          "value": 19,
+          "unit": "t CO2 equivalents in thousands",
+          "label": "Fresenius Vamed"
+        },
+        {
+          "value": 521,
+          "unit": "t CO2 equivalents in thousands",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_2_market_based": {},
+    "scope_3": {}
+  }
+}

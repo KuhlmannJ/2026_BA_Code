@@ -1,0 +1,82 @@
+{
+  "report_name": "HUHTAMAKI CORPORATE RESPONSIBILITY REPORT 2018",
+  "report_title": "HUHTAMAKI CORPORATE RESPONSIBILITY REPORT 2018",
+  "emissions": {
+    "scope_1": {
+      "2014": [
+        {
+          "value": 188000,
+          "unit": "metric tons CO2 eqv",
+          "label": "total"
+        }
+      ],
+      "2015": [
+        {
+          "value": 191000,
+          "unit": "metric tons CO2 eqv",
+          "label": "total"
+        }
+      ],
+      "2016": [
+        {
+          "value": 198000,
+          "unit": "metric tons CO2 eqv",
+          "label": "total"
+        }
+      ],
+      "2017": [
+        {
+          "value": 207000,
+          "unit": "metric tons CO2 eqv",
+          "label": "total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 207000,
+          "unit": "metric tons CO2 eqv",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2014": [
+        {
+          "value": 479000,
+          "unit": "metric tons CO2 eqv",
+          "label": "total"
+        }
+      ],
+      "2015": [
+        {
+          "value": 487000,
+          "unit": "metric tons CO2 eqv",
+          "label": "total"
+        }
+      ],
+      "2016": [
+        {
+          "value": 526000,
+          "unit": "metric tons CO2 eqv",
+          "label": "total"
+        }
+      ],
+      "2017": [
+        {
+          "value": 549000,
+          "unit": "metric tons CO2 eqv",
+          "label": "total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 559000,
+          "unit": "metric tons CO2 eqv",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_3": {}
+  }
+}

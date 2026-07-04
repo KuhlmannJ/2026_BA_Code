@@ -1,0 +1,40 @@
+{
+  "report_name": "sustainability_program",
+  "report_title": "Kilroy Realty Sustainability Program",
+  "emissions": {
+    "scope_1": {
+      "2016": [
+        {
+          "value": 4059,
+          "unit": "Tonnes",
+          "label": "total"
+        }
+      ],
+      "2017": [
+        {
+          "value": 4641,
+          "unit": "Tonnes",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2016": [
+        {
+          "value": 44145,
+          "unit": "Tonnes",
+          "label": "total"
+        }
+      ],
+      "2017": [
+        {
+          "value": 42947,
+          "unit": "Tonnes",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_3": {}
+  }
+}

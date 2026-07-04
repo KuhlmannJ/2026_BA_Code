@@ -1,0 +1,120 @@
+{
+  "report_name": "Fresenius_Annual_Report_2019",
+  "report_title": "Fresenius | Annual Report 2019",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 227,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "direct"
+        },
+        {
+          "value": 165,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "direct"
+        },
+        {
+          "value": 107,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "direct"
+        },
+        {
+          "value": 18,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "direct"
+        },
+        {
+          "value": 517,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 219,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "direct"
+        },
+        {
+          "value": 169,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "direct"
+        },
+        {
+          "value": 114,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "direct"
+        },
+        {
+          "value": 19,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "direct"
+        },
+        {
+          "value": 521,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 547,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "indirect"
+        },
+        {
+          "value": 249,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "indirect"
+        },
+        {
+          "value": 178,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "indirect"
+        },
+        {
+          "value": 18,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "indirect"
+        },
+        {
+          "value": 992,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 557,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "indirect"
+        },
+        {
+          "value": 255,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "indirect"
+        },
+        {
+          "value": 182,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "indirect"
+        },
+        {
+          "value": 19,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "indirect"
+        },
+        {
+          "value": 1013,
+          "unit": "tCO₂ equivalents in thousands",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_3": {}
+  }
+}

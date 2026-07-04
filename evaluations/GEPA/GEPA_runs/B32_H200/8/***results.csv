@@ -1,0 +1,33 @@
+model,maxToken,report,duration,pages,t_inf/page
+Qwen/Qwen3-VL-32B-Thinking,16384,Allianz_2022_report,258.04,7,36.86
+Qwen/Qwen3-VL-32B-Thinking,16384,Fresenius SE_2019_report,301.26,7,43.04
+Qwen/Qwen3-VL-32B-Thinking,16384,ViacomCBS_ESG Report_2020-2021_vFINAL,448.16,7,64.02
+Qwen/Qwen3-VL-32B-Thinking,16384,acuity brands inc_2022_report,712.87,8,89.11
+Qwen/Qwen3-VL-32B-Thinking,16384,addtech_2022_report,371.38,9,41.26
+Qwen/Qwen3-VL-32B-Thinking,16384,aixtron_2020_report,307.73,7,43.96
+Qwen/Qwen3-VL-32B-Thinking,16384,autoneum holding_2019_report,181.74,7,25.96
+Qwen/Qwen3-VL-32B-Thinking,16384,bekaert (d) sa_2022_report,790.92,7,112.99
+Qwen/Qwen3-VL-32B-Thinking,16384,blackline safety_2021_report,300.69,7,42.96
+Qwen/Qwen3-VL-32B-Thinking,16384,cabot corp_2018_report,425.0,7,60.71
+Qwen/Qwen3-VL-32B-Thinking,16384,dampskibsselskabet norden_2019_report,342.94,7,48.99
+Qwen/Qwen3-VL-32B-Thinking,16384,evolution mining ltd_2020_report,243.89,9,27.1
+Qwen/Qwen3-VL-32B-Thinking,16384,fujifilm_2022_report,206.67,7,29.52
+Qwen/Qwen3-VL-32B-Thinking,16384,georg fischer ag_2018_report,404.92,9,44.99
+Qwen/Qwen3-VL-32B-Thinking,16384,granite construction inc_2020_report,460.22,7,65.75
+Qwen/Qwen3-VL-32B-Thinking,16384,h. lundbeck_2021_report,198.94,7,28.42
+Qwen/Qwen3-VL-32B-Thinking,16384,hammerson reit_2021_report,655.33,9,72.81
+Qwen/Qwen3-VL-32B-Thinking,16384,huhtamaki_2018_report,340.74,7,48.68
+Qwen/Qwen3-VL-32B-Thinking,16384,inchcape plc_2022_report,331.81,9,36.87
+Qwen/Qwen3-VL-32B-Thinking,16384,innospec inc_2020_report,517.36,5,103.47
+Qwen/Qwen3-VL-32B-Thinking,16384,kfw_2018_report,300.94,7,42.99
+Qwen/Qwen3-VL-32B-Thinking,16384,kilroy realty_2017_report,759.96,9,84.44
+Qwen/Qwen3-VL-32B-Thinking,16384,kilroy realty_2018_report,673.88,9,74.88
+Qwen/Qwen3-VL-32B-Thinking,16384,morinaga ltd_2020_report,237.82,7,33.97
+Qwen/Qwen3-VL-32B-Thinking,16384,nok corporation_2021_report,271.86,5,54.37
+Qwen/Qwen3-VL-32B-Thinking,16384,nordea_2017_report,407.95,9,45.33
+Qwen/Qwen3-VL-32B-Thinking,16384,salzgitter ag_2018_report,489.99,7,70.0
+Qwen/Qwen3-VL-32B-Thinking,16384,sato oyj_2022_report,291.49,9,32.39
+Qwen/Qwen3-VL-32B-Thinking,16384,stantec inc_2019_report,149.37,7,21.34
+Qwen/Qwen3-VL-32B-Thinking,16384,toshiba tec corp_2022_report,496.75,9,55.19
+Qwen/Qwen3-VL-32B-Thinking,16384,uniper_2019_report,601.96,7,85.99
+Qwen/Qwen3-VL-32B-Thinking,16384,varta ag_2021_report,463.34,7,66.19

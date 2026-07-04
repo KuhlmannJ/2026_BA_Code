@@ -1,0 +1,42 @@
+{
+  "report_name": "2017_sustainability_report",
+  "report_title": "SUSTAINABILITY PROGRAM",
+  "emissions": {
+    "scope_1": {
+      "2016": [
+        {
+          "value": 3696,
+          "unit": "Tonnes",
+          "label": "Scope 1"
+        },
+        {
+          "value": 363,
+          "unit": "Tonnes",
+          "label": "Scope 1"
+        },
+        {
+          "value": 4059,
+          "unit": "Tonnes",
+          "label": "Scope 1"
+        }
+      ],
+      "2017": [
+        {
+          "value": 4165,
+          "unit": "Tonnes",
+          "label": "Scope 1"
+        },
+        {
+          "value": 476,
+          "unit": "Tonnes",
+          "label": "Scope 1"
+        },
+        {
+          "value": 4641,
+          "unit": "Tonnes",
+          "label": "Scope 1"
+        }
+      ]
+    }
+  }
+}

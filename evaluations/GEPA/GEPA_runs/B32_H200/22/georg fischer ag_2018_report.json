@@ -1,0 +1,139 @@
+{
+  "report_name": "Sustainability Report",
+  "report_title": "Sustainability Report",
+  "emissions": {
+    "scope_1": {
+      "2018²": [
+        {
+          "value": 312,
+          "unit": "1'000 tonnes",
+          "label": "Scope 1 (Direct emissions: energy consumption)"
+        }
+      ],
+      "2017 pro rata²": [
+        {
+          "value": 304,
+          "unit": "1'000 tonnes",
+          "label": "Scope 1 (Direct emissions: energy consumption)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 325,
+          "unit": "1'000 tonnes",
+          "label": "Scope 1 (Direct emissions: energy consumption)"
+        }
+      ],
+      "2016": [
+        {
+          "value": 307,
+          "unit": "1'000 tonnes",
+          "label": "Scope 1 (Direct emissions: energy consumption)"
+        }
+      ],
+      "2015": [
+        {
+          "value": 313,
+          "unit": "1'000 tonnes",
+          "label": "Scope 1 (Direct emissions: energy consumption)"
+        }
+      ],
+      "2014": [
+        {
+          "value": 313,
+          "unit": "1'000 tonnes",
+          "label": "Scope 1 (Direct emissions: energy consumption)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2018²": [
+        {
+          "value": 312,
+          "unit": "1'000 tonnes",
+          "label": "Scope 2 (Indirect emissions: electricity and district heating)"
+        }
+      ],
+      "2017 pro rata²": [
+        {
+          "value": 330,
+          "unit": "1'000 tonnes",
+          "label": "Scope 2 (Indirect emissions: electricity and district heating)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 337,
+          "unit": "1'000 tonnes",
+          "label": "Scope 2 (Indirect emissions: electricity and district heating)"
+        }
+      ],
+      "2016": [
+        {
+          "value": 299,
+          "unit": "1'000 tonnes",
+          "label": "Scope 2 (Indirect emissions: electricity and district heating)"
+        }
+      ],
+      "2015": [
+        {
+          "value": 264,
+          "unit": "1'000 tonnes",
+          "label": "Scope 2 (Indirect emissions: electricity and district heating)"
+        }
+      ],
+      "2014": [
+        {
+          "value": 264,
+          "unit": "1'000 tonnes",
+          "label": "Scope 2 (Indirect emissions: electricity and district heating)"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_3": {
+      "2018²": [
+        {
+          "value": 6,
+          "unit": "1'000 tonnes",
+          "label": "Scope 3 (Indirect emissions: business travel)"
+        }
+      ],
+      "2017 pro rata²": [
+        {
+          "value": 7,
+          "unit": "1'000 tonnes",
+          "label": "Scope 3 (Indirect emissions: business travel)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 7,
+          "unit": "1'000 tonnes",
+          "label": "Scope 3 (Indirect emissions: business travel)"
+        }
+      ],
+      "2016": [
+        {
+          "value": 4,
+          "unit": "1'000 tonnes",
+          "label": "Scope 3 (Indirect emissions: business travel)"
+        }
+      ],
+      "2015": [
+        {
+          "value": 3,
+          "unit": "1'000 tonnes",
+          "label": "Scope 3 (Indirect emissions: business travel)"
+        }
+      ],
+      "2014": [
+        {
+          "value": 3,
+          "unit": "1'000 tonnes",
+          "label": "Scope 3 (Indirect emissions: business travel)"
+        }
+      ]
+    }
+  }
+}

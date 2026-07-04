@@ -1,0 +1,630 @@
+{
+  "report_name": "Hammerson plc Annual Report 2021",
+  "report_title": "Hammerson plc Annual Report 2021",
+  "emissions": {
+    "scope_1": {
+      "2020": [
+        {
+          "value": 3295,
+          "unit": "tCO2e",
+          "label": "direct/stationary_operations"
+        },
+        {
+          "value": 1786,
+          "unit": "tCO2e",
+          "label": "direct/stationary_operations"
+        },
+        {
+          "value": 1026,
+          "unit": "tCO2e",
+          "label": "direct/stationary_operations"
+        },
+        {
+          "value": 483,
+          "unit": "tCO2e",
+          "label": "direct/stationary_operations"
+        },
+        {
+          "value": 14,
+          "unit": "tCO2e",
+          "label": "direct/mobile_combustion"
+        },
+        {
+          "value": 3,
+          "unit": "tCO2e",
+          "label": "direct/mobile_combustion"
+        },
+        {
+          "value": 11,
+          "unit": "tCO2e",
+          "label": "direct/mobile_combustion"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "direct/mobile_combustion"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "direct/fugitive_sources"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "direct/fugitive_sources"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "direct/fugitive_sources"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "direct/fugitive_sources"
+        },
+        {
+          "value": 3309,
+          "unit": "tCO2e",
+          "label": "direct/total"
+        },
+        {
+          "value": 1789,
+          "unit": "tCO2e",
+          "label": "direct/total"
+        },
+        {
+          "value": 1037,
+          "unit": "tCO2e",
+          "label": "direct/total"
+        },
+        {
+          "value": 483,
+          "unit": "tCO2e",
+          "label": "direct/total"
+        }
+      ],
+      "2021": [
+        {
+          "value": 3436,
+          "unit": "tCO2e",
+          "label": "direct/stationary_operations"
+        },
+        {
+          "value": 2317,
+          "unit": "tCO2e",
+          "label": "direct/stationary_operations"
+        },
+        {
+          "value": 872,
+          "unit": "tCO2e",
+          "label": "direct/stationary_operations"
+        },
+        {
+          "value": 247,
+          "unit": "tCO2e",
+          "label": "direct/stationary_operations"
+        },
+        {
+          "value": 3,
+          "unit": "tCO2e",
+          "label": "direct/mobile_combustion"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "direct/mobile_combustion"
+        },
+        {
+          "value": 3,
+          "unit": "tCO2e",
+          "label": "direct/mobile_combustion"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "direct/mobile_combustion"
+        },
+        {
+          "value": 854,
+          "unit": "tCO2e",
+          "label": "direct/fugitive_sources"
+        },
+        {
+          "value": 854,
+          "unit": "tCO2e",
+          "label": "direct/fugitive_sources"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "direct/fugitive_sources"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "direct/fugitive_sources"
+        },
+        {
+          "value": 4293,
+          "unit": "tCO2e",
+          "label": "direct/total"
+        },
+        {
+          "value": 3171,
+          "unit": "tCO2e",
+          "label": "direct/total"
+        },
+        {
+          "value": 875,
+          "unit": "tCO2e",
+          "label": "direct/total"
+        },
+        {
+          "value": 247,
+          "unit": "tCO2e",
+          "label": "direct/total"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2020": [
+        {
+          "value": 2400,
+          "unit": "tCO2e",
+          "label": "market_based/electricity"
+        },
+        {
+          "value": 1358,
+          "unit": "tCO2e",
+          "label": "market_based/electricity"
+        },
+        {
+          "value": 1019,
+          "unit": "tCO2e",
+          "label": "market_based/electricity"
+        },
+        {
+          "value": 23,
+          "unit": "tCO2e",
+          "label": "market_based/electricity"
+        },
+        {
+          "value": 3331,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 1538,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 1770,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 23,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ],
+      "2021": [
+        {
+          "value": 2221,
+          "unit": "tCO2e",
+          "label": "market_based/electricity"
+        },
+        {
+          "value": 1076,
+          "unit": "tCO2e",
+          "label": "market_based/electricity"
+        },
+        {
+          "value": 1132,
+          "unit": "tCO2e",
+          "label": "market_based/electricity"
+        },
+        {
+          "value": 13,
+          "unit": "tCO2e",
+          "label": "market_based/electricity"
+        },
+        {
+          "value": 3850,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 1382,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 2455,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 13,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2020": [
+        {
+          "value": 12780,
+          "unit": "tCO2e",
+          "label": "indirect/electricity"
+        },
+        {
+          "value": 8204,
+          "unit": "tCO2e",
+          "label": "indirect/electricity"
+        },
+        {
+          "value": 1300,
+          "unit": "tCO2e",
+          "label": "indirect/electricity"
+        },
+        {
+          "value": 3276,
+          "unit": "tCO2e",
+          "label": "indirect/electricity"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "indirect/steam"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "indirect/steam"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "indirect/steam"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "indirect/steam"
+        },
+        {
+          "value": 916,
+          "unit": "tCO2e",
+          "label": "indirect/heating"
+        },
+        {
+          "value": 165,
+          "unit": "tCO2e",
+          "label": "indirect/heating"
+        },
+        {
+          "value": 751,
+          "unit": "tCO2e",
+          "label": "indirect/heating"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "indirect/heating"
+        },
+        {
+          "value": 15,
+          "unit": "tCO2e",
+          "label": "indirect/cooling"
+        },
+        {
+          "value": 15,
+          "unit": "tCO2e",
+          "label": "indirect/cooling"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "indirect/cooling"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "indirect/cooling"
+        },
+        {
+          "value": 13711,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 8384,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 2051,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 3276,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ],
+      "2021": [
+        {
+          "value": 11581,
+          "unit": "tCO2e",
+          "label": "indirect/electricity"
+        },
+        {
+          "value": 7908,
+          "unit": "tCO2e",
+          "label": "indirect/electricity"
+        },
+        {
+          "value": 1041,
+          "unit": "tCO2e",
+          "label": "indirect/electricity"
+        },
+        {
+          "value": 2631,
+          "unit": "tCO2e",
+          "label": "indirect/electricity"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "indirect/steam"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "indirect/steam"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "indirect/steam"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "indirect/steam"
+        },
+        {
+          "value": 1531,
+          "unit": "tCO2e",
+          "label": "indirect/heating"
+        },
+        {
+          "value": 257,
+          "unit": "tCO2e",
+          "label": "indirect/heating"
+        },
+        {
+          "value": 1274,
+          "unit": "tCO2e",
+          "label": "indirect/heating"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "indirect/heating"
+        },
+        {
+          "value": 98,
+          "unit": "tCO2e",
+          "label": "indirect/cooling"
+        },
+        {
+          "value": 49,
+          "unit": "tCO2e",
+          "label": "indirect/cooling"
+        },
+        {
+          "value": 49,
+          "unit": "tCO2e",
+          "label": "indirect/cooling"
+        },
+        {
+          "value": 0,
+          "unit": "tCO2e",
+          "label": "indirect/cooling"
+        },
+        {
+          "value": 13210,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 8215,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 2364,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 2631,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_3": {
+      "2020": [
+        {
+          "value": 200,
+          "unit": "tCO2e",
+          "label": "indirect/business_travel"
+        },
+        {
+          "value": 92,
+          "unit": "tCO2e",
+          "label": "indirect/business_travel"
+        },
+        {
+          "value": 50,
+          "unit": "tCO2e",
+          "label": "indirect/business_travel"
+        },
+        {
+          "value": 58,
+          "unit": "tCO2e",
+          "label": "indirect/business_travel"
+        },
+        {
+          "value": 381,
+          "unit": "tCO2e",
+          "label": "indirect/waste"
+        },
+        {
+          "value": 240,
+          "unit": "tCO2e",
+          "label": "indirect/waste"
+        },
+        {
+          "value": 85,
+          "unit": "tCO2e",
+          "label": "indirect/waste"
+        },
+        {
+          "value": 56,
+          "unit": "tCO2e",
+          "label": "indirect/waste"
+        },
+        {
+          "value": 244,
+          "unit": "tCO2e",
+          "label": "indirect/water"
+        },
+        {
+          "value": 123,
+          "unit": "tCO2e",
+          "label": "indirect/water"
+        },
+        {
+          "value": 73,
+          "unit": "tCO2e",
+          "label": "indirect/water"
+        },
+        {
+          "value": 48,
+          "unit": "tCO2e",
+          "label": "indirect/water"
+        },
+        {
+          "value": 825,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 455,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 208,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 162,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ],
+      "2021": [
+        {
+          "value": 66,
+          "unit": "tCO2e",
+          "label": "indirect/business_travel"
+        },
+        {
+          "value": 43,
+          "unit": "tCO2e",
+          "label": "indirect/business_travel"
+        },
+        {
+          "value": 21,
+          "unit": "tCO2e",
+          "label": "indirect/business_travel"
+        },
+        {
+          "value": 2,
+          "unit": "tCO2e",
+          "label": "indirect/business_travel"
+        },
+        {
+          "value": 511,
+          "unit": "tCO2e",
+          "label": "indirect/waste"
+        },
+        {
+          "value": 369,
+          "unit": "tCO2e",
+          "label": "indirect/waste"
+        },
+        {
+          "value": 78,
+          "unit": "tCO2e",
+          "label": "indirect/waste"
+        },
+        {
+          "value": 64,
+          "unit": "tCO2e",
+          "label": "indirect/waste"
+        },
+        {
+          "value": 115,
+          "unit": "tCO2e",
+          "label": "indirect/water"
+        },
+        {
+          "value": 64,
+          "unit": "tCO2e",
+          "label": "indirect/water"
+        },
+        {
+          "value": 29,
+          "unit": "tCO2e",
+          "label": "indirect/water"
+        },
+        {
+          "value": 22,
+          "unit": "tCO2e",
+          "label": "indirect/water"
+        },
+        {
+          "value": 692,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 476,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 128,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 88,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}

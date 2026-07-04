@@ -1,0 +1,52 @@
+{
+  "report_name": "DAMPSKIBSSELSKABET NORDEN A/S ANNUAL REPORT 2019",
+  "report_title": "ESG performance 2019",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 4088.0,
+          "unit": "1,000 tonnes",
+          "label": "Direct CO2 emissions (Scope 1 GHG protocol)*"
+        }
+      ],
+      "2018": [
+        {
+          "value": 3829.0,
+          "unit": "1,000 tonnes",
+          "label": "Direct CO2 emissions (Scope 1 GHG protocol)*"
+        }
+      ],
+      "2017": [
+        {
+          "value": 3757.0,
+          "unit": "1,000 tonnes",
+          "label": "Direct CO2 emissions (Scope 1 GHG protocol)*"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 3.6,
+          "unit": "1,000 tonnes",
+          "label": "Other indirect CO2 emissions (Scope 3 GHG protocol)*"
+        }
+      ],
+      "2018": [
+        {
+          "value": 3.0,
+          "unit": "1,000 tonnes",
+          "label": "Other indirect CO2 emissions (Scope 3 GHG protocol)*"
+        }
+      ],
+      "2017": [
+        {
+          "value": 3.3,
+          "unit": "1,000 tonnes",
+          "label": "Other indirect CO2 emissions (Scope 3 GHG protocol)*"
+        }
+      ]
+    }
+  }
+}

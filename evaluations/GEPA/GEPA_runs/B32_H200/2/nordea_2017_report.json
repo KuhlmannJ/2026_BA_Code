@@ -1,0 +1,55 @@
+{
+  "report_name": "Nordea Sustainability Report 2017",
+  "report_title": "Nordea Sustainability Report 2017",
+  "emissions": {
+    "scope_1": {
+      "2017": [
+        {
+          "value": 51,
+          "unit": "tonnes",
+          "label": "direct"
+        }
+      ],
+      "2016": [
+        {
+          "value": 48,
+          "unit": "tonnes",
+          "label": "direct"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2017": [
+        {
+          "value": 3187,
+          "unit": "tonnes",
+          "label": "market_based"
+        }
+      ],
+      "2016": [
+        {
+          "value": 3409,
+          "unit": "tonnes",
+          "label": "market_based"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {
+      "2017": [
+        {
+          "value": 19500,
+          "unit": "tonnes",
+          "label": "indirect"
+        }
+      ],
+      "2016": [
+        {
+          "value": 13576,
+          "unit": "tonnes",
+          "label": "indirect"
+        }
+      ]
+    }
+  }
+}

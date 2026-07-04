@@ -1,0 +1,78 @@
+{
+  "report_name": "2018_Sustainability_Report",
+  "report_title": "Kilroy Realty 2018 Sustainability Report",
+  "emissions": {
+    "scope_1": {
+      "2017": [
+        {
+          "value": 4120,
+          "unit": "Tonnes",
+          "label": "total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 3908,
+          "unit": "Tonnes",
+          "label": "total"
+        },
+        {
+          "value": 3908,
+          "unit": "MtCO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2017": [
+        {
+          "value": 36504,
+          "unit": "Tonnes",
+          "label": "total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 33207,
+          "unit": "Tonnes",
+          "label": "total"
+        },
+        {
+          "value": 33207,
+          "unit": "MtCO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2017": [
+        {
+          "value": 35735,
+          "unit": "Tonnes",
+          "label": "total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 30439,
+          "unit": "Tonnes",
+          "label": "total"
+        },
+        {
+          "value": 30439,
+          "unit": "MtCO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_3": {
+      "2018": [
+        {
+          "value": 31984,
+          "unit": "MtCO2e",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}

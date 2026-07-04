@@ -1,0 +1,70 @@
+{
+  "report_name": "Hammerson plc Annual Report 2021",
+  "report_title": "Hammerson plc Annual Report 2021",
+  "emissions": {
+    "scope_1": {
+      "2020": [
+        {
+          "value": 3309,
+          "unit": "metric tonnes",
+          "label": "Global"
+        }
+      ],
+      "2021": [
+        {
+          "value": 4293,
+          "unit": "metric tonnes",
+          "label": "Global"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2020": [
+        {
+          "value": 2400,
+          "unit": "metric tonnes",
+          "label": "Global"
+        }
+      ],
+      "2021": [
+        {
+          "value": 2221,
+          "unit": "metric tonnes",
+          "label": "Global"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2020": [
+        {
+          "value": 12780,
+          "unit": "metric tonnes",
+          "label": "Global"
+        }
+      ],
+      "2021": [
+        {
+          "value": 11581,
+          "unit": "metric tonnes",
+          "label": "Global"
+        }
+      ]
+    },
+    "scope_3": {
+      "2020": [
+        {
+          "value": 825,
+          "unit": "metric tonnes",
+          "label": "Global"
+        }
+      ],
+      "2021": [
+        {
+          "value": 692,
+          "unit": "metric tonnes",
+          "label": "Global"
+        }
+      ]
+    }
+  }
+}

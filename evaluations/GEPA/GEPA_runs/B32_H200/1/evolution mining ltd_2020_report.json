@@ -1,0 +1,82 @@
+{
+  "report_name": "Sustainability Report 2020",
+  "report_title": "Sustainability Report 2020",
+  "emissions": {
+    "scope_1": {
+      "FY20": [
+        {
+          "value": 157857,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 1 (t CO2-e)"
+        }
+      ],
+      "FY19": [
+        {
+          "value": 155085,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 1 (t CO2-e)"
+        }
+      ],
+      "FY18": [
+        {
+          "value": 159061,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 1 (t CO2-e)"
+        }
+      ],
+      "FY17": [
+        {
+          "value": 167734,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 1 (t CO2-e)"
+        }
+      ],
+      "FY16": [
+        {
+          "value": 157584,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 1 (t CO2-e)"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "FY20": [
+        {
+          "value": 398187,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 2 (t CO2-e)"
+        }
+      ],
+      "FY19": [
+        {
+          "value": 383449,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 2 (t CO2-e)"
+        }
+      ],
+      "FY18": [
+        {
+          "value": 394144,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 2 (t CO2-e)"
+        }
+      ],
+      "FY17": [
+        {
+          "value": 430993,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 2 (t CO2-e)"
+        }
+      ],
+      "FY16": [
+        {
+          "value": 472257,
+          "unit": "t CO2-e",
+          "label": "Greenhouse gas emissions Scope 2 (t CO2-e)"
+        }
+      ]
+    },
+    "scope_3": {}
+  }
+}

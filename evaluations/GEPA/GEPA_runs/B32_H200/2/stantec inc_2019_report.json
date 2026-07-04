@@ -1,0 +1,91 @@
+{
+  "report_name": "2019 STANTEC SUSTAINABILITY REPORT",
+  "report_title": "2019 STANTEC SUSTAINABILITY REPORT",
+  "emissions": {
+    "scope_1": {
+      "2017": [
+        {
+          "value": 9585,
+          "unit": "mtCO2e",
+          "label": "direct"
+        }
+      ],
+      "2018": [
+        {
+          "value": 10333,
+          "unit": "mtCO2e",
+          "label": "direct"
+        }
+      ],
+      "2019": [
+        {
+          "value": 7540,
+          "unit": "mtCO2e",
+          "label": "direct"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2017": [
+        {
+          "value": 43228,
+          "unit": "mtCO2e",
+          "label": "indirect"
+        }
+      ],
+      "2018": [
+        {
+          "value": 37810,
+          "unit": "mtCO2e",
+          "label": "indirect"
+        }
+      ],
+      "2019": [
+        {
+          "value": 40726,
+          "unit": "mtCO2e",
+          "label": "indirect"
+        }
+      ]
+    },
+    "scope_3": {
+      "2017": [
+        {
+          "value": 26800,
+          "unit": "mtCO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 1.4,
+          "unit": "mtCO2e",
+          "label": "unspecified/per_employee"
+        }
+      ],
+      "2018": [
+        {
+          "value": 29318,
+          "unit": "mtCO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 1.4,
+          "unit": "mtCO2e",
+          "label": "unspecified/per_employee"
+        }
+      ],
+      "2019": [
+        {
+          "value": 29301,
+          "unit": "mtCO2e",
+          "label": "indirect"
+        },
+        {
+          "value": 1.3,
+          "unit": "mtCO2e",
+          "label": "unspecified/per_employee"
+        }
+      ]
+    }
+  }
+}

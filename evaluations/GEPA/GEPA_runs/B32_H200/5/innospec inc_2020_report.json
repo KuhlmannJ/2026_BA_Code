@@ -1,0 +1,15 @@
+{
+  "report_name": "innospec",
+  "report_title": "Environment Conserving and protecting",
+  "emissions": {
+    "scope_2_market_based": {
+      "2020": [
+        {
+          "value": 0,
+          "unit": "metric tonnes CO2 equivalent",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}

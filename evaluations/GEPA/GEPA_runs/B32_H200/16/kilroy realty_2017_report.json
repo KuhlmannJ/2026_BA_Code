@@ -1,0 +1,60 @@
+{
+  "report_name": "sustainability_report",
+  "report_title": "SUSTAINABILITY PROGRAM",
+  "emissions": {
+    "scope_1": {
+      "2016": [
+        {
+          "value": 4059,
+          "unit": "Tonnes",
+          "label": "2016"
+        },
+        {
+          "value": 3110,
+          "unit": "Tonnes",
+          "label": "2016"
+        }
+      ],
+      "2017": [
+        {
+          "value": 4641,
+          "unit": "Tonnes",
+          "label": "2017"
+        },
+        {
+          "value": 3296,
+          "unit": "Tonnes",
+          "label": "2017"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2016": [
+        {
+          "value": 44145,
+          "unit": "Tonnes",
+          "label": "2016"
+        },
+        {
+          "value": 39484,
+          "unit": "Tonnes",
+          "label": "2016"
+        }
+      ],
+      "2017": [
+        {
+          "value": 42947,
+          "unit": "Tonnes",
+          "label": "2017"
+        },
+        {
+          "value": 35490,
+          "unit": "Tonnes",
+          "label": "2017"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_3": {}
+  }
+}

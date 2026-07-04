@@ -1,0 +1,43 @@
+{
+  "report_name": "2020 Sustainability Report",
+  "report_title": "GRANITE CONSTRUCTION 2020 Sustainability Report",
+  "emissions": {
+    "scope_1": {
+      "2015": [
+        {
+          "value": 132285,
+          "unit": null,
+          "label": "total"
+        }
+      ],
+      "2020": [
+        {
+          "value": 244727,
+          "unit": null,
+          "label": "total"
+        },
+        {
+          "value": 244727.61,
+          "unit": null,
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_2_market_based": {},
+    "scope_3": {
+      "2020": [
+        {
+          "value": 8399,
+          "unit": null,
+          "label": "total"
+        },
+        {
+          "value": 8399,
+          "unit": "US tons",
+          "label": "Other indirect (Scope 3) GHG emissions"
+        }
+      ]
+    }
+  }
+}

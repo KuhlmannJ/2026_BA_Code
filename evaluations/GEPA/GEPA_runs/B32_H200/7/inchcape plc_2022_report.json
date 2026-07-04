@@ -1,0 +1,62 @@
+{
+  "report_name": "inchcape_annual_report_and_accounts_2022",
+  "report_title": "INCHCAPE ANNUAL REPORT AND ACCOUNTS 2022",
+  "emissions": {
+    "scope_1": {
+      "2021": [
+        {
+          "value": 9752,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ],
+      "2022": [
+        {
+          "value": 17002,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2021": [
+        {
+          "value": 27277,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ],
+      "2022": [
+        {
+          "value": 22223,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_3": {
+      "2019": [
+        {
+          "value": 18700000,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ],
+      "2021": [
+        {
+          "value": 82068,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ],
+      "2022": [
+        {
+          "value": 187713,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "report_name": "Bekaert Integrated Annual Report 2022",
+  "report_title": "Bekaert Integrated Annual Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 286932,
+          "unit": null,
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 7867,
+          "unit": null,
+          "label": "GHG emission fuel"
+        },
+        {
+          "value": 329982,
+          "unit": null,
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 8438,
+          "unit": null,
+          "label": "GHG emission fuel"
+        }
+      ],
+      "2020": [
+        {
+          "value": 263785,
+          "unit": null,
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 7445,
+          "unit": null,
+          "label": "GHG emission fuel"
+        },
+        {
+          "value": 305547,
+          "unit": null,
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 7980,
+          "unit": null,
+          "label": "GHG emission fuel"
+        }
+      ],
+      "2021": [
+        {
+          "value": 277023,
+          "unit": null,
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 7887,
+          "unit": null,
+          "label": "GHG emission fuel"
+        },
+        {
+          "value": 327690,
+          "unit": null,
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 8511,
+          "unit": null,
+          "label": "GHG emission fuel"
+        }
+      ],
+      "2022": [
+        {
+          "value": 262581,
+          "unit": null,
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 7388,
+          "unit": null,
+          "label": "GHG emission fuel"
+        },
+        {
+          "value": 309001,
+          "unit": null,
+          "label": "GHG emission natural gas & LPG"
+        },
+        {
+          "value": 7950,
+          "unit": null,
+          "label": "GHG emission fuel"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_2_market_based": {},
+    "scope_3": {
+      "2019": [
+        {
+          "value": 6045636,
+          "unit": null,
+          "label": "total"
+        }
+      ],
+      "2021": [
+        {
+          "value": 6736962,
+          "unit": null,
+          "label": "total"
+        }
+      ],
+      "2022": [
+        {
+          "value": 6187086,
+          "unit": null,
+          "label": "total"
+        }
+      ]
+    }
+  }
+}

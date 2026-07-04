@@ -1,0 +1,15 @@
+{
+  "report_name": "innospec_sustainability_report",
+  "report_title": "Innospec 2020 Sustainability Report",
+  "emissions": {
+    "scope_2_market_based": {
+      "2020": [
+        {
+          "value": 0,
+          "unit": "metric tonnes CO2 equivalent",
+          "label": "scope 2"
+        }
+      ]
+    }
+  }
+}

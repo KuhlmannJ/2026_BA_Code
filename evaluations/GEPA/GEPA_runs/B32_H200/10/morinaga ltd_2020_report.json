@@ -1,0 +1,42 @@
+{
+  "report_name": "Morinaga & Co., Ltd. CSR Report 2020",
+  "report_title": "Morinaga & Co., Ltd. CSR Report 2020",
+  "emissions": {
+    "scope_1": {
+      "FY2020/3": [
+        {
+          "value": 20794,
+          "unit": "t-CO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "FY2020/3": [
+        {
+          "value": 52024,
+          "unit": "t-CO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "FY2020/3": [
+        {
+          "value": 49605,
+          "unit": "t-CO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_3": {
+      "FY2020/3": [
+        {
+          "value": 248003,
+          "unit": "t-CO2e",
+          "label": "Category 1 Purchased goods and services"
+        }
+      ]
+    }
+  }
+}

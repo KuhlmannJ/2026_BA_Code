@@ -1,0 +1,10 @@
+{
+  "report_name": "innopec",
+  "report_title": "",
+  "emissions": {
+    "scope_1": {},
+    "scope_2_location_based": {},
+    "scope_2_market_based": {},
+    "scope_3": {}
+  }
+}

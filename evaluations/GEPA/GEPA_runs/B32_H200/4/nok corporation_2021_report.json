@@ -1,0 +1,33 @@
+{
+  "report_name": "NOK CORPORATION CSR REPORT 2021",
+  "report_title": "NOK CORPORATION CSR REPORT 2021",
+  "emissions": {
+    "scope_1": {
+      "FY 2020": [
+        {
+          "value": 38000,
+          "unit": "tons-CO2",
+          "label": "Scope 1 (Fuel)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "FY 2020": [
+        {
+          "value": 602000,
+          "unit": "tons-CO2",
+          "label": "Scope 2 (Electricity/heat)"
+        }
+      ]
+    },
+    "scope_3": {
+      "FY 2020": [
+        {
+          "value": 269,
+          "unit": "1,000 tons-CO2",
+          "label": "Total"
+        }
+      ]
+    }
+  }
+}

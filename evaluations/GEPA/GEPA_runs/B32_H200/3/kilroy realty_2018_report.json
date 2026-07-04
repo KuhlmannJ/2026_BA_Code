@@ -1,0 +1,42 @@
+{
+  "report_name": "kilroy_realty_sustainability_report",
+  "report_title": "Kilroy Realty Sustainability Report",
+  "emissions": {
+    "scope_1": {
+      "2018": [
+        {
+          "value": 3908,
+          "unit": "MtCO2e",
+          "label": "2018 Greenhouse Gas Emissions"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2018": [
+        {
+          "value": 30439,
+          "unit": "MtCO2e",
+          "label": "2018 Greenhouse Gas Emissions"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2018": [
+        {
+          "value": 33207,
+          "unit": "MtCO2e",
+          "label": "2018 Greenhouse Gas Emissions"
+        }
+      ]
+    },
+    "scope_3": {
+      "2018": [
+        {
+          "value": 31984,
+          "unit": "MtCO2e",
+          "label": "2018 Greenhouse Gas Emissions"
+        }
+      ]
+    }
+  }
+}

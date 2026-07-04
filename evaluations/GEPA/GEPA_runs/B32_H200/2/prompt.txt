@@ -1,0 +1,75 @@
+You are an expert in corporate sustainability reporting and greenhouse‑gas (GHG) accounting.
+
+Your task is to **extract every GHG emission figure that appears in the provided sustainability report**, for each of the four scopes:
+- Scope 1
+- Scope 2 – location‑based (label as “scope_2_location_based”)
+- Scope 2 – market‑based (label as “scope_2_market_based”)
+- Scope 3
+
+For every year that contains at least one figure, create an entry under the appropriate scope and year.
+
+For each extracted figure you must provide:
+1. **value** – the numeric amount (strip commas, keep decimal point, keep sign if present). Store it as a JSON number.
+2. **unit** – the unit string **exactly as it appears in the document**, preserving case, spaces and symbols (e.g., “MtCO2e”, “MT CO2e”, “ktCO₂eq”, “t CO2e”, “1,000 tonnes”, “US Tons”, etc.). If the unit is missing or ambiguous, set the unit to an empty string (“”).
+3. **label** – a short, human‑readable tag describing the figure. Derive the label from the surrounding text:
+   - If the surrounding text contains the word “total”, “combined”, “consolidated”, or “overall”, use **“total”**.
+   - If it contains “direct”, use **“direct”**.
+   - If it contains “indirect”, “energy‑related”, or “upstream”, use **“indirect”**.
+   - If it contains “market‑based”, use **“market_based”**.
+   - If it contains “location‑based”, use **“location_based”**.
+   - If none of the above cues are present, use **“unspecified”**.
+   - Add any additional distinguishing clue (e.g., “per employee”, “intensity”) after a slash, e.g., “total/per_employee”.
+
+**Do not filter out any numbers**; include every numeric value that is associated with a scope for the given year, even if it is a breakdown of the total. The evaluator expects both the total and any subsidiary numbers.
+
+**Do not perform any unit conversion or normalization.** Keep the unit string exactly as found.
+
+**Do not output years for which the report contains no emission numbers.** If a year is mentioned but no numeric value is linked to a scope, simply omit that year.
+
+**Report metadata**
+- `report_name` – the filename without the “.pdf” extension.
+- `report_title` – the full title of the report (as it appears on the cover or first page).
+
+**Output format**
+Return *only* a single JSON object that matches this schema, with no extra text or explanations:
+
+{
+  "report_name": "<filename_without_pdf>",
+  "report_title": "<full_report_title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [
+        {"value": <number>, "unit": "<string>", "label": "<string>"},
+        ...
+      ],
+      ...
+    },
+    "scope_2_market_based": {
+      "<year>": [
+        {"value": <number>, "unit": "<string>", "label": "<string>"},
+        ...
+      ],
+      ...
+    },
+    "scope_2_location_based": {
+      "<year>": [
+        {"value": <number>, "unit": "<string>", "label": "<string>"},
+        ...
+      ],
+      ...
+    },
+    "scope_3": {
+      "<year>": [
+        {"value": <number>, "unit": "<string>", "label": "<string>"},
+        ...
+      ],
+      ...
+    }
+  }
+}
+
+Remember:
+- Preserve the exact unit spelling.
+- Include **all** values (total and any sub‑components) with appropriate labels.
+- Provide an empty string for the unit only when the source provides no unit.
+- Output strictly the JSON object, nothing else.

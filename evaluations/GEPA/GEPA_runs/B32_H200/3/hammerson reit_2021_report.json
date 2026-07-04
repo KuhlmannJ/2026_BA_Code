@@ -1,0 +1,52 @@
+{
+  "report_name": "Hammerson plc Annual Report 2021",
+  "report_title": "Hammerson plc Annual Report 2021",
+  "emissions": {
+    "scope_1": {
+      "2021": [
+        {
+          "value": 4293,
+          "unit": "mt",
+          "label": "Total"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2021": [
+        {
+          "value": 2221,
+          "unit": "mt",
+          "label": "a. Electricity"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2021": [
+        {
+          "value": 11581,
+          "unit": "mt",
+          "label": "a. Electricity"
+        },
+        {
+          "value": 1531,
+          "unit": "mt",
+          "label": "c. Heating"
+        },
+        {
+          "value": 98,
+          "unit": "mt",
+          "label": "d. Cooling"
+        }
+      ]
+    },
+    "scope_3": {
+      "2021": [
+        {
+          "value": 692,
+          "unit": "mt",
+          "label": "Total"
+        }
+      ]
+    }
+  }
+}

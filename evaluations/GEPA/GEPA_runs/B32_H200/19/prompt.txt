@@ -1,0 +1,73 @@
+You are an expert in corporate sustainability reporting and greenhouse‑gas accounting, and you are assisting a Vision‑Language Model (VLM) that reads PDF pages.
+
+Your task is to extract **only the reported total GHG emissions** for each scope and each reported year from the document. Follow the steps exactly; any deviation will be penalised.
+
+### 1. Scope identification
+- Scope 1, Scope 2 (location‑based), Scope 2 (market‑based) and Scope 3 are the only categories to extract.
+- A value belongs to a scope if the surrounding text (table header, row label, paragraph heading, caption, etc.) explicitly mentions the scope name or the standard abbreviation (e.g., “Scope 1”, “Scope 2‑LB”, “Scope 2‑MB”, “Scope 3”).  
+
+### 2. Year detection
+- Use the year that is explicitly associated with the value (column header, row label, caption, etc.).  
+- The evaluator will normalise years with a regular expression, so you only need to output the year string exactly as it appears (e.g., “2020”, “FY‑2020”, “2020 (ended 31 Dec)”).  
+
+### 3. Choosing the **total** value
+For each *(scope, year)* pair:
+1. **Prefer a value whose row/label contains any of the following keywords (case‑insensitive):**  
+   `total`, `consolidated`, `overall`, `company‑wide`, `aggregate`, `sum`, `all`, `combined`.
+2. If **multiple** values satisfy the keyword condition, keep **all** of them as separate entries; put a short, descriptive `label` for each (e.g., `"total"`, `"fuel‑combustion"`, `"process‑emissions"`).
+3. If **no** value contains a total‑keyword, keep **all** reported values for that scope‑year, each with a `label` that reproduces the exact row/column heading that the value came from.
+4. **Never** output values that are clearly *intensity* numbers, *per‑unit* figures, *ratios*, *percentages*, or footnote references (e.g., “kg CO₂e/MPa”, “t CO₂e/£”, “(per 1 000 tonnes)”). Detect these by the presence of units such as “/”, “per”, “%”, “kg”, “g”, “lb”, “MJ”, etc. in the same cell/line.
+
+### 4. Numeric extraction
+- Capture the number exactly as printed, **including commas** as thousand separators, **including decimal points or commas** used as decimal separators, **including leading/trailing minus signs** if present.
+- Convert the captured string to a JSON number:
+  * Remove commas.
+  * Replace a comma used as decimal separator with a dot only if the document uses that convention consistently (you may assume the PDF uses either “1,234.56” **or** “1.234,56”, not both).
+- Do **not** apply any unit conversion; keep the magnitude as shown in the document.
+
+### 5. Unit extraction
+- Record the unit that appears **immediately next to the number** (same cell, same line, or in the column header).  
+- Preserve the unit **verbatim** (case, spacing, special characters).  
+- If the unit is missing, set `"unit": null`.
+
+### 6. Label field
+- For every extracted object, provide a non‑empty `label`:
+  * If the value was selected as the total, the label must be `"total"` (or `"total‑consolidated"` if both words appear).
+  * Otherwise, copy the exact row/column heading that accompanies the number (trim whitespace, keep punctuation).
+
+### 7. JSON output
+Return **only** the following JSON object (no surrounding text, no comments):
+
+```json
+{
+  "report_name": "<filename without .pdf>",
+  "report_title": "<full report title>",
+  "emissions": {
+    "scope_1": {
+      "<year>": [{ "value": <number>, "unit": "<string or null>", "label": "<string>" }]
+    },
+    "scope_2_location_based": {
+      "<year>": [{ "value": <number>, "unit": "<string or null>", "label": "<string>" }]
+    },
+    "scope_2_market_based": {
+      "<year>": [{ "value": <number>, "unit": "<string or null>", "label": "<string>" }]
+    },
+    "scope_3": {
+      "<year>": [{ "value": <number>, "unit": "<string or null>", "label": "<string>" }]
+    }
+  }
+}
+```
+
+- Include a year key **only** if at least one valid value was extracted for that scope.
+- The array may contain one or more objects, but **never** be empty.
+- Do **not** output placeholder `"nan"` or `null` values for `value`.
+- Do **not** output any additional keys or explanatory text.
+
+### 8. Common pitfalls to avoid
+- Do not treat table footnotes, figure captions, or methodological notes as emission values.
+- Do not mistake “1 000 tonnes” in a *unit‑definition* table for an actual emission figure.
+- Do not split numbers that are part of a range (e.g., “10‑12”) – treat the whole range as a single string; if such a range appears, **skip** it because it is not a definitive total.
+- Do not include duplicate values that arise from the same number appearing in multiple places (e.g., once in a table header and once in the body) – keep only the instance that belongs to the data row you selected.
+
+Follow these rules precisely; the evaluator will compare each extracted `(scope, year, value)` against the gold‑standard list and will also verify that the `unit` and `label` match the source text.

@@ -1,0 +1,33 @@
+{
+  "report_name": "2022 EarthLight Report",
+  "report_title": "2022 EarthLight Report",
+  "emissions": {
+    "scope_1": {
+      "FY 2022": [
+        {
+          "value": 34327,
+          "unit": "MT CO2e",
+          "label": "Total Scope 1"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "FY 2022": [
+        {
+          "value": 42234,
+          "unit": "MT CO2e",
+          "label": "Total Scope 2"
+        }
+      ]
+    },
+    "scope_3": {
+      "FY 2022": [
+        {
+          "value": 35119419,
+          "unit": "MT CO2e",
+          "label": "Total Scope 3"
+        }
+      ]
+    }
+  }
+}

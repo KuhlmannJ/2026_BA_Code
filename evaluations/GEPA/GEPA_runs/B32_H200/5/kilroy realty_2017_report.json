@@ -1,0 +1,32 @@
+{
+  "report_name": "2017_Sustainability_Report",
+  "report_title": "2017 Sustainability Report",
+  "emissions": {
+    "scope_1": {
+      "2016": [
+        {
+          "value": 4059,
+          "unit": "Emissions (Tonnes)",
+          "label": "2016"
+        },
+        {
+          "value": 3110,
+          "unit": "Emissions (Tonnes)",
+          "label": "2016"
+        }
+      ],
+      "2017": [
+        {
+          "value": 4641,
+          "unit": "Emissions (Tonnes)",
+          "label": "2017"
+        },
+        {
+          "value": 3296,
+          "unit": "Emissions (Tonnes)",
+          "label": "2017"
+        }
+      ]
+    }
+  }
+}

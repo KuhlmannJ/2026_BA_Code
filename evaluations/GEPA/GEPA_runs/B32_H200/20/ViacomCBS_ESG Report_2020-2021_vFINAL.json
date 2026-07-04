@@ -1,0 +1,22 @@
+{
+  "report_name": "ViacomCBS ESG REPORT 2020-2021",
+  "report_title": "ViacomCBS ESG REPORT 2020-2021",
+  "emissions": {
+    "scope_3": {
+      "2019": [
+        {
+          "value": 819682,
+          "unit": "MT",
+          "label": "Scope 3 (TOTAL)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 6878548,
+          "unit": "MT",
+          "label": "Scope 3 (TOTAL)"
+        }
+      ]
+    }
+  }
+}

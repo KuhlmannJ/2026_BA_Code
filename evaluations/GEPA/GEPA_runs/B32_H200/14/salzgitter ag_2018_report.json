@@ -1,0 +1,55 @@
+{
+  "report_name": "Separate Non-financial report 2018 of Salzgitter AG",
+  "report_title": "Separate Non-financial report 2018 of Salzgitter AG",
+  "emissions": {
+    "scope_1": {
+      "2018": [
+        {
+          "value": 8710,
+          "unit": "kt CO2",
+          "label": "total"
+        }
+      ],
+      "2017": [
+        {
+          "value": 8470,
+          "unit": "kt CO2",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2018": [
+        {
+          "value": 600,
+          "unit": "kt CO2",
+          "label": "total"
+        }
+      ],
+      "2017": [
+        {
+          "value": 693,
+          "unit": "kt CO2",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_3": {
+      "2018": [
+        {
+          "value": 1508,
+          "unit": "kt CO2",
+          "label": "total"
+        }
+      ],
+      "2017": [
+        {
+          "value": 1362,
+          "unit": "kt CO2",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "report_name": "2018 GRI report",
+  "report_title": "2018 GRI report",
+  "emissions": {
+    "scope_1": {},
+    "scope_2_location_based": {
+      "2017": [
+        {
+          "value": 16592,
+          "unit": "tonnes",
+          "label": "total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 9564,
+          "unit": "tonnes",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2017": [
+        {
+          "value": 16257,
+          "unit": "tonnes",
+          "label": "total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 7732,
+          "unit": "tonnes",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_3": {}
+  }
+}

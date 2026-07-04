@@ -1,0 +1,95 @@
+{
+  "report_name": "INCHCAPE ANNUAL REPORT AND ACCOUNTS 2022",
+  "report_title": "INCHCAPE ANNUAL REPORT AND ACCOUNTS 2022",
+  "emissions": {
+    "scope_1": {
+      "2021": [
+        {
+          "value": 2486,
+          "unit": "tCO2e",
+          "label": "direct"
+        },
+        {
+          "value": 9752,
+          "unit": "tCO2e",
+          "label": "direct"
+        }
+      ],
+      "2022": [
+        {
+          "value": 3617,
+          "unit": "tCO2e",
+          "label": "direct"
+        },
+        {
+          "value": 17002,
+          "unit": "tCO2e",
+          "label": "direct"
+        },
+        {
+          "value": 216,
+          "unit": "tCO2e",
+          "label": "unspecified/fugitive"
+        },
+        {
+          "value": 2791,
+          "unit": "tCO2e",
+          "label": "unspecified/fugitive"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2021": [
+        {
+          "value": 3689,
+          "unit": "tCO2e",
+          "label": "location_based"
+        },
+        {
+          "value": 27277,
+          "unit": "tCO2e",
+          "label": "location_based"
+        }
+      ],
+      "2022": [
+        {
+          "value": 2886,
+          "unit": "tCO2e",
+          "label": "location_based"
+        },
+        {
+          "value": 22223,
+          "unit": "tCO2e",
+          "label": "location_based"
+        }
+      ]
+    },
+    "scope_3": {
+      "2021": [
+        {
+          "value": 9221,
+          "unit": "tCO2e",
+          "label": "unspecified/business_travel_upstream_transport"
+        },
+        {
+          "value": 82068,
+          "unit": "tCO2e",
+          "label": "unspecified/business_travel_upstream_transport"
+        }
+      ],
+      "2022": [
+        {
+          "value": 2975,
+          "unit": "tCO2e",
+          "label": "unspecified/business_travel_upstream_transport"
+        },
+        {
+          "value": 187713,
+          "unit": "tCO2e",
+          "label": "unspecified/business_travel_upstream_transport"
+        }
+      ]
+    }
+  }
+}

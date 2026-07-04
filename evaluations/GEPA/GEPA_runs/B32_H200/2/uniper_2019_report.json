@@ -1,0 +1,272 @@
+{
+  "report_name": "Uniper Sustainability Report 2019",
+  "report_title": "Uniper Sustainability Report 2019",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 24.9,
+          "unit": "Million metric tons",
+          "label": "direct"
+        },
+        {
+          "value": 11.1,
+          "unit": "Million metric tons",
+          "label": "direct"
+        },
+        {
+          "value": 5.6,
+          "unit": "Million metric tons",
+          "label": "direct"
+        },
+        {
+          "value": 3.2,
+          "unit": "Million metric tons",
+          "label": "direct"
+        },
+        {
+          "value": 1.0,
+          "unit": "Million metric tons",
+          "label": "direct"
+        },
+        {
+          "value": 0.9,
+          "unit": "Million metric tons",
+          "label": "direct"
+        },
+        {
+          "value": 0.1,
+          "unit": "Million metric tons",
+          "label": "direct"
+        },
+        {
+          "value": 47.0,
+          "unit": "Million metric tons",
+          "label": "total"
+        },
+        {
+          "value": 47.0,
+          "unit": "m metric tons of CO2",
+          "label": "total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 25.3,
+          "unit": "Million metric tons",
+          "label": "direct"
+        },
+        {
+          "value": 17.2,
+          "unit": "Million metric tons",
+          "label": "direct"
+        },
+        {
+          "value": 7.6,
+          "unit": "Million metric tons",
+          "label": "direct"
+        },
+        {
+          "value": 5.5,
+          "unit": "Million metric tons",
+          "label": "direct"
+        },
+        {
+          "value": 2.9,
+          "unit": "Million metric tons",
+          "label": "direct"
+        },
+        {
+          "value": 0.8,
+          "unit": "Million metric tons",
+          "label": "direct"
+        },
+        {
+          "value": 59.5,
+          "unit": "Million metric tons",
+          "label": "total"
+        },
+        {
+          "value": 59.5,
+          "unit": "m metric tons of CO2",
+          "label": "total"
+        }
+      ],
+      "2017": [
+        {
+          "value": 26.4,
+          "unit": "Million metric tons",
+          "label": "direct"
+        },
+        {
+          "value": 16.9,
+          "unit": "Million metric tons",
+          "label": "direct"
+        },
+        {
+          "value": 6.2,
+          "unit": "Million metric tons",
+          "label": "direct"
+        },
+        {
+          "value": 7.9,
+          "unit": "Million metric tons",
+          "label": "direct"
+        },
+        {
+          "value": 5.1,
+          "unit": "Million metric tons",
+          "label": "direct"
+        },
+        {
+          "value": 0.8,
+          "unit": "Million metric tons",
+          "label": "direct"
+        },
+        {
+          "value": 63.3,
+          "unit": "Million metric tons",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [
+        {
+          "value": 1.57,
+          "unit": "million metric tons of CO2",
+          "label": "total"
+        },
+        {
+          "value": 1.57,
+          "unit": "m metric tons of CO2",
+          "label": "total"
+        },
+        {
+          "value": 1467501,
+          "unit": "metric t CO2",
+          "label": "indirect"
+        },
+        {
+          "value": 106171,
+          "unit": "metric t CO2",
+          "label": "indirect"
+        },
+        {
+          "value": 1573672,
+          "unit": "metric t CO2",
+          "label": "total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 1.67,
+          "unit": "million metric tons of CO2",
+          "label": "total"
+        },
+        {
+          "value": 1.67,
+          "unit": "m metric tons of CO2",
+          "label": "total"
+        },
+        {
+          "value": 1584188,
+          "unit": "metric t CO2",
+          "label": "indirect"
+        },
+        {
+          "value": 92501,
+          "unit": "metric t CO2",
+          "label": "indirect"
+        },
+        {
+          "value": 1676689,
+          "unit": "metric t CO2",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 1.12,
+          "unit": "million metric tons of CO2",
+          "label": "total"
+        },
+        {
+          "value": 1.12,
+          "unit": "m metric tons of CO2",
+          "label": "total"
+        },
+        {
+          "value": 1023106,
+          "unit": "metric t CO2",
+          "label": "indirect"
+        },
+        {
+          "value": 106171,
+          "unit": "metric t CO2",
+          "label": "indirect"
+        },
+        {
+          "value": 1129277,
+          "unit": "metric t CO2",
+          "label": "total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 1.1,
+          "unit": "million metric tons of CO2",
+          "label": "total"
+        },
+        {
+          "value": 1.1,
+          "unit": "m metric tons of CO2",
+          "label": "total"
+        },
+        {
+          "value": 1008531,
+          "unit": "metric t CO2",
+          "label": "indirect"
+        },
+        {
+          "value": 92501,
+          "unit": "metric t CO2",
+          "label": "indirect"
+        },
+        {
+          "value": 1101032,
+          "unit": "metric t CO2",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 8.7,
+          "unit": "million metric tons of CO2",
+          "label": "total"
+        },
+        {
+          "value": 8.7,
+          "unit": "m metric t CO2",
+          "label": "total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 10.3,
+          "unit": "million metric tons of CO2",
+          "label": "total"
+        },
+        {
+          "value": 10.3,
+          "unit": "m metric t CO2",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}

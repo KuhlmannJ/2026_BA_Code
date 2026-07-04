@@ -1,0 +1,32 @@
+{
+  "report_name": "CABOT CORPORATION 2018 SUSTAINABILITY REPORT",
+  "report_title": "CABOT CORPORATION 2018 SUSTAINABILITY REPORT",
+  "emissions": {
+    "scope_1": {
+      "2016": [
+        {
+          "value": 4.5,
+          "unit": "MM MT CO2e",
+          "label": "Absolute Emissions"
+        }
+      ],
+      "2017": [
+        {
+          "value": 4.58,
+          "unit": "MM MT CO2e",
+          "label": "Absolute Emissions"
+        }
+      ],
+      "2018": [
+        {
+          "value": 4.77,
+          "unit": "MM MT CO2e",
+          "label": "Absolute Emissions"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {},
+    "scope_3": {}
+  }
+}

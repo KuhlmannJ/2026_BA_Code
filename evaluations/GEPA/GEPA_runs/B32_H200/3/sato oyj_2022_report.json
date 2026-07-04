@@ -1,0 +1,238 @@
+{
+  "report_name": "SATO's Sustainability Report 2022",
+  "report_title": "SATO's Sustainability Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2015": [
+        {
+          "value": 135,
+          "unit": "t CO2-e",
+          "label": "GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+        }
+      ],
+      "2016": [
+        {
+          "value": 170,
+          "unit": "t CO2-e",
+          "label": "GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 214,
+          "unit": "t CO2-e",
+          "label": "GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 179,
+          "unit": "t CO2-e",
+          "label": "GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 177,
+          "unit": "t CO2-e",
+          "label": "GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 147,
+          "unit": "t CO2-e",
+          "label": "GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 105,
+          "unit": "t CO2-e",
+          "label": "GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 20,
+          "unit": "t CO2-e",
+          "label": "GRI 305-1 Direct greenhouse gas emissions, t CO2-e (scope 1)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2015": [
+        {
+          "value": 37674,
+          "unit": "t CO2-e",
+          "label": "Indirect greenhouse gas emissions, t CO2-e (market-based)"
+        }
+      ],
+      "2016": [
+        {
+          "value": 48560,
+          "unit": "t CO2-e",
+          "label": "Indirect greenhouse gas emissions, t CO2-e (market-based)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 39430,
+          "unit": "t CO2-e",
+          "label": "Indirect greenhouse gas emissions, t CO2-e (market-based)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 36728,
+          "unit": "t CO2-e",
+          "label": "Indirect greenhouse gas emissions, t CO2-e (market-based)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 34292,
+          "unit": "t CO2-e",
+          "label": "Indirect greenhouse gas emissions, t CO2-e (market-based)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 30915,
+          "unit": "t CO2-e",
+          "label": "Indirect greenhouse gas emissions, t CO2-e (market-based)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 43349,
+          "unit": "t CO2-e",
+          "label": "Indirect greenhouse gas emissions, t CO2-e (market-based)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 37920,
+          "unit": "t CO2-e",
+          "label": "Indirect greenhouse gas emissions, t CO2-e (market-based)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2015": [
+        {
+          "value": 41962,
+          "unit": "t CO2-e",
+          "label": "Indirect greenhouse gas emissions, t CO2-e (location-based)"
+        }
+      ],
+      "2016": [
+        {
+          "value": 52583,
+          "unit": "t CO2-e",
+          "label": "Indirect greenhouse gas emissions, t CO2-e (location-based)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 43163,
+          "unit": "t CO2-e",
+          "label": "Indirect greenhouse gas emissions, t CO2-e (location-based)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 40152,
+          "unit": "t CO2-e",
+          "label": "Indirect greenhouse gas emissions, t CO2-e (location-based)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 37468,
+          "unit": "t CO2-e",
+          "label": "Indirect greenhouse gas emissions, t CO2-e (location-based)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 34456,
+          "unit": "t CO2-e",
+          "label": "Indirect greenhouse gas emissions, t CO2-e (location-based)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 45754,
+          "unit": "t CO2-e",
+          "label": "Indirect greenhouse gas emissions, t CO2-e (location-based)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 40393,
+          "unit": "t CO2-e",
+          "label": "Indirect greenhouse gas emissions, t CO2-e (location-based)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2015": [
+        {
+          "value": 1834,
+          "unit": "t CO2-e",
+          "label": "GRI 305-3 Other indirect greenhouse gas emissions, t CO2-e (scope 3)"
+        }
+      ],
+      "2016": [
+        {
+          "value": 948,
+          "unit": "t CO2-e",
+          "label": "GRI 305-3 Other indirect greenhouse gas emissions, t CO2-e (scope 3)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 240,
+          "unit": "t CO2-e",
+          "label": "GRI 305-3 Other indirect greenhouse gas emissions, t CO2-e (scope 3)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 49,
+          "unit": "t CO2-e",
+          "label": "GRI 305-3 Other indirect greenhouse gas emissions, t CO2-e (scope 3)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 46,
+          "unit": "t CO2-e",
+          "label": "GRI 305-3 Other indirect greenhouse gas emissions, t CO2-e (scope 3)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 37,
+          "unit": "t CO2-e",
+          "label": "GRI 305-3 Other indirect greenhouse gas emissions, t CO2-e (scope 3)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 49,
+          "unit": "t CO2-e",
+          "label": "GRI 305-3 Other indirect greenhouse gas emissions, t CO2-e (scope 3)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 49,
+          "unit": "t CO2-e",
+          "label": "GRI 305-3 Other indirect greenhouse gas emissions, t CO2-e (scope 3)"
+        }
+      ]
+    }
+  }
+}

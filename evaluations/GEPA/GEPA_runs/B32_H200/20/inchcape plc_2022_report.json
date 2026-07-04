@@ -1,0 +1,15 @@
+{
+  "report_name": "INCHCAPE ANNUAL REPORT AND ACCOUNTS 2022",
+  "report_title": "INCHCAPE ANNUAL REPORT AND ACCOUNTS 2022",
+  "emissions": {
+    "scope_3": {
+      "2022": [
+        {
+          "value": 18700000,
+          "unit": "m tCO2e",
+          "label": "99.97% of our total emissions footprint at a total of"
+        }
+      ]
+    }
+  }
+}

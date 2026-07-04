@@ -1,0 +1,90 @@
+{
+  "report_name": "Bekaert Integrated Annual Report 2022",
+  "report_title": "Bekaert Integrated Annual Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 338420,
+          "unit": "ton CO2",
+          "label": "Total Scope 1 emissions (Including JVs)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 313527,
+          "unit": "ton CO2",
+          "label": "Total Scope 1 emissions (Including JVs)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 336201,
+          "unit": "ton CO2",
+          "label": "Total Scope 1 emissions (Including JVs)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 316951,
+          "unit": "ton CO2",
+          "label": "Total Scope 1 emissions (Including JVs)"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 1392417,
+          "unit": "ton CO2",
+          "label": "Global Scope 2 emissions (Including JVs)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 1269040,
+          "unit": "ton CO2",
+          "label": "Global Scope 2 emissions (Including JVs)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 1416699,
+          "unit": "ton CO2",
+          "label": "Global Scope 2 emissions (Including JVs)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 1290629,
+          "unit": "ton CO2",
+          "label": "Global Scope 2 emissions (Including JVs)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 6045636,
+          "unit": "ton CO2e",
+          "label": "Total Scope 3 emissions"
+        }
+      ],
+      "2021": [
+        {
+          "value": 6736962,
+          "unit": "ton CO2e",
+          "label": "Total Scope 3 emissions"
+        }
+      ],
+      "2022": [
+        {
+          "value": 6187086,
+          "unit": "ton CO2e",
+          "label": "Total Scope 3 emissions"
+        }
+      ]
+    }
+  }
+}

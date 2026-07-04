@@ -1,0 +1,81 @@
+{
+  "report_name": "Bekaert Integrated Annual Report 2022",
+  "report_title": "Bekaert Integrated Annual Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 294799,
+          "unit": "ton CO₂",
+          "label": "total"
+        },
+        {
+          "value": 338420,
+          "unit": "ton CO₂",
+          "label": "total"
+        }
+      ],
+      "2020": [
+        {
+          "value": 271230,
+          "unit": "ton CO₂",
+          "label": "total"
+        },
+        {
+          "value": 313527,
+          "unit": "ton CO₂",
+          "label": "total"
+        }
+      ],
+      "2021": [
+        {
+          "value": 284910,
+          "unit": "ton CO₂",
+          "label": "total"
+        },
+        {
+          "value": 336201,
+          "unit": "ton CO₂",
+          "label": "total"
+        }
+      ],
+      "2022": [
+        {
+          "value": 269969,
+          "unit": "ton CO₂",
+          "label": "total"
+        },
+        {
+          "value": 316951,
+          "unit": "ton CO₂",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_2_market_based": {},
+    "scope_3": {
+      "2019": [
+        {
+          "value": 6045636,
+          "unit": "ton CO₂e",
+          "label": "total"
+        }
+      ],
+      "2021": [
+        {
+          "value": 6736962,
+          "unit": "ton CO₂e",
+          "label": "total"
+        }
+      ],
+      "2022": [
+        {
+          "value": 6187086,
+          "unit": "ton CO₂e",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}

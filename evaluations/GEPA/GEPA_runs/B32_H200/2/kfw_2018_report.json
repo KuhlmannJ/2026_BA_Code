@@ -1,0 +1,217 @@
+{
+  "report_name": "2018 GRI report",
+  "report_title": "2018 GRI report",
+  "emissions": {
+    "scope_1": {
+      "2014": [
+        {
+          "value": 4636,
+          "unit": "tonnes",
+          "label": "direct"
+        }
+      ],
+      "2015": [
+        {
+          "value": 5095,
+          "unit": "tonnes",
+          "label": "direct"
+        }
+      ],
+      "2016": [
+        {
+          "value": 5260,
+          "unit": "tonnes",
+          "label": "direct"
+        }
+      ],
+      "2017": [
+        {
+          "value": 5616,
+          "unit": "tonnes",
+          "label": "direct"
+        }
+      ],
+      "2018": [
+        {
+          "value": 5571,
+          "unit": "tonnes",
+          "label": "direct"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2017": [
+        {
+          "value": 16257,
+          "unit": "tonnes",
+          "label": "total"
+        },
+        {
+          "value": 4636,
+          "unit": "tonnes",
+          "label": "unspecified/Green electricity"
+        },
+        {
+          "value": 2073,
+          "unit": "tonnes",
+          "label": "unspecified/Emergency power generators (diesel)"
+        },
+        {
+          "value": 9446,
+          "unit": "tonnes",
+          "label": "unspecified/Heating oil"
+        },
+        {
+          "value": 102,
+          "unit": "tonnes",
+          "label": "unspecified/District heating"
+        }
+      ],
+      "2018": [
+        {
+          "value": 7732,
+          "unit": "tonnes",
+          "label": "total"
+        },
+        {
+          "value": 4596,
+          "unit": "tonnes",
+          "label": "unspecified/Green electricity"
+        },
+        {
+          "value": 2902,
+          "unit": "tonnes",
+          "label": "unspecified/Emergency power generators (diesel)"
+        },
+        {
+          "value": 80,
+          "unit": "tonnes",
+          "label": "unspecified/Heating oil"
+        },
+        {
+          "value": 163,
+          "unit": "tonnes",
+          "label": "unspecified/District heating"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2017": [
+        {
+          "value": 16592,
+          "unit": "tonnes",
+          "label": "total"
+        },
+        {
+          "value": 5869,
+          "unit": "tonnes",
+          "label": "unspecified/Green electricity"
+        },
+        {
+          "value": 2555,
+          "unit": "tonnes",
+          "label": "unspecified/Emergency power generators (diesel)"
+        },
+        {
+          "value": 8113,
+          "unit": "tonnes",
+          "label": "unspecified/Heating oil"
+        },
+        {
+          "value": 55,
+          "unit": "tonnes",
+          "label": "unspecified/District heating"
+        }
+      ],
+      "2018": [
+        {
+          "value": 9564,
+          "unit": "tonnes",
+          "label": "total"
+        },
+        {
+          "value": 5819,
+          "unit": "tonnes",
+          "label": "unspecified/Green electricity"
+        },
+        {
+          "value": 3577,
+          "unit": "tonnes",
+          "label": "unspecified/Emergency power generators (diesel)"
+        },
+        {
+          "value": 80,
+          "unit": "tonnes",
+          "label": "unspecified/Heating oil"
+        },
+        {
+          "value": 88,
+          "unit": "tonnes",
+          "label": "unspecified/District heating"
+        }
+      ]
+    },
+    "scope_3": {
+      "2014": [
+        {
+          "value": 9446,
+          "unit": "tonnes",
+          "label": "total"
+        },
+        {
+          "value": 102,
+          "unit": "tonnes",
+          "label": "unspecified/Events"
+        }
+      ],
+      "2015": [
+        {
+          "value": 7394,
+          "unit": "tonnes",
+          "label": "total"
+        },
+        {
+          "value": 102,
+          "unit": "tonnes",
+          "label": "unspecified/Events"
+        }
+      ],
+      "2016": [
+        {
+          "value": 7411,
+          "unit": "tonnes",
+          "label": "total"
+        },
+        {
+          "value": 74,
+          "unit": "tonnes",
+          "label": "unspecified/Events"
+        }
+      ],
+      "2017": [
+        {
+          "value": 8208,
+          "unit": "tonnes",
+          "label": "total"
+        },
+        {
+          "value": 87,
+          "unit": "tonnes",
+          "label": "unspecified/Events"
+        }
+      ],
+      "2018": [
+        {
+          "value": 8665,
+          "unit": "tonnes",
+          "label": "total"
+        },
+        {
+          "value": 101,
+          "unit": "tonnes",
+          "label": "unspecified/Events"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "report_name": "NOK CORPORATION CSR REPORT 2021",
+  "report_title": "NOK CORPORATION CSR REPORT 2021",
+  "emissions": {
+    "scope_1": {
+      "2020": [
+        {
+          "value": 38,
+          "unit": "1,000 tons-CO2",
+          "label": "unspecified/1"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2020": [
+        {
+          "value": 602,
+          "unit": "1,000 tons-CO2",
+          "label": "unspecified/2"
+        }
+      ]
+    },
+    "scope_3": {
+      "2020": [
+        {
+          "value": 168,
+          "unit": "1,000 tons-CO2",
+          "label": "unspecified/Purchased goods and services"
+        },
+        {
+          "value": 22,
+          "unit": "1,000 tons-CO2",
+          "label": "unspecified/Capital goods"
+        },
+        {
+          "value": 0,
+          "unit": "1,000 tons-CO2",
+          "label": "unspecified/Fuel- and energy-related activities (not included in Scope 1 and 2)"
+        },
+        {
+          "value": 10,
+          "unit": "1,000 tons-CO2",
+          "label": "unspecified/Upstream transportation and distribution"
+        },
+        {
+          "value": 14,
+          "unit": "1,000 tons-CO2",
+          "label": "unspecified/Waste generated from operation"
+        },
+        {
+          "value": 5,
+          "unit": "1,000 tons-CO2",
+          "label": "unspecified/Business travel"
+        },
+        {
+          "value": 15,
+          "unit": "1,000 tons-CO2",
+          "label": "unspecified/Employee commuting"
+        },
+        {
+          "value": 0,
+          "unit": "1,000 tons-CO2",
+          "label": "unspecified/Upstream leased assets"
+        },
+        {
+          "value": 0,
+          "unit": "1,000 tons-CO2",
+          "label": "unspecified/Downstream transportation and distribution"
+        },
+        {
+          "value": 0,
+          "unit": "1,000 tons-CO2",
+          "label": "unspecified/Processing of sold products"
+        },
+        {
+          "value": 0,
+          "unit": "1,000 tons-CO2",
+          "label": "unspecified/Use of sold products"
+        },
+        {
+          "value": 0,
+          "unit": "1,000 tons-CO2",
+          "label": "unspecified/End-of-life treatment of sold products"
+        },
+        {
+          "value": 0,
+          "unit": "1,000 tons-CO2",
+          "label": "unspecified/Downstream leased assets"
+        },
+        {
+          "value": 0,
+          "unit": "1,000 tons-CO2",
+          "label": "unspecified/Franchises"
+        },
+        {
+          "value": 0,
+          "unit": "1,000 tons-CO2",
+          "label": "unspecified/Investments"
+        },
+        {
+          "value": 269,
+          "unit": "1,000 tons-CO2",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}

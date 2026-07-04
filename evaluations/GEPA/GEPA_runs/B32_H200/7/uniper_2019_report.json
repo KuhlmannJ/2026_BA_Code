@@ -1,0 +1,92 @@
+{
+  "report_name": "Uniper Sustainability Report 2019",
+  "report_title": "Uniper Sustainability Report 2019",
+  "emissions": {
+    "scope_1": {
+      "2017": [
+        {
+          "value": 63.3,
+          "unit": "Million metric tons",
+          "label": "total"
+        },
+        {
+          "value": 63.3,
+          "unit": "Million metric tons",
+          "label": "total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 59.5,
+          "unit": "Million metric tons",
+          "label": "total"
+        },
+        {
+          "value": 59.5,
+          "unit": "Million metric tons",
+          "label": "total"
+        }
+      ],
+      "2019": [
+        {
+          "value": 47.0,
+          "unit": "Million metric tons",
+          "label": "total"
+        },
+        {
+          "value": 47.0,
+          "unit": "Million metric tons",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2018": [
+        {
+          "value": 1101032,
+          "unit": "metric t CO2",
+          "label": "total"
+        }
+      ],
+      "2019": [
+        {
+          "value": 1129277,
+          "unit": "metric t CO2",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2018": [
+        {
+          "value": 1676689,
+          "unit": "metric t CO2",
+          "label": "total"
+        }
+      ],
+      "2019": [
+        {
+          "value": 1573672,
+          "unit": "metric t CO2",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_3": {
+      "2018": [
+        {
+          "value": 10.3,
+          "unit": "m metric t CO2",
+          "label": "total"
+        }
+      ],
+      "2019": [
+        {
+          "value": 8.7,
+          "unit": "m metric t CO2",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}

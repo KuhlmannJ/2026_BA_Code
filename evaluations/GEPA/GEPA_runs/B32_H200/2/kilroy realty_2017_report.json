@@ -1,0 +1,150 @@
+{
+  "report_name": "2017_sustainability_report",
+  "report_title": "SUSTAINABILITY PROGRAM",
+  "emissions": {
+    "scope_1": {
+      "2016": [
+        {
+          "value": 3696,
+          "unit": "Tonnes",
+          "label": "direct"
+        },
+        {
+          "value": 2747,
+          "unit": "Tonnes",
+          "label": "direct"
+        },
+        {
+          "value": 363,
+          "unit": "Tonnes",
+          "label": "direct"
+        },
+        {
+          "value": 363,
+          "unit": "Tonnes",
+          "label": "direct"
+        },
+        {
+          "value": 4059,
+          "unit": "Tonnes",
+          "label": "direct"
+        },
+        {
+          "value": 3110,
+          "unit": "Tonnes",
+          "label": "direct"
+        }
+      ],
+      "2017": [
+        {
+          "value": 4165,
+          "unit": "Tonnes",
+          "label": "direct"
+        },
+        {
+          "value": 2821,
+          "unit": "Tonnes",
+          "label": "direct"
+        },
+        {
+          "value": 476,
+          "unit": "Tonnes",
+          "label": "direct"
+        },
+        {
+          "value": 476,
+          "unit": "Tonnes",
+          "label": "direct"
+        },
+        {
+          "value": 4641,
+          "unit": "Tonnes",
+          "label": "direct"
+        },
+        {
+          "value": 3296,
+          "unit": "Tonnes",
+          "label": "direct"
+        },
+        {
+          "value": 4641,
+          "unit": "metric tons of CO2e",
+          "label": "direct"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2016": [
+        {
+          "value": 39670,
+          "unit": "Tonnes",
+          "label": "indirect"
+        },
+        {
+          "value": 35009,
+          "unit": "Tonnes",
+          "label": "indirect"
+        },
+        {
+          "value": 4475,
+          "unit": "Tonnes",
+          "label": "indirect"
+        },
+        {
+          "value": 4475,
+          "unit": "Tonnes",
+          "label": "indirect"
+        },
+        {
+          "value": 44145,
+          "unit": "Tonnes",
+          "label": "indirect"
+        },
+        {
+          "value": 39484,
+          "unit": "Tonnes",
+          "label": "indirect"
+        }
+      ],
+      "2017": [
+        {
+          "value": 39516,
+          "unit": "Tonnes",
+          "label": "indirect"
+        },
+        {
+          "value": 32059,
+          "unit": "Tonnes",
+          "label": "indirect"
+        },
+        {
+          "value": 4489,
+          "unit": "Tonnes",
+          "label": "indirect"
+        },
+        {
+          "value": 4489,
+          "unit": "Tonnes",
+          "label": "indirect"
+        },
+        {
+          "value": 42947,
+          "unit": "Tonnes",
+          "label": "indirect"
+        },
+        {
+          "value": 35490,
+          "unit": "Tonnes",
+          "label": "indirect"
+        },
+        {
+          "value": 42947,
+          "unit": "metric tons of CO2e",
+          "label": "indirect"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_3": {}
+  }
+}

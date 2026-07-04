@@ -1,0 +1,62 @@
+{
+  "report_name": "Kilroy_Realty_2018_Sustainability_Report",
+  "report_title": "Kilroy Realty 2018 Sustainability Report",
+  "emissions": {
+    "scope_1": {
+      "2018": [
+        {
+          "value": 3908,
+          "unit": "MtCO2e",
+          "label": "Scope 1 Emissions"
+        },
+        {
+          "value": 3782,
+          "unit": "MtCO2e",
+          "label": "Scope 1 Emissions"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2018": [
+        {
+          "value": 33207,
+          "unit": "MtCO2e",
+          "label": "Scope 2 Emissions (Location-Based)"
+        },
+        {
+          "value": 31336,
+          "unit": "MtCO2e",
+          "label": "Scope 2 Emissions (Location-Based)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2018": [
+        {
+          "value": 30439,
+          "unit": "MtCO2e",
+          "label": "Scope 2 Emissions (Market-Based)"
+        },
+        {
+          "value": 28568,
+          "unit": "MtCO2e",
+          "label": "Scope 2 Emissions (Market-Based)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2018": [
+        {
+          "value": 31984,
+          "unit": "MtCO2e",
+          "label": "Scope 3 Emissions (Downstream Leased Assets)"
+        },
+        {
+          "value": 25961,
+          "unit": "MtCO2e",
+          "label": "Scope 3 Emissions (Downstream Leased Assets)"
+        }
+      ]
+    }
+  }
+}

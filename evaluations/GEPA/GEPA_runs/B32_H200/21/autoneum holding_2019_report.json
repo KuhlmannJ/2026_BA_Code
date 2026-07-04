@@ -1,0 +1,76 @@
+{
+  "report_name": "Autoneum_Corporate_Responsibility_Report_2019",
+  "report_title": "Autoneum | Corporate Responsibility Report 2019",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 116274,
+          "unit": "metric tons CO2 equivalents",
+          "label": "Scope 1"
+        }
+      ],
+      "2018": [
+        {
+          "value": 109577,
+          "unit": "metric tons CO2 equivalents",
+          "label": "Scope 1"
+        }
+      ],
+      "2017": [
+        {
+          "value": 81077,
+          "unit": "metric tons CO2 equivalents",
+          "label": "Scope 1"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 264287,
+          "unit": "metric tons CO2 equivalents",
+          "label": "Scope 2"
+        }
+      ],
+      "2018": [
+        {
+          "value": 256550,
+          "unit": "metric tons CO2 equivalents",
+          "label": "Scope 2"
+        }
+      ],
+      "2017": [
+        {
+          "value": 235014,
+          "unit": "metric tons CO2 equivalents",
+          "label": "Scope 2"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_3": {
+      "2019": [
+        {
+          "value": 420238,
+          "unit": "metric tons CO2 equivalents",
+          "label": "Scope 3"
+        }
+      ],
+      "2018": [
+        {
+          "value": 525214,
+          "unit": "metric tons CO2 equivalents",
+          "label": "Scope 3"
+        }
+      ],
+      "2017": [
+        {
+          "value": 448185,
+          "unit": "metric tons CO2 equivalents",
+          "label": "Scope 3"
+        }
+      ]
+    }
+  }
+}

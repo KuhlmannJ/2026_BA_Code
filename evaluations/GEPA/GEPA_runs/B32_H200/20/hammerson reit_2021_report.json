@@ -1,0 +1,190 @@
+{
+  "report_name": "Hammerson plc Annual Report 2021",
+  "report_title": "Hammerson plc Annual Report 2021",
+  "emissions": {
+    "scope_1": {
+      "2020": [
+        {
+          "value": 3309,
+          "unit": "tCO2e",
+          "label": "Totals"
+        },
+        {
+          "value": 1789,
+          "unit": "tCO2e",
+          "label": "Totals"
+        },
+        {
+          "value": 1037,
+          "unit": "tCO2e",
+          "label": "Totals"
+        },
+        {
+          "value": 483,
+          "unit": "tCO2e",
+          "label": "Totals"
+        }
+      ],
+      "2021": [
+        {
+          "value": 4293,
+          "unit": "tCO2e",
+          "label": "Totals"
+        },
+        {
+          "value": 3171,
+          "unit": "tCO2e",
+          "label": "Totals"
+        },
+        {
+          "value": 875,
+          "unit": "tCO2e",
+          "label": "Totals"
+        },
+        {
+          "value": 247,
+          "unit": "tCO2e",
+          "label": "Totals"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2020": [
+        {
+          "value": 13711,
+          "unit": "tCO2e",
+          "label": "Totals"
+        },
+        {
+          "value": 8384,
+          "unit": "tCO2e",
+          "label": "Totals"
+        },
+        {
+          "value": 2051,
+          "unit": "tCO2e",
+          "label": "Totals"
+        },
+        {
+          "value": 3276,
+          "unit": "tCO2e",
+          "label": "Totals"
+        }
+      ],
+      "2021": [
+        {
+          "value": 13210,
+          "unit": "tCO2e",
+          "label": "Totals"
+        },
+        {
+          "value": 8215,
+          "unit": "tCO2e",
+          "label": "Totals"
+        },
+        {
+          "value": 2364,
+          "unit": "tCO2e",
+          "label": "Totals"
+        },
+        {
+          "value": 2631,
+          "unit": "tCO2e",
+          "label": "Totals"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2020": [
+        {
+          "value": 3331,
+          "unit": "tCO2e",
+          "label": "Totals¹"
+        },
+        {
+          "value": 1538,
+          "unit": "tCO2e",
+          "label": "Totals¹"
+        },
+        {
+          "value": 1770,
+          "unit": "tCO2e",
+          "label": "Totals¹"
+        },
+        {
+          "value": 23,
+          "unit": "tCO2e",
+          "label": "Totals¹"
+        }
+      ],
+      "2021": [
+        {
+          "value": 3850,
+          "unit": "tCO2e",
+          "label": "Totals¹"
+        },
+        {
+          "value": 1382,
+          "unit": "tCO2e",
+          "label": "Totals¹"
+        },
+        {
+          "value": 2455,
+          "unit": "tCO2e",
+          "label": "Totals¹"
+        },
+        {
+          "value": 13,
+          "unit": "tCO2e",
+          "label": "Totals¹"
+        }
+      ]
+    },
+    "scope_3": {
+      "2020": [
+        {
+          "value": 825,
+          "unit": "tCO2e",
+          "label": "Totals"
+        },
+        {
+          "value": 455,
+          "unit": "tCO2e",
+          "label": "Totals"
+        },
+        {
+          "value": 208,
+          "unit": "tCO2e",
+          "label": "Totals"
+        },
+        {
+          "value": 162,
+          "unit": "tCO2e",
+          "label": "Totals"
+        }
+      ],
+      "2021": [
+        {
+          "value": 692,
+          "unit": "tCO2e",
+          "label": "Totals"
+        },
+        {
+          "value": 476,
+          "unit": "tCO2e",
+          "label": "Totals"
+        },
+        {
+          "value": 128,
+          "unit": "tCO2e",
+          "label": "Totals"
+        },
+        {
+          "value": 88,
+          "unit": "tCO2e",
+          "label": "Totals"
+        }
+      ]
+    }
+  }
+}

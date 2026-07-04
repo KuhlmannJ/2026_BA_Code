@@ -1,0 +1,77 @@
+{
+  "report_name": "Morinaga & Co., Ltd. CSR Report 2020",
+  "report_title": "Morinaga & Co., Ltd. CSR Report 2020",
+  "emissions": {
+    "scope_1": {
+      "FY2020/3": [
+        {
+          "value": 20794,
+          "unit": "t-CO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "FY2020/3": [
+        {
+          "value": 49605,
+          "unit": "t-CO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "FY2020/3": [
+        {
+          "value": 52024,
+          "unit": "t-CO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_3": {
+      "FY2020/3": [
+        {
+          "value": 248003,
+          "unit": "t-CO2e",
+          "label": "unspecified/category_1"
+        },
+        {
+          "value": 122971,
+          "unit": "t-CO2e",
+          "label": "unspecified/category_2"
+        },
+        {
+          "value": 3774,
+          "unit": "t-CO2e",
+          "label": "unspecified/category_3"
+        },
+        {
+          "value": 15809,
+          "unit": "t-CO2e",
+          "label": "unspecified/category_4"
+        },
+        {
+          "value": 4176,
+          "unit": "t-CO2e",
+          "label": "unspecified/category_5"
+        },
+        {
+          "value": 618,
+          "unit": "t-CO2e",
+          "label": "unspecified/category_6"
+        },
+        {
+          "value": 1607,
+          "unit": "t-CO2e",
+          "label": "unspecified/category_7"
+        },
+        {
+          "value": 557,
+          "unit": "t-CO2e",
+          "label": "unspecified/category_8"
+        }
+      ]
+    }
+  }
+}

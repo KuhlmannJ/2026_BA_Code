@@ -1,0 +1,25 @@
+{
+  "report_name": "kilroy_realty_sustainability_report",
+  "report_title": "SUSTAINABILITY PROGRAM",
+  "emissions": {
+    "scope_1": {
+      "2016": [
+        {
+          "value": 4059,
+          "unit": "Emissions (Tonnes)",
+          "label": "Scope 1"
+        }
+      ],
+      "2017": [
+        {
+          "value": 4641,
+          "unit": "Emissions (Tonnes)",
+          "label": "Scope 1"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_2_market_based": {},
+    "scope_3": {}
+  }
+}

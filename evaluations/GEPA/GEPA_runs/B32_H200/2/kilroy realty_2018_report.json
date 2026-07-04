@@ -1,0 +1,248 @@
+{
+  "report_name": "krc_sustainability_report_2018",
+  "report_title": "Kilroy Realty Sustainability Report 2018",
+  "emissions": {
+    "scope_1": {
+      "2017": [
+        {
+          "value": 3647,
+          "unit": "Tonnes",
+          "label": "unspecified/Office"
+        },
+        {
+          "value": 472,
+          "unit": "Tonnes",
+          "label": "unspecified/Life Sciences"
+        },
+        {
+          "value": 4120,
+          "unit": "Tonnes",
+          "label": "unspecified/Whole Portfolio"
+        },
+        {
+          "value": 3447,
+          "unit": "Tonnes",
+          "label": "unspecified/Office/Like for Like"
+        },
+        {
+          "value": 472,
+          "unit": "Tonnes",
+          "label": "unspecified/Life Sciences/Like for Like"
+        },
+        {
+          "value": 3919,
+          "unit": "Tonnes",
+          "label": "unspecified/Whole Portfolio/Like for Like"
+        }
+      ],
+      "2018": [
+        {
+          "value": 3493,
+          "unit": "Tonnes",
+          "label": "unspecified/Office"
+        },
+        {
+          "value": 415,
+          "unit": "Tonnes",
+          "label": "unspecified/Life Sciences"
+        },
+        {
+          "value": 3908,
+          "unit": "Tonnes",
+          "label": "unspecified/Whole Portfolio"
+        },
+        {
+          "value": 3367,
+          "unit": "Tonnes",
+          "label": "unspecified/Office/Like for Like"
+        },
+        {
+          "value": 415,
+          "unit": "Tonnes",
+          "label": "unspecified/Life Sciences/Like for Like"
+        },
+        {
+          "value": 3782,
+          "unit": "Tonnes",
+          "label": "unspecified/Whole Portfolio/Like for Like"
+        },
+        {
+          "value": 3908,
+          "unit": "MtCO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 3782,
+          "unit": "MtCO2e",
+          "label": "unspecified/like for like"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2017": [
+        {
+          "value": 32335,
+          "unit": "Tonnes",
+          "label": "unspecified/Office"
+        },
+        {
+          "value": 4170,
+          "unit": "Tonnes",
+          "label": "unspecified/Life Sciences"
+        },
+        {
+          "value": 36504,
+          "unit": "Tonnes",
+          "label": "unspecified/Whole Portfolio"
+        },
+        {
+          "value": 29031,
+          "unit": "Tonnes",
+          "label": "unspecified/Office/Like for Like"
+        },
+        {
+          "value": 4170,
+          "unit": "Tonnes",
+          "label": "unspecified/Life Sciences/Like for Like"
+        },
+        {
+          "value": 33201,
+          "unit": "Tonnes",
+          "label": "unspecified/Whole Portfolio/Like for Like"
+        }
+      ],
+      "2018": [
+        {
+          "value": 29095,
+          "unit": "Tonnes",
+          "label": "unspecified/Office"
+        },
+        {
+          "value": 4112,
+          "unit": "Tonnes",
+          "label": "unspecified/Life Sciences"
+        },
+        {
+          "value": 33207,
+          "unit": "Tonnes",
+          "label": "unspecified/Whole Portfolio"
+        },
+        {
+          "value": 27224,
+          "unit": "Tonnes",
+          "label": "unspecified/Office/Like for Like"
+        },
+        {
+          "value": 4112,
+          "unit": "Tonnes",
+          "label": "unspecified/Life Sciences/Like for Like"
+        },
+        {
+          "value": 31336,
+          "unit": "Tonnes",
+          "label": "unspecified/Whole Portfolio/Like for Like"
+        },
+        {
+          "value": 33207,
+          "unit": "MtCO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 31336,
+          "unit": "MtCO2e",
+          "label": "unspecified/like for like"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2017": [
+        {
+          "value": 31565,
+          "unit": "Tonnes",
+          "label": "unspecified/Office"
+        },
+        {
+          "value": 4170,
+          "unit": "Tonnes",
+          "label": "unspecified/Life Sciences"
+        },
+        {
+          "value": 35735,
+          "unit": "Tonnes",
+          "label": "unspecified/Whole Portfolio"
+        },
+        {
+          "value": 28262,
+          "unit": "Tonnes",
+          "label": "unspecified/Office/Like for Like"
+        },
+        {
+          "value": 4170,
+          "unit": "Tonnes",
+          "label": "unspecified/Life Sciences/Like for Like"
+        },
+        {
+          "value": 32431,
+          "unit": "Tonnes",
+          "label": "unspecified/Whole Portfolio/Like for Like"
+        }
+      ],
+      "2018": [
+        {
+          "value": 26328,
+          "unit": "Tonnes",
+          "label": "unspecified/Office"
+        },
+        {
+          "value": 4112,
+          "unit": "Tonnes",
+          "label": "unspecified/Life Sciences"
+        },
+        {
+          "value": 30439,
+          "unit": "Tonnes",
+          "label": "unspecified/Whole Portfolio"
+        },
+        {
+          "value": 24456,
+          "unit": "Tonnes",
+          "label": "unspecified/Office/Like for Like"
+        },
+        {
+          "value": 4112,
+          "unit": "Tonnes",
+          "label": "unspecified/Life Sciences/Like for Like"
+        },
+        {
+          "value": 28568,
+          "unit": "Tonnes",
+          "label": "unspecified/Whole Portfolio/Like for Like"
+        },
+        {
+          "value": 30439,
+          "unit": "MtCO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 28568,
+          "unit": "MtCO2e",
+          "label": "unspecified/like for like"
+        }
+      ]
+    },
+    "scope_3": {
+      "2018": [
+        {
+          "value": 31984,
+          "unit": "MtCO2e",
+          "label": "unspecified/Downstream Leased Assets"
+        },
+        {
+          "value": 25961,
+          "unit": "MtCO2e",
+          "label": "unspecified/Downstream Leased Assets/like for like"
+        }
+      ]
+    }
+  }
+}

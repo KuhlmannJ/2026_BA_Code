@@ -1,0 +1,75 @@
+{
+  "report_name": "VARTA AG - Sustainability Report 2021",
+  "report_title": "VARTA AG – Sustainability Report 2021",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 3598,
+          "unit": "CO₂ eq t",
+          "label": "Scope 1"
+        }
+      ],
+      "2020": [
+        {
+          "value": 4417,
+          "unit": "CO₂ eq t",
+          "label": "Scope 1"
+        }
+      ],
+      "2021": [
+        {
+          "value": 5894,
+          "unit": "CO₂ eq t",
+          "label": "Scope 1"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 17038,
+          "unit": "CO₂-eq t",
+          "label": "location-based"
+        }
+      ],
+      "2020": [
+        {
+          "value": 20885,
+          "unit": "CO₂-eq t",
+          "label": "location-based"
+        }
+      ],
+      "2021": [
+        {
+          "value": 23503,
+          "unit": "CO₂-eq t",
+          "label": "location-based"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [
+        {
+          "value": 10347,
+          "unit": "CO₂ eq t",
+          "label": "Scope 2"
+        }
+      ],
+      "2020": [
+        {
+          "value": 12296,
+          "unit": "CO₂ eq t",
+          "label": "Scope 2"
+        }
+      ],
+      "2021": [
+        {
+          "value": 1168,
+          "unit": "CO₂ eq t",
+          "label": "Scope 2"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "report_name": "InnoSpec",
+  "report_title": "InnoSpec Sustainability Report",
+  "emissions": {
+    "scope_1": {},
+    "scope_2_location_based": {},
+    "scope_2_market_based": {
+      "2020": [
+        {
+          "value": 0,
+          "unit": "metric tonnes CO₂ equivalent",
+          "label": "scope 2 Greenhouse Gas (GHG) emissions from the electricity used at our manufacturing sites"
+        }
+      ]
+    },
+    "scope_3": {}
+  }
+}

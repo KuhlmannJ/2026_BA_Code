@@ -1,0 +1,56 @@
+{
+  "report_name": "2022 EarthLight Report",
+  "report_title": "2022 EarthLight Report",
+  "emissions": {
+    "scope_1": {
+      "fiscal 2022": [
+        {
+          "value": 34327,
+          "unit": "MT CO2e",
+          "label": "total"
+        }
+      ],
+      "FY 2022": [
+        {
+          "value": 34327,
+          "unit": "MtCO2e",
+          "label": "FY 2022 Scope 1 Emissions"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "FY 2022": [
+        {
+          "value": 46637,
+          "unit": "MtCO2e",
+          "label": "FY 2022 Scope 2 Emissions (Location based)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "fiscal 2022": [
+        {
+          "value": 42234,
+          "unit": "MT CO2e",
+          "label": "total"
+        }
+      ],
+      "FY 2022": [
+        {
+          "value": 42234,
+          "unit": "MtCO2e",
+          "label": "FY 2022 Scope 2 Emissions (Market based)"
+        }
+      ]
+    },
+    "scope_3": {
+      "fiscal 2022": [
+        {
+          "value": 35119419,
+          "unit": "MT CO2e",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}

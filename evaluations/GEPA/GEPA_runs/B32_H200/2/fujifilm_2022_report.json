@@ -1,0 +1,446 @@
+{
+  "report_name": "FUJIFILM Holdings Corporation Sustainability Report 2022",
+  "report_title": "FUJIFILM Holdings Corporation Sustainability Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2017": [
+        {
+          "value": 687,
+          "unit": "kt CO2e",
+          "label": "total"
+        },
+        {
+          "value": 644,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 43,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        }
+      ],
+      "2018": [
+        {
+          "value": 672,
+          "unit": "kt CO2e",
+          "label": "total"
+        },
+        {
+          "value": 629,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 43,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        }
+      ],
+      "2019": [
+        {
+          "value": 633,
+          "unit": "kt CO2e",
+          "label": "total"
+        },
+        {
+          "value": 594,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 40,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        }
+      ],
+      "2020": [
+        {
+          "value": 603,
+          "unit": "kt CO2e",
+          "label": "total"
+        },
+        {
+          "value": 567,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 36,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        }
+      ],
+      "2021": [
+        {
+          "value": 633,
+          "unit": "kt CO2e",
+          "label": "total"
+        },
+        {
+          "value": 599,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 34,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2017": [
+        {
+          "value": 531,
+          "unit": "kt CO2e",
+          "label": "total"
+        },
+        {
+          "value": 379,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 152,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        }
+      ],
+      "2018": [
+        {
+          "value": 510,
+          "unit": "kt CO2e",
+          "label": "total"
+        },
+        {
+          "value": 366,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 143,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        }
+      ],
+      "2019": [
+        {
+          "value": 451,
+          "unit": "kt CO2e",
+          "label": "total"
+        },
+        {
+          "value": 325,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 126,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        }
+      ],
+      "2020": [
+        {
+          "value": 409,
+          "unit": "kt CO2e",
+          "label": "total"
+        },
+        {
+          "value": 294,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 115,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        }
+      ],
+      "2021": [
+        {
+          "value": 420,
+          "unit": "kt CO2e",
+          "label": "total"
+        },
+        {
+          "value": 306,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 114,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2017": [
+        {
+          "value": 593,
+          "unit": "kt CO2e",
+          "label": "total"
+        },
+        {
+          "value": 436,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 157,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        }
+      ],
+      "2018": [
+        {
+          "value": 576,
+          "unit": "kt CO2e",
+          "label": "total"
+        },
+        {
+          "value": 427,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 149,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        }
+      ],
+      "2019": [
+        {
+          "value": 514,
+          "unit": "kt CO2e",
+          "label": "total"
+        },
+        {
+          "value": 382,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 132,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        }
+      ],
+      "2020": [
+        {
+          "value": 475,
+          "unit": "kt CO2e",
+          "label": "total"
+        },
+        {
+          "value": 354,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 120,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        }
+      ],
+      "2021": [
+        {
+          "value": 494,
+          "unit": "kt CO2e",
+          "label": "total"
+        },
+        {
+          "value": 375,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 118,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        }
+      ]
+    },
+    "scope_3": {
+      "2021": [
+        {
+          "value": 2130,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 1462,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 667,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 441,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 348,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 93,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 144,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 136,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 8,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 12,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 6,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 6,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 9,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 8,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 1,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 10,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 5,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 5,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 29,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 15,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 14,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 286,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 125,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 161,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 77,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 77,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 90,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 90,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 88,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 88,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 158,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 158,
+          "unit": "kt CO2e",
+          "label": "unspecified"
+        },
+        {
+          "value": 3473,
+          "unit": "kt CO2e",
+          "label": "total"
+        },
+        {
+          "value": 2360,
+          "unit": "kt CO2e",
+          "label": "total"
+        },
+        {
+          "value": 1113,
+          "unit": "kt CO2e",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}
