@@ -2252,49 +2252,6 @@
         "unit":"tonnes CO2e",
         "unit_normalized":"t CO2e",
         "label":"SCOPE 1\/Emissions of greenhouse gases - Scope 1",
-        "value_t1":null,
-        "value_t2":null,
-        "value_m1":null,
-        "value_m2":null,
-        "value_i1":null,
-        "value_i2":null,
-        "value_g":null,
-        "unit_t1":null,
-        "unit_t2":null,
-        "unit_m1":null,
-        "unit_m2":null,
-        "unit_i1":null,
-        "unit_i2":null,
-        "unit_g":null,
-        "label_t1":null,
-        "label_t2":null,
-        "label_m1":null,
-        "label_m2":null,
-        "label_i1":null,
-        "label_i2":null,
-        "label_g":null
-    },
-    {
-        "report_name":"addtech_2022_report",
-        "status":"complete",
-        "scopes_present":[
-            "1",
-            "2lb",
-            "2mb",
-            "3"
-        ],
-        "years_present":[
-            "2019",
-            "2020",
-            "2021"
-        ],
-        "year":2020,
-        "scope":"1",
-        "page":73.0,
-        "value":1910.0,
-        "unit":"tonnes CO2e",
-        "unit_normalized":"t CO2e",
-        "label":"SCOPE 1\/Emissions of greenhouse gases - Scope 1",
         "value_t1":[
             2071.0
         ],
@@ -2376,10 +2333,10 @@
             "2020",
             "2021"
         ],
-        "year":2021,
+        "year":2020,
         "scope":"1",
         "page":73.0,
-        "value":2041.0,
+        "value":1910.0,
         "unit":"tonnes CO2e",
         "unit_normalized":"t CO2e",
         "label":"SCOPE 1\/Emissions of greenhouse gases - Scope 1",
@@ -2467,13 +2424,13 @@
             "2020",
             "2021"
         ],
-        "year":2022,
+        "year":2021,
         "scope":"1",
-        "page":null,
-        "value":null,
-        "unit":null,
-        "unit_normalized":null,
-        "label":null,
+        "page":73.0,
+        "value":2041.0,
+        "unit":"tonnes CO2e",
+        "unit_normalized":"t CO2e",
+        "label":"SCOPE 1\/Emissions of greenhouse gases - Scope 1",
         "value_t1":[
             2041.0
         ],
@@ -2543,6 +2500,49 @@
         "label_g":[
             "SCOPE 1 (tonnes CO2e)"
         ]
+    },
+    {
+        "report_name":"addtech_2022_report",
+        "status":"complete",
+        "scopes_present":[
+            "1",
+            "2lb",
+            "2mb",
+            "3"
+        ],
+        "years_present":[
+            "2019",
+            "2020",
+            "2021"
+        ],
+        "year":2022,
+        "scope":"1",
+        "page":null,
+        "value":null,
+        "unit":null,
+        "unit_normalized":null,
+        "label":null,
+        "value_t1":null,
+        "value_t2":null,
+        "value_m1":null,
+        "value_m2":null,
+        "value_i1":null,
+        "value_i2":null,
+        "value_g":null,
+        "unit_t1":null,
+        "unit_t2":null,
+        "unit_m1":null,
+        "unit_m2":null,
+        "unit_i1":null,
+        "unit_i2":null,
+        "unit_g":null,
+        "label_t1":null,
+        "label_t2":null,
+        "label_m1":null,
+        "label_m2":null,
+        "label_i1":null,
+        "label_i2":null,
+        "label_g":null
     },
     {
         "report_name":"addtech_2022_report",
@@ -2823,49 +2823,6 @@
         "unit":"tonnes CO2e",
         "unit_normalized":"t CO2e",
         "label":"Emissions, energy consumption \u2013 Location Based Method \/Emissions, energy consumption \u2013 Location Based Method (tonnes CO 2 e)",
-        "value_t1":null,
-        "value_t2":null,
-        "value_m1":null,
-        "value_m2":null,
-        "value_i1":null,
-        "value_i2":null,
-        "value_g":null,
-        "unit_t1":null,
-        "unit_t2":null,
-        "unit_m1":null,
-        "unit_m2":null,
-        "unit_i1":null,
-        "unit_i2":null,
-        "unit_g":null,
-        "label_t1":null,
-        "label_t2":null,
-        "label_m1":null,
-        "label_m2":null,
-        "label_i1":null,
-        "label_i2":null,
-        "label_g":null
-    },
-    {
-        "report_name":"addtech_2022_report",
-        "status":"complete",
-        "scopes_present":[
-            "1",
-            "2lb",
-            "2mb",
-            "3"
-        ],
-        "years_present":[
-            "2019",
-            "2020",
-            "2021"
-        ],
-        "year":2020,
-        "scope":"2lb",
-        "page":73.0,
-        "value":3395.0,
-        "unit":"tonnes CO2e",
-        "unit_normalized":"t CO2e",
-        "label":"Emissions, energy consumption \u2013 Location Based Method \/Emissions, energy consumption \u2013 Location Based Method (tonnes CO 2 e)",
         "value_t1":[
             3979.0
         ],
@@ -2944,10 +2901,10 @@
             "2020",
             "2021"
         ],
-        "year":2021,
+        "year":2020,
         "scope":"2lb",
         "page":73.0,
-        "value":3709.0,
+        "value":3395.0,
         "unit":"tonnes CO2e",
         "unit_normalized":"t CO2e",
         "label":"Emissions, energy consumption \u2013 Location Based Method \/Emissions, energy consumption \u2013 Location Based Method (tonnes CO 2 e)",
@@ -3029,13 +2986,13 @@
             "2020",
             "2021"
         ],
-        "year":2022,
+        "year":2021,
         "scope":"2lb",
-        "page":null,
-        "value":null,
-        "unit":null,
-        "unit_normalized":null,
-        "label":null,
+        "page":73.0,
+        "value":3709.0,
+        "unit":"tonnes CO2e",
+        "unit_normalized":"t CO2e",
+        "label":"Emissions, energy consumption \u2013 Location Based Method \/Emissions, energy consumption \u2013 Location Based Method (tonnes CO 2 e)",
         "value_t1":[
             3709.0
         ],
@@ -3099,6 +3056,49 @@
         "label_g":[
             "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
         ]
+    },
+    {
+        "report_name":"addtech_2022_report",
+        "status":"complete",
+        "scopes_present":[
+            "1",
+            "2lb",
+            "2mb",
+            "3"
+        ],
+        "years_present":[
+            "2019",
+            "2020",
+            "2021"
+        ],
+        "year":2022,
+        "scope":"2lb",
+        "page":null,
+        "value":null,
+        "unit":null,
+        "unit_normalized":null,
+        "label":null,
+        "value_t1":null,
+        "value_t2":null,
+        "value_m1":null,
+        "value_m2":null,
+        "value_i1":null,
+        "value_i2":null,
+        "value_g":null,
+        "unit_t1":null,
+        "unit_t2":null,
+        "unit_m1":null,
+        "unit_m2":null,
+        "unit_i1":null,
+        "unit_i2":null,
+        "unit_g":null,
+        "label_t1":null,
+        "label_t2":null,
+        "label_m1":null,
+        "label_m2":null,
+        "label_i1":null,
+        "label_i2":null,
+        "label_g":null
     },
     {
         "report_name":"addtech_2022_report",
@@ -3422,49 +3422,6 @@
         "unit":"tonnes CO2e",
         "unit_normalized":"t CO2e",
         "label":"Emissions, energy consumption \u2013 Market Based Method (tonnes CO 2 e)",
-        "value_t1":null,
-        "value_t2":null,
-        "value_m1":null,
-        "value_m2":null,
-        "value_i1":null,
-        "value_i2":null,
-        "value_g":null,
-        "unit_t1":null,
-        "unit_t2":null,
-        "unit_m1":null,
-        "unit_m2":null,
-        "unit_i1":null,
-        "unit_i2":null,
-        "unit_g":null,
-        "label_t1":null,
-        "label_t2":null,
-        "label_m1":null,
-        "label_m2":null,
-        "label_i1":null,
-        "label_i2":null,
-        "label_g":null
-    },
-    {
-        "report_name":"addtech_2022_report",
-        "status":"complete",
-        "scopes_present":[
-            "1",
-            "2lb",
-            "2mb",
-            "3"
-        ],
-        "years_present":[
-            "2019",
-            "2020",
-            "2021"
-        ],
-        "year":2021,
-        "scope":"2mb",
-        "page":73.0,
-        "value":4087.0,
-        "unit":"tonnes CO2e",
-        "unit_normalized":"t CO2e",
-        "label":"Emissions, energy consumption \u2013 Market Based Method (tonnes CO 2 e)",
         "value_t1":[
             4250.0
         ],
@@ -3543,13 +3500,13 @@
             "2020",
             "2021"
         ],
-        "year":2022,
+        "year":2021,
         "scope":"2mb",
-        "page":null,
-        "value":null,
-        "unit":null,
-        "unit_normalized":null,
-        "label":null,
+        "page":73.0,
+        "value":4087.0,
+        "unit":"tonnes CO2e",
+        "unit_normalized":"t CO2e",
+        "label":"Emissions, energy consumption \u2013 Market Based Method (tonnes CO 2 e)",
         "value_t1":[
             4087.0
         ],
@@ -3613,6 +3570,49 @@
         "label_g":[
             "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
         ]
+    },
+    {
+        "report_name":"addtech_2022_report",
+        "status":"complete",
+        "scopes_present":[
+            "1",
+            "2lb",
+            "2mb",
+            "3"
+        ],
+        "years_present":[
+            "2019",
+            "2020",
+            "2021"
+        ],
+        "year":2022,
+        "scope":"2mb",
+        "page":null,
+        "value":null,
+        "unit":null,
+        "unit_normalized":null,
+        "label":null,
+        "value_t1":null,
+        "value_t2":null,
+        "value_m1":null,
+        "value_m2":null,
+        "value_i1":null,
+        "value_i2":null,
+        "value_g":null,
+        "unit_t1":null,
+        "unit_t2":null,
+        "unit_m1":null,
+        "unit_m2":null,
+        "unit_i1":null,
+        "unit_i2":null,
+        "unit_g":null,
+        "label_t1":null,
+        "label_t2":null,
+        "label_m1":null,
+        "label_m2":null,
+        "label_i1":null,
+        "label_i2":null,
+        "label_g":null
     },
     {
         "report_name":"addtech_2022_report",
@@ -3893,49 +3893,6 @@
         "unit":"tonnes CO2e",
         "unit_normalized":"t CO2e",
         "label":"SCOPE 3\/Emissions of greenhouse gases - Scope 3",
-        "value_t1":null,
-        "value_t2":null,
-        "value_m1":null,
-        "value_m2":null,
-        "value_i1":null,
-        "value_i2":null,
-        "value_g":null,
-        "unit_t1":null,
-        "unit_t2":null,
-        "unit_m1":null,
-        "unit_m2":null,
-        "unit_i1":null,
-        "unit_i2":null,
-        "unit_g":null,
-        "label_t1":null,
-        "label_t2":null,
-        "label_m1":null,
-        "label_m2":null,
-        "label_i1":null,
-        "label_i2":null,
-        "label_g":null
-    },
-    {
-        "report_name":"addtech_2022_report",
-        "status":"complete",
-        "scopes_present":[
-            "1",
-            "2lb",
-            "2mb",
-            "3"
-        ],
-        "years_present":[
-            "2019",
-            "2020",
-            "2021"
-        ],
-        "year":2020,
-        "scope":"3",
-        "page":73.0,
-        "value":19860.0,
-        "unit":"tonnes CO2e",
-        "unit_normalized":"t CO2e",
-        "label":"SCOPE 4\/Emissions of greenhouse gases - Scope 3",
         "value_t1":[
             23132.0
         ],
@@ -4026,13 +3983,13 @@
             "2020",
             "2021"
         ],
-        "year":2021,
+        "year":2020,
         "scope":"3",
         "page":73.0,
-        "value":22961.0,
+        "value":19860.0,
         "unit":"tonnes CO2e",
         "unit_normalized":"t CO2e",
-        "label":"SCOPE 5\/Emissions of greenhouse gases - Scope 3",
+        "label":"SCOPE 4\/Emissions of greenhouse gases - Scope 3",
         "value_t1":[
             19860.0
         ],
@@ -4126,13 +4083,13 @@
             "2020",
             "2021"
         ],
-        "year":2022,
+        "year":2021,
         "scope":"3",
-        "page":null,
-        "value":null,
-        "unit":null,
-        "unit_normalized":null,
-        "label":null,
+        "page":73.0,
+        "value":22961.0,
+        "unit":"tonnes CO2e",
+        "unit_normalized":"t CO2e",
+        "label":"SCOPE 5\/Emissions of greenhouse gases - Scope 3",
         "value_t1":[
             22961.0
         ],
@@ -4211,6 +4168,49 @@
         "label_g":[
             "Emissions freight, upstream & downstream (tonnes CO2e)"
         ]
+    },
+    {
+        "report_name":"addtech_2022_report",
+        "status":"complete",
+        "scopes_present":[
+            "1",
+            "2lb",
+            "2mb",
+            "3"
+        ],
+        "years_present":[
+            "2019",
+            "2020",
+            "2021"
+        ],
+        "year":2022,
+        "scope":"3",
+        "page":null,
+        "value":null,
+        "unit":null,
+        "unit_normalized":null,
+        "label":null,
+        "value_t1":null,
+        "value_t2":null,
+        "value_m1":null,
+        "value_m2":null,
+        "value_i1":null,
+        "value_i2":null,
+        "value_g":null,
+        "unit_t1":null,
+        "unit_t2":null,
+        "unit_m1":null,
+        "unit_m2":null,
+        "unit_i1":null,
+        "unit_i2":null,
+        "unit_g":null,
+        "label_t1":null,
+        "label_t2":null,
+        "label_m1":null,
+        "label_m2":null,
+        "label_i1":null,
+        "label_i2":null,
+        "label_g":null
     },
     {
         "report_name":"aixtron_2020_report",

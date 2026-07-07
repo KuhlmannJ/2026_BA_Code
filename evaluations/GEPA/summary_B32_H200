@@ -1,13 +1,13 @@
-  , run, gepa_score, category, eval_type, quota, hits
- 0,   0,   0.896843, value   , ynorm    , 93.76, 1277
- 1,   0,   0.896843, unit    , ynorm    , 87.44, 1191
- 2,   3,   0.899617, value   , ynorm    , 91.92, 1252
- 3,   3,   0.899617, unit    , ynorm    , 86.34, 1176
- 4,   4,   0.90728 , value   , ynorm    , 94.05, 1281
- 5,   4,   0.90728 , unit    , ynorm    , 86.2 , 1174
- 6,   5,   0.919157, value   , ynorm    , 93.25, 1270
- 7,   5,   0.919157, unit    , ynorm    , 87.22, 1188
- 8,   6,   0.921456, value   , ynorm    , 93.17, 1269
- 9,   6,   0.921456, unit    , ynorm    , 88.11, 1200
-10,  15,   0.930651, value   , ynorm    , 94.05, 1281
-11,  15,   0.930651, unit    , ynorm    , 88.4 , 1204
+,run,gepa_score,category,eval_type,quota,hits
+0,0,0.896843,value,ynorm,94.86,1292
+1,0,0.896843,unit,ynorm,88.03,1199
+2,3,0.899617,value,ynorm,93.02,1267
+3,3,0.899617,unit,ynorm,86.93,1184
+4,4,0.90728,value,ynorm,95.15,1296
+5,4,0.90728,unit,ynorm,86.78,1182
+6,5,0.919157,value,ynorm,94.35,1285
+7,5,0.919157,unit,ynorm,87.81,1196
+8,6,0.921456,value,ynorm,94.27,1284
+9,6,0.921456,unit,ynorm,88.69,1208
+10,15,0.930651,value,ynorm,95.15,1296
+11,15,0.930651,unit,ynorm,88.99,1212

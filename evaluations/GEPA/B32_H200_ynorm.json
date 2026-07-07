@@ -5522,103 +5522,6 @@
         "unit":"tonnes CO2e",
         "unit_normalized":"t CO2e",
         "label":"SCOPE 1\/Emissions of greenhouse gases - Scope 1",
-        "value_0":null,
-        "value_1":null,
-        "value_2":null,
-        "value_3":null,
-        "value_4":null,
-        "value_5":null,
-        "value_6":null,
-        "value_7":null,
-        "value_8":null,
-        "value_9":null,
-        "value_10":null,
-        "value_11":null,
-        "value_12":null,
-        "value_13":null,
-        "value_14":null,
-        "value_15":null,
-        "value_16":null,
-        "value_17":null,
-        "value_18":null,
-        "value_19":null,
-        "value_20":null,
-        "value_21":null,
-        "value_22":null,
-        "value_23":null,
-        "value_24":null,
-        "unit_0":null,
-        "unit_1":null,
-        "unit_2":null,
-        "unit_3":null,
-        "unit_4":null,
-        "unit_5":null,
-        "unit_6":null,
-        "unit_7":null,
-        "unit_8":null,
-        "unit_9":null,
-        "unit_10":null,
-        "unit_11":null,
-        "unit_12":null,
-        "unit_13":null,
-        "unit_14":null,
-        "unit_15":null,
-        "unit_16":null,
-        "unit_17":null,
-        "unit_18":null,
-        "unit_19":null,
-        "unit_20":null,
-        "unit_21":null,
-        "unit_22":null,
-        "unit_23":null,
-        "unit_24":null,
-        "label_0":null,
-        "label_1":null,
-        "label_2":null,
-        "label_3":null,
-        "label_4":null,
-        "label_5":null,
-        "label_6":null,
-        "label_7":null,
-        "label_8":null,
-        "label_9":null,
-        "label_10":null,
-        "label_11":null,
-        "label_12":null,
-        "label_13":null,
-        "label_14":null,
-        "label_15":null,
-        "label_16":null,
-        "label_17":null,
-        "label_18":null,
-        "label_19":null,
-        "label_20":null,
-        "label_21":null,
-        "label_22":null,
-        "label_23":null,
-        "label_24":null
-    },
-    {
-        "report_name":"addtech_2022_report",
-        "status":"complete",
-        "scopes_present":[
-            "1",
-            "2lb",
-            "2mb",
-            "3"
-        ],
-        "years_present":[
-            "2019",
-            "2020",
-            "2021"
-        ],
-        "year":2020,
-        "scope":"1",
-        "page":73.0,
-        "value":1910.0,
-        "unit":"tonnes CO2e",
-        "unit_normalized":"t CO2e",
-        "label":"SCOPE 1\/Emissions of greenhouse gases - Scope 1",
         "value_0":[
             2071.0
         ],
@@ -5844,10 +5747,10 @@
             "2020",
             "2021"
         ],
-        "year":2021,
+        "year":2020,
         "scope":"1",
         "page":73.0,
-        "value":2041.0,
+        "value":1910.0,
         "unit":"tonnes CO2e",
         "unit_normalized":"t CO2e",
         "label":"SCOPE 1\/Emissions of greenhouse gases - Scope 1",
@@ -6079,13 +5982,13 @@
             "2020",
             "2021"
         ],
-        "year":2022,
+        "year":2021,
         "scope":"1",
-        "page":null,
-        "value":null,
-        "unit":null,
-        "unit_normalized":null,
-        "label":null,
+        "page":73.0,
+        "value":2041.0,
+        "unit":"tonnes CO2e",
+        "unit_normalized":"t CO2e",
+        "label":"SCOPE 1\/Emissions of greenhouse gases - Scope 1",
         "value_0":[
             2041.0
         ],
@@ -6298,6 +6201,103 @@
         "label_23":[
             "SCOPE 1 (tonnes CO2e)"
         ],
+        "label_24":null
+    },
+    {
+        "report_name":"addtech_2022_report",
+        "status":"complete",
+        "scopes_present":[
+            "1",
+            "2lb",
+            "2mb",
+            "3"
+        ],
+        "years_present":[
+            "2019",
+            "2020",
+            "2021"
+        ],
+        "year":2022,
+        "scope":"1",
+        "page":null,
+        "value":null,
+        "unit":null,
+        "unit_normalized":null,
+        "label":null,
+        "value_0":null,
+        "value_1":null,
+        "value_2":null,
+        "value_3":null,
+        "value_4":null,
+        "value_5":null,
+        "value_6":null,
+        "value_7":null,
+        "value_8":null,
+        "value_9":null,
+        "value_10":null,
+        "value_11":null,
+        "value_12":null,
+        "value_13":null,
+        "value_14":null,
+        "value_15":null,
+        "value_16":null,
+        "value_17":null,
+        "value_18":null,
+        "value_19":null,
+        "value_20":null,
+        "value_21":null,
+        "value_22":null,
+        "value_23":null,
+        "value_24":null,
+        "unit_0":null,
+        "unit_1":null,
+        "unit_2":null,
+        "unit_3":null,
+        "unit_4":null,
+        "unit_5":null,
+        "unit_6":null,
+        "unit_7":null,
+        "unit_8":null,
+        "unit_9":null,
+        "unit_10":null,
+        "unit_11":null,
+        "unit_12":null,
+        "unit_13":null,
+        "unit_14":null,
+        "unit_15":null,
+        "unit_16":null,
+        "unit_17":null,
+        "unit_18":null,
+        "unit_19":null,
+        "unit_20":null,
+        "unit_21":null,
+        "unit_22":null,
+        "unit_23":null,
+        "unit_24":null,
+        "label_0":null,
+        "label_1":null,
+        "label_2":null,
+        "label_3":null,
+        "label_4":null,
+        "label_5":null,
+        "label_6":null,
+        "label_7":null,
+        "label_8":null,
+        "label_9":null,
+        "label_10":null,
+        "label_11":null,
+        "label_12":null,
+        "label_13":null,
+        "label_14":null,
+        "label_15":null,
+        "label_16":null,
+        "label_17":null,
+        "label_18":null,
+        "label_19":null,
+        "label_20":null,
+        "label_21":null,
+        "label_22":null,
+        "label_23":null,
         "label_24":null
     },
     {
@@ -6903,103 +6903,6 @@
         "unit":"tonnes CO2e",
         "unit_normalized":"t CO2e",
         "label":"Emissions, energy consumption \u2013 Location Based Method \/Emissions, energy consumption \u2013 Location Based Method (tonnes CO 2 e)",
-        "value_0":null,
-        "value_1":null,
-        "value_2":null,
-        "value_3":null,
-        "value_4":null,
-        "value_5":null,
-        "value_6":null,
-        "value_7":null,
-        "value_8":null,
-        "value_9":null,
-        "value_10":null,
-        "value_11":null,
-        "value_12":null,
-        "value_13":null,
-        "value_14":null,
-        "value_15":null,
-        "value_16":null,
-        "value_17":null,
-        "value_18":null,
-        "value_19":null,
-        "value_20":null,
-        "value_21":null,
-        "value_22":null,
-        "value_23":null,
-        "value_24":null,
-        "unit_0":null,
-        "unit_1":null,
-        "unit_2":null,
-        "unit_3":null,
-        "unit_4":null,
-        "unit_5":null,
-        "unit_6":null,
-        "unit_7":null,
-        "unit_8":null,
-        "unit_9":null,
-        "unit_10":null,
-        "unit_11":null,
-        "unit_12":null,
-        "unit_13":null,
-        "unit_14":null,
-        "unit_15":null,
-        "unit_16":null,
-        "unit_17":null,
-        "unit_18":null,
-        "unit_19":null,
-        "unit_20":null,
-        "unit_21":null,
-        "unit_22":null,
-        "unit_23":null,
-        "unit_24":null,
-        "label_0":null,
-        "label_1":null,
-        "label_2":null,
-        "label_3":null,
-        "label_4":null,
-        "label_5":null,
-        "label_6":null,
-        "label_7":null,
-        "label_8":null,
-        "label_9":null,
-        "label_10":null,
-        "label_11":null,
-        "label_12":null,
-        "label_13":null,
-        "label_14":null,
-        "label_15":null,
-        "label_16":null,
-        "label_17":null,
-        "label_18":null,
-        "label_19":null,
-        "label_20":null,
-        "label_21":null,
-        "label_22":null,
-        "label_23":null,
-        "label_24":null
-    },
-    {
-        "report_name":"addtech_2022_report",
-        "status":"complete",
-        "scopes_present":[
-            "1",
-            "2lb",
-            "2mb",
-            "3"
-        ],
-        "years_present":[
-            "2019",
-            "2020",
-            "2021"
-        ],
-        "year":2020,
-        "scope":"2lb",
-        "page":73.0,
-        "value":3395.0,
-        "unit":"tonnes CO2e",
-        "unit_normalized":"t CO2e",
-        "label":"Emissions, energy consumption \u2013 Location Based Method \/Emissions, energy consumption \u2013 Location Based Method (tonnes CO 2 e)",
         "value_0":[
             3979.0
         ],
@@ -7067,6 +6970,235 @@
         ],
         "value_23":[
             3979.0
+        ],
+        "value_24":null,
+        "unit_0":[
+            "tonnes CO2e"
+        ],
+        "unit_1":[
+            "tonnes CO2e"
+        ],
+        "unit_2":[
+            "tonnes CO2e"
+        ],
+        "unit_3":[
+            "tonnes CO2e"
+        ],
+        "unit_4":[
+            "tonnes CO2e"
+        ],
+        "unit_5":[
+            "tonnes CO2e"
+        ],
+        "unit_6":[
+            "tonnes CO2e"
+        ],
+        "unit_7":[
+            "tonnes CO2e"
+        ],
+        "unit_8":[
+            "tonnes CO2e"
+        ],
+        "unit_9":[
+            "tonnes CO2e"
+        ],
+        "unit_10":[
+            "tonnes CO2e"
+        ],
+        "unit_11":[
+            "tonnes CO2e"
+        ],
+        "unit_12":[
+            "tonnes CO2e"
+        ],
+        "unit_13":[
+            "tonnes CO2e"
+        ],
+        "unit_14":[
+            " (tonnes CO2e)"
+        ],
+        "unit_15":[
+            "tonnes CO2e"
+        ],
+        "unit_16":[
+            "tonnes CO2e"
+        ],
+        "unit_17":[
+            "tonnes CO2e"
+        ],
+        "unit_18":null,
+        "unit_19":[
+            "tonnes CO2e"
+        ],
+        "unit_20":null,
+        "unit_21":[
+            null
+        ],
+        "unit_22":[
+            "tonnes CO2e"
+        ],
+        "unit_23":[
+            "tonnes CO2e"
+        ],
+        "unit_24":null,
+        "label_0":[
+            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
+        ],
+        "label_1":[
+            "Total Scope 2 location-based emissions"
+        ],
+        "label_2":[
+            "location_based"
+        ],
+        "label_3":[
+            "Location Based Method"
+        ],
+        "label_4":[
+            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
+        ],
+        "label_5":[
+            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
+        ],
+        "label_6":[
+            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
+        ],
+        "label_7":[
+            "total"
+        ],
+        "label_8":[
+            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
+        ],
+        "label_9":[
+            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
+        ],
+        "label_10":[
+            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
+        ],
+        "label_11":[
+            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
+        ],
+        "label_12":[
+            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
+        ],
+        "label_13":[
+            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
+        ],
+        "label_14":[
+            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
+        ],
+        "label_15":[
+            "total"
+        ],
+        "label_16":[
+            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
+        ],
+        "label_17":[
+            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
+        ],
+        "label_18":null,
+        "label_19":[
+            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
+        ],
+        "label_20":null,
+        "label_21":[
+            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
+        ],
+        "label_22":[
+            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
+        ],
+        "label_23":[
+            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
+        ],
+        "label_24":null
+    },
+    {
+        "report_name":"addtech_2022_report",
+        "status":"complete",
+        "scopes_present":[
+            "1",
+            "2lb",
+            "2mb",
+            "3"
+        ],
+        "years_present":[
+            "2019",
+            "2020",
+            "2021"
+        ],
+        "year":2020,
+        "scope":"2lb",
+        "page":73.0,
+        "value":3395.0,
+        "unit":"tonnes CO2e",
+        "unit_normalized":"t CO2e",
+        "label":"Emissions, energy consumption \u2013 Location Based Method \/Emissions, energy consumption \u2013 Location Based Method (tonnes CO 2 e)",
+        "value_0":[
+            3395.0
+        ],
+        "value_1":[
+            3395.0
+        ],
+        "value_2":[
+            3395.0
+        ],
+        "value_3":[
+            3395.0
+        ],
+        "value_4":[
+            3395.0
+        ],
+        "value_5":[
+            3395.0
+        ],
+        "value_6":[
+            3395.0
+        ],
+        "value_7":[
+            3395.0
+        ],
+        "value_8":[
+            3395.0
+        ],
+        "value_9":[
+            3395.0
+        ],
+        "value_10":[
+            3395.0
+        ],
+        "value_11":[
+            3395.0
+        ],
+        "value_12":[
+            3395.0
+        ],
+        "value_13":[
+            3395.0
+        ],
+        "value_14":[
+            3395.0
+        ],
+        "value_15":[
+            3395.0
+        ],
+        "value_16":[
+            3395.0
+        ],
+        "value_17":[
+            3395.0
+        ],
+        "value_18":null,
+        "value_19":[
+            3395.0
+        ],
+        "value_20":null,
+        "value_21":[
+            3395.0
+        ],
+        "value_22":[
+            3395.0
+        ],
+        "value_23":[
+            3395.0
         ],
         "value_24":null,
         "unit_0":[
@@ -7230,72 +7362,72 @@
         "unit_normalized":"t CO2e",
         "label":"Emissions, energy consumption \u2013 Location Based Method \/Emissions, energy consumption \u2013 Location Based Method (tonnes CO 2 e)",
         "value_0":[
-            3395.0
+            3709.0
         ],
         "value_1":[
-            3395.0
+            3709.0
         ],
         "value_2":[
-            3395.0
+            3709.0
         ],
         "value_3":[
-            3395.0
+            3709.0
         ],
         "value_4":[
-            3395.0
+            3709.0
         ],
         "value_5":[
-            3395.0
+            3709.0
         ],
         "value_6":[
-            3395.0
+            3709.0
         ],
         "value_7":[
-            3395.0
+            3709.0
         ],
         "value_8":[
-            3395.0
+            3709.0
         ],
         "value_9":[
-            3395.0
+            3709.0
         ],
         "value_10":[
-            3395.0
+            3709.0
         ],
         "value_11":[
-            3395.0
+            3709.0
         ],
         "value_12":[
-            3395.0
+            3709.0
         ],
         "value_13":[
-            3395.0
+            3709.0
         ],
         "value_14":[
-            3395.0
+            3709.0
         ],
         "value_15":[
-            3395.0
+            3709.0
         ],
         "value_16":[
-            3395.0
+            3709.0
         ],
         "value_17":[
-            3395.0
+            3709.0
         ],
         "value_18":null,
         "value_19":[
-            3395.0
+            3709.0
         ],
         "value_20":null,
         "value_21":[
-            3395.0
+            3709.0
         ],
         "value_22":[
-            3395.0
+            3709.0
         ],
         "value_23":[
-            3395.0
+            3709.0
         ],
         "value_24":null,
         "unit_0":[
@@ -7458,212 +7590,80 @@
         "unit":null,
         "unit_normalized":null,
         "label":null,
-        "value_0":[
-            3709.0
-        ],
-        "value_1":[
-            3709.0
-        ],
-        "value_2":[
-            3709.0
-        ],
-        "value_3":[
-            3709.0
-        ],
-        "value_4":[
-            3709.0
-        ],
-        "value_5":[
-            3709.0
-        ],
-        "value_6":[
-            3709.0
-        ],
-        "value_7":[
-            3709.0
-        ],
-        "value_8":[
-            3709.0
-        ],
-        "value_9":[
-            3709.0
-        ],
-        "value_10":[
-            3709.0
-        ],
-        "value_11":[
-            3709.0
-        ],
-        "value_12":[
-            3709.0
-        ],
-        "value_13":[
-            3709.0
-        ],
-        "value_14":[
-            3709.0
-        ],
-        "value_15":[
-            3709.0
-        ],
-        "value_16":[
-            3709.0
-        ],
-        "value_17":[
-            3709.0
-        ],
+        "value_0":null,
+        "value_1":null,
+        "value_2":null,
+        "value_3":null,
+        "value_4":null,
+        "value_5":null,
+        "value_6":null,
+        "value_7":null,
+        "value_8":null,
+        "value_9":null,
+        "value_10":null,
+        "value_11":null,
+        "value_12":null,
+        "value_13":null,
+        "value_14":null,
+        "value_15":null,
+        "value_16":null,
+        "value_17":null,
         "value_18":null,
-        "value_19":[
-            3709.0
-        ],
+        "value_19":null,
         "value_20":null,
-        "value_21":[
-            3709.0
-        ],
-        "value_22":[
-            3709.0
-        ],
-        "value_23":[
-            3709.0
-        ],
+        "value_21":null,
+        "value_22":null,
+        "value_23":null,
         "value_24":null,
-        "unit_0":[
-            "tonnes CO2e"
-        ],
-        "unit_1":[
-            "tonnes CO2e"
-        ],
-        "unit_2":[
-            "tonnes CO2e"
-        ],
-        "unit_3":[
-            "tonnes CO2e"
-        ],
-        "unit_4":[
-            "tonnes CO2e"
-        ],
-        "unit_5":[
-            "tonnes CO2e"
-        ],
-        "unit_6":[
-            "tonnes CO2e"
-        ],
-        "unit_7":[
-            "tonnes CO2e"
-        ],
-        "unit_8":[
-            "tonnes CO2e"
-        ],
-        "unit_9":[
-            "tonnes CO2e"
-        ],
-        "unit_10":[
-            "tonnes CO2e"
-        ],
-        "unit_11":[
-            "tonnes CO2e"
-        ],
-        "unit_12":[
-            "tonnes CO2e"
-        ],
-        "unit_13":[
-            "tonnes CO2e"
-        ],
-        "unit_14":[
-            " (tonnes CO2e)"
-        ],
-        "unit_15":[
-            "tonnes CO2e"
-        ],
-        "unit_16":[
-            "tonnes CO2e"
-        ],
-        "unit_17":[
-            "tonnes CO2e"
-        ],
+        "unit_0":null,
+        "unit_1":null,
+        "unit_2":null,
+        "unit_3":null,
+        "unit_4":null,
+        "unit_5":null,
+        "unit_6":null,
+        "unit_7":null,
+        "unit_8":null,
+        "unit_9":null,
+        "unit_10":null,
+        "unit_11":null,
+        "unit_12":null,
+        "unit_13":null,
+        "unit_14":null,
+        "unit_15":null,
+        "unit_16":null,
+        "unit_17":null,
         "unit_18":null,
-        "unit_19":[
-            "tonnes CO2e"
-        ],
+        "unit_19":null,
         "unit_20":null,
-        "unit_21":[
-            null
-        ],
-        "unit_22":[
-            "tonnes CO2e"
-        ],
-        "unit_23":[
-            "tonnes CO2e"
-        ],
+        "unit_21":null,
+        "unit_22":null,
+        "unit_23":null,
         "unit_24":null,
-        "label_0":[
-            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
-        ],
-        "label_1":[
-            "Total Scope 2 location-based emissions"
-        ],
-        "label_2":[
-            "location_based"
-        ],
-        "label_3":[
-            "Location Based Method"
-        ],
-        "label_4":[
-            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
-        ],
-        "label_5":[
-            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
-        ],
-        "label_6":[
-            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
-        ],
-        "label_7":[
-            "total"
-        ],
-        "label_8":[
-            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
-        ],
-        "label_9":[
-            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
-        ],
-        "label_10":[
-            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
-        ],
-        "label_11":[
-            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
-        ],
-        "label_12":[
-            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
-        ],
-        "label_13":[
-            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
-        ],
-        "label_14":[
-            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
-        ],
-        "label_15":[
-            "total"
-        ],
-        "label_16":[
-            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
-        ],
-        "label_17":[
-            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
-        ],
+        "label_0":null,
+        "label_1":null,
+        "label_2":null,
+        "label_3":null,
+        "label_4":null,
+        "label_5":null,
+        "label_6":null,
+        "label_7":null,
+        "label_8":null,
+        "label_9":null,
+        "label_10":null,
+        "label_11":null,
+        "label_12":null,
+        "label_13":null,
+        "label_14":null,
+        "label_15":null,
+        "label_16":null,
+        "label_17":null,
         "label_18":null,
-        "label_19":[
-            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
-        ],
+        "label_19":null,
         "label_20":null,
-        "label_21":[
-            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
-        ],
-        "label_22":[
-            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
-        ],
-        "label_23":[
-            "Emissions, energy consumption \u2013 Location Based Method (tonnes CO2e)"
-        ],
+        "label_21":null,
+        "label_22":null,
+        "label_23":null,
         "label_24":null
     },
     {
@@ -8366,103 +8366,6 @@
         "unit":"tonnes CO2e",
         "unit_normalized":"t CO2e",
         "label":"Emissions, energy consumption \u2013 Market Based Method (tonnes CO 2 e)",
-        "value_0":null,
-        "value_1":null,
-        "value_2":null,
-        "value_3":null,
-        "value_4":null,
-        "value_5":null,
-        "value_6":null,
-        "value_7":null,
-        "value_8":null,
-        "value_9":null,
-        "value_10":null,
-        "value_11":null,
-        "value_12":null,
-        "value_13":null,
-        "value_14":null,
-        "value_15":null,
-        "value_16":null,
-        "value_17":null,
-        "value_18":null,
-        "value_19":null,
-        "value_20":null,
-        "value_21":null,
-        "value_22":null,
-        "value_23":null,
-        "value_24":null,
-        "unit_0":null,
-        "unit_1":null,
-        "unit_2":null,
-        "unit_3":null,
-        "unit_4":null,
-        "unit_5":null,
-        "unit_6":null,
-        "unit_7":null,
-        "unit_8":null,
-        "unit_9":null,
-        "unit_10":null,
-        "unit_11":null,
-        "unit_12":null,
-        "unit_13":null,
-        "unit_14":null,
-        "unit_15":null,
-        "unit_16":null,
-        "unit_17":null,
-        "unit_18":null,
-        "unit_19":null,
-        "unit_20":null,
-        "unit_21":null,
-        "unit_22":null,
-        "unit_23":null,
-        "unit_24":null,
-        "label_0":null,
-        "label_1":null,
-        "label_2":null,
-        "label_3":null,
-        "label_4":null,
-        "label_5":null,
-        "label_6":null,
-        "label_7":null,
-        "label_8":null,
-        "label_9":null,
-        "label_10":null,
-        "label_11":null,
-        "label_12":null,
-        "label_13":null,
-        "label_14":null,
-        "label_15":null,
-        "label_16":null,
-        "label_17":null,
-        "label_18":null,
-        "label_19":null,
-        "label_20":null,
-        "label_21":null,
-        "label_22":null,
-        "label_23":null,
-        "label_24":null
-    },
-    {
-        "report_name":"addtech_2022_report",
-        "status":"complete",
-        "scopes_present":[
-            "1",
-            "2lb",
-            "2mb",
-            "3"
-        ],
-        "years_present":[
-            "2019",
-            "2020",
-            "2021"
-        ],
-        "year":2021,
-        "scope":"2mb",
-        "page":73.0,
-        "value":4087.0,
-        "unit":"tonnes CO2e",
-        "unit_normalized":"t CO2e",
-        "label":"Emissions, energy consumption \u2013 Market Based Method (tonnes CO 2 e)",
         "value_0":[
             4250.0
         ],
@@ -8530,6 +8433,235 @@
         ],
         "value_23":[
             4250.0
+        ],
+        "value_24":null,
+        "unit_0":[
+            "tonnes CO2e"
+        ],
+        "unit_1":[
+            "tonnes CO2e"
+        ],
+        "unit_2":[
+            "tonnes CO2e"
+        ],
+        "unit_3":[
+            "tonnes CO2e"
+        ],
+        "unit_4":[
+            "tonnes CO2e"
+        ],
+        "unit_5":[
+            "tonnes CO2e"
+        ],
+        "unit_6":[
+            "tonnes CO2e"
+        ],
+        "unit_7":[
+            "tonnes CO2e"
+        ],
+        "unit_8":[
+            "tonnes CO2e"
+        ],
+        "unit_9":[
+            "tonnes CO2e"
+        ],
+        "unit_10":[
+            "tonnes CO2e"
+        ],
+        "unit_11":[
+            "tonnes CO2e"
+        ],
+        "unit_12":[
+            "tonnes CO2e"
+        ],
+        "unit_13":[
+            "tonnes CO2e"
+        ],
+        "unit_14":[
+            " (tonnes CO2e)"
+        ],
+        "unit_15":[
+            "tonnes CO2e"
+        ],
+        "unit_16":[
+            "tonnes CO2e"
+        ],
+        "unit_17":[
+            "tonnes CO2e"
+        ],
+        "unit_18":null,
+        "unit_19":[
+            "tonnes CO2e"
+        ],
+        "unit_20":null,
+        "unit_21":[
+            null
+        ],
+        "unit_22":[
+            "tonnes CO2e"
+        ],
+        "unit_23":[
+            "tonnes CO2e"
+        ],
+        "unit_24":null,
+        "label_0":[
+            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
+        ],
+        "label_1":[
+            "Total Scope 2 market-based emissions"
+        ],
+        "label_2":[
+            "market_based"
+        ],
+        "label_3":[
+            "Market Based Method"
+        ],
+        "label_4":[
+            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
+        ],
+        "label_5":[
+            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
+        ],
+        "label_6":[
+            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
+        ],
+        "label_7":[
+            "total"
+        ],
+        "label_8":[
+            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
+        ],
+        "label_9":[
+            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
+        ],
+        "label_10":[
+            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
+        ],
+        "label_11":[
+            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
+        ],
+        "label_12":[
+            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
+        ],
+        "label_13":[
+            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
+        ],
+        "label_14":[
+            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
+        ],
+        "label_15":[
+            "total"
+        ],
+        "label_16":[
+            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
+        ],
+        "label_17":[
+            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
+        ],
+        "label_18":null,
+        "label_19":[
+            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
+        ],
+        "label_20":null,
+        "label_21":[
+            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
+        ],
+        "label_22":[
+            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
+        ],
+        "label_23":[
+            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
+        ],
+        "label_24":null
+    },
+    {
+        "report_name":"addtech_2022_report",
+        "status":"complete",
+        "scopes_present":[
+            "1",
+            "2lb",
+            "2mb",
+            "3"
+        ],
+        "years_present":[
+            "2019",
+            "2020",
+            "2021"
+        ],
+        "year":2021,
+        "scope":"2mb",
+        "page":73.0,
+        "value":4087.0,
+        "unit":"tonnes CO2e",
+        "unit_normalized":"t CO2e",
+        "label":"Emissions, energy consumption \u2013 Market Based Method (tonnes CO 2 e)",
+        "value_0":[
+            4087.0
+        ],
+        "value_1":[
+            4087.0
+        ],
+        "value_2":[
+            4087.0
+        ],
+        "value_3":[
+            4087.0
+        ],
+        "value_4":[
+            4087.0
+        ],
+        "value_5":[
+            4087.0
+        ],
+        "value_6":[
+            4087.0
+        ],
+        "value_7":[
+            4087.0
+        ],
+        "value_8":[
+            4087.0
+        ],
+        "value_9":[
+            4087.0
+        ],
+        "value_10":[
+            4087.0
+        ],
+        "value_11":[
+            4087.0
+        ],
+        "value_12":[
+            4087.0
+        ],
+        "value_13":[
+            4087.0
+        ],
+        "value_14":[
+            4087.0
+        ],
+        "value_15":[
+            4087.0
+        ],
+        "value_16":[
+            4087.0
+        ],
+        "value_17":[
+            4087.0
+        ],
+        "value_18":null,
+        "value_19":[
+            4087.0
+        ],
+        "value_20":null,
+        "value_21":[
+            4087.0
+        ],
+        "value_22":[
+            4087.0
+        ],
+        "value_23":[
+            4087.0
         ],
         "value_24":null,
         "unit_0":[
@@ -8692,212 +8824,80 @@
         "unit":null,
         "unit_normalized":null,
         "label":null,
-        "value_0":[
-            4087.0
-        ],
-        "value_1":[
-            4087.0
-        ],
-        "value_2":[
-            4087.0
-        ],
-        "value_3":[
-            4087.0
-        ],
-        "value_4":[
-            4087.0
-        ],
-        "value_5":[
-            4087.0
-        ],
-        "value_6":[
-            4087.0
-        ],
-        "value_7":[
-            4087.0
-        ],
-        "value_8":[
-            4087.0
-        ],
-        "value_9":[
-            4087.0
-        ],
-        "value_10":[
-            4087.0
-        ],
-        "value_11":[
-            4087.0
-        ],
-        "value_12":[
-            4087.0
-        ],
-        "value_13":[
-            4087.0
-        ],
-        "value_14":[
-            4087.0
-        ],
-        "value_15":[
-            4087.0
-        ],
-        "value_16":[
-            4087.0
-        ],
-        "value_17":[
-            4087.0
-        ],
+        "value_0":null,
+        "value_1":null,
+        "value_2":null,
+        "value_3":null,
+        "value_4":null,
+        "value_5":null,
+        "value_6":null,
+        "value_7":null,
+        "value_8":null,
+        "value_9":null,
+        "value_10":null,
+        "value_11":null,
+        "value_12":null,
+        "value_13":null,
+        "value_14":null,
+        "value_15":null,
+        "value_16":null,
+        "value_17":null,
         "value_18":null,
-        "value_19":[
-            4087.0
-        ],
+        "value_19":null,
         "value_20":null,
-        "value_21":[
-            4087.0
-        ],
-        "value_22":[
-            4087.0
-        ],
-        "value_23":[
-            4087.0
-        ],
+        "value_21":null,
+        "value_22":null,
+        "value_23":null,
         "value_24":null,
-        "unit_0":[
-            "tonnes CO2e"
-        ],
-        "unit_1":[
-            "tonnes CO2e"
-        ],
-        "unit_2":[
-            "tonnes CO2e"
-        ],
-        "unit_3":[
-            "tonnes CO2e"
-        ],
-        "unit_4":[
-            "tonnes CO2e"
-        ],
-        "unit_5":[
-            "tonnes CO2e"
-        ],
-        "unit_6":[
-            "tonnes CO2e"
-        ],
-        "unit_7":[
-            "tonnes CO2e"
-        ],
-        "unit_8":[
-            "tonnes CO2e"
-        ],
-        "unit_9":[
-            "tonnes CO2e"
-        ],
-        "unit_10":[
-            "tonnes CO2e"
-        ],
-        "unit_11":[
-            "tonnes CO2e"
-        ],
-        "unit_12":[
-            "tonnes CO2e"
-        ],
-        "unit_13":[
-            "tonnes CO2e"
-        ],
-        "unit_14":[
-            " (tonnes CO2e)"
-        ],
-        "unit_15":[
-            "tonnes CO2e"
-        ],
-        "unit_16":[
-            "tonnes CO2e"
-        ],
-        "unit_17":[
-            "tonnes CO2e"
-        ],
+        "unit_0":null,
+        "unit_1":null,
+        "unit_2":null,
+        "unit_3":null,
+        "unit_4":null,
+        "unit_5":null,
+        "unit_6":null,
+        "unit_7":null,
+        "unit_8":null,
+        "unit_9":null,
+        "unit_10":null,
+        "unit_11":null,
+        "unit_12":null,
+        "unit_13":null,
+        "unit_14":null,
+        "unit_15":null,
+        "unit_16":null,
+        "unit_17":null,
         "unit_18":null,
-        "unit_19":[
-            "tonnes CO2e"
-        ],
+        "unit_19":null,
         "unit_20":null,
-        "unit_21":[
-            null
-        ],
-        "unit_22":[
-            "tonnes CO2e"
-        ],
-        "unit_23":[
-            "tonnes CO2e"
-        ],
+        "unit_21":null,
+        "unit_22":null,
+        "unit_23":null,
         "unit_24":null,
-        "label_0":[
-            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
-        ],
-        "label_1":[
-            "Total Scope 2 market-based emissions"
-        ],
-        "label_2":[
-            "market_based"
-        ],
-        "label_3":[
-            "Market Based Method"
-        ],
-        "label_4":[
-            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
-        ],
-        "label_5":[
-            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
-        ],
-        "label_6":[
-            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
-        ],
-        "label_7":[
-            "total"
-        ],
-        "label_8":[
-            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
-        ],
-        "label_9":[
-            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
-        ],
-        "label_10":[
-            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
-        ],
-        "label_11":[
-            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
-        ],
-        "label_12":[
-            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
-        ],
-        "label_13":[
-            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
-        ],
-        "label_14":[
-            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
-        ],
-        "label_15":[
-            "total"
-        ],
-        "label_16":[
-            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
-        ],
-        "label_17":[
-            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
-        ],
+        "label_0":null,
+        "label_1":null,
+        "label_2":null,
+        "label_3":null,
+        "label_4":null,
+        "label_5":null,
+        "label_6":null,
+        "label_7":null,
+        "label_8":null,
+        "label_9":null,
+        "label_10":null,
+        "label_11":null,
+        "label_12":null,
+        "label_13":null,
+        "label_14":null,
+        "label_15":null,
+        "label_16":null,
+        "label_17":null,
         "label_18":null,
-        "label_19":[
-            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
-        ],
+        "label_19":null,
         "label_20":null,
-        "label_21":[
-            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
-        ],
-        "label_22":[
-            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
-        ],
-        "label_23":[
-            "Emissions, energy consumption \u2013 Market Based Method (tonnes CO2e)"
-        ],
+        "label_21":null,
+        "label_22":null,
+        "label_23":null,
         "label_24":null
     },
     {
@@ -9503,103 +9503,6 @@
         "unit":"tonnes CO2e",
         "unit_normalized":"t CO2e",
         "label":"SCOPE 3\/Emissions of greenhouse gases - Scope 3",
-        "value_0":null,
-        "value_1":null,
-        "value_2":null,
-        "value_3":null,
-        "value_4":null,
-        "value_5":null,
-        "value_6":null,
-        "value_7":null,
-        "value_8":null,
-        "value_9":null,
-        "value_10":null,
-        "value_11":null,
-        "value_12":null,
-        "value_13":null,
-        "value_14":null,
-        "value_15":null,
-        "value_16":null,
-        "value_17":null,
-        "value_18":null,
-        "value_19":null,
-        "value_20":null,
-        "value_21":null,
-        "value_22":null,
-        "value_23":null,
-        "value_24":null,
-        "unit_0":null,
-        "unit_1":null,
-        "unit_2":null,
-        "unit_3":null,
-        "unit_4":null,
-        "unit_5":null,
-        "unit_6":null,
-        "unit_7":null,
-        "unit_8":null,
-        "unit_9":null,
-        "unit_10":null,
-        "unit_11":null,
-        "unit_12":null,
-        "unit_13":null,
-        "unit_14":null,
-        "unit_15":null,
-        "unit_16":null,
-        "unit_17":null,
-        "unit_18":null,
-        "unit_19":null,
-        "unit_20":null,
-        "unit_21":null,
-        "unit_22":null,
-        "unit_23":null,
-        "unit_24":null,
-        "label_0":null,
-        "label_1":null,
-        "label_2":null,
-        "label_3":null,
-        "label_4":null,
-        "label_5":null,
-        "label_6":null,
-        "label_7":null,
-        "label_8":null,
-        "label_9":null,
-        "label_10":null,
-        "label_11":null,
-        "label_12":null,
-        "label_13":null,
-        "label_14":null,
-        "label_15":null,
-        "label_16":null,
-        "label_17":null,
-        "label_18":null,
-        "label_19":null,
-        "label_20":null,
-        "label_21":null,
-        "label_22":null,
-        "label_23":null,
-        "label_24":null
-    },
-    {
-        "report_name":"addtech_2022_report",
-        "status":"complete",
-        "scopes_present":[
-            "1",
-            "2lb",
-            "2mb",
-            "3"
-        ],
-        "years_present":[
-            "2019",
-            "2020",
-            "2021"
-        ],
-        "year":2020,
-        "scope":"3",
-        "page":73.0,
-        "value":19860.0,
-        "unit":"tonnes CO2e",
-        "unit_normalized":"t CO2e",
-        "label":"SCOPE 4\/Emissions of greenhouse gases - Scope 3",
         "value_0":[
             23132.0
         ],
@@ -9834,13 +9737,13 @@
             "2020",
             "2021"
         ],
-        "year":2021,
+        "year":2020,
         "scope":"3",
         "page":73.0,
-        "value":22961.0,
+        "value":19860.0,
         "unit":"tonnes CO2e",
         "unit_normalized":"t CO2e",
-        "label":"SCOPE 5\/Emissions of greenhouse gases - Scope 3",
+        "label":"SCOPE 4\/Emissions of greenhouse gases - Scope 3",
         "value_0":[
             19860.0
         ],
@@ -10072,13 +9975,13 @@
             "2020",
             "2021"
         ],
-        "year":2022,
+        "year":2021,
         "scope":"3",
-        "page":null,
-        "value":null,
-        "unit":null,
-        "unit_normalized":null,
-        "label":null,
+        "page":73.0,
+        "value":22961.0,
+        "unit":"tonnes CO2e",
+        "unit_normalized":"t CO2e",
+        "label":"SCOPE 5\/Emissions of greenhouse gases - Scope 3",
         "value_0":[
             22961.0
         ],
@@ -10294,6 +10197,103 @@
         "label_23":[
             "SCOPE 3 (tonnes CO2e)"
         ],
+        "label_24":null
+    },
+    {
+        "report_name":"addtech_2022_report",
+        "status":"complete",
+        "scopes_present":[
+            "1",
+            "2lb",
+            "2mb",
+            "3"
+        ],
+        "years_present":[
+            "2019",
+            "2020",
+            "2021"
+        ],
+        "year":2022,
+        "scope":"3",
+        "page":null,
+        "value":null,
+        "unit":null,
+        "unit_normalized":null,
+        "label":null,
+        "value_0":null,
+        "value_1":null,
+        "value_2":null,
+        "value_3":null,
+        "value_4":null,
+        "value_5":null,
+        "value_6":null,
+        "value_7":null,
+        "value_8":null,
+        "value_9":null,
+        "value_10":null,
+        "value_11":null,
+        "value_12":null,
+        "value_13":null,
+        "value_14":null,
+        "value_15":null,
+        "value_16":null,
+        "value_17":null,
+        "value_18":null,
+        "value_19":null,
+        "value_20":null,
+        "value_21":null,
+        "value_22":null,
+        "value_23":null,
+        "value_24":null,
+        "unit_0":null,
+        "unit_1":null,
+        "unit_2":null,
+        "unit_3":null,
+        "unit_4":null,
+        "unit_5":null,
+        "unit_6":null,
+        "unit_7":null,
+        "unit_8":null,
+        "unit_9":null,
+        "unit_10":null,
+        "unit_11":null,
+        "unit_12":null,
+        "unit_13":null,
+        "unit_14":null,
+        "unit_15":null,
+        "unit_16":null,
+        "unit_17":null,
+        "unit_18":null,
+        "unit_19":null,
+        "unit_20":null,
+        "unit_21":null,
+        "unit_22":null,
+        "unit_23":null,
+        "unit_24":null,
+        "label_0":null,
+        "label_1":null,
+        "label_2":null,
+        "label_3":null,
+        "label_4":null,
+        "label_5":null,
+        "label_6":null,
+        "label_7":null,
+        "label_8":null,
+        "label_9":null,
+        "label_10":null,
+        "label_11":null,
+        "label_12":null,
+        "label_13":null,
+        "label_14":null,
+        "label_15":null,
+        "label_16":null,
+        "label_17":null,
+        "label_18":null,
+        "label_19":null,
+        "label_20":null,
+        "label_21":null,
+        "label_22":null,
+        "label_23":null,
         "label_24":null
     },
     {
