@@ -1,0 +1,75 @@
+{
+  "report_name": "KUREHA CSR REPORT 2020",
+  "report_title": "KUREHA CSR REPORT 2020",
+  "emissions": {
+    "scope_1": {
+      "FY2017": [
+        {
+          "value": 363,
+          "unit": "1,000 t CO2",
+          "label": "Scope 1"
+        }
+      ],
+      "FY2018": [
+        {
+          "value": 338,
+          "unit": "1,000 t CO2",
+          "label": "Scope 1"
+        }
+      ],
+      "FY2019": [
+        {
+          "value": 356,
+          "unit": "1,000 t CO2",
+          "label": "Scope 1"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "FY2017": [
+        {
+          "value": 34,
+          "unit": "1,000 t CO2",
+          "label": "Scope 2"
+        }
+      ],
+      "FY2018": [
+        {
+          "value": 42,
+          "unit": "1,000 t CO2",
+          "label": "Scope 2"
+        }
+      ],
+      "FY2019": [
+        {
+          "value": 31,
+          "unit": "1,000 t CO2",
+          "label": "Scope 2"
+        }
+      ]
+    },
+    "scope_3": {
+      "FY2017": [
+        {
+          "value": 7,
+          "unit": "1,000 t CO2",
+          "label": "Scope 3"
+        }
+      ],
+      "FY2018": [
+        {
+          "value": 7,
+          "unit": "1,000 t CO2",
+          "label": "Scope 3"
+        }
+      ],
+      "FY2019": [
+        {
+          "value": 6,
+          "unit": "1,000 t CO2",
+          "label": "Scope 3"
+        }
+      ]
+    }
+  }
+}

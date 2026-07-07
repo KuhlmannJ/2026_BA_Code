@@ -1,0 +1,91 @@
+{
+  "report_name": "METRO Corporate Responsibility Report - 2022 Fiscal Year",
+  "report_title": "METRO Corporate Responsibility Report – 2022 Fiscal Year",
+  "emissions": {
+    "scope_1": {
+      "2022": [
+        {
+          "value": 266631.8,
+          "unit": "Metric tons (t) CO2e",
+          "label": "Direct (Scope 1) GHG emissions"
+        },
+        {
+          "value": 167592.4,
+          "unit": "Metric tons (t) CO2e",
+          "label": "Gross global Scope 1 emissions from refrigerants"
+        }
+      ],
+      "2021": [
+        {
+          "value": 264654.8,
+          "unit": "Metric tons (t) CO2e",
+          "label": "Direct (Scope 1) GHG emissions"
+        },
+        {
+          "value": 167028.2,
+          "unit": "Metric tons (t) CO2e",
+          "label": "Gross global Scope 1 emissions from refrigerants"
+        }
+      ],
+      "2020": [
+        {
+          "value": 270761.0,
+          "unit": "Metric tons (t) CO2e",
+          "label": "Direct (Scope 1) GHG emissions"
+        },
+        {
+          "value": 170163.0,
+          "unit": "Metric tons (t) CO2e",
+          "label": "Gross global Scope 1 emissions from refrigerants"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2022": [
+        {
+          "value": 14785.4,
+          "unit": "Metric tons (t) CO2e",
+          "label": "Energy indirect (Scope 2) GHG emissions"
+        }
+      ],
+      "2021": [
+        {
+          "value": 14668.3,
+          "unit": "Metric tons (t) CO2e",
+          "label": "Energy indirect (Scope 2) GHG emissions"
+        }
+      ],
+      "2020": [
+        {
+          "value": 17872.0,
+          "unit": "Metric tons (t) CO2e",
+          "label": "Energy indirect (Scope 2) GHG emissions"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_3": {
+      "2022": [
+        {
+          "value": 114172.7,
+          "unit": "Metric tons (t) CO2e",
+          "label": "Other indirect (Scope 3) GHG emissions for the categories: Business Travel, Waste and Upstream Transportation"
+        }
+      ],
+      "2021": [
+        {
+          "value": 116700.4,
+          "unit": "Metric tons (t) CO2e",
+          "label": "Other indirect (Scope 3) GHG emissions for the categories: Business Travel, Waste and Upstream Transportation"
+        }
+      ],
+      "2020": [
+        {
+          "value": 114503.4,
+          "unit": "Metric tons (t) CO2e",
+          "label": "Other indirect (Scope 3) GHG emissions for the categories: Business Travel, Waste and Upstream Transportation"
+        }
+      ]
+    }
+  }
+}

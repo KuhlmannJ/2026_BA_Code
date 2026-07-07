@@ -1,0 +1,54 @@
+{
+  "report_name": "CABOT CORPORATION 2018 SUSTAINABILITY REPORT",
+  "report_title": "ACTING RESPONSIBLY FOR THE PLANET",
+  "emissions": {
+    "scope_1": {
+      "2016": [
+        {
+          "value": 4.5,
+          "unit": "MM MT CO2e",
+          "label": "total"
+        }
+      ],
+      "2017": [
+        {
+          "value": 4.58,
+          "unit": "MM MT CO2e",
+          "label": "total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 4.77,
+          "unit": "MM MT CO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2016": [
+        {
+          "value": 0.34,
+          "unit": "MM MT CO2e",
+          "label": "total"
+        }
+      ],
+      "2017": [
+        {
+          "value": 0.33,
+          "unit": "MM MT CO2e",
+          "label": "total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 0.32,
+          "unit": "MM MT CO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_3": {}
+  }
+}

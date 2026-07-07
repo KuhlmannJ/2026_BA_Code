@@ -1,0 +1,77 @@
+{
+  "report_name": "Morinaga & Co., Ltd. CSR Report 2020",
+  "report_title": "Morinaga & Co., Ltd. CSR Report 2020",
+  "emissions": {
+    "scope_1": {
+      "FY2020/3": [
+        {
+          "value": 20794,
+          "unit": "t-CO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "FY2020/3": [
+        {
+          "value": 52024,
+          "unit": "t-CO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "FY2020/3": [
+        {
+          "value": 49605,
+          "unit": "t-CO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_3": {
+      "FY2020/3": [
+        {
+          "value": 248003,
+          "unit": "t-CO2e",
+          "label": "Category 1 Purchased goods and services"
+        },
+        {
+          "value": 122971,
+          "unit": "t-CO2e",
+          "label": "Category 2 Capital goods"
+        },
+        {
+          "value": 3774,
+          "unit": "t-CO2e",
+          "label": "Category 3 Fuel- and energy-related activities"
+        },
+        {
+          "value": 15809,
+          "unit": "t-CO2e",
+          "label": "Category 4 Upstream transportation and distribution"
+        },
+        {
+          "value": 4176,
+          "unit": "t-CO2e",
+          "label": "Category 5 Waste generated in operations"
+        },
+        {
+          "value": 618,
+          "unit": "t-CO2e",
+          "label": "Category 6 Business travel"
+        },
+        {
+          "value": 1607,
+          "unit": "t-CO2e",
+          "label": "Category 7 Employee commuting"
+        },
+        {
+          "value": 557,
+          "unit": "t-CO2e",
+          "label": "Category 8 Upstream leased assets"
+        }
+      ]
+    }
+  }
+}

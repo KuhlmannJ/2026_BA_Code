@@ -1,0 +1,75 @@
+{
+  "report_name": "2021_Sustainability_Report",
+  "report_title": "Sustainability of Sumitomo Corporation Group",
+  "emissions": {
+    "scope_1": {
+      "2020": [
+        {
+          "value": 1526724,
+          "unit": "t-CO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2017": [
+        {
+          "value": 752378,
+          "unit": "t-CO2e",
+          "label": "Scope2"
+        }
+      ],
+      "2018": [
+        {
+          "value": 630412,
+          "unit": "t-CO2e",
+          "label": "Scope2"
+        }
+      ],
+      "2019": [
+        {
+          "value": 683156,
+          "unit": "t-CO2e",
+          "label": "Scope2"
+        }
+      ],
+      "2020": [
+        {
+          "value": 652611,
+          "unit": "t-CO2e",
+          "label": "Scope2"
+        }
+      ]
+    },
+    "scope_3": {
+      "2017": [
+        {
+          "value": 73980,
+          "unit": "t-CO2e",
+          "label": "Total"
+        }
+      ],
+      "2018": [
+        {
+          "value": 71320,
+          "unit": "t-CO2e",
+          "label": "Total"
+        }
+      ],
+      "2019": [
+        {
+          "value": 62187,
+          "unit": "t-CO2e",
+          "label": "Total"
+        }
+      ],
+      "2020": [
+        {
+          "value": 34381,
+          "unit": "t-CO2e",
+          "label": "Total"
+        }
+      ]
+    }
+  }
+}

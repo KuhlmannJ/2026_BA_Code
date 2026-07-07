@@ -1,0 +1,73 @@
+{
+  "report_name": "Sustainability Report 2021",
+  "report_title": "Sustainability Report 2021",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 33,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ],
+      "2020": [
+        {
+          "value": 7407,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 7222,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 353,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ],
+      "2020": [
+        {
+          "value": 3210,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2020": [
+        {
+          "value": 2664,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 13668,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ],
+      "2020": [
+        {
+          "value": 18117,
+          "unit": "tCO2e",
+          "label": "total"
+        },
+        {
+          "value": 78294,
+          "unit": "tCO2e",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}

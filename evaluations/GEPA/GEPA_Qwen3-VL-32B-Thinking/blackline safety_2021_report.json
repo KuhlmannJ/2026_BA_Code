@@ -1,0 +1,54 @@
+{
+  "report_name": "Environmental, Social and Governance Report",
+  "report_title": "Environmental, Social and Governance Report",
+  "emissions": {
+    "scope_1": {
+      "FY2021": [
+        {
+          "value": 215.0,
+          "unit": "MT CO2e",
+          "label": "Scope 1 - MT CO2e"
+        }
+      ],
+      "FY2020": [
+        {
+          "value": 165.6,
+          "unit": "MT CO2e",
+          "label": "Scope 1 - MT CO2e"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "FY2021": [
+        {
+          "value": 576.0,
+          "unit": "MT CO2e",
+          "label": "Scope 2 - MT CO2e*"
+        }
+      ],
+      "FY2020": [
+        {
+          "value": 227.4,
+          "unit": "MT CO2e",
+          "label": "Scope 2 - MT CO2e*"
+        }
+      ]
+    },
+    "scope_3": {
+      "FY2021": [
+        {
+          "value": 1606.2,
+          "unit": "MT CO2e",
+          "label": "Scope 3 - MT CO2e**"
+        }
+      ],
+      "FY2020": [
+        {
+          "value": 1661.2,
+          "unit": "MT CO2e",
+          "label": "Scope 3 - MT CO2e**"
+        }
+      ]
+    }
+  }
+}

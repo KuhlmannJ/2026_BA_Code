@@ -1,0 +1,10 @@
+{
+  "report_name": "Innospec",
+  "report_title": "Innospec Sustainability Report",
+  "emissions": {
+    "scope_1": {},
+    "scope_2_location_based": {},
+    "scope_2_market_based": {},
+    "scope_3": {}
+  }
+}

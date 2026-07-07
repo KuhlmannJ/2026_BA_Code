@@ -72,6 +72,18 @@
     "delta_quota":-0.18
   },
   {
+    "variant":"g",
+    "category":"value",
+    "raw_true":2051,
+    "ynorm_true":2109,
+    "raw_false":157,
+    "ynorm_false":99,
+    "abs_improvmnt":58,
+    "raw_quota":92.89,
+    "ynorm_quota":95.52,
+    "delta_quota":2.63
+  },
+  {
     "variant":"t1",
     "category":"unit",
     "raw_true":1943,
@@ -142,5 +154,17 @@
     "raw_quota":78.58,
     "ynorm_quota":79.3,
     "delta_quota":0.72
+  },
+  {
+    "variant":"g",
+    "category":"unit",
+    "raw_true":1927,
+    "ynorm_true":1987,
+    "raw_false":281,
+    "ynorm_false":221,
+    "abs_improvmnt":60,
+    "raw_quota":87.27,
+    "ynorm_quota":89.99,
+    "delta_quota":2.72
   }
 ]

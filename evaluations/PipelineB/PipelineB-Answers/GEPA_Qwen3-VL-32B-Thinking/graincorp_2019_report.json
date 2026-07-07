@@ -1,0 +1,36 @@
+{
+  "report_name": "GrainCorp Sustainability Report 2019",
+  "report_title": "GrainCorp Sustainability Report 2019",
+  "emissions": {
+    "scope_1": {
+      "FY16": [
+        {
+          "value": 255772,
+          "unit": "tCO2-e",
+          "label": "total"
+        }
+      ],
+      "FY17": [
+        {
+          "value": 216108,
+          "unit": "tCO2-e",
+          "label": "total"
+        }
+      ],
+      "FY18": [
+        {
+          "value": 211316,
+          "unit": "tCO2-e",
+          "label": "total"
+        }
+      ],
+      "FY19": [
+        {
+          "value": 211400,
+          "unit": "tCO2-e",
+          "label": "total"
+        }
+      ]
+    }
+  }
+}
