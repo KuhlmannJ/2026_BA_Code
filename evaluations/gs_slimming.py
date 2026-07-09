@@ -32,13 +32,13 @@ gs.loc[
     (gs["page"].notna()) & 
     (gs["page"] == "136"), 
     "page"
-] = "139" # On 121 there is nothing worth extracting, whearas on p. 124 there is a GHG emissions table, which the retirever also found
+] = "139" # On 136 there is nothing worth extracting, whearas on p. 136 there is a GHG emissions table, which the retirever also found
 
 gs.loc[
     (gs["report_name"] == "innospec inc_2020_report.pdf") & 
     (gs["page"] == "Env33"), 
     "page"
-] = "36" # Yes, page is called ENV33 but it is the 3zth page in the PDF
+] = "36" # Yes, page is called ENV33 but it is the 36th page in the PDF
 
 # Some page values have "*66" which I ommit to parse easier
 gs["page"] = gs["page"].str.lstrip('*')
@@ -126,6 +126,7 @@ gs_slim = gs_slim.merge(years_present, on="report_name")
 ##########################################
 ### Saving gs_slim to JSON
 gs_slim.to_json(Path(BASE) / "gs_slim.json",index=False, orient="records", indent=4)
+gs_slim.to_csv( Path(BASE) / "gs_slim.csv", index=False)
 
 print("="*60)
 print("="*60)
@@ -136,3 +137,5 @@ print()
 print(gs_slim.drop_duplicates("report_name")["status"].value_counts())
 print()
 print(gs_slim.drop_duplicates("report_name")["scopes_present"].value_counts(dropna=False))
+print()
+print(gs_slim.drop_duplicates("report_name")["years_present"].value_counts(dropna=False))

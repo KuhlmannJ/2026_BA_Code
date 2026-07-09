@@ -29,10 +29,6 @@ export CUDA_HOME=$EBROOTCUDA
 export PIP_CACHE_DIR=$WORK/.cache/pip
 export RUN_TS=$(date +%m%d_%H%M) # To map the only the new retirevals
 
-#pip install gepa
-#pip install openai
-#pip install litellm
-
 # START THE APPLICATION
 python -u "$HOME/2026_BA_Code/src/GEPA/oa_main.py" "$@"
 

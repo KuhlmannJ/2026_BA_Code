@@ -19,7 +19,3 @@ reports_unavail <- setdiff(gs$report_name, reports_downloaded)
 toKeep  <- c("report_name", "year", "scope", "page", "value", "unit", "unit_normalized", "status")
 gs_slim <- subset(gs, select = toKeep)
 gs_slim <- gs_slim[order(gs_slim$report_name), ] #Sort ascending by report_name
-
-
-# Save slimmed down Gold_Standard
-write.csv(gs_slim, file = "gs_slim.csv", row.names = FALSE)

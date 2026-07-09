@@ -89,7 +89,7 @@ def run_extraction(
     extraction_prompt: str,
     output_dir: Path,
     retrieval_dir: Path,
-    max_tokens: int = 16384,
+    max_tokens: int = 32768, #Doubled, as it was only a ceeling getting hit
     dpi: int = 150,
 ) -> None:
     """Run VLM extraction on all PDFs in retrieval_dir; write per-report JSON and results.csv to output_dir."""
