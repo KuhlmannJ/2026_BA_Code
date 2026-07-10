@@ -25,16 +25,18 @@ def banner(title):
 #### 0. GLOBAL VARIABLES ########################################
 banner("STEP 0: GLOBAL VARIABLES")
 
-RETRIEVAL_DIR = Path("../../../localdata/test-A-02-retrievals") if args.test else Path("../../../localdata/A-02-retrievals")
+BASE = os.path.dirname(os.path.abspath(__file__)) # sets "BASE" to directory this .py is located
+
+RETRIEVAL_DIR = Path(BASE) / "../../../localdata/test-A-02-retrievals" if args.test else Path(BASE) / "../../../localdata/A-02-retrievals"
 RETRIEVAL_LIST = list(RETRIEVAL_DIR.glob("*.pdf"))
 
-OUTPUT_DIR    = Path("PipelineA-Answers")
+OUTPUT_DIR    = Path(BASE) / "../../../evaluations/PipelineA/PipelineA-Answers"
 BATCH_ID_FILE = OUTPUT_DIR / "batch_id.txt"
 
 MODEL_ID   = "claude-opus-4-7"
 MAX_TOKENS = 8000
 
-PROMT_PATH = Path("../../../baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
+PROMT_PATH = Path(BASE) / "../../../baselines/baseline_frontier_model/Baseline-Prompt.txt"
 print(PROMT_PATH)
 EXTRACTION_PROMT = PROMT_PATH.read_text()
 

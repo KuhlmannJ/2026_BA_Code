@@ -1,5 +1,6 @@
 import argparse
 import json
+import os
 import time
 
 from pathlib import Path
@@ -22,7 +23,9 @@ def banner(title):
 
 #### 0. GLOBAL VARIABLES ########################################
 
-OUTPUT_DIR    = Path("PipelineA-Answers")
+BASE = os.path.dirname(os.path.abspath(__file__)) # sets "BASE" to directory this .py is located
+
+OUTPUT_DIR    = Path(BASE) / "../../../evaluations/PipelineA/PipelineA-Answers"
 BATCH_ID_FILE = OUTPUT_DIR / "batch_id.txt"
 
 POLL_INTERVAL = 1  # seconds between status checks

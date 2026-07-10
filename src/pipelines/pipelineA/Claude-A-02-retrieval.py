@@ -31,23 +31,26 @@ def banner(title):
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
+SCRATCH_ROOT = Path("/scratch/tmp/jkuhlma1")
+HOME_ROOT    = Path("/home/j/jkuhlma1")
+
 MODEL_NAME = 'nvidia/llama-nemotron-colembed-vl-3b-v2'
 ATTN_IMPL  = "flash_attention_2"
 TOP_K      = 3
 
-PDF_DIR = Path("/scratch/tmp/jkuhlma1/data/test_esg_reports") if args.test else Path("/scratch/tmp/jkuhlma1/data/esg_reports")
+PDF_DIR = (SCRATCH_ROOT / "data" / "esg_reports_test") if args.test else (SCRATCH_ROOT / "data" / "esg_reports")
 PDF_LIST = list(PDF_DIR.glob("*.pdf"))
-EMB_DIR = Path("/scratch/tmp/jkuhlma1/data/embeddings/test_embeddings_colembed_3b_v2") if args.test else Path("/scratch/tmp/jkuhlma1/data/embeddings/embeddings_colembed_3b_v2")
+EMB_DIR = (SCRATCH_ROOT / "data" / "embeddings" / "test_embeddings_colembed_3b_v2") if args.test else (SCRATCH_ROOT / "data" / "embeddings" / "embeddings_colembed_3b_v2")
 EMD_LIST = list(EMB_DIR.glob("*.pt"))
 
-OUTPUT_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-answers")
-RESULT_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals")
+OUTPUT_DIR = SCRATCH_ROOT / "results" / "A-02-answers"
+RESULT_DIR = SCRATCH_ROOT / "results" / "A-02-retrievals"
 
 ## For Claude API
 MODEL_ID   = "claude-opus-4-7"
 MAX_TOKENS = 8000
 
-PROMT_PATH = Path("/home/j/jkuhlma1/2026_BA_Code/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
+PROMT_PATH = HOME_ROOT / "2026_BA_Code" / "baselines" / "baseline_frontier_model" / "Baseline-Prompt.txt"
 EXTRACTION_PROMT = PROMT_PATH.read_text()
 
 # Retrieval query — placeholder for optimize_anything / GEPA optimization

@@ -6,11 +6,12 @@ from oa_mapping import map_to_goldstandard
 
 # ── Paths
 _HERE              = Path(__file__).parent
-_SCRATCH           = Path("/scratch/tmp/jkuhlma1/gepa")
-RUNS_DIR           = _SCRATCH / "runs"
+SCRATCH_ROOT       = Path("/scratch/tmp/jkuhlma1")
+GEPA_DIR           = SCRATCH_ROOT / "gepa"
+RUNS_DIR           = GEPA_DIR / "runs"
 GS_PATH            = _HERE.parent.parent / "evaluations" / "gs_slim.json"
 EVAL_LOG           = RUNS_DIR / "eval_log.csv"
-GEPA_TRAIN_DIR     = Path("/scratch/tmp/jkuhlma1/gepa/gepaTrainSet/")
+GEPA_TRAIN_DIR     = GEPA_DIR / "gepaTrainSet"
 
 # ── Load VLM once at startup
 from B_03_HPC_fn import load_model, run_extraction as _vlm_run_extraction

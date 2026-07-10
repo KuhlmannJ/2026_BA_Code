@@ -52,18 +52,12 @@ outputs = [p.with_suffix(".csv") for p in inputs]
             # inputs  = [
             #     Path(BASE) / "PipelineB-Answers/1st_Qwen3-VL-30B-A3B-Thinking",
             #     Path(BASE) / "PipelineB-Answers/1st_Qwen3-VL-32B-Instruct",
-            #     Path(BASE) / "PipelineB-Answers/1st_Qwen3-VL-32B-Thinking",
-            #     Path(BASE) / "PipelineB-Answers/2nd_Qwen3-VL-32B-Instruct",
-            #     Path(BASE) / "PipelineB-Answers/2nd_Qwen3-VL-30B-A3B-Thinking",
-            #     Path(BASE) / "PipelineB-Answers/2nd_Qwen3-VL-32B-Thinking",
+            #     ...
             # ]
             # outputs = [
             #     Path(BASE) / "PipelineB-Answers/1st_Qwen3-VL-32B-Instruct.csv",
             #     Path(BASE) / "PipelineB-Answers/1st_Qwen3-VL-30B-A3B-Thinking.csv",
-            #     Path(BASE) / "PipelineB-Answers/1st_Qwen3-VL-32B-Thinking.csv",
-            #     Path(BASE) / "PipelineB-Answers/2nd_Qwen3-VL-32B-Instruct.csv",
-            #     Path(BASE) / "PipelineB-Answers/2nd_Qwen3-VL-30B-A3B-Thinking.csv",
-            #     Path(BASE) / "PipelineB-Answers/2nd_Qwen3-VL-32B-Thinking.csv",
+            #     ...
             # ]
 
 total_errors = []

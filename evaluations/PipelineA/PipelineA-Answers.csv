@@ -497,6 +497,10 @@ nippn corp_2022_report,scope_1,FY2021,46.0,"1,000 t-CO2",Scope 1 (Consolidated)
 nippn corp_2022_report,scope_1,FY2022,47.0,"1,000 t-CO2",Scope 1 (Consolidated)
 nippn corp_2022_report,scope_2_location_based,FY2021,114.0,"1,000 t-CO2",Scope 2 (Consolidated)
 nippn corp_2022_report,scope_2_location_based,FY2022,115.0,"1,000 t-CO2",Scope 2 (Consolidated)
+nok corporation_2021_report,scope_1,2020,38.0,"1,000 tons-CO2","Scope 1 (Fuel), NOK Group global, FY 2020"
+nok corporation_2021_report,scope_2_location_based,2020,602.0,"1,000 tons-CO2","Scope 2 (Electricity/heat), NOK Group global, FY 2020; methodology not explicitly labeled as market- or location-based, but calculated using IEA national emission factors by country (consistent with location-based approach)"
+nok corporation_2021_report,scope_3,2020,269.0,"1,000 tons-CO2","Scope 3 total (sum of reported categories), NOK Group, FY 2020; from Scope 3 Breakdown table; Categories 9, 10, 11, 12, and 15 excluded due to current difficulty in calculating"
+nok corporation_2021_report,scope_3,2020,268547.0,"1,000 tons-CO2","Scope 3 (Indirect Emissions), NOK Group, FY 2020; as stated in Material Flow OUTPUT table (value appears inconsistent with Scope 3 Breakdown total of 269; likely a formatting/decimal-separator artifact in the source, but reported as printed)"
 nordea_2017_report,scope_1,2017,51.0,tonnes CO2e,diesel generators (scope 1)
 nordea_2017_report,scope_1,2016,48.0,tonnes CO2e,diesel generators (scope 1)
 nordea_2017_report,scope_2_market_based,2017,3187.0,tonnes CO2e,"electricity, heating, district cooling (scope 2) - net emissions after Guarantees of Origin"

@@ -1,0 +1,7 @@
+,run,gepa_score,category,eval_type,quota,hits
+0,0,0.761062,value,ynorm,86.73,196
+1,0,0.761062,unit,ynorm,81.42,184
+2,1,0.785398,value,ynorm,87.17,197
+3,1,0.785398,unit,ynorm,87.17,197
+4,2,0.823009,value,ynorm,94.25,213
+5,2,0.823009,unit,ynorm,80.53,182

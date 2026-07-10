@@ -40,14 +40,14 @@ QUERY_DEFAULT: str = (
 )
 
 # Scratch-storage layout
-_SCRATCH: Path = Path("/scratch/tmp/jkuhlma1")
+SCRATCH_ROOT: Path = Path("/scratch/tmp/jkuhlma1")
 
-PDF_DIR_FULL: Path        = _SCRATCH / "data" / "esg_reports"
-PDF_DIR_TEST: Path        = _SCRATCH / "data" / "test_esg_reports"
-PDF_DIR_GEPA: Path        = _SCRATCH / "data" / "training" / "test_esg_reports"
-EMB_DIR_DEFAULT: Path     = _SCRATCH / "data" / "embeddings" / "embeddings_colembed_3b_v2"
-RETRIEVALS_DIR_DEFAULT: Path = _SCRATCH / "results" / "A-02-retrievals"
-RETRIEVAL_LOG_DEFAULT: Path  = _SCRATCH / "results" / "A-02-retrieval_log.csv"
+PDF_DIR_FULL: Path        = SCRATCH_ROOT / "data" / "esg_reports"
+PDF_DIR_TEST: Path        = SCRATCH_ROOT / "data" / "esg_reports_test"
+PDF_DIR_GEPA: Path        = SCRATCH_ROOT / "data" / "training" / "esg_reports_test"
+EMB_DIR_DEFAULT: Path     = SCRATCH_ROOT / "data" / "embeddings" / "embeddings_colembed_3b_v2"
+RETRIEVALS_DIR_DEFAULT: Path = SCRATCH_ROOT / "results" / "A-02-retrievals"
+RETRIEVAL_LOG_DEFAULT: Path  = SCRATCH_ROOT / "results" / "A-02-retrieval_log.csv"
 
 _LOG_CSV_HEADER: list[str] = [
     "report", "phase", "top_k_pages", "timestamp", "run_ts", "top_10", "top_10_scores",

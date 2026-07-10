@@ -36,7 +36,7 @@ parser.add_argument("--model", "-m",
 
 parser.add_argument("--prompt-file", "-p",
                     type=Path, default=None,
-                    help="Path to prompt .txt file (overrides default BaselineA-Prompt.txt)")
+                    help="Path to prompt .txt file (overrides default Baseline-Prompt.txt)")
 
 parser.add_argument("--output-dir", "-o",
                     type=Path, default=None,
@@ -73,6 +73,9 @@ banner("START: B-03-HPC.py")
 #### 0. GLOBAL VARIABLES ########################################
 banner("STEP 0: GLOBAL VARIABLES")
 
+SCRATCH_ROOT = Path("/scratch/tmp/jkuhlma1")
+HOME_ROOT    = Path("/home/j/jkuhlma1")
+
 MAX_TOKENS = args.maxTokens
 match args.model:
     case "think":       MODEL_NAME = "Qwen/Qwen3-VL-32B-Thinking"
@@ -85,11 +88,11 @@ match args.model:
 # NOTE: Fixed RETRIEVAL_DIR for all models!
 match True:
     case args.gepaTrainSet:
-        RETRIEVAL_DIR = Path("/scratch/tmp/jkuhlma1/gepa/gepaTrainSet/")
+        RETRIEVAL_DIR = SCRATCH_ROOT / "gepa" / "gepaTrainSet"
     case args.test:
-        RETRIEVAL_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals/test/nvidia/nemotron-colembed-vl-8b-v2/")
+        RETRIEVAL_DIR = SCRATCH_ROOT / "results" / "A-02-retrievals" / "test" / "nvidia" / "nemotron-colembed-vl-8b-v2"
     case _:
-        RETRIEVAL_DIR = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals/nvidia/nemotron-colembed-vl-8b-v2/")
+        RETRIEVAL_DIR = SCRATCH_ROOT / "results" / "A-02-retrievals" / "nvidia" / "nemotron-colembed-vl-8b-v2"
 
 RETRIEVAL_LIST = sorted(list(RETRIEVAL_DIR.glob("*.pdf")))
 
@@ -97,9 +100,9 @@ RETRIEVAL_LIST = sorted(list(RETRIEVAL_DIR.glob("*.pdf")))
 if args.output_dir is not None:
     OUTPUT_DIR = args.output_dir
 elif args.test:
-    OUTPUT_DIR = Path(f"/scratch/tmp/jkuhlma1/results/B-03-answers/test/{MODEL_NAME}")
+    OUTPUT_DIR = SCRATCH_ROOT / "results" / "B-03-answers" / "test" / MODEL_NAME
 else:
-    OUTPUT_DIR = Path(f"/scratch/tmp/jkuhlma1/results/B-03-answers/{MODEL_NAME}")
+    OUTPUT_DIR = SCRATCH_ROOT / "results" / "B-03-answers" / MODEL_NAME
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 RESULTS_FILE  = OUTPUT_DIR / "results.json"
@@ -111,7 +114,7 @@ TIME_ROUND = 2 # Rounding for time logging
 PROMT_PATH = (
     args.prompt_file
     if args.prompt_file is not None
-    else Path("/home/j/jkuhlma1/2026_BA_Code/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
+    else HOME_ROOT / "2026_BA_Code" / "baselines" / "baseline_frontier_model" / "Baseline-Prompt.txt"
 )
 EXTRACTION_PROMT = PROMT_PATH.read_text()
 

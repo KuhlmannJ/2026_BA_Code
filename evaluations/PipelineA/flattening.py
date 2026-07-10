@@ -83,3 +83,21 @@ print()
 print(f"Total Errors: {len(total_errors)}")
 
 print("[WARN] ERRORS DETECTED") if len(total_errors) > 0 else print("[OK] No errors detected.")
+
+##################
+### OUTOUT:
+# ============================================================
+#   Flattening 54 JSONs => /Users/jannikkuhlmann/VSC/LaTeX/2026_BA_Code/evaluations/PipelineA/PipelineA-Answers.csv
+# ============================================================
+#   Reports    : 53
+#   Zeilen     : 647
+#   Fehler     : 0
+#   Gespeichert: /Users/jannikkuhlmann/VSC/LaTeX/2026_BA_Code/evaluations/PipelineA/PipelineA-Answers.csv
+
+# Total Errors: 0
+# [OK] No errors detected.
+##################
+### Interpretation:
+# 'innospec inc_2020_report' is missing in CSV, as the .json only consists of empty values '{}'.
+# Therefore, it was not included in the output .csv
+##################

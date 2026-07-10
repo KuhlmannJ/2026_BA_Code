@@ -12,6 +12,10 @@ from pathlib import Path
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
+#### GLOBAL VARIABLES ####
+SCRATCH_ROOT = Path("/scratch/tmp/jkuhlma1")
+HOME_ROOT    = Path("/home/j/jkuhlma1")
+
 TIME_ROUND = 2
 
 
@@ -109,6 +113,7 @@ def run_extraction(
         print(report_name)
         report_len = 0
 
+        #### PDF -> IMAGE CONVERSION
         t_pymupdf_start = time.time()
         content = []
         with fitz.open(str(pdf_path)) as doc:
@@ -123,6 +128,7 @@ def run_extraction(
         t_pymupdf = round(time.time() - t_pymupdf_start, TIME_ROUND)
         print(f"    PDF2Image done. t_pymupdf: {t_pymupdf}s")
 
+        #### PROMPT ASSEMBLY (page images + extraction prompt -> model inputs)
         inputs = processor.apply_chat_template(
             messages,
             tokenize=True,
@@ -131,6 +137,7 @@ def run_extraction(
             return_tensors="pt",
         ).to("cuda")
 
+        #### INFERENCE LOOP WITH RETRY (second attempt doubles the token budget)
         output_JSON = None
         t_inference = 0
 
@@ -151,6 +158,7 @@ def run_extraction(
             t_processorbatch = round(time.time() - t_processorbatch_start, TIME_ROUND)
             print(f"    t_processorbatch: {t_processorbatch}s")
 
+            #### JSON VALIDATION
             output_clean = clean_json(strip_thinking(output_text))
 
             try:
@@ -165,6 +173,7 @@ def run_extraction(
                 else:
                     print(f"  [ERROR] JSON failed after retry, skipping {report_name}")
 
+        #### RESULT PERSISTENCE (per-report JSON + timing row for the run CSV)
         if output_JSON is not None:
             output_file = output_dir / f"{report_name}.json"
             with open(output_file, "w", encoding="utf-8") as f:
@@ -213,19 +222,27 @@ if __name__ == "__main__":
     banner("START: B_03_HPC_fn.py")
     banner("STEP 0: GLOBAL VARIABLES")
 
+    #### GLOBAL VARIABLES ####
     if args.gepaTrainSet:
-        retrieval_dir = Path("/scratch/tmp/jkuhlma1/gepa/gepaTrainSet/")
+        retrieval_dir = SCRATCH_ROOT / "gepa" / "gepaTrainSet"
     elif args.test:
-        retrieval_dir = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals/test/nvidia/nemotron-colembed-vl-8b-v2/")
+        retrieval_dir = SCRATCH_ROOT / "results" / "A-02-retrievals" / "test" / "nvidia" / "nemotron-colembed-vl-8b-v2"
     else:
-        retrieval_dir = Path("/scratch/tmp/jkuhlma1/results/A-02-retrievals/nvidia/nemotron-colembed-vl-8b-v2/")
+        retrieval_dir = SCRATCH_ROOT / "results" / "A-02-retrievals" / "nvidia" / "nemotron-colembed-vl-8b-v2"
 
     prompt_path = (
         args.prompt_file
         if args.prompt_file is not None
-        else Path("/home/j/jkuhlma1/2026_BA_Code/baselines/baseline_a_frontier_model/BaselineA-Prompt.txt")
+        else HOME_ROOT / "2026_BA_Code" / "baselines" / "baseline_frontier_model" / "Baseline-Prompt.txt"
     )
     extraction_prompt = prompt_path.read_text()
+
+    # --output-dir overrides the whole path; otherwise output_root is completed
+    # with model_name once the VLM is loaded (see below)
+    if args.test:
+        output_root = SCRATCH_ROOT / "results" / "B-03-answers" / "test"
+    else:
+        output_root = SCRATCH_ROOT / "results" / "B-03-answers"
 
     print(f"RETRIEVAL_DIR:  {retrieval_dir}")
     print(f"No. of PDF:     {len(sorted(retrieval_dir.glob('*.pdf')))}")
@@ -248,12 +265,7 @@ if __name__ == "__main__":
 
     model, processor, model_name = load_model(args.model)
 
-    if args.output_dir is not None:
-        output_dir = args.output_dir
-    elif args.test:
-        output_dir = Path(f"/scratch/tmp/jkuhlma1/results/B-03-answers/test/{model_name}")
-    else:
-        output_dir = Path(f"/scratch/tmp/jkuhlma1/results/B-03-answers/{model_name}")
+    output_dir = args.output_dir if args.output_dir is not None else output_root / model_name
 
     print(f"OUTPUT_DIR:     {output_dir}")
 

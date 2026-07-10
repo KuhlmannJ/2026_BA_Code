@@ -2,8 +2,10 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 from pathlib import Path
 
+BASE = os.path.dirname(os.path.abspath(__file__)) # sets "BASE" to directory this .py is located
 
 EXPECTED_SCOPES = [
     "scope_1",
@@ -98,7 +100,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--base-dir",
-        default="evaluations/PipelineB/PipelineB-Answers",
+        default=str(Path(BASE) / "PipelineB-Answers"),
         help="Base directory containing the pipeline answer folders.",
     )
     parser.add_argument(

@@ -26,15 +26,20 @@ banner("STEP 0: GLOBAL VARIABLES")
 
 # ── Adjust these paths ───────────────────────────────────────
 
+BASE = os.path.dirname(os.path.abspath(__file__)) # sets "BASE" to directory this .py is located
+
+SCRATCH_ROOT = Path("/scratch/tmp/jkuhlma1")
+HOME_ROOT    = Path("/home/j/jkuhlma1")
+
 if args.local :
-    GOLD_PATH      = Path(__file__).parent.parent / "gs_slim.json"
-    RETRIEVAL_LOG  = Path("../../localdata/A-02-retrieval_log.csv")
-    OUTPUT_DIR     = Path("../A-02")
+    GOLD_PATH      = Path(BASE) / ".." / "gs_slim.json"
+    RETRIEVAL_LOG  = Path(BASE) / "../../localdata/A-02-retrieval_log.csv"
+    OUTPUT_DIR     = Path(BASE)
     RUN_TS         = args.runts
 else:
-    GOLD_PATH      = Path("/home/j/jkuhlma1/2026_BA_Code/evaluations/gs_slim.json")
-    RETRIEVAL_LOG  = Path("/scratch/tmp/jkuhlma1/results/A-02-retrieval_log.csv")
-    OUTPUT_DIR     = Path("/scratch/tmp/jkuhlma1/evaluations/A-02")
+    GOLD_PATH      = HOME_ROOT / "2026_BA_Code" / "evaluations" / "gs_slim.json"
+    RETRIEVAL_LOG  = SCRATCH_ROOT / "results" / "A-02-retrieval_log.csv"
+    OUTPUT_DIR     = SCRATCH_ROOT / "evaluations" / "A-02"
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     RUN_TS = os.environ.get("RUN_TS") # From sh script for concanated evaluation
 
@@ -213,3 +218,58 @@ print(f"  → {OUTPUT_DIR / 'retrieval_evaluation.csv'}")
 
 misses.to_csv(OUTPUT_DIR / "retrieval_misses.csv", index=False)
 print(f"  → {OUTPUT_DIR / 'retrieval_misses.csv'}")
+
+##################
+### OUTOUT:
+# ============================================================
+#   STEP 0: GLOBAL VARIABLES
+# ============================================================
+
+# ============================================================
+#   STEP 0: PARAMS
+# ============================================================
+# GOLD_PATH     : /Users/jannikkuhlmann/VSC/LaTeX/2026_BA_Code/evaluations/A-02/../gs_slim.json
+# RETRIEVAL_LOG : /Users/jannikkuhlmann/VSC/LaTeX/2026_BA_Code/evaluations/A-02/../../localdata/A-02-retrieval_log.csv
+# OUTPUT_DIR    : /Users/jannikkuhlmann/VSC/LaTeX/2026_BA_Code/evaluations/A-02
+# RUN_TS        : 0613_1445
+# ============================================================
+
+
+# ============================================================
+#   STEP 1: Load Gold Standard
+# ============================================================
+# Reports: 54
+# RUN_TS: 0613_1445
+
+# ============================================================
+#   STEP 2: Load Retrieval Log
+# ============================================================
+# Retrieval log entries: 54
+# Reports in log:        54
+# Retrieval Model used:  nvidia/nemotron-colembed-vl-8b-v2
+# Reports only in gold (0): []
+# Reports only in retrieval log (0): []
+
+# ============================================================
+#   STEP 3: Retrieval Evaluation
+# ============================================================
+#   Evaluated: 72 (report, page) pairs across 54 reports
+
+#   Recall@3 (before ±1 expansion): 91.7%  (66/72)
+#   Recall@3 (after  ±1 expansion): 98.6%  (71/72)
+#   MRR@3                         : 0.864
+
+#   Note: offset-correction (page and page-1) applied in all metrics.
+#   ±1 neighbour expansion is a separate generosity layer (Beck et al.).
+
+#   Full misses (0 reports): []
+
+#   Missed pages (1 total):
+#     granite construction inc_2020_report  p.112  (top_k=[67, 66, 103])
+
+# ============================================================
+#   STEP 4: Save
+# ============================================================
+#   → /Users/jannikkuhlmann/VSC/LaTeX/2026_BA_Code/evaluations/A-02/retrieval_evaluation.csv
+#   → /Users/jannikkuhlmann/VSC/LaTeX/2026_BA_Code/evaluations/A-02/retrieval_misses.csv
+##################

@@ -128,6 +128,8 @@ banner("START: A-02-retrieval.py")
 
 #### 0. GLOBAL VARIABLES ########################################
 
+SCRATCH_ROOT = Path("/scratch/tmp/jkuhlma1")
+
 # Loding and logging loaded .env
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
@@ -155,7 +157,7 @@ TIME_ROUND = 6 # Rounding for time logging
 # FOR CSV LOGGING OF PROGESS
 PHASE           = "8B"
 RUN_TS          = os.environ.get("RUN_TS") #Timestamp for sync evaluation from .sh file
-RETRIEVAL_LOG   = Path("/scratch/tmp/jkuhlma1/results/A-02-retrieval_log.csv") # same for every model!
+RETRIEVAL_LOG   = SCRATCH_ROOT / "results" / "A-02-retrieval_log.csv" # same for every model!
 RETRIEVAL_LOG.parent.mkdir(parents=True, exist_ok=True)
 
 if not RETRIEVAL_LOG.exists():
@@ -166,21 +168,21 @@ if not RETRIEVAL_LOG.exists():
 # The reports in the PDF_DIR dictate what Embeddings get used
 match True:
     case args.test:
-        PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/test_esg_reports")
+        PDF_DIR  = SCRATCH_ROOT / "data" / "esg_reports_test"
     case args.all:
-        PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/all_esg_reports")
+        PDF_DIR  = SCRATCH_ROOT / "data" / "all_esg_reports"
     case _:
-        PDF_DIR  = Path("/scratch/tmp/jkuhlma1/data/esg_reports")
-        
+        PDF_DIR  = SCRATCH_ROOT / "data" / "esg_reports"
+
 PDF_LIST = sorted(list(PDF_DIR.glob("*.pdf")))
 
 
 # Always get all embeddings and only use those relevant for the reports in PDF_DIR
 match True:
     case args.all:
-        EMB_DIR = Path(f"/scratch/tmp/jkuhlma1/data/embeddings/all/{MODEL_NAME}")
+        EMB_DIR = SCRATCH_ROOT / "data" / "embeddings" / "all" / MODEL_NAME
     case _:
-        EMB_DIR = Path(f"/scratch/tmp/jkuhlma1/data/embeddings/{MODEL_NAME}")
+        EMB_DIR = SCRATCH_ROOT / "data" / "embeddings" / MODEL_NAME
 
 EMD_LIST = sorted(list(EMB_DIR.glob("*.pt")))
 
@@ -188,9 +190,9 @@ EMD_LIST = sorted(list(EMB_DIR.glob("*.pt")))
 # OUTPUT Path for extracted PDF Pages "Retirevals"
 match True:
     case args.test:
-        RETRIEVALS_DIR = Path(f"/scratch/tmp/jkuhlma1/results/A-02-retrievals/test/{MODEL_NAME}")
+        RETRIEVALS_DIR = SCRATCH_ROOT / "results" / "A-02-retrievals" / "test" / MODEL_NAME
     case _:
-        RETRIEVALS_DIR = Path(f"/scratch/tmp/jkuhlma1/results/A-02-retrievals/{MODEL_NAME}")
+        RETRIEVALS_DIR = SCRATCH_ROOT / "results" / "A-02-retrievals" / MODEL_NAME
         
 RETRIEVALS_DIR.mkdir(parents=True, exist_ok=True)
 

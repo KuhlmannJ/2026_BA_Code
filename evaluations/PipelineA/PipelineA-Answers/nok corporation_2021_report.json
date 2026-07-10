@@ -1,0 +1,23 @@
+{
+  "report_name": "nok_corporation_2021_report",
+  "report_title": "NOK CORPORATION CSR REPORT 2021",
+  "emissions": {
+    "scope_1": {
+      "2020": [
+        {"value": 38, "unit": "1,000 tons-CO2", "label": "Scope 1 (Fuel), NOK Group global, FY 2020"}
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2020": [
+        {"value": 602, "unit": "1,000 tons-CO2", "label": "Scope 2 (Electricity/heat), NOK Group global, FY 2020; methodology not explicitly labeled as market- or location-based, but calculated using IEA national emission factors by country (consistent with location-based approach)"}
+      ]
+    },
+    "scope_3": {
+      "2020": [
+        {"value": 269, "unit": "1,000 tons-CO2", "label": "Scope 3 total (sum of reported categories), NOK Group, FY 2020; from Scope 3 Breakdown table; Categories 9, 10, 11, 12, and 15 excluded due to current difficulty in calculating"},
+        {"value": 268547, "unit": "1,000 tons-CO2", "label": "Scope 3 (Indirect Emissions), NOK Group, FY 2020; as stated in Material Flow OUTPUT table (value appears inconsistent with Scope 3 Breakdown total of 269; likely a formatting/decimal-separator artifact in the source, but reported as printed)"}
+      ]
+    }
+  }
+}

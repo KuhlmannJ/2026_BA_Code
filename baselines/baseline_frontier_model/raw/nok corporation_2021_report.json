@@ -1,0 +1,28 @@
+{
+  "report_name": "nok_corporation_2021_report",
+  "report_title": "NOK CORPORATION CSR REPORT 2021",
+  "emissions": {
+    "scope_1": {
+      "2020": [{"value": 38, "unit": "1,000 tons-CO2", "label": "Scope 1 (Fuel), FY2020, NOK Group"}]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "2020": [{"value": 602, "unit": "1,000 tons-CO2", "label": "Scope 2 (Electricity/heat), FY2020, NOK Group, methodology unspecified"}]
+    },
+    "scope_3": {
+      "2020": [
+        {"value": 204, "unit": "1,000 tons-CO2", "label": "Category 1: Purchased goods and services 168, FY2020"},
+        {"value": 22, "unit": "1,000 tons-CO2", "label": "Category 2: Capital goods, FY2020"},
+        {"value": 0, "unit": "1,000 tons-CO2", "label": "Category 3: Fuel- and energy-related activities (not included in Scope 1 and 2), FY2020"},
+        {"value": 10, "unit": "1,000 tons-CO2", "label": "Category 4: Upstream transportation and distribution, FY2020"},
+        {"value": 14, "unit": "1,000 tons-CO2", "label": "Category 5: Waste generated from operation, FY2020"},
+        {"value": 5, "unit": "1,000 tons-CO2", "label": "Category 6: Business travel, FY2020"},
+        {"value": 15, "unit": "1,000 tons-CO2", "label": "Category 7: Employee commuting, FY2020"},
+        {"value": 0, "unit": "1,000 tons-CO2", "label": "Category 8: Upstream leased assets, FY2020"},
+        {"value": 0, "unit": "1,000 tons-CO2", "label": "Category 13: Downstream leased assets, FY2020"},
+        {"value": 0, "unit": "1,000 tons-CO2", "label": "Category 14: Franchises, FY2020"},
+        {"value": 269, "unit": "1,000 tons-CO2", "label": "Scope 3 Total, FY2020 (Categories 9, 10, 11, 12, and 15 excluded)"}
+      ]
+    }
+  }
+}

@@ -1,11 +1,14 @@
+import os
 import pandas as pd
 from pathlib import Path
 #### GLOBAL VARIABLES
-MATCH_TOLERANCE = 0.01  # 1 % relative Abweichung gilt als Match    
-    
+BASE = os.path.dirname(os.path.abspath(__file__)) # sets "BASE" to directory this .py is located
+AA_DIR = Path(BASE) / "../Baseline-PipelineA"  # inputs/outputs live in the Baseline-PipelineA folder
+MATCH_TOLERANCE = 0.01  # 1 % relative Abweichung gilt als Match
+
 #### INPUTS
-ba = pd.read_csv(Path("./evaluations/BaselineA-PipelineA/baselineA.csv"))
-pa = pd.read_csv(Path("./evaluations/BaselineA-PipelineA/pipelineA.csv"))
+ba = pd.read_csv(AA_DIR / "baseline.csv")
+pa = pd.read_csv(AA_DIR / "pipelineA.csv")
 
 print(ba.info())
 print(pa.info())
@@ -32,14 +35,14 @@ AA.loc[AA["value_pa"].isna(), "source"] = "baseline_only"
 both = AA[AA["source"] == "both"]
 print(f"  No. of entries      : {len(AA)}")
 print(f"  In both.            : {len(both)}")
-print(f"  Only Baseline A     : {(AA["source"]=="baseline_only").sum()}")
+print(f"  Only Baseline       : {(AA["source"]=="baseline_only").sum()}")
 print(f"  Only Pipeline A     : {(AA["source"]=="pipeline_only").sum()}")
 print(f"  Match (≤1%)         : {AA["match"].sum()}/{len(both)}")
 print(f"  Median Rel. Delta   : {both["rel_diff"].median():.3f}")
 
 
 
-AA.to_csv(Path("./evaluations/BaselineA-PipelineA/A-A_comparison.csv"), index=False)
+AA.to_csv(AA_DIR / "A-A_comparison.csv", index=False)
 print("Gespeichert: A-A_comparison.csv")
 
 AA["scope"] = AA["scope"].str.replace("scope_1", "1", regex=False)
@@ -49,20 +52,22 @@ AA["scope"] = AA["scope"].str.replace("scope_3", "3", regex=False)
 
 
 
-#### LOAD GOLD STANDARD (checklist)
+#### LOAD GOLD STANDARD (gs_slim.json)
 
-checklist = pd.read_csv("./checklist.csv")
-checklist["report_name"] = checklist["report_name"].str.replace(" ", "_", regex=False)
-checklist["report_name"] = checklist["report_name"].str.replace(".pdf", "", regex=False)
+gs = pd.read_json(Path(BASE) / "../gs_slim.json")
 
-checklist["year"] = checklist["year"].astype(str)
-checklist = checklist.rename(columns={"value": "value_gs"})
+# gs_slim holds one row per (report_name, year, scope) even where no value was
+# reported — those empty cells exist for recall, not for value comparison.
+gs = gs[gs["value"].notna()]
+
+gs["year"] = gs["year"].astype(str)
+gs = gs.rename(columns={"value": "value_gs"})
 
 # print(gs.info())
 
 AAG = pd.merge(
     AA,
-    checklist[["report_name", "scope", "year", "value_gs"]],
+    gs[["report_name", "scope", "year", "value_gs"]],
     on=["report_name", "scope", "year"],
     how="left",
 )
@@ -73,7 +78,7 @@ AAG["match_gs_ba"] = AAG["value_gs"] == AAG["value_ba"]
 AAG["match_gs_pa"] = AAG["value_gs"] == AAG["value_pa"]
 AAG["match_gs_ba_pa"] = AAG["match"] & AAG["match_gs_ba"] & AAG["match_gs_pa"]
 
-AAG.to_csv(Path("./evaluations/BaselineA-PipelineA/A-A-G_comparison.csv"), index=False)
+AAG.to_csv(AA_DIR / "A-A-G_comparison.csv", index=False)
 print("Gespeichert: A-A-G_comparison.csv")
 
 ### Problem analysis
@@ -81,7 +86,7 @@ print("Gespeichert: A-A-G_comparison.csv")
 bad_reports = AAG.loc[AAG["match"] != "both", "report_name"].unique()
 AAG_bad = AAG[AAG["report_name"].isin(bad_reports)]
 
-AAG_bad.to_csv("./evaluations/BaselineA-PipelineA/A-A-G_badRows.csv", index=False)
+AAG_bad.to_csv(AA_DIR / "A-A-G_badRows.csv", index=False)
 
 
 
