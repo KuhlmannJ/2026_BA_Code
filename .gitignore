@@ -4,8 +4,8 @@
 __pycache__/
 *.pyc
 .DS_Store
-# Falls du Daten lokal speicherst:
-localdata/
-A-02-retrieval_log.csv
-evaluations/A-02/*.csv
 .Rproj.user
+# Falls du Daten lokal speicherst:
+# localdata/
+# A-02-retrieval_log.csv
+# evaluations/A-02/*.csv
