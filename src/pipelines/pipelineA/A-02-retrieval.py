@@ -170,7 +170,7 @@ match True:
     case args.test:
         PDF_DIR  = SCRATCH_ROOT / "data" / "esg_reports_test"
     case args.all:
-        PDF_DIR  = SCRATCH_ROOT / "data" / "all_esg_reports"
+        PDF_DIR  = SCRATCH_ROOT / "data" / "esg_reports_all"
     case _:
         PDF_DIR  = SCRATCH_ROOT / "data" / "esg_reports"
 

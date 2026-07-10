@@ -6,8 +6,8 @@ from pathlib import Path
 BASE = os.path.dirname(os.path.abspath(__file__)) # sets "BASE" to directory this .py is located
 
 ### Listing all downloadable reports
-#reports_downloaded = {p.name for p in Path("localdata/all_esg_reports").glob("*.pdf")}
-reports_downloaded = {p.name for p in (Path(BASE) / "../localdata/all_esg_reports").glob("*.pdf")}
+#reports_downloaded = {p.name for p in Path("localdata/esg_reports_all").glob("*.pdf")}
+reports_downloaded = {p.name for p in (Path(BASE) / "../localdata/esg_reports_all").glob("*.pdf")}
 
 
 

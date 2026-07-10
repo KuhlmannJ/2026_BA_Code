@@ -1,5 +1,5 @@
 ### Listing all downloadable reports
-reports_downloaded <- list.files("localdata/all_esg_reports/", pattern = ".pdf$")
+reports_downloaded <- list.files("localdata/esg_reports_all/", pattern = ".pdf$")
 ###
 
 ### Loading Gold_Standard in full
