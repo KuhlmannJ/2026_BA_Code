@@ -1,6 +1,6 @@
-# Extracting GHG Emissions Data from ESG Reports
+# Codebase: Extracting GHG Emissions Data from ESG Reports
 
-Code for a Bachelor's thesis at the University of Münster (Chair for Information Systems and Business Process Management). The project extracts greenhouse gas emissions figures (Scope 1, Scope 2 market-/location-based, Scope 3) from corporate ESG reports in PDF form and compares several extraction approaches against a manually curated gold standard.
+Codebase for the Bachelor Thesis _Beyond Text-Based RAG: Evaluating Visual RAG and Long Context for Automated GHG Emission Extraction from Sustainability Reports_ at the University of Münster (Chair for Information Systems and Business Process Management). The project extracts greenhouse gas emissions figures (Scope 1, Scope 2 market-/location-based, Scope 3) from corporate ESG reports in PDF form and compares several extraction approaches against a manually curated gold standard.
 
 The underlying question is how much context an extraction model actually needs: passing a whole report to a long-context frontier model gives the model everything but also a lot of noise, whereas retrieving only the few relevant pages first gives it a clean but potentially incomplete view.
 
