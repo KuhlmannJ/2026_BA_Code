@@ -1,3 +1,8 @@
+# Early exploration only — superseded by A-01-embed.py (NVIDIA ColEmbed).
+# Not part of the thesis pipeline and therefore not covered by requirements-HPC.txt.
+# To execute, you must install at least:
+#   pip install colpali-engine
+
 import time
 import os
 import argparse
