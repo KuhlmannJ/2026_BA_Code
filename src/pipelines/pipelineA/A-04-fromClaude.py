@@ -72,7 +72,9 @@ for entry in client.messages.batches.results(batch_id):
         print(f"[ERR]  {report_name}: {entry.result.type}")
         errored += 1
         continue
-
+    
+    # Finding the actual text response in the whole asnwer, because there are
+    # also other blocks like 'thinking'.
     text_blocks = [b.text for b in entry.result.message.content if b.type == "text"]
     if not text_blocks:
         print(f"[ERR]  {report_name}: no text block in response")
@@ -80,7 +82,7 @@ for entry in client.messages.batches.results(batch_id):
         continue
     raw = text_blocks[0]
 
-    # Step 4 — Persist (same as A-02)
+    # Step 4 — Strip down the JSON format for puring into a file
     clean = raw.strip()
     if clean.startswith("```json"):
         clean = clean[7:-3].strip()
@@ -92,6 +94,8 @@ for entry in client.messages.batches.results(batch_id):
         json.dumps(json.loads(clean), indent=2, ensure_ascii=False)
     )
     
+    
+    #### Some calulations how expensive the report was
     input_tokens  = entry.result.message.usage.input_tokens
     output_tokens = entry.result.message.usage.output_tokens
     
@@ -102,6 +106,9 @@ for entry in client.messages.batches.results(batch_id):
     output_cost   = (output_tokens / 1_000_000) * 14.88
     
     total_cost   += input_cost + output_cost
+    
+    
+    #### Puring all into a log for maybe later use
     
     log_path = OUTPUT_DIR / f"logs/{report_name}.log"
     log_path.write_text(json.dumps({
