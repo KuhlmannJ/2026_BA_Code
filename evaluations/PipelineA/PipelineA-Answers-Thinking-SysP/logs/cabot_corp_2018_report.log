@@ -1,0 +1,8 @@
+{
+  "report": "cabot_corp_2018_report",
+  "batch_id": "msgbatch_017RTUsKE2CWakhmnzVk6s53",
+  "input_tokens": 25468,
+  "output_tokens": 432,
+  "total_cost_USD": 0.08206812000000001,
+  "raw_response": "{\n  \"report_name\": \"Cabot Corporation 2018 Sustainability Report\",\n  \"report_title\": \"Cabot Corporation 2018 Sustainability Report\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2016\": [{\"value\": 4.50, \"unit\": \"MM MT CO2e\", \"label\": \"Scope 1 Absolute Emissions\"}],\n      \"2017\": [{\"value\": 4.58, \"unit\": \"MM MT CO2e\", \"label\": \"Scope 1 Absolute Emissions\"}],\n      \"2018\": [{\"value\": 4.77, \"unit\": \"MM MT CO2e\", \"label\": \"Scope 1 Absolute Emissions\"}]\n    },\n    \"scope_2_market_based\": {},\n    \"scope_2_location_based\": {\n      \"2016\": [{\"value\": 0.34, \"unit\": \"MM MT CO2e\", \"label\": \"Scope 2 Absolute Emissions\"}],\n      \"2017\": [{\"value\": 0.33, \"unit\": \"MM MT CO2e\", \"label\": \"Scope 2 Absolute Emissions\"}],\n      \"2018\": [{\"value\": 0.32, \"unit\": \"MM MT CO2e\", \"label\": \"Scope 2 Absolute Emissions\"}]\n    },\n    \"scope_3\": {}\n  }\n}"
+}

@@ -1,0 +1,8 @@
+{
+  "report": "nordea_2017_report",
+  "batch_id": "msgbatch_017RTUsKE2CWakhmnzVk6s53",
+  "input_tokens": 35096,
+  "output_tokens": 422,
+  "total_cost_USD": 0.11051448000000001,
+  "raw_response": "{\n  \"report_name\": \"Nordea Sustainability Report 2017\",\n  \"report_title\": \"Nordea Sustainability Report 2017\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2017\": [{\"value\": 51, \"unit\": \"tonnes CO2e\", \"label\": \"diesel generators (scope 1)\"}],\n      \"2016\": [{\"value\": 48, \"unit\": \"tonnes CO2e\", \"label\": \"diesel generators (scope 1)\"}]\n    },\n    \"scope_2_market_based\": {\n      \"2017\": [{\"value\": 3187, \"unit\": \"tonnes CO2e\", \"label\": \"electricity, heating, district cooling (scope 2) - net emissions after Guarantees of Origin\"}],\n      \"2016\": [{\"value\": 3409, \"unit\": \"tonnes CO2e\", \"label\": \"electricity, heating, district cooling (scope 2) - net emissions after Guarantees of Origin\"}]\n    },\n    \"scope_3\": {\n      \"2017\": [{\"value\": 19500, \"unit\": \"tonnes CO2e\", \"label\": \"business travel (scope 3)\"}],\n      \"2016\": [{\"value\": 13576, \"unit\": \"tonnes CO2e\", \"label\": \"business travel (scope 3)\"}]\n    }\n  }\n}"
+}

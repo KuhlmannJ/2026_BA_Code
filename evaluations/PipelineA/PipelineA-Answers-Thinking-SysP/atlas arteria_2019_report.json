@@ -1,0 +1,98 @@
+{
+  "report_name": "Atlas Arteria Sustainability Report 2019",
+  "report_title": "Atlas Arteria Sustainability Report 2019",
+  "emissions": {
+    "scope_1": {
+      "2016": [
+        {
+          "value": 6182,
+          "unit": "tonnes CO2e",
+          "label": "APRR Scope 1 (31.14% equity share)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 6541,
+          "unit": "tonnes CO2e",
+          "label": "APRR Scope 1 (31.14% equity share)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 5942,
+          "unit": "tonnes CO2e",
+          "label": "APRR Scope 1 (31.14% equity share)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 6027,
+          "unit": "tonnes CO2e",
+          "label": "APRR Scope 1 (31.14% equity share)"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {},
+    "scope_3": {
+      "2016": [
+        {
+          "value": 1913208,
+          "unit": "tonnes CO2e",
+          "label": "APRR Scope 3 - customer traffic emissions (31.14% equity share)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 2135936,
+          "unit": "tonnes CO2e",
+          "label": "APRR Scope 3 - customer traffic emissions (31.14% equity share)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 2212963,
+          "unit": "tonnes CO2e",
+          "label": "APRR Scope 3 - customer traffic emissions (31.14% equity share)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 2230582,
+          "unit": "tonnes CO2e",
+          "label": "APRR Scope 3 - customer traffic emissions (31.14% equity share)"
+        }
+      ]
+    },
+    "scope_2": {
+      "2016": [
+        {
+          "value": 1291,
+          "unit": "tonnes CO2e",
+          "label": "APRR Scope 2 (31.14% equity share)"
+        }
+      ],
+      "2017": [
+        {
+          "value": 1244,
+          "unit": "tonnes CO2e",
+          "label": "APRR Scope 2 (31.14% equity share)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 957,
+          "unit": "tonnes CO2e",
+          "label": "APRR Scope 2 (31.14% equity share)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 773,
+          "unit": "tonnes CO2e",
+          "label": "APRR Scope 2 (31.14% equity share)"
+        }
+      ]
+    }
+  }
+}

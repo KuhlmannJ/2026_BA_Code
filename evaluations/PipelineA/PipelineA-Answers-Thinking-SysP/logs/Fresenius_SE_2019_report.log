@@ -1,0 +1,8 @@
+{
+  "report": "Fresenius_SE_2019_report",
+  "batch_id": "msgbatch_017RTUsKE2CWakhmnzVk6s53",
+  "input_tokens": 30605,
+  "output_tokens": 205,
+  "total_cost_USD": 0.09394725,
+  "raw_response": "{\n  \"report_name\": \"Fresenius Annual Report 2019\",\n  \"report_title\": \"Fresenius | Annual Report 2019\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2019\": [{\"value\": 517, \"unit\": \"thousand t CO2 equivalents\", \"label\": \"Total Scope 1\"}],\n      \"2018\": [{\"value\": 521, \"unit\": \"thousand t CO2 equivalents\", \"label\": \"Total Scope 1\"}]\n    },\n    \"scope_2_market_based\": {},\n    \"scope_2_location_based\": {},\n    \"scope_3\": {}\n  }\n}"
+}

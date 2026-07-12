@@ -1,0 +1,8 @@
+{
+  "report": "webuild_2019_report",
+  "batch_id": "msgbatch_01VSKDx1PFscStWmurggn6vZ",
+  "input_tokens": 23501,
+  "output_tokens": 560,
+  "total_cost_USD": 0.07813077,
+  "raw_response": "{\n  \"report_name\": \"Salini Impregilo 2019 Consolidated Non-financial Statement\",\n  \"report_title\": \"Salini Impregilo Consolidated Non-financial Statement 2019\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2017\": [{\"value\": 566952, \"unit\": \"tCO2e\", \"label\": \"Direct emissions (Scope 1)\"}],\n      \"2018\": [{\"value\": 467234, \"unit\": \"tCO2e\", \"label\": \"Direct emissions (Scope 1)\"}],\n      \"2019\": [{\"value\": 350593, \"unit\": \"tCO2e\", \"label\": \"Direct emissions (Scope 1)\"}]\n    },\n    \"scope_2_location_based\": {\n      \"2017\": [{\"value\": 43388, \"unit\": \"tCO2e\", \"label\": \"Indirect emissions (Scope 2) - location-based\"}],\n      \"2018\": [{\"value\": 54637, \"unit\": \"tCO2e\", \"label\": \"Indirect emissions (Scope 2) - location-based\"}],\n      \"2019\": [{\"value\": 43371, \"unit\": \"tCO2e\", \"label\": \"Indirect emissions (Scope 2) - location-based\"}]\n    },\n    \"scope_3\": {\n      \"2017\": [{\"value\": 137577, \"unit\": \"tCO2e\", \"label\": \"Other indirect emissions (Scope 3)\"}],\n      \"2018\": [{\"value\": 117528, \"unit\": \"tCO2e\", \"label\": \"Other indirect emissions (Scope 3)\"}],\n      \"2019\": [{\"value\": 61573, \"unit\": \"tCO2e\", \"label\": \"Other indirect emissions (Scope 3)\"}]\n    }\n  }\n}"
+}

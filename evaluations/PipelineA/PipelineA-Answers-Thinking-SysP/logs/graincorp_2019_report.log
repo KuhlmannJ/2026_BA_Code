@@ -1,0 +1,8 @@
+{
+  "report": "graincorp_2019_report",
+  "batch_id": "msgbatch_017RTUsKE2CWakhmnzVk6s53",
+  "input_tokens": 28519,
+  "output_tokens": 504,
+  "total_cost_USD": 0.09220095,
+  "raw_response": "{\n  \"report_name\": \"GrainCorp Sustainability Report 2019\",\n  \"report_title\": \"GrainCorp Sustainability Report 2019\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"FY16\": [{\"value\": 235772, \"unit\": \"tCO2-e\", \"label\": \"Scope 1 GHG Emissions\"}],\n      \"FY17\": [{\"value\": 216108, \"unit\": \"tCO2-e\", \"label\": \"Scope 1 GHG Emissions\"}],\n      \"FY18\": [{\"value\": 211316, \"unit\": \"tCO2-e\", \"label\": \"Scope 1 GHG Emissions\"}],\n      \"FY19\": [{\"value\": 211400, \"unit\": \"tCO2-e\", \"label\": \"Scope 1 GHG Emissions\"}]\n    },\n    \"scope_2_market_based\": {},\n    \"scope_2_location_based\": {\n      \"FY16\": [{\"value\": 165563, \"unit\": \"tCO2-e\", \"label\": \"Scope 2 GHG Emissions\"}],\n      \"FY17\": [{\"value\": 167666, \"unit\": \"tCO2-e\", \"label\": \"Scope 2 GHG Emissions\"}],\n      \"FY18\": [{\"value\": 151718, \"unit\": \"tCO2-e\", \"label\": \"Scope 2 GHG Emissions\"}],\n      \"FY19\": [{\"value\": 145806, \"unit\": \"tCO2-e\", \"label\": \"Scope 2 GHG Emissions\"}]\n    },\n    \"scope_3\": {}\n  }\n}"
+}

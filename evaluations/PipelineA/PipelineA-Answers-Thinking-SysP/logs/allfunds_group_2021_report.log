@@ -1,0 +1,8 @@
+{
+  "report": "allfunds_group_2021_report",
+  "batch_id": "msgbatch_017RTUsKE2CWakhmnzVk6s53",
+  "input_tokens": 24683,
+  "output_tokens": 455,
+  "total_cost_USD": 0.08007891,
+  "raw_response": "{\n  \"report_name\": \"Allfunds Sustainability Report 2021\",\n  \"report_title\": \"Allfunds Sustainability Report 2021\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2019\": [{\"value\": 68.51, \"unit\": \"tCO2e\", \"label\": \"Scope 1 CO2 emissions\"}],\n      \"2020\": [{\"value\": 0.00, \"unit\": \"tCO2e\", \"label\": \"Scope 1 CO2 emissions\"}],\n      \"2021\": [{\"value\": 7.31, \"unit\": \"tCO2e\", \"label\": \"Scope 1 CO2 emissions\"}]\n    },\n    \"scope_2_market_based\": {\n      \"2019\": [{\"value\": 436.43, \"unit\": \"tCO2e\", \"label\": \"Scope 2 CO2 emissions\"}],\n      \"2020\": [{\"value\": 91.69, \"unit\": \"tCO2e\", \"label\": \"Scope 2 CO2 emissions\"}],\n      \"2021\": [{\"value\": 30.39, \"unit\": \"tCO2e\", \"label\": \"Scope 2 CO2 emissions\"}]\n    },\n    \"scope_2_location_based\": {},\n    \"scope_3\": {\n      \"2020\": [{\"value\": 393.82, \"unit\": \"tCO2e\", \"label\": \"Scope 3 CO2 emissions (Spain only)\"}]\n    }\n  }\n}"
+}

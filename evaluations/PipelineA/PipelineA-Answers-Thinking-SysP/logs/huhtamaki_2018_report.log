@@ -1,0 +1,8 @@
+{
+  "report": "huhtamaki_2018_report",
+  "batch_id": "msgbatch_017RTUsKE2CWakhmnzVk6s53",
+  "input_tokens": 26139,
+  "output_tokens": 600,
+  "total_cost_USD": 0.08656083,
+  "raw_response": "{\n  \"report_name\": \"Huhtamaki Corporate Responsibility Report 2018\",\n  \"report_title\": \"Huhtamaki Corporate Responsibility Report 2018\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2014\": [{\"value\": 188000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Scope 1\"}],\n      \"2015\": [{\"value\": 191000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Scope 1\"}],\n      \"2016\": [{\"value\": 198000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Scope 1\"}],\n      \"2017\": [{\"value\": 207000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Scope 1\"}],\n      \"2018\": [{\"value\": 207000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Scope 1\"}]\n    },\n    \"scope_2_market_based\": {},\n    \"scope_2_location_based\": {\n      \"2014\": [{\"value\": 479000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Scope 2 (location-based)\"}],\n      \"2015\": [{\"value\": 487000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Scope 2 (location-based)\"}],\n      \"2016\": [{\"value\": 526000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Scope 2 (location-based)\"}],\n      \"2017\": [{\"value\": 549000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Scope 2 (location-based)\"}],\n      \"2018\": [{\"value\": 559000, \"unit\": \"metric tons CO2 eqv\", \"label\": \"Scope 2 (location-based)\"}]\n    },\n    \"scope_3\": {}\n  }\n}"
+}

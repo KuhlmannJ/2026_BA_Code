@@ -1,0 +1,8 @@
+{
+  "report": "evolution_mining_ltd_2020_report",
+  "batch_id": "msgbatch_01VSKDx1PFscStWmurggn6vZ",
+  "input_tokens": 24661,
+  "output_tokens": 635,
+  "total_cost_USD": 0.08269197,
+  "raw_response": "{\n  \"report_name\": \"Evolution Mining Sustainability Report 2020\",\n  \"report_title\": \"Evolution Mining Limited Sustainability Report 2020\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"FY20\": [{\"value\": 157857, \"unit\": \"t CO2-e\", \"label\": \"Greenhouse gas emissions Scope 1\"}],\n      \"FY19\": [{\"value\": 155085, \"unit\": \"t CO2-e\", \"label\": \"Greenhouse gas emissions Scope 1\"}],\n      \"FY18\": [{\"value\": 159061, \"unit\": \"t CO2-e\", \"label\": \"Greenhouse gas emissions Scope 1\"}],\n      \"FY17\": [{\"value\": 167734, \"unit\": \"t CO2-e\", \"label\": \"Greenhouse gas emissions Scope 1\"}],\n      \"FY16\": [{\"value\": 157584, \"unit\": \"t CO2-e\", \"label\": \"Greenhouse gas emissions Scope 1\"}]\n    },\n    \"scope_2_market_based\": {},\n    \"scope_2_location_based\": {\n      \"FY20\": [{\"value\": 398187, \"unit\": \"t CO2-e\", \"label\": \"Greenhouse gas emissions Scope 2\"}],\n      \"FY19\": [{\"value\": 383449, \"unit\": \"t CO2-e\", \"label\": \"Greenhouse gas emissions Scope 2\"}],\n      \"FY18\": [{\"value\": 394144, \"unit\": \"t CO2-e\", \"label\": \"Greenhouse gas emissions Scope 2\"}],\n      \"FY17\": [{\"value\": 430993, \"unit\": \"t CO2-e\", \"label\": \"Greenhouse gas emissions Scope 2\"}],\n      \"FY16\": [{\"value\": 472257, \"unit\": \"t CO2-e\", \"label\": \"Greenhouse gas emissions Scope 2\"}]\n    },\n    \"scope_3\": {}\n  }\n}"
+}

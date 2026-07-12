@@ -1,0 +1,63 @@
+{
+  "report_name": "Kilroy Realty 2018 Sustainability Report",
+  "report_title": "Kilroy Realty Corporate Sustainability Report 2018",
+  "emissions": {
+    "scope_1": {
+      "2017": [
+        {
+          "value": 4120,
+          "unit": "Tonnes",
+          "label": "Whole Portfolio Scope 1 - Absolute Consumption"
+        }
+      ],
+      "2018": [
+        {
+          "value": 3908,
+          "unit": "MtCO2e",
+          "label": "Whole Portfolio Scope 1 - Absolute Consumption (DNV GL verified)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2017": [
+        {
+          "value": 35735,
+          "unit": "Tonnes",
+          "label": "Whole Portfolio Scope 2 (Market-Based) - Absolute Consumption"
+        }
+      ],
+      "2018": [
+        {
+          "value": 30439,
+          "unit": "MtCO2e",
+          "label": "Whole Portfolio Scope 2 (Market-Based) - Absolute Consumption (DNV GL verified)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2017": [
+        {
+          "value": 36504,
+          "unit": "Tonnes",
+          "label": "Whole Portfolio Scope 2 (Location-Based) - Absolute Consumption"
+        }
+      ],
+      "2018": [
+        {
+          "value": 33207,
+          "unit": "MtCO2e",
+          "label": "Whole Portfolio Scope 2 (Location-Based) - Absolute Consumption (DNV GL verified)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2018": [
+        {
+          "value": 31984,
+          "unit": "MtCO2e",
+          "label": "Scope 3 Emissions (Downstream Leased Assets) - Whole Portfolio"
+        }
+      ]
+    }
+  }
+}

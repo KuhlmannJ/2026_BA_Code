@@ -1,0 +1,40 @@
+{
+  "report_name": "NIPPN Integrated Report 2022",
+  "report_title": "NIPPN Integrated Report 2022",
+  "emissions": {
+    "scope_1": {
+      "FY2021": [
+        {
+          "value": 46,
+          "unit": "1,000 t-CO2",
+          "label": "Scope 1 (Consolidated)"
+        }
+      ],
+      "FY2022": [
+        {
+          "value": 47,
+          "unit": "1,000 t-CO2",
+          "label": "Scope 1 (Consolidated)"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "FY2021": [
+        {
+          "value": 114,
+          "unit": "1,000 t-CO2",
+          "label": "Scope 2 (Consolidated)"
+        }
+      ],
+      "FY2022": [
+        {
+          "value": 115,
+          "unit": "1,000 t-CO2",
+          "label": "Scope 2 (Consolidated)"
+        }
+      ]
+    },
+    "scope_3": {}
+  }
+}

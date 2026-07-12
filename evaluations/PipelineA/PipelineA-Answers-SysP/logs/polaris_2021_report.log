@@ -1,0 +1,8 @@
+{
+  "report": "polaris_2021_report",
+  "batch_id": "msgbatch_01VSKDx1PFscStWmurggn6vZ",
+  "input_tokens": 28080,
+  "output_tokens": 626,
+  "total_cost_USD": 0.09271248,
+  "raw_response": "{\n  \"report_name\": \"Polaris Sustainability Report 2021\",\n  \"report_title\": \"Polaris Sustainability Report 2021\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2019\": [{\"value\": 42, \"unit\": \"tCO2e\", \"label\": \"TOTAL POLARIS Scope 1\"}],\n      \"2020\": [{\"value\": 7485, \"unit\": \"tCO2e\", \"label\": \"TOTAL POLARIS Scope 1\"}],\n      \"2021\": [{\"value\": 7229, \"unit\": \"tCO2e\", \"label\": \"TOTAL POLARIS Scope 1\"}]\n    },\n    \"scope_2_market_based\": {\n      \"2021\": [{\"value\": 3370, \"unit\": \"tCO2e\", \"label\": \"TOTAL POLARIS Scope 2 (Market Based)\"}]\n    },\n    \"scope_2_location_based\": {\n      \"2019\": [{\"value\": 378, \"unit\": \"tCO2e\", \"label\": \"TOTAL POLARIS Scope 2 (Location Based)\"}],\n      \"2020\": [{\"value\": 2869, \"unit\": \"tCO2e\", \"label\": \"TOTAL POLARIS Scope 2 (Location Based)\"}],\n      \"2021\": [{\"value\": 3231, \"unit\": \"tCO2e\", \"label\": \"TOTAL POLARIS Scope 2 (Location Based)\"}]\n    },\n    \"scope_3\": {\n      \"2019\": [{\"value\": 14067, \"unit\": \"tCO2e\", \"label\": \"TOTAL POLARIS Scope 3\"}],\n      \"2020\": [{\"value\": 26959, \"unit\": \"tCO2e\", \"label\": \"TOTAL POLARIS Scope 3\"}],\n      \"2021\": [{\"value\": 78645, \"unit\": \"tCO2e\", \"label\": \"TOTAL POLARIS Scope 3\"}]\n    }\n  }\n}"
+}

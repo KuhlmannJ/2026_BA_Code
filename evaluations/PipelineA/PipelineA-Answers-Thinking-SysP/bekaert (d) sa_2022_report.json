@@ -1,0 +1,130 @@
+{
+  "report_name": "Bekaert Integrated Annual Report 2022",
+  "report_title": "Bekaert Integrated Annual Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 294799,
+          "unit": "ton CO2",
+          "label": "Scope 1 (natural gas + LPG + fuel), excluding JVs"
+        },
+        {
+          "value": 338420,
+          "unit": "ton CO2",
+          "label": "Scope 1 (natural gas + LPG + fuel), including JVs"
+        }
+      ],
+      "2020": [
+        {
+          "value": 271230,
+          "unit": "ton CO2",
+          "label": "Scope 1 (natural gas + LPG + fuel), excluding JVs"
+        },
+        {
+          "value": 313527,
+          "unit": "ton CO2",
+          "label": "Scope 1 (natural gas + LPG + fuel), including JVs"
+        }
+      ],
+      "2021": [
+        {
+          "value": 284910,
+          "unit": "ton CO2",
+          "label": "Scope 1 (natural gas + LPG + fuel), excluding JVs"
+        },
+        {
+          "value": 336201,
+          "unit": "ton CO2",
+          "label": "Scope 1 (natural gas + LPG + fuel), including JVs"
+        }
+      ],
+      "2022": [
+        {
+          "value": 269969,
+          "unit": "ton CO2",
+          "label": "Scope 1 (natural gas + LPG + fuel), excluding JVs"
+        },
+        {
+          "value": 316951,
+          "unit": "ton CO2",
+          "label": "Scope 1 GHG emissions total, including JVs (explicitly stated)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [
+        {
+          "value": 1363060,
+          "unit": "ton CO2",
+          "label": "Scope 2 (derived: Scope 1&2 total minus Scope 1), excluding JVs"
+        },
+        {
+          "value": 1403417,
+          "unit": "ton CO2",
+          "label": "Scope 2 (derived: Scope 1&2 total minus Scope 1), including JVs"
+        }
+      ],
+      "2020": [
+        {
+          "value": 1236847,
+          "unit": "ton CO2",
+          "label": "Scope 2 (derived: Scope 1&2 total minus Scope 1), excluding JVs"
+        },
+        {
+          "value": 1270041,
+          "unit": "ton CO2",
+          "label": "Scope 2 (derived: Scope 1&2 total minus Scope 1), including JVs"
+        }
+      ],
+      "2021": [
+        {
+          "value": 1362344,
+          "unit": "ton CO2",
+          "label": "Scope 2 (derived: Scope 1&2 total minus Scope 1), excluding JVs"
+        },
+        {
+          "value": 1416699,
+          "unit": "ton CO2",
+          "label": "Scope 2 (derived: Scope 1&2 total minus Scope 1), including JVs"
+        }
+      ],
+      "2022": [
+        {
+          "value": 1241018,
+          "unit": "ton CO2",
+          "label": "Scope 2 (derived: Scope 1&2 total minus Scope 1), excluding JVs"
+        },
+        {
+          "value": 1289630,
+          "unit": "ton CO2",
+          "label": "Scope 2 (derived: Scope 1&2 total minus Scope 1), including JVs"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {
+      "2019": [
+        {
+          "value": 6045636,
+          "unit": "ton CO2e",
+          "label": "Total Scope 3 emissions (including JVs), reference/base year for SBT"
+        }
+      ],
+      "2021": [
+        {
+          "value": 6736962,
+          "unit": "ton CO2e",
+          "label": "Total Scope 3 emissions (including JVs)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 6187086,
+          "unit": "ton CO2e",
+          "label": "Total Scope 3 emissions (including JVs)"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "report": "innospec_inc_2020_report",
+  "batch_id": "msgbatch_017RTUsKE2CWakhmnzVk6s53",
+  "input_tokens": 22888,
+  "output_tokens": 198,
+  "total_cost_USD": 0.0709236,
+  "raw_response": "{\n  \"report_name\": \"Innospec Sustainability Report\",\n  \"report_title\": \"Innospec Sustainability Report - Environment: Conserving and protecting\",\n  \"emissions\": {\n    \"scope_1\": {},\n    \"scope_2_market_based\": {\n      \"2020\": [{\"value\": 0, \"unit\": \"metric tonnes CO2 equivalent\", \"label\": \"Scope 2 GHG emissions from electricity at manufacturing sites (market-based, 100% renewable)\"}]\n    },\n    \"scope_2_location_based\": {},\n    \"scope_3\": {}\n  }\n}"
+}

@@ -1,0 +1,107 @@
+{
+  "report_name": "sumitomo_sustainability_report",
+  "report_title": "Sustainability of Sumitomo Corporation Group",
+  "emissions": {
+    "scope_1": {
+      "FY2017": [
+        {
+          "value": 934276,
+          "unit": "t-CO2e",
+          "label": "Scope 1 Energy-related CO2 (Consolidated)"
+        }
+      ],
+      "FY2018": [
+        {
+          "value": 939346,
+          "unit": "t-CO2e",
+          "label": "Scope 1 Energy-related CO2 (Consolidated)"
+        }
+      ],
+      "FY2019": [
+        {
+          "value": 791730,
+          "unit": "t-CO2e",
+          "label": "Scope 1 Energy-related CO2 (Consolidated)"
+        }
+      ],
+      "FY2020": [
+        {
+          "value": 1526724,
+          "unit": "t-CO2e",
+          "label": "Scope 1 total (Consolidated, incl. Energy-related CO2 and other GHGs)"
+        },
+        {
+          "value": 1522514,
+          "unit": "t-CO2e",
+          "label": "Scope 1 Energy-related CO2 (Consolidated)"
+        },
+        {
+          "value": 4210,
+          "unit": "t-CO2e",
+          "label": "Scope 1 other GHGs - N2O (Consolidated)"
+        }
+      ]
+    },
+    "scope_2_market_based": {},
+    "scope_2_location_based": {
+      "FY2017": [
+        {
+          "value": 752378,
+          "unit": "t-CO2e",
+          "label": "Scope 2 (Consolidated)"
+        }
+      ],
+      "FY2018": [
+        {
+          "value": 630412,
+          "unit": "t-CO2e",
+          "label": "Scope 2 (Consolidated)"
+        }
+      ],
+      "FY2019": [
+        {
+          "value": 683156,
+          "unit": "t-CO2e",
+          "label": "Scope 2 (Consolidated)"
+        }
+      ],
+      "FY2020": [
+        {
+          "value": 652611,
+          "unit": "t-CO2e",
+          "label": "Scope 2 (Consolidated)"
+        }
+      ]
+    },
+    "scope_3": {
+      "FY2017": [
+        {
+          "value": 73980,
+          "unit": "t-CO2e",
+          "label": "Scope 3 Total (Non-consolidated in Japan: Logistics, Waste, Overseas Business Trips, Commuting, Downstream Leased Assets)"
+        }
+      ],
+      "FY2018": [
+        {
+          "value": 71320,
+          "unit": "t-CO2e",
+          "label": "Scope 3 Total (Non-consolidated in Japan)"
+        }
+      ],
+      "FY2019": [
+        {
+          "value": 62187,
+          "unit": "t-CO2e",
+          "label": "Scope 3 Total (Non-consolidated in Japan)"
+        }
+      ],
+      "FY2020": [
+        {
+          "value": 34381,
+          "unit": "t-CO2e",
+          "label": "Scope 3 Total (Non-consolidated in Japan)"
+        }
+      ]
+    }
+  }
+}

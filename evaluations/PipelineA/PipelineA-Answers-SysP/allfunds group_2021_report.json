@@ -1,0 +1,62 @@
+{
+  "report_name": "allfunds_sustainability_report",
+  "report_title": "Allfunds Sustainability Report 2021",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 68.51,
+          "unit": "tCO2e",
+          "label": "Scope 1 CO2 emissions"
+        }
+      ],
+      "2020": [
+        {
+          "value": 0.0,
+          "unit": "tCO2e",
+          "label": "Scope 1 CO2 emissions"
+        }
+      ],
+      "2021": [
+        {
+          "value": 7.31,
+          "unit": "tCO2e",
+          "label": "Scope 1 CO2 emissions"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2019": [
+        {
+          "value": 436.43,
+          "unit": "tCO2e",
+          "label": "Scope 2 CO2 emissions"
+        }
+      ],
+      "2020": [
+        {
+          "value": 91.69,
+          "unit": "tCO2e",
+          "label": "Scope 2 CO2 emissions"
+        }
+      ],
+      "2021": [
+        {
+          "value": 30.39,
+          "unit": "tCO2e",
+          "label": "Scope 2 CO2 emissions"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {
+      "2020": [
+        {
+          "value": 393.82,
+          "unit": "tCO2e",
+          "label": "Scope 3 CO2 emissions (Spain only)"
+        }
+      ]
+    }
+  }
+}

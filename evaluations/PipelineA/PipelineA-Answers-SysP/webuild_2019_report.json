@@ -1,0 +1,75 @@
+{
+  "report_name": "Salini Impregilo 2019 Consolidated Non-financial Statement",
+  "report_title": "Salini Impregilo Consolidated Non-financial Statement 2019",
+  "emissions": {
+    "scope_1": {
+      "2017": [
+        {
+          "value": 566952,
+          "unit": "tCO2e",
+          "label": "Direct emissions (Scope 1)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 467234,
+          "unit": "tCO2e",
+          "label": "Direct emissions (Scope 1)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 350593,
+          "unit": "tCO2e",
+          "label": "Direct emissions (Scope 1)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2017": [
+        {
+          "value": 43388,
+          "unit": "tCO2e",
+          "label": "Indirect emissions (Scope 2) - location-based"
+        }
+      ],
+      "2018": [
+        {
+          "value": 54637,
+          "unit": "tCO2e",
+          "label": "Indirect emissions (Scope 2) - location-based"
+        }
+      ],
+      "2019": [
+        {
+          "value": 43371,
+          "unit": "tCO2e",
+          "label": "Indirect emissions (Scope 2) - location-based"
+        }
+      ]
+    },
+    "scope_3": {
+      "2017": [
+        {
+          "value": 137577,
+          "unit": "tCO2e",
+          "label": "Other indirect emissions (Scope 3)"
+        }
+      ],
+      "2018": [
+        {
+          "value": 117528,
+          "unit": "tCO2e",
+          "label": "Other indirect emissions (Scope 3)"
+        }
+      ],
+      "2019": [
+        {
+          "value": 61573,
+          "unit": "tCO2e",
+          "label": "Other indirect emissions (Scope 3)"
+        }
+      ]
+    }
+  }
+}

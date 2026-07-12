@@ -1,0 +1,8 @@
+{
+  "report": "lundin_gold_inc_2021_report",
+  "batch_id": "msgbatch_017RTUsKE2CWakhmnzVk6s53",
+  "input_tokens": 21338,
+  "output_tokens": 246,
+  "total_cost_USD": 0.06703434,
+  "raw_response": "{\n  \"report_name\": \"Lundin Gold 2021 Sustainability Report\",\n  \"report_title\": \"Lundin Gold 2021 Sustainability Report\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2021\": [{\"value\": 25399, \"unit\": \"tCO2e\", \"label\": \"Total Scope 1\"}]\n    },\n    \"scope_2_market_based\": {},\n    \"scope_2_location_based\": {\n      \"2021\": [{\"value\": 24170, \"unit\": \"tCO2e\", \"label\": \"Total Scope 2\"}]\n    },\n    \"scope_3\": {\n      \"2021\": [{\"value\": 746750, \"unit\": \"tCO2e\", \"label\": \"Total Scope 3\"}]\n    }\n  }\n}"
+}

@@ -1,0 +1,8 @@
+{
+  "report": "nok_corporation_2021_report",
+  "batch_id": "msgbatch_01VSKDx1PFscStWmurggn6vZ",
+  "input_tokens": 21559,
+  "output_tokens": 296,
+  "total_cost_USD": 0.06843471,
+  "raw_response": "{\n  \"report_name\": \"NOK_CORPORATION_CSR_REPORT_2021\",\n  \"report_title\": \"NOK CORPORATION CSR REPORT 2021\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"FY 2020\": [{\"value\": 38, \"unit\": \"1,000 tons-CO2\", \"label\": \"Scope 1 (Fuel)\"}]\n    },\n    \"scope_2_market_based\": {},\n    \"scope_2_location_based\": {\n      \"FY 2020\": [{\"value\": 602, \"unit\": \"1,000 tons-CO2\", \"label\": \"Scope 2 (Electricity/heat)\"}]\n    },\n    \"scope_3\": {\n      \"FY 2020\": [{\"value\": 269, \"unit\": \"1,000 tons-CO2\", \"label\": \"Scope 3 Total (Indirect Emissions)\"}]\n    }\n  }\n}"
+}

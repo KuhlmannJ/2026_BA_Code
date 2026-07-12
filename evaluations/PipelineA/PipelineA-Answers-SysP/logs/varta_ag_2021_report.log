@@ -1,0 +1,8 @@
+{
+  "report": "varta_ag_2021_report",
+  "batch_id": "msgbatch_01VSKDx1PFscStWmurggn6vZ",
+  "input_tokens": 15944,
+  "output_tokens": 522,
+  "total_cost_USD": 0.05512104,
+  "raw_response": "{\n  \"report_name\": \"VARTA_AG_Sustainability_Report_2021\",\n  \"report_title\": \"VARTA AG – Sustainability Report 2021\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2019\": [{\"value\": 3598, \"unit\": \"CO2 eq t\", \"label\": \"Scope 1\"}],\n      \"2020\": [{\"value\": 4417, \"unit\": \"CO2 eq t\", \"label\": \"Scope 1\"}],\n      \"2021\": [{\"value\": 5894, \"unit\": \"CO2 eq t\", \"label\": \"Scope 1\"}]\n    },\n    \"scope_2_market_based\": {\n      \"2019\": [{\"value\": 10347, \"unit\": \"CO2 eq t\", \"label\": \"Scope 2 (market-based)\"}],\n      \"2020\": [{\"value\": 12296, \"unit\": \"CO2 eq t\", \"label\": \"Scope 2 (market-based)\"}],\n      \"2021\": [{\"value\": 1168, \"unit\": \"CO2 eq t\", \"label\": \"Scope 2 (market-based)\"}]\n    },\n    \"scope_2_location_based\": {\n      \"2019\": [{\"value\": 17038, \"unit\": \"CO2-eq t\", \"label\": \"Scope 2 (location-based)\"}],\n      \"2020\": [{\"value\": 20885, \"unit\": \"CO2-eq t\", \"label\": \"Scope 2 (location-based)\"}],\n      \"2021\": [{\"value\": 23503, \"unit\": \"CO2-eq t\", \"label\": \"Scope 2 (location-based)\"}]\n    },\n    \"scope_3\": {}\n  }\n}"
+}

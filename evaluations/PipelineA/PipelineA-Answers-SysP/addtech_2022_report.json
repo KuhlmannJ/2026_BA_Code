@@ -1,0 +1,91 @@
+{
+  "report_name": "Addtech Annual Report 2021-2022",
+  "report_title": "Addtech Annual Report 2021/2022",
+  "emissions": {
+    "scope_1": {
+      "2021/2022": [
+        {
+          "value": 2041,
+          "unit": "tonnes CO2e",
+          "label": "Scope 1 total"
+        }
+      ],
+      "2020/2021": [
+        {
+          "value": 1910,
+          "unit": "tonnes CO2e",
+          "label": "Scope 1 total"
+        }
+      ],
+      "2019/2020": [
+        {
+          "value": 2071,
+          "unit": "tonnes CO2e",
+          "label": "Scope 1 total"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2021/2022": [
+        {
+          "value": 4087,
+          "unit": "tonnes CO2e",
+          "label": "Emissions, energy consumption – Market Based Method"
+        }
+      ],
+      "2020/2021": [
+        {
+          "value": 4250,
+          "unit": "tonnes CO2e",
+          "label": "Emissions, energy consumption – Market Based Method"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2021/2022": [
+        {
+          "value": 3709,
+          "unit": "tonnes CO2e",
+          "label": "Emissions, energy consumption – Location Based Method"
+        }
+      ],
+      "2020/2021": [
+        {
+          "value": 3395,
+          "unit": "tonnes CO2e",
+          "label": "Emissions, energy consumption – Location Based Method"
+        }
+      ],
+      "2019/2020": [
+        {
+          "value": 3979,
+          "unit": "tonnes CO2e",
+          "label": "Emissions, energy consumption – Location Based Method"
+        }
+      ]
+    },
+    "scope_3": {
+      "2021/2022": [
+        {
+          "value": 22961,
+          "unit": "tonnes CO2e",
+          "label": "Scope 3 total (categories 3, 4, 6, 9)"
+        }
+      ],
+      "2020/2021": [
+        {
+          "value": 19860,
+          "unit": "tonnes CO2e",
+          "label": "Scope 3 total (categories 3, 4, 6, 9)"
+        }
+      ],
+      "2019/2020": [
+        {
+          "value": 23132,
+          "unit": "tonnes CO2e",
+          "label": "Scope 3 total (categories 3, 4, 6, 9)"
+        }
+      ]
+    }
+  }
+}

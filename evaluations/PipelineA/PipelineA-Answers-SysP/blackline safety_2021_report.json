@@ -1,0 +1,54 @@
+{
+  "report_name": "Blackline Safety ESG Report",
+  "report_title": "Environmental, Social and Governance Report",
+  "emissions": {
+    "scope_1": {
+      "FY2021": [
+        {
+          "value": 215.0,
+          "unit": "MT CO2e",
+          "label": "Scope 1"
+        }
+      ],
+      "FY2020": [
+        {
+          "value": 165.6,
+          "unit": "MT CO2e",
+          "label": "Scope 1"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "FY2021": [
+        {
+          "value": 576.0,
+          "unit": "MT CO2e",
+          "label": "Scope 2 (location-based)"
+        }
+      ],
+      "FY2020": [
+        {
+          "value": 227.4,
+          "unit": "MT CO2e",
+          "label": "Scope 2 (location-based)"
+        }
+      ]
+    },
+    "scope_3": {
+      "FY2021": [
+        {
+          "value": 1606.2,
+          "unit": "MT CO2e",
+          "label": "Scope 3 (categories 3, 6, 7; spend-based)"
+        }
+      ],
+      "FY2020": [
+        {
+          "value": 1661.2,
+          "unit": "MT CO2e",
+          "label": "Scope 3 (categories 3, 6, 7; spend-based)"
+        }
+      ]
+    }
+  }
+}

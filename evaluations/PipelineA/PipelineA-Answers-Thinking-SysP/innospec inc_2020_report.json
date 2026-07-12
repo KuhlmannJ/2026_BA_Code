@@ -1,0 +1,18 @@
+{
+  "report_name": "Innospec Sustainability Report",
+  "report_title": "Innospec Sustainability Report - Environment: Conserving and protecting",
+  "emissions": {
+    "scope_1": {},
+    "scope_2_market_based": {
+      "2020": [
+        {
+          "value": 0,
+          "unit": "metric tonnes CO2 equivalent",
+          "label": "Scope 2 GHG emissions from electricity at manufacturing sites (market-based, 100% renewable)"
+        }
+      ]
+    },
+    "scope_2_location_based": {},
+    "scope_3": {}
+  }
+}

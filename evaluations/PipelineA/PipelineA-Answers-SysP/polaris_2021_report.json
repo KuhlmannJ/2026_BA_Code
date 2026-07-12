@@ -1,0 +1,84 @@
+{
+  "report_name": "Polaris Sustainability Report 2021",
+  "report_title": "Polaris Sustainability Report 2021",
+  "emissions": {
+    "scope_1": {
+      "2019": [
+        {
+          "value": 42,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS Scope 1"
+        }
+      ],
+      "2020": [
+        {
+          "value": 7485,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS Scope 1"
+        }
+      ],
+      "2021": [
+        {
+          "value": 7229,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS Scope 1"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2021": [
+        {
+          "value": 3370,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS Scope 2 (Market Based)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2019": [
+        {
+          "value": 378,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS Scope 2 (Location Based)"
+        }
+      ],
+      "2020": [
+        {
+          "value": 2869,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS Scope 2 (Location Based)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 3231,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS Scope 2 (Location Based)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2019": [
+        {
+          "value": 14067,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS Scope 3"
+        }
+      ],
+      "2020": [
+        {
+          "value": 26959,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS Scope 3"
+        }
+      ],
+      "2021": [
+        {
+          "value": 78645,
+          "unit": "tCO2e",
+          "label": "TOTAL POLARIS Scope 3"
+        }
+      ]
+    }
+  }
+}

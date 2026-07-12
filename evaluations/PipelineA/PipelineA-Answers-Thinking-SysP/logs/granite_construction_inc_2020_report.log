@@ -1,0 +1,8 @@
+{
+  "report": "granite_construction_inc_2020_report",
+  "batch_id": "msgbatch_017RTUsKE2CWakhmnzVk6s53",
+  "input_tokens": 25118,
+  "output_tokens": 293,
+  "total_cost_USD": 0.07896030000000001,
+  "raw_response": "{\n  \"report_name\": \"Granite Construction 2020 Sustainability Report\",\n  \"report_title\": \"Granite Construction 2020 Sustainability Report\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2015\": [{\"value\": 132285, \"unit\": \"US tons CO2e\", \"label\": \"Total Scope 1 CO2 Equivalents\"}],\n      \"2020\": [{\"value\": 244727.61, \"unit\": \"US tons CO2e\", \"label\": \"Total Scope 1 CO2 Equivalents\"}]\n    },\n    \"scope_2_market_based\": {},\n    \"scope_2_location_based\": {},\n    \"scope_3\": {\n      \"2020\": [{\"value\": 8399, \"unit\": \"US tons CO2\", \"label\": \"Scope 3 - Employee business travel (total estimated CO2 emissions; partial scope)\"}]\n    }\n  }\n}"
+}

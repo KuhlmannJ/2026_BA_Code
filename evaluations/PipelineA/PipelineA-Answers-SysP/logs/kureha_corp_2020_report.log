@@ -1,0 +1,8 @@
+{
+  "report": "kureha_corp_2020_report",
+  "batch_id": "msgbatch_01VSKDx1PFscStWmurggn6vZ",
+  "input_tokens": 27303,
+  "output_tokens": 571,
+  "total_cost_USD": 0.08958639,
+  "raw_response": "{\n  \"report_name\": \"Kureha CSR Report 2020\",\n  \"report_title\": \"KUREHA CSR REPORT 2020\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2017\": [{\"value\": 363, \"unit\": \"1,000 t CO2\", \"label\": \"Scope 1 (Kureha)\"}],\n      \"2018\": [{\"value\": 338, \"unit\": \"1,000 t CO2\", \"label\": \"Scope 1 (Kureha)\"}],\n      \"2019\": [{\"value\": 356, \"unit\": \"1,000 t CO2\", \"label\": \"Scope 1 (Kureha)\"}]\n    },\n    \"scope_2_location_based\": {\n      \"2017\": [{\"value\": 31, \"unit\": \"1,000 t CO2\", \"label\": \"Scope 2 (Kureha)\"}],\n      \"2018\": [{\"value\": 42, \"unit\": \"1,000 t CO2\", \"label\": \"Scope 2 (Kureha)\"}],\n      \"2019\": [{\"value\": 34, \"unit\": \"1,000 t CO2\", \"label\": \"Scope 2 (Kureha)\"}]\n    },\n    \"scope_3\": {\n      \"2017\": [{\"value\": 6, \"unit\": \"1,000 t CO2\", \"label\": \"Scope 3 (Kureha) - Categories 4, 6, 7, 9\"}],\n      \"2018\": [{\"value\": 7, \"unit\": \"1,000 t CO2\", \"label\": \"Scope 3 (Kureha) - Categories 4, 6, 7, 9\"}],\n      \"2019\": [{\"value\": 7, \"unit\": \"1,000 t CO2\", \"label\": \"Scope 3 (Kureha) - Categories 4, 6, 7, 9\"}]\n    }\n  }\n}"
+}

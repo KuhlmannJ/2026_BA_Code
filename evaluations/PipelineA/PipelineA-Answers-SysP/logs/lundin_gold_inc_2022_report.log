@@ -1,0 +1,8 @@
+{
+  "report": "lundin_gold_inc_2022_report",
+  "batch_id": "msgbatch_01VSKDx1PFscStWmurggn6vZ",
+  "input_tokens": 18862,
+  "output_tokens": 379,
+  "total_cost_USD": 0.061659660000000005,
+  "raw_response": "{\n  \"report_name\": \"Lundin Gold 2022 Sustainability Report\",\n  \"report_title\": \"Lundin Gold 2022 Sustainability Report\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2022\": [{\"value\": 24024, \"unit\": \"tCO2e\", \"label\": \"Total Scope 1\"}],\n      \"2021\": [{\"value\": 25354, \"unit\": \"tCO2e\", \"label\": \"Total Scope 1 (recalculated baseline)\"}]\n    },\n    \"scope_2_location_based\": {\n      \"2022\": [{\"value\": 5576, \"unit\": \"tCO2e\", \"label\": \"Total Scope 2\"}],\n      \"2021\": [{\"value\": 5413, \"unit\": \"tCO2e\", \"label\": \"Total Scope 2 (recalculated baseline)\"}]\n    },\n    \"scope_3\": {\n      \"2022\": [{\"value\": 166742, \"unit\": \"tCO2e\", \"label\": \"Total Scope 3\"}],\n      \"2021\": [{\"value\": 193764, \"unit\": \"tCO2e\", \"label\": \"Total Scope 3 (recalculated)\"}]\n    }\n  }\n}"
+}

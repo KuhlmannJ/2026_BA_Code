@@ -1,0 +1,8 @@
+{
+  "report": "salzgitter_ag_2018_report",
+  "batch_id": "msgbatch_01VSKDx1PFscStWmurggn6vZ",
+  "input_tokens": 19639,
+  "output_tokens": 468,
+  "total_cost_USD": 0.06529167000000001,
+  "raw_response": "{\n  \"report_name\": \"Separate Non-financial report 2018 of Salzgitter AG\",\n  \"report_title\": \"Separate Non-financial report 2018 of Salzgitter AG\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2018\": [{\"value\": 8710, \"unit\": \"kt CO2\", \"label\": \"Direct GHG emissions from operating plants (Scope 1)\"}],\n      \"2017\": [{\"value\": 8470, \"unit\": \"kt CO2\", \"label\": \"Direct GHG emissions from operating plants (Scope 1)\"}]\n    },\n    \"scope_2_market_based\": {},\n    \"scope_2_location_based\": {},\n    \"scope_3\": {\n      \"2018\": [{\"value\": 1508, \"unit\": \"kt CO2\", \"label\": \"Other indirect GHG emissions from feedstock purchase (Scope 3)\"}],\n      \"2017\": [{\"value\": 1362, \"unit\": \"kt CO2\", \"label\": \"Other indirect GHG emissions from feedstock purchase (Scope 3)\"}]\n    },\n    \"scope_2\": {\n      \"2018\": [{\"value\": 600, \"unit\": \"kt CO2\", \"label\": \"Indirect GHG emissions (Scope 2)\"}],\n      \"2017\": [{\"value\": 693, \"unit\": \"kt CO2\", \"label\": \"Indirect GHG emissions (Scope 2)\"}]\n    }\n  }\n}"
+}

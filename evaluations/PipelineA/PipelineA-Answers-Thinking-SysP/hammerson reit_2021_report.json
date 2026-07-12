@@ -1,0 +1,70 @@
+{
+  "report_name": "Hammerson plc Annual Report 2021",
+  "report_title": "Hammerson plc Annual Report 2021",
+  "emissions": {
+    "scope_1": {
+      "2020": [
+        {
+          "value": 3309,
+          "unit": "tCO2e",
+          "label": "Scope 1 Total - Global"
+        }
+      ],
+      "2021": [
+        {
+          "value": 4293,
+          "unit": "tCO2e",
+          "label": "Scope 1 Total - Global"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2020": [
+        {
+          "value": 3331,
+          "unit": "tCO2e",
+          "label": "Scope 2 Total - Market Based Method - Global"
+        }
+      ],
+      "2021": [
+        {
+          "value": 3850,
+          "unit": "tCO2e",
+          "label": "Scope 2 Total - Market Based Method - Global"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2020": [
+        {
+          "value": 13711,
+          "unit": "tCO2e",
+          "label": "Scope 2 Total - Location Based - Global"
+        }
+      ],
+      "2021": [
+        {
+          "value": 13210,
+          "unit": "tCO2e",
+          "label": "Scope 2 Total - Location Based - Global"
+        }
+      ]
+    },
+    "scope_3": {
+      "2020": [
+        {
+          "value": 825,
+          "unit": "tCO2e",
+          "label": "Scope 3 Total - Global (Business travel, Waste, Water)"
+        }
+      ],
+      "2021": [
+        {
+          "value": 692,
+          "unit": "tCO2e",
+          "label": "Scope 3 Total - Global (Business travel, Waste, Water)"
+        }
+      ]
+    }
+  }
+}

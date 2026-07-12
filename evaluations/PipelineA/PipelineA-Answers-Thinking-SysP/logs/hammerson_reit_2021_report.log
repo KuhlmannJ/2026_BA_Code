@@ -1,0 +1,8 @@
+{
+  "report": "hammerson_reit_2021_report",
+  "batch_id": "msgbatch_017RTUsKE2CWakhmnzVk6s53",
+  "input_tokens": 36703,
+  "output_tokens": 522,
+  "total_cost_USD": 0.11677527,
+  "raw_response": "{\n  \"report_name\": \"Hammerson plc Annual Report 2021\",\n  \"report_title\": \"Hammerson plc Annual Report 2021\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2020\": [{\"value\": 3309, \"unit\": \"tCO2e\", \"label\": \"Scope 1 Total - Global\"}],\n      \"2021\": [{\"value\": 4293, \"unit\": \"tCO2e\", \"label\": \"Scope 1 Total - Global\"}]\n    },\n    \"scope_2_market_based\": {\n      \"2020\": [{\"value\": 3331, \"unit\": \"tCO2e\", \"label\": \"Scope 2 Total - Market Based Method - Global\"}],\n      \"2021\": [{\"value\": 3850, \"unit\": \"tCO2e\", \"label\": \"Scope 2 Total - Market Based Method - Global\"}]\n    },\n    \"scope_2_location_based\": {\n      \"2020\": [{\"value\": 13711, \"unit\": \"tCO2e\", \"label\": \"Scope 2 Total - Location Based - Global\"}],\n      \"2021\": [{\"value\": 13210, \"unit\": \"tCO2e\", \"label\": \"Scope 2 Total - Location Based - Global\"}]\n    },\n    \"scope_3\": {\n      \"2020\": [{\"value\": 825, \"unit\": \"tCO2e\", \"label\": \"Scope 3 Total - Global (Business travel, Waste, Water)\"}],\n      \"2021\": [{\"value\": 692, \"unit\": \"tCO2e\", \"label\": \"Scope 3 Total - Global (Business travel, Waste, Water)\"}]\n    }\n  }\n}"
+}

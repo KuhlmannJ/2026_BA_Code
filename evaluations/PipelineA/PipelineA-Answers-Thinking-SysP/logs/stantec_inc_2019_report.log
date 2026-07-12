@@ -1,0 +1,8 @@
+{
+  "report": "stantec_inc_2019_report",
+  "batch_id": "msgbatch_017RTUsKE2CWakhmnzVk6s53",
+  "input_tokens": 25249,
+  "output_tokens": 455,
+  "total_cost_USD": 0.08175993000000001,
+  "raw_response": "{\n  \"report_name\": \"2019 Stantec Sustainability Report\",\n  \"report_title\": \"2019 Stantec Sustainability Report\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2019\": [{\"value\": 7540, \"unit\": \"mtCO2e\", \"label\": \"Scope 1\"}],\n      \"2018\": [{\"value\": 10333, \"unit\": \"mtCO2e\", \"label\": \"Scope 1\"}],\n      \"2017\": [{\"value\": 9585, \"unit\": \"mtCO2e\", \"label\": \"Scope 1\"}]\n    },\n    \"scope_2_location_based\": {\n      \"2019\": [{\"value\": 40726, \"unit\": \"mtCO2e\", \"label\": \"Scope 2\"}],\n      \"2018\": [{\"value\": 37810, \"unit\": \"mtCO2e\", \"label\": \"Scope 2\"}],\n      \"2017\": [{\"value\": 43228, \"unit\": \"mtCO2e\", \"label\": \"Scope 2\"}]\n    },\n    \"scope_3\": {\n      \"2019\": [{\"value\": 29301, \"unit\": \"mtCO2e\", \"label\": \"Scope 3\"}],\n      \"2018\": [{\"value\": 29318, \"unit\": \"mtCO2e\", \"label\": \"Scope 3\"}],\n      \"2017\": [{\"value\": 26800, \"unit\": \"mtCO2e\", \"label\": \"Scope 3\"}]\n    }\n  }\n}"
+}

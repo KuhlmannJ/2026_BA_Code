@@ -41,6 +41,8 @@ def main() -> None:
     batch_id = BATCH_ID_FILE.read_text().strip()
     client   = anthropic.Anthropic()
 
+    (OUTPUT_DIR / "logs").mkdir(parents=True, exist_ok=True)
+
     banner(f"Polling batch: {batch_id}")
 
     # Poll until done
@@ -74,7 +76,12 @@ def main() -> None:
             errored += 1
             continue
 
-        raw = entry.result.message.content[0].text
+        text_blocks = [b.text for b in entry.result.message.content if b.type == "text"]
+        if not text_blocks:
+            print(f"[ERR]  {report_name}: no text block in response")
+            errored += 1
+            continue
+        raw = text_blocks[0]
 
         # Step 4 — Persist (same as A-02)
         clean = raw.strip()

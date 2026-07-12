@@ -1,0 +1,70 @@
+{
+  "report_name": "Americold ESG Report 2022",
+  "report_title": "Environmental, Social, and Governance Report 2022",
+  "emissions": {
+    "scope_1": {
+      "2021": [
+        {
+          "value": 72134,
+          "unit": "MTCO2e",
+          "label": "Scope 1 Emissions - Total Company"
+        }
+      ],
+      "2022": [
+        {
+          "value": 102340,
+          "unit": "MTCO2e",
+          "label": "Scope 1 Emissions - 2022 Total Company (Owned 1/1/22 ~ 12/31/22)"
+        }
+      ]
+    },
+    "scope_2_market_based": {
+      "2021": [
+        {
+          "value": 556660,
+          "unit": "MTCO2e",
+          "label": "Market-Based Scope 2 Emissions - Total Company"
+        }
+      ],
+      "2022": [
+        {
+          "value": 554491,
+          "unit": "MTCO2e",
+          "label": "Market-Based Scope 2 Emissions - 2022 Total Company (Owned 1/1/22 ~ 12/31/22)"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2021": [
+        {
+          "value": 556660,
+          "unit": "MTCO2e",
+          "label": "Scope 2 Location-Based Emissions - Total Company (same as market-based per report note)"
+        }
+      ],
+      "2022": [
+        {
+          "value": 554491,
+          "unit": "MTCO2e",
+          "label": "Scope 2 Location-Based Emissions - 2022 Total Company (same as market-based per report note)"
+        }
+      ]
+    },
+    "scope_3": {
+      "2021": [
+        {
+          "value": 1067697,
+          "unit": "MTCO2e",
+          "label": "Scope 3 Emissions - Total Company"
+        }
+      ],
+      "2022": [
+        {
+          "value": 611634,
+          "unit": "MTCO2e",
+          "label": "Scope 3 Emissions - 2022 Total Company (Owned 1/1/22 ~ 12/31/22)"
+        }
+      ]
+    }
+  }
+}

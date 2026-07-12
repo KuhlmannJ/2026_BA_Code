@@ -1,0 +1,8 @@
+{
+  "report": "acuity_brands_inc_2022_report",
+  "batch_id": "msgbatch_017RTUsKE2CWakhmnzVk6s53",
+  "input_tokens": 25176,
+  "output_tokens": 314,
+  "total_cost_USD": 0.07944504,
+  "raw_response": "{\n  \"report_name\": \"Acuity Brands 2022 EarthLIGHT Report\",\n  \"report_title\": \"2022 EarthLIGHT Report\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"FY2022\": [{\"value\": 34327, \"unit\": \"MT CO2e\", \"label\": \"Total Scope 1\"}]\n    },\n    \"scope_2_market_based\": {\n      \"FY2022\": [{\"value\": 42234, \"unit\": \"MT CO2e\", \"label\": \"Total Scope 2 (Market-based)\"}]\n    },\n    \"scope_2_location_based\": {\n      \"FY2022\": [{\"value\": 46637, \"unit\": \"MT CO2e\", \"label\": \"Scope 2 Emissions (Location based)\"}]\n    },\n    \"scope_3\": {\n      \"FY2022\": [{\"value\": 35119419, \"unit\": \"MT CO2e\", \"label\": \"Total Scope 3\"}]\n    }\n  }\n}"
+}

@@ -1,0 +1,8 @@
+{
+  "report": "cardinal_energy_ltd_2021_report",
+  "batch_id": "msgbatch_01VSKDx1PFscStWmurggn6vZ",
+  "input_tokens": 16519,
+  "output_tokens": 395,
+  "total_cost_USD": 0.05493903,
+  "raw_response": "{\n  \"report_name\": \"2021 ESG Report\",\n  \"report_title\": \"2021 ESG Report\",\n  \"emissions\": {\n    \"scope_1\": {\n      \"2021\": [{\"value\": 231, \"unit\": \"10^3 tonnes CO2e\", \"label\": \"Direct GHG emissions\"}],\n      \"2020\": [{\"value\": 160, \"unit\": \"10^3 tonnes CO2e\", \"label\": \"Direct GHG emissions\"}],\n      \"2019\": [{\"value\": 188, \"unit\": \"10^3 tonnes CO2e\", \"label\": \"Direct GHG emissions\"}]\n    },\n    \"scope_2_market_based\": {},\n    \"scope_2_location_based\": {\n      \"2021\": [{\"value\": 228, \"unit\": \"10^3 tonnes CO2e\", \"label\": \"Indirect GHG emissions\"}],\n      \"2020\": [{\"value\": 259, \"unit\": \"10^3 tonnes CO2e\", \"label\": \"Indirect GHG emissions\"}],\n      \"2019\": [{\"value\": 277, \"unit\": \"10^3 tonnes CO2e\", \"label\": \"Indirect GHG emissions\"}]\n    },\n    \"scope_3\": {}\n  }\n}"
+}

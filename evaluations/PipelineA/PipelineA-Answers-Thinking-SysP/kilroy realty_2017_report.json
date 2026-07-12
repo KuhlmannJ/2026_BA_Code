@@ -1,0 +1,38 @@
+{
+  "report_name": "kilroy-realty-sustainability-report-2017",
+  "report_title": "Kilroy Realty Sustainability Report 2017",
+  "emissions": {
+    "scope_1": {
+      "2016": [
+        {
+          "value": 4059,
+          "unit": "Tonnes CO2e",
+          "label": "Whole Portfolio Absolute Scope 1"
+        }
+      ],
+      "2017": [
+        {
+          "value": 4641,
+          "unit": "Tonnes CO2e",
+          "label": "Whole Portfolio Absolute Scope 1"
+        }
+      ]
+    },
+    "scope_2_location_based": {
+      "2016": [
+        {
+          "value": 44145,
+          "unit": "Tonnes CO2e",
+          "label": "Whole Portfolio Absolute Scope 2"
+        }
+      ],
+      "2017": [
+        {
+          "value": 42947,
+          "unit": "Tonnes CO2e",
+          "label": "Whole Portfolio Absolute Scope 2"
+        }
+      ]
+    }
+  }
+}
