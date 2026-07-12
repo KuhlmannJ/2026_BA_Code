@@ -16,10 +16,10 @@ import re
 from pathlib import Path
 
 BASE = Path(__file__).parent
-REFERENCE = BASE / "PipelineA-Answers-Bare"
+REFERENCE = BASE / "PipelineA-Answers" / "bare"
 TARGETS = [
-    BASE / "PipelineA-Answers-SysP",
-    BASE / "PipelineA-Answers-Thinking-SysP",
+    BASE / "PipelineA-Answers" / "thinking",
+    BASE / "PipelineA-Answers" / "thinking_system",
 ]
 
 

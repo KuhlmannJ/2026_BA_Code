@@ -48,7 +48,7 @@ def flatten_json(filepath: Path) -> list[dict]:
 
     return rows
 
-input_dir = Path(BASE)
+input_dir = Path(BASE) / "PipelineA-Answers"
 inputs  = sorted(p for p in input_dir.iterdir() if p.is_dir())
 outputs = [p.with_suffix(".csv") for p in inputs]
 
