@@ -4,7 +4,7 @@ import base64
 import io
 import json
 
-import fitz #pip install pymupdf
+import pymupdf
 from PIL import Image
 from pathlib import Path
 
@@ -87,7 +87,7 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     print(report_name)
     
     current_pdf_imgages = []
-    with fitz.open(str(pdf_path)) as doc :
+    with pymupdf.open(str(pdf_path)) as doc :
         for page in doc :
             pix = page.get_pixmap(dpi = DPI, alpha=False) # If PDF is RGBA (transparent)
             img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)

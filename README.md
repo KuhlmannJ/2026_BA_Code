@@ -46,7 +46,7 @@ Steps 1 and 2 are identical to Pipeline A: [B-01-embed-ColEmbed3Bv2.py](src/pipe
 
 ### Baseline
 
-The raw long-context extractions live in [baselines/baseline_frontier_model/raw/](baselines/baseline_frontier_model/raw/) and are consumed directly by the evaluation notebooks. The script that produced them has since been removed from the repo; only the prompt and its outputs remain.
+The raw long-context extractions live in [baselines/baseline_frontier_model/raw/](baselines/baseline_frontier_model/raw/) and are consumed directly by the evaluation notebooks. They were manually generated via the [Claude web interface](https://claude.ai/).
 
 ### GEPA prompt optimization
 
@@ -92,7 +92,7 @@ python -m venv ~/venvs/<name> && source ~/venvs/<name>/bin/activate
 pip install -r requirements-HPC.txt
 ```
 
-- **Python**: the HPC environment is pinned to 3.12 (the `flash_attn` wheel in `requirements-HPC.txt` is a prebuilt `cp312` / CUDA 13 / torch 2.12 binary and will not install on another combination). The local environment was built on 3.13.
+- **Python**: the HPC environment is pinned to 3.12 (the `flash_attn` wheel in `requirements-HPC.txt` is a prebuilt `cp312` / CUDA 13 / torch 2.12 binary and will not install on another combination, thanks to [the prebuild wheels by mjun0812](https://github.com/mjun0812/flash-attention-prebuild-wheels)). The local environment was built on 3.13.
 - **Not covered**: `colpali-engine` is in neither file. It is only needed for [A-01-embed-ColPali.py](src/pipelines/pipelineA/A-01-embed-ColPali.py), which is early exploration rather than part of the pipeline; the file's header comment notes the extra install.
 - **Credentials**: API keys are read from a local `.env` (not tracked) via `python-dotenv`.
 - **Running on the cluster**: the GPU steps are submitted as SLURM jobs — see [sh/](sh/). Those scripts, and the scratch paths inside the Python files, are hardcoded to the author's cluster account and will need adjusting before they run anywhere else.

@@ -6,7 +6,7 @@ import json
 import time
 import csv
 
-import fitz #pip install pymupdf
+import pymupdf
 from PIL import Image
 from pathlib import Path
 
@@ -222,7 +222,7 @@ for pdf_path in sorted(RETRIEVAL_LIST):
     t_pymupdf_start = time.time()
     #### Packaging Promt and Images (as img as no API call))
     content = []
-    with fitz.open(str(pdf_path)) as doc :
+    with pymupdf.open(str(pdf_path)) as doc :
         report_len = len(doc)
         for page in doc :
             pix = page.get_pixmap(dpi = DPI, alpha=False) # If PDF is RGBA (transparent)

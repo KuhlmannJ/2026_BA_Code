@@ -11,7 +11,7 @@ import csv
 from datetime import datetime
 
 from pathlib import Path
-import fitz  # pymupdf
+import pymupdf
 from PIL import Image
 
 # Loading API-Keys and Tokens via local .env
@@ -75,7 +75,7 @@ if not PDF_LIST:
     raise FileNotFoundError(f"Keine PDFs in {PDF_DIR}")
 
 BATCH_SIZE = args.batch_size # 8 with ColPlali, but those embeddings will get bigger due to more vectors
-DPI = 150 # matches ColEmbed's 8-tile limit (2×4 @ 512px) for A4 pages
+DPI = 150 # as no specific formula was used but 150 was seen on several other code snippits.
 
 SAVE_DIR = (SCRATCH_ROOT / "data" / "embeddings" / "all" / MODEL_NAME) if args.all else (SCRATCH_ROOT / "data" / "embeddings" / MODEL_NAME)
 SAVE_DIR.mkdir(parents=True, exist_ok=True)
@@ -139,12 +139,12 @@ global_peak_gb  = 0.0
 global_peak_rep = None
 
 for pdf_path in PDF_LIST :
-    fitz.TOOLS.reset_mupdf_warnings()  # Clear Buffer
+    pymupdf.TOOLS.reset_mupdf_warnings()  # Clear Buffer
     
     report_name = pdf_path.stem
     current_pdf_imgages = []
     
-    with fitz.open(str(pdf_path)) as doc :
+    with pymupdf.open(str(pdf_path)) as doc :
         
         for page in doc :
             pix = page.get_pixmap(dpi = DPI, alpha=False) # If PDf is RGBA (transparent)
@@ -152,7 +152,7 @@ for pdf_path in PDF_LIST :
             current_pdf_imgages.append(img)
     
     # Need to do more error handling
-    warnings = fitz.TOOLS.mupdf_warnings()
+    warnings = pymupdf.TOOLS.mupdf_warnings()
     if warnings:
         print(f"  [WARN] {pdf_path.name}: {warnings}", file=sys.stderr)
     # More logging       

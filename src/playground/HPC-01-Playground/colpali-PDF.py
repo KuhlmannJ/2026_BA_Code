@@ -6,7 +6,7 @@ from pathlib import Path
 from PIL import Image
 
 import torch
-import fitz  # pymupdf
+import pymupdf
 from dotenv import load_dotenv, find_dotenv
 
 # ── Argumente ─────────────────────────────────────────────────
@@ -69,7 +69,7 @@ print(f"  DPI   : {args.dpi}")
 
 # Your inputs (COLPALI)
 t0 = time.time()
-doc = fitz.open(str(pdf_path))
+doc = pymupdf.open(str(pdf_path))
 images = []
 for page in doc:
     pix = page.get_pixmap(dpi=args.dpi)

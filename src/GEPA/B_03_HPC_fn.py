@@ -5,7 +5,6 @@ import json
 import time
 import csv
 
-import fitz
 from PIL import Image
 from pathlib import Path
 
@@ -116,7 +115,7 @@ def run_extraction(
         #### PDF -> IMAGE CONVERSION
         t_pymupdf_start = time.time()
         content = []
-        with fitz.open(str(pdf_path)) as doc:
+        with pymupdf.open(str(pdf_path)) as doc:
             report_len = len(doc)
             for page in doc:
                 pix = page.get_pixmap(dpi=dpi, alpha=False)

@@ -7,7 +7,7 @@ import time
 import os
 import argparse
 import torch
-import fitz  # pymupdf
+import pymupdf
 
 from dotenv import load_dotenv, find_dotenv
 from pathlib import Path
@@ -84,11 +84,11 @@ banner("STEP 3: PDF to Image")
 pdf_img_dict = {}
 
 for pdf_path in PDF_LIST :
-    fitz.TOOLS.reset_mupdf_warnings()  # Clear Buffer
+    pymupdf.TOOLS.reset_mupdf_warnings()  # Clear Buffer
     
     current_pdf_imgages = []
     
-    with fitz.open(str(pdf_path)) as doc :
+    with pymupdf.open(str(pdf_path)) as doc :
         
         for page in doc :
             pix = page.get_pixmap(dpi = DPI, alpha=False) # If PDf is RGBA (transparent)
@@ -96,7 +96,7 @@ for pdf_path in PDF_LIST :
             current_pdf_imgages.append(img)
     
     # Need to do more error handling
-    warnings = fitz.TOOLS.mupdf_warnings()
+    warnings = pymupdf.TOOLS.mupdf_warnings()
     if warnings:
         print(f"  [WARN] {pdf_path.name}: {warnings}")
     # More logging       
