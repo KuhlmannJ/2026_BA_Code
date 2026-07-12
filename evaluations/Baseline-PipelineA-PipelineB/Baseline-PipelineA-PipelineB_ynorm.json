@@ -656,7 +656,7 @@
             "Scope 2, Location-based (FY2022)"
         ],
         "label_A":[
-            "Scope 2 (Location-based)"
+            "Scope 2 Emissions (Location based)"
         ],
         "label_B":[
             "FY 2022 Scope 2 Emissions (Location based)"
@@ -1269,19 +1269,13 @@
         "unit_normalized":null,
         "label":null,
         "value_Base":null,
-        "value_A":[
-            27651800.0
-        ],
+        "value_A":null,
         "value_B":null,
         "unit_Base":null,
-        "unit_A":[
-            "MT CO2e"
-        ],
+        "unit_A":null,
         "unit_B":null,
         "label_Base":null,
-        "label_A":[
-            "Revised FY21 baseline - Use of Sold Products (Scope 3 Category 11)"
-        ],
+        "label_A":null,
         "label_B":null
     },
     {
@@ -1560,7 +1554,7 @@
             "Scope 1"
         ],
         "label_A":[
-            "SCOPE 1"
+            "Scope 1 total"
         ],
         "label_B":[
             "SCOPE 1 (tonnes CO2e)"
@@ -1609,7 +1603,7 @@
             "Scope 1"
         ],
         "label_A":[
-            "SCOPE 1"
+            "Scope 1 total"
         ],
         "label_B":[
             "SCOPE 1 (tonnes CO2e)"
@@ -1658,7 +1652,7 @@
             "Scope 1"
         ],
         "label_A":[
-            "SCOPE 1"
+            "Scope 1 total"
         ],
         "label_B":[
             "SCOPE 1 (tonnes CO2e)"
@@ -2634,7 +2628,7 @@
             "Scope 3 (categories 3, 4, 6, 9)"
         ],
         "label_A":[
-            "SCOPE 3"
+            "Scope 3 total"
         ],
         "label_B":[
             "Emissions freight, upstream & downstream (tonnes CO2e)"
@@ -2683,7 +2677,7 @@
             "Scope 3 (categories 3, 4, 6, 9)"
         ],
         "label_A":[
-            "SCOPE 3"
+            "Scope 3 total"
         ],
         "label_B":[
             "Emissions freight, upstream & downstream (tonnes CO2e)"
@@ -2732,7 +2726,7 @@
             "Scope 3 (categories 3, 4, 6, 9)"
         ],
         "label_A":[
-            "SCOPE 3"
+            "Scope 3 total (categories 3, 4, 6, 9)"
         ],
         "label_B":[
             "Emissions freight, upstream & downstream (tonnes CO2e)"
@@ -2984,7 +2978,7 @@
             "Direct (Scope 1) GHG emissions, consolidated"
         ],
         "label_A":[
-            "Scope 1 - Direct emissions"
+            "Scope 1 direct emissions"
         ],
         "label_B":[
             "total"
@@ -3031,7 +3025,7 @@
             "Direct (Scope 1) GHG emissions, consolidated"
         ],
         "label_A":[
-            "Scope 1 - Direct emissions (perfluorinated and polyfluorinated chemicals (SF6), gas, diesel, heating oil, gasoline, wood fuel, own vehicles)"
+            "Scope 1 direct emissions"
         ],
         "label_B":[
             "total"
@@ -3078,7 +3072,7 @@
             "Direct (Scope 1) GHG emissions, consolidated"
         ],
         "label_A":[
-            "Scope 1 - Direct emissions (perfluorinated and polyfluorinated chemicals (SF6), gas, diesel, heating oil, gasoline, wood fuel, own vehicles)"
+            "Scope 1 direct emissions"
         ],
         "label_B":[
             "total"
@@ -3307,13 +3301,22 @@
         "unit_normalized":null,
         "label":null,
         "value_Base":null,
-        "value_A":null,
+        "value_A":[
+            445.0,
+            139.4
+        ],
         "value_B":null,
         "unit_Base":null,
-        "unit_A":null,
+        "unit_A":[
+            "tonnes CO2e",
+            "tonnes CO2e"
+        ],
         "unit_B":null,
         "label_Base":null,
-        "label_A":null,
+        "label_A":[
+            "Scope 1+2 Germany (Herzogenrath site) total",
+            "Scope 2 UK, USA, China, Japan, South Korea, Taiwan total"
+        ],
         "label_B":null
     },
     {
@@ -3337,6 +3340,8 @@
         "label":"Scope 2 emissions",
         "value_Base":null,
         "value_A":[
+            381.0,
+            171.74,
             406.6
         ],
         "value_B":[
@@ -3344,6 +3349,8 @@
         ],
         "unit_Base":null,
         "unit_A":[
+            "tonnes CO2e",
+            "tonnes CO2e",
             "tonnes CO2e"
         ],
         "unit_B":[
@@ -3351,7 +3358,9 @@
         ],
         "label_Base":null,
         "label_A":[
-            "Scope 2 - Indirect emissions"
+            "Scope 1+2 Germany (Herzogenrath site) total",
+            "Scope 2 UK, USA, China, Japan, South Korea, Taiwan total",
+            "Scope 2 indirect emissions (group)"
         ],
         "label_B":[
             "total"
@@ -3378,6 +3387,8 @@
         "label":"Scope 2 \u2013 Indirect",
         "value_Base":null,
         "value_A":[
+            557.0,
+            129.91,
             398.14
         ],
         "value_B":[
@@ -3385,6 +3396,8 @@
         ],
         "unit_Base":null,
         "unit_A":[
+            "tonnes CO2e",
+            "tonnes CO2e",
             "tonnes CO2e"
         ],
         "unit_B":[
@@ -3392,7 +3405,9 @@
         ],
         "label_Base":null,
         "label_A":[
-            "Scope 2 - Indirect emissions (electricity, district heating)"
+            "Scope 1+2 Germany (Herzogenrath site) total",
+            "Scope 2 UK, USA, China, Japan, South Korea, Taiwan total",
+            "Scope 2 indirect emissions (group)"
         ],
         "label_B":[
             "total"
@@ -3419,6 +3434,8 @@
         "label":"Scope 2 emissions",
         "value_Base":null,
         "value_A":[
+            557.0,
+            129.91,
             398.14
         ],
         "value_B":[
@@ -3426,6 +3443,8 @@
         ],
         "unit_Base":null,
         "unit_A":[
+            "tonnes CO2e",
+            "tonnes CO2e",
             "tonnes CO2e"
         ],
         "unit_B":[
@@ -3433,7 +3452,9 @@
         ],
         "label_Base":null,
         "label_A":[
-            "Scope 2 - Indirect emissions (electricity, district heating)"
+            "Scope 1+2 Germany (Herzogenrath site) total",
+            "Scope 2 UK, USA, China, Japan, South Korea, Taiwan total",
+            "Scope 2 indirect emissions (group)"
         ],
         "label_B":[
             "total"
@@ -4014,7 +4035,7 @@
             "Other indirect (Scope 3) GHG emissions, consolidated"
         ],
         "label_A":[
-            "Scope 3 - Indirect emissions"
+            "Scope 3 indirect emissions (upstream and downstream)"
         ],
         "label_B":[
             "total"
@@ -4061,7 +4082,7 @@
             "Other indirect (Scope 3) GHG emissions, consolidated"
         ],
         "label_A":[
-            "Scope 3 - Indirect emissions (upstream and downstream value chain: fuel\/energy provision, water supply, wastewater, waste, operating materials, materials and supplies, flights, transport, production service providers)"
+            "Scope 3 indirect emissions (upstream and downstream)"
         ],
         "label_B":[
             "total"
@@ -4108,7 +4129,7 @@
             "Other indirect (Scope 3) GHG emissions, consolidated"
         ],
         "label_A":[
-            "Scope 3 - Indirect emissions (upstream and downstream value chain: fuel\/energy provision, water supply, wastewater, waste, operating materials, materials and supplies, flights, transport, production service providers)"
+            "Scope 3 indirect emissions (upstream and downstream)"
         ],
         "label_B":[
             "total"
@@ -4792,23 +4813,17 @@
         "unit_normalized":"t CO2e",
         "label":"Scope 2 CO 2 emissions",
         "value_Base":null,
-        "value_A":[
-            91.69
-        ],
+        "value_A":null,
         "value_B":[
             91.69
         ],
         "unit_Base":null,
-        "unit_A":[
-            "tCO2e"
-        ],
+        "unit_A":null,
         "unit_B":[
             "tCO2e"
         ],
         "label_Base":null,
-        "label_A":[
-            "Scope 2 CO2 emissions (key indicators table)"
-        ],
+        "label_A":null,
         "label_B":[
             "Scope 2 CO2 emissions (tCO2e)"
         ]
@@ -5150,7 +5165,7 @@
             91.69
         ],
         "value_A":[
-            0.0
+            91.69
         ],
         "value_B":null,
         "unit_Base":[
@@ -5164,7 +5179,7 @@
             "Scope 2 CO2 emissions (reported without explicit market\/location-based label)"
         ],
         "label_A":[
-            "Scope 2 CO2 emissions (Spain inventory, ISO 14064-1)"
+            "Scope 2 CO2 emissions"
         ],
         "label_B":null
     },
@@ -7765,7 +7780,7 @@
             "Total Company"
         ],
         "label_A":[
-            "Scope 1 Emissions - Total Company"
+            "Total Company"
         ],
         "label_B":[
             "total"
@@ -7812,7 +7827,7 @@
             "Total Company (Owned 1\/1\/22 ~ 12\/31\/22)"
         ],
         "label_A":[
-            "Scope 1 Emissions - 2022 Total Company (Owned 1\/1\/22 ~ 12\/31\/22)"
+            "2022 Total Company (Owned 1\/1\/22 ~ 12\/31\/22)"
         ],
         "label_B":[
             "total"
@@ -8087,7 +8102,7 @@
             "Total Company (Scope 2 location-based equals market-based per report note)"
         ],
         "label_A":[
-            "Scope 2 Location-Based Emissions (same as market-based per report note) - Total Company"
+            "Total Company (Scope 2 location-based equals market-based per report)"
         ],
         "label_B":null
     },
@@ -8128,7 +8143,7 @@
             "Total Company (Owned 1\/1\/22 ~ 12\/31\/22; location-based equals market-based per report note)"
         ],
         "label_A":[
-            "Scope 2 Location-Based Emissions (same as market-based per report note) - 2022 Total Company"
+            "2022 Total Company (Scope 2 location-based equals market-based per report)"
         ],
         "label_B":null
     },
@@ -8405,7 +8420,7 @@
             "Total Company"
         ],
         "label_A":[
-            "Market-Based Scope 2 Emissions - Total Company"
+            "Total Company"
         ],
         "label_B":[
             "total"
@@ -8452,7 +8467,7 @@
             "Total Company (Owned 1\/1\/22 ~ 12\/31\/22)"
         ],
         "label_A":[
-            "Market-Based Scope 2 Emissions - 2022 Total Company (Owned 1\/1\/22 ~ 12\/31\/22)"
+            "2022 Total Company (Owned 1\/1\/22 ~ 12\/31\/22)"
         ],
         "label_B":[
             "total"
@@ -8731,7 +8746,7 @@
             "Total Company"
         ],
         "label_A":[
-            "Scope 3 Emissions - Total Company"
+            "Total Company"
         ],
         "label_B":[
             "total"
@@ -8778,7 +8793,7 @@
             "Total Company (Owned 1\/1\/22 ~ 12\/31\/22)"
         ],
         "label_A":[
-            "Scope 3 Emissions - 2022 Total Company (Owned 1\/1\/22 ~ 12\/31\/22)"
+            "2022 Total Company (Owned 1\/1\/22 ~ 12\/31\/22)"
         ],
         "label_B":[
             "total"
@@ -8916,7 +8931,7 @@
             "APRR only (31.14% equity share)"
         ],
         "label_A":[
-            "Scope 1 (APRR only, 31.14% equity share)"
+            "APRR Scope 1 (31.14% equity share)"
         ],
         "label_B":[
             "Scope 1"
@@ -8964,7 +8979,7 @@
             "APRR only (31.14% equity share)"
         ],
         "label_A":[
-            "Scope 1 (APRR only, 31.14% equity share)"
+            "APRR Scope 1 (31.14% equity share)"
         ],
         "label_B":[
             "Scope 1"
@@ -9012,7 +9027,7 @@
             "APRR only (31.14% equity share)"
         ],
         "label_A":[
-            "Scope 1 (APRR only, 31.14% equity share)"
+            "APRR Scope 1 (31.14% equity share)"
         ],
         "label_B":[
             "Scope 1"
@@ -9060,7 +9075,7 @@
             "APRR only (31.14% equity share)"
         ],
         "label_A":[
-            "Scope 1 (APRR only, 31.14% equity share)"
+            "APRR Scope 1 (31.14% equity share)"
         ],
         "label_B":[
             "Scope 1"
@@ -9269,21 +9284,27 @@
         "value_Base":[
             1291.0
         ],
-        "value_A":null,
+        "value_A":[
+            1291.0
+        ],
         "value_B":[
             1291.0
         ],
         "unit_Base":[
             "tonnes CO2e"
         ],
-        "unit_A":null,
+        "unit_A":[
+            "tonnes CO2e"
+        ],
         "unit_B":[
             "tonnes CO2e"
         ],
         "label_Base":[
             "APRR only (31.14% equity share); methodology not specified"
         ],
-        "label_A":null,
+        "label_A":[
+            "APRR Scope 2 (31.14% equity share)"
+        ],
         "label_B":[
             "Scope 2"
         ]
@@ -9311,21 +9332,27 @@
         "value_Base":[
             1244.0
         ],
-        "value_A":null,
+        "value_A":[
+            1244.0
+        ],
         "value_B":[
             1244.0
         ],
         "unit_Base":[
             "tonnes CO2e"
         ],
-        "unit_A":null,
+        "unit_A":[
+            "tonnes CO2e"
+        ],
         "unit_B":[
             "tonnes CO2e"
         ],
         "label_Base":[
             "APRR only (31.14% equity share); methodology not specified"
         ],
-        "label_A":null,
+        "label_A":[
+            "APRR Scope 2 (31.14% equity share)"
+        ],
         "label_B":[
             "Scope 2"
         ]
@@ -9353,21 +9380,27 @@
         "value_Base":[
             957.0
         ],
-        "value_A":null,
+        "value_A":[
+            957.0
+        ],
         "value_B":[
             957.0
         ],
         "unit_Base":[
             "tonnes CO2e"
         ],
-        "unit_A":null,
+        "unit_A":[
+            "tonnes CO2e"
+        ],
         "unit_B":[
             "tonnes CO2e"
         ],
         "label_Base":[
             "APRR only (31.14% equity share); methodology not specified"
         ],
-        "label_A":null,
+        "label_A":[
+            "APRR Scope 2 (31.14% equity share)"
+        ],
         "label_B":[
             "Scope 2"
         ]
@@ -9395,21 +9428,27 @@
         "value_Base":[
             773.0
         ],
-        "value_A":null,
+        "value_A":[
+            773.0
+        ],
         "value_B":[
             773.0
         ],
         "unit_Base":[
             "tonnes CO2e"
         ],
-        "unit_A":null,
+        "unit_A":[
+            "tonnes CO2e"
+        ],
         "unit_B":[
             "tonnes CO2e"
         ],
         "label_Base":[
             "APRR only (31.14% equity share); methodology not specified"
         ],
-        "label_A":null,
+        "label_A":[
+            "APRR Scope 2 (31.14% equity share)"
+        ],
         "label_B":[
             "Scope 2"
         ]
@@ -9936,7 +9975,7 @@
             "APRR only (31.14% equity share); limited to customer traffic emissions"
         ],
         "label_A":[
-            "Scope 3 - customer traffic emissions (APRR only, 31.14% equity share)"
+            "APRR Scope 3 - customer traffic emissions (31.14% equity share)"
         ],
         "label_B":[
             "Scope 3**"
@@ -9984,7 +10023,7 @@
             "APRR only (31.14% equity share); limited to customer traffic emissions"
         ],
         "label_A":[
-            "Scope 3 - customer traffic emissions (APRR only, 31.14% equity share)"
+            "APRR Scope 3 - customer traffic emissions (31.14% equity share)"
         ],
         "label_B":[
             "Scope 3**"
@@ -10032,7 +10071,7 @@
             "APRR only (31.14% equity share); limited to customer traffic emissions"
         ],
         "label_A":[
-            "Scope 3 - customer traffic emissions (APRR only, 31.14% equity share)"
+            "APRR Scope 3 - customer traffic emissions (31.14% equity share)"
         ],
         "label_B":[
             "Scope 3**"
@@ -10080,7 +10119,7 @@
             "APRR only (31.14% equity share); limited to customer traffic emissions"
         ],
         "label_A":[
-            "Scope 3 - customer traffic emissions (APRR only, 31.14% equity share)"
+            "APRR Scope 3 - customer traffic emissions (31.14% equity share)"
         ],
         "label_B":[
             "Scope 3**"
@@ -11329,7 +11368,7 @@
             "Scope 3 GHG emissions"
         ],
         "label_A":[
-            "Scope 3"
+            "Scope 3 (17% of purchased direct materials and 100% of business travel; excludes UGN)"
         ],
         "label_B":[
             "Scope 3"
@@ -11376,7 +11415,7 @@
             "Scope 3 GHG emissions"
         ],
         "label_A":[
-            "Scope 3"
+            "Scope 3 (17% of purchased direct materials and 100% of business travel; excludes UGN)"
         ],
         "label_B":[
             "Scope 3"
@@ -11732,8 +11771,8 @@
             "Including JVs (natural gas & LPG + fuel)"
         ],
         "label_A":[
-            "Scope 1 GHG emissions natural gas, LPG and fuel (Excluding JVs) - calculated: 286932 + 7867",
-            "Scope 1 GHG emissions natural gas, LPG and fuel (Including JVs) - calculated: 329982 + 8438"
+            "Scope 1 (natural gas + LPG + fuel), excluding JVs",
+            "Scope 1 (natural gas + LPG + fuel), including JVs"
         ],
         "label_B":null
     },
@@ -11779,8 +11818,8 @@
             "Including JVs (natural gas & LPG + fuel)"
         ],
         "label_A":[
-            "Scope 1 GHG emissions natural gas, LPG and fuel (Excluding JVs) - calculated: 263785 + 7445",
-            "Scope 1 GHG emissions natural gas, LPG and fuel (Including JVs) - calculated: 305547 + 7980"
+            "Scope 1 (natural gas + LPG + fuel), excluding JVs",
+            "Scope 1 (natural gas + LPG + fuel), including JVs"
         ],
         "label_B":null
     },
@@ -11826,8 +11865,8 @@
             "Including JVs (natural gas & LPG + fuel)"
         ],
         "label_A":[
-            "Scope 1 GHG emissions natural gas, LPG and fuel (Excluding JVs) - calculated: 277023 + 7887",
-            "Scope 1 GHG emissions natural gas, LPG and fuel (Including JVs) - calculated: 327690 + 8511"
+            "Scope 1 (natural gas + LPG + fuel), excluding JVs",
+            "Scope 1 (natural gas + LPG + fuel), including JVs"
         ],
         "label_B":null
     },
@@ -11873,8 +11912,8 @@
             "Including JVs (natural gas & LPG + fuel)"
         ],
         "label_A":[
-            "Scope 1 GHG emissions natural gas, LPG and fuel (Excluding JVs) - calculated: 262581 + 7388",
-            "Scope 1 GHG emissions natural gas, LPG and fuel (Including JVs, total reported)"
+            "Scope 1 (natural gas + LPG + fuel), excluding JVs",
+            "Scope 1 GHG emissions total, including JVs (explicitly stated)"
         ],
         "label_B":null
     },
@@ -12365,19 +12404,28 @@
             1363060.0,
             1403419.0
         ],
-        "value_A":null,
+        "value_A":[
+            1363060.0,
+            1403417.0
+        ],
         "value_B":null,
         "unit_Base":[
             "ton CO2",
             "ton CO2"
         ],
-        "unit_A":null,
+        "unit_A":[
+            "ton CO2",
+            "ton CO2"
+        ],
         "unit_B":null,
         "label_Base":[
             "Excluding JVs (electricity + purchased heat + purchased steam)",
             "Including JVs (electricity + purchased heat + purchased steam)"
         ],
-        "label_A":null,
+        "label_A":[
+            "Scope 2 (derived: Scope 1&2 total minus Scope 1), excluding JVs",
+            "Scope 2 (derived: Scope 1&2 total minus Scope 1), including JVs"
+        ],
         "label_B":null
     },
     {
@@ -12403,19 +12451,28 @@
             1236847.0,
             1270040.0
         ],
-        "value_A":null,
+        "value_A":[
+            1236847.0,
+            1270041.0
+        ],
         "value_B":null,
         "unit_Base":[
             "ton CO2",
             "ton CO2"
         ],
-        "unit_A":null,
+        "unit_A":[
+            "ton CO2",
+            "ton CO2"
+        ],
         "unit_B":null,
         "label_Base":[
             "Excluding JVs (electricity + purchased heat + purchased steam)",
             "Including JVs (electricity + purchased heat + purchased steam)"
         ],
-        "label_A":null,
+        "label_A":[
+            "Scope 2 (derived: Scope 1&2 total minus Scope 1), excluding JVs",
+            "Scope 2 (derived: Scope 1&2 total minus Scope 1), including JVs"
+        ],
         "label_B":null
     },
     {
@@ -12441,19 +12498,28 @@
             1362345.0,
             1416700.0
         ],
-        "value_A":null,
+        "value_A":[
+            1362344.0,
+            1416699.0
+        ],
         "value_B":null,
         "unit_Base":[
             "ton CO2",
             "ton CO2"
         ],
-        "unit_A":null,
+        "unit_A":[
+            "ton CO2",
+            "ton CO2"
+        ],
         "unit_B":null,
         "label_Base":[
             "Excluding JVs (electricity + purchased heat + purchased steam)",
             "Including JVs (electricity + purchased heat + purchased steam)"
         ],
-        "label_A":null,
+        "label_A":[
+            "Scope 2 (derived: Scope 1&2 total minus Scope 1), excluding JVs",
+            "Scope 2 (derived: Scope 1&2 total minus Scope 1), including JVs"
+        ],
         "label_B":null
     },
     {
@@ -12479,19 +12545,28 @@
             1241018.0,
             1289630.0
         ],
-        "value_A":null,
+        "value_A":[
+            1241018.0,
+            1289630.0
+        ],
         "value_B":null,
         "unit_Base":[
             "ton CO2",
             "ton CO2"
         ],
-        "unit_A":null,
+        "unit_A":[
+            "ton CO2",
+            "ton CO2"
+        ],
         "unit_B":null,
         "label_Base":[
             "Excluding JVs (electricity + purchased heat + purchased steam)",
             "Including JVs (electricity + purchased heat + purchased steam)"
         ],
-        "label_A":null,
+        "label_A":[
+            "Scope 2 (derived: Scope 1&2 total minus Scope 1), excluding JVs",
+            "Scope 2 (derived: Scope 1&2 total minus Scope 1), including JVs"
+        ],
         "label_B":null
     },
     {
@@ -12691,21 +12766,6 @@
             6045636.0
         ],
         "value_A":[
-            4874911.0,
-            72870.0,
-            352555.0,
-            31487.0,
-            27261.0,
-            2740.0,
-            20400.0,
-            0.0,
-            47230.0,
-            161870.0,
-            100000.0,
-            106999.0,
-            0.0,
-            0.0,
-            247313.0,
             6045636.0
         ],
         "value_B":[
@@ -12715,21 +12775,6 @@
             "ton CO2e"
         ],
         "unit_A":[
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
             "ton CO2e"
         ],
         "unit_B":[
@@ -12739,22 +12784,7 @@
             "Total Scope 3 emissions (incl. JVs); 2019 SBT reference year"
         ],
         "label_A":[
-            "Purchased goods & services (excluding JVs)",
-            "Capital goods (excluding JVs)",
-            "Fuel & energy related activities (not included in Scope 1 or 2) (excluding JVs)",
-            "Upstream transportation & distribution (excluding JVs)",
-            "Waste generated in operations (excluding JVs)",
-            "Business travel (excluding JVs)",
-            "Employee commuting (excluding JVs)",
-            "Upstream leased assets (excluding JVs)",
-            "Downstream transportation & distribution (excluding JVs)",
-            "Processing of sold products (excluding JVs)",
-            "Use of sold products (excluding JVs)",
-            "End of life treatment of sold products (excluding JVs)",
-            "Downstream Leased Assets (excluding JVs)",
-            "Franchises (excluding JVs)",
-            "Total JVs",
-            "Total Scope 3 emissions"
+            "Total Scope 3 emissions (including JVs), reference\/base year for SBT"
         ],
         "label_B":[
             "total"
@@ -12812,21 +12842,6 @@
             6736962.0
         ],
         "value_A":[
-            5446554.0,
-            113767.0,
-            348402.0,
-            44627.0,
-            32713.0,
-            1000.0,
-            20400.0,
-            0.0,
-            66941.0,
-            163893.0,
-            100000.0,
-            108341.0,
-            0.0,
-            0.0,
-            290324.0,
             6736962.0
         ],
         "value_B":[
@@ -12836,21 +12851,6 @@
             "ton CO2e"
         ],
         "unit_A":[
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
             "ton CO2e"
         ],
         "unit_B":[
@@ -12860,22 +12860,7 @@
             "Total Scope 3 emissions (incl. JVs)"
         ],
         "label_A":[
-            "Purchased goods & services (excluding JVs)",
-            "Capital goods (excluding JVs)",
-            "Fuel & energy related activities (not included in Scope 1 or 2) (excluding JVs)",
-            "Upstream transportation & distribution (excluding JVs)",
-            "Waste generated in operations (excluding JVs)",
-            "Business travel (excluding JVs)",
-            "Employee commuting (excluding JVs)",
-            "Upstream leased assets (excluding JVs)",
-            "Downstream transportation & distribution (excluding JVs)",
-            "Processing of sold products (excluding JVs)",
-            "Use of sold products (excluding JVs)",
-            "End of life treatment of sold products (excluding JVs)",
-            "Downstream Leased Assets (excluding JVs)",
-            "Franchises (excluding JVs)",
-            "Total JVs",
-            "Total Scope 3 emissions"
+            "Total Scope 3 emissions (including JVs)"
         ],
         "label_B":[
             "total"
@@ -12904,21 +12889,6 @@
             6187086.0
         ],
         "value_A":[
-            4762032.0,
-            133995.0,
-            325115.0,
-            77972.0,
-            37984.0,
-            2100.0,
-            20400.0,
-            0.0,
-            116899.0,
-            156846.0,
-            100000.0,
-            94448.0,
-            0.0,
-            0.0,
-            359295.0,
             6187086.0
         ],
         "value_B":[
@@ -12928,21 +12898,6 @@
             "ton CO2e"
         ],
         "unit_A":[
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
-            "ton CO2e",
             "ton CO2e"
         ],
         "unit_B":[
@@ -12952,22 +12907,7 @@
             "Total Scope 3 emissions (incl. JVs)"
         ],
         "label_A":[
-            "Purchased goods & services (excluding JVs)",
-            "Capital goods (excluding JVs)",
-            "Fuel & energy related activities (not included in Scope 1 or 2) (excluding JVs)",
-            "Upstream transportation & distribution (excluding JVs)",
-            "Waste generated in operations (excluding JVs)",
-            "Business travel (excluding JVs)",
-            "Employee commuting (excluding JVs)",
-            "Upstream leased assets (excluding JVs)",
-            "Downstream transportation & distribution (excluding JVs)",
-            "Processing of sold products (excluding JVs)",
-            "Use of sold products (excluding JVs)",
-            "End of life treatment of sold products (excluding JVs)",
-            "Downstream Leased Assets (excluding JVs)",
-            "Franchises (excluding JVs)",
-            "Total JVs",
-            "Total Scope 3 emissions"
+            "Total Scope 3 emissions (including JVs)"
         ],
         "label_B":[
             "total"
@@ -18121,11 +18061,11 @@
             "CBRE Business Travel on Comerica Account (Other Downstream)"
         ],
         "label_A":[
-            "Total lifecycle paper emissions (Purchased Goods and Services)",
-            "Total lifecycle computer emissions (Purchased Goods and Services)",
-            "Total lifecycle carpeting emissions (Purchased Goods and Services)",
+            "Total lifecycle paper emissions",
+            "Total lifecycle computer emissions",
+            "Total lifecycle carpeting emissions",
             "Total lifecycle furniture emissions (Capital Goods)",
-            "Electricity transmission\/distribution loss emissions (Fuel-and-energy related activities)",
+            "Electricity transmission\/distribution loss emissions",
             "Shipping emissions (Upstream Transportation and Distribution)",
             "Armored vehicle emissions (Upstream Transportation and Distribution)",
             "Scope 3 lifecycle emissions associated with landfilled mixed solid waste",
@@ -18321,11 +18261,11 @@
             "CBRE Business Travel on Comerica Account (Other Downstream)"
         ],
         "label_A":[
-            "Total lifecycle paper emissions (Purchased Goods and Services)",
-            "Total lifecycle computer emissions (Purchased Goods and Services)",
-            "Total lifecycle carpeting emissions (Purchased Goods and Services)",
+            "Total lifecycle paper emissions",
+            "Total lifecycle computer emissions",
+            "Total lifecycle carpeting emissions",
             "Total lifecycle furniture emissions (Capital Goods)",
-            "Electricity transmission\/distribution loss emissions (Fuel-and-energy related activities)",
+            "Electricity transmission\/distribution loss emissions",
             "Shipping emissions (Upstream Transportation and Distribution)",
             "Armored vehicle emissions (Upstream Transportation and Distribution)",
             "Scope 3 lifecycle emissions associated with landfilled mixed solid waste",
@@ -19701,7 +19641,7 @@
             "CO2 direct (Scope 1) \u2013 CO2 emissions from energy consumption (Table 17)"
         ],
         "label_A":[
-            "CO2 direct (Scope 1) from energy consumption"
+            "CO2 direct (Scope 1)"
         ],
         "label_B":[
             "CO\u2082 direct (Scope 1)"
@@ -19751,7 +19691,7 @@
             "CO2 direct (Scope 1) \u2013 CO2 emissions from energy consumption (Table 17)"
         ],
         "label_A":[
-            "CO2 direct (Scope 1) from energy consumption"
+            "CO2 direct (Scope 1)"
         ],
         "label_B":[
             "CO\u2082 direct (Scope 1)"
@@ -19801,7 +19741,7 @@
             "CO2 direct (Scope 1) \u2013 CO2 emissions from energy consumption (Table 17)"
         ],
         "label_A":[
-            "CO2 direct (Scope 1) from energy consumption"
+            "CO2 direct (Scope 1)"
         ],
         "label_B":[
             "CO\u2082 direct (Scope 1)"
@@ -19851,7 +19791,7 @@
             "CO2 direct (Scope 1) \u2013 CO2 emissions from energy consumption (Table 17)"
         ],
         "label_A":[
-            "CO2 direct (Scope 1) from energy consumption"
+            "CO2 direct (Scope 1)"
         ],
         "label_B":[
             "CO\u2082 direct (Scope 1)"
@@ -19901,7 +19841,7 @@
             "CO2 direct (Scope 1) \u2013 CO2 emissions from energy consumption (Table 17)"
         ],
         "label_A":[
-            "CO2 direct (Scope 1) from energy consumption"
+            "CO2 direct (Scope 1)"
         ],
         "label_B":[
             "CO\u2082 direct (Scope 1)"
@@ -24121,7 +24061,7 @@
             "Fresenius Group total"
         ],
         "label_A":[
-            "Fresenius Group Total Scope 1"
+            "Total Scope 1"
         ],
         "label_B":[
             "total"
@@ -24167,7 +24107,7 @@
             "Fresenius Group total"
         ],
         "label_A":[
-            "Fresenius Group Total Scope 1"
+            "Total Scope 1"
         ],
         "label_B":[
             "total"
@@ -26706,7 +26646,7 @@
             "Scope 3 Total (all categories), Fujifilm Group"
         ],
         "label_A":[
-            "Total Scope 3 emissions (Fujifilm Group)"
+            "Scope 3 Total (Fujifilm Group)"
         ],
         "label_B":[
             "total",
@@ -29686,7 +29626,7 @@
             "CO2 equivalents (US tons)"
         ],
         "unit_A":[
-            "US Tons CO2e"
+            "US tons CO2e"
         ],
         "unit_B":[
             "US Tons"
@@ -29839,7 +29779,7 @@
             "CO2 equivalents (US tons)"
         ],
         "unit_A":[
-            "US Tons CO2e"
+            "US tons CO2e"
         ],
         "unit_B":[
             "CO2 equivalents (US tons)"
@@ -29884,7 +29824,7 @@
             "CO2 equivalents (US tons)"
         ],
         "unit_A":[
-            "US Tons CO2e"
+            "US tons CO2e"
         ],
         "unit_B":[
             "CO2 equivalents (US tons)"
@@ -29929,7 +29869,7 @@
             "CO2 equivalents (US tons)"
         ],
         "unit_A":[
-            "US Tons CO2e"
+            "US tons CO2e"
         ],
         "unit_B":[
             "CO2 equivalents (US tons)"
@@ -29974,7 +29914,7 @@
             "CO2 equivalents (US tons)"
         ],
         "unit_A":[
-            "US Tons CO2e"
+            "US tons CO2e"
         ],
         "unit_B":[
             "CO2 equivalents (US tons)"
@@ -30793,9 +30733,6 @@
             8399.0
         ],
         "value_A":[
-            4663.0,
-            3601.0,
-            135.0,
             8399.0
         ],
         "value_B":[
@@ -30805,10 +30742,7 @@
             "CO2 (US tons)"
         ],
         "unit_A":[
-            "US Tons CO2",
-            "US Tons CO2",
-            "US Tons CO2",
-            "US Tons CO2"
+            "US tons CO2"
         ],
         "unit_B":[
             "CO2 (US tons)"
@@ -30817,10 +30751,7 @@
             "Total estimated employee business travel emissions (partial Scope 3; CO2 only)"
         ],
         "label_A":[
-            "Scope 3 Employee Travel - Air travel (estimated)",
-            "Scope 3 Employee Travel - Hotel (estimated)",
-            "Scope 3 Employee Travel - Car (estimated)",
-            "Scope 3 Travel: Total Estimated CO2 Emissions"
+            "Scope 3 - Employee business travel (total estimated CO2 emissions; partial scope)"
         ],
         "label_B":[
             "Travel: Total Estimated CO2 Emissions"
@@ -32602,7 +32533,7 @@
             "Scope 1 total (Global)"
         ],
         "label_A":[
-            "Scope 1: Direct emissions from owned\/controlled operations - Total"
+            "Scope 1 Total - Global"
         ],
         "label_B":[
             "Totals"
@@ -32650,7 +32581,7 @@
             "Scope 1 total (Global)"
         ],
         "label_A":[
-            "Scope 1: Direct emissions from owned\/controlled operations - Total"
+            "Scope 1 Total - Global"
         ],
         "label_B":[
             "Totals"
@@ -32938,7 +32869,7 @@
             "Scope 2 total, location-based (Global)"
         ],
         "label_A":[
-            "Scope 2 Total - Location Based"
+            "Scope 2 Total - Location Based - Global"
         ],
         "label_B":[
             "Totals"
@@ -32986,7 +32917,7 @@
             "Scope 2 total, location-based (Global)"
         ],
         "label_A":[
-            "Scope 2 Total - Location Based"
+            "Scope 2 Total - Location Based - Global"
         ],
         "label_B":[
             "Totals"
@@ -33274,7 +33205,7 @@
             "Scope 2 total, Market Based Method (Global)"
         ],
         "label_A":[
-            "Scope 2 Total - Market Based Method"
+            "Scope 2 Total - Market Based Method - Global"
         ],
         "label_B":[
             "Totals\u00b9"
@@ -33322,7 +33253,7 @@
             "Scope 2 total, Market Based Method (Global)"
         ],
         "label_A":[
-            "Scope 2 Total - Market Based Method"
+            "Scope 2 Total - Market Based Method - Global"
         ],
         "label_B":[
             "Totals\u00b9"
@@ -33610,7 +33541,7 @@
             "Scope 3 total (Global)"
         ],
         "label_A":[
-            "Scope 3: Other indirect emissions - Total (Business travel, Waste, Water)"
+            "Scope 3 Total - Global (Business travel, Waste, Water)"
         ],
         "label_B":[
             "Totals"
@@ -33658,7 +33589,7 @@
             "Scope 3 total (Global)"
         ],
         "label_A":[
-            "Scope 3: Other indirect emissions - Total (Business travel, Waste, Water)"
+            "Scope 3 Total - Global (Business travel, Waste, Water)"
         ],
         "label_B":[
             "Totals"
@@ -33822,7 +33753,7 @@
             "Building operation (Total)"
         ],
         "label_A":[
-            "Direct emissions (Scope 1) - Building operation (Total)"
+            "Direct emissions (Scope 1) - Building operation - Total"
         ],
         "label_B":[
             "Building operation"
@@ -33874,8 +33805,8 @@
             "Company vehicles and vessels (Hong Kong only; MC and Total N\/A)"
         ],
         "label_A":[
-            "Direct emissions (Scope 1) - Building operation (Total)",
-            "Direct emissions (Scope 1) - Company vehicles and vessels (HK)"
+            "Direct emissions (Scope 1) - Building operation - Total",
+            "Direct emissions (Scope 1) - Company vehicles and vessels - HK"
         ],
         "label_B":[
             "Building operation"
@@ -33927,8 +33858,8 @@
             "Company vehicles and vessels (Hong Kong only; MC and Total N\/A)"
         ],
         "label_A":[
-            "Direct emissions (Scope 1) - Building operation (Total)",
-            "Direct emissions (Scope 1) - Company vehicles and vessels (HK)"
+            "Direct emissions (Scope 1) - Building operation - Total",
+            "Direct emissions (Scope 1) - Company vehicles and vessels - HK"
         ],
         "label_B":[
             "Building operation"
@@ -34178,7 +34109,7 @@
             "Building operation (Total)"
         ],
         "label_A":[
-            "Energy indirect emissions (Scope 2) - Building operation (Total)"
+            "Energy indirect emissions (Scope 2) - Building operation - Total"
         ],
         "label_B":[
             "Building operation"
@@ -34225,7 +34156,7 @@
             "Building operation (Total)"
         ],
         "label_A":[
-            "Energy indirect emissions (Scope 2) - Building operation (Total)"
+            "Energy indirect emissions (Scope 2) - Building operation - Total"
         ],
         "label_B":[
             "Building operation"
@@ -34272,7 +34203,7 @@
             "Building operation (Total)"
         ],
         "label_A":[
-            "Energy indirect emissions (Scope 2) - Building operation (Total)"
+            "Energy indirect emissions (Scope 2) - Building operation - Total"
         ],
         "label_B":[
             "Building operation"
@@ -34812,7 +34743,7 @@
             "Business air travel (Total)"
         ],
         "label_A":[
-            "Other indirect emissions (Scope 3) - Business air travel (Total)"
+            "Other indirect emissions (Scope 3) - Business air travel - Total"
         ],
         "label_B":[
             "Business air travel"
@@ -34859,7 +34790,7 @@
             "Business air travel (Total)"
         ],
         "label_A":[
-            "Other indirect emissions (Scope 3) - Business air travel (Total)"
+            "Other indirect emissions (Scope 3) - Business air travel - Total"
         ],
         "label_B":[
             "Business air travel"
@@ -34906,7 +34837,7 @@
             "Business air travel (Total)"
         ],
         "label_A":[
-            "Other indirect emissions (Scope 3) - Business air travel (Total)"
+            "Other indirect emissions (Scope 3) - Business air travel - Total"
         ],
         "label_B":[
             "Business air travel"
@@ -35283,7 +35214,7 @@
             "tonnes"
         ],
         "unit_A":[
-            "tonnes"
+            "tonnes CO2"
         ],
         "unit_B":[
             "tonnes"
@@ -35329,7 +35260,7 @@
             "tonnes"
         ],
         "unit_A":[
-            "tonnes"
+            "tonnes CO2"
         ],
         "unit_B":[
             "tonnes"
@@ -35599,7 +35530,7 @@
             "tonnes"
         ],
         "unit_A":[
-            "tonnes"
+            "tonnes CO2"
         ],
         "unit_B":[
             "tonnes"
@@ -35645,7 +35576,7 @@
             "tonnes"
         ],
         "unit_A":[
-            "tonnes"
+            "tonnes CO2"
         ],
         "unit_B":[
             "tonnes"
@@ -36373,7 +36304,7 @@
             "kilotonnes of CO2-equivalent"
         ],
         "unit_A":[
-            "kilotonnes of CO2-equivalent"
+            "kilotonnes CO2e"
         ],
         "unit_B":[
             "kilotonnes of CO\u2082-equivalent"
@@ -36421,7 +36352,7 @@
             "kilotonnes of CO2-equivalent"
         ],
         "unit_A":[
-            "kilotonnes of CO2-equivalent"
+            "kilotonnes CO2e"
         ],
         "unit_B":[
             "kilotonnes of CO\u2082-equivalent"
@@ -36469,7 +36400,7 @@
             "kilotonnes of CO2-equivalent"
         ],
         "unit_A":[
-            "kilotonnes of CO2-equivalent"
+            "kilotonnes CO2e"
         ],
         "unit_B":[
             "kilotonnes of CO\u2082-equivalent"
@@ -36517,7 +36448,7 @@
             "kilotonnes of CO2-equivalent"
         ],
         "unit_A":[
-            "kilotonnes of CO2-equivalent"
+            "kilotonnes CO2e"
         ],
         "unit_B":[
             "kilotonnes of CO\u2082-equivalent"
@@ -36745,7 +36676,7 @@
             "kilotonnes of CO2-equivalent"
         ],
         "unit_A":[
-            "kilotonnes of CO2-equivalent"
+            "kilotonnes CO2e"
         ],
         "unit_B":[
             "kilotonnes of CO\u2082-equivalent"
@@ -36793,7 +36724,7 @@
             "kilotonnes of CO2-equivalent"
         ],
         "unit_A":[
-            "kilotonnes of CO2-equivalent"
+            "kilotonnes CO2e"
         ],
         "unit_B":[
             "kilotonnes of CO\u2082-equivalent"
@@ -36841,7 +36772,7 @@
             "kilotonnes of CO2-equivalent"
         ],
         "unit_A":[
-            "kilotonnes of CO2-equivalent"
+            "kilotonnes CO2e"
         ],
         "unit_B":[
             "kilotonnes of CO\u2082-equivalent"
@@ -36889,7 +36820,7 @@
             "kilotonnes of CO2-equivalent"
         ],
         "unit_A":[
-            "kilotonnes of CO2-equivalent"
+            "kilotonnes CO2e"
         ],
         "unit_B":[
             "kilotonnes of CO\u2082-equivalent"
@@ -39089,7 +39020,7 @@
             "Direct (Scope 1) GHG emissions"
         ],
         "label_A":[
-            "Direct (Scope 1) GHG emissions"
+            "Scope 1"
         ],
         "label_B":[
             "Scope 1"
@@ -39138,7 +39069,7 @@
             "Direct (Scope 1) GHG emissions"
         ],
         "label_A":[
-            "Direct (Scope 1) GHG emissions"
+            "Scope 1"
         ],
         "label_B":[
             "Scope 1"
@@ -39187,7 +39118,7 @@
             "Direct (Scope 1) GHG emissions"
         ],
         "label_A":[
-            "Direct (Scope 1) GHG emissions"
+            "Scope 1"
         ],
         "label_B":[
             "Scope 1"
@@ -39236,7 +39167,7 @@
             "Direct (Scope 1) GHG emissions"
         ],
         "label_A":[
-            "Direct (Scope 1) GHG emissions"
+            "Scope 1"
         ],
         "label_B":[
             "Scope 1"
@@ -39285,7 +39216,7 @@
             "Direct (Scope 1) GHG emissions"
         ],
         "label_A":[
-            "Direct (Scope 1) GHG emissions"
+            "Scope 1"
         ],
         "label_B":[
             "Scope 1"
@@ -39489,7 +39420,7 @@
             "Indirect (Scope 2) GHG emissions, location-based"
         ],
         "label_A":[
-            "Indirect (Scope 2) GHG emissions (location-based)"
+            "Scope 2 (location-based)"
         ],
         "label_B":[
             "Scope 2"
@@ -39538,7 +39469,7 @@
             "Indirect (Scope 2) GHG emissions, location-based"
         ],
         "label_A":[
-            "Indirect (Scope 2) GHG emissions (location-based)"
+            "Scope 2 (location-based)"
         ],
         "label_B":[
             "Scope 2"
@@ -39587,7 +39518,7 @@
             "Indirect (Scope 2) GHG emissions, location-based"
         ],
         "label_A":[
-            "Indirect (Scope 2) GHG emissions (location-based)"
+            "Scope 2 (location-based)"
         ],
         "label_B":[
             "Scope 2"
@@ -39636,7 +39567,7 @@
             "Indirect (Scope 2) GHG emissions, location-based"
         ],
         "label_A":[
-            "Indirect (Scope 2) GHG emissions (location-based)"
+            "Scope 2 (location-based)"
         ],
         "label_B":[
             "Scope 2"
@@ -39685,7 +39616,7 @@
             "Indirect (Scope 2) GHG emissions, location-based"
         ],
         "label_A":[
-            "Indirect (Scope 2) GHG emissions (location-based)"
+            "Scope 2 (location-based)"
         ],
         "label_B":[
             "Scope 2"
@@ -40668,8 +40599,7 @@
             9752.0
         ],
         "value_A":[
-            9752.0,
-            2486.0
+            9752.0
         ],
         "value_B":[
             2486.0,
@@ -40679,7 +40609,6 @@
             "tCO2e"
         ],
         "unit_A":[
-            "tCO2e",
             "tCO2e"
         ],
         "unit_B":[
@@ -40690,8 +40619,7 @@
             "Scope 1 Emissions (Global)"
         ],
         "label_A":[
-            "Scope 1 Emissions (Global)",
-            "Scope 1 Emissions (UK & Offshore)"
+            "Scope 1 Emissions (Global)"
         ],
         "label_B":[
             "Scope 1 Emissions (tCO2e)",
@@ -40724,9 +40652,7 @@
         ],
         "value_A":[
             17002.0,
-            2791.0,
-            3617.0,
-            216.0
+            2791.0
         ],
         "value_B":[
             3617.0,
@@ -40737,8 +40663,6 @@
             "tCO2e"
         ],
         "unit_A":[
-            "tCO2e",
-            "tCO2e",
             "tCO2e",
             "tCO2e"
         ],
@@ -40752,9 +40676,7 @@
         ],
         "label_A":[
             "Scope 1 Emissions (Global)",
-            "Scope 1 Emissions (Fugitive, Global)",
-            "Scope 1 Emissions (UK & Offshore)",
-            "Scope 1 Emissions (Fugitive, UK & Offshore)"
+            "Scope 1 Emissions (Fugitive, Global)"
         ],
         "label_B":[
             "Scope 1 Emissions (tCO2e)",
@@ -41025,8 +40947,7 @@
             27277.0
         ],
         "value_A":[
-            27277.0,
-            3689.0
+            27277.0
         ],
         "value_B":[
             3689.0,
@@ -41036,7 +40957,6 @@
             "tCO2e"
         ],
         "unit_A":[
-            "tCO2e",
             "tCO2e"
         ],
         "unit_B":[
@@ -41047,8 +40967,7 @@
             "Scope 2 Emissions (Location-based) (Global)"
         ],
         "label_A":[
-            "Scope 2 Emissions (Location-based, Global)",
-            "Scope 2 Emissions (Location-based, UK & Offshore)"
+            "Scope 2 Emissions (Location-based, Global)"
         ],
         "label_B":[
             "Scope 2 Emissions (Location-based, tCO2e)",
@@ -41079,8 +40998,7 @@
             22223.0
         ],
         "value_A":[
-            22223.0,
-            2886.0
+            22223.0
         ],
         "value_B":[
             2886.0,
@@ -41090,7 +41008,6 @@
             "tCO2e"
         ],
         "unit_A":[
-            "tCO2e",
             "tCO2e"
         ],
         "unit_B":[
@@ -41101,8 +41018,7 @@
             "Scope 2 Emissions (Location-based) (Global)"
         ],
         "label_A":[
-            "Scope 2 Emissions (Location-based, Global)",
-            "Scope 2 Emissions (Location-based, UK & Offshore)"
+            "Scope 2 Emissions (Location-based, Global)"
         ],
         "label_B":[
             "Scope 2 Emissions (Location-based, tCO2e)",
@@ -41310,19 +41226,13 @@
         "unit_normalized":null,
         "label":null,
         "value_Base":null,
-        "value_A":[
-            50801.0
-        ],
+        "value_A":null,
         "value_B":null,
         "unit_Base":null,
-        "unit_A":[
-            "tCO2e"
-        ],
+        "unit_A":null,
         "unit_B":null,
         "label_Base":null,
-        "label_A":[
-            "Scope 1 and 2 emissions baseline (combined)"
-        ],
+        "label_A":null,
         "label_B":null
     },
     {
@@ -41377,20 +41287,17 @@
         "label":null,
         "value_Base":null,
         "value_A":[
-            32949.0,
-            2486.0
+            32949.0
         ],
         "value_B":null,
         "unit_Base":null,
         "unit_A":[
-            "tCO2e",
             "tCO2e"
         ],
         "unit_B":null,
         "label_Base":null,
         "label_A":[
-            "Total Scope 1 & 2 Emissions (Market-based, Global) - combined scope 1+2",
-            "Total Scope 1 & 2 Emissions (Market-based, UK & Offshore) - combined scope 1+2"
+            "Total Scope 1 & 2 Emissions (Market-based, Global) - combined Scope 1+2"
         ],
         "label_B":null
     },
@@ -41416,20 +41323,17 @@
         "label":null,
         "value_Base":null,
         "value_A":[
-            30805.0,
-            3624.0
+            30805.0
         ],
         "value_B":null,
         "unit_Base":null,
         "unit_A":[
-            "tCO2e",
             "tCO2e"
         ],
         "unit_B":null,
         "label_Base":null,
         "label_A":[
-            "Total Scope 1 & 2 Emissions (Market-based, Global) - combined scope 1+2",
-            "Total Scope 1 & 2 Emissions (Market-based, UK & Offshore) - combined scope 1+2"
+            "Total Scope 1 & 2 Emissions (Market-based, Global) - combined Scope 1+2"
         ],
         "label_B":null
     },
@@ -41651,7 +41555,7 @@
             "Total Scope 3 footprint, 2019 baseline (stated as 18.7m tCO2e)"
         ],
         "label_A":[
-            "Scope 3 emissions baseline (total footprint, 99.97% of total)"
+            "Scope 3 baseline footprint (2019)"
         ],
         "label_B":null
     },
@@ -41709,15 +41613,13 @@
             82068.0
         ],
         "value_A":[
-            82068.0,
-            9221.0
+            82068.0
         ],
         "value_B":null,
         "unit_Base":[
             "tCO2e"
         ],
         "unit_A":[
-            "tCO2e",
             "tCO2e"
         ],
         "unit_B":null,
@@ -41725,8 +41627,7 @@
             "Scope 3 Emissions (Business Travel & Upstream Transport) (Global)"
         ],
         "label_A":[
-            "Scope 3 Emissions (Business Travel & Upstream Transport, Global)",
-            "Scope 3 Emissions (Business Travel & Upstream Transport, UK & Offshore)"
+            "Scope 3 Emissions (Business Travel & Upstream Transport, Global)"
         ],
         "label_B":null
     },
@@ -41754,15 +41655,13 @@
             187713.0
         ],
         "value_A":[
-            187713.0,
-            2975.0
+            187713.0
         ],
         "value_B":null,
         "unit_Base":[
             "tCO2e"
         ],
         "unit_A":[
-            "tCO2e",
             "tCO2e"
         ],
         "unit_B":null,
@@ -41770,8 +41669,7 @@
             "Scope 3 Emissions (Business Travel & Upstream Transport) (Global)"
         ],
         "label_A":[
-            "Scope 3 Emissions (Business Travel & Upstream Transport, Global)",
-            "Scope 3 Emissions (Business Travel & Upstream Transport, UK & Offshore)"
+            "Scope 3 Emissions (Business Travel & Upstream Transport, Global)"
         ],
         "label_B":null
     },
@@ -42496,17 +42394,23 @@
         "value_Base":[
             0.0
         ],
-        "value_A":null,
+        "value_A":[
+            0.0
+        ],
         "value_B":null,
         "unit_Base":[
             "metric tonnes CO2 equivalent"
         ],
-        "unit_A":null,
+        "unit_A":[
+            "metric tonnes CO2 equivalent"
+        ],
         "unit_B":null,
         "label_Base":[
             "Scope 2 GHG emissions from electricity at manufacturing sites (now zero due to 100% renewable electricity, market-based)"
         ],
-        "label_A":null,
+        "label_A":[
+            "Scope 2 GHG emissions from electricity at manufacturing sites (market-based, 100% renewable)"
+        ],
         "label_B":null
     },
     {
@@ -42929,7 +42833,7 @@
             "Direct (Scope 1) consolidated total"
         ],
         "label_A":[
-            "Direct (Scope 1) - Total"
+            "Direct (Scope 1) Total"
         ],
         "label_B":[
             "total"
@@ -42979,7 +42883,7 @@
             "Direct (Scope 1) consolidated total"
         ],
         "label_A":[
-            "Direct (Scope 1) - Total"
+            "Direct (Scope 1) Total"
         ],
         "label_B":[
             "total"
@@ -43012,7 +42916,8 @@
             7484799.0
         ],
         "value_A":[
-            7491616.0
+            7491616.0,
+            7484799.0
         ],
         "value_B":[
             7491616.0
@@ -43022,6 +42927,7 @@
             "tCO2e"
         ],
         "unit_A":[
+            "tCO2e",
             "tCO2e"
         ],
         "unit_B":[
@@ -43032,7 +42938,8 @@
             "Direct (Scope 1) total, from JetBlue Carbon Footprint table"
         ],
         "label_A":[
-            "Direct (Scope 1) - Total"
+            "Direct (Scope 1) Total - Absolute Emissions Table",
+            "Direct (Scope 1) Total - Carbon Footprint Table"
         ],
         "label_B":[
             "total"
@@ -43065,7 +42972,8 @@
             7484799.0
         ],
         "value_A":[
-            7491616.0
+            7491616.0,
+            7484799.0
         ],
         "value_B":[
             7491616.0
@@ -43075,6 +42983,7 @@
             "tCO2e"
         ],
         "unit_A":[
+            "tCO2e",
             "tCO2e"
         ],
         "unit_B":[
@@ -43085,7 +42994,8 @@
             "Direct (Scope 1) total, from JetBlue Carbon Footprint table"
         ],
         "label_A":[
-            "Direct (Scope 1) - Total"
+            "Direct (Scope 1) Total - Absolute Emissions Table",
+            "Direct (Scope 1) Total - Carbon Footprint Table"
         ],
         "label_B":[
             "total"
@@ -43135,7 +43045,7 @@
             "Direct (Scope 1) consolidated total"
         ],
         "label_A":[
-            "Direct (Scope 1) - Total"
+            "Direct (Scope 1) Total"
         ],
         "label_B":[
             "total"
@@ -43185,7 +43095,7 @@
             "Direct (Scope 1) consolidated total"
         ],
         "label_A":[
-            "Direct (Scope 1) - Total"
+            "Direct (Scope 1) Total"
         ],
         "label_B":[
             "total"
@@ -43235,7 +43145,7 @@
             "Direct (Scope 1) consolidated total"
         ],
         "label_A":[
-            "Direct (Scope 1) - Total"
+            "Direct (Scope 1) Total"
         ],
         "label_B":[
             "total"
@@ -43285,7 +43195,7 @@
             "Direct (Scope 1) consolidated total"
         ],
         "label_A":[
-            "Direct (Scope 1) - Total"
+            "Direct (Scope 1) Total"
         ],
         "label_B":[
             "total"
@@ -43335,7 +43245,7 @@
             "Direct (Scope 1) consolidated total"
         ],
         "label_A":[
-            "Direct (Scope 1) - Total"
+            "Direct (Scope 1) Total"
         ],
         "label_B":[
             "total"
@@ -43385,7 +43295,7 @@
             "Direct (Scope 1) consolidated total"
         ],
         "label_A":[
-            "Direct (Scope 1) - Total"
+            "Direct (Scope 1) Total"
         ],
         "label_B":[
             "total"
@@ -43435,7 +43345,7 @@
             "Direct (Scope 1) consolidated total"
         ],
         "label_A":[
-            "Direct (Scope 1) - Total"
+            "Direct (Scope 1) Total"
         ],
         "label_B":[
             "total"
@@ -44675,7 +44585,7 @@
             "Indirect (Scope 3) consolidated subtotal"
         ],
         "label_A":[
-            "Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
+            "Indirect (Scope 3) Total - Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D"
         ],
         "label_B":[
             "total"
@@ -44725,7 +44635,7 @@
             "Indirect (Scope 3) consolidated subtotal"
         ],
         "label_A":[
-            "Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
+            "Indirect (Scope 3) Total - Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D"
         ],
         "label_B":[
             "total"
@@ -44775,7 +44685,7 @@
             "Indirect (Scope 3) consolidated subtotal"
         ],
         "label_A":[
-            "Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
+            "Indirect (Scope 3) Total - Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D"
         ],
         "label_B":[
             "total"
@@ -44825,7 +44735,7 @@
             "Indirect (Scope 3) consolidated subtotal"
         ],
         "label_A":[
-            "Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
+            "Indirect (Scope 3) Total - Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D"
         ],
         "label_B":[
             "total"
@@ -44875,7 +44785,7 @@
             "Indirect (Scope 3) consolidated subtotal"
         ],
         "label_A":[
-            "Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
+            "Indirect (Scope 3) Total - Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D"
         ],
         "label_B":[
             "total"
@@ -44925,7 +44835,7 @@
             "Indirect (Scope 3) consolidated subtotal"
         ],
         "label_A":[
-            "Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
+            "Indirect (Scope 3) Total - Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D"
         ],
         "label_B":[
             "total"
@@ -44975,7 +44885,7 @@
             "Indirect (Scope 3) consolidated subtotal"
         ],
         "label_A":[
-            "Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
+            "Indirect (Scope 3) Total - Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D"
         ],
         "label_B":[
             "total"
@@ -45025,7 +44935,7 @@
             "Indirect (Scope 3) consolidated subtotal"
         ],
         "label_A":[
-            "Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
+            "Indirect (Scope 3) Total - Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D"
         ],
         "label_B":[
             "total"
@@ -45075,7 +44985,7 @@
             "Indirect (Scope 3) consolidated subtotal"
         ],
         "label_A":[
-            "Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
+            "Indirect (Scope 3) Total - Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D"
         ],
         "label_B":[
             "total"
@@ -45125,7 +45035,7 @@
             "Indirect (Scope 3) consolidated subtotal"
         ],
         "label_A":[
-            "Indirect Energy (Scope 3) - Total (Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D)"
+            "Indirect (Scope 3) Total - Ground Fuel WTT, Jet Fuel WTT, Electricity WTT & T&D"
         ],
         "label_B":[
             "total"
@@ -47477,7 +47387,7 @@
             "Total location-based (Scope 2)"
         ],
         "label_A":[
-            "Scope 2 location-based total (Green electricity, Emergency power generators (diesel), Heating oil, District heating)"
+            "Location-based Scope 2 emissions total (green electricity, emergency power generators, heating oil, district heating)"
         ],
         "label_B":[
             "Location-based, 2017"
@@ -47527,7 +47437,7 @@
             "Total location-based (Scope 2)"
         ],
         "label_A":[
-            "Scope 2 location-based total (Green electricity, Emergency power generators (diesel), Heating oil, District heating)"
+            "Location-based Scope 2 emissions total (green electricity, emergency power generators, heating oil, district heating)"
         ],
         "label_B":[
             "Location-based, 2018"
@@ -47718,27 +47628,21 @@
         "value_Base":[
             2073.0
         ],
-        "value_A":[
-            2073.0
-        ],
+        "value_A":null,
         "value_B":[
             2073.0
         ],
         "unit_Base":[
             "tonnes CO2e"
         ],
-        "unit_A":[
-            "tonnes CO2e"
-        ],
+        "unit_A":null,
         "unit_B":[
             "tonnes"
         ],
         "label_Base":[
             "Emissions from indirect energy consumption (Scope 2), method not specified"
         ],
-        "label_A":[
-            "Emissions from indirect energy consumption (Scope 2) - Green electricity, district heating, oil and emergency power generators (diesel)"
-        ],
+        "label_A":null,
         "label_B":[
             "Emissions from indirect energy consumption (Scope 2)"
         ]
@@ -47768,27 +47672,21 @@
         "value_Base":[
             1097.0
         ],
-        "value_A":[
-            1097.0
-        ],
+        "value_A":null,
         "value_B":[
             1097.0
         ],
         "unit_Base":[
             "tonnes CO2e"
         ],
-        "unit_A":[
-            "tonnes CO2e"
-        ],
+        "unit_A":null,
         "unit_B":[
             "tonnes"
         ],
         "label_Base":[
             "Emissions from indirect energy consumption (Scope 2), method not specified"
         ],
-        "label_A":[
-            "Emissions from indirect energy consumption (Scope 2)"
-        ],
+        "label_A":null,
         "label_B":[
             "Emissions from indirect energy consumption (Scope 2)"
         ]
@@ -47818,27 +47716,21 @@
         "value_Base":[
             1400.0
         ],
-        "value_A":[
-            1400.0
-        ],
+        "value_A":null,
         "value_B":[
             1400.0
         ],
         "unit_Base":[
             "tonnes CO2e"
         ],
-        "unit_A":[
-            "tonnes CO2e"
-        ],
+        "unit_A":null,
         "unit_B":[
             "tonnes"
         ],
         "label_Base":[
             "Emissions from indirect energy consumption (Scope 2), method not specified"
         ],
-        "label_A":[
-            "Emissions from indirect energy consumption (Scope 2)"
-        ],
+        "label_A":null,
         "label_B":[
             "Emissions from indirect energy consumption (Scope 2)"
         ]
@@ -47890,7 +47782,7 @@
             "Total market-based (Scope 2)"
         ],
         "label_A":[
-            "Scope 2 market-based total (Green electricity, Emergency power generators (diesel), Heating oil, District heating)"
+            "Market-based Scope 2 emissions total (green electricity, emergency power generators, heating oil, district heating)"
         ],
         "label_B":[
             "Market-based, 2017"
@@ -47943,7 +47835,7 @@
             "Total market-based (Scope 2)"
         ],
         "label_A":[
-            "Scope 2 market-based total (Green electricity, Emergency power generators (diesel), Heating oil, District heating)"
+            "Market-based Scope 2 emissions total (green electricity, emergency power generators, heating oil, district heating)"
         ],
         "label_B":[
             "Market-based, 2018"
@@ -48160,8 +48052,8 @@
             "Events (Scope 3)"
         ],
         "label_A":[
-            "Total business travel (Scope 3) - only flights",
-            "Events (Scope 3) - participants' travel to\/from KfW buildings"
+            "Total business travel (Scope 3) - flights only",
+            "Events (Scope 3) - participants' travel to and from KfW buildings for events"
         ],
         "label_B":[
             "Total business travel (Scope 3)",
@@ -48219,8 +48111,8 @@
             "Events (Scope 3)"
         ],
         "label_A":[
-            "Total business travel (Scope 3) - only flights",
-            "Events (Scope 3)"
+            "Total business travel (Scope 3) - flights only",
+            "Events (Scope 3) - participants' travel to and from KfW buildings for events"
         ],
         "label_B":[
             "Total business travel (Scope 3)",
@@ -48278,8 +48170,8 @@
             "Events (Scope 3)"
         ],
         "label_A":[
-            "Total business travel (Scope 3) - only flights",
-            "Events (Scope 3)"
+            "Total business travel (Scope 3) - flights only",
+            "Events (Scope 3) - participants' travel to and from KfW buildings for events"
         ],
         "label_B":[
             "Total business travel (Scope 3)",
@@ -48337,8 +48229,8 @@
             "Events (Scope 3)"
         ],
         "label_A":[
-            "Total business travel (Scope 3) - only flights",
-            "Events (Scope 3)"
+            "Total business travel (Scope 3) - flights only",
+            "Events (Scope 3) - participants' travel to and from KfW buildings for events"
         ],
         "label_B":[
             "Total business travel (Scope 3)",
@@ -48396,8 +48288,8 @@
             "Events (Scope 3)"
         ],
         "label_A":[
-            "Total business travel (Scope 3) - only flights",
-            "Events (Scope 3)"
+            "Total business travel (Scope 3) - flights only",
+            "Events (Scope 3) - participants' travel to and from KfW buildings for events"
         ],
         "label_B":[
             "Total business travel (Scope 3)",
@@ -48656,7 +48548,7 @@
             "Whole Portfolio absolute Scope 1 (Office + Life Sciences)"
         ],
         "label_A":[
-            "Whole Portfolio Scope 1 Absolute"
+            "Whole Portfolio Absolute Scope 1"
         ],
         "label_B":[
             "Whole Portfolio"
@@ -48702,7 +48594,7 @@
             "Whole Portfolio absolute Scope 1 (Office + Life Sciences)"
         ],
         "label_A":[
-            "Whole Portfolio Scope 1 Absolute"
+            "Whole Portfolio Absolute Scope 1"
         ],
         "label_B":[
             "Whole Portfolio"
@@ -48748,7 +48640,7 @@
             "Whole Portfolio absolute Scope 1 (Office + Life Sciences)"
         ],
         "label_A":[
-            "Whole Portfolio Scope 1 Absolute"
+            "Whole Portfolio Absolute Scope 1"
         ],
         "label_B":[
             "Whole Portfolio"
@@ -49018,7 +48910,7 @@
             "Whole Portfolio absolute Scope 2 (Office + Life Sciences)"
         ],
         "label_A":[
-            "Whole Portfolio Scope 2 Absolute"
+            "Whole Portfolio Absolute Scope 2"
         ],
         "label_B":[
             "Whole Portfolio"
@@ -49064,7 +48956,7 @@
             "Whole Portfolio absolute Scope 2 (Office + Life Sciences)"
         ],
         "label_A":[
-            "Whole Portfolio Scope 2 Absolute"
+            "Whole Portfolio Absolute Scope 2"
         ],
         "label_B":[
             "Whole Portfolio"
@@ -49110,7 +49002,7 @@
             "Whole Portfolio absolute Scope 2 (Office + Life Sciences)"
         ],
         "label_A":[
-            "Whole Portfolio Scope 2 Absolute"
+            "Whole Portfolio Absolute Scope 2"
         ],
         "label_B":[
             "Whole Portfolio"
@@ -50989,7 +50881,7 @@
             "Whole Portfolio - Scope 3 Emissions (Downstream Leased Assets), per DNV-GL Assurance Statement"
         ],
         "label_A":[
-            "Scope 3 Emissions (Downstream Leased Assets)"
+            "Scope 3 Emissions (Downstream Leased Assets) - Whole Portfolio"
         ],
         "label_B":[
             "Scope 3 Emissions (Downstream Leased Assets)"
@@ -52719,7 +52611,7 @@
             "Total Scope 1 (Fruta del Norte 25,014 + Exploration 385)"
         ],
         "label_A":[
-            "Total Scope 1 (Fruta del Norte, Exploration, Ecuador Offices, Vancouver Offices)"
+            "Total Scope 1"
         ],
         "label_B":[
             "total"
@@ -52998,21 +52890,27 @@
         "value_Base":[
             24170.0
         ],
-        "value_A":null,
+        "value_A":[
+            24170.0
+        ],
         "value_B":[
             24170.0
         ],
         "unit_Base":[
             "tCO2e"
         ],
-        "unit_A":null,
+        "unit_A":[
+            "tCO2e"
+        ],
         "unit_B":[
             "tCO\u2082e"
         ],
         "label_Base":[
             "Total Scope 2 (Fruta del Norte 24,097 + Ecuador Offices 73 + Vancouver Offices 0.1)"
         ],
-        "label_A":null,
+        "label_A":[
+            "Total Scope 2"
+        ],
         "label_B":[
             "total"
         ]
@@ -53589,7 +53487,7 @@
             "Total Scope 3 (Fruta del Norte)"
         ],
         "label_A":[
-            "Total Scope 3 (Fruta del Norte - includes cement consumption, land\/air transportation of dor\u00e9, land\/water transportation of concentrate, ~90% of land transportation of materials to site, and employee commuting air travel)"
+            "Total Scope 3"
         ],
         "label_B":[
             "total"
@@ -53899,7 +53797,7 @@
             "Total Scope 1 (previously reported baseline)"
         ],
         "label_A":[
-            "Total Scope 1 emissions (recalculated baseline)"
+            "Total Scope 1 (recalculated baseline)"
         ],
         "label_B":[
             "total"
@@ -53946,7 +53844,7 @@
             "Total Scope 1 (FDN, exploration, Ecuador and Vancouver offices)"
         ],
         "label_A":[
-            "Total Scope 1 emissions"
+            "Total Scope 1"
         ],
         "label_B":[
             "total"
@@ -54228,7 +54126,7 @@
             "Total Scope 2 (previously reported baseline, marginal grid factor)"
         ],
         "label_A":[
-            "Total Scope 2 emissions (recalculated baseline)"
+            "Total Scope 2 (recalculated baseline)"
         ],
         "label_B":[
             "total"
@@ -54275,7 +54173,7 @@
             "Total Scope 2 (average grid emission factor)"
         ],
         "label_A":[
-            "Total Scope 2 emissions"
+            "Total Scope 2"
         ],
         "label_B":[
             "total"
@@ -54847,7 +54745,7 @@
             "Total Scope 3 (previously reported)"
         ],
         "label_A":[
-            "Total Scope 3 emissions (recalculated)"
+            "Total Scope 3 (recalculated)"
         ],
         "label_B":[
             "total"
@@ -54894,7 +54792,7 @@
             "Total Scope 3"
         ],
         "label_A":[
-            "Total Scope 3 emissions"
+            "Total Scope 3"
         ],
         "label_B":[
             "total"
@@ -55144,7 +55042,7 @@
             "Metric tons (t) CO2e"
         ],
         "unit_A":[
-            "metric tons CO2e"
+            "Metric tons (t) CO2e"
         ],
         "unit_B":[
             "Metric tons (t) CO2e",
@@ -55195,7 +55093,7 @@
             "Metric tons (t) CO2e"
         ],
         "unit_A":[
-            "metric tons CO2e"
+            "Metric tons (t) CO2e"
         ],
         "unit_B":[
             "Metric tons (t) CO2e",
@@ -55246,7 +55144,7 @@
             "Metric tons (t) CO2e"
         ],
         "unit_A":[
-            "metric tons CO2e"
+            "Metric tons (t) CO2e"
         ],
         "unit_B":[
             "Metric tons (t) CO2e",
@@ -55506,7 +55404,7 @@
             "Metric tons (t) CO2e"
         ],
         "unit_A":[
-            "metric tons CO2e"
+            "Metric tons (t) CO2e"
         ],
         "unit_B":[
             "Metric tons (t) CO2e"
@@ -55554,7 +55452,7 @@
             "Metric tons (t) CO2e"
         ],
         "unit_A":[
-            "metric tons CO2e"
+            "Metric tons (t) CO2e"
         ],
         "unit_B":[
             "Metric tons (t) CO2e"
@@ -55602,7 +55500,7 @@
             "Metric tons (t) CO2e"
         ],
         "unit_A":[
-            "metric tons CO2e"
+            "Metric tons (t) CO2e"
         ],
         "unit_B":[
             "Metric tons (t) CO2e"
@@ -56160,7 +56058,7 @@
             "Metric tons (t) CO2e"
         ],
         "unit_A":[
-            "metric tons CO2e"
+            "Metric tons (t) CO2e"
         ],
         "unit_B":[
             "Metric tons (t) CO2e"
@@ -56208,7 +56106,7 @@
             "Metric tons (t) CO2e"
         ],
         "unit_A":[
-            "metric tons CO2e"
+            "Metric tons (t) CO2e"
         ],
         "unit_B":[
             "Metric tons (t) CO2e"
@@ -56256,7 +56154,7 @@
             "Metric tons (t) CO2e"
         ],
         "unit_A":[
-            "metric tons CO2e"
+            "Metric tons (t) CO2e"
         ],
         "unit_B":[
             "Metric tons (t) CO2e"
@@ -57455,15 +57353,15 @@
             "Category 12 Disposal of sold products (Domestic consolidated companies)"
         ],
         "label_A":[
-            "Category 1: Purchased goods and services",
-            "Category 2: Capital goods",
-            "Category 3: Fuel- and energy-related activities",
-            "Category 4: Upstream transportation and distribution",
-            "Category 5: Waste generated in operations",
-            "Category 6: Business travel",
-            "Category 7: Employee commuting",
-            "Category 8: Upstream leased assets",
-            "Category 12: Disposal of sold products"
+            "Category 1 - Purchased goods and services",
+            "Category 2 - Capital goods",
+            "Category 3 - Fuel- and energy-related activities",
+            "Category 4 - Upstream transportation and distribution",
+            "Category 5 - Waste generated in operations",
+            "Category 6 - Business travel",
+            "Category 7 - Employee commuting",
+            "Category 8 - Upstream leased assets",
+            "Category 12 - Disposal of sold products"
         ],
         "label_B":[
             "Category 1 Purchased goods and services",
@@ -58960,7 +58858,7 @@
             "Scope 1 (Fuel), FY2020, NOK Group"
         ],
         "label_A":[
-            "Scope 1 (Fuel), NOK Group global, FY 2020"
+            "Scope 1 (Fuel)"
         ],
         "label_B":[
             "Scope 1 (Fuel)"
@@ -59258,7 +59156,7 @@
             "Scope 2 (Electricity\/heat), FY2020, NOK Group, methodology unspecified"
         ],
         "label_A":[
-            "Scope 2 (Electricity\/heat), NOK Group global, FY 2020; methodology not explicitly labeled as market- or location-based, but calculated using IEA national emission factors by country (consistent with location-based approach)"
+            "Scope 2 (Electricity\/heat)"
         ],
         "label_B":[
             "Scope 2 (Electricity\/heat)"
@@ -59828,8 +59726,7 @@
             269.0
         ],
         "value_A":[
-            269.0,
-            268547.0
+            269.0
         ],
         "value_B":[
             268547.0
@@ -59848,7 +59745,6 @@
             "1,000 tons-CO2"
         ],
         "unit_A":[
-            "1,000 tons-CO2",
             "1,000 tons-CO2"
         ],
         "unit_B":[
@@ -59868,8 +59764,7 @@
             "Scope 3 Total, FY2020 (Categories 9, 10, 11, 12, and 15 excluded)"
         ],
         "label_A":[
-            "Scope 3 total (sum of reported categories), NOK Group, FY 2020; from Scope 3 Breakdown table; Categories 9, 10, 11, 12, and 15 excluded due to current difficulty in calculating",
-            "Scope 3 (Indirect Emissions), NOK Group, FY 2020; as stated in Material Flow OUTPUT table (value appears inconsistent with Scope 3 Breakdown total of 269; likely a formatting\/decimal-separator artifact in the source, but reported as printed)"
+            "Scope 3 Total (sum of reported categories; categories 9, 10, 11, 12, and 15 excluded)"
         ],
         "label_B":[
             "Scope 3 (Indirect Emissions)"
@@ -61367,7 +61262,7 @@
             "Total Polaris Scope 1 (Polaris Management + all portfolio companies)"
         ],
         "label_A":[
-            "Total Polaris Scope 1"
+            "Total Polaris Scope 1 (incl. Polaris Management and portfolio)"
         ],
         "label_B":[
             "total"
@@ -61415,7 +61310,7 @@
             "Total Polaris Scope 1 (Polaris Management + all portfolio companies)"
         ],
         "label_A":[
-            "Total Polaris Scope 1"
+            "Total Polaris Scope 1 (incl. Polaris Management and portfolio)"
         ],
         "label_B":[
             "total",
@@ -61458,7 +61353,7 @@
             "Total Polaris Scope 1 (Polaris Management + all portfolio companies)"
         ],
         "label_A":[
-            "Total Polaris Scope 1"
+            "Total Polaris Scope 1 (incl. Polaris Management and portfolio)"
         ],
         "label_B":null
     },
@@ -61698,7 +61593,7 @@
             "Total Polaris Scope 2 (Location Based)"
         ],
         "label_A":[
-            "Total Polaris Scope 2 (Location Based)"
+            "Total Polaris Scope 2 Location Based (incl. Polaris Management and portfolio)"
         ],
         "label_B":[
             "total"
@@ -61744,7 +61639,7 @@
             "Total Polaris Scope 2 (Location Based)"
         ],
         "label_A":[
-            "Total Polaris Scope 2 (Location Based)"
+            "Total Polaris Scope 2 Location Based (incl. Polaris Management and portfolio)"
         ],
         "label_B":[
             "total"
@@ -61786,7 +61681,7 @@
             "Total Polaris Scope 2 (Location Based)"
         ],
         "label_A":[
-            "Total Polaris Scope 2 (Location Based)"
+            "Total Polaris Scope 2 Location Based (incl. Polaris Management and portfolio)"
         ],
         "label_B":null
     },
@@ -62033,17 +61928,23 @@
         "unit_normalized":null,
         "label":null,
         "value_Base":null,
-        "value_A":null,
+        "value_A":[
+            3349.0
+        ],
         "value_B":[
             2664.0
         ],
         "unit_Base":null,
-        "unit_A":null,
+        "unit_A":[
+            "tCO2e"
+        ],
         "unit_B":[
             "tCO2e"
         ],
         "label_Base":null,
-        "label_A":null,
+        "label_A":[
+            "Total Portfolio Scope 2 Market Based"
+        ],
         "label_B":[
             "total"
         ]
@@ -62084,7 +61985,7 @@
             "Total Polaris Scope 2 (Market Based)"
         ],
         "label_A":[
-            "Total Polaris Scope 2 (Market Based)"
+            "Total Polaris Scope 2 Market Based"
         ],
         "label_B":null
     },
@@ -62324,7 +62225,7 @@
             "Total Polaris Scope 3 (Polaris Management + all portfolio companies)"
         ],
         "label_A":[
-            "Total Polaris Scope 3"
+            "Total Polaris Scope 3 (incl. Polaris Management and portfolio)"
         ],
         "label_B":[
             "total"
@@ -62372,7 +62273,7 @@
             "Total Polaris Scope 3 (Polaris Management + all portfolio companies)"
         ],
         "label_A":[
-            "Total Polaris Scope 3"
+            "Total Polaris Scope 3 (incl. Polaris Management and portfolio)"
         ],
         "label_B":[
             "total",
@@ -62415,7 +62316,7 @@
             "Total Polaris Scope 3 (Polaris Management + all portfolio companies)"
         ],
         "label_A":[
-            "Total Polaris Scope 3"
+            "Total Polaris Scope 3 (incl. Polaris Management and portfolio)"
         ],
         "label_B":null
     },
@@ -67211,17 +67112,23 @@
         "value_Base":[
             934276.0
         ],
-        "value_A":null,
+        "value_A":[
+            934276.0
+        ],
         "value_B":null,
         "unit_Base":[
             "t-CO2e"
         ],
-        "unit_A":null,
+        "unit_A":[
+            "t-CO2e"
+        ],
         "unit_B":null,
         "label_Base":[
             "Scope1 <Energy-related CO2> (Consolidated); Scope1 <other GHGs> not reported"
         ],
-        "label_A":null,
+        "label_A":[
+            "Scope 1 Energy-related CO2 (Consolidated)"
+        ],
         "label_B":null
     },
     {
@@ -67250,8 +67157,7 @@
             0.0
         ],
         "value_A":[
-            939346.0,
-            0.0
+            939346.0
         ],
         "value_B":null,
         "unit_Base":[
@@ -67259,7 +67165,6 @@
             "t-CO2e"
         ],
         "unit_A":[
-            "t-CO2e",
             "t-CO2e"
         ],
         "unit_B":null,
@@ -67268,8 +67173,7 @@
             "Scope1 <other GHGs> (Consolidated)"
         ],
         "label_A":[
-            "Scope1 <Energy-related CO2> Consolidated",
-            "Scope1 <other GHGs> Consolidated"
+            "Scope 1 Energy-related CO2 (Consolidated)"
         ],
         "label_B":null
     },
@@ -67299,8 +67203,7 @@
             0.0
         ],
         "value_A":[
-            791730.0,
-            0.0
+            791730.0
         ],
         "value_B":null,
         "unit_Base":[
@@ -67308,7 +67211,6 @@
             "t-CO2e"
         ],
         "unit_A":[
-            "t-CO2e",
             "t-CO2e"
         ],
         "unit_B":null,
@@ -67317,8 +67219,7 @@
             "Scope1 <other GHGs> (Consolidated)"
         ],
         "label_A":[
-            "Scope1 <Energy-related CO2> Consolidated",
-            "Scope1 <other GHGs> Consolidated"
+            "Scope 1 Energy-related CO2 (Consolidated)"
         ],
         "label_B":null
     },
@@ -67369,9 +67270,9 @@
             "Scope1 total (Consolidated); breakdown CO2 1,522,514 + N2O 4,210"
         ],
         "label_A":[
-            "Scope 1 total (Energy-related CO2 + other GHGs) Consolidated",
-            "Scope1 <Energy-related CO2> Consolidated",
-            "Scope1 <other GHGs> (N2O) Consolidated"
+            "Scope 1 total (Consolidated, incl. Energy-related CO2 and other GHGs)",
+            "Scope 1 Energy-related CO2 (Consolidated)",
+            "Scope 1 other GHGs - N2O (Consolidated)"
         ],
         "label_B":[
             "total"
@@ -67606,7 +67507,7 @@
             "Scope2 (Consolidated); market\/location method not separately disclosed"
         ],
         "label_A":[
-            "Scope2 Consolidated"
+            "Scope 2 (Consolidated)"
         ],
         "label_B":[
             "Scope2"
@@ -67655,7 +67556,7 @@
             "Scope2 (Consolidated); market\/location method not separately disclosed"
         ],
         "label_A":[
-            "Scope2 Consolidated"
+            "Scope 2 (Consolidated)"
         ],
         "label_B":[
             "Scope2"
@@ -67704,7 +67605,7 @@
             "Scope2 (Consolidated); market\/location method not separately disclosed"
         ],
         "label_A":[
-            "Scope2 Consolidated"
+            "Scope 2 (Consolidated)"
         ],
         "label_B":[
             "Scope2"
@@ -67753,7 +67654,7 @@
             "Scope2 (Consolidated); market\/location method not separately disclosed"
         ],
         "label_A":[
-            "Scope2 Consolidated"
+            "Scope 2 (Consolidated)"
         ],
         "label_B":[
             "Scope2"
@@ -68280,11 +68181,6 @@
             73980.0
         ],
         "value_A":[
-            7803.0,
-            6.0,
-            28569.0,
-            709.0,
-            36894.0,
             73980.0
         ],
         "value_B":[
@@ -68294,11 +68190,6 @@
             "t-CO2e"
         ],
         "unit_A":[
-            "t-CO2e",
-            "t-CO2e",
-            "t-CO2e",
-            "t-CO2e",
-            "t-CO2e",
             "t-CO2e"
         ],
         "unit_B":[
@@ -68308,12 +68199,7 @@
             "Scope3 total (Non-consolidated in Japan)"
         ],
         "label_A":[
-            "Scope3 Logistics (Non-consolidated in Japan)",
-            "Scope3 Waste (Non-consolidated in Japan)",
-            "Scope3 Overseas Business Trips (Non-consolidated in Japan)",
-            "Scope3 Commuting (Non-consolidated in Japan)",
-            "Scope3 Downstream Leased Assets (Non-consolidated in Japan)",
-            "Scope3 Total (Non-consolidated in Japan)"
+            "Scope 3 Total (Non-consolidated in Japan: Logistics, Waste, Overseas Business Trips, Commuting, Downstream Leased Assets)"
         ],
         "label_B":[
             "Total"
@@ -68344,11 +68230,6 @@
             71320.0
         ],
         "value_A":[
-            5216.0,
-            6.0,
-            30232.0,
-            636.0,
-            35230.0,
             71320.0
         ],
         "value_B":[
@@ -68358,11 +68239,6 @@
             "t-CO2e"
         ],
         "unit_A":[
-            "t-CO2e",
-            "t-CO2e",
-            "t-CO2e",
-            "t-CO2e",
-            "t-CO2e",
             "t-CO2e"
         ],
         "unit_B":[
@@ -68372,12 +68248,7 @@
             "Scope3 total (Non-consolidated in Japan)"
         ],
         "label_A":[
-            "Scope3 Logistics (Non-consolidated in Japan)",
-            "Scope3 Waste (Non-consolidated in Japan)",
-            "Scope3 Overseas Business Trips (Non-consolidated in Japan)",
-            "Scope3 Commuting (Non-consolidated in Japan)",
-            "Scope3 Downstream Leased Assets (Non-consolidated in Japan)",
-            "Scope3 Total (Non-consolidated in Japan)"
+            "Scope 3 Total (Non-consolidated in Japan)"
         ],
         "label_B":[
             "Total"
@@ -68408,11 +68279,6 @@
             62187.0
         ],
         "value_A":[
-            5501.0,
-            15.0,
-            22400.0,
-            609.0,
-            33662.0,
             62187.0
         ],
         "value_B":[
@@ -68422,11 +68288,6 @@
             "t-CO2e"
         ],
         "unit_A":[
-            "t-CO2e",
-            "t-CO2e",
-            "t-CO2e",
-            "t-CO2e",
-            "t-CO2e",
             "t-CO2e"
         ],
         "unit_B":[
@@ -68436,12 +68297,7 @@
             "Scope3 total (Non-consolidated in Japan)"
         ],
         "label_A":[
-            "Scope3 Logistics (Non-consolidated in Japan)",
-            "Scope3 Waste (Non-consolidated in Japan)",
-            "Scope3 Overseas Business Trips (Non-consolidated in Japan)",
-            "Scope3 Commuting (Non-consolidated in Japan)",
-            "Scope3 Downstream Leased Assets (Non-consolidated in Japan)",
-            "Scope3 Total (Non-consolidated in Japan)"
+            "Scope 3 Total (Non-consolidated in Japan)"
         ],
         "label_B":[
             "Total"
@@ -68472,11 +68328,6 @@
             34381.0
         ],
         "value_A":[
-            3875.0,
-            5.0,
-            67.0,
-            140.0,
-            30294.0,
             34381.0
         ],
         "value_B":[
@@ -68486,11 +68337,6 @@
             "t-CO2e"
         ],
         "unit_A":[
-            "t-CO2e",
-            "t-CO2e",
-            "t-CO2e",
-            "t-CO2e",
-            "t-CO2e",
             "t-CO2e"
         ],
         "unit_B":[
@@ -68500,12 +68346,7 @@
             "Scope3 total (Non-consolidated in Japan)"
         ],
         "label_A":[
-            "Scope3 Logistics \/ Upstream Transportation and Distribution (Non-consolidated in Japan)",
-            "Scope3 Waste (Non-consolidated in Japan)",
-            "Scope3 Overseas Business Trips (Non-consolidated in Japan)",
-            "Scope3 Commuting (Non-consolidated in Japan)",
-            "Scope3 Downstream Leased Assets (Non-consolidated in Japan)",
-            "Scope3 Total (Non-consolidated in Japan)"
+            "Scope 3 Total (Non-consolidated in Japan)"
         ],
         "label_B":[
             "Total"
@@ -69413,7 +69254,7 @@
             "Indirect emissions associated with energy use (Scope 2), FY2020; includes contribution based on environmental value certification"
         ],
         "label_A":[
-            "Indirect emissions associated with energy use (Scope 2) - includes contribution based on environmental value certification"
+            "Indirect emissions associated with energy use (Scope 2), includes contribution based on environmental value certification"
         ],
         "label_B":null
     },
@@ -69453,7 +69294,7 @@
             "Indirect emissions associated with energy use (Scope 2), FY2021; includes contribution based on environmental value certification"
         ],
         "label_A":[
-            "Indirect emissions associated with energy use (Scope 2) - includes contribution based on environmental value certification"
+            "Indirect emissions associated with energy use (Scope 2), includes contribution based on environmental value certification"
         ],
         "label_B":null
     },
@@ -70004,7 +69845,7 @@
             "million metric tons of CO2"
         ],
         "unit_A":[
-            "million metric tons CO2"
+            "million metric tons of CO2"
         ],
         "unit_B":[
             "Million metric tons"
@@ -70053,7 +69894,7 @@
             "million metric tons of CO2"
         ],
         "unit_A":[
-            "million metric tons CO2"
+            "million metric tons of CO2"
         ],
         "unit_B":[
             "Million metric tons"
@@ -70102,7 +69943,7 @@
             "million metric tons of CO2"
         ],
         "unit_A":[
-            "million metric tons CO2"
+            "million metric tons of CO2"
         ],
         "unit_B":[
             "Million metric tons"
@@ -70151,7 +69992,7 @@
             "million metric tons of CO2"
         ],
         "unit_A":[
-            "million metric tons CO2"
+            "million metric tons of CO2"
         ],
         "unit_B":[
             "Million metric tons"
@@ -70200,7 +70041,7 @@
             "million metric tons of CO2"
         ],
         "unit_A":[
-            "million metric tons CO2"
+            "million metric tons of CO2"
         ],
         "unit_B":[
             "Million metric tons"
@@ -70249,7 +70090,7 @@
             "million metric tons of CO2"
         ],
         "unit_A":[
-            "million metric tons CO2"
+            "million metric tons of CO2"
         ],
         "unit_B":[
             "Million metric tons"
@@ -70547,7 +70388,7 @@
             "million metric tons of CO2"
         ],
         "unit_A":[
-            "metric tons CO2"
+            "metric tons of CO2"
         ],
         "unit_B":[
             "m metric tons of CO2",
@@ -70557,7 +70398,7 @@
             "Indirect Scope 2 emissions (location-based method)"
         ],
         "label_A":[
-            "Indirect Scope 2 emissions (location-based method)"
+            "Total indirect Scope 2 emissions (location-based method)"
         ],
         "label_B":[
             "Indirect scope 2 emissions (location-based method)",
@@ -70599,7 +70440,7 @@
             "million metric tons of CO2"
         ],
         "unit_A":[
-            "metric tons CO2"
+            "metric tons of CO2"
         ],
         "unit_B":[
             "m metric tons of CO2",
@@ -70609,7 +70450,7 @@
             "Indirect Scope 2 emissions (location-based method)"
         ],
         "label_A":[
-            "Indirect Scope 2 emissions (location-based method)"
+            "Total indirect Scope 2 emissions (location-based method)"
         ],
         "label_B":[
             "Indirect scope 2 emissions (location-based method)",
@@ -70651,7 +70492,7 @@
             "million metric tons of CO2"
         ],
         "unit_A":[
-            "metric tons CO2"
+            "metric tons of CO2"
         ],
         "unit_B":[
             "m metric tons of CO2",
@@ -70661,7 +70502,7 @@
             "Indirect Scope 2 emissions (location-based method)"
         ],
         "label_A":[
-            "Indirect Scope 2 emissions (location-based method)"
+            "Total indirect Scope 2 emissions (location-based method)"
         ],
         "label_B":[
             "Indirect scope 2 emissions (location-based method)",
@@ -70951,7 +70792,7 @@
             "million metric tons of CO2"
         ],
         "unit_A":[
-            "metric tons CO2"
+            "metric tons of CO2"
         ],
         "unit_B":[
             "m metric tons of CO2",
@@ -70961,7 +70802,7 @@
             "Indirect Scope 2 emissions (market-based method)"
         ],
         "label_A":[
-            "Indirect Scope 2 emissions (market-based method)"
+            "Total indirect Scope 2 emissions (market-based method)"
         ],
         "label_B":[
             "Indirect scope 2 emissions (market-based method)",
@@ -71003,7 +70844,7 @@
             "million metric tons of CO2"
         ],
         "unit_A":[
-            "metric tons CO2"
+            "metric tons of CO2"
         ],
         "unit_B":[
             "m metric tons of CO2",
@@ -71013,7 +70854,7 @@
             "Indirect Scope 2 emissions (market-based method)"
         ],
         "label_A":[
-            "Indirect Scope 2 emissions (market-based method)"
+            "Total indirect Scope 2 emissions (market-based method)"
         ],
         "label_B":[
             "Indirect scope 2 emissions (market-based method)",
@@ -71055,7 +70896,7 @@
             "million metric tons of CO2"
         ],
         "unit_A":[
-            "metric tons CO2"
+            "metric tons of CO2"
         ],
         "unit_B":[
             "m metric tons of CO2",
@@ -71065,7 +70906,7 @@
             "Indirect Scope 2 emissions (market-based method)"
         ],
         "label_A":[
-            "Indirect Scope 2 emissions (market-based method)"
+            "Total indirect Scope 2 emissions (market-based method)"
         ],
         "label_B":[
             "Indirect scope 2 emissions (market-based method)",
@@ -71354,7 +71195,7 @@
             "million metric tons of CO2"
         ],
         "unit_A":[
-            "million metric tons CO2"
+            "million metric tons of CO2"
         ],
         "unit_B":[
             "m metric t CO2"
@@ -71363,7 +71204,7 @@
             "Upstream indirect Scope 3 emissions (extraction, refining and transportation of fuels)"
         ],
         "label_A":[
-            "Upstream indirect Scope 3 CO2 emissions (extraction, refining and transportation of fuels)"
+            "Upstream indirect Scope 3 CO2 emissions (extraction, refining and transportation of consumed fuels)"
         ],
         "label_B":[
             "Upstream indirect Scope 3 CO2 emissions"
@@ -71403,7 +71244,7 @@
             "million metric tons of CO2"
         ],
         "unit_A":[
-            "million metric tons CO2"
+            "million metric tons of CO2"
         ],
         "unit_B":[
             "m metric t CO2"
@@ -71412,7 +71253,7 @@
             "Upstream indirect Scope 3 emissions (extraction, refining and transportation of fuels)"
         ],
         "label_A":[
-            "Upstream indirect Scope 3 CO2 emissions (extraction, refining and transportation of fuels)"
+            "Upstream indirect Scope 3 CO2 emissions (extraction, refining and transportation of consumed fuels)"
         ],
         "label_B":[
             "Upstream indirect Scope 3 CO2 emissions"
@@ -71452,7 +71293,7 @@
             "million metric tons of CO2"
         ],
         "unit_A":[
-            "million metric tons CO2"
+            "million metric tons of CO2"
         ],
         "unit_B":[
             "m metric t CO2"
@@ -71461,7 +71302,7 @@
             "Upstream indirect Scope 3 emissions (extraction, refining and transportation of fuels)"
         ],
         "label_A":[
-            "Upstream indirect Scope 3 CO2 emissions (extraction, refining and transportation of fuels)"
+            "Upstream indirect Scope 3 CO2 emissions (extraction, refining and transportation of consumed fuels)"
         ],
         "label_B":[
             "Upstream indirect Scope 3 CO2 emissions"
@@ -71878,7 +71719,7 @@
             "Scope 1"
         ],
         "label_A":[
-            "Scope 1 (emergency diesel generators used due to construction work)"
+            "Scope 1"
         ],
         "label_B":[
             "Scope 1"
@@ -72125,7 +71966,7 @@
             "CO2 eq t"
         ],
         "unit_A":[
-            "CO2-eq t"
+            "CO2 eq t"
         ],
         "unit_B":null,
         "label_Base":[
@@ -72167,7 +72008,7 @@
             "CO2 eq t"
         ],
         "unit_A":[
-            "CO2-eq t"
+            "CO2 eq t"
         ],
         "unit_B":null,
         "label_Base":[
@@ -72209,7 +72050,7 @@
             "CO2 eq t"
         ],
         "unit_A":[
-            "CO2-eq t"
+            "CO2 eq t"
         ],
         "unit_B":null,
         "label_Base":[
@@ -74722,7 +74563,7 @@
             "Scope 3 TOTAL (Scope 3 emissions breakdown, p. 57)"
         ],
         "label_A":[
-            "Scope 3 (market-based)"
+            "Scope 3 (market-based, from GHG emissions table)"
         ],
         "label_B":[
             "Scope 3",
@@ -75969,7 +75810,7 @@
             "Other indirect emissions (Scope 3)"
         ],
         "label_A":[
-            "Other indirect emissions (Scope 3)"
+            "Other indirect emissions (Scope 3) - subcontractors"
         ],
         "label_B":[
             "Other indirect emissions (Scope 3)"
@@ -76017,7 +75858,7 @@
             "Other indirect emissions (Scope 3)"
         ],
         "label_A":[
-            "Other indirect emissions (Scope 3)"
+            "Other indirect emissions (Scope 3) - subcontractors"
         ],
         "label_B":[
             "Other indirect emissions (Scope 3)"
@@ -76065,7 +75906,7 @@
             "Other indirect emissions (Scope 3)"
         ],
         "label_A":[
-            "Other indirect emissions (Scope 3)"
+            "Other indirect emissions (Scope 3) - subcontractors"
         ],
         "label_B":[
             "Other indirect emissions (Scope 3)"
