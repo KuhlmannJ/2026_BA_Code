@@ -27,18 +27,21 @@ banner("STEP 0: GLOBAL VARIABLES")
 
 BASE = os.path.dirname(os.path.abspath(__file__)) # sets "BASE" to directory this .py is located
 
-RETRIEVAL_DIR = Path(BASE) / "../../../localdata/test-A-02-retrievals" if args.test else Path(BASE) / "../../../localdata/A-02-retrievals"
+RETRIEVAL_DIR = Path(BASE) / "../../../localdata/test-A-02-retrievals" if args.test else Path(BASE) / "../../../localdata/A-02-retrievals/nvidia/nemotron-colembed-vl-8b-v2"
 RETRIEVAL_LIST = list(RETRIEVAL_DIR.glob("*.pdf"))
 
 OUTPUT_DIR    = Path(BASE) / "../../../evaluations/PipelineA/PipelineA-Answers"
 BATCH_ID_FILE = OUTPUT_DIR / "batch_id.txt"
 
 MODEL_ID   = "claude-opus-4-7"
-MAX_TOKENS = 8000
+MAX_TOKENS = 32768
 
 PROMT_PATH = Path(BASE) / "../../../baselines/baseline_frontier_model/Baseline-Prompt.txt"
 print(PROMT_PATH)
 EXTRACTION_PROMT = PROMT_PATH.read_text()
+
+SYSTEM_PROMPT_PATH = Path(BASE) / "system-prompt.html"
+SYSTEM_PROMPT = SYSTEM_PROMPT_PATH.read_text()
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -66,6 +69,8 @@ for pdf_path in sorted(RETRIEVAL_LIST):
         "params": {
             "model":      MODEL_ID,
             "max_tokens": MAX_TOKENS,
+            "thinking": {"type": "adaptive"}, #"display": "omitted" is the default
+            "system":     SYSTEM_PROMPT,
             "messages": [{
                 "role": "user",
                 "content": [

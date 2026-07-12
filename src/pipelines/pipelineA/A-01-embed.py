@@ -74,7 +74,7 @@ PDF_LIST = list(PDF_DIR.glob("*.pdf"))
 if not PDF_LIST:
     raise FileNotFoundError(f"Keine PDFs in {PDF_DIR}")
 
-BATCH_SIZE = args.batch_size # 8 with ColPlali, but those embeddings will get bigger due to more vectors
+BATCH_SIZE = args.batch_size
 DPI = 150 # as no specific formula was used but 150 was seen on several other code snippits.
 
 SAVE_DIR = (SCRATCH_ROOT / "data" / "embeddings" / "all" / MODEL_NAME) if args.all else (SCRATCH_ROOT / "data" / "embeddings" / MODEL_NAME)
@@ -122,7 +122,7 @@ model = AutoModel.from_pretrained(
     device_map='cuda:0',
     trust_remote_code=True,
     dtype=torch.bfloat16, # torch_dtype → dtype => "torch_dtype` is deprecated" 
-    attn_implementation=ATTN_IMPL # TODO NEEDS A RE-RUN, was disabled at last run
+    attn_implementation=ATTN_IMPL
 ).eval()
 print(f" Loaded: {MODEL_NAME}")
 print(f" Attention loaded:{model.config._attn_implementation}")
