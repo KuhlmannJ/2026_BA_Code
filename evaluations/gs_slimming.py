@@ -128,14 +128,65 @@ gs_slim = gs_slim.merge(years_present, on="report_name")
 gs_slim.to_json(Path(BASE) / "gs_slim.json",index=False, orient="records", indent=4)
 gs_slim.to_csv( Path(BASE) / "gs_slim.csv", index=False)
 
-print("="*60)
-print("="*60)
 print()
 print(f"No. of reports in gs_slim: {gs_slim['report_name'].nunique()}")
 print()
-print()
+print("Report's Status Overview")
 print(gs_slim.drop_duplicates("report_name")["status"].value_counts())
+
+##########################################
+### Cell-level composition of gs_slim
+###   gs_slim is already in long format: one row per (report, scope, year) cell.
+###   value.notna() marks a cell that carries a reported figure.
+
+n_cells         = len(gs_slim)
+n_value_bearing = gs_slim["value"].notna().sum()
+n_empty         = gs_slim["value"].isna().sum()
+
 print()
-print(gs_slim.drop_duplicates("report_name")["scopes_present"].value_counts(dropna=False))
+print("="*60)
+print("=== Cell-level composition ===")
 print()
-print(gs_slim.drop_duplicates("report_name")["years_present"].value_counts(dropna=False))
+print(f"Total cells (report-scope-year combinations): {n_cells}")
+print(f"Value-bearing cells (value present):          {n_value_bearing}")
+print(f"Empty cells (no value reported):              {n_empty}")
+print()
+print(f"Reported year range: {gs_slim['year'].min()}-{gs_slim['year'].max()}")
+print()
+print("Value-bearing cells per scope:")
+print(gs_slim[gs_slim["value"].notna()]["scope"].value_counts())
+
+
+####################
+### OUTPUT
+# Mismatches: {'ViacomCBS_ESG Report_2020-2021_vFINAL.pdf'}
+
+# No. of gold_standard reports: 139
+
+# No. of downloadable reports: 114
+
+# No. of reports in gs_slim: 54
+
+# Report's Status Overview
+# status
+# partial     45
+# complete     9
+# Name: count, dtype: int64
+
+# ============================================================
+# === Cell-level composition ===
+
+# Total cells (report-scope-year combinations): 2208
+# Value-bearing cells (value present):          489
+# Empty cells (no value reported):              1719
+
+# Reported year range: 2012-2022
+
+# Value-bearing cells per scope:
+# scope
+# 1      174
+# 2lb    160
+# 3       96
+# 2mb     59
+# Name: count, dtype: int64
+####################
