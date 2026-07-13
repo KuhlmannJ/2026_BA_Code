@@ -49,7 +49,7 @@ def _normalize_year(raw: str, years_present: set[int] | None = None) -> int | No
     if m:
         left, right = m.groups()
         if len(right) == 4:
-            return int(left) # Typo: Wrong fiscal year chosen (from "2021/2022" it has to be "2021", therefore the int(left) value)
+            return int(left) # 2021/2022 -> 2021
         candidates = {int(left), int(left) + 1}
         if years_present:
             hit = candidates & years_present

@@ -90,7 +90,7 @@ def evaluate(candidate: str) -> tuple[float, dict]:
     _run_extraction(candidate, run_dir)
     print(f"[evaluate] Extraction done.")
 
-    # Run: oa_mapping.py (esentially "01-ReferenceDFs.ipynb" and "02-Evaluation.ipynb")
+    # Run: oa_mapping.py (esentially "01-Prep-XXX.ipynb" and "02-Eval-XXX.ipynb")
     print(f"[evaluate] Mapping to gold standard...")
     merged = map_to_goldstandard(run_dir, GS_PATH)
     print(f"[evaluate] Mapping done — {len(merged)} rows.")
