@@ -160,27 +160,10 @@ n_total    = len(merged)
 n_topk     = merged["hit_topk"].sum()
 n_expanded = merged["hit_expanded"].sum()
 
-# ── MRR@3: rank of first hit within top-3 only ──────────────────
-merged["top_10_list"] = merged["top_10"].apply(ast.literal_eval)
-
-def first_hit_rank_top3(row):
-    try:
-        page = int(row["page"])
-    except (ValueError, TypeError):
-        return None
-    for i, idx in enumerate(row["top_10_list"][:3]):
-        if idx == page or idx == page - 1:
-            return i + 1
-    return None
-
-merged["rank"] = merged.apply(first_hit_rank_top3, axis=1)
-mrr = merged["rank"].apply(lambda r: 1 / r if r else 0).mean()
-
 print(f"  Evaluated: {n_total} (report, page) pairs across {merged['report_name'].nunique()} reports")
 print()
 print(f"  Recall@3 (before ±1 expansion): {n_topk/n_total:.1%}  ({n_topk}/{n_total})")
 print(f"  Recall@3 (after  ±1 expansion): {n_expanded/n_total:.1%}  ({n_expanded}/{n_total})")
-print(f"  MRR@3                         : {mrr:.3f}")
 print()
 print("  Note: offset-correction (page and page-1) applied in all metrics.")
 print("  ±1 neighbour expansion is a separate generosity layer (Beck et al.).")
@@ -222,10 +205,6 @@ print(f"  → {OUTPUT_DIR / 'retrieval_misses.csv'}")
 ##################
 ### OUTOUT:
 # ============================================================
-#   STEP 0: GLOBAL VARIABLES
-# ============================================================
-
-# ============================================================
 #   STEP 0: PARAMS
 # ============================================================
 # GOLD_PATH     : /Users/jannikkuhlmann/VSC/LaTeX/2026_BA_Code/evaluations/A-02/../gs_slim.json
@@ -247,25 +226,28 @@ print(f"  → {OUTPUT_DIR / 'retrieval_misses.csv'}")
 # Retrieval log entries: 54
 # Reports in log:        54
 # Retrieval Model used:  nvidia/nemotron-colembed-vl-8b-v2
-# Reports only in gold (0): []
-# Reports only in retrieval log (0): []
+# Reports only in gold (1): ['uniper_2019_report']
+# Reports only in retrieval log (1): ['uniper_2019_report.pdf']
 
 # ============================================================
 #   STEP 3: Retrieval Evaluation
 # ============================================================
 #   Evaluated: 72 (report, page) pairs across 54 reports
 
-#   Recall@3 (before ±1 expansion): 91.7%  (66/72)
-#   Recall@3 (after  ±1 expansion): 98.6%  (71/72)
-#   MRR@3                         : 0.864
+#   Recall@3 (before ±1 expansion): 86.1%  (62/72)
+#   Recall@3 (after  ±1 expansion): 93.1%  (67/72)
 
 #   Note: offset-correction (page and page-1) applied in all metrics.
 #   ±1 neighbour expansion is a separate generosity layer (Beck et al.).
 
-#   Full misses (0 reports): []
+#   Full misses (1 reports): ['uniper_2019_report']
 
-#   Missed pages (1 total):
+#   Missed pages (5 total):
 #     granite construction inc_2020_report  p.112  (top_k=[67, 66, 103])
+#     uniper_2019_report  p.15  (top_k=nan)
+#     uniper_2019_report  p.16  (top_k=nan)
+#     uniper_2019_report  p.66  (top_k=nan)
+#     uniper_2019_report  p.67  (top_k=nan)
 
 # ============================================================
 #   STEP 4: Save
