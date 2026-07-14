@@ -14,6 +14,18 @@ def banner(msg: str):
     print(f"  {msg}")
     print(f"{'='*60}")
 
+# In our case: JUST for MoE Run 1, where it extracted 6 String values, e.g., '3,309'
+# Catches most string values
+# If this simple fix does not cut it, the value is treated as not extraced (which is kind-of right)
+def to_number(v):
+    if isinstance(v, str):
+        v = v.replace(",", "").replace(" ", "").strip()   # Tausender-Trenner raus
+        try:
+            return float(v)
+        except ValueError:
+            return None          # echt nicht-numerisch -> gilt als Miss
+    return v
+
 
 def flatten_json(filepath: Path) -> list[dict]:
     with open(filepath) as fh:
@@ -38,7 +50,7 @@ def flatten_json(filepath: Path) -> list[dict]:
                     "report_name": report_name,
                     "scope":       scope,
                     "year":        year,
-                    "value":       entry.get("value"),
+                    "value":       to_number(entry.get("value")),
                     "unit":        entry.get("unit"),
                     "label":       entry.get("label", ""),
                 })

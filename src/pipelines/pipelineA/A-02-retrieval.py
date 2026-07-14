@@ -237,7 +237,7 @@ model = AutoModel.from_pretrained(
     device_map="cuda:0",
     trust_remote_code=True,
     dtype=torch.bfloat16,
-    attn_implementation=ATTN_IMPL,
+    attn_implementation=ATTN_IMPL, #On 3B that is "None" as it does not work.
 ).eval()
 
 print(f" Loaded: {MODEL_NAME}")
