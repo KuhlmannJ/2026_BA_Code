@@ -205,6 +205,10 @@ print(f"  → {OUTPUT_DIR / 'retrieval_misses.csv'}")
 ##################
 ### OUTOUT:
 # ============================================================
+#   STEP 0: GLOBAL VARIABLES
+# ============================================================
+
+# ============================================================
 #   STEP 0: PARAMS
 # ============================================================
 # GOLD_PATH     : /Users/jannikkuhlmann/VSC/LaTeX/2026_BA_Code/evaluations/A-02/../gs_slim.json
@@ -226,28 +230,24 @@ print(f"  → {OUTPUT_DIR / 'retrieval_misses.csv'}")
 # Retrieval log entries: 54
 # Reports in log:        54
 # Retrieval Model used:  nvidia/nemotron-colembed-vl-8b-v2
-# Reports only in gold (1): ['uniper_2019_report']
-# Reports only in retrieval log (1): ['uniper_2019_report.pdf']
+# Reports only in gold (0): []
+# Reports only in retrieval log (0): []
 
 # ============================================================
 #   STEP 3: Retrieval Evaluation
 # ============================================================
 #   Evaluated: 72 (report, page) pairs across 54 reports
 
-#   Recall@3 (before ±1 expansion): 86.1%  (62/72)
-#   Recall@3 (after  ±1 expansion): 93.1%  (67/72)
+#   Recall@3 (before ±1 expansion): 91.7%  (66/72)
+#   Recall@3 (after  ±1 expansion): 98.6%  (71/72)
 
 #   Note: offset-correction (page and page-1) applied in all metrics.
 #   ±1 neighbour expansion is a separate generosity layer (Beck et al.).
 
-#   Full misses (1 reports): ['uniper_2019_report']
+#   Full misses (0 reports): []
 
-#   Missed pages (5 total):
+#   Missed pages (1 total):
 #     granite construction inc_2020_report  p.112  (top_k=[67, 66, 103])
-#     uniper_2019_report  p.15  (top_k=nan)
-#     uniper_2019_report  p.16  (top_k=nan)
-#     uniper_2019_report  p.66  (top_k=nan)
-#     uniper_2019_report  p.67  (top_k=nan)
 
 # ============================================================
 #   STEP 4: Save
