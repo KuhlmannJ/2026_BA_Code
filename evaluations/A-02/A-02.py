@@ -162,8 +162,8 @@ n_expanded = merged["hit_expanded"].sum()
 
 print(f"  Evaluated: {n_total} (report, page) pairs across {merged['report_name'].nunique()} reports")
 print()
-print(f"  Recall@3 (before ±1 expansion): {n_topk/n_total:.1%}  ({n_topk}/{n_total})")
-print(f"  Recall@3 (after  ±1 expansion): {n_expanded/n_total:.1%}  ({n_expanded}/{n_total})")
+print(f"  Recall@3 (before ±1 expansion): {n_topk/n_total:.2%}  ({n_topk}/{n_total})")
+print(f"  Recall@3 (after  ±1 expansion): {n_expanded/n_total:.2%}  ({n_expanded}/{n_total})")
 print()
 print("  Note: offset-correction (page and page-1) applied in all metrics.")
 print("  ±1 neighbour expansion is a separate generosity layer (Beck et al.).")
@@ -238,8 +238,8 @@ print(f"  → {OUTPUT_DIR / 'retrieval_misses.csv'}")
 # ============================================================
 #   Evaluated: 72 (report, page) pairs across 54 reports
 
-#   Recall@3 (before ±1 expansion): 91.7%  (66/72)
-#   Recall@3 (after  ±1 expansion): 98.6%  (71/72)
+#   Recall@3 (before ±1 expansion): 91.67%  (66/72)
+#   Recall@3 (after  ±1 expansion): 98.61%  (71/72)
 
 #   Note: offset-correction (page and page-1) applied in all metrics.
 #   ±1 neighbour expansion is a separate generosity layer (Beck et al.).
