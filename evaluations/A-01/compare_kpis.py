@@ -93,3 +93,27 @@ merged = merged[col_order]
 
 merged.to_csv(HERE / "per_report.csv", index=False)
 print(f"  -> Saved: per_report.csv  ({len(merged)} reports)\n")
+
+###############
+### OUTPUT:
+# ========================================================================
+#   SUMMARY STATISTICS PER MODEL
+# ========================================================================
+# model                      3B         4B         8B
+# embed_dim           3072.0000  2560.0000  4096.0000
+# n_reports             53.0000    53.0000    53.0000
+# total_pages         4549.0000  4549.0000  4549.0000
+# total_time_min        25.4000    19.8700    20.8800
+# mean_s_per_page        0.3972     0.3288     0.3405
+# max_peak_vram_gb     110.6100    65.2900    82.2800
+# max_peak_ram_gb       21.8300    24.7800    26.3400
+# total_file_size_gb    97.9260    35.0890    56.1410
+# mean_file_size_mb   1892.0000   677.9000  1084.7000
+
+#   -> Saved: summary_stats.csv
+
+# ========================================================================
+#   PER-REPORT COMPARISON  (s_per_page | peak_vram_gb | file_size_mb)
+# ========================================================================
+#   -> Saved: per_report.csv  (2 reports)
+###############
