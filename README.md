@@ -1,9 +1,9 @@
 # Codebase Bachelor Thesis "Beyond Text-Based RAG: Evaluating Visual RAG and Long Context for Automated GHG Emission Extraction from Sustainability Reports"
 
 <p align="center">
-  <img src="figures/Readme_UniMS.png" alt="University of Münster" height="55">
+  <img src="figures/Readme_UniMS.png" alt="University of Münster" height="100">
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="figures/Readme_ERCIS.png" alt="ERCIS" height="55">
+  <img src="figures/Readme_ERCIS.png" alt="ERCIS" height="100">
 </p>
 
 The thesis compares four end-to-end approaches for extracting Scope 1–3 greenhouse gas emissions from corporate sustainability reports and evaluates them against a gold-standard dataset. This repository holds the code for all four, the prompt-optimization, the SLURM scripts used on the PALMA II cluster, and the evaluation notebooks.
