@@ -1,6 +1,6 @@
-# 2026_BA_Code
+# Codebase for the Bachelor Thesis "Beyond Text-Based RAG: Evaluating Visual RAG and Long Context for Automated GHG Emission Extraction from Sustainability Reports"
 
-Codebase for the bachelor's thesis on AI-based extraction of greenhouse gas (GHG) emissions data from corporate sustainability reports.
+Codebase for the bachelor thesis on AI-based extraction of greenhouse gas (GHG) emissions data from corporate sustainability reports.
 
 The repository contains three extraction setups, the prompt-optimization experiment around them, the shell/SLURM scripts used to run everything on the PALMA II HPC cluster, and the notebooks used to evaluate the results against a gold standard.
 
