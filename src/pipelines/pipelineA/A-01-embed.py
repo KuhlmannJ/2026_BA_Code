@@ -51,7 +51,7 @@ match True:
     case args._8B:
         MODEL_NAME = "nvidia/nemotron-colembed-vl-8b-v2"
     case _:
-        parser.error("Set a MODEL_NAME flag '-3B' or '-4B' or '-8B'.") # No default chosen, as not necessary with .sh 
+        parser.error("Set a MODEL_NAME flag '-3B' or '-4B' or '-8B'.") # No default chosen
 
 if args._3B :
     ATTN_IMPL  = None # Does not work on 3B
