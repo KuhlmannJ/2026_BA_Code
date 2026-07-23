@@ -15,6 +15,7 @@ Four end-to-end approaches are compared for extracting Scope 1–3 GHG emissions
 - [Pipelines](#pipelines)
 - [Prompt optimization (GEPA)](#prompt-optimization-gepa)
 - [Evaluation](#evaluation)
+- [Key Results](#key-results)
 - [Data](#data)
 - [Setup](#setup)
 - [Running on PALMA II](#running-on-palma-ii)
