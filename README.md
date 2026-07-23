@@ -4,6 +4,8 @@ Codebase for the bachelor's thesis on AI-based extraction of greenhouse gas (GHG
 
 The repository contains three extraction setups, the prompt-optimization experiment around them, the shell/SLURM scripts used to run everything on the PALMA II HPC cluster, and the notebooks used to evaluate the results against a gold standard.
 
+Four end-to-end approaches are compared for extracting Scope 1–3 GHG emissions: a Long Context **Baseline** that hands the frontier model the full report, two **RAG pipelines** (**Pipeline A**: frontier model, **Pipeline B**: open-weight VLM) that first retrieve the ~9 most relevant pages via visual late interaction retrieval (ColEmbed), and a **GEPA-optimized** variant of Pipeline B's extraction prompt. The goal is to see whether retrieval is still needed once a model's context window is large enough to hold an entire report (see thesis, Chapter 1).
+
 ---
 
 ## Contents
@@ -142,6 +144,23 @@ Shared helpers: `gs_slimming.py` (builds `gs_slim` from `gold_standard.csv`, inc
 
 ---
 
+## Key results
+
+Value-bearing recall (any-matcher) over the 489 cells that carry a reported
+value in `gs_slim`, full breakdown in thesis Table 5 / `evaluations/Baseline-PipelineA-PipelineB/`:
+
+| Approach                 | Value recall (any)  | Reports fully correct (of 54)    |
+| ------------------------ | :-----------------: | :------------------------------: |
+| Baseline                 | 89.57%              | 39 (72.2%)                       |
+| Pipeline A               | 92.23%              | 41 (75.9%)                       |
+| Pipeline B (unoptimized) | 90.80%              | 38 (70.4%)                       |
+| Pipeline B + GEPA        | 93.05%              | 44 (81.5%)                       |
+
+Retrieval quality (§6.1): Recall@3 is 91.67% before and 98.61% after ±1
+neighbor-page expansion, over the 72 report-page pairs in `gs_slim`.
+
+---
+
 ## Data
 
 `localdata/` (not tracked as a package — see paths below):
@@ -155,6 +174,21 @@ Shared helpers: `gs_slimming.py` (builds `gs_slim` from `gold_standard.csv`, inc
 | `A-02-retrieval_log.csv`, `failed_urls.csv` | logs |
 
 `src/playground/fundamentals/extractReports.py` downloads the report PDFs from `usefulURLs.csv` and logs failed downloads.
+
+#### Dataset citation
+
+The gold-standard emission values under `localdata/` and `evaluations/` are
+derived from:
+
+> Beck, J., Steinberg, A., Dimmelmeier, A., Domenech Burin, L., Kormanyos, E.,
+> Fehr, M., & Schierholz, M. (2025). Addressing data gaps in sustainability
+> reporting: A benchmark dataset for greenhouse gas emission extraction.
+> *Scientific Data*, 12(1), 1497. https://doi.org/10.1038/s41597-025-05664-8
+
+The sustainability report PDFs themselves remain the property of the
+reporting companies and are not redistributed beyond what the original
+dataset provides.
+```
 
 ---
 
