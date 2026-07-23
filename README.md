@@ -1,41 +1,31 @@
-# Codebase for the Bachelor Thesis "Beyond Text-Based RAG: Evaluating Visual RAG and Long Context for Automated GHG Emission Extraction from Sustainability Reports"
+# Codebase Bachelor Thesis "Beyond Text-Based RAG: Evaluating Visual RAG and Long Context for Automated GHG Emission Extraction from Sustainability Reports"
 
-Codebase for the bachelor thesis on AI-based extraction of greenhouse gas (GHG) emissions data from corporate sustainability reports.
+Codebase for the bachelor's thesis **"Beyond Text-Based RAG: Evaluating Visual RAG and Long Context for Automated GHG Emission Extraction from Sustainability Reports"** (University of Münster, Department of Information Systems, 2026).
 
-The repository contains three extraction setups, the prompt-optimization experiment around them, the shell/SLURM scripts used to run everything on the PALMA II HPC cluster, and the notebooks used to evaluate the results against a gold standard.
+The thesis compares four end-to-end approaches for extracting Scope 1–3 greenhouse gas emissions from corporate sustainability reports and evaluates them against a gold-standard dataset. This repository holds the code for all four, the prompt-optimization experiment, the SLURM scripts used on the PALMA II cluster, and the evaluation notebooks.
 
-Four end-to-end approaches are compared for extracting Scope 1–3 GHG emissions: a Long Context **Baseline** that hands the frontier model the full report, two **RAG pipelines** (**Pipeline A**: frontier model, **Pipeline B**: open-weight VLM) that first retrieve the ~9 most relevant pages via visual late interaction retrieval (ColEmbed), and a **GEPA-optimized** variant of Pipeline B's extraction prompt. The goal is to see whether retrieval is still needed once a model's context window is large enough to hold an entire report (see thesis, Chapter 1).
-
----
-
-## Contents
-
-- [Extraction setups](#extraction-setups)
-- [Repository structure](#repository-structure)
-- [Pipelines](#pipelines)
-- [Prompt optimization (GEPA)](#prompt-optimization-gepa)
-- [Evaluation](#evaluation)
-- [Key Results](#key-results)
-- [Data](#data)
-- [Setup](#setup)
-- [Running on PALMA II](#running-on-palma-ii)
-- [Conventions](#conventions)
+<p align="center">
+  <img src="Readme_Approaches.svg" alt="Overview of the four approaches" width="750">
+</p>
 
 ---
 
-## Extraction setups
+## Why four approaches
 
-| Setup | Retrieval | Extraction | Where it runs |
-|---|---|---|---|
-| **Baseline** | none (full report) | frontier model (Claude Opus), `Baseline-Prompt.txt` | — |
-| **Pipeline A** | ColEmbed (`nvidia/nemotron-colembed-vl-*`) | Claude via the Anthropic Batch API | retrieval on HPC, extraction via API |
-| **Pipeline B** | ColEmbed (same retrievals as A) | Qwen3-VL, run locally on the cluster | HPC (H200) |
+Modern frontier models hold context windows large enough to swallow an entire sustainability report, which raises the question whether a retrieval step is still needed at all. To test that, the **Baseline** hands the full report to a frontier model (Long Context). **Pipeline A** keeps the same extractor but feeds it only the ~9 pages a visual retriever selected, isolating the effect of the page budget. **Pipeline B** replaces the proprietary extractor with an open-weight VLM that reads rendered page images, testing whether a locally hosted model can compete. **Pipeline B_G** adds a GEPA-optimized extraction prompt on top of Pipeline B.
 
-Pipeline B additionally has a variant (`B-03-UniGPT.py`) that sends the same retrieved pages to models served via an OpenAI-compatible endpoint (UniGPT).
+| | Baseline | Pipeline A | Pipeline B | Pipeline B_G |
+| --- | --- | --- | --- | --- |
+| Retrieval model | — | ColEmbed-8B | ColEmbed-8B | ColEmbed-8B |
+| Page budget | all pages | ≤ 9 | ≤ 9 | ≤ 9 |
+| Page representation | PDF | PDF | page images, 150 DPI | page images, 150 DPI |
+| Extraction model | Claude Opus 4.7 | `claude-opus-4-7` | Qwen3-VL-32B-Thinking | Qwen3-VL-32B-Thinking |
+| Extraction prompt | P₀ | P₀ | P₀ | P_GEPA |
+| Execution environment | Claude web interface (manual) | Anthropic Batch API | PALMA II (H200) | PALMA II (H200) |
 
-All setups use the same extraction prompt (`baselines/baseline_frontier_model/Baseline-Prompt.txt`) and produce the same JSON schema, so their outputs can be flattened and compared against the same gold standard.
+Retrieval uses **Nemotron ColEmbed-VL 8B V2** with `TOP_K = 3`, expanded by the ±1 neighbour pages, which yields retrieval sets of 5–9 pages (mean 7.6) from reports averaging ~85 pages.
 
-### Output schema
+All four approaches use the same extraction prompt P₀ (`baselines/baseline_frontier_model/Baseline-Prompt.txt`, except B_G) and emit the same JSON schema, so their outputs are flattened and scored on one grid:
 
 ```json
 {
@@ -52,23 +42,39 @@ All setups use the same extraction prompt (`baselines/baseline_frontier_model/Ba
 
 ---
 
+## Results
+
+Scored over the 54 reports of `gs_slim`. The evaluation grid has 2,208 report–Scope–year cells, of which 489 carry a reported value and 1,719 are legitimately empty.
+
+| Approach | Value recall (any) | Value recall (exact) | Reports fully correct (of 54) |
+| --- | :---: | :---: | :---: |
+| Baseline | 89.57 % | 86.09 % | 39 (72.2 %) |
+| Pipeline A | 92.23 % | 90.59 % | 41 (75.9 %) |
+| Pipeline B | 90.80 % | 86.50 % | 38 (70.4 %) |
+| Pipeline B_G | **93.05 %** | 89.98 % | **44 (81.5 %)** |
+
+Retrieval over the 72 gold-standard (report, page) pairs: **Recall@3 = 91.67 %** on the top-3 pages alone, **98.61 %** after the ±1 neighbour expansion, with no report missed entirely.
+
+Full tables, the per-Scope breakdown, the error-type analysis and the cost/latency figures are in the thesis (Chapter 6); the notebooks that produce them are listed under [Evaluation](#evaluation).
+
+---
+
 ## Repository structure
 
 ```
 .
 ├── baselines/
 │   └── baseline_frontier_model/
-│       ├── Baseline-Prompt.txt        # extraction prompt used by all setups
-│       └── raw/                       # one baseline JSON per report (54)
-├── localdata/                         # PDFs, retrieved page PDFs, retrieval log
+│       ├── Baseline-Prompt.txt        # P0 — extraction prompt used by all approaches
+│       └── raw/                       # one Baseline JSON per report (54), hand-collected
+├── localdata/                         # report PDFs, retrieval sets, retrieval logs
 ├── sh/                                # SLURM batch scripts (PALMA II)
 ├── src/
 │   ├── pipelines/
 │   │   ├── pipelineA/                 # A-01 … A-04
 │   │   └── pipelineB/                 # B-03 (embedding/retrieval reuse Pipeline A)
 │   ├── GEPA/                          # prompt optimization via gepa.optimize_anything
-│   ├── colpali-original.py            # reference script
-│   └── playground/                    # exploratory scripts/notebooks, not part of the pipelines
+│   └── colpali-original.py            # reference script
 ├── evaluations/                       # gold standard, flattening, notebooks, results
 ├── requirements-HPC.txt               # pip freeze from the HPC venv
 └── requirements-local.txt             # pip freeze from the local venv
@@ -76,169 +82,116 @@ All setups use the same extraction prompt (`baselines/baseline_frontier_model/Ba
 
 ---
 
-## Pipelines
+## Setup
 
-### Pipeline A — `src/pipelines/pipelineA/`
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements-local.txt      # on the cluster: requirements-HPC.txt
+```
 
-| Step | Script | Purpose |
-|---|---|---|
-| A-01 | `A-01-embed.py` | Renders report pages and stores per-report ColEmbed page embeddings as `.pt`; writes a KPI log (runtime, s/page, peak VRAM/RAM, file size) |
-| A-02 | `A-02-retrieval.py` | Scores pages against the retrieval query, selects Top-*k*, writes a mini-PDF of the selected pages plus a Top-10 JSON and a retrieval log |
-| A-03 | `A-03-toClaude.py` | Builds and submits the Anthropic message batch over the mini-PDFs |
-| A-04 | `A-04-fromClaude.py` | Polls the batch, writes one JSON per report and per-report token-usage logs |
+Both requirement files are `pip freeze` dumps of the environments actually used. The HPC one pins a prebuilt `flash_attn` wheel and CUDA 13 builds and is **not** meant to be installed locally.
 
-Key parameters:
+Secrets are read from a gitignored `.env` (`python-dotenv`):
 
-- **Model selection (A-01/A-02):** `-3B`, `-4B`, `-8B` → `nvidia/llama-nemotron-colembed-vl-3b-v2`, `nvidia/nemotron-colembed-vl-4b-v2`, `nvidia/nemotron-colembed-vl-8b-v2`. No default; a flag is required.
-- **Retrieval (A-02):** `TOP_K = 3`, expanded with ±1 neighbor pages; default query `QUERY_0` (overridable with `-q`).
-- **Conditions (A-03/A-04):** `-c bare | thinking | thinking_system` (default `thinking_system`). Each condition writes to its own subfolder so batch IDs and skip-logic do not mix. `thinking_system` additionally sends `system-prompt.txt`.
-- `A-03-toClaude-SysP.py` is the earlier single-condition variant of `A-03-toClaude.py`.
-- **Data-set flags:** `-t` (test path), `-a` (all reports), `-gt` (GEPA training set).
+```
+ANTHROPIC_API_KEY=...     # Pipeline A (A-03/A-04)
+OPENAI_API_KEY=...        # UniGPT endpoint (GEPA reflection LM)
+OPENAI_API_BASE=...
+```
 
-### Pipeline B — `src/pipelines/pipelineB/`
-
-`B-01-embed.py` and `B-02-retrieval.py` are pointers to the Pipeline A scripts — B reuses A's embeddings and retrievals.
-
-- **`B-03-HPC.py`** — loads a Qwen3-VL model, renders the retrieved mini-PDF pages at `DPI = 150`, runs the extraction prompt, strips `<think>` blocks and code fences, and writes one JSON per report plus a `***results.csv` with model, maxToken, report, duration, pages and t_inf/page.
-  - `-m think | moe | instr | instrFP8 | instr8B`
-  - `-mt` max (thinking) tokens, default `16384`
-  - `-p` custom prompt file, `-o` custom output directory, `-t` test path, `-gt` GEPA training set
-- **`B-03-UniGPT.py`** — same input, extraction through an OpenAI-compatible endpoint (`gemma-4-31B-it`, `Qwen3.5-35B-A3B`, …); model selected in-file.
+> **Cluster paths are hardcoded.** The pipeline scripts read and write under `SCRATCH_ROOT = /scratch/tmp/jkuhlma1`, and the SLURM scripts assume the repository sits at `$HOME/2026_BA_Code`. Both must be adjusted before running anywhere else. Results committed to this repository were copied back from `SCRATCH_ROOT` into `localdata/`, `evaluations/` and `baselines/`.
 
 ---
 
-## Prompt optimization (GEPA)
+## Reproducing the results
 
-`src/GEPA/` optimizes the extraction prompt with `gepa.optimize_anything`.
+The steps below run in order. Every script takes `--help`; the flags are documented there rather than duplicated here.
 
-| File | Purpose |
-|---|---|
-| `oa_main.py` | Objective, reflection LM (`openai/gpt-oss-120b` via UniGPT), seed prompt, optimizer configuration |
-| `oa_evaluate.py` | Evaluator: loads the VLM once, runs extraction over the training set, scores hit rate against `evaluations/gs_slim.json`, logs each run |
-| `oa_mapping.py` | Flattens extraction JSONs and maps them onto the gold standard (incl. RegEx year normalization, e.g. `FY 2021/2022`) |
-| `B_03_HPC_fn.py` | `load_model` / `run_extraction` — the B-03 logic as importable functions |
-| `Query0_Extraction.txt` | Seed prompt |
-| `oa_result.txt` (in `pipelines/pipelineB/`) | Resulting prompt |
+**0 — Data.** `src/playground/fundamentals/extractReports.py` downloads the report PDFs listed in `usefulURLs.csv` and logs failures. `evaluations/gs_slimming.py` then builds `gs_slim.json` from `gold_standard.csv`, applying the corrections to known gold-standard errors described in the thesis (§4.1.2).
 
-Runs and per-iteration outputs are stored under `evaluations/GEPA_Prompt_Optimization/GEPA_runs/<run>/<iteration>/` together with the `prompt.txt` of that iteration.
+**1 — Baseline.** Not reproducible from this repository: each report was uploaded by hand to the Claude web interface and the returned JSON was copied into `baselines/baseline_frontier_model/raw/`. The committed JSONs are the record of that run (see [Caveats](#caveats)).
+
+**2 — Embedding and retrieval** (shared by Pipeline A and B):
+
+```bash
+sbatch sh/A-01-embed.sh -8B        # page embeddings → one .pt per report + KPI log
+sbatch sh/A-02-retrieval.sh -8B    # MaxSim scoring → mini-PDF per report + retrieval log
+```
+
+`A-01` renders pages with PyMuPDF at 150 DPI and runs ColEmbed in bf16 with FlashAttention-2 at batch size 8. `A-02` embeds the retrieval query Q₀ with the same model, scores every page via MaxSim, and writes the top-3 pages plus their ±1 neighbours as a mini-PDF. The model flag is required — there is no default.
+
+**3 — Pipeline A** (extraction via the Anthropic Batch API):
+
+```bash
+python src/pipelines/pipelineA/A-03-toClaude.py    # submit the batch
+python src/pipelines/pipelineA/A-04-fromClaude.py  # poll, write one JSON + usage log per report
+```
+
+Three API conditions are available via `-c`: `bare`, `thinking`, and `thinking_system` (the default, and the condition reported in the thesis, since it comes closest to the web interface the Baseline ran in). Each writes to its own output folder so batch IDs and skip logic do not mix.
+
+**4 — Pipeline B** (extraction with a local VLM):
+
+```bash
+sbatch sh/B-03-HPC.sh -m t         # dense Qwen3-VL-32B-Thinking (reference extractor)
+```
+
+`-m` also accepts the MoE (`m`) and non-thinking Instruct (`i`) variants. The script renders the retrieval-set pages, runs the extraction prompt with a 16,384-token budget (retried once at double the budget), strips the reasoning trace at `</think>` along with code fences, and writes one JSON per report plus a results CSV with runtime and pages per report.
+
+**5 — Prompt optimization** (produces Pipeline B_G):
+
+```bash
+sbatch sh/GEPA-01_H200.sh          # src/GEPA/oa_main.py
+sbatch sh/B-03-HPC.sh -m t -p src/GEPA/oa_result.txt
+```
+
+`oa_main.py` seeds `gepa.optimize_anything` with P₀ and optimizes against the 60 % training split, using GPT-OSS 120B as the external reflection model. Per-iteration outputs land in `evaluations/GEPA_Prompt_Optimization/GEPA_runs/<run>/<iteration>/`. The split is seeded (`random.seed(42)`) and stratified by whether the unoptimized model already extracted a report correctly, so the optimizer sees both easy and hard reports.
+
+**6 — Evaluation.** Each comparison folder under `evaluations/` follows the same two-notebook pattern: `01-Prep-*.ipynb` flattens the extractions, joins them onto `gs_slim.json` and normalizes fiscal years into a `*_ynorm.json`; `02-Eval-*.ipynb` reads that file and computes the metrics. Notebook 01 must run first.
 
 ---
 
 ## Evaluation
 
-`evaluations/` holds the gold standard and its derivatives, plus one folder per comparison. Most folders follow the same two-notebook pattern:
-
-1. **`01-Prep-*.ipynb`** — runs `flattening.py`, merges the extractions onto the slimmed gold standard (`gs_slim.json`), normalizes years, writes a `*_ynorm.json`.
-2. **`02-Eval-*.ipynb`** — reads that `*_ynorm.json` and computes the metrics/figures. Requires notebook 01 to have been run.
-
-Folders:
-
 | Folder | Content |
-|---|---|
-| `baseline/`, `PipelineA/`, `PipelineB/` | per-setup preparation, evaluation and answers |
-| `Baseline-PipelineA/`, `Baseline-PipelineA-PipelineB/` | cross-setup comparisons |
-| `GEPA_Prompt_Optimization/` | per-run preparation/evaluation, run outputs, summaries |
+| --- | --- |
+| `baseline/`, `PipelineA/`, `PipelineB/` | per-approach preparation and evaluation |
+| `Baseline-PipelineA/`, `Baseline-PipelineA-PipelineB/` | cross-approach comparisons (headline results) |
+| `GEPA_Prompt_Optimization/` | per-run preparation, run outputs, summaries |
 | `A-01/` | embedding-model KPI comparison (3B/4B/8B), batch-size comparison |
-| `A-02/` | retrieval evaluation (hits/misses against the gold-standard pages) |
+| `A-02/` | retrieval evaluation against the gold-standard pages |
 
-Shared helpers: `gs_slimming.py` (builds `gs_slim` from `gold_standard.csv`, incl. fixes to known gold-standard errors), `gs_pageCount.py` / `gs_slim_pageCount.py`, `cost_analysis.py` (Pipeline A cost from the A-04 usage logs; Pipeline B latency from the B-03 result CSVs).
-
----
-
-## Key results
-
-Value-bearing recall (any-matcher) over the 489 cells that carry a reported
-value in `gs_slim`, full breakdown in thesis Table 5 / `evaluations/Baseline-PipelineA-PipelineB/`:
-
-| Approach                 | Value recall (any)  | Reports fully correct (of 54)    |
-| ------------------------ | :-----------------: | :------------------------------: |
-| Baseline                 | 89.57%              | 39 (72.2%)                       |
-| Pipeline A               | 92.23%              | 41 (75.9%)                       |
-| Pipeline B (unoptimized) | 90.80%              | 38 (70.4%)                       |
-| Pipeline B + GEPA        | 93.05%              | 44 (81.5%)                       |
-
-Retrieval quality (§6.1): Recall@3 is 91.67% before and 98.61% after ±1
-neighbor-page expansion, over the 72 report-page pairs in `gs_slim`.
+Shared helpers: `gs_slimming.py` (builds `gs_slim` incl. gold-standard fixes), `flattening.py`, `gs_pageCount.py` / `gs_slim_pageCount.py`, `gepa_split_valuebearing.py` (training/held-out split analysis), `cost_analysis.py` (Pipeline A cost from the A-04 usage logs, Pipeline B latency from the B-03 result CSVs).
 
 ---
 
 ## Data
 
-`localdata/` (not tracked as a package — see paths below):
-
 | Path | Content |
-|---|---|
-| `esg_reports/` | The used report-set during our work |
-| `esg_reports_all/` | All 114 downloadable report |
-| `esg_reports_gepaTrainSet/` | The generated retrieval set, specifically flagged as the GEPA training set |
-| `A-02-retrievals/nvidia/nemotron-colembed-vl-8b-v2/` | The generated retrieval set from A-02 (54) |
-| `A-02-retrieval_log.csv`, `failed_urls.csv` | logs |
+| --- | --- |
+| `localdata/esg_reports_all/` | the 114 downloadable reports of the gold-standard dataset |
+| `localdata/esg_reports/` | the 54 reports with extractable emission values (`gs_slim`) |
+| `localdata/esg_reports_gepaTrainSet/` | retrieval sets flagged as the GEPA training split |
+| `localdata/A-02-retrievals/nvidia/nemotron-colembed-vl-8b-v2/` | the 54 retrieval sets produced by A-02 |
+| `localdata/A-02-retrieval_log.csv`, `failed_urls.csv` | logs |
 
-`src/playground/fundamentals/extractReports.py` downloads the report PDFs from `usefulURLs.csv` and logs failed downloads.
-
-### Dataset citation
-
-The gold-standard emission values under `localdata/` and `evaluations/` are
-derived from:
-
-> Beck, J., Steinberg, A., Dimmelmeier, A., Domenech Burin, L., Kormanyos, E.,
-> Fehr, M., & Schierholz, M. (2025). Addressing data gaps in sustainability
-> reporting: A benchmark dataset for greenhouse gas emission extraction.
-> *Scientific Data*, 12(1), 1497. https://doi.org/10.1038/s41597-025-05664-8
-
-The sustainability report PDFs themselves remain the property of the
-reporting companies and are not redistributed beyond what the original
-dataset provides.
+Of the 139 reports referenced by the gold standard, 25 are no longer downloadable and 60 of the remaining 114 contain no extractable emission values, leaving the 54 reports used throughout (thesis §4.1.1). The report PDFs remain the property of the reporting companies; re-download them with `extractReports.py` rather than expecting them in the git history.
 
 ---
 
-## Setup
+## Caveats
 
-```bash
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements-local.txt   # or requirements-HPC.txt on the cluster
-```
+Points that bound how the numbers above should be read; all are discussed in the thesis (§6, §7.6).
 
-Both requirement files are `pip freeze` dumps of the environments actually used; the HPC one pins a prebuilt `flash_attn` wheel and CUDA 13 builds and is not meant to be installed locally.
-
-Secrets are loaded from a local `.env` (`python-dotenv`, gitignored):
-
-```
-ANTHROPIC_API_KEY=...     # Pipeline A (A-03/A-04)
-OPENAI_API_KEY=...        # UniGPT endpoint (B-03-UniGPT, GEPA reflection LM)
-OPENAI_API_BASE=...
-```
+- **The Baseline is not a reproducible experiment.** It ran through the consumer web interface, which applies a provider-side system prompt, may invoke tools, and can change at any time. The same report submitted twice is not guaranteed to be the same experiment.
+- **Single runs.** Baseline, Pipeline A and Pipeline B_G were each run once. Only Pipeline B has a variance estimate (two runs per model).
+- **The neighbour expansion inflates the retrieval hit rate.** It exists because the gold standard records the page number printed in the report, not the physical PDF page.
+- **Precision is not reported.** The gold standard is knowingly incomplete for non-total Scope 3 values, so an extracted value absent from the dataset is not necessarily an error.
+- **Units are scored, not converted.** Values are compared exactly as reported.
 
 ---
 
-## Running on PALMA II
+## Dataset citation
 
-The `sh/` scripts are SLURM batch scripts. They load the modules (`palma/2024a`, `GCCcore/13.3.0`, `Python/3.12.3`, `CUDA/13.0.2`), activate the venv, set `HF_HOME`/`CUDA_HOME`/`PIP_CACHE_DIR`, and call the Python entry point.
+The gold-standard emission values are derived from:
 
-| Script | Job | Partition / time |
-|---|---|---|
-| `A-01-embed.sh` | `A-01-embed.py` (arg 1 = model flag, arg 2 = mode) | `gpuh200`, 1 h |
-| `A-02-retrieval.sh` | `A-02-retrieval.py` + `evaluations/A-02/A-02.py` | `gpuh200mini`, 5 min |
-| `B-03-HPC.sh` | `B-03-HPC.py` (args passed through) | `gpuh200`, 8 h |
-| `GEPA-01.sh` / `GEPA-01_H200.sh` | `src/GEPA/oa_main.py` | `gpua100`, 30 min / `gpuh200`, 6 d |
-| `FromPDF2Extract.sh` | A-01 → A-02 → B-03 end-to-end on the test path | `gpuh200`, 10 min |
-| `quick-for-nok.sh` | repeated B-03 test runs across models | `gpuh200`, 30 min |
-
-```bash
-sbatch sh/A-01-embed.sh -8B
-sbatch sh/A-02-retrieval.sh -8B
-sbatch sh/B-03-HPC.sh -m think
-```
-
-Some scripts also write a `pip freeze` of the job environment to `$WORK/requirements/<job>/`.
-
----
-
-## Conventions
-
-- **Cluster paths are hardcoded** to `SCRATCH_ROOT = /scratch/tmp/jkuhlma1` (data, embeddings, results, logs) and `$HOME/2026_BA_Code` in the SLURM scripts. Both must be adjusted to run elsewhere.
-- **HPC vs. repo:** the pipeline scripts read/write under `SCRATCH_ROOT`; results committed here were copied into `localdata/`, `evaluations/` and `baselines/`.
-- **Reports are identified by filename stem** (`<company>_<year>_report`) throughout — PDFs, JSONs and the gold standard.
-- **Steps skip work that already exists** (A-03 skips reports with an existing JSON, A-01 skips existing `.pt` files).
-- `banner()` and the `#### N. STEP` comments exist purely for log readability.
-- Folders named `old/`, files prefixed `zzz_`/`OLD` and `src/playground/` are earlier states kept for reference; they are not part of the current runs.
+> Beck, J., Steinberg, A., Dimmelmeier, A., Domenech Burin, L., Kormanyos, E., Fehr, M., & Schierholz, M. (2025). Addressing data gaps in sustainability reporting: A benchmark dataset for greenhouse gas emission extraction. *Scientific Data*, 12(1), 1497. https://doi.org/10.1038/s41597-025-05664-8
