@@ -176,7 +176,7 @@ neighbor-page expansion, over the 72 report-page pairs in `gs_slim`.
 
 `src/playground/fundamentals/extractReports.py` downloads the report PDFs from `usefulURLs.csv` and logs failed downloads.
 
-#### Dataset citation
+### Dataset citation
 
 The gold-standard emission values under `localdata/` and `evaluations/` are
 derived from:
@@ -189,7 +189,6 @@ derived from:
 The sustainability report PDFs themselves remain the property of the
 reporting companies and are not redistributed beyond what the original
 dataset provides.
-```
 
 ---
 
