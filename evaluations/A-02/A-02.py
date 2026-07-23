@@ -1,3 +1,6 @@
+# This script is normally run right after the retrieval step in the same SLURM-script (sh/A-02-retrieval.sh)
+# To run this locally use the flag "-l" to set the in- and output path in this Repo and not in the HPC
+
 import ast
 import csv
 import json
