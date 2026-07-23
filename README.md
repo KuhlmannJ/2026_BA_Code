@@ -1,7 +1,7 @@
 # Codebase Bachelor Thesis "Beyond Text-Based RAG: Evaluating Visual RAG and Long Context for Automated GHG Emission Extraction from Sustainability Reports"
 
 <p align="center">
-  <img src="figures/Readme_UniMS.png" alt="University of Münster" height="100" style="margin-right: 40px;">
+  <img src="figures/Readme_UniMS.png" alt="University of Münster" height="100" style="margin-right: 100px;">
   <img src="figures/Readme_ERCIS.png" alt="ERCIS" height="100">
 </p>
 
